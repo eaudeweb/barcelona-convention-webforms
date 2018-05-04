@@ -14,7 +14,9 @@
 
 import {saveInstance} from '../api.js';
 const {toXml, toJson} = require('json-xml');
+import emptyinstance from '../assets/empty-instance.xml';
 
+console.log(emptyinstance)
 
 export default {
 
@@ -46,6 +48,7 @@ export default {
       // console.log(info)
       const xmlconverted = toXml(info)
       console.log(xmlconverted)
+      console.log(toJson(xmlconverted))
       // saveInstance(info)
   	},
     validate() {
