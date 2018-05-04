@@ -13,6 +13,8 @@
 <script>
 
 import {saveInstance} from '../api.js';
+const {toXml, toJson} = require('json-xml');
+
 
 export default {
 
@@ -41,8 +43,10 @@ export default {
   methods: {
   	doStuff(){
   		var info = this.info
-      console.log(info)
-      saveInstance(info)
+      // console.log(info)
+      const xmlconverted = toXml(info)
+      console.log(xmlconverted)
+      // saveInstance(info)
   	},
     validate() {
       this.validation = [];
