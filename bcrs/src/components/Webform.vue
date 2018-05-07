@@ -34,7 +34,7 @@
 
 <script>
 
-import {getCompanyData} from '../api.js';
+import {getCompanyData, getInstance} from '../api.js';
 import BilateralAgreement from './BilateralAgreement.vue'
 import LRMeasures from './LRMeasures.vue'
 import PolMeasures from './PolMeasures.vue'
@@ -42,6 +42,7 @@ import InfoAccess from './InfoAccess.vue'
 import FormSubmit from './FormSubmit.vue'
 import Validation from './Validation.vue'
 import {slugify} from '../utils.js';
+// import instance from '../assets/empty-instance.js';
 
 import form from '../assets/form.js'
 
@@ -69,6 +70,9 @@ export default {
 
   created() {
     this.form = form;
+    getInstance().then((response) => {
+      this.prefill(response.data)
+    })
   },
 
   methods: {
@@ -77,6 +81,72 @@ export default {
     },
     getValidationData(data) {
       this.validation_data = data
+    },
+    prefill(data) {
+      console.log(data)
+      console.log(this.form)
+      let agremeents = []; 
+
+      
+      for(let agreement of data.BC_BCRS.bilateralmultilateralagreementsdata) {
+        agremeents.push({
+          name: agreement.Row.agreementname,
+          reference: agreement.Row.website_other_reference
+        })
+      }
+
+      for(let agreement of data.BC_BCRS.measuresdata) {
+        // console.log(agreement.Row.collection_id)
+          let collection_id = agreement.Row.collection_id
+          let parent_collection_id = agreement.Row.parent_collection_id
+          for (let tab in this.form){
+            // console.log(tab)
+            if(tab != 'tab_1') {
+              for(let article of this.form[tab].data.articles){
+                for(let article_item of article.article_items){
+                  if(article_item.collection_id === collection_id) {
+                    for(let item of article_item.items) {
+                      if(item.type === 'changes') {
+                        item.selected = agreement.Row.changes
+                      } else if (item.type === 'status') {
+                        item.selected = agreement.Row.status
+                        item.comments = agreement.Row.status_comments
+                      } else {
+                        item.comments = agreement.Row.difficulties_comments;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+      }
+
+      for(let agreement of data.BC_BCRS.measuredata_difficulty) {
+        // console.log(agreement.Row.collection_id)
+          let collection_id = agreement.Row.collection_id
+          let difficulty = agreement.Row.difficulty
+          for (let tab in this.form){
+            // console.log(tab)
+            if(tab != 'tab_1') {
+              for(let article of this.form[tab].data.articles){
+                for(let article_item of article.article_items){
+                  if(article_item.collection_id === collection_id) {
+                    for(let item of article_item.items) {
+                      if(item.type === 'difficulties') {
+                        item.selected.push(difficulty)
+                      } 
+                    }
+                  }
+                }
+              }
+            }
+          }
+      }
+
+
+      this.form.tab_1.data.question.agreements = agremeents
+
     },
 
     doTitle(title) {

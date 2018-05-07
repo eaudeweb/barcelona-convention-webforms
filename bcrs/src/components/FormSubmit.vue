@@ -3,7 +3,6 @@
 		<b-btn variant="success" style="position: absolute;
     top: 5px;
     right: 5px;" @click="doStuff">submit</b-btn>
-    <a href="" id="a">click here to download your file</a>
 
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
@@ -19,9 +18,7 @@
 
 <script>
 
-import {saveXml2} from '../api.js';
-import emptyinstance from '../assets/empty-instance.js';
-var json2xml = require('json2xml');
+import {saveInstance} from '../api.js';
 
 
 export default {
@@ -46,23 +43,12 @@ export default {
       dataset: null,
       validation: [],
       jsonemptyinstance: {
-          "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/4",
-                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                  "xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd"
-          },
           "BC_BCRS": {
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/5"
-              },
+              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd",
               "bilateralmultilateralagreementsdata": [],
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/6"
-              },
               "measuresdata": [],
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/8"
-              },
               "measuredata_difficulty": []
           }
       },
@@ -229,21 +215,9 @@ export default {
           this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
         }
       }
-      var convxml = json2xml(this.jsonemptyinstance, { attributes_key: '_attributes', header:true })
-      let file = new Blob([convxml], {type: 'xml'});
-      console.log(file)
+      console.log(this.jsonemptyinstance)
 
-      var form = new FormData();
-      form.append("file", file);
-      form.append("file_id", "12312");
-      saveXml2(form)
-
-
-
-        var a = document.getElementById("a");
-        a.href = URL.createObjectURL(file);
-        a.download = 'file.xml';
-
+      saveInstance(this.jsonemptyinstance)
   	},
     validate() {
       this.validation = [];

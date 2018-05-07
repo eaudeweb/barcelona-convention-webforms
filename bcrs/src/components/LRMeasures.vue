@@ -10,8 +10,6 @@
           <div class="table-head">
             
             <b>{{info.data.table_label}}</b>
-
-
           </div>
 
           <div role="tablist">
