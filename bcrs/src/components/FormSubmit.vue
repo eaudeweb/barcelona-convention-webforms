@@ -232,7 +232,14 @@ export default {
       var convxml = json2xml(this.jsonemptyinstance, { attributes_key: '_attributes', header:true })
       let file = new Blob([convxml], {type: 'xml'});
       console.log(file)
-      saveXml2(file, 123)
+
+      var form = new FormData();
+      form.append("file", file);
+      form.append("file_id", "12312");
+      saveXml2(form)
+
+
+
         var a = document.getElementById("a");
         a.href = URL.createObjectURL(file);
         a.download = 'file.xml';

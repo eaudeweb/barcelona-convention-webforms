@@ -142,18 +142,16 @@ let testCompanyId = getParameterByName('testCompanyId');
       })
     }
 
-export function saveXml2(data, id) {
-    const idc_url = 'http://idc.info-rac.org/al/barcelona/envwubaxw/saveXML'
+export function saveXml2(form) {
+    const idc_url = 'https://idc.info-rac.org/al/barcelona/envwubaxw/saveXML'
     return axios({
       method: "post",
+      crossDomain: true,
       url: idc_url,
       auth: {
         username: 'mbadescu',
         password: '2GwxQbWh',
       },
-      Authorization: 'Basic bWJhZGVzY3U6Mkd3eFFiV2g=',
-      "Content-Type": 'application/x-www-form-urlencoded',
-      file: data,
-      file_id: id
+      data: form,
     })
 }
