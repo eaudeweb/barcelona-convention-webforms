@@ -48,14 +48,12 @@
                       type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
-                  <b-col lg="5" v-else-if="item.type != 'status' && item.selected !=false ">
+                  <b-col lg="5" v-else-if="item.type != 'status' && item.type != 'changes'">
                    <b-form-textarea v-model="item.comments"
                       type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
                 </b-row>
-
-
                 <small style="font-style:italic; font-size: .6rem">
                   <p class="mb-0" v-for="option of item.options_description">
                     {{option}}

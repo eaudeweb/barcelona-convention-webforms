@@ -3,6 +3,7 @@
 		<b-btn variant="success" style="position: absolute;
     top: 5px;
     right: 5px;" @click="doStuff">submit</b-btn>
+    <a href="" id="a">click here to download your file</a>
 
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
@@ -18,7 +19,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {saveXml2} from '../api.js';
 import emptyinstance from '../assets/empty-instance.js';
 var json2xml = require('json2xml');
 
@@ -54,36 +55,15 @@ export default {
               "_attributes": {
                   "xmlns": "https://dd.info-rac.org/namespaces/5"
               },
-              "bilateralmultilateralagreementsdata": {
-                  "Row": {
-                      "agreementname": 'fsfsfs',
-                      "website_other_reference": {},
-                      "collection_id": {}
-                  }
-              },
+              "bilateralmultilateralagreementsdata": [],
               "_attributes": {
                   "xmlns": "https://dd.info-rac.org/namespaces/6"
               },
-              "measuresdata": {
-                  "Row": {
-                      "changes": {},
-                      "collection_id": {},
-                      "difficulties_comments": {},
-                      "description": {},
-                      "status_comments": {},
-                      "status": {},
-                      "parent_collection_id": {}
-                  }
-              },
+              "measuresdata": [],
               "_attributes": {
                   "xmlns": "https://dd.info-rac.org/namespaces/8"
               },
-              "measuredata_difficulty": {
-                  "Row": {
-                      "collection_id": {},
-                      "difficulty": {}
-                  }
-              }
+              "measuredata_difficulty": []
           }
       },
      converted_xml: null
@@ -92,8 +72,171 @@ export default {
 
   methods: {
   	doStuff(){
+      let tab_1_collection_id = this.dataset.tab_1.data.collection_id;
+      let tab_1 = this.dataset.tab_1.data.question.agreements;
+
+      for(let collection of tab_1) {
+        this.jsonemptyinstance.BC_BCRS.bilateralmultilateralagreementsdata.push(
+                  {
+                     "Row":{
+                      "agreementname": collection.name,
+                      "website_other_reference": collection.reference,
+                      "collection_id": tab_1_collection_id
+                    } 
+                  }
+          )
+      }
+
+      let tab_2 = this.dataset.tab_2.data;
+      for (let article of tab_2.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id;
+          let parent_collection_id = article_item.parent_collection_id
+          let description = article_item.description
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                    } 
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.Row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.Row.status = item.selected;
+                row.Row.status_comments = item.comments
+              } else {
+                // row.Row.difficulties = item.selected
+                row.Row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.push(
+                          {
+                          "Row": {
+                                    "collection_id": collection_id,
+                                    "difficulty": difficulty
+                                }
+                             }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
+        }
+      }
+
+
+
+
+      let tab_3 = this.dataset.tab_3.data;
+      for (let article of tab_3.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id;
+          let parent_collection_id = article_item.parent_collection_id
+          let description = article_item.description
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                    } 
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.Row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.Row.status = item.selected;
+                row.Row.status_comments = item.comments
+              } else {
+                // row.Row.difficulties = item.selected
+                row.Row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.push(
+                          {
+                          "Row": {
+                                    "collection_id": collection_id,
+                                    "difficulty": difficulty
+                                }
+                             }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
+        }
+      }
+
+
+
+      let tab_4 = this.dataset.tab_4.data;
+      for (let article of tab_4.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id;
+          let parent_collection_id = article_item.parent_collection_id
+          let description = article_item.description
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                    } 
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.Row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.Row.status = item.selected;
+                row.Row.status_comments = item.comments
+              } else {
+                // row.Row.difficulties = item.selected
+                row.Row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.push(
+                          {
+                          "Row": {
+                                    "collection_id": collection_id,
+                                    "difficulty": difficulty
+                                }
+                             }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
+        }
+      }
       var convxml = json2xml(this.jsonemptyinstance, { attributes_key: '_attributes', header:true })
-      console.log(convxml)
+      let file = new Blob([convxml], {type: 'xml'});
+      console.log(file)
+      saveXml2(file, 123)
+        var a = document.getElementById("a");
+        a.href = URL.createObjectURL(file);
+        a.download = 'file.xml';
+
   	},
     validate() {
       this.validation = [];
