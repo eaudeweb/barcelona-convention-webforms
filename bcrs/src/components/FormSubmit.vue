@@ -7,16 +7,21 @@
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
     right: 85px;">Validate</b-btn> -->
+<!--     <div style="position: fixed;left:0;right:50%;top:0;bottom:0; background: white">
+     <pre>
+       
+      {{converted_xml}}
+     </pre>
+    </div> -->
 	</div>
 </template>
 
 <script>
 
 import {saveInstance} from '../api.js';
-const {toXml, toJson} = require('json-xml');
-import emptyinstance from '../assets/empty-instance.xml';
+import emptyinstance from '../assets/empty-instance.js';
+var json2xml = require('json2xml');
 
-console.log(emptyinstance)
 
 export default {
 
@@ -39,17 +44,56 @@ export default {
     return {
       dataset: null,
       validation: [],
+      jsonemptyinstance: {
+          "_attributes": {
+                  "xmlns": "https://dd.info-rac.org/namespaces/4",
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd"
+          },
+          "BC_BCRS": {
+              "_attributes": {
+                  "xmlns": "https://dd.info-rac.org/namespaces/5"
+              },
+              "bilateralmultilateralagreementsdata": {
+                  "Row": {
+                      "agreementname": 'fsfsfs',
+                      "website_other_reference": {},
+                      "collection_id": {}
+                  }
+              },
+              "_attributes": {
+                  "xmlns": "https://dd.info-rac.org/namespaces/6"
+              },
+              "measuresdata": {
+                  "Row": {
+                      "changes": {},
+                      "collection_id": {},
+                      "difficulties_comments": {},
+                      "description": {},
+                      "status_comments": {},
+                      "status": {},
+                      "parent_collection_id": {}
+                  }
+              },
+              "_attributes": {
+                  "xmlns": "https://dd.info-rac.org/namespaces/8"
+              },
+              "measuredata_difficulty": {
+                  "Row": {
+                      "collection_id": {},
+                      "difficulty": {}
+                  }
+              }
+          }
+      },
+     converted_xml: null
     }
   },
 
   methods: {
   	doStuff(){
-  		var info = this.info
-      // console.log(info)
-      const xmlconverted = toXml(info)
-      console.log(xmlconverted)
-      console.log(toJson(xmlconverted))
-      // saveInstance(info)
+      var convxml = json2xml(this.jsonemptyinstance, { attributes_key: '_attributes', header:true })
+      console.log(convxml)
   	},
     validate() {
       this.validation = [];
