@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BC_LBS xmlns="https://dd.info-rac.org/namespaces/9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/namespaces/9  https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd">
+    <measuresdata xmlns="https://dd.info-rac.org/namespaces/10">
+        <Row>
+            <changes/>
+            <collection_id/>
+            <difficulties_comments/>
+            <description/>
+            <status_comments/>
+            <status/>
+            <parent_collection_id/>
+        </Row>
+    </measuresdata>
+    <measuredata_difficulty xmlns="https://dd.info-rac.org/namespaces/11">
+        <Row>
+            <collection_id/>
+            <difficulty/>
+        </Row>
+    </measuredata_difficulty>
+    <enforcementmeasuresdata xmlns="https://dd.info-rac.org/namespaces/12">
+        <Row>
+            <collection_id/>
+            <inspectionnumber/>
+            <casesnumber/>
+            <fineissuesnumber/>
+            <suspensionsnumber/>
+            <shutdownsnumber/>
+            <othernumber/>
+            <cleannumber/>
+            <comment/>
+        </Row>
+    </enforcementmeasuresdata>
+    <lbsinventorydata xmlns="https://dd.info-rac.org/namespaces/13">
+        <Row>
+            <collection_id/>
+            <pollutantgroup/>
+            <activitysector/>
+            <activitysubsector/>
+            <reportednbb/>
+            <airquantity/>
+            <waterquantity/>
+            <soilquantity/>
+        </Row>
+    </lbsinventorydata>
+</BC_LBS>
