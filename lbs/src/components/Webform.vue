@@ -26,7 +26,7 @@
           </b-tabs>
         </b-form>
    			<formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
-        <div  v-if="validation_data.length" ref="validationContainer" class="validation">
+        <div  v-if="validation_data.length" ref="validationContainer" class="validation closed">
                   <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn> 
                   <validation :validationData="validation_data"></validation>
           </div>
