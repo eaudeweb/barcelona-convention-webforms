@@ -4639,6 +4639,8 @@ var form = {
       parent_collection_id: 4,
       articles: [{
         article_title: 'National legislation and regulations implementing the Protocol (Article 6)',
+        collection_id: 69961,
+        parent_collection_id: 412,
         article_items: [{
           label: 'Number of inspections',
           type: 'number',
@@ -4682,6 +4684,8 @@ var form = {
         }]
       }, {
         article_title: 'Specific conditions attached to authorizations or permits (Article 6)',
+        collection_id: 69962,
+        parent_collection_id: 412,
         article_items: [{
           label: 'Number of inspections',
           type: 'number',

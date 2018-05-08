@@ -3,7 +3,6 @@
     <b-btn variant="success" style="position: absolute;
     top: 5px;
     right: 5px;" @click="doStuff">submit</b-btn>
-    <a href="" id="a">click here to download your file</a>
 
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
@@ -19,8 +18,7 @@
 
 <script>
 
-import {saveXml2} from '../api.js';
-var json2xml = require('json2xml');
+import {saveInstance} from '../api.js';
 
 
 export default {
@@ -45,27 +43,13 @@ export default {
       dataset: null,
       validation: [],
       jsonemptyinstance: {
-          "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/9",
-                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                  "xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd"
-          },
           "BC_LBS": {
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/10"
-              },
+              "@xmlns": "https://dd.info-rac.org/namespaces/9",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd",
               "measuresdata": [],
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/11"
-              },
               "measuredata_difficulty": [],
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/12"
-              },
               "enforcementmeasuresdata": [],
-              "_attributes": {
-                  "xmlns": "https://dd.info-rac.org/namespaces/13"
-              },
               "lbsinventorydata": []
           }
       },
@@ -74,23 +58,88 @@ export default {
   },
 
   methods: {
+
+    matchEnfField(name){
+      switch (name) {
+        case 'inspections':
+          return 'inspectionnumber'
+          break;
+        case 'non_compliance':
+          return 'casesnumber'
+          break;
+        case 'total_amount':
+          return 'fineissuesnumber'
+          break;
+        case 'suspensions':
+          return 'suspensionsnumber'
+          break;
+        case 'shutdowns':
+          return 'shutdownsnumber'
+          break;
+        case 'enforcement':
+          return 'othernumber'
+          break;
+        case 'implemented':
+          return 'cleannumber'
+          break;
+        case 'remarks':
+          return 'comment'
+          break;
+        default:
+          // statements_def
+          break;
+      }
+    },
+
+
+    matchInvField(label){
+      switch (label) {
+        case 'Pollutant name':
+          return 'pollutantgroup'
+          break;
+        case 'Sector of Activity':
+          return 'activitysector'
+          break;
+        case 'Sub-sector':
+          return 'activitysubsector'
+          break;
+        case 'Release to Air - Information based on':
+          return 'reportedinfotypeair'
+          break;
+        case 'Release to Air - Quantities Kg/year':
+          return 'airquantity'
+          break;
+        case 'Release to Water - Information based on':
+          return 'reportedinfotypewater'
+          break;
+        case 'Release to Water - Quantities Kg/year':
+          return 'waterquantity'
+          break;
+        case 'Release to Soil - Information based on':
+          return 'reportedinfotypesoil'
+          break;
+        case 'Release to Soil - Quantities Kg/year':
+          return 'soilquantity'
+          break;
+        default:
+          // statements_def
+          break;
+      }
+    },
+
     doStuff(){
-      // let tab_1_collection_id = this.dataset.tab_1.data.collection_id;
-      // let tab_1 = this.dataset.tab_1.data.question.agreements;
 
-      // for(let collection of tab_1) {
-      //   this.jsonemptyinstance.BC_BCRS.bilateralmultilateralagreementsdata.push(
-      //             {
-      //                "Row":{
-      //                 "agreementname": collection.name,
-      //                 "website_other_reference": collection.reference,
-      //                 "collection_id": tab_1_collection_id
-      //               } 
-      //             }
-      //     )
-      // }
-
-
+      this.jsonemptyinstance = {
+                 "BC_LBS": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/9",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd",
+              "measuresdata": [],
+              "measuredata_difficulty": [],
+              "enforcementmeasuresdata": [],
+              "lbsinventorydata": []
+          }
+      }
 
       let tab_3 = this.dataset.tab_3.data;
       for (let article of tab_3.articles) {
@@ -139,22 +188,202 @@ export default {
       }
 
 
-      var convxml = json2xml(this.jsonemptyinstance, { attributes_key: '_attributes', header:true })
-      console.log(convxml)
-      let file = new Blob([convxml], {type: 'xml'});
-      console.log(file)
+      let tab_1 = this.dataset.tab_1.data;
+      for (let article of tab_1.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id;
+          let parent_collection_id = article_item.parent_collection_id
+          let description = article_item.description
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                    } 
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.Row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.Row.status = item.selected;
+                row.Row.status_comments = item.comments
+              } else {
+                // row.Row.difficulties = item.selected
+                row.Row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                          {
+                          "Row": {
+                                    "collection_id": collection_id,
+                                    "difficulty": difficulty
+                                }
+                             }
+                        )
+                  }
+                }
 
-      var form = new FormData();
-      form.append("file", file);
-      form.append("file_id", "12312");
-      saveXml2(form)
+              }
+            }
+          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+        }
+      }
 
 
+      let tab_4 = this.dataset.tab_4.data;
+      for (let article of tab_4.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id;
+          let parent_collection_id = article_item.parent_collection_id
+          let description = article_item.description
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                    } 
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.Row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.Row.status = item.selected;
+                row.Row.status_comments = item.comments
+              } else {
+                // row.Row.difficulties = item.selected
+                row.Row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                          {
+                          "Row": {
+                                    "collection_id": collection_id,
+                                    "difficulty": difficulty
+                                }
+                             }
+                        )
+                  }
+                }
 
-        var a = document.getElementById("a");
-        a.href = URL.createObjectURL(file);
-        a.download = 'file.xml';
+              }
+            }
+          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+        }
+      }
+      let tab_5 = this.dataset.tab_5.data;
+      for (let article of tab_5.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id;
+          let parent_collection_id = article_item.parent_collection_id
+          let description = article_item.description
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                    } 
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.Row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.Row.status = item.selected;
+                row.Row.status_comments = item.comments
+              } else {
+                // row.Row.difficulties = item.selected
+                row.Row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                          {
+                          "Row": {
+                                    "collection_id": collection_id,
+                                    "difficulty": difficulty
+                                }
+                             }
+                        )
+                  }
+                }
 
+              }
+            }
+          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+        }
+      }
+
+
+      let tab_6 = this.dataset.tab_6.data;
+      for (let article of tab_6.articles) {
+          let collection_id = article.collection_id;
+          let parent_collection_id = article.parent_collection_id
+          let description = article.article_title
+          let row =  {
+                     "Row":{
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "inspectionnumber": null,
+                      "casesnumber":null,
+                      "fineissuesnumber": null,
+                      "suspensionsnumber": null,
+                      "shutdownsnumber":null,
+                      "othernumber": 'asd',
+                      "cleannumber": null,
+                      "comment": null
+                    } 
+                  }
+        for (let article_item of article.article_items){
+          row.Row[this.matchEnfField(article_item.name)] =  article_item.value
+        }
+        this.jsonemptyinstance.BC_LBS.enforcementmeasuresdata.push(row)
+      }
+
+      let tab_2 = this.dataset.tab_2.data;
+      for (let article of tab_2.articles) {
+          let collection_id = tab_2.collection_id;
+          let parent_collection_id = tab_2.parent_collection_id
+        for (let article_item of article.article_items){
+          let row =  {
+                     "Row":{
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "pollutantgroup": null,
+                      "activitysector":null,
+                      "activitysubsector": null,
+                      "reportedinfotypeair": null,
+                      "airquantity":null,
+                      "reportedinfotypewater": null,
+                      "waterquantity": null,
+                      "reportedinfotypesoil": null,
+                      "soilquantity": null
+                    } 
+                  }
+
+          for(let item of article_item.items){
+            row.Row[this.matchInvField(item.label)] =  item.selected || item.value
+          }
+        this.jsonemptyinstance.BC_LBS.lbsinventorydata.push(row)
+        }
+      }
+
+      console.log(this.jsonemptyinstance)
+
+      saveInstance(this.jsonemptyinstance)
     },
     validate() {
       this.validation = [];

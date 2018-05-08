@@ -20,6 +20,7 @@
     <enforcementmeasuresdata xmlns="https://dd.info-rac.org/namespaces/12">
         <Row>
             <collection_id/>
+            <parent_collection_id/>
             <inspectionnumber/>
             <casesnumber/>
             <fineissuesnumber/>
@@ -37,8 +38,11 @@
             <activitysector/>
             <activitysubsector/>
             <reportednbb/>
+            <reportedinfotypeair/>
             <airquantity/>
+            <reportedinfotypewater/>
             <waterquantity/>
+            <reportedinfotypesoil/>
             <soilquantity/>
         </Row>
     </lbsinventorydata>
