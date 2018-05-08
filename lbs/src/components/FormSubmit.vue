@@ -357,12 +357,14 @@ export default {
       for (let article of tab_2.articles) {
           let collection_id = tab_2.collection_id;
           let parent_collection_id = tab_2.parent_collection_id
+          let check_value = tab_2.question.selected;
         for (let article_item of article.article_items){
           let row =  {
                      "Row":{
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
                       "pollutantgroup": null,
+                      "reportednbb": check_value,
                       "activitysector":null,
                       "activitysubsector": null,
                       "reportedinfotypeair": null,
