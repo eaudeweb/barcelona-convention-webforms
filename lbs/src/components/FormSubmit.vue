@@ -4,6 +4,10 @@
     top: 5px;
     right: 5px;" @click="doStuff">submit</b-btn>
 
+    <b-btn variant="danger" style="position: absolute;
+    top: 5px;
+    right: 85px;" @click="exitForm">Back to envelope</b-btn>
+
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
     right: 85px;">Validate</b-btn> -->
@@ -18,7 +22,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {saveInstance,envelope} from '../api.js';
 
 
 export default {
@@ -47,10 +51,10 @@ export default {
               "@xmlns": "https://dd.info-rac.org/namespaces/9",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
               "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd",
-              "measuresdata": [],
-              "measuredata_difficulty": [],
-              "enforcementmeasuresdata": [],
-              "lbsinventorydata": []
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]},
+              "enforcementmeasuresdata": {Row:[]},
+              "lbsinventorydata": {Row:[]}
           }
       },
      converted_xml: null
@@ -127,17 +131,21 @@ export default {
       }
     },
 
+    exitForm(){
+      window.location.replace(envelope)
+    },
+
     doStuff(){
 
       this.jsonemptyinstance = {
-                 "BC_LBS": {
+         "BC_LBS": {
               "@xmlns": "https://dd.info-rac.org/namespaces/9",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
               "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd",
-              "measuresdata": [],
-              "measuredata_difficulty": [],
-              "enforcementmeasuresdata": [],
-              "lbsinventorydata": []
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]},
+              "enforcementmeasuresdata": {Row:[]},
+              "lbsinventorydata": {Row:[]}
           }
       }
 
@@ -148,7 +156,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -157,25 +164,22 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
-                                }
                              }
                         )
                   }
@@ -183,7 +187,7 @@ export default {
 
               }
             }
-          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_LBS.measuresdata.Row.push(row)
         }
       }
 
@@ -195,7 +199,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -204,33 +207,30 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
                                 }
-                             }
                         )
                   }
                 }
 
               }
             }
-          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_LBS.measuresdata.Row.push(row)
         }
       }
 
@@ -242,7 +242,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -251,25 +250,22 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
-                                }
                              }
                         )
                   }
@@ -277,7 +273,7 @@ export default {
 
               }
             }
-          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_LBS.measuresdata.Row.push(row)
         }
       }
       let tab_5 = this.dataset.tab_5.data;
@@ -287,7 +283,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -296,25 +291,22 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_LBS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
-                                }
                              }
                         )
                   }
@@ -322,10 +314,9 @@ export default {
 
               }
             }
-          this.jsonemptyinstance.BC_LBS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_LBS.measuresdata.Row.push(row)
         }
       }
-
 
       let tab_6 = this.dataset.tab_6.data;
       for (let article of tab_6.articles) {
@@ -333,7 +324,6 @@ export default {
           let parent_collection_id = article.parent_collection_id
           let description = article.article_title
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -345,12 +335,11 @@ export default {
                       "othernumber": 'asd',
                       "cleannumber": null,
                       "comment": null
-                    } 
                   }
         for (let article_item of article.article_items){
-          row.Row[this.matchEnfField(article_item.name)] =  article_item.value
+          row[this.matchEnfField(article_item.name)] =  article_item.value
         }
-        this.jsonemptyinstance.BC_LBS.enforcementmeasuresdata.push(row)
+        this.jsonemptyinstance.BC_LBS.enforcementmeasuresdata.Row.push(row)
       }
 
       let tab_2 = this.dataset.tab_2.data;
@@ -360,7 +349,6 @@ export default {
           let check_value = tab_2.question.selected;
         for (let article_item of article.article_items){
           let row =  {
-                     "Row":{
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
                       "pollutantgroup": null,
@@ -373,13 +361,12 @@ export default {
                       "waterquantity": null,
                       "reportedinfotypesoil": null,
                       "soilquantity": null
-                    } 
                   }
 
           for(let item of article_item.items){
-            row.Row[this.matchInvField(item.label)] =  item.selected || item.value
+            row[this.matchInvField(item.label)] =  item.selected || item.value
           }
-        this.jsonemptyinstance.BC_LBS.lbsinventorydata.push(row)
+        this.jsonemptyinstance.BC_LBS.lbsinventorydata.Row.push(row)
         }
       }
 
