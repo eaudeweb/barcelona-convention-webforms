@@ -1,6 +1,6 @@
 var form = {
   tab_1: {
-    label: 'Part I:LEGAL AND REGULATORY MEASURES',
+    label: 'Part I: LEGAL AND REGULATORY MEASURES',
     data: {
       question: 'Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Dumping Protocol, as listed in Table I below?',
       table_label: 'Table I – LEGAL AND REGULATORY MEASURES',

@@ -41,7 +41,7 @@ export default {
     	let tabIndex = 0;
 
     	switch (tab) {
-    		case 'Part I:LEGAL AND REGULATORY MEASURES':
+    		case 'Part I: LEGAL AND REGULATORY MEASURES':
     			tabIndex = 0;
     			break;
     		case 'Part II: DUMPING AT SEA PERMITS AND QUANTITIES':
