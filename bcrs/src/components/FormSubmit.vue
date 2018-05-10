@@ -4,6 +4,9 @@
     top: 5px;
     right: 5px;" @click="doStuff">submit</b-btn>
 
+    <b-btn variant="danger" style="position: absolute;
+    top: 5px;
+    right: 85px;" @click="exitForm">Back to envelope</b-btn>
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
     right: 85px;">Validate</b-btn> -->
@@ -18,7 +21,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {envelope, saveInstance} from '../api.js';
 
 
 export default {
@@ -57,6 +60,11 @@ export default {
   },
 
   methods: {
+
+    exitForm(){
+      window.location.replace(envelope)
+    },
+
   	doStuff(){
       let tab_1_collection_id = this.dataset.tab_1.data.collection_id;
       let tab_1 = this.dataset.tab_1.data.question.agreements;

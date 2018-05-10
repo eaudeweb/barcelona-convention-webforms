@@ -86,28 +86,36 @@ export default {
     prefill(data) {
       let agremeents = []; 
       
-      if(data.BC_BCRS.bilateralmultilateralagreementsdata.length) {
-
-        for(let agreement of data.BC_BCRS.bilateralmultilateralagreementsdata) {
-          console.log(agreement)
+      if(data.BC_BCRS.bilateralmultilateralagreementsdata) {
+        if(data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length === undefined) { 
           agremeents.push({
-            name: agreement.Row.agreementname,
-            reference: agreement.Row.website_other_reference
+            name: data.BC_BCRS.bilateralmultilateralagreementsdata.Row.agreementname,
+            reference: data.BC_BCRS.bilateralmultilateralagreementsdata.Row.website_other_reference
           })
+          this.form.tab_1.data.question.agreements = agremeents
+        
+        } else if (data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length > 1)  {
+            for(let agreement of data.BC_BCRS.bilateralmultilateralagreementsdata.Row) {
+              console.log(agreement)
+              agremeents.push({
+                name: agreement.agreementname,
+                reference: agreement.website_other_reference
+              })
+            }
+          this.form.tab_1.data.question.agreements = agremeents
         }
 
-        this.form.tab_1.data.question.agreements = agremeents
       }
 
 
-      if(data.BC_BCRS.measuresdata.length) {
+      if(data.BC_BCRS.measuresdata.Row.length) {
 
 
-        for(let agreement of data.BC_BCRS.measuresdata) {
+        for(let agreement of data.BC_BCRS.measuresdata.Row) {
           console.log(agreement)
-          // console.log(agreement.Row.collection_id)
-            let collection_id = agreement.Row.collection_id
-            let parent_collection_id = agreement.Row.parent_collection_id
+          // console.log(agreement.collection_id)
+            let collection_id = agreement.collection_id
+            let parent_collection_id = agreement.parent_collection_id
             for (let tab in this.form){
               // console.log(tab)
               if(tab != 'tab_1') {
@@ -116,12 +124,12 @@ export default {
                     if(article_item.collection_id === collection_id) {
                       for(let item of article_item.items) {
                         if(item.type === 'changes') {
-                          item.selected = agreement.Row.changes
+                          item.selected = agreement.changes
                         } else if (item.type === 'status') {
-                          item.selected = agreement.Row.status
-                          item.comments = agreement.Row.status_comments
+                          item.selected = agreement.status
+                          item.comments = agreement.status_comments
                         } else {
-                          item.comments = agreement.Row.difficulties_comments;
+                          item.comments = agreement.difficulties_comments;
                         }
                       }
                     }
@@ -135,13 +143,13 @@ export default {
 
       if(data.BC_BCRS.measuredata_difficulty) {
 
-          if(data.BC_BCRS.measuredata_difficulty.length) {
-            for(let agreement of data.BC_BCRS.measuredata_difficulty) {
+          if(data.BC_BCRS.measuredata_difficulty.Row.length) {
+            for(let agreement of data.BC_BCRS.measuredata_difficulty.Row) {
               console.log(agreement)
 
-              // console.log(agreement.Row.collection_id)
-                let collection_id = agreement.Row.collection_id
-                let difficulty = agreement.Row.difficulty
+              // console.log(agreement.collection_id)
+                let collection_id = agreement.collection_id
+                let difficulty = agreement.difficulty
                 for (let tab in this.form){
                   // console.log(tab)
                   if(tab != 'tab_1') {
