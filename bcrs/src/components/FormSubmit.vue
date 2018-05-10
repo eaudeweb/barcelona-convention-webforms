@@ -47,9 +47,9 @@ export default {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
               "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd",
-              "bilateralmultilateralagreementsdata": [],
-              "measuresdata": [],
-              "measuredata_difficulty": []
+              "bilateralmultilateralagreementsdata": {Row: []},
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]}
           }
       },
      converted_xml: null
@@ -62,14 +62,13 @@ export default {
       let tab_1 = this.dataset.tab_1.data.question.agreements;
 
       for(let collection of tab_1) {
-        this.jsonemptyinstance.BC_BCRS.bilateralmultilateralagreementsdata.push(
-                  {
-                     "Row":{
+        this.jsonemptyinstance.BC_BCRS.bilateralmultilateralagreementsdata.Row.push(
+                    {
                       "agreementname": collection.name,
                       "website_other_reference": collection.reference,
                       "collection_id": tab_1_collection_id
                     } 
-                  }
+                  
           )
       }
 
@@ -80,7 +79,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -89,33 +87,30 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
                                 }
-                             }
                         )
                   }
                 }
 
               }
             }
-          this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_BCRS.measuresdata.Row.push(row)
         }
       }
 
@@ -129,7 +124,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -138,25 +132,22 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
-                                }
                              }
                         )
                   }
@@ -164,7 +155,7 @@ export default {
 
               }
             }
-          this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_BCRS.measuresdata.Row.push(row)
         }
       }
 
@@ -177,7 +168,6 @@ export default {
           let parent_collection_id = article_item.parent_collection_id
           let description = article_item.description
           let row =  {
-                     "Row":{
                       "description": description,
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
@@ -186,25 +176,22 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
-                    } 
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
-                row.Row.changes = item.selected
+                row.changes = item.selected
               } else if (item.type === 'status') {
-                row.Row.status = item.selected;
-                row.Row.status_comments = item.comments
+                row.status = item.selected;
+                row.status_comments = item.comments
               } else {
-                // row.Row.difficulties = item.selected
-                row.Row.difficulties_comments = item.comments
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
                 if(item.selected.length){
                   for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.push(
+                      this.jsonemptyinstance.BC_BCRS.measuredata_difficulty.Row.push(
                           {
-                          "Row": {
                                     "collection_id": collection_id,
                                     "difficulty": difficulty
-                                }
                              }
                         )
                   }
@@ -212,7 +199,7 @@ export default {
 
               }
             }
-          this.jsonemptyinstance.BC_BCRS.measuresdata.push(row)
+          this.jsonemptyinstance.BC_BCRS.measuresdata.Row.push(row)
         }
       }
       console.log(this.jsonemptyinstance)

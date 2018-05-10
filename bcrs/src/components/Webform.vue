@@ -2,7 +2,7 @@
 	<b-container style="position: relative">
     <center><h1 class="mb-3 mt-2">Barcelona Convention</h1></center>
     <center><h5><small class="subtitle text-muted">Implementation of the Barcelona Convention for the Protection of the Marine Environment and the Coastal Region of the Mediterranean and its Protocols (Barcelona Convention)</small></h5></center>
-      <b-card no-body>
+      <b-card v-if="prefilled" no-body>
           
             <b-form validated novalidate @submit="onSubmit">
               <b-tabs card>
@@ -63,6 +63,7 @@ export default {
     return {
     	visibleTab: false,
       form: {},
+      prefilled: false,
       validation_data: [],
       button_text: 'Hide list'
     }
@@ -83,10 +84,8 @@ export default {
       // this.validation_data = data
     },
     prefill(data) {
-      console.log(data)
-      console.log(this.form)
       let agremeents = []; 
-
+      
       if(data.BC_BCRS.bilateralmultilateralagreementsdata.length) {
 
         for(let agreement of data.BC_BCRS.bilateralmultilateralagreementsdata) {
@@ -102,7 +101,7 @@ export default {
 
 
       if(data.BC_BCRS.measuresdata.length) {
-          
+
 
         for(let agreement of data.BC_BCRS.measuresdata) {
           console.log(agreement)
@@ -134,35 +133,37 @@ export default {
 
       }
 
-      if(data.BC_BCRS.measuredata_difficulty.length) {
+      if(data.BC_BCRS.measuredata_difficulty) {
 
+          if(data.BC_BCRS.measuredata_difficulty.length) {
+            for(let agreement of data.BC_BCRS.measuredata_difficulty) {
+              console.log(agreement)
 
-        for(let agreement of data.BC_BCRS.measuredata_difficulty) {
-          console.log(agreement)
-
-          // console.log(agreement.Row.collection_id)
-            let collection_id = agreement.Row.collection_id
-            let difficulty = agreement.Row.difficulty
-            for (let tab in this.form){
-              // console.log(tab)
-              if(tab != 'tab_1') {
-                for(let article of this.form[tab].data.articles){
-                  for(let article_item of article.article_items){
-                    if(article_item.collection_id === collection_id) {
-                      for(let item of article_item.items) {
-                        if(item.type === 'difficulties') {
-                          item.selected.push(difficulty)
-                        } 
+              // console.log(agreement.Row.collection_id)
+                let collection_id = agreement.Row.collection_id
+                let difficulty = agreement.Row.difficulty
+                for (let tab in this.form){
+                  // console.log(tab)
+                  if(tab != 'tab_1') {
+                    for(let article of this.form[tab].data.articles){
+                      for(let article_item of article.article_items){
+                        if(article_item.collection_id === collection_id) {
+                          for(let item of article_item.items) {
+                            if(item.type === 'difficulties') {
+                              item.selected.push(difficulty)
+                            } 
+                          }
+                        }
                       }
                     }
                   }
                 }
-              }
             }
-        }
 
+          }
       }
 
+      this.prefilled = true;
 
     },
 
