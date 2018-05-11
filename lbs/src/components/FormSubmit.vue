@@ -353,6 +353,7 @@ export default {
                       "collection_id": collection_id,
                       "pollutantgroup": null,
                       "reportednbb": check_value,
+                      "description": article_item.description,
                       "activitysector":null,
                       "activitysubsector": null,
                       "reportedinfotypeair": null,

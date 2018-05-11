@@ -37,8 +37,8 @@
 
 <script>
 
-import {getCompanyData} from '../api.js';
-
+import {getCompanyData, getInstance} from '../api.js';
+import prefilldata from '../assets/prefill.js';
 import LRMeasures from './LRMeasures.vue'
 import LBSProtocol from './LBSProtocol.vue'
 import RAPs from './RAPs.vue'
@@ -50,6 +50,7 @@ import Validation from './Validation.vue'
 
 import FormSubmit from './FormSubmit.vue'
 import form from '../assets/form.js'
+
 
 
 export default {
@@ -78,15 +79,120 @@ export default {
 
   created() {
     this.form = form;
-  	// getCompanyData().then(response => {
-   //    console.log(response.data)
-   //    this.form.organization = response.data
-  	// })
+    getInstance().then((response) => {
+      this.prefill(response.data)
+    })
+    // this.prefill(prefilldata)
   },
 
   methods: {
     getValidationData(data) {
       this.validation_data = data
+    },
+    prefill(data){
+      for(let measures of data.BC_LBS.enforcementmeasuresdata.Row) {
+          let collection_id = measures.collection_id
+           for (let tab in this.form){
+                if(tab ==='tab_6') {
+                  for(let article of this.form[tab].data.articles){
+                    if(article.collection_id === collection_id) {
+                        for(let article_items of article.article_items){
+                          for(let measure in measures){
+                            if(this.matchEnfField(measure) === article_items.name) {
+                              article_items.value = measures[measure]
+                            }
+                          }
+                        }
+                    }
+                  }
+                }
+              }
+        }
+
+        let inv_reported = data.BC_LBS.lbsinventorydata.Row[0].reportednbb
+        this.form.tab_2.data.question.selected = inv_reported
+      for(let invdata of data.BC_LBS.lbsinventorydata.Row) {
+          let description = invdata.description
+           for (let tab in this.form){
+                if(tab ==='tab_2') {
+                  for(let article of this.form[tab].data.articles){
+                    for(let article_items of article.article_items){
+                      if(article_items.description === description) {
+                        for(let item of article_items.items){
+                          // console.log(item)
+                          for(let invitem in invdata){
+                            if(this.matchInvField(item.label) === invitem) {
+                                item.selected = invdata[invitem] 
+                                item.value = invdata[invitem]
+                            }
+                          }
+
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+        }
+
+
+
+
+      if(data.BC_LBS.measuresdata.Row.length) {
+        for(let agreement of data.BC_LBS.measuresdata.Row) {
+            let collection_id = agreement.collection_id
+            let parent_collection_id = agreement.parent_collection_id
+            for (let tab in this.form){
+              if(tab != 'tab_2' && tab != 'tab_6') {
+                for(let article of this.form[tab].data.articles){
+                  for(let article_item of article.article_items){
+                    if(article_item.collection_id === collection_id) {
+                      for(let item of article_item.items) {
+                        if(item.type === 'changes') {
+                          item.selected = agreement.changes
+                        } else if (item.type === 'status') {
+                          item.selected = agreement.status
+                          item.comments = agreement.status_comments
+                        } else {
+                          item.comments = agreement.difficulties_comments;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+        }
+      }
+
+      if(data.BC_LBS.measuredata_difficulty) {
+          if(data.BC_LBS.measuredata_difficulty.Row.length) {
+            for(let agreement of data.BC_LBS.measuredata_difficulty.Row) {
+                let collection_id = agreement.collection_id
+                let difficulty = agreement.difficulty
+                for (let tab in this.form){
+                  // console.log(tab)
+                  if(tab != 'tab_2' && tab != 'tab_6') {
+                    for(let article of this.form[tab].data.articles){
+                      for(let article_item of article.article_items){
+                        if(article_item.collection_id === collection_id) {
+                          for(let item of article_item.items) {
+                            if(item.type === 'difficulties') {
+                              item.selected.push(difficulty)
+                            } 
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+            }
+
+          }
+      }
+
+
+
     },
 
     doTitle(title) {
@@ -101,6 +207,76 @@ export default {
         else this.button_text = 'Hide list'
       this.$refs.validationContainer.classList.toggle('closed')
     },
+
+
+     matchEnfField(name){
+      switch (name) {
+        case 'inspectionnumber':
+          return 'inspections'
+          break;
+        case 'casesnumber':
+          return 'non_compliance'
+          break;
+        case 'fineissuesnumber':
+          return 'total_amount'
+          break;
+        case 'suspensionsnumber':
+          return 'suspensions'
+          break;
+        case 'shutdownsnumber':
+          return 'shutdowns'
+          break;
+        case 'othernumber':
+          return 'enforcement'
+          break;
+        case 'cleannumber':
+          return 'implemented'
+          break;
+        case 'comment':
+          return 'remarks'
+          break;
+        default:
+          return false;
+          break;
+      }
+    },
+
+
+    matchInvField(label){
+      switch (label) {
+        case 'Pollutant name':
+          return 'pollutantgroup'
+          break;
+        case 'Sector of Activity':
+          return 'activitysector'
+          break;
+        case 'Sub-sector':
+          return 'activitysubsector'
+          break;
+        case 'Release to Air - Information based on':
+          return 'reportedinfotypeair'
+          break;
+        case 'Release to Air - Quantities Kg/year':
+          return 'airquantity'
+          break;
+        case 'Release to Water - Information based on':
+          return 'reportedinfotypewater'
+          break;
+        case 'Release to Water - Quantities Kg/year':
+          return 'waterquantity'
+          break;
+        case 'Release to Soil - Information based on':
+          return 'reportedinfotypesoil'
+          break;
+        case 'Release to Soil - Quantities Kg/year':
+          return 'soilquantity'
+          break;
+        default:
+          // statements_def
+          break;
+      }
+    }
+
   },
 
 }
