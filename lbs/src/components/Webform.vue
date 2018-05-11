@@ -90,50 +90,61 @@ export default {
       this.validation_data = data
     },
     prefill(data){
-      for(let measures of data.BC_LBS.enforcementmeasuresdata.Row) {
-          let collection_id = measures.collection_id
-           for (let tab in this.form){
-                if(tab ==='tab_6') {
-                  for(let article of this.form[tab].data.articles){
-                    if(article.collection_id === collection_id) {
-                        for(let article_items of article.article_items){
-                          for(let measure in measures){
-                            if(this.matchEnfField(measure) === article_items.name) {
-                              article_items.value = measures[measure]
+      if(data.BC_LBS.enforcementmeasuresdata){
+        if(data.BC_LBS.enforcementmeasuresdata.Row && data.BC_LBS.enforcementmeasuresdata.Row.length && data.BC_LBS.enforcementmeasuresdata.Row.length > 1){
+          for(let measures of data.BC_LBS.enforcementmeasuresdata.Row) {
+              let collection_id = measures.collection_id
+               for (let tab in this.form){
+                    if(tab ==='tab_6') {
+                      for(let article of this.form[tab].data.articles){
+                        if(article.collection_id === collection_id) {
+                            for(let article_items of article.article_items){
+                              for(let measure in measures){
+                                if(this.matchEnfField(measure) === article_items.name) {
+                                  article_items.value = measures[measure]
+                                }
+                              }
                             }
-                          }
                         }
+                      }
                     }
                   }
-                }
-              }
+            }
         }
+      }
 
         let inv_reported = data.BC_LBS.lbsinventorydata.Row[0].reportednbb
         this.form.tab_2.data.question.selected = inv_reported
-      for(let invdata of data.BC_LBS.lbsinventorydata.Row) {
-          let description = invdata.description
-           for (let tab in this.form){
-                if(tab ==='tab_2') {
-                  for(let article of this.form[tab].data.articles){
-                    for(let article_items of article.article_items){
-                      if(article_items.description === description) {
-                        for(let item of article_items.items){
-                          // console.log(item)
-                          for(let invitem in invdata){
-                            if(this.matchInvField(item.label) === invitem) {
-                                item.selected = invdata[invitem] 
-                                item.value = invdata[invitem]
-                            }
-                          }
 
+    if(data.BC_LBS.lbsinventorydata){
+      if(data.BC_LBS.lbsinventorydata.Row && data.BC_LBS.lbsinventorydata.Row.length && data.BC_LBS.lbsinventorydata.Row.length > 1){
+
+        for(let invdata of data.BC_LBS.lbsinventorydata.Row) {
+            let description = invdata.description
+             for (let tab in this.form){
+                  if(tab ==='tab_2') {
+                    for(let article of this.form[tab].data.articles){
+                      for(let article_items of article.article_items){
+                        if(article_items.description === description) {
+                          for(let item of article_items.items){
+                            // console.log(item)
+                            for(let invitem in invdata){
+                              if(this.matchInvField(item.label) === invitem) {
+                                  item.selected = invdata[invitem] 
+                                  item.value = invdata[invitem]
+                              }
+                            }
+
+                          }
                         }
                       }
                     }
                   }
                 }
-              }
+          }
         }
+    }
+
 
 
 
