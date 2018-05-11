@@ -113,12 +113,11 @@ export default {
         }
       }
 
-        let inv_reported = data.BC_LBS.lbsinventorydata.Row[0].reportednbb
-        this.form.tab_2.data.question.selected = inv_reported
 
     if(data.BC_LBS.lbsinventorydata){
       if(data.BC_LBS.lbsinventorydata.Row && data.BC_LBS.lbsinventorydata.Row.length && data.BC_LBS.lbsinventorydata.Row.length > 1){
-
+      let inv_reported = data.BC_LBS.lbsinventorydata.Row[0].reportednbb
+      this.form.tab_2.data.question.selected = inv_reported
         for(let invdata of data.BC_LBS.lbsinventorydata.Row) {
             let description = invdata.description
              for (let tab in this.form){
