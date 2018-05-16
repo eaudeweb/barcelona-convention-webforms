@@ -15,6 +15,9 @@
             <b-tab :title="doTitle(form.tab_3.label)" >
               <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
             </b-tab>
+            <b-tab :title="doTitle(form.tab_4.label)" >
+              <dummy tabId="3"  :info.sync="form.tab_4"></dummy>
+            </b-tab>
           </b-tabs>
         </b-form>
    			<formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
