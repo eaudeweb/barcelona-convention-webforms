@@ -2,7 +2,7 @@
   <div>
     <b-btn variant="success" style="position: absolute;
     top: 5px;
-    right: 5px;" @click="doStuff">submit</b-btn>
+    right: 5px;" @click="doStuff">Save</b-btn>
 
     <b-btn variant="danger" style="position: absolute;
     top: 5px;
@@ -13,7 +13,7 @@
     right: 85px;">Validate</b-btn> -->
 <!--     <div style="position: fixed;left:0;right:50%;top:0;bottom:0; background: white">
      <pre>
-       
+
       {{converted_xml}}
      </pre>
     </div> -->
@@ -38,7 +38,7 @@ export default {
   },
 
   created() {
-    this.dataset = this.info 
+    this.dataset = this.info
     this.validate()
   },
 
@@ -381,12 +381,12 @@ export default {
       // delete data.tab_1
         for(let a in data) {
           if(a != 'tab_2' && a != 'tab_6'){
-              let tab_title = data[a].label 
+              let tab_title = data[a].label
               for(let b of data[a].data.articles) {
                 let article_title = b.article_title
                 if(!b.optional) {
                   for(let c of b.article_items){
-                    let description = c.description 
+                    let description = c.description
                     for(let d of c.items) {
                       let answer_label = d.label;
                       if(d.selected === null || d.selected === []) {
@@ -417,7 +417,7 @@ export default {
             //         description: description,
             //         answer: 'Agrement name'
             //     })
-            //   } 
+            //   }
 
             //   if(answer_reference === '') {
             //     this.validation.push({
@@ -441,7 +441,7 @@ export default {
       },
       deep: true,
       immediate: true,
-    } 
+    }
   }
 }
 </script>

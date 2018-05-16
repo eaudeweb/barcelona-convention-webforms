@@ -3,10 +3,6 @@
     <b-btn variant="success" style="position: absolute;
     top: 5px;
     right: 5px;" @click="doStuff">Save</b-btn>
-
-  <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
-    top: 5px;
-    right: 85px;">Validate</b-btn> -->
   </div>
 </template>
 
