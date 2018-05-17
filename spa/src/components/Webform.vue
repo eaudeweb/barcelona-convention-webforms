@@ -17,11 +17,11 @@
             <b-tab :title="doTitle(form.tab_5.label)" >
               <monitoring tabId="5" :info.sync="form.tab_5"></monitoring>
             </b-tab>
- <!--            <b-tab :title="doTitle(form.tab_4.label)" >
-              <naps tabId="4" :info.sync="form.tab_4"></naps>
-            </b-tab> -->
             <b-tab :title="doTitle(form.tab_6.label)" >
               <enfmeasures tabId="6" :info.sync="form.tab_6"></enfmeasures>
+            </b-tab>
+            <b-tab :title="doTitle(form.tab_7.label)" >
+              <raps tabId="7" :info.sync="form.tab_7"></raps>
             </b-tab>
           </b-tabs>
         </b-form>
@@ -43,7 +43,7 @@ import LRMeasures from './LRMeasures.vue'
 import Spa from './Spa.vue'
 import EndAndThSp from './EndAndThSp.vue'
 
-// import RAPs from './RAPs.vue'
+import RAPs from './RAPs.vue'
 // import NAPs from './NAPs.vue'
 import Monitoring from './Monitoring.vue'
 import ENFMeasures from './ENFMeasures.vue'
@@ -61,6 +61,7 @@ export default {
     lrmeasures: LRMeasures,
     enfmeasures: ENFMeasures,
     spa: Spa,
+    raps: RAPs,
     monitoring: Monitoring,
     endangered: EndAndThSp,
   	formsubmit: FormSubmit,
