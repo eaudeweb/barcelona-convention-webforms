@@ -761,10 +761,70 @@ var form = {
       },
 
       table_2: {
-      	 table_label: 'Table III',
-      	 articles: [
-      	 	{}
-      	 ]
+      	 table_label: 'Table III - LIST OF SPAs WITHIN THE PROTOCOL´S GEOGRAPHICAL COVERAGE',
+				     articles: [{
+			        article_title: {
+			        	label: "Name of the SPA",
+			        	value: 'please specify a name',
+			        	name: 'name',
+			        	type: 'text'
+			        },
+			        article_items: [{
+			          label: 'Date of establishment',
+			          type: 'date',
+			          name: 'date',
+			          value: '',
+			        }, {
+			          label: 'Category',
+			          type: 'text',
+			          name: 'category',
+			          value: '',
+			        }, {
+			          label: 'Jurisdiction',
+			          type: 'text',
+			          name: 'jurisdiction',
+			          value: '',
+			        }, {
+			          label: 'Coordinates',
+			          type: 'text',
+			          name: 'coordinates',
+			          value: '',
+			        }, {
+			          label: 'Surface (marine, terrestrial, wetland)',
+			          type: 'text',
+			          name: 'surface',
+			          value: '',
+			        }, {
+			          label: 'Main ecosystems, species and their habits',
+			          type: 'text',
+			          name: 'ecosystems',
+			          value: '',
+			        }, 
+			        {
+			          label: 'Management plan',
+			          type: 'multiple',
+			          name: 'management',
+			          value: [
+			          {
+			          		label: "Date of adoption",
+			          		value: '',
+			          		name: 'date',
+			          		type: 'date'
+			          },
+			          {
+			          	label: "No",
+			          	value: '',
+			          	type: 'number',
+			          	name: 'number' 
+			          },
+			          {
+			          	label: "Under development",
+			          	value: '',
+			          	type: 'text',
+			          	name: 'under_dev' 
+			          }]
+			        }]
+			      }]
       },
    
 
