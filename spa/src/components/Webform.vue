@@ -14,15 +14,15 @@
             <b-tab :title="doTitle(form.tab_4.label)" >
               <endangered tabId="4"  :info.sync="form.tab_4"></endangered>
             </b-tab>
-<!--             <b-tab :title="doTitle(form.tab_4.label)" >
-              <naps tabId="4" :info.sync="form.tab_4"></naps>
-            </b-tab>
             <b-tab :title="doTitle(form.tab_5.label)" >
               <monitoring tabId="5" :info.sync="form.tab_5"></monitoring>
             </b-tab>
-            <b-tab :title="doTitle(form.tab_6.label)" >
-              <enfmeasures tabId="6" :info.sync="form.tab_6"></enfmeasures> -->
+      <!--       <b-tab :title="doTitle(form.tab_4.label)" >
+              <naps tabId="4" :info.sync="form.tab_4"></naps>
             </b-tab>
+            <b-tab :title="doTitle(form.tab_6.label)" >
+              <enfmeasures tabId="6" :info.sync="form.tab_6"></enfmeasures>
+            </b-tab> -->
           </b-tabs>
         </b-form>
    			<formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
@@ -45,7 +45,7 @@ import EndAndThSp from './EndAndThSp.vue'
 
 // import RAPs from './RAPs.vue'
 // import NAPs from './NAPs.vue'
-// import Monitoring from './Monitoring.vue'
+import Monitoring from './Monitoring.vue'
 // import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
 
@@ -60,6 +60,7 @@ export default {
   components: {
     lrmeasures: LRMeasures,
     spa: Spa,
+    monitoring: Monitoring,
     endangered: EndAndThSp,
   	formsubmit: FormSubmit,
     validation: Validation

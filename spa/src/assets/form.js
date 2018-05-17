@@ -1631,7 +1631,6 @@ var form = {
             }]
         }]
       },
-
     }
   },
 
@@ -1639,7 +1638,267 @@ var form = {
 
 
 
+  tab_5: {
+    label: 'Part V: Monitoring',
+    collection_id: 409,
+    parent_collection_id: 4,
+    data: {
+      question: '',
+      table_label: 'Table X: Monitoring',
+      collection_id: 410,
+      parent_collection_id: 4,
+      articles: [{
+        article_title: '1. Implementation of quality status monitoring and Integrated Monitoring and Assessment (IMAP)',
+        article_items: [{
+          description: '',
+          collection_id: 4059,
+          parent_collection_id: 410,
+          items: [{
+              type: 'changes',
+              label: 'Changes in the information provided in the previous report',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: true },
+                { text: 'No', value: false }
+              ],
+              options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question'],
+              comments: ''
+            },
+            {
+              type: 'status',
+              label: 'Status',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under development', value: 3 },
+                { text: 'Not applicable', value: 4 }
+              ],
+              options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+              comments: ''
+            },
+            {
+              type: 'difficulties',
+              label: 'Difficulties/Challenges',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Policy framework', value: 1 },
+                { text: 'Regulatory framework', value: 2 },
+                { text: 'Financial resources', value: 3 },
+                { text: 'Administrative management', value: 4 },
+                { text: 'Technical Guidance Capabilities', value: 5 }
+              ],
+              options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+              comments: ''
+            }
 
+          ]
+        }]
+      }, {
+        article_title: '2. Ecological Objective-EO 1 Biodiversity:',
+        article_items: [{
+          description: '',
+          collection_id: 4060,
+          parent_collection_id: 410,
+          items: [{
+              type: 'changes',
+              label: 'Changes in the information provided in the previous report',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: true },
+                { text: 'No', value: false }
+              ],
+              options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question'],
+              comments: ''
+            },
+            {
+              type: 'status',
+              label: 'Status',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under development', value: 3 },
+                { text: 'Not applicable', value: 4 }
+              ],
+              options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+              comments: ''
+            },
+            {
+              type: 'difficulties',
+              label: 'Difficulties/Challenges',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Policy framework', value: 1 },
+                { text: 'Regulatory framework', value: 2 },
+                { text: 'Financial resources', value: 3 },
+                { text: 'Administrative management', value: 4 },
+                { text: 'Technical Guidance Capabilities', value: 5 }
+              ],
+              options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+              comments: ''
+            }
+
+          ]
+        }]
+      }, {
+        article_title: '3. Ecological Objective-EO 2 Non- indigenous species',
+        article_items: [{
+          description: '',
+          collection_id: 4061,
+          parent_collection_id: 410,
+          items: [{
+              type: 'changes',
+              label: 'Changes in the information provided in the previous report',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: true },
+                { text: 'No', value: false }
+              ],
+              options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question'],
+              comments: ''
+            },
+            {
+              type: 'status',
+              label: 'Status',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under development', value: 3 },
+                { text: 'Not applicable', value: 4 }
+              ],
+              options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+              comments: ''
+            },
+            {
+              type: 'difficulties',
+              label: 'Difficulties/Challenges',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Policy framework', value: 1 },
+                { text: 'Regulatory framework', value: 2 },
+                { text: 'Financial resources', value: 3 },
+                { text: 'Administrative management', value: 4 },
+                { text: 'Technical Guidance Capabilities', value: 5 }
+              ],
+              options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+              comments: ''
+            }
+
+          ]
+        }]
+      }, {
+        article_title: '4.Ecological Objective -EO 3 Harvest of commercially exploited fish and shellfish',
+        article_items: [{
+          description: '',
+          collection_id: 4062,
+          parent_collection_id: 410,
+          items: [{
+              type: 'changes',
+              label: 'Changes in the information provided in the previous report',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: true },
+                { text: 'No', value: false }
+              ],
+              options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question'],
+              comments: ''
+            },
+            {
+              type: 'status',
+              label: 'Status',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under development', value: 3 },
+                { text: 'Not applicable', value: 4 }
+              ],
+              options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+              comments: ''
+            },
+            {
+              type: 'difficulties',
+              label: 'Difficulties/Challenges',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Policy framework', value: 1 },
+                { text: 'Regulatory framework', value: 2 },
+                { text: 'Financial resources', value: 3 },
+                { text: 'Administrative management', value: 4 },
+                { text: 'Technical Guidance Capabilities', value: 5 }
+              ],
+              options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+              comments: ''
+            }
+
+          ]
+        }]
+      }, {
+        article_title: '5.Ecological Objective EO 6 Sea-floor integrity',
+        article_items: [{
+          description: '',
+          collection_id: 4062,
+          parent_collection_id: 410,
+          items: [{
+              type: 'changes',
+              label: 'Changes in the information provided in the previous report',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: true },
+                { text: 'No', value: false }
+              ],
+              options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question'],
+            },
+            {
+              type: 'status',
+              label: 'Status',
+              info: 'Please tick the box that applies',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under development', value: 3 },
+                { text: 'Not applicable', value: 4 }
+              ],
+              options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+              comments: ''
+            },
+            {
+              type: 'difficulties',
+              label: 'Difficulties/Challenges',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Policy framework', value: 1 },
+                { text: 'Regulatory framework', value: 2 },
+                { text: 'Financial resources', value: 3 },
+                { text: 'Administrative management', value: 4 },
+                { text: 'Technical Guidance Capabilities', value: 5 }
+              ],
+              options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+              comments: ''
+            }
+
+          ]
+        }]
+      }]
+    }
+  },
 
 
 
