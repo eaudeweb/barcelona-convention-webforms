@@ -335,8 +335,11 @@ var form = {
     label: 'Part II: Specially protected areas',
     data: {
       question: 'Question 2: Has the Party established specially protected areas and taken necessary measures for their protection and the implementation of their management plans?',
+       
+      table_1: {
+
        table_label: 'Table II – MEASURES TO PROTECT SPAs',
-      articles: [{
+      	articles: [{
           article_title: 'Article 3.1.a',
           article_items: [{
             description: 'Setting up of protected areas that come within the Protocol’s geographical coverage',
@@ -755,8 +758,19 @@ var form = {
           }]
         }
       ]
+      },
+
+      table_2: {
+      	 table_label: 'Table III',
+      	 articles: [
+      	 	{}
+      	 ]
+      },
+   
+
     }
   },
+
 }
 
 export default form
