@@ -11,7 +11,6 @@
 
           <b>{{info.data.table_label}}</b>
 
-
         </div>
 
         <div role="tablist">
@@ -21,7 +20,7 @@
               <div class="form-subsection" v-for="(item,item_index) in article.article_items">
                 <div class="mt-2">{{item.label}}</div>
                 <div class="form-fields">
-                  <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="`${item.type}`" :name="`${item.name}`" v-model="item.value"></b-form-input>
+                  <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.value"></b-form-input>
                 </div>
               </div>
             </b-collapse>

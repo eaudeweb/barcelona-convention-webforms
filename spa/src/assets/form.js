@@ -1640,19 +1640,13 @@ var form = {
 
   tab_5: {
     label: 'Part V: Monitoring',
-    collection_id: 409,
-    parent_collection_id: 4,
     data: {
       question: '',
       table_label: 'Table X: Monitoring',
-      collection_id: 410,
-      parent_collection_id: 4,
       articles: [{
         article_title: '1. Implementation of quality status monitoring and Integrated Monitoring and Assessment (IMAP)',
         article_items: [{
           description: '',
-          collection_id: 4059,
-          parent_collection_id: 410,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1701,8 +1695,6 @@ var form = {
         article_title: '2. Ecological Objective-EO 1 Biodiversity:',
         article_items: [{
           description: '',
-          collection_id: 4060,
-          parent_collection_id: 410,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1751,8 +1743,6 @@ var form = {
         article_title: '3. Ecological Objective-EO 2 Non- indigenous species',
         article_items: [{
           description: '',
-          collection_id: 4061,
-          parent_collection_id: 410,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1801,8 +1791,6 @@ var form = {
         article_title: '4.Ecological Objective -EO 3 Harvest of commercially exploited fish and shellfish',
         article_items: [{
           description: '',
-          collection_id: 4062,
-          parent_collection_id: 410,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1851,8 +1839,6 @@ var form = {
         article_title: '5.Ecological Objective EO 6 Sea-floor integrity',
         article_items: [{
           description: '',
-          collection_id: 4062,
-          parent_collection_id: 410,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1902,13 +1888,128 @@ var form = {
 
 
 
-
-
-
-
-
-
-
+  tab_6: {
+    label: 'Part VI: Enforcements measures',
+    data: {
+      question: 'Please insert the data or tick the appropriate cell or describe the enforcement measures taken',
+      table_label: 'Table XI: Enforcements measures',
+      articles: [{
+        article_title: 'Article 6.g: Prohibition and regulation of all activities involving taking of species (i.e. fishing, hunting, taking of animals and harvesting of plants and their destruction, as well as trade in animals, parts of animals, plants and parts of plants) which originate in specially protected areas',
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        },{
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      }, {
+        article_title: 'Article11.3.a: Controlling and, where appropriate, prohibiting the taking, possession or killing, the commercial trade, the transport and the exhibition for commercial purposes of protected species of fauna, particularly those listed in Annex II to the Protocol ',
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        },{
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      },
+      {
+        article_title: 'Article 11.3.b Controlling and where appropriate prohibiting the disturbance of protected wild fauna, particularly during the period of breeding, incubation, hibernation or migration ',
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        },{
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      },
+       {
+        article_title: 'Article11.5 Regulating and where appropriate prohibiting all forms of destruction and disturbance of protected species of flora, particularly those listed in Annex II to the Protocol ',
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        },{
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      }]
+    }
+  },
 
 }
 
