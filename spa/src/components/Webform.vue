@@ -11,6 +11,9 @@
             <b-tab :title="doTitle(form.tab_2.label)" >
               <spa tabId="2" :info.sync="form.tab_2"></spa>
             </b-tab>
+             <b-tab :title="doTitle(form.tab_3.label)" >
+              <spamis tabId="3" :info.sync="form.tab_3"></spamis>
+            </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
               <endangered tabId="4"  :info.sync="form.tab_4"></endangered>
             </b-tab>
@@ -44,7 +47,7 @@ import Spa from './Spa.vue'
 import EndAndThSp from './EndAndThSp.vue'
 
 import RAPs from './RAPs.vue'
-// import NAPs from './NAPs.vue'
+import SPAMIs from './SPAMIs.vue'
 import Monitoring from './Monitoring.vue'
 import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
@@ -61,6 +64,7 @@ export default {
     lrmeasures: LRMeasures,
     enfmeasures: ENFMeasures,
     spa: Spa,
+    spamis: SPAMIs,
     raps: RAPs,
     monitoring: Monitoring,
     endangered: EndAndThSp,

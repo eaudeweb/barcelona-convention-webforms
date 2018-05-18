@@ -1160,7 +1160,146 @@ var form = {
     }
   },
 
+  tab_3: {
+    label: 'Part III: SPECIALLY PROTECTED AREAS OF MEDITERRANEAN IMPORTANCE (SPAMIs)',
+    data: {
+      table_1: {
+        table_label: 'Table V – ESTABLISHMENT OF SPAMIs',
+        table_question: 'Question 3:  Has the Party established SPAMIs and taken necessary measures to implement management plans for such areas?',
+        articles: [{
+          article_title: 'Article 3.1.a',
+          article_items: [{
+            description: 'Setting up of Specially Protected Areas of Mediterranean Importance (SPAMIs)',
+            items: [{
+                type: 'changes',
+                label: 'Changes in the information provided in the previous report',
+                info: 'Please tick the box that applies',
+                selected: null,
+                options: [
+                  { text: 'Yes', value: true },
+                  { text: 'No', value: false }
+                ],
+                options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question']
+              },
+              {
+                type: 'status',
+                label: 'Status',
+                info: 'Please tick the box that applies',
+                selected: null,
+                options: [
+                  { text: 'Yes', value: 1 },
+                  { text: 'No', value: 2 },
+                  { text: 'Under development', value: 3 },
+                  { text: 'Not applicable', value: 4 }
+                ],
+                options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+                comments: ''
+              },
+              {
+                type: 'difficulties',
+                label: 'Difficulties/Challenges',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Policy framework', value: 1 },
+                  { text: 'Regulatory framework', value: 2 },
+                  { text: 'Financial resources', value: 3 },
+                  { text: 'Administrative management', value: 4 },
+                  { text: 'Technical Guidance Capabilities', value: 5 }
+                ],
+                options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+                comments: ''
+              }
+            ]
+          }]
+        }, {
+          article_title: 'Article 7.2.a',
+          article_items: [{
+            description: 'Elaboration and implementation of a management plan for each SPAMI',
+            items: [{
+                type: 'changes',
+                label: 'Changes in the information provided in the previous report',
+                info: 'Please tick the box that applies',
+                selected: null,
+                options: [
+                  { text: 'Yes', value: true },
+                  { text: 'No', value: false }
+                ],
+                options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question']
+              },
+              {
+                type: 'status',
+                label: 'Status',
+                info: 'Please tick the box that applies',
+                selected: null,
+                options: [
+                  { text: 'Yes', value: 1 },
+                  { text: 'No', value: 2 },
+                  { text: 'Under development', value: 3 },
+                  { text: 'Not applicable', value: 4 }
+                ],
+                options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
+                comments: ''
+              },
+              {
+                type: 'difficulties',
+                label: 'Difficulties/Challenges',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Policy framework', value: 1 },
+                  { text: 'Regulatory framework', value: 2 },
+                  { text: 'Financial resources', value: 3 },
+                  { text: 'Administrative management', value: 4 },
+                  { text: 'Technical Guidance Capabilities', value: 5 }
+                ],
+                options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
+                comments: ''
+              }
+            ]
+          }]
+        }]
+      },
 
+      table_3: {
+        table_label: 'Table VII – IMPLEMENTATION OF MANAGEMENT PLANS (Annex I to the Protocol)',
+        articles: [{
+          article_title: {
+            label: "Name of the SPA",
+            value: 'please specify a name',
+            name: 'name',
+            type: 'text'
+          },
+          article_items: [{
+            type: 'select',
+            label: 'Implementation of Protection measures',
+            info: 'Please select an option',
+            selected: null,
+            options: [
+              { text: 'Dumping and releases of wastes/other substances likely to impair the integrity of the SPAMI', value: 1 },
+              { text: 'Monitoring programme implemented', value: 2 },
+              { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
+              { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
+              { text: 'Activities in the zone surrounding the area', value: 5 },
+
+            ]
+          }, {
+            type: 'select',
+            label: 'Difficulties/Challenges',
+            info: 'Please tick all that apply',
+            selected: [],
+            options: [
+              { text: 'Policy framework', value: 1 },
+              { text: 'Regulatory framework', value: 2 },
+              { text: 'Financial resources', value: 3 },
+              { text: 'Administrative management', value: 4 },
+              { text: 'Technical Guidance Capabilities', value: 5 }
+            ],
+          }]
+        }]
+      },
+    }
+  },
 
 
 
@@ -5003,7 +5142,7 @@ var form = {
             ]
           }
         ]
-      },{
+      }, {
         article_title: 'Dark Habitats Action Plan (COP Decision IG 21/4)',
         article_items: [{
             description: 'Making a summary of knowledge of dark populations and their distribution around the Mediterranean in the form of a geo-referenced information system',
@@ -5572,7 +5711,7 @@ var form = {
             ]
           }
         ]
-      },{
+      }, {
         article_title: 'RAP for the conservation of Coralligenous and Other Calcareous Bio-concretions (COP Decision IG 22/12)',
         article_items: [{
           description: 'Improve habitat modeling methods could provide new predictive models on coralligenous distribution and guide cost-effective field surveys for data acquisition. Timeline: 2017',
