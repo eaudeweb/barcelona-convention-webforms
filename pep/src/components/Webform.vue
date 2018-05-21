@@ -10,7 +10,7 @@
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
-              <dummy tabId="2" :info.sync="form.tab_2"></dummy>
+              <opmeasures tabId="2" :info.sync="form.tab_2"></opmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
               <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
@@ -32,6 +32,7 @@
 import {getCompanyData} from '../api.js';
 
 import LRMeasures from './LRMeasures.vue'
+import OpMeasures from './OpMeasures.vue'
 import Dummy from './Dummy.vue'
 import Validation from './Validation.vue'
 
@@ -45,6 +46,7 @@ export default {
   name: 'Webform',
   components: {
     lrmeasures: LRMeasures,
+    opmeasures: OpMeasures,
     dummy: Dummy,
   	formsubmit: FormSubmit,
     validation: Validation
