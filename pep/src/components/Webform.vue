@@ -13,7 +13,7 @@
               <opmeasures tabId="2" :info.sync="form.tab_2"></opmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
-              <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
+              <polincidents tabId="3"  :info.sync="form.tab_3"></polincidents>
             </b-tab>
           </b-tabs>
         </b-form>
@@ -33,7 +33,7 @@ import {getCompanyData} from '../api.js';
 
 import LRMeasures from './LRMeasures.vue'
 import OpMeasures from './OpMeasures.vue'
-import Dummy from './Dummy.vue'
+import PolIncidents from './PolIncidents.vue'
 import Validation from './Validation.vue'
 
 
@@ -47,7 +47,7 @@ export default {
   components: {
     lrmeasures: LRMeasures,
     opmeasures: OpMeasures,
-    dummy: Dummy,
+    polincidents: PolIncidents,
   	formsubmit: FormSubmit,
     validation: Validation
 
