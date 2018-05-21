@@ -11,17 +11,20 @@
             <b-tab :title="doTitle(form.tab_2.label)" >
               <spa tabId="2" :info.sync="form.tab_2"></spa>
             </b-tab>
-<!--             <b-tab :title="doTitle(form.tab_3.label)" >
-              <raps tabId="3"  :info.sync="form.tab_3"></raps>
+             <b-tab :title="doTitle(form.tab_3.label)" >
+              <spamis tabId="3" :info.sync="form.tab_3"></spamis>
             </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
-              <naps tabId="4" :info.sync="form.tab_4"></naps>
+              <endangered tabId="4"  :info.sync="form.tab_4"></endangered>
             </b-tab>
             <b-tab :title="doTitle(form.tab_5.label)" >
               <monitoring tabId="5" :info.sync="form.tab_5"></monitoring>
             </b-tab>
             <b-tab :title="doTitle(form.tab_6.label)" >
-              <enfmeasures tabId="6" :info.sync="form.tab_6"></enfmeasures> -->
+              <enfmeasures tabId="6" :info.sync="form.tab_6"></enfmeasures>
+            </b-tab>
+            <b-tab :title="doTitle(form.tab_7.label)" >
+              <raps tabId="7" :info.sync="form.tab_7"></raps>
             </b-tab>
           </b-tabs>
         </b-form>
@@ -41,8 +44,10 @@ import {getCompanyData} from '../api.js';
 
 import LRMeasures from './LRMeasures.vue'
 import Spa from './Spa.vue'
+import EndAndThSp from './EndAndThSp.vue'
+
 import RAPs from './RAPs.vue'
-import NAPs from './NAPs.vue'
+import SPAMIs from './SPAMIs.vue'
 import Monitoring from './Monitoring.vue'
 import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
@@ -57,11 +62,12 @@ export default {
   name: 'Webform',
   components: {
     lrmeasures: LRMeasures,
-    spa: Spa,
-    raps: RAPs,
-    naps: NAPs,
-    monitoring: Monitoring,
     enfmeasures: ENFMeasures,
+    spa: Spa,
+    spamis: SPAMIs,
+    raps: RAPs,
+    monitoring: Monitoring,
+    endangered: EndAndThSp,
   	formsubmit: FormSubmit,
     validation: Validation
 
