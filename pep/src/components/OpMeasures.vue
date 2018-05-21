@@ -11,7 +11,6 @@
             
             <b>{{info.data.table_label}}</b>
 
-
           </div>
 
           <div role="tablist">
@@ -20,13 +19,13 @@
               <span class="text-muted" v-if="article.optional">Optional: </span>
               {{article.article_title}} <span style="float:right">▼</span>
             </h5>
-            <b-collapse class="mt-3"  :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
+            <b-collapse visible  class="mt-3"  :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
               <div class="form-section" v-for="(item_array,array_index) in article.article_items">
                 <h6><b>{{item_array.description}}</b></h6>
                 <div class="form-subsection" v-for="item in item_array.items">
                 <div class="mt-2">{{item.label}} <small class="muted">({{item.info}})</small></div>
                 <div class="form-fields">
-                  <div v-if="item.type === 'difficulties'">
+                  <div v-if="item.type === 'difficulties' || item.type === 'special'">
                     <b-form-group>
                       <b-form-checkbox-group stacked :id="`checkbox_${tabId}_${index}_${array_index}_${item.type}`" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options">
                       </b-form-checkbox-group>
