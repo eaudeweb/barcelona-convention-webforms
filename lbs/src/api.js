@@ -105,6 +105,9 @@ let testCompanyId = getParameterByName('testCompanyId');
         return fetch(url + "/xml");
     };
 
+    export function getCountry() {
+      return fetch(envelope + '/country_name')
+    }
 
     export function getURLlist() {
         return fetch(envelope + '/get_fgas_deliveries')

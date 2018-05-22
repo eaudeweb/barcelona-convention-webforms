@@ -32,6 +32,7 @@ export default {
 
   props: {
     info: null,
+    country: null,
   },
 
   updated() {
@@ -39,6 +40,7 @@ export default {
 
   created() {
     this.dataset = this.info
+    this.jsonemptyinstance.BC_LBS.country = this.country
     this.validate()
   },
 
@@ -51,6 +53,7 @@ export default {
               "@xmlns": "https://dd.info-rac.org/namespaces/9",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
               "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://biodiversity.eionet.europa.eu/schemas/barcelona_convention/lbs.xsd",
+              "country": null,
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
               "enforcementmeasuresdata": {Row:[]},
@@ -438,6 +441,13 @@ export default {
     info: {
       handler: function(old_val,new_val) {
         this.validate()
+      },
+      deep: true,
+      immediate: true,
+    },
+    country: {
+      handler: function(old_val,new_val) {
+        this.jsonemptyinstance.BC_LBS.country = new_val
       },
       deep: true,
       immediate: true,

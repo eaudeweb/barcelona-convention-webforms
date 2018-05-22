@@ -25,7 +25,7 @@
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
+   			<formsubmit :country="country" v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
         <div  v-if="validation_data.length" ref="validationContainer" class="validation closed">
                   <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn> 
                   <validation :validationData="validation_data"></validation>
@@ -37,7 +37,7 @@
 
 <script>
 
-import {getCompanyData, getInstance} from '../api.js';
+import {getCompanyData, getInstance, getCountry} from '../api.js';
 import prefilldata from '../assets/prefill.js';
 import LRMeasures from './LRMeasures.vue'
 import LBSProtocol from './LBSProtocol.vue'
@@ -73,7 +73,8 @@ export default {
     	visibleTab: false,
       form: {},
       validation_data: [],
-      button_text: 'Hide list'
+      button_text: 'Hide list',
+      country: '',
     }
   },
 
@@ -81,6 +82,9 @@ export default {
     this.form = form;
     getInstance().then((response) => {
       this.prefill(response.data)
+    })
+    getCountry().then((response) => {
+      this.country = response.data
     })
     // this.prefill(prefilldata)
   },
