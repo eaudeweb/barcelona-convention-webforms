@@ -111,6 +111,10 @@ let testCompanyId = getParameterByName('testCompanyId');
     }
 
 
+    export function getCountry() {
+      return fetch(envelope + '/country_name')
+    }
+
 
     export function uploadFile(file) {
       var uploadUri;

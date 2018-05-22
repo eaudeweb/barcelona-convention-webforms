@@ -21,7 +21,7 @@
        
                 <!-- <b-tab v-if="visibleTab" title="tabatabtab"></b-tab> -->
               </b-tabs>
-              <formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
+              <formsubmit :country="country" v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
           </b-form>
 <!--           <div  v-if="validation_data.length" ref="validationContainer" class="validation">
                   <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn> 
@@ -34,7 +34,7 @@
 
 <script>
 
-import {getCompanyData, getInstance} from '../api.js';
+import {getCompanyData, getInstance, getCountry} from '../api.js';
 import BilateralAgreement from './BilateralAgreement.vue'
 import LRMeasures from './LRMeasures.vue'
 import PolMeasures from './PolMeasures.vue'
@@ -42,7 +42,7 @@ import InfoAccess from './InfoAccess.vue'
 import FormSubmit from './FormSubmit.vue'
 import Validation from './Validation.vue'
 import {slugify} from '../utils.js';
-// import instance from '../assets/empty-instance.js';
+import instance from '../assets/empty-instance.js';
 
 import form from '../assets/form.js'
 
@@ -63,9 +63,11 @@ export default {
     return {
     	visibleTab: false,
       form: {},
-      prefilled: false,
+      prefilled: true,
       validation_data: [],
-      button_text: 'Hide list'
+      button_text: 'Hide list',
+      country: '',
+
     }
   },
 
@@ -73,6 +75,9 @@ export default {
     this.form = form;
     getInstance().then((response) => {
       this.prefill(response.data)
+    })
+    getCountry().then((response) => {
+      this.country = response.data
     })
   },
 
