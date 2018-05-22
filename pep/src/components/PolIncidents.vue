@@ -17,7 +17,6 @@
       </div>
        <!-- <div class="answer" v-if="!info.data.question.selected" style="position: relative;"> -->
        <div class="answer" style="position: relative;">
-
           <div class="table-head">
             <b>{{info.data.table_label}}</b>
           </div>
@@ -45,7 +44,9 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-select :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+                          <b-form-input v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
+                          <b-form-select v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`"  :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+
                       </div>
                   </div>
                 </b-collapse>
@@ -89,48 +90,177 @@ export default {
     },
 
   addSpa(){
-      let spa ={
-          article_title: {
-            label: "Name of the SPA",
-            value: 'please specify a name',
-            name: 'name',
-            type: 'text'
+      let incident ={
+        article_title: {
+          label: "Ship name or IMO number",
+          value: 'Ship name or IMO number',
+          name: 'name',
+          type: 'text'
+        },
+        article_items: [{
+            type: 'text',
+            name: 'latitude',
+            label: 'Latitude: decimal (36.406944) or DMS (36°24\'25”N)',
+            selected: '',
           },
-          article_items: [{
+          {
+            type: 'text',
+            name: 'longitude',
+            label: 'Longitude: decimal (4.646111) or DMS(4°38\'46”)',
+            selected: '',
+          },
+          {
+            type: 'text',
+            name: 'geo_info',
+            label: 'Alternative geographical information',
+            selected: '',
+            placeholder: 'e.g. closest shore location'
+          },
+          {
+            type: 'text',
+            name: 'country',
+            label: 'Country',
+            selected: '',
+          },
+          {
             type: 'select',
-            label: 'Implementation of Protection measures',
-            info: 'Please select an option',
+            label: 'Accident Type',
+            name: 'accident',
             selected: null,
             options: [
-              { text: 'Dumping and releases of wastes/other substances likely to impair the integrity of the SPAMI', value: 1 },
-              { text: 'Monitoring programme implemented', value: 2 },
-              { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
-              { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
-              { text: 'Activities in the zone surrounding the area', value: 5 },
+              { text: 'Please select one item', value: null },
+              { text: 'Blow-out', value: 1 },
+              { text: 'cargo transfer failure', value: 2 },
+              { text: 'contact', value: 3 },
+              { text: 'collision', value: 4 },
+              { text: 'engine or machine breakdown', value: 5 },
+              { text: 'fire or explosion', value: 6 },
+              { text: 'grounding', value: 7 },
+              { text: 'foundering', value: 8 },
+              { text: 'hull structural failure', value: 9 },
+              { text: 'installation structural failure', value: 10 },
+              { text: 'oil and gas leak', value: 11 },
+              { text: 'other', value: 12 }
+            ]
+          },
+          {
+            type: 'date',
+            name: 'date',
+            label: 'Date',
+            selected: '',
+          },
+          {
+            label: 'Pollution',
+            type: 'radio',
+            name: 'pollution',
+            selected: null,
+            options: [
+              { text: 'Yes', value: true },
+              { text: 'No', value: false }
+            ]
+          },
+          {
+            label: 'Pollution type',
+            type: 'radio',
+            name: 'pollution_type',
+            selected: null,
+            options: [
+              { text: 'MARPOL Annex I', value: 1 },
+              { text: 'MARPOL Annex II ', value: 2 },
+              { text: 'MARPOL Annex III ', value: 3 }
 
             ]
-          }, {
+          },
+          {
             type: 'select',
-            label: 'Difficulties/Challenges',
-            info: 'Please tick all that apply',
-            selected: [],
+            label: 'Ship Category',
+            name: 'ship_category',
+            selected: null,
             options: [
-              { text: 'Policy framework', value: 1 },
-              { text: 'Regulatory framework', value: 2 },
-              { text: 'Financial resources', value: 3 },
-              { text: 'Administrative management', value: 4 },
-              { text: 'Technical Guidance Capabilities', value: 5 }
-            ],
-          }]
-        }
-      this.info.data.table_3.articles.push(spa)
+              { text: 'Please select one item', value: null },
+              { text: 'passenger ship', value: 1 },
+              { text: 'fishing vessel', value: 2 },
+              { text: 'bulk carrier', value: 3 },
+              { text: 'oil tanker', value: 4 },
+              { text: 'general cargo ship', value: 5 },
+              { text: 'ro-ro cargo ship', value: 6 },
+              { text: 'container', value: 7 },
+              { text: 'chemical tanker', value: 8 },
+              { text: 'other', value: 9 }
+            ]
+          },
+          {
+            type: 'text',
+            name: 'ship_flag',
+            label: 'Ship flag',
+            selected: '',
+          },
+          {
+            type: 'text',
+            name: 'offshore_name_id',
+            label: 'Offshore installation name or ID number',
+            selected: '',
+          },
+          {
+            type: 'select',
+            label: 'Offshore installation type',
+            name: 'installation_type',
+            selected: null,
+            options: [
+              { text: 'Please select one item', value: null },
+              { text: 'floating concrete', value: 1 },
+              { text: 'gravity-based concrete', value: 2 },
+              { text: 'floating steel', value: 3 },
+              { text: 'fixed steel', value: 4 },
+              { text: 'subsea steel ', value: 5 },
+              { text: 'other', value: 6 }
+            ]
+          },
+          {
+            type: 'text',
+            name: 'oil_name_id',
+            label: 'Oil handling facility name or ID number',
+            selected: '',
+          },
+          {
+            type: 'select',
+            label: 'Oil handling facility type',
+            name: 'oil_type',
+            selected: null,
+            options: [
+              { text: 'Please select one item', value: null },
+              { text: 'Oil terminal', value: 1 },
+              { text: 'port', value: 2 },
+              { text: 'power station refinery', value: 3 }
+            ]
+          },
+          {
+            label: 'Have any actions been taken?',
+            type: 'radio',
+            name: 'actions',
+            selected: null,
+            options: [
+              { text: 'Yes', value: true },
+              { text: 'No', value: false }
+            ]
+          },
+
+          {
+            type: 'text',
+            name: 'actions_taken',
+            label: 'If yes, specify the actions taken',
+            selected: ''
+          }
+
+        ]
+      }
+      this.info.data.articles.push(incident)
     },
 
 
     removeSpa(index) {
       // console.log(this.info.data.table_2.articles[index])
-      console.log(index)
-      this.info.data.table_3.articles.splice(index, 1)
+      this.info.data.articles.splice(index, 1)
     },
   },
 }
