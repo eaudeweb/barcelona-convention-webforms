@@ -8,6 +8,15 @@
     top: 5px;
     right: 85px;" @click="exitForm">Back to envelope</b-btn>
 
+    <b-alert :show="dismissCountDown"
+       variant="success"
+       @dismissed="dismissCountDown=0"
+       @dismiss-count-down="countDownChanged">
+        <h3 style="color: black; font-weight: bold;">The report is saved</h3>
+      </b-alert>
+
+
+
   <!--   <b-btn @click="validate" variant="primary" type="submit" style="position: absolute;
     top: 5px;
     right: 85px;">Validate</b-btn> -->
@@ -60,7 +69,10 @@ export default {
               "lbsinventorydata": {Row:[]}
           }
       },
-     converted_xml: null
+     converted_xml: null,
+      dismissSecs: 2,
+      dismissCountDown: 0,
+      showDismissibleAlert: false,
     }
   },
 
@@ -98,6 +110,14 @@ export default {
       }
     },
 
+    showAlert () {
+      console.log('showingalert')
+      this.dismissCountDown = this.dismissSecs
+    },
+
+       countDownChanged (dismissCountDown) {
+      this.dismissCountDown = dismissCountDown
+    },
 
     matchInvField(label){
       switch (label) {
@@ -145,6 +165,7 @@ export default {
               "@xmlns": "https://dd.info-rac.org/namespaces/9",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
               "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd",
+              "country": null,
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
               "enforcementmeasuresdata": {Row:[]},
@@ -374,9 +395,11 @@ export default {
         }
       }
 
+      this.jsonemptyinstance.BC_LBS.country = this.country
       console.log(this.jsonemptyinstance)
 
       saveInstance(this.jsonemptyinstance)
+      this.showAlert();
     },
     validate() {
       this.validation = [];
@@ -457,4 +480,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.alert.alert-success {
+  position: fixed;
+  top:3rem;
+  left: 20%;
+  right: 20%;
+}
 </style>
