@@ -6,7 +6,10 @@
           
             <b-form validated novalidate @submit="onSubmit">
               <b-tabs card>
-                <b-tab :title="doTitle(form.tab_1.label)" active>
+                <b-tab title="Country" active>
+                  <countrytab tabId="0" :info.sync="form.country"></countrytab>
+                </b-tab>
+                <b-tab :title="doTitle(form.tab_1.label)">
                   <bilateralagreement tabId="1" :info.sync="form.tab_1"></bilateralagreement>
                 </b-tab>
                 <b-tab :title="doTitle(form.tab_2.label)" >
@@ -40,6 +43,8 @@ import LRMeasures from './LRMeasures.vue'
 import PolMeasures from './PolMeasures.vue'
 import InfoAccess from './InfoAccess.vue'
 import FormSubmit from './FormSubmit.vue'
+import Countrytab from './Country.vue'
+
 import Validation from './Validation.vue'
 import {slugify} from '../utils.js';
 import instance from '../assets/empty-instance.js';
@@ -56,7 +61,8 @@ export default {
     lrmeasures: LRMeasures,
     polmeasures: PolMeasures,
     infoaccess: InfoAccess,
-    validation: Validation
+    validation: Validation,
+    countrytab: Countrytab
   },
 
   data () {
