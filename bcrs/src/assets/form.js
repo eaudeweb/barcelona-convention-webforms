@@ -5,7 +5,7 @@ var form = {
           name: 'partyname',
           type: 'text',
           label: 'Contracting Party',
-          selected: '111',
+          selected: '',
         },
         {
           name: 'rep_period_from',
@@ -23,7 +23,7 @@ var form = {
           name: 'institution_name',
           type: 'text',
           label: 'Name of the institution/s responsible for the LBS Protocol',
-          selected: '222',
+          selected: '',
         },
         {
           name: 'officer_name',

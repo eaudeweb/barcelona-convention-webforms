@@ -5,7 +5,10 @@
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
-            <b-tab :title="doTitle(form.tab_1.label)" active>
+            <b-tab title="Country" active>
+              <countrytab tabId="0" :info.sync="form.country"></countrytab>
+            </b-tab>
+            <b-tab :title="doTitle(form.tab_1.label)">
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
@@ -46,6 +49,7 @@ import NAPs from './NAPs.vue'
 import Monitoring from './Monitoring.vue'
 import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
+import Countrytab from './Country.vue'
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -64,8 +68,8 @@ export default {
     monitoring: Monitoring,
     enfmeasures: ENFMeasures,
   	formsubmit: FormSubmit,
-    validation: Validation
-
+    validation: Validation,
+    countrytab: Countrytab
   },
 
   data () {
@@ -94,6 +98,17 @@ export default {
       this.validation_data = data
     },
     prefill(data){
+
+      
+
+      for(let table in this.form.country.tables) {
+          for (let value of this.form.country.tables[table]) {
+            value.selected = data.BC_BCRS.contacting_party[value.name]
+          }
+      }
+
+
+      
       if(data.BC_LBS.enforcementmeasuresdata){
         if(data.BC_LBS.enforcementmeasuresdata.Row && data.BC_LBS.enforcementmeasuresdata.Row.length && data.BC_LBS.enforcementmeasuresdata.Row.length > 1){
           for(let measures of data.BC_LBS.enforcementmeasuresdata.Row) {
