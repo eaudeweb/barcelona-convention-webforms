@@ -96,7 +96,16 @@ export default {
     },
     prefill(data) {
       let agremeents = []; 
-      
+
+
+
+      for(let table in this.form.country.tables) {
+          for (let value of this.form.country.tables[table]) {
+            value.selected = data.BC_BCRS.contacting_party[value.name]
+          }
+      }
+
+
       if(data.BC_BCRS.bilateralmultilateralagreementsdata) {
         if(data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length === undefined) { 
           agremeents.push({
