@@ -24,19 +24,18 @@
               </p>
             </div>
           </div>
-          <div class="table-body">
-            <div v-for="table in tables">
+          <div style="padding: 1rem" class="table-body">
+            <b-row style="margin-bottom:5px" v-for="table in tables">
               
-              <b-col lg="5">
-                <label>
+              <b-col style="text-align: right; font-weight: bold;" lg="6">
+                <label style="cursor: pointer;" :for="table.name">
                   {{table.label}}
-                  
                 </label>
               </b-col>
-              <b-col lg="5">
-                <b-input :type="table.type" v-model="table.selected"></b-input>
+              <b-col lg="6">
+                <b-input :id="table.name" :type="table.type" v-model="table.selected"></b-input>
               </b-col>
-            </div>
+            </b-row>
 
           </div>
 
