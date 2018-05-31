@@ -6,7 +6,7 @@
           
             <b-form validated novalidate @submit="onSubmit">
               <b-tabs card>
-                <b-tab title="Country" active>
+                <b-tab title="Reporting party" active>
                   <countrytab tabId="0" :info.sync="form.country"></countrytab>
                 </b-tab>
                 <b-tab :title="doTitle(form.tab_1.label)">
@@ -80,11 +80,13 @@ export default {
   created() {
     this.form = form;
     getInstance().then((response) => {
-      this.prefill(response.data)
+      let instance_data = response.data
+      getCountry().then((response) => {
+          this.country = response.data
+          this.prefill(instance_data)
+        })
     })
-    getCountry().then((response) => {
-      this.country = response.data
-    })
+
   },
 
   methods: {
@@ -102,6 +104,9 @@ export default {
       for(let table in this.form.country.tables) {
           for (let value of this.form.country.tables[table]) {
             value.selected = data.BC_BCRS.contacting_party[value.name]
+            if(value.name === 'partyname') {
+              value.selected = this.country;
+            }
           }
       }
 

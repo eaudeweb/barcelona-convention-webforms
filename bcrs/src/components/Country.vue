@@ -33,7 +33,12 @@
                 </label>
               </b-col>
               <b-col lg="6">
-                <b-input :id="table.name" :type="table.type" v-model="table.selected"></b-input>
+                <div v-if="table.name ==='partyname'">
+                  <b-input :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
+                </div>
+                <div v-else>
+                  <b-input :id="table.name" :type="table.type" v-model="table.selected"></b-input>
+                </div>
               </b-col>
             </b-row>
 
