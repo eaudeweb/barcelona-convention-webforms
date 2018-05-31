@@ -6,7 +6,7 @@
 
     <b-btn variant="danger" style="position: absolute;
     top: 5px;
-    right: 85px;" @click="exitForm">Back to envelope</b-btn>
+    right: -157px;" @click="exitForm">Back to envelope</b-btn>
 
     <b-alert :show="dismissCountDown"
        variant="success"
