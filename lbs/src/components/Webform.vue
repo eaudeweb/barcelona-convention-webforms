@@ -172,7 +172,7 @@ export default {
             let collection_id = agreement.collection_id
             let parent_collection_id = agreement.parent_collection_id
             for (let tab in this.form){
-              if(tab != 'tab_2' && tab != 'tab_6') {
+              if(tab != 'tab_2' && tab != 'tab_6' && tab != 'country' ) {
                 for(let article of this.form[tab].data.articles){
                   for(let article_item of article.article_items){
                     if(article_item.collection_id === collection_id) {
@@ -201,7 +201,7 @@ export default {
                 let difficulty = agreement.difficulty
                 for (let tab in this.form){
                   // console.log(tab)
-                  if(tab != 'tab_2' && tab != 'tab_6') {
+                  if(tab != 'tab_2' && tab != 'tab_6' && tab != 'country') {
                     for(let article of this.form[tab].data.articles){
                       for(let article_item of article.article_items){
                         if(article_item.collection_id === collection_id) {
