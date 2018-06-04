@@ -1,4 +1,147 @@
 var form = {
+  country: {
+    tables: {
+      table_1: [{
+        name: 'partyname',
+        type: 'text',
+        label: 'Contracting Party',
+        selected: '',
+      },
+        {
+          name: 'rep_period_from',
+          type: 'date',
+          label: 'Reporting period from D/M/Y',
+          selected: '',
+        },
+        {
+          name: 'rep_period_to',
+          type: 'date',
+          label: 'Reporting period to D/M/Y',
+          selected: '',
+        },
+        {
+          name: 'institution_name',
+          type: 'text',
+          label: 'Name of the institution/s responsible for the LBS Protocol',
+          selected: '',
+        },
+        {
+          name: 'officer_name',
+          type: 'text',
+          label: 'Name of the officer who is the focal point for the LBS Protocol',
+          selected: '',
+        },
+        {
+          name: 'mailing_address',
+          type: 'text',
+          label: 'Mailing address',
+          selected: '',
+        },
+        {
+          name: 'tel',
+          type: 'text',
+          label: 'Tel.',
+          selected: '',
+        },
+        {
+          name: 'fax',
+          type: 'text',
+          label: 'Fax',
+          selected: '',
+        },
+        {
+          name: 'email',
+          type: 'email',
+          label: 'Email',
+          selected: '',
+        }
+      ],
+
+      table_2: [{
+        name: 'contact_point',
+        type: 'text',
+        label: 'Contact point for the national report, if any',
+        selected: '',
+      },
+        {
+          name: 'instituion_full_name',
+          type: 'text',
+          label: 'Full name of the institution',
+          selected: '',
+        },
+        {
+          name: 'national_mailing_address',
+          type: 'text',
+          label: 'Mailing address',
+          selected: '',
+        },
+        {
+          name: 'national_tel',
+          type: 'text',
+          label: 'Tel.',
+          selected: '',
+        },
+        {
+          name: 'national_fax',
+          type: 'text',
+          label: 'Fax',
+          selected: '',
+        },
+        {
+          name: 'national_email',
+          type: 'email',
+          label: 'Email',
+          selected: '',
+        },
+        {
+          name: 'national_signature',
+          type: 'text',
+          label: 'Signature of the Protocol’s Focal Point',
+          selected: '',
+        },
+        {
+          name: 'national_date',
+          type: 'date',
+          label: 'Date of submission of the Report',
+          selected: '',
+        }
+      ],
+
+      table_3: [{
+        name: 'org_name',
+        type: 'text',
+        label: 'Full name of the institution',
+        selected: '',
+      },
+        {
+          name: 'org_contact_point',
+          type: 'text',
+          label: 'Name of the contact point (optional)',
+          selected: '',
+        },
+
+        {
+          name: 'org_tel',
+          type: 'text',
+          label: 'Tel.',
+          selected: '',
+        },
+        {
+          name: 'org_fax',
+          type: 'text',
+          label: 'Fax',
+          selected: '',
+        },
+        {
+          name: 'org_email',
+          type: 'email',
+          label: 'Email',
+          selected: '',
+        }
+      ]
+    }
+
+  },
   tab_1: {
     label: 'Part I: LEGAL AND REGULATORY MEASURES',
     data: {

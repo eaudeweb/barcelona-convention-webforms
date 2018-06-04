@@ -6,7 +6,10 @@
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
-            <b-tab :title="doTitle(form.tab_1.label)" active>
+            <b-tab title="Reporting party" active>
+              <countrytab tabId="0" :info.sync="form.country"></countrytab>
+            </b-tab>
+            <b-tab :title="doTitle(form.tab_1.label)">
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
@@ -37,6 +40,7 @@
 
 import {getCompanyData} from '../api.js';
 
+import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
 import Monitoring from './Monitoring.vue'
@@ -51,12 +55,12 @@ export default {
 
   name: 'Webform',
   components: {
+    countrytab: Countrytab,
     lrmeasures: LRMeasures,
     dummy: Dummy,
     monitoring: Monitoring,
   	formsubmit: FormSubmit,
     validation: Validation
-
   },
 
   data () {
@@ -64,7 +68,8 @@ export default {
     	visibleTab: false,
       form: {},
       validation_data: [],
-      button_text: 'Hide list'
+      button_text: 'Hide list',
+      country: '',
     }
   },
 
