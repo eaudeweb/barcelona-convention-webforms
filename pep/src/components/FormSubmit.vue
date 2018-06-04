@@ -48,7 +48,7 @@ export default {
           "BC_PEP": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -106,7 +106,7 @@ export default {
           "BC_PEP": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
