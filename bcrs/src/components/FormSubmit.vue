@@ -40,6 +40,8 @@ export default {
 
   props: {
   	info: null,
+    country: null,
+    
   },
 
   updated() {
