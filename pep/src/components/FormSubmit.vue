@@ -131,7 +131,6 @@ export default {
                 "org_tel":null,
                 "org_fax":null,
                 "org_email":null,
-
               },
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
