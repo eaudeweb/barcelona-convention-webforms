@@ -6,22 +6,25 @@
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
-            <b-tab :title="doTitle(form.tab_1.label)" active>
+            <b-tab title="Reporting party" active>
+              <countrytab tabId="0" :info.sync="form.country"></countrytab>
+            </b-tab>
+            <b-tab :title="doTitle(form.tab_1.label)">
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
               <opmeasures tabId="2" :info.sync="form.tab_2"></opmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
-              <polincidents tabId="3"  :info.sync="form.tab_3"></polincidents>
+              <polincidents tabId="3" :info.sync="form.tab_3"></polincidents>
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
+   			<formsubmit :info.sync="form"></formsubmit>
         <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-                  <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
-                  <validation :validationData="validation_data"></validation>
-          </div>
+            <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
+            <validation :validationData="validation_data"></validation>
+        </div>
       </b-card>
 
     </b-container>
@@ -35,6 +38,7 @@ import LRMeasures from './LRMeasures.vue'
 import OpMeasures from './OpMeasures.vue'
 import PolIncidents from './PolIncidents.vue'
 import Validation from './Validation.vue'
+import Countrytab from './Country.vue'
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -49,7 +53,9 @@ export default {
     opmeasures: OpMeasures,
     polincidents: PolIncidents,
   	formsubmit: FormSubmit,
-    validation: Validation
+    validation: Validation,
+    countrytab: Countrytab
+
 
   },
 
@@ -58,16 +64,23 @@ export default {
     	visibleTab: false,
       form: {},
       validation_data: [],
-      button_text: 'Hide list'
+      button_text: 'Hide list',
+      country: '',
+
     }
   },
 
+
   created() {
     this.form = form;
-  	// getCompanyData().then(response => {
-   //    console.log(response.data)
-   //    this.form.organization = response.data
-  	// })
+    // getInstance().then((response) => {
+    //   let instance_data = response.data
+    //   getCountry().then((response) => {
+    //       this.country = response.data
+    //       this.prefill(instance_data)
+    //     })
+    // })
+
   },
 
   methods: {

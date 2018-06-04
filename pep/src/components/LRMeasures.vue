@@ -8,10 +8,7 @@
         </div>
         <div class="answer">
           <div class="table-head">
-            
             <b>{{info.data.table_label}}</b>
-
-
           </div>
 
           <div role="tablist">
