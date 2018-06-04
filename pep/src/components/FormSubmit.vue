@@ -6,6 +6,14 @@
     <b-btn variant="danger" style="position: absolute;
     top: 5px;
     right: 85px;" @click="exitForm">Back to envelope</b-btn>
+
+    
+    <b-alert :show="dismissCountDown"
+       variant="success"
+       @dismissed="dismissCountDown=0"
+       @dismiss-count-down="countDownChanged">
+        <h3 style="color: black; font-weight: bold;">The report is saved</h3>
+      </b-alert>
   </div>
 </template>
 
@@ -72,12 +80,24 @@ export default {
               "pollincidents": {Row:[]},
           }
       },
+      dismissSecs: 2,
+      dismissCountDown: 0,
+      showDismissibleAlert: false,
     }
   },
 
   methods: {
     exitForm(){
       window.location.replace(envelope)
+    },
+
+       showAlert () {
+      console.log('showingalert')
+      this.dismissCountDown = this.dismissSecs
+    },
+
+       countDownChanged (dismissCountDown) {
+      this.dismissCountDown = dismissCountDown
     },
 
     doStuff(){
@@ -262,6 +282,10 @@ export default {
 
       console.log(this.jsonemptyinstance)
 
+       saveInstance(this.jsonemptyinstance)
+      this.showAlert();
+
+
 
     },
 
@@ -288,4 +312,11 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+.alert.alert-success {
+  position: fixed;
+  top:3rem;
+  left: 20%;
+  right: 20%;
+}
 </style>

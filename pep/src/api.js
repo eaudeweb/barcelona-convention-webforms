@@ -105,6 +105,9 @@ let testCompanyId = getParameterByName('testCompanyId');
         return fetch(url + "/xml");
     };
 
+    export function getCountry() {
+      return fetch(envelope + '/country_name')
+    }
 
     export function getURLlist() {
         return fetch(envelope + '/get_fgas_deliveries')
@@ -141,3 +144,17 @@ let testCompanyId = getParameterByName('testCompanyId');
         url: url
       })
     }
+
+export function saveXml2(form) {
+    const idc_url = 'https://idc.info-rac.org/al/barcelona/envwubaxw/saveXML'
+    return axios({
+      method: "post",
+      crossDomain: true,
+      url: idc_url,
+      auth: {
+        username: 'mbadescu',
+        password: '2GwxQbWh',
+      },
+      data: form,
+    })
+}

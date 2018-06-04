@@ -32,7 +32,7 @@
 
 <script>
 
-import {getCompanyData} from '../api.js';
+import {getInstance, getCountry} from '../api.js';
 
 import LRMeasures from './LRMeasures.vue'
 import OpMeasures from './OpMeasures.vue'
@@ -73,19 +73,23 @@ export default {
 
   created() {
     this.form = form;
-    // getInstance().then((response) => {
-    //   let instance_data = response.data
-    //   getCountry().then((response) => {
-    //       this.country = response.data
-    //       this.prefill(instance_data)
-    //     })
-    // })
+    getInstance().then((response) => {
+      let instance_data = response.data
+      getCountry().then((response) => {
+          this.country = response.data
+          this.prefill(instance_data)
+        })
+    })
 
   },
 
   methods: {
     getValidationData(data) {
       this.validation_data = data
+    },
+
+    prefill(data){
+      console.log(data)
     },
 
     doTitle(title) {
