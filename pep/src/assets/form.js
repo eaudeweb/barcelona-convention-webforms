@@ -143,12 +143,16 @@ var form = {
     }
 
   },
-  
+
   tab_1: {
     label: 'Part I: LEGAL AND REGULATORY MEASURES',
+    collection_id: 301,
+    parent_collection_id: 3,
     data: {
       question: 'Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Prevention and Emergency Protocol, as listed in Table I below?',
       table_label: 'Table I – LEGAL AND REGULATORY MEASURES',
+      collection_id: 302,
+      parent_collection_id: 301,
       articles: [{
         article_title: 'Article 4.1',
         article_items: [{
@@ -1288,9 +1292,13 @@ var form = {
   },
   tab_2: {
     label: 'Part II: POLLUTION PREPAREDNESS AND RESPONSE: OPERATIONAL MEASURES',
+    collection_id: 303,
+    parent_collection_id: 3,
     data: {
       question: '',
       table_label: 'Table II – OPERATIONAL MEASURES',
+      collection_id: 304,
+      parent_collection_id: 303,
       articles: [{
         article_title: 'Article 4',
         article_items: [{
@@ -1530,8 +1538,8 @@ var form = {
   },
   tab_3: {
     label: 'Part III: POLLUTION  INCIDENTS',
-    collection_id: 403,
-    parent_collection_id: 4,
+    collection_id: 305,
+    parent_collection_id: 3,
     data: {
       question: {
         label: 'Information on Pollution Incidents provided in MEDGIS- MAR for the current biennium',
@@ -1547,8 +1555,8 @@ var form = {
         options_description: ['If your answer is “Yes”, no need to fill out this table', 'If your answer is “No” please fill out this Table'],
       },
       table_label: 'Table III - POLLUTION INCIDENTS',
-      collection_id: 404,
-      parent_collection_id: 4,
+      collection_id: 306,
+      parent_collection_id: 305,
       articles: [{
         article_title: {
           label: "Ship name or IMO number",
