@@ -80,7 +80,7 @@
                </label>
 
                <b-input-group>
-                <b-form-input :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
+                <b-form-input required :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
                 <b-input-group-append>
                   <b-btn variant="danger" @click="removeSpa(index)"> X Remove spa</b-btn> 
                 </b-input-group-append>
@@ -91,19 +91,19 @@
                     <div v-if="(item.type === 'text' || item.type ==='date') && item.name != 'dateofadoption'">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
-                        <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                        <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                       </div>
                     </div>
                      <div v-else-if="item.type === 'radio'">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
-                        <b-form-radio-group stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" @change="updateAdoptionDateField($event)" :options="item.options" v-model="item.selected"></b-form-radio-group>
+                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" @change="updateAdoptionDateField($event)" :options="item.options" v-model="item.selected"></b-form-radio-group>
                       </div>
                     </div>
                     <div v-else-if="item.type === 'select'">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
-                        <b-form-select :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" :options="item.options" v-model="item.selected"></b-form-select>
+                        <b-form-select required :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" :options="item.options" v-model="item.selected"></b-form-select>
                       </div>
                     </div>
 
