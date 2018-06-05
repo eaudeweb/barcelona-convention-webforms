@@ -1,10 +1,10 @@
 <template>
   <div>
     <b-btn variant="success" style="position: absolute;
-    top: 5px;
+    top: -45px;
     right: 5px;" @click="doStuff">Save</b-btn>
     <b-btn variant="danger" style="position: absolute;
-    top: 5px;
+    top: -45px;
     right: 85px;" @click="exitForm">Back to envelope</b-btn>
   </div>
 </template>

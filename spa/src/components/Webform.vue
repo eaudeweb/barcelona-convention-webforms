@@ -1,7 +1,7 @@
 <template>
 	<b-container style="position: relative">
     <center><h1 class="mb-3 mt-2">SPA and BD Protocol</h1></center>
-    <center><h5><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL FOR THE SPECIALLY PROTECTED AREAS AND BIODIVERSITY </small></h5></center>
+    <center><h5 style="margin-bottom:3rem;" ><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL FOR THE SPECIALLY PROTECTED AREAS AND BIODIVERSITY </small></h5></center>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
