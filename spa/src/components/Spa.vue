@@ -225,68 +225,70 @@ export default {
 
     addSpa(){
       let spa = {
-              article_title: {
-                label: "Name of the SPA",
-                value: 'please specify a name',
-                name: 'name',
-                type: 'text'
-              },
-              article_items: [{
-                label: 'Date of establishment',
-                type: 'date',
-                name: 'date',
-                value: '',
-              }, {
-                label: 'Category',
-                type: 'text',
-                name: 'category',
-                value: '',
-              }, {
-                label: 'Jurisdiction',
-                type: 'text',
-                name: 'jurisdiction',
-                value: '',
-              }, {
-                label: 'Coordinates',
-                type: 'text',
-                name: 'coordinates',
-                value: '',
-              }, {
-                label: 'Surface (marine, terrestrial, wetland)',
-                type: 'text',
-                name: 'surface',
-                value: '',
-              }, {
-                label: 'Main ecosystems, species and their habits',
-                type: 'text',
-                name: 'ecosystems',
-                value: '',
-              }, 
-              {
-                label: 'Management plan',
-                type: 'multiple',
-                name: 'management',
-                value: [
-                {
-                    label: "Date of adoption",
-                    value: '',
-                    name: 'date',
-                    type: 'date'
+          article_title: {
+            label: "Name of the SPA",
+            selected: 'please specify a name',
+            name: 'name',
+            type: 'text'
+          },
+          article_items: [{
+              label: 'Date of establishment',
+              type: 'date',
+              name: 'date',
+              selected: '',
+            }, {
+              label: 'Category',
+              type: 'text',
+              name: 'category',
+              selected: '',
+            }, 
+            {
+                  type: 'select',
+                  label: 'Jurisdiction',
+                  name: 'jurisdiction',
+                  selected: null,
+                  options: [
+                    { text: 'Please select one item', value: null },
+                    { text: 'National', value: 1 },
+                    { text: 'Adiacent', value: 2 },
+                    { text: 'High seas', value: 3 }
+                  ]
                 },
-                {
-                  label: "No",
-                  value: '',
-                  type: 'number',
-                  name: 'number' 
-                },
-                {
-                  label: "Under development",
-                  value: '',
-                  type: 'text',
-                  name: 'under_dev' 
-                }]
-              }]
-            }
+            {
+              label: 'Coordinates',
+              type: 'text',
+              name: 'coordinates',
+              selected: '',
+            }, {
+              label: 'Surface (marine, terrestrial, wetland)',
+              type: 'text',
+              name: 'surface',
+              selected: '',
+            }, {
+              label: 'Main ecosystems, species and their habits',
+              type: 'text',
+              name: 'ecosystems',
+              selected: '',
+            },
+             {
+              type: 'radio',
+              label: 'Management plan',
+              name: 'management',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under Development', value: 3 }
+              ]
+            },
+            {
+              label: 'Date of adoption',
+              type: 'date',
+              name: 'dateofadoption',
+              selected: '',
+            } 
+          ]
+        }
 
       this.info.data.table_2.articles.push(spa)
     },
