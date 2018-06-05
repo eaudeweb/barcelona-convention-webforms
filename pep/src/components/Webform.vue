@@ -226,9 +226,9 @@ export default {
   top: 0;
   background: white;
   border: 1px solid #aaa;
-      padding: 1rem;
-    box-shadow: 1px 1px 3px #aaa;
-    z-index: 1;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px #aaa;
+  z-index: 1;
   transition: all 300ms;
 }
 
@@ -237,7 +237,7 @@ export default {
 }
 
 .validation-toggle {
-      position: absolute;
+    position: absolute;
     right: 100%;
     top: -1px;
     border-top-right-radius: 0;
