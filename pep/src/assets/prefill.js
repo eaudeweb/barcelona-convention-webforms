@@ -507,8 +507,8 @@
 		"pollincidents": {
 			"Row": [
 				{
-					"collection_id": null,
-					"parent_collection_id": null,
+					"collection_id": 306,
+					"parent_collection_id": 305,
 					"description": null,
 					"ship_name": "sgasgasg",
 					"latitude": "5asgasg",

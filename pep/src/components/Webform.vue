@@ -39,7 +39,7 @@ import OpMeasures from './OpMeasures.vue'
 import PolIncidents from './PolIncidents.vue'
 import Validation from './Validation.vue'
 import Countrytab from './Country.vue'
-// import instance from '../assets/empty-instance.js';
+import incidentJson from '../assets/incident.js';
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -163,6 +163,29 @@ export default {
 
           }
       }
+
+      var question = this.form.tab_3.data.question.selected
+      question = false
+      if(question == false){
+          if(data.BC_PEP.pollincidents) {
+
+              if(data.BC_PEP.pollincidents.Row.length) {
+                for(let incident of data.BC_PEP.pollincidents.Row) {
+
+                  // console.log(incident)
+                    // let collection_id = agreement.collection_id
+                    // let difficulty = agreement.difficulty
+                    let incidentobj = incidentJson
+                    incidentobj.article_title.value = incident.ship_name;
+                  for(let article of incidentobj.article_items){
+                      article.selected = incident[article.name]
+                  }
+                  this.form.tab_3.data.articles.push(incidentobj)
+              }
+          }
+        }
+      }
+
 
       this.prefilled = true;
 
