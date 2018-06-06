@@ -31,7 +31,8 @@
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
+        <formsubmit :country.sync="country" :info.sync="form"></formsubmit>
+
         <div  v-if="validation_data.length" ref="validationContainer" class="validation">
                   <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
                   <validation :validationData="validation_data"></validation>
@@ -43,7 +44,8 @@
 
 <script>
 
-import {getCompanyData} from '../api.js';
+import {getInstance, getCountry} from '../api.js';
+
 
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
@@ -102,6 +104,17 @@ export default {
   methods: {
     getValidationData(data) {
       this.validation_data = data
+    },
+
+    prefill(data) {
+     for(let table in this.form.country.tables) {
+          for (let value of this.form.country.tables[table]) {
+            value.selected = data.BC_SPA.contacting_party[value.name]
+            if(value.name === 'partyname') {
+              value.selected = this.country;
+            }
+          }
+      }
     },
 
     doTitle(title) {

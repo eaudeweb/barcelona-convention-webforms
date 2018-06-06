@@ -78,6 +78,7 @@ export default {
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
               "pollincidents": {Row:[]},
+              "pollincidentsInfo": null,
           }
       },
       dismissSecs: 2,
@@ -135,6 +136,7 @@ export default {
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
               "pollincidents": {Row:[]},
+              "pollincidentsInfo": null,
           }
       }
 
@@ -235,6 +237,9 @@ export default {
 
 
 
+      let showtab3 = this.dataset.tab_3.data.question.selected;
+
+      this.jsonemptyinstance.BC_PEP.pollincidentsInfo = showtab3
 
       let tab_3 = this.dataset.tab_3.data;
       for (let article of tab_3.articles) {

@@ -20,7 +20,7 @@
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit :info.sync="form"></formsubmit>
+   			<formsubmit :country.sync="country" :info.sync="form"></formsubmit>
         <div  v-if="validation_data.length" ref="validationContainer" class="validation">
             <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
             <validation :validationData="validation_data"></validation>
@@ -103,8 +103,6 @@ export default {
       }
 
      if(data.BC_PEP.measuresdata.Row.length) {
-
-
             for(let agreement of data.BC_PEP.measuresdata.Row) {
               // console.log(agreement.collection_id)
                 let collection_id = agreement.collection_id
@@ -164,9 +162,9 @@ export default {
           }
       }
 
-      var question = this.form.tab_3.data.question.selected
-      question = false
-      if(question == false){
+      var question = data.BC_PEP.pollincidentsInfo
+      this.form.tab_3.data.question.selected = question;
+
           if(data.BC_PEP.pollincidents) {
 
               if(data.BC_PEP.pollincidents.Row.length) {
@@ -182,10 +180,16 @@ export default {
                   }
                   this.form.tab_3.data.articles.push(incidentobj)
               }
+          } else if(data.BC_PEP.pollincidents.Row) {
+                    let incident = data.BC_PEP.pollincidents.Row;
+                    let incidentobj = incidentJson
+                    incidentobj.article_title.value = incident.ship_name;
+                  for(let article of incidentobj.article_items){
+                      article.selected = incident[article.name]
+                  }
+                  this.form.tab_3.data.articles.push(incidentobj)
           }
         }
-      }
-
 
       this.prefilled = true;
 
