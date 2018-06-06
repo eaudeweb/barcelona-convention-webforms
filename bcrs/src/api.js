@@ -18,7 +18,10 @@ function post(path, data) {
 // request parameters
 let isTestSession = true;
 
-
+console.log(process.env.NODE_ENV)
+if(process.env.NODE_ENV === 'production') {
+  isTestSession = false;  
+}
 
 
 let baseUri = getParameterByName('base_uri');
@@ -56,39 +59,6 @@ let testCompanyId = getParameterByName('testCompanyId');
     }
 
 
-    // export function getCountryData(companyId) {
-
-    //   if(isTestSession) {
-    //     var countryData = {
-    //       country: '',
-    //       reporting_period: {
-    //         from: null,
-    //         to: null
-    //       },
-    //       focal_point: '',
-    //       address: '',
-    //       tel: '',
-    //       tax: '',
-    //       email:'',
-    //       submission_date: null,
-    //     }
-    //     return new Promise((resolve, reject) => {
-    //       var response = {data: countryData}  
-    //       resolve(response);
-    //     });
-
-    //   } else {
-
-    //     let url;
-    //     // https://bdr-test.eionet.europa.eu/european_registry/organisation?id=9989
-    //     let webqUri = getWebQUrl('/restProxy');
-    //       url = webqUri + "&uri=" + encodeURIComponent(getDomain(envelope) + "/european_registry/organisation?id=" + companyId);
-    //       return fetch(url);
-    //   }
-
-    // };
-
-
     export function saveInstance(data) {
       let url = getWebQUrl("/saveXml");
       return post(url, data);
@@ -97,7 +67,12 @@ let testCompanyId = getParameterByName('testCompanyId');
 
     export function getInstance() {
       let url = null;
+      if(isTestSession){
+        url = "http://localhost:8080/static/prefill.json"
+      } else {
+        url = null;
         url = getWebQUrl("/download/converted_user_file");
+      }
         return fetch(url);
     };
 
@@ -105,15 +80,18 @@ let testCompanyId = getParameterByName('testCompanyId');
         return fetch(url + "/xml");
     };
 
+    export function getCountry() {
+      if(isTestSession){
+        return fetch('http://localhost:8080/static/country.html')
+      }else {
+        return fetch(envelope + '/country_name')
+      }
+    }
 
     export function getURLlist() {
         return fetch(envelope + '/get_fgas_deliveries')
     }
 
-
-    export function getCountry() {
-      return fetch(envelope + '/country_name')
-    }
 
 
     export function uploadFile(file) {
@@ -146,16 +124,3 @@ let testCompanyId = getParameterByName('testCompanyId');
       })
     }
 
-export function saveXml2(form) {
-    const idc_url = 'https://idc.info-rac.org/al/barcelona/envwubaxw/saveXML'
-    return axios({
-      method: "post",
-      crossDomain: true,
-      url: idc_url,
-      auth: {
-        username: 'mbadescu',
-        password: '2GwxQbWh',
-      },
-      data: form,
-    })
-}

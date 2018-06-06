@@ -89,10 +89,14 @@ export default {
 
   created() {
     this.form = form;
-  	// getCompanyData().then(response => {
-   //    console.log(response.data)
-   //    this.form.organization = response.data
-  	// })
+    getInstance().then((response) => {
+      let instance_data = response.data
+      getCountry().then((response) => {
+          this.country = response.data
+          this.prefill(instance_data)
+        })
+    })
+
   },
 
   methods: {

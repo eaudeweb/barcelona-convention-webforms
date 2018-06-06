@@ -124,16 +124,3 @@ let testCompanyId = getParameterByName('testCompanyId');
       })
     }
 
-export function saveXml2(form) {
-    const idc_url = 'https://idc.info-rac.org/al/barcelona/envwubaxw/saveXML'
-    return axios({
-      method: "post",
-      crossDomain: true,
-      url: idc_url,
-      auth: {
-        username: 'mbadescu',
-        password: '2GwxQbWh',
-      },
-      data: form,
-    })
-}
