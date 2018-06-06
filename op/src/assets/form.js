@@ -144,9 +144,13 @@ var form = {
   },
   tab_1: {
     label: 'Part I: LEGAL AND REGULATORY MEASURES',
+    collection_id: 601,
+    parent_collection_id: 6,
     data: {
       question: 'Question 1: Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Offshore Protocol as listed in Table I?',
       table_label: 'Table I – LEGAL AND REGULATORY MEASURES',
+      collection_id: 602,
+      parent_collection_id: 601,
       articles: [{
         article_title: 'Articles 4., 5 and 6 Annex IV Granting of authorizations',
         article_items: [{
@@ -919,9 +923,13 @@ var form = {
   },
   tab_2: {
     label: 'Part II: PERMITS AND QUANTITIES',
+    collection_id: 603,
+    parent_collection_id: 6,
     data: {
       question: '',
       table_label: 'Table II – Biennial Summary of Permits and Quantities',
+      collection_id: 604,
+      parent_collection_id: 603,
       articles: [{
           article_title: 'TODO',
           article_items: [{
@@ -974,16 +982,24 @@ var form = {
   },
   tab_3: {
     label: 'Part III: INVENTORY OF OFFSHORE INSTALLATIONS',
+    collection_id: 605,
+    parent_collection_id: 6,
     data: {
       question: '',
       table_label: 'Table III – INVENTORY OF OFFSHORE INSTALLATIONS INCLUDING DISUSED INSTALLATIONS',
+      collection_id: 606,
+      parent_collection_id: 605,
     }
   },
   tab_4: {
     label: 'Part IV: ENFORCEMENT',
+    collection_id: 607,
+    parent_collection_id: 6,
     data: {
       question: '',
       table_label: 'Table IV – ENFORCEMENT MEASURES',
+      collection_id: 608,
+      parent_collection_id: 607,
     }
   }
 }
