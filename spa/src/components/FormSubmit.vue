@@ -71,6 +71,11 @@ export default {
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
               "pollincidents": {Row:[]},
+              "management_plans_imp": {Row:[]},
+              "spa": {Row:[]},
+              "measures_to_protect_species":{Row:[]},
+              "enf_measures":{Row:[]}
+
           }
       },
       dismissSecs: 2,
@@ -107,6 +112,349 @@ export default {
           }
       }
 
+
+      let tab_1 = this.dataset.tab_1.data;
+      for (let article of tab_1.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+
+
+
+      let tab_2_1 = this.dataset.tab_2.data.table_1;
+      for (let article of tab_2_1.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+
+
+      let tab_2_3 = this.dataset.tab_2.data.table_3;
+      for (let article of tab_2_3.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+
+
+      let tab_3_1 = this.dataset.tab_3.data.table_1;
+      for (let article of tab_3_1.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+
+      let tab_4_1 = this.dataset.tab_4.data.table_1;
+      for (let article of tab_4_1.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+      let tab_5 = this.dataset.tab_5.data;
+      for (let article of tab_5.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+      let tab_7 = this.dataset.tab_5.data;
+      for (let article of tab_7.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_SPA.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
+                  }
+                }
+
+              }
+            }
+          this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
+        }
+      }
+
+
+
+
+      let tab_2_2 = this.dataset.tab_2.data.table_2;
+      for (let article of tab_2_2.articles) {
+        let collection_id = article.collection_id || null;
+        let parent_collection_id = article.parent_collection_id || null
+        let description = article.description || null
+        let spa_name = article.article_title.selected || null
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          description: description,
+          spa_name: spa_name,
+          date: null,
+          category: null,
+          jurisdiction: null,
+          coordinates: null,
+          surface: null,
+          ecosystems: null,
+          management: null,
+          dateofadoption: null
+        }
+        for (let article_item of article.article_items){
+          // let row = {};
+          // console.log(article_item)
+          row[article_item.name] = article_item.selected
+
+        }
+
+        this.jsonemptyinstance.BC_SPA.pollincidents.Row.push(row);
+
+      }
+      
+
+
+
+
+
+
       console.log(this.jsonemptyinstance)
 
       this.showAlert();
@@ -121,7 +469,7 @@ export default {
     watch: {
     info: {
       handler: function(old_val,new_val) {
-        this.validate()
+        // this.validate()
       },
       deep: true,
       immediate: true,
