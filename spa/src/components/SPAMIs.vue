@@ -96,7 +96,19 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-select :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+
+
+
+                          <b-form-checkbox-group v-if="item.type ==='checkbox'" stacked  :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="`radio_${tabId}_${index}_${item_index}_${item.name}_${item.name}`" v-model="item.selected" :options="item.options">
+                          </b-form-checkbox-group>
+                          <b-form-select v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+
+
+
+
+                  
+
+
                       </div>
                   </div>
                 </b-collapse>
@@ -161,7 +173,7 @@ export default {
 
             ]
           }, {
-            type: 'select',
+            type: 'checkbox',
             label: 'Difficulties/Challenges',
             info: 'Please tick all that apply',
             selected: [],

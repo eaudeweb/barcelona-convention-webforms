@@ -1418,6 +1418,7 @@ var form = {
             type: 'select',
             label: 'Implementation of Protection measures',
             info: 'Please select an option',
+            name: 'protection_measures',
             selected: null,
             options: [
               { text: 'Dumping and releases of wastes/other substances likely to impair the integrity of the SPAMI', value: 1 },
@@ -1428,9 +1429,11 @@ var form = {
 
             ]
           }, {
-            type: 'select',
+            type: 'checkbox',
             label: 'Difficulties/Challenges',
             info: 'Please tick all that apply',
+            name: 'difficulties',
+
             selected: [],
             options: [
               { text: 'Policy framework', value: 1 },
@@ -1884,6 +1887,7 @@ var form = {
           article_items: [{
             items: [{
                 type: 'checkbox',
+                name:'posidonia_oceania',
                 label: 'Posidonia Oceanica',
                 info: 'Please tick all that apply',
                 selected: [],
@@ -1899,6 +1903,7 @@ var form = {
               {
                 type: 'checkbox',
                 label: 'Xiphias gladius',
+                name: 'xiphias_gladius',
                 info: 'Please tick all that apply',
                 selected: [],
                 options: [

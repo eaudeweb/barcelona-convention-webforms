@@ -445,12 +445,96 @@ export default {
 
         }
 
-        this.jsonemptyinstance.BC_SPA.pollincidents.Row.push(row);
+        this.jsonemptyinstance.BC_SPA.spa.Row.push(row);
 
       }
       
 
 
+
+
+
+
+      let tab_3_3 = this.dataset.tab_3.data.table_3;
+      for (let article of tab_3_3.articles) {
+        let collection_id = article.collection_id || null;
+        let parent_collection_id = article.parent_collection_id || null
+        let description = article.description || null
+        let spa_name = article.article_title.selected || null
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          description: description,
+          spa_name: spa_name,
+          protection_measures: null,
+          difficulties: null
+        }
+        for (let article_item of article.article_items){
+          // let row = {};
+          // console.log(article_item)
+          row[article_item.name] = article_item.selected
+
+        }
+
+        this.jsonemptyinstance.BC_SPA.management_plans_imp.Row.push(row);
+
+      }
+      
+
+
+
+
+      let tab_4_2 = this.dataset.tab_4.data.table_2;
+      for (let article of tab_4_2.articles) {
+        let collection_id = article.collection_id || null;
+        let parent_collection_id = article.parent_collection_id || null
+        let description = article.description || null
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          description: description,
+          posidonia_oceania: null,
+          xiphias_gladius: null
+        }
+        for (let article_item of article.article_items){
+          // let row = {};
+          // console.log(article_item)
+          row[article_item.name] = article_item.selected
+
+        }
+
+        this.jsonemptyinstance.BC_SPA.measures_to_protect_species.Row.push(row);
+
+      }
+      
+
+
+      let tab_6 = this.dataset.tab_6.data;
+      for (let article of tab_4_2.articles) {
+        let collection_id = article.collection_id || null;
+        let parent_collection_id = article.parent_collection_id || null
+        let description = article.description || null
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          description: description,
+          inspections: null,
+          non_compliance: null,
+          total_amount: null,
+          remarks: null,
+
+        }
+        for (let article_item of article.article_items){
+          // let row = {};
+          // console.log(article_item)
+          row[article_item.name] = article_item.selected
+
+        }
+
+        this.jsonemptyinstance.BC_SPA.enf_measures.Row.push(row);
+
+      }
+      
 
 
 
