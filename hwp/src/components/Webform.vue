@@ -13,7 +13,7 @@
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
-              <dummy tabId="2" :info.sync="form.tab_2"></dummy>
+              <waste tabId="2" :info.sync="form.tab_2"></waste>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
               <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
@@ -44,6 +44,7 @@ import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
 import Validation from './Validation.vue'
+import Wastes from './HazardousWastesGeneration.vue'
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -58,7 +59,8 @@ export default {
     lrmeasures: LRMeasures,
     dummy: Dummy,
   	formsubmit: FormSubmit,
-    validation: Validation
+    validation: Validation,
+    waste: Wastes,
   },
 
   data () {
