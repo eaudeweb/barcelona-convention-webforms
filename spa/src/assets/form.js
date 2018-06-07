@@ -2187,27 +2187,27 @@ var form = {
             label: 'Number of inspections',
             type: 'number',
             name: 'inspections',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of non-compliance cases',
             type: 'number',
             name: 'non_compliance',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of fines issued and total amount',
             type: 'number',
             name: 'total_amount',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of other enforcement measures',
             type: 'number',
             name: 'enforcement',
-            value: '',
+            selected: '',
           }, {
             label: 'Remarks/Comments',
             type: 'text',
             name: 'remarks',
-            value: '',
+            selected: '',
           }]
         }, {
           article_title: 'Article11.3.a: Controlling and, where appropriate, prohibiting the taking, possession or killing, the commercial trade, the transport and the exhibition for commercial purposes of protected species of fauna, particularly those listed in Annex II to the Protocol ',
@@ -2215,27 +2215,27 @@ var form = {
             label: 'Number of inspections',
             type: 'number',
             name: 'inspections',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of non-compliance cases',
             type: 'number',
             name: 'non_compliance',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of fines issued and total amount',
             type: 'number',
             name: 'total_amount',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of other enforcement measures',
             type: 'number',
             name: 'enforcement',
-            value: '',
+            selected: '',
           }, {
             label: 'Remarks/Comments',
             type: 'text',
             name: 'remarks',
-            value: '',
+            selected: '',
           }]
         },
         {
@@ -2244,27 +2244,27 @@ var form = {
             label: 'Number of inspections',
             type: 'number',
             name: 'inspections',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of non-compliance cases',
             type: 'number',
             name: 'non_compliance',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of fines issued and total amount',
             type: 'number',
             name: 'total_amount',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of other enforcement measures',
             type: 'number',
             name: 'enforcement',
-            value: '',
+            selected: '',
           }, {
             label: 'Remarks/Comments',
             type: 'text',
             name: 'remarks',
-            value: '',
+            selected: '',
           }]
         },
         {
@@ -2273,27 +2273,27 @@ var form = {
             label: 'Number of inspections',
             type: 'number',
             name: 'inspections',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of non-compliance cases',
             type: 'number',
             name: 'non_compliance',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of fines issued and total amount',
             type: 'number',
             name: 'total_amount',
-            value: '',
+            selected: '',
           }, {
             label: 'Number of other enforcement measures',
             type: 'number',
             name: 'enforcement',
-            value: '',
+            selected: '',
           }, {
             label: 'Remarks/Comments',
             type: 'text',
             name: 'remarks',
-            value: '',
+            selected: '',
           }]
         }
       ]
