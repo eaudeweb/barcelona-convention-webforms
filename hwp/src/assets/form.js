@@ -913,6 +913,8 @@ var form = {
   tab_2: {
     label: 'Part II: GENERATION OF HAZARDOUS WASTES AND OTHER WASTES',
     data: {
+      table_1: {
+
       question: '',
       table_label: 'Table II – Wastes other than those listed in Annex I to the Protocol considered or defined as hazardous wastes under domestic legislation (Article 4 1)',
          articles: [{
@@ -940,6 +942,1840 @@ var form = {
           }]
         }
       ]
+      },
+    table_2: {
+      question: 'Total amount of hazardous wastes and other wastes generated (metric tonnes) ',
+      table_label: 'Table III - Total amount of generation of hazardous wastes and other wastes (Article 8.2)',
+         articles: [{
+          article_title: 'Total amount of hazardous wastes under Article 3.1.a (Annex IA: Y1- Y45) generated',
+          article_items: [{
+            label: '1995',
+            type: 'text',
+            name: '1995',
+            selected: '',
+          }, {
+            label: '1996',
+            type: 'text',
+            name: '1996',
+            selected: '',
+          }, {
+            label: '1997',
+            type: 'text',
+            name: '1997`',
+            selected: '',
+          }, {
+            label: '1998',
+            type: 'text',
+            name: '1998',
+            selected: '',
+          }, {
+            label: '1999',
+            type: 'text',
+            name: '1999',
+            selected: '',
+          }, {
+            label: '2000',
+            type: 'text',
+            name: '2000',
+            selected: '',
+          }, {
+            label: '2001',
+            type: 'text',
+            name: '2001',
+            selected: '',
+          }, {
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2004',
+            type: 'text',
+            name: '2004',
+            selected: '',
+          }]
+        },
+        {
+          article_title: 'Total amount of other wastes under Article 3.1.a (Annex IB:Y46-Y47) generated',
+          article_items: [{
+            label: '1995',
+            type: 'text',
+            name: '1995',
+            selected: '',
+          }, {
+            label: '1996',
+            type: 'text',
+            name: '1996',
+            selected: '',
+          }, {
+            label: '1997',
+            type: 'text',
+            name: '1997`',
+            selected: '',
+          }, {
+            label: '1998',
+            type: 'text',
+            name: '1998',
+            selected: '',
+          }, {
+            label: '1999',
+            type: 'text',
+            name: '1999',
+            selected: '',
+          }, {
+            label: '2000',
+            type: 'text',
+            name: '2000',
+            selected: '',
+          }, {
+            label: '2001',
+            type: 'text',
+            name: '2001',
+            selected: '',
+          }, {
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2004',
+            type: 'text',
+            name: '2004',
+            selected: '',
+          }]
+        },
+        {
+          article_title: 'Total amount of hazardous wastes under Article 3.1.b generated',
+          article_items: [{
+            label: '1995',
+            type: 'text',
+            name: '1995',
+            selected: '',
+          }, {
+            label: '1996',
+            type: 'text',
+            name: '1996',
+            selected: '',
+          }, {
+            label: '1997',
+            type: 'text',
+            name: '1997`',
+            selected: '',
+          }, {
+            label: '1998',
+            type: 'text',
+            name: '1998',
+            selected: '',
+          }, {
+            label: '1999',
+            type: 'text',
+            name: '1999',
+            selected: '',
+          }, {
+            label: '2000',
+            type: 'text',
+            name: '2000',
+            selected: '',
+          }, {
+            label: '2001',
+            type: 'text',
+            name: '2001',
+            selected: '',
+          }, {
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2004',
+            type: 'text',
+            name: '2004',
+            selected: '',
+          }]
+        }
+      ]
+      },
+
+
+
+
+
+    table_3: {
+      question: '',
+      table_label: 'Table IV: Generation of hazardous wastes and other wastes by Y-categories',
+         articles: [
+          {
+          article_title: {
+            name: 'Y1',
+            label: 'Clinical wastes from medical care in hospitals, medical centres and clinics',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y2',
+            label: 'Wastes from the production and preparation of pharmaceutical products',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y3',
+            label: 'Waste pharmaceuticals, drugs and medicines',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y4',
+            label: 'Wastes from the production of biocides and phytopharmaceuticals',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y5',
+            label: 'Wastes from the manufacture of wood preserving chemicals',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y6',
+            label: 'Wastes from the production, formulation and use of organic solvent',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y7',
+            label: 'Wastes from heat treatment and tempering operations containing cyanides',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y8',
+            label: 'Waste mineral oils unfit for their originally intended use',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y9',
+            label: 'Waste oils/water, hydrocarbons/water mixtures, emulsion',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y10',
+            label: 'Waste substances containing or contaminated with PCBs, PCTs, PBBs',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y11',
+            label: 'Waste tarry residues from refining, distillation and any pyrolytic treatment',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y12',
+            label: 'Wastes from production of inks, dyes, pigments, paints, etc.',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },    {
+          article_title: {
+            name: 'Y13',
+            label: 'Wastes from production resins, latex, plasticizers, glues, etc. ',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y14',
+            label: 'Waste chemical substances whose effects on the environment are not known',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y15',
+            label: 'Wastes of an explosive nature not subject to other legislation',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y16',
+            label: 'Wastes from production, formulation and use of photographic chemicals…',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y17',
+            label: 'Wastes resulting from surface treatment of metals and plastics  ',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y18',
+            label: 'Residues arising from industrial waste disposal operations',
+          },
+          article_label:{
+            name: 'l1',
+            label: 'Waste streams (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y19',
+            label: 'Metal carbonyls',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y20',
+            label: 'Beryllium;berylliumcompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y21',
+            label: 'Hexavalentchromiumcompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y22',
+            label: 'Coppercompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y23',
+            label: 'Zinccompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y24',
+            label: 'Arsenic; arseniccompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y25',
+            label: 'Selenium;seleniumcompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y26',
+            label: 'Cadmium; cadmiumcompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y27',
+            label: 'Antimony; antimonycompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y28',
+            label: 'Tellurium;telluriumcompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y29',
+            label: 'Mercury; mercurycompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y30',
+            label: 'Thallium; thalliumcompounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y31',
+            label: 'Lead; lead compound',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y32',
+            label: 'Inorganic fluorine compounds excluding calciumfluoride  ',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y33',
+            label: 'Inorganiccyanides',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y34',
+            label: 'Acidic solutions or acids in solid form',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y35',
+            label: 'Basic solutions or bases in solid form  ',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y36',
+            label: 'Asbestos (dust and fibres)  ',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y37',
+            label: 'Organic phosphorus compounds',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y38',
+            label: 'Organic cyanides',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y39',
+            label: 'Phenols; phenolcompounds including chlorophenols',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y40',
+            label: 'Ethers',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y41',
+            label: 'Halogenated organic solvents',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y42',
+            label: 'Organic solvents excluding halogenated solvents',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y43',
+            label: 'Any congenor of polychlorinated dibenzo-furan',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y44',
+            label: 'Any congenor of polychlorinated dibenzo-p-dioxin',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol)	',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y45',
+            label: 'Organohalogen compounds other than … (e.g. Y39, Y41, Y42, Y43, Y44)',
+          },
+          article_label:{
+            name: 'l2',
+            label: 'Wastes having as constituents (Annex I to the Protocol) ',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y46',
+            label: 'Wastes collected from households',
+          },
+          article_label:{
+            name: 'l3',
+            label: 'Household wastes (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        }, {
+          article_title: {
+            name: 'Y47',
+            label: 'Residues arising from the incineration of household wastes',
+          },
+          article_label:{
+            name: 'l3',
+            label: 'Household wastes (Annex I to the Protocol)',
+          },
+          article_items: [{
+            label: '2002',
+            type: 'text',
+            name: '2002',
+            selected: '',
+          }, {
+            label: '2003',
+            type: 'text',
+            name: '2003',
+            selected: '',
+          }, {
+            label: '2005',
+            type: 'text',
+            name: '2005',
+            selected: '',
+          }, {
+            label: '2006',
+            type: 'text',
+            name: '2006',
+            selected: '',
+          }, {
+            label: '2007',
+            type: 'text',
+            name: '2007',
+            selected: '',
+          }]
+        },
+          ]
+      },
+
+
+
+
+
+
+
+
+
     }
   },
   tab_3: {

@@ -4,16 +4,16 @@
         <h3>{{info.label}}</h3>
 
       <div class="question">
-        <div class="mt-2">{{info.data.question.label}} <small class="muted">({{info.data.question.info}})</small></div>
+        <div class="mt-2">{{info.data.table_1.question.label}} <small class="muted">({{info.data.table_1.question.info}})</small></div>
       </div>
        <!-- <div class="answer" v-if="!info.data.question.selected" style="position: relative;"> -->
        <div class="answer" style="position: relative;">
           <div class="table-head">
-            <b>{{info.data.table_label}}</b>
+            <b>{{info.data.table_1.table_label}}</b>
           </div>
           <div role="tablist">
             <div role="tablist">
-              <b-card style="background: #eee" v-for="(article,index) in info.data.articles" :key="index" class="mb-1">
+              <b-card style="background: #eee" v-for="(article,index) in info.data.table_1.articles" :key="index" class="mb-1">
                 <h5 style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
                   {{article.article_title}}
                   <span style="float:right">▼</span>
@@ -64,7 +64,7 @@ export default {
   },
 
   created(){
-    this.hazardCount = this.info.data.articles[this.info.data.articles.length - 1].article_title
+    this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
     console.log(this.hazardCount)
   },
 
@@ -106,7 +106,7 @@ export default {
             selected: '',
           }]
         }
-      this.info.data.articles.push(incident)
+      this.info.data.table_1.articles.push(incident)
     },
 
 
@@ -114,13 +114,13 @@ export default {
       // console.log(this.info.data.table_2.articles[index])
       this.hazardCount -= 1
 
-      this.info.data.articles.splice(index, 1)
+      this.info.data.table_1.articles.splice(index, 1)
       this.updateHazards();
     },
 
     updateHazards() {
       let hazardCount = 1;
-      for(let hazard of this.info.data.articles) {
+      for(let hazard of this.info.data.table_1.articles) {
         console.log(hazard)
         hazard.article_title = hazardCount
         hazardCount += 1
