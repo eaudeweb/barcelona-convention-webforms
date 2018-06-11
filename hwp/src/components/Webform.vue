@@ -43,7 +43,6 @@ import {getCompanyData} from '../api.js';
 
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
-import Dummy from './Dummy.vue'
 import Validation from './Validation.vue'
 import Wastes from './HazardousWastesGeneration.vue'
 import TransWastes from './TransboundaryWastesMovements.vue'
@@ -62,7 +61,6 @@ export default {
   components: {
     countrytab: Countrytab,
     lrmeasures: LRMeasures,
-    dummy: Dummy,
   	formsubmit: FormSubmit,
     validation: Validation,
     waste: Wastes,
