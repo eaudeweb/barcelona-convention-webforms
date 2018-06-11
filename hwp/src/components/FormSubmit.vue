@@ -51,16 +51,8 @@ export default {
     validate() {
 
     }
-  },
-    watch: {
-    info: {
-      handler: function(old_val,new_val) {
-        this.validate()
-      },
-      deep: true,
-      immediate: true,
-    }
   }
+
 }
 </script>
 
