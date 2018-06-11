@@ -143,7 +143,7 @@ var form = {
 
   },
   tab_1: {
-    label: 'Part I: LEGAL AND REGULATORY MEASURES',
+    label: 'Part I: Legal and regulatory measures',
     collection_id: 601,
     parent_collection_id: 6,
     data: {
@@ -922,7 +922,7 @@ var form = {
     }
   },
   tab_2: {
-    label: 'Part II: PERMITS AND QUANTITIES',
+    label: 'Part II: Permits and quantities',
     collection_id: 603,
     parent_collection_id: 6,
     data: {
@@ -981,25 +981,206 @@ var form = {
     }
   },
   tab_3: {
-    label: 'Part III: INVENTORY OF OFFSHORE INSTALLATIONS',
+    label: 'Part III: Inventory of offshore installations',
     collection_id: 605,
     parent_collection_id: 6,
     data: {
       question: '',
-      table_label: 'Table III – INVENTORY OF OFFSHORE INSTALLATIONS INCLUDING DISUSED INSTALLATIONS',
+      table_label: 'Table III – Inventory of offshore installations including disused installations',
       collection_id: 606,
       parent_collection_id: 605,
     }
   },
   tab_4: {
-    label: 'Part IV: ENFORCEMENT',
+    label: 'Part IV: Enforcement',
     collection_id: 607,
     parent_collection_id: 6,
     data: {
       question: '',
-      table_label: 'Table IV – ENFORCEMENT MEASURES',
+      table_label: 'Table IV – Enforcement measures',
       collection_id: 608,
       parent_collection_id: 607,
+      articles: [{
+        article_title: 'Protocol obligations and national legislation and regulations implementing the Protocol - Article 3 of the Protocol',
+        collection_id: 6018,
+        parent_collection_id: 608,
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        }, {
+          label: 'Number of suspensions of authorizations or permits',
+          type: 'number',
+          name: 'suspensions',
+          value: '',
+        }, {
+          label: 'Number of operation shutdowns',
+          type: 'number',
+          name: 'shutdowns',
+          value: '',
+        }, {
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Number of clean measures implemented',
+          type: 'number',
+          name: 'implemented',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      },{
+        article_title: 'Specific conditions attached to authorizations or permits-Article 4 and 5',
+        collection_id: 6019,
+        parent_collection_id: 608,
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        }, {
+          label: 'Number of suspensions of authorizations or permits',
+          type: 'number',
+          name: 'suspensions',
+          value: '',
+        }, {
+          label: 'Number of operation shutdowns',
+          type: 'number',
+          name: 'shutdowns',
+          value: '',
+        }, {
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Number of clean measures implemented',
+          type: 'number',
+          name: 'implemented',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      },{
+        article_title: 'Provisions regarding to illegal disposal-Article 9',
+        collection_id: 6020,
+        parent_collection_id: 608,
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        }, {
+          label: 'Number of suspensions of authorizations or permits',
+          type: 'number',
+          name: 'suspensions',
+          value: '',
+        }, {
+          label: 'Number of operation shutdowns',
+          type: 'number',
+          name: 'shutdowns',
+          value: '',
+        }, {
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Number of clean measures implemented',
+          type: 'number',
+          name: 'implemented',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      },{
+        article_title: 'Provisions regarding safety measures-Article',
+        collection_id: 6021,
+        parent_collection_id: 608,
+        article_items: [{
+          label: 'Number of inspections',
+          type: 'number',
+          name: 'inspections',
+          value: '',
+        }, {
+          label: 'Number of non-compliance cases',
+          type: 'number',
+          name: 'non_compliance',
+          value: '',
+        }, {
+          label: 'Number of fines issued and total amount',
+          type: 'number',
+          name: 'total_amount',
+          value: '',
+        }, {
+          label: 'Number of suspensions of authorizations or permits',
+          type: 'number',
+          name: 'suspensions',
+          value: '',
+        }, {
+          label: 'Number of operation shutdowns',
+          type: 'number',
+          name: 'shutdowns',
+          value: '',
+        }, {
+          label: 'Number of other enforcement measures',
+          type: 'number',
+          name: 'enforcement',
+          value: '',
+        }, {
+          label: 'Number of clean measures implemented',
+          type: 'number',
+          name: 'implemented',
+          value: '',
+        }, {
+          label: 'Remarks/Comments',
+          type: 'text',
+          name: 'remarks',
+          value: '',
+        }]
+      }]
     }
   }
 }

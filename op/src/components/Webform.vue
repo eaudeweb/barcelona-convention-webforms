@@ -1,8 +1,7 @@
 <template>
 	<b-container style="position: relative">
     <center><h1 class="mb-3 mt-2">Offshore Protocol</h1></center>
-    <center><h5><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL FOR THE PROTECTION OF THE MEDITERRANEAN SEA AGAINST POLLUTION RESULTING FROM EXPLORATION
-      AND EXPLOITATION OF THE CONTINENTAL SHELF AND THE SEA BED AND ITS SUBSOIL (OFFSHORE PROTOCOL)</small></h5></center>
+    <center><h5><small class="text-muted">Implementation of the protocol for the protection of the mediterranean sea against pollution resulting from exploration and exploitation of the continental shelf and the sea bed and its subsoil (offshore protocol)</small></h5></center>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
@@ -19,7 +18,7 @@
               <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
             </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
-              <dummy tabId="3"  :info.sync="form.tab_4"></dummy>
+              <enfmeasures tabId="4" :info.sync="form.tab_4"></enfmeasures>
             </b-tab>
           </b-tabs>
         </b-form>
@@ -40,6 +39,7 @@ import {getCompanyData} from '../api.js';
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
+import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
 
 
@@ -54,6 +54,7 @@ export default {
     countrytab: Countrytab,
     lrmeasures: LRMeasures,
     dummy: Dummy,
+    enfmeasures: ENFMeasures,
   	formsubmit: FormSubmit,
     validation: Validation
   },
