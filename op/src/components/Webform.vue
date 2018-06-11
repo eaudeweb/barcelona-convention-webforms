@@ -15,7 +15,7 @@
               <dummy tabId="2" :info.sync="form.tab_2"></dummy>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
-              <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
+              <inventory tabId="3"  :info.sync="form.tab_3"></inventory>
             </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
               <enfmeasures tabId="4" :info.sync="form.tab_4"></enfmeasures>
@@ -39,6 +39,7 @@ import {getCompanyData} from '../api.js';
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
+import Inventory from './Inventory.vue'
 import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
 
@@ -54,6 +55,7 @@ export default {
     countrytab: Countrytab,
     lrmeasures: LRMeasures,
     dummy: Dummy,
+    inventory: Inventory,
     enfmeasures: ENFMeasures,
   	formsubmit: FormSubmit,
     validation: Validation

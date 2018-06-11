@@ -989,6 +989,57 @@ var form = {
       table_label: 'Table III – Inventory of offshore installations including disused installations',
       collection_id: 606,
       parent_collection_id: 605,
+      articles: [{
+        article_title: {
+          label: 'Operator',
+          type: 'text',
+          name: 'operator',
+          selected: '',
+        },
+        article_items: [{
+          label: 'Production Start',
+          description: '',
+          type: 'date',
+          name: 'production_start',
+          selected: '',
+        },{
+          label: 'Current status',
+          type: 'select',
+          name: 'current_status',
+          options: {},
+          selected: '',
+        },{
+          label: 'Primary Production',
+          type: 'select',
+          name: 'primary_production',
+          options: {},
+          selected: '',
+        },{
+          label: 'Category',
+          type: 'select',
+          name: 'category',
+          options: {},
+          selected: '',
+        },{
+          label: 'Weight Substructure',
+          description: 'tonnes',
+          type: 'number',
+          name: 'weight_substructure',
+          selected: '',
+        },{
+          label: 'Weight Topside',
+          description: 'tonnes',
+          type: 'number',
+          name: 'weight_topside',
+          selected: '',
+        },{
+          label: 'Remarks',
+          description: 'E.g. measures taken to not affect other legitimate uses of the sea: navigation, fishing and the protection of the marine environment',
+          type: 'text',
+          name: 'remarks',
+          selected: '',
+        }]
+      }]
     }
   },
   tab_4: {
