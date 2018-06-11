@@ -3,6 +3,7 @@
     <center><h1 class="mb-3 mt-2">Hazardous Wastes Protocol</h1></center>
     <center><h5><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL ON THE PREVENTION OF POLLUTION OF THE MEDITERRANEAN SEA BY
       TRANSBOUNDARY MOVEMENTS OF HAZARDOUS WASTES AND THEIR DISPOSAL (HAZARDOUS WASTES PROTOCOL)</small></h5></center>
+      <br><br><br>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
@@ -16,13 +17,13 @@
               <waste tabId="2" :info.sync="form.tab_2"></waste>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
-              <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
+              <trwastes tabId="3"  :info.sync="form.tab_3"></trwastes>
             </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
-              <dummy tabId="2" :info.sync="form.tab_4"></dummy>
+              <accidents tabId="2" :info.sync="form.tab_4"></accidents>
             </b-tab>
             <b-tab :title="doTitle(form.tab_5.label)" >
-              <dummy tabId="2" :info.sync="form.tab_5"></dummy>
+              <enfmeasures tabId="2" :info.sync="form.tab_5"></enfmeasures>
             </b-tab>
           </b-tabs>
         </b-form>
@@ -45,6 +46,10 @@ import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
 import Validation from './Validation.vue'
 import Wastes from './HazardousWastesGeneration.vue'
+import TransWastes from './TransboundaryWastesMovements.vue'
+import Accidents from './Accidents.vue'
+import ENFMeasures from './ENFMeasures.vue'
+
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -61,6 +66,9 @@ export default {
   	formsubmit: FormSubmit,
     validation: Validation,
     waste: Wastes,
+    trwastes: TransWastes,
+    accidents: Accidents,
+    enfmeasures: ENFMeasures
   },
 
   data () {
