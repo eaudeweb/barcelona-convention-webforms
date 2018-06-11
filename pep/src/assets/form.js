@@ -145,18 +145,20 @@ var form = {
   },
 
   tab_1: {
-    label: 'Part I: LEGAL AND REGULATORY MEASURES',
+    label: 'Part I: Legal and regulatory measures',
     collection_id: 301,
     parent_collection_id: 3,
     data: {
       question: 'Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Prevention and Emergency Protocol, as listed in Table I below?',
-      table_label: 'Table I – LEGAL AND REGULATORY MEASURES',
+      table_label: 'Table I – Legal and regulatory measures',
       collection_id: 302,
       parent_collection_id: 301,
       articles: [{
         article_title: 'Article 4.1',
         article_items: [{
           description: 'Maintenance and promotion of contingency plans and other means (i.e. pre-positioned response equipment and training courses for both operating and supervisory level response personnel) of preventing and combating oil and hazardous and noxious substances(HNS) pollution incidents',
+          collection_id: 3001,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -200,6 +202,8 @@ var form = {
           ]
         }, {
           description: 'Designation of a national authority or authorities responsible for the implementation of the Prevention and Emergency Protocol',
+          collection_id: 3002,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -246,6 +250,8 @@ var form = {
         article_title: 'Article 4.3',
         article_items: [{
           description: 'Informing the Regional Centre (REMPEC) every two years of the measures taken for the implementation of the Prevention and Emergency Protocol',
+          collection_id: 3003,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -292,6 +298,8 @@ var form = {
         article_title: 'Article 5',
         article_items: [{
           description: 'Development of monitoring and surveillance programmes and activities aimed at detecting oil and HNS pollution incidents whether accidental or operational and illicit discharges',
+          collection_id: 3004,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -338,6 +346,8 @@ var form = {
         article_title: 'Article 9.1',
         article_items: [{
           description: 'Issuing of instructions to masters of ships flying your flag and pilots of aircrafts registered in their territory to report on actual or potential oil and HNS pollution incidents to the designated national authority or authorities and the nearest Coastal State',
+          collection_id: 3005,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -384,6 +394,8 @@ var form = {
         article_title: 'Article 9.2',
         article_items: [{
           description: 'Ensuring that the master of every ship sailing in their territorial waters report on actual or potential oil and HNS pollution incidents to the designated national authority or authorities and the nearest Coastal State',
+          collection_id: 3006,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -430,6 +442,8 @@ var form = {
         article_title: 'Article 9.3 Article 9.4',
         article_items: [{
           description: 'Issuing of instructions to Port and Port Facility Authorities and offshore installations under their jurisdiction to report on actual or potential oil and HNS pollution incidents to the designated national authorities or authorities',
+          collection_id: 3007,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -476,6 +490,8 @@ var form = {
         article_title: 'Article 9.6 Article 9.7',
         article_items: [{
           description: 'Communication to REMPEC and those Contracting Parties likely to be affected of information on actual or potential oil and HNS pollution incidents collected by masters of ships flying your flag, pilots of aircrafts registered in your territory, Port and Port Facility Authorities and offshore installations under their jurisdiction',
+          collection_id: 3008,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -522,6 +538,8 @@ var form = {
         article_title: 'Article 10.1',
         article_items: [{
           description: 'Conducting oil and HNS pollution incident assessments (i.e. nature, extent and possible consequences) and taking every practical measure to prevent, reduce and, to the fullest possible extent, eliminate the effects of the pollution incident',
+          collection_id: 3009,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -568,6 +586,8 @@ var form = {
         article_title: 'Article 11.1',
         article_items: [{
           description: 'Ensuring that ships flying their flag have on board a pollution emergency plan as required by, and in accordance with, the relevant international regulations',
+          collection_id: 3010,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -614,6 +634,8 @@ var form = {
         article_title: 'Article 11.2',
         article_items: [{
           description: 'Masters of ships flying their flag follow the procedures described in the shipboard emergency plan in case of oil and HNS pollution incidents',
+          collection_id: 3011,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -660,6 +682,8 @@ var form = {
         article_title: 'Article 11.3',
         article_items: [{
           description: 'Ensuring that the master of every ship sailing in their territorial waters follows the procedures described in the shipboard emergency plan in case of oil and HNS pollution incidents',
+          collection_id: 3012,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -706,6 +730,8 @@ var form = {
         article_title: 'Article 11.4',
         article_items: [{
           description: 'Authorities or operators in charge of sea ports handling facilities have pollution emergency plans or other similar arrangements coordinated with the national system',
+          collection_id: 3013,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -752,6 +778,8 @@ var form = {
         article_title: 'Article 11.5',
         article_items: [{
           description: 'Operators in charge of offshore installations under their jurisdiction have a contingency plan coordinated with the national system',
+          collection_id: 3014,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -798,6 +826,8 @@ var form = {
         article_title: 'Article 12.3',
         article_items: [{
           description: 'Taking the necessary legal or administrative measures to facilitate the entry into, stay in and departure from their national territory of equipment, products and personnel engaged in responding to a pollution incident',
+          collection_id: 3015,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -844,6 +874,8 @@ var form = {
         article_title: 'Article 14',
         article_items: [{
           description: 'Ensuring that port reception facilities meeting the needs of ships (including pleasure craft), are available in their ports and terminals',
+          collection_id: 3016,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -887,6 +919,8 @@ var form = {
           ]
         }, {
           description: 'Ensuring that port reception facilities are used efficiently, without causing any undue delay to ships and limiting discharges to the marine environment',
+          collection_id: 3017,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -930,6 +964,8 @@ var form = {
           ]
         }, {
           description: 'Ensuring that ships using the ports of the Parties are provided with updated information with respect to obligations under the MARPOL Convention and applicable national legislation',
+          collection_id: 3018,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -976,6 +1012,8 @@ var form = {
         article_title: 'Article 15',
         article_items: [{
           description: 'Assessing the environmental risks of the recognized routes used in maritime traffic',
+          collection_id: 3019,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1019,6 +1057,8 @@ var form = {
           ]
         }, {
           description: 'Taking appropriate measures aimed at reducing the risks of accidents or their environmental consequences',
+          collection_id: 3020,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1065,6 +1105,8 @@ var form = {
         article_title: 'Article 16',
         article_items: [{
           description: 'Defining national, sub-regional or regional strategies concerning reception in ports and places of refuge, of ships in distress presenting a threat to the marine environment',
+          collection_id: 3021,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1112,6 +1154,8 @@ var form = {
         optional: true,
         article_items: [{
           description: 'Dissemination of information on designated national authorities with responsibilities, including operational responsibilities, in case of oil and HNS pollution incidents',
+          collection_id: 3022,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1155,6 +1199,8 @@ var form = {
           ]
         }, {
           description: 'Dissemination of information on national regulations and other matters directly related to preparedness for and response to pollution of the sea by oil or other hazardous and noxious substances',
+          collection_id: 3023,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1198,6 +1244,8 @@ var form = {
           ]
         }, {
           description: 'Dissemination of information on new ways in which pollution of the sea by oil or other hazardous and noxious substances may be avoided, new measures for combating pollution, new developments in the technology of conducting monitoring and the development of research programmes.',
+          collection_id: 3024,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1245,6 +1293,8 @@ var form = {
         optional: true,
         article_items: [{
           description: 'Coordination of the means of communication to ensure, with the necessary speed ad and reliability, the reception, transmission and dissemination of reports and urgent information concerning pollution incidents',
+          collection_id: 3025,
+          parent_collection_id: 302,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1291,18 +1341,20 @@ var form = {
     }
   },
   tab_2: {
-    label: 'Part II: POLLUTION PREPAREDNESS AND RESPONSE: OPERATIONAL MEASURES',
+    label: 'Part II: Pollution preparedness and response: operational measures',
     collection_id: 303,
     parent_collection_id: 3,
     data: {
       question: '',
-      table_label: 'Table II – OPERATIONAL MEASURES',
+      table_label: 'Table II – Operational measures',
       collection_id: 304,
       parent_collection_id: 303,
       articles: [{
         article_title: 'Article 4',
         article_items: [{
             description: 'National response strategy for marine pollution incidents adopted including a policy for the use of dispersants',
+            collection_id: 3026,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1335,6 +1387,8 @@ var form = {
             ]
           }, {
             description: 'National Contingency Plan covers:',
+          collection_id: 3027,
+          parent_collection_id: 304,
             items: [{
               type: 'special',
               label: 'Plans',
@@ -1350,6 +1404,8 @@ var form = {
           },
           {
             description: 'National stockpiles of pre-positioned oil and HNS spill response equipment, including naval and aerial means, established',
+            collection_id: 3028,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1380,6 +1436,8 @@ var form = {
             ]
           }, {
             description: 'Regular exercises are carried out to test the National Contingency Plan',
+            collection_id: 3029,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1410,6 +1468,8 @@ var form = {
             ]
           }, {
             description: 'Local contingency plans, including port contingency plans, adopted',
+            collection_id: 3030,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1442,6 +1502,8 @@ var form = {
             ]
           }, {
             description: 'Local plans, including port contingency plans, are integrated with the National Contingency Plan',
+            collection_id: 3031,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1473,6 +1535,8 @@ var form = {
             ]
           }, {
             description: 'Local plans, including port contingency plans, are integrated with the industry emergency procedures',
+            collection_id: 3032,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1503,6 +1567,8 @@ var form = {
             ]
           }, {
             description: 'Participation in sub-regional agreements regarding emergency situations adopted',
+            collection_id: 3033,
+            parent_collection_id: 304,
             items: [{
                 type: 'status',
                 label: 'Status',
@@ -1537,7 +1603,7 @@ var form = {
     }
   },
   tab_3: {
-    label: 'Part III: POLLUTION  INCIDENTS',
+    label: 'Part III: Pollution incidents',
     collection_id: 305,
     parent_collection_id: 3,
     data: {
@@ -1554,7 +1620,7 @@ var form = {
         }],
         options_description: ['If your answer is “Yes”, no need to fill out this table', 'If your answer is “No” please fill out this Table'],
       },
-      table_label: 'Table III - POLLUTION INCIDENTS',
+      table_label: 'Table III - Pollution incidents',
       collection_id: 306,
       parent_collection_id: 305,
       articles: [
