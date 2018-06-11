@@ -3,6 +3,7 @@
     <center><h1 class="mb-3 mt-2">Dumping Protocol</h1></center>
     <center><h5><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL FOR THE PREVENTION AND ELIMINATION OF POLLUTION OF THE MEDITERRANEAN SEA BY
       DUMPING FROM SHIPS AND AIRCRAFTS OR INCINERATION AT SEA (DUMPING PROTOCOL)</small></h5></center>
+      <br><br><br>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
@@ -13,16 +14,16 @@
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
-              <dummy tabId="2" :info.sync="form.tab_2"></dummy>
+              <dumpingatsea tabId="2" :info.sync="form.tab_2"></dumpingatsea>
             </b-tab>
           <b-tab :title="doTitle(form.tab_3.label)" >
-              <dummy tabId="3"  :info.sync="form.tab_3"></dummy>
+              <wastequantity tabId="3"  :info.sync="form.tab_3"></wastequantity>
             </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
-              <dummy tabId="4" :info.sync="form.tab_4"></dummy>
+              <monitoring tabId="4" :info.sync="form.tab_4"></monitoring>
             </b-tab>
             <b-tab :title="doTitle(form.tab_5.label)" >
-              <monitoring tabId="5" :info.sync="form.tab_5"></monitoring>
+              <placement tabId="5" :info.sync="form.tab_5"></placement>
             </b-tab>
           </b-tabs>
         </b-form>
@@ -43,9 +44,11 @@ import {getCompanyData} from '../api.js';
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
-import Monitoring from './Monitoring.vue'
 import Validation from './Validation.vue'
-
+import DumpingAtSea from './DumpingAtSea.vue'
+import QuantitiesOfWaste from './QuantitiesOfWaste.vue'
+import Monitoring from './Monitoring.vue'
+import Placement from './Placement.vue'
 
 import FormSubmit from './FormSubmit.vue'
 import form from '../assets/form.js'
@@ -60,7 +63,11 @@ export default {
     dummy: Dummy,
     monitoring: Monitoring,
   	formsubmit: FormSubmit,
-    validation: Validation
+    validation: Validation,
+    dumpingatsea: DumpingAtSea,
+    wastequantity: QuantitiesOfWaste,
+    monitoring: Monitoring,
+    placement: Placement,
   },
 
   data () {
