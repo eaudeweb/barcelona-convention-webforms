@@ -177,6 +177,8 @@ export default {
                     incidentobj.article_title.value = incident.ship_name;
                   for(let article of incidentobj.article_items){
                       article.selected = incident[article.name]
+                      console.log(article.name)
+                      console.log(incident[article.name])
                   }
                   this.form.tab_3.data.articles.push(incidentobj)
               }

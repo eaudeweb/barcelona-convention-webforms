@@ -103,7 +103,7 @@ export default {
 
       for(let table in this.form.country.tables) {
           for (let value of this.form.country.tables[table]) {
-            value.selected = data.BC_BCRS.contacting_party[value.name]
+            value.selected = data.BC_LBS.contacting_party[value.name]
           }
       }
 
