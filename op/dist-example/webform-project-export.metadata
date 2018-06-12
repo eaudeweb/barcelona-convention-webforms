@@ -67,14 +67,14 @@
     "fileType": "FILE"
   },    
   {
-    "title": "LBS",
+    "title": "Barcelona convention",
     "file":
     {
       "name": "index.html"
     },
-    "newXmlFileName": "lbs.xml",
-    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/barcelona/file/empty.xml",
-    "xmlSchema": "https://biodiversity.eionet.europa.eu/schemas/barcelona_convention/barcelona.xsd",
+    "newXmlFileName": "op.xml",
+    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/op/file/empty.xml",
+    "xmlSchema": "https://dd.info-rac.org/v2/dataset/21/schema-dst-21.xsd",
     "active": true,
     "localForm": true,
     "remoteForm": true,

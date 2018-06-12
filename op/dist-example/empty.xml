@@ -1,2 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<empty></empty>
+<BC_OP xmlns="https://dd.info-rac.org/namespaces/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/21/schema-dst-21.xsd">
+</BC_OP>

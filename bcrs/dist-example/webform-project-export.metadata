@@ -74,7 +74,7 @@
     },
     "newXmlFileName": "barcelona.xml",
     "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/barcelona/file/empty.xml",
-    "xmlSchema": "https://biodiversity.eionet.europa.eu/schemas/barcelona_convention/barcelona.xsd",
+    "xmlSchema": "https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd",
     "active": true,
     "localForm": true,
     "remoteForm": true,

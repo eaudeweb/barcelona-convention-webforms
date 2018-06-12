@@ -1,0 +1,31 @@
+{
+	"BC_SPA": {
+		"@xmlns": "https://dd.info-rac.org/namespaces/4",
+		"@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+		"contacting_party": {
+			"partyname": null,
+			"rep_period_from": "51512-02-04",
+			"rep_period_to": "0515-05-12",
+			"institution_name": "5wras",
+			"officer_name": "gasgsag",
+			"mailing_address": "fssa",
+			"tel": "gasgas",
+			"fax": "gasgas",
+			"email": "gasgasg@saga",
+			"contact_point": "sgasg",
+			"instituion_full_name": "sagsag",
+			"national_mailing_address": "asgasg",
+			"national_tel": null,
+			"national_fax": null,
+			"national_email": null,
+			"national_signature": null,
+			"national_date": null,
+			"org_name": "gasgas",
+			"org_contact_point": "gasgas",
+			"org_tel": "gasgas",
+			"org_fax": null,
+			"org_email": null
+		}
+	}
+}

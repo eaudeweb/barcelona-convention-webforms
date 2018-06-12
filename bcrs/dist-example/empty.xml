@@ -1,2 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<empty></empty>
+<BC_BCRS xmlns="https://dd.info-rac.org/namespaces/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/namespaces/4  https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd">
+    <country/>
+    <contacting_party>
+        <partyname/>
+        <rep_period_from/>
+        <rep_period_to/>
+        <institution_name/>
+        <officer_name/>
+        <mailing_address/>
+        <tel/>
+        <fax/>
+        <email/>
+        <contact_point/>
+        <instituion_full_name/>
+        <national_mailing_address/>
+        <national_tel/>
+        <national_fax/>
+        <national_email/>
+        <national_signature/>
+        <national_date/>
+        <org_name/>
+        <org_contact_point/>
+        <org_tel/>
+        <org_fax/>
+        <org_email/>
+    </contacting_party>
+    <bilateralmultilateralagreementsdata>
+        <Row>
+            <agreementname/>
+            <website_other_reference/>
+            <collection_id/>
+        </Row>
+    </bilateralmultilateralagreementsdata>
+    <measuresdata>
+        <Row>
+            <changes/>
+            <collection_id/>
+            <difficulties_comments/>
+            <description/>
+            <status_comments/>
+            <status/>
+            <parent_collection_id/>
+        </Row>
+    </measuresdata>
+    <measuredata_difficulty>
+        <Row>
+            <collection_id/>
+            <difficulty/>
+        </Row>
+    </measuredata_difficulty>
+</BC_BCRS>
