@@ -926,58 +926,329 @@ var form = {
     collection_id: 603,
     parent_collection_id: 6,
     data: {
-      question: '',
-      table_label: 'Table II – Biennial Summary of Permits and Quantities',
-      collection_id: 604,
-      parent_collection_id: 603,
-      articles: [{
-          article_title: 'TODO',
-          article_items: [{
-            description: 'TODO',
-            items: [{
-                type: 'changes',
-                label: 'Changes in the information provided in the previous report',
-                info: 'Please tick the box that applies',
-                selected: null,
-                options: [
-                  { text: 'Yes', value: true },
-                  { text: 'No', value: false }
-                ],
-                options_description: ['If your answer is “Yes”, please update accordingly', 'If your answer is “No”, please go to next question']
-              },
-              {
-                type: 'status',
-                label: 'Status',
-                info: 'Please tick the box that applies',
-                selected: null,
-                options: [
-                  { text: 'Yes', value: 1 },
-                  { text: 'No', value: 2 },
-                  { text: 'Under development', value: 3 },
-                  { text: 'Not applicable', value: 4 }
-                ],
-                options_description: ['If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)', 'If your answer is “No”, please in the column difficulties/challenges, tick all that apply'],
-                comments: ''
-              },
-              {
-                type: 'difficulties',
-                label: 'Difficulties/Challenges',
-                info: 'Please tick all that apply',
-                selected: [],
-                options: [
-                  { text: 'Policy framework', value: 1 },
-                  { text: 'Regulatory framework', value: 2 },
-                  { text: 'Financial resources', value: 3 },
-                  { text: 'Administrative management', value: 4 },
-                  { text: 'Technical Guidance Capabilities', value: 5 }
-                ],
-                options_description: ['On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required'],
-                comments: ''
-              }
-            ]
-          }]
-        }
-      ]
+      table_label: 'TABLE II. Biennial Summary of Permits and Quantities',
+
+        table_article_label: '2.1 1994 Protocol Article',
+        table_aritcle_description: 'Reference to Articles pertaining to permits',
+
+        articles: [{
+            article_title: '1994 Protocol Article 9.5, Annex II',
+            article_items: [{
+              items: [{
+                  type: 'text',
+                  label: '2.2 Type of Permit',
+                  name: 'permit_type',
+                  description: 'Permit types are listed in the 1976 Protocol or the 1995 Protocol;',
+                  selected: 'Special Permit',
+                  disabled: true,
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.3 Waste Category',
+                  name: 'waste_cateogry',
+                  description: '1976 Protocol waste categories vary by permit; 1995 Protocol waste categories are defined in Article 4.2 of the Protocol',
+                  info: 'Specify waste category',
+                  selected: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.4 Total Number of New Permits Issued',
+                  description: 'Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of',
+                  name: 'permits_number_issued',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea',
+                  description: 'Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period',
+                  name: 'waste_quantity_permited',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.2 Waste Reporting Unit',
+                  description: 'Reporting units used by the permitting authority for a specific waste',
+                  name: 'waste_reporting_unit',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea',
+                  description: 'Total quantity of a specific waste that was actually dumped at the dump site during the reporting period',
+                  name: 'waste_quanity_actual',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.2 Waste Reporting Units',
+                  description: 'Reporting units used by the permitting authority for a waste',
+                  name: 'waste_reporting_units',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.7 Dumping at Sea Operations Regulated by Other Means',
+                  description: 'Provide information on other programs that also manage dumping at sea  operations,',
+                  name: 'dumping_regulated',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.8 Notes',
+                  description: 'Brief notes on any entry in Table 2',
+                  name: 'notes',
+                  selected: '',
+                  info: '',
+                }
+              ]
+            }]
+          },
+          {
+            article_title: '1994 Protocol Article 9.6',
+            article_items: [{
+              items: [{
+                  type: 'text',
+                  label: '2.2 Type of Permit',
+                  name: 'permit_type',
+                  description: 'Permit types are listed in the 1976 Protocol or the 1995 Protocol;',
+                  selected: 'General Permit',
+                  disabled: true,
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.3 Waste Category',
+                  name: 'waste_cateogry',
+                  description: '1976 Protocol waste categories vary by permit; 1995 Protocol waste categories are defined in Article 4.2 of the Protocol',
+                  info: 'Specify waste category',
+                  selected: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.4 Total Number of New Permits Issued',
+                  description: 'Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of',
+                  name: 'permits_number_issued',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea',
+                  description: 'Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period',
+                  name: 'waste_quantity_permited',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.2 Waste Reporting Unit',
+                  description: 'Reporting units used by the permitting authority for a specific waste',
+                  name: 'waste_reporting_unit',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea',
+                  description: 'Total quantity of a specific waste that was actually dumped at the dump site during the reporting period',
+                  name: 'waste_quanity_actual',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.2 Waste Reporting Units',
+                  description: 'Reporting units used by the permitting authority for a waste',
+                  name: 'waste_reporting_units',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.7 Dumping at Sea Operations Regulated by Other Means',
+                  description: 'Provide information on other programs that also manage dumping at sea  operations,',
+                  name: 'dumping_regulated',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.8 Notes',
+                  description: 'Brief notes on any entry in Table 2',
+                  name: 'notes',
+                  selected: '',
+                  info: '',
+                }
+              ]
+            }]
+          },
+          {
+            article_title: '1994 Protocol Article 14.1.a',
+            article_items: [{
+              items: [{
+                  type: 'text',
+                  label: '2.2 Type of Permit',
+                  name: 'permit_type',
+                  description: 'Permit types are listed in the 1976 Protocol or the 1995 Protocol;',
+                  selected: 'Force Majeure',
+                  disabled: true,
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.3 Waste Category',
+                  name: 'waste_cateogry',
+                  description: '1976 Protocol waste categories vary by permit; 1995 Protocol waste categories are defined in Article 4.2 of the Protocol',
+                  info: 'Specify waste category',
+                  selected: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.4 Total Number of New Permits Issued',
+                  description: 'Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of',
+                  name: 'permits_number_issued',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea',
+                  description: 'Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period',
+                  name: 'waste_quantity_permited',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.2 Waste Reporting Unit',
+                  description: 'Reporting units used by the permitting authority for a specific waste',
+                  name: 'waste_reporting_unit',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea',
+                  description: 'Total quantity of a specific waste that was actually dumped at the dump site during the reporting period',
+                  name: 'waste_quanity_actual',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.2 Waste Reporting Units',
+                  description: 'Reporting units used by the permitting authority for a waste',
+                  name: 'waste_reporting_units',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.7 Dumping at Sea Operations Regulated by Other Means',
+                  description: 'Provide information on other programs that also manage dumping at sea  operations,',
+                  name: 'dumping_regulated',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.8 Notes',
+                  description: 'Brief notes on any entry in Table 2',
+                  name: 'notes',
+                  selected: '',
+                  info: 'Website/URL link or other reference to MEDPOL Report',
+                }
+              ]
+            }]
+          },
+          {
+            article_title: '1994 Protocol Article 14.1.b',
+            article_items: [{
+              items: [{
+                  type: 'text',
+                  label: '2.2 Type of Permit',
+                  name: 'permit_type',
+                  description: 'Permit types are listed in the 1976 Protocol or the 1995 Protocol;',
+                  selected: 'Minimize Pollution Permit',
+                  disabled: true,
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.3 Waste Category',
+                  name: 'waste_cateogry',
+                  description: '1976 Protocol waste categories vary by permit; 1995 Protocol waste categories are defined in Article 4.2 of the Protocol',
+                  info: 'Specify waste category',
+                  selected: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.4 Total Number of New Permits Issued',
+                  description: 'Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of',
+                  name: 'permits_number_issued',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea',
+                  description: 'Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period',
+                  name: 'waste_quantity_permited',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.5.2 Waste Reporting Unit',
+                  description: 'Reporting units used by the permitting authority for a specific waste',
+                  name: 'waste_reporting_unit',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea',
+                  description: 'Total quantity of a specific waste that was actually dumped at the dump site during the reporting period',
+                  name: 'waste_quanity_actual',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.6.2 Waste Reporting Units',
+                  description: 'Reporting units used by the permitting authority for a waste',
+                  name: 'waste_reporting_units',
+                  selected: '',
+                  info: 'Depends on waste dumped',
+                },
+                {
+                  type: 'text',
+                  label: '2.7 Dumping at Sea Operations Regulated by Other Means',
+                  description: 'Provide information on other programs that also manage dumping at sea  operations,',
+                  name: 'dumping_regulated',
+                  selected: '',
+                  info: '',
+                },
+                {
+                  type: 'text',
+                  label: '2.8 Notes',
+                  description: 'Brief notes on any entry in Table 2',
+                  name: 'notes',
+                  selected: '',
+                  info: 'Website/URL link or other reference to MEDPOL Report',
+                }
+              ]
+            }]
+          }
+        ]
+
     }
   },
   tab_3: {

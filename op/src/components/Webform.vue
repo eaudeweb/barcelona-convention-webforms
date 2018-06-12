@@ -12,7 +12,7 @@
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
-              <dummy tabId="2" :info.sync="form.tab_2"></dummy>
+              <permits tabId="2" :info.sync="form.tab_2"></permits>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
               <inventory tabId="3"  :info.sync="form.tab_3"></inventory>
@@ -42,6 +42,7 @@ import Dummy from './Dummy.vue'
 import Inventory from './Inventory.vue'
 import ENFMeasures from './ENFMeasures.vue'
 import Validation from './Validation.vue'
+import PermitsAndQuantities from './PermitsAndQuantities.vue'
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -58,7 +59,8 @@ export default {
     inventory: Inventory,
     enfmeasures: ENFMeasures,
   	formsubmit: FormSubmit,
-    validation: Validation
+    validation: Validation,
+    permits: PermitsAndQuantities
   },
 
   data () {
