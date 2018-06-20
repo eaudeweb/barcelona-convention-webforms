@@ -1,31 +1,701 @@
 {
-	"BC_SPA": {
-		"@xmlns": "https://dd.info-rac.org/namespaces/4",
-		"@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-		"@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
-		"contacting_party": {
-			"partyname": null,
-			"rep_period_from": "51512-02-04",
-			"rep_period_to": "0515-05-12",
-			"institution_name": "5wras",
-			"officer_name": "gasgsag",
-			"mailing_address": "fssa",
-			"tel": "gasgas",
-			"fax": "gasgas",
-			"email": "gasgasg@saga",
-			"contact_point": "sgasg",
-			"instituion_full_name": "sagsag",
-			"national_mailing_address": "asgasg",
-			"national_tel": null,
-			"national_fax": null,
-			"national_email": null,
-			"national_signature": null,
-			"national_date": null,
-			"org_name": "gasgas",
-			"org_contact_point": "gasgas",
-			"org_tel": "gasgas",
-			"org_fax": null,
-			"org_email": null
-		}
-	}
+  "BC_SPA":
+  {
+    "@xmlns": "https://dd.info-rac.org/namespaces/4",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+    "country": null,
+    "contacting_party": "AL"
+    {
+      "partyname": null,
+      "rep_period_from": "0325-02-05",
+      "rep_period_to": "0532-05-31",
+      "institution_name": 55125,
+      "officer_name": "wata",
+      "mailing_address": "fass",
+      "tel": "afasfsa",
+      "fax": "fasffsa",
+      "email": "gasga",
+      "contact_point": "sggsags",
+      "instituion_full_name": "gasgsa",
+      "national_mailing_address": "agas",
+      "national_tel": "sgas",
+      "national_fax": "gsag",
+      "national_email": "sag@ttaf",
+      "national_signature": "asgasg",
+      "national_date": "0512-04-12",
+      "org_name": "sgasg",
+      "org_contact_point": "gagsaag",
+      "org_tel": "asgas",
+      "org_fax": "g214",
+      "org_email": "2512@fas"
+    },
+    "measuresdata":
+    {
+      "Row": [
+      {
+        "description": "Designation of the terrestrial areas (including wetlands) under their jurisdiction that are included in the area to which the SPA and Biological Diversity Protocol applies",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gassga",
+        "status": 1,
+        "status_comments": "fasgas"
+      },
+      {
+        "description": "Protection, preservation and management in a sustainable and environmentally sound way of areas of particular natural or cultural value, notably by the establishment of specially protected areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "fasgasg",
+        "status": 1,
+        "status_comments": "sagag"
+      },
+      {
+        "description": "Protection, preservation and management of endangered or threatened flora and fauna species",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Compilation of an inventory of the components of marine and coastal biodiversity",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Formulation of a national strategy and action plan to protect the components of marine and coastal biodiversity",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Monitoring the components of marine and coastal biodiversity and those processes and categories of activities which have or are likely to have a significant adverse impact on them",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Taking into consideration, in the planning process leading to decisions on projects and activities that could significantly affect protected areas, species and their habitats, of possible direct or indirect, immediate or long- term, impact, including the cumulative impact of projects and activities on habitats",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up of protected areas that come within the Protocol’s geographical coverage",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "gagasg"
+      },
+      {
+        "description": "Prohibition of the dumping and any discharge likely to directly or indirectly harm the integrity of specially protected areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "sgagsa",
+        "status": 1,
+        "status_comments": "gasgas"
+      },
+      {
+        "description": "Regulation of the passage of ships and all stopping or anchoring in the specially protected areas’ extension zone",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation of the introduction of any species not indigenous to the specially protected area or of genetically modified species",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation or prohibition of all exploration activities or activities that involve modifying the soil or subsoil of the land part, of the seabed or of its subsoil in the specially protected areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation of scientific research in the specific protected area",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Prohibition and regulation of all activities involving taking of species. (i.e. fishing, hunting, taking of animals and harvesting of plants and their destruction, as well as trade in animals, parts of animals, plants and parts of plants)which originate in specially protected areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation and if necessary prohibition of any other activity likely to have an adverse impact on the specially protected areas. These include activities that may harm or disturb the species or that might endanger the state of conservation of the ecosystems or species or might impair the natural or cultural characteristics of the Specially Protected Area",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Traditional subsistence and cultural activities of local populations taken into account when formulating protective measures for Specially Protected Areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Adoption of planning, management, supervision and monitoring  measures for Specially Protected Areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Elaboration and implementation of a management plan for each Specially Protected Area",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Programmes for  the  observation and scientific monitoring of changes in the Protocol Areas' ecosystems and of the impact of human activities",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Measures for the involvement of local communities in the process of managing the protected areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Providing assistance to local inhabitants to compensate for the possible adverse impact which the protection measures introduced in the SPA might have on their income",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Funding mechanisms for managing and promoting the protected areas or income- generating activities that are compatible with the protection measures",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Appropriate training for the technical managers and other qualified staff of SPAs",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up of Specially Protected Areas of Mediterranean Importance (SPAMIs)",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": 532523,
+        "status": 3,
+        "status_comments": null
+      },
+      {
+        "description": "Elaboration and implementation of a management plan for each SPAMI",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Drawing up of a list of endangered or threatened species of fauna and flora and identification of their distribution in the zones subject to Party's jurisdiction",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "32532523fasg"
+      },
+      {
+        "description": "Management of species of fauna and flora, listed in Annexes II and III to the Protocol , to ensure their favourable state of conservation",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "sagasg",
+        "status": 1,
+        "status_comments": "sgag"
+      },
+      {
+        "description": "Controlling and, where appropriate, prohibiting the taking, possession or killing, the commercial trade, the transport and the exhibition for commercial purposes of protected species of fauna, particularly those listed in Annex II to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Controlling and where appropriate prohibiting the disturbance of protected wild fauna, particularly during the period of breeding, incubation, hibernation or migration",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establishment of bilateral or multilateral cooperation (including agreements) to protect and restore the population of migrant species in the area where the Protocol is applied",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulating and where appropriate prohibiting all forms of destruction and disturbance of protected species of flora, particularly those listed in Annex II to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Formulation and adoption of measures and plans concerning ex situ reproduction, particularly in captivity, of protected fauna and the growing of protected flora",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Granting of exceptions, to the prohibitions prescribed for the protection of the species listed in the Annexes to the Protocol for scientific, educational, or management purposes necessary to ensure the survival of the species",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Taking steps to deal with the deliberate or accidental introduction into the wild of non- indigenous or genetically modified species and prohibiting those that may have harmful impacts on the ecosystems habitats or species",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "gasgas"
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gasgas",
+        "status": 1,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "gasgas"
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gasgas",
+        "status": 1,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      }]
+    },
+    "measuredata_difficulty":
+    {
+      "Row": [
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      }]
+    },
+    "pollincidents": null,
+    "management_plans_imp":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "description": null,
+        "spa_name": null,
+        "protection_measures": 3,
+        "difficulties": [1, 2, 3, 4, 5]
+      }
+    },
+    "spa":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "description": null,
+        "spa_name": "please specify gasgasga name",
+        "date": "12512-04-02",
+        "category": "tsdgas",
+        "jurisdiction": 1,
+        "coordinates": "gsaga",
+        "surface": "gasgas",
+        "ecosystems": "sgasg",
+        "management": 1,
+        "dateofadoption": "3232-03-31"
+      }
+    },
+    "measures_to_protect_species":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "description": null,
+        "posidonia_oceania": null,
+        "xiphias_gladius": null
+      }
+    },
+    "enf_measures":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "description": null,
+        "inspections": null,
+        "non_compliance": null,
+        "total_amount": null,
+        "remarks": null
+      }
+    }
+  }
 }
