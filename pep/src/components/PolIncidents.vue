@@ -15,8 +15,9 @@
           </p>
         </small>
       </div>
+      <br>
        <!-- <div class="answer" v-if="!info.data.question.selected" style="position: relative;"> -->
-       <div class="answer" style="position: relative;">
+       <div v-if="!info.data.question.selected" class="answer" style="position: relative;">
           <div class="table-head">
             <b>{{info.data.table_label}}</b>
           </div>
