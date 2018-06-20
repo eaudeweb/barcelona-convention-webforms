@@ -373,7 +373,7 @@ export default {
         }
       }
 
-      let tab_7 = this.dataset.tab_5.data;
+      let tab_7 = this.dataset.tab_7.data;
       for (let article of tab_7.articles) {
         for (let article_item of article.article_items){
           let collection_id = article_item.collection_id || null;
@@ -510,7 +510,7 @@ export default {
 
 
       let tab_6 = this.dataset.tab_6.data;
-      for (let article of tab_4_2.articles) {
+      for (let article of tab_6.articles) {
         let collection_id = article.collection_id || null;
         let parent_collection_id = article.parent_collection_id || null
         let description = article.description || null

@@ -34,6 +34,47 @@ export default {
     return {
       dataset: null,
       validation: [],
+      jsonemptyinstance: {
+          "BC_OP": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/21/schema-dst-21.xsd",
+              "country": null,
+              "contacting_party":{
+                "partyname":null,
+                "rep_period_from":null,
+                "rep_period_to":null,
+                "institution_name":null,
+                "officer_name":null,
+                "mailing_address":null,
+                "tel":null,
+                "fax":null,
+                "email":null,
+                "contact_point":null,
+                "instituion_full_name":null,
+                "national_mailing_address":null,
+                "national_tel":null,
+                "national_fax":null,
+                "national_email":null,
+                "national_signature":null,
+                "national_date":null,
+                "org_name":null,
+                "org_contact_point":null,
+                "org_tel":null,
+                "org_fax":null,
+                "org_email":null,
+
+              },
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]},
+              "permits_and_quantities": {Row:[]},
+              "inventory_offshore_installations": {Row:[]},
+              "enf_measures": {Row:[]},
+          }
+      },
+      dismissSecs: 2,
+      dismissCountDown: 0,
+      showDismissibleAlert: false,
     }
   },
 
@@ -43,68 +84,194 @@ export default {
     },
 
     doStuff(){
-      var info = this.info
-      console.log(info)
-      saveInstance(info)
-    },
+        this.jsonemptyinstance = {
+          "BC_OP": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/21/schema-dst-21.xsd",
+              "country": null,
+              "contacting_party":{
+                "partyname":null,
+                "rep_period_from":null,
+                "rep_period_to":null,
+                "institution_name":null,
+                "officer_name":null,
+                "mailing_address":null,
+                "tel":null,
+                "fax":null,
+                "email":null,
+                "contact_point":null,
+                "instituion_full_name":null,
+                "national_mailing_address":null,
+                "national_tel":null,
+                "national_fax":null,
+                "national_email":null,
+                "national_signature":null,
+                "national_date":null,
+                "org_name":null,
+                "org_contact_point":null,
+                "org_tel":null,
+                "org_fax":null,
+                "org_email":null,
 
-    validate() {
-      this.validation = [];
-      let data = this.dataset;
-      // delete data.tab_1
-        for(let a in data) {
-          if(a != 'tab_6' && a != 'tab_8'){
-              let tab_title = data[a].label
-              for(let b of data[a].data.articles) {
-                let article_title = b.article_title
-                if(!b.optional) {
-                  for(let c of b.article_items){
-                    let description = c.description
-                    for(let d of c.items) {
-                      let answer_label = d.label;
-                      if(d.selected === null || d.selected === []) {
-                        this.validation.push({
-                          tab: tab_title,
-                          article: article_title,
-                          description: description,
-                          answer: answer_label
-                        })
-                        break;
-                      }
-                    }
-                    break;
+              },
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]},
+              "permits_and_quantities": {Row:[]},
+              "inventory_offshore_installations": {Row:[]},
+              "enf_measures": {Row:[]},
+          }
+      }
+
+      let country_tab = this.dataset.country.tables
+
+      for(let table in country_tab) {
+          for (let value of country_tab[table]) {
+            this.jsonemptyinstance.BC_OP.contacting_party[value.name] = value.selected
+          }
+      }
+
+
+      let tab_1 = this.dataset.tab_1.data;
+      for (let article of tab_1.articles) {
+        for (let article_item of article.article_items){
+          let collection_id = article_item.collection_id || null;
+          let parent_collection_id = article_item.parent_collection_id || null
+          let description = article_item.description
+          let row =  {
+                      "description": description,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "changes": null,
+                      "difficulties": null,
+                      "difficulties_comments": null,
+                      "status":null,
+                      "status_comments": null,
+                  }
+            for(let item of article_item.items) {
+              if(item.type ==='changes') {
+                row.changes = item.selected
+              } else if (item.type === 'status') {
+                row.status = item.selected;
+                row.status_comments = item.comments
+              } else {
+                // row.difficulties = item.selected
+                row.difficulties_comments = item.comments
+                if(item.selected.length){
+                  for(let difficulty of item.selected) {
+                      this.jsonemptyinstance.BC_OP.measuredata_difficulty.Row.push(
+                          {
+                                    "collection_id": collection_id || null,
+                                    "difficulty": difficulty
+                                }
+                        )
                   }
                 }
-              }
-          } else {
-            // let tab_title = data[a].label;
-            // let article_title = data[a].data.table_label;
-            // let description = data[a].data.question.label;
-            // for(let answer of data[a].data.question.agreements) {
-            //   let answer_name = answer.name;
-            //   let answer_reference = answer.reference;
-            //   if(answer_name === '') {
-            //     this.validation.push({
-            //         tab: tab_title,
-            //         article: article_title,
-            //         description: description,
-            //         answer: 'Agrement name'
-            //     })
-            //   }
 
-            //   if(answer_reference === '') {
-            //     this.validation.push({
-            //         tab: tab_title,
-            //         article: article_title,
-            //         description: description,
-            //         answer: 'reference'
-            //     })
-            //   }
-            // }
+              }
+            }
+          this.jsonemptyinstance.BC_OP.measuresdata.Row.push(row)
+        }
+      }
+
+
+      let tab_2 = this.dataset.tab_2.data;
+      for (let article of tab_2.articles) {
+        let collection_id = this.dataset.tab_2.collection_id || null;
+        let parent_collection_id = this.dataset.tab_2.parent_collection_id || null
+        let title = article.article_title || null
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          title: title,
+          permit_type: null,
+          waste_cateogry: null,
+          permits_number_issued: null,
+          waste_quantity_permited: null,
+          waste_reporting_unit: null,
+          waste_quanity_actual: null,
+          waste_reporting_units: null,
+          dumping_regulated: null,
+          notes: null,
+        }
+        for (let article_item of article.article_items){
+          for( let item of article_item.items) {
+            row[item.name] = item.selected
           }
         }
 
-      this.$emit('validationDone', this.validation)
+        this.jsonemptyinstance.BC_OP.permits_and_quantities.Row.push(row);
+
+      }
+
+
+
+
+
+      let tab_4 = this.dataset.tab_4.data;
+      for (let article of tab_4.articles) {
+        let collection_id = article.collection_id || null;
+        let parent_collection_id = article.parent_collection_id || null
+        let title = article.article_title || null
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          title: title,
+          inspections: null,
+          non_compliance: null,
+          suspensions: null,
+          shutdowns: null,
+          enforcement: null,
+          implemented: null,
+          remarks: null,
+        }
+        for (let article_item of article.article_items){
+            row[article_item.name] = article_item.value
+        }
+
+        this.jsonemptyinstance.BC_OP.enf_measures.Row.push(row);
+
+      }
+
+
+
+
+
+      let tab_3 = this.dataset.tab_3.data;
+      console.log(tab_3)
+      for (let article of tab_3.articles) {
+        let collection_id = tab_3.collection_id || null;
+        let parent_collection_id = tab_3.parent_collection_id || null
+        let title = article.article_title.selected || null
+        console.log(article.article_title)
+        let row = {
+          collection_id : collection_id,
+          parent_collection_id: parent_collection_id,
+          title: title,
+          operator: title,
+          production_start: null,
+          current_status: null,
+          primary_production: null,
+          category: null,
+          weight_substructure: null,
+          weight_topside: null,
+          remarks: null,
+        }
+        for (let article_item of article.article_items){
+            row[article_item.name] = article_item.selected
+        }
+
+        this.jsonemptyinstance.BC_OP.inventory_offshore_installations.Row.push(row);
+
+      }
+
+
+      console.log(this.jsonemptyinstance.BC_OP.inventory_offshore_installations);
+
+
+    },
+
+    validate() {
     }
   },
     watch: {
