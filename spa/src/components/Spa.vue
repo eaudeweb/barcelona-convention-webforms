@@ -135,11 +135,11 @@
           </div>
           <div role="tablist">
           <b-card v-for="(article,index) in info.data.table_3.articles" :key="article.article_title" class="mb-1">
-            <h5 :id="titleSlugify(article.article_title)" style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
+            <h5 :id="titleSlugify(article.article_title)" style="cursor: pointer" href="#" v-b-toggle="`article_table_3_${index}`" variant="info">
               <span class="text-muted" v-if="article.optional">Optional: </span>
               {{article.article_title}} <span style="float:right">▼</span>
             </h5>
-            <b-collapse class="mt-3"  :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
+            <b-collapse class="mt-3"  :id="`article_table_3_${index}`" accordion="my-accordion" role="tabpanel">
               <div class="form-section" v-for="(item_array,array_index) in article.article_items">
                 <h6><b>{{item_array.description}}</b></h6>
                 <div class="form-subsection" v-for="item in item_array.items">
@@ -147,14 +147,14 @@
                 <div class="form-fields">
                   <div v-if="item.type === 'difficulties'">
                     <b-form-group>
-                      <b-form-checkbox-group stacked :id="`checkbox_${tabId}_${index}_${array_index}_${item.type}`" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options">
+                      <b-form-checkbox-group stacked :id="`checkbox_table_3_${tabId}_${index}_${array_index}_${item.type}`" :name="`checkbox_table_3_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options">
                       </b-form-checkbox-group>
 
                       </b-form-group>
                   </div>
                   <div v-else>
                    <b-form-group>
-                      <b-form-radio-group stacked :required="!article.optional" :id="`radio_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`">
+                      <b-form-radio-group stacked :required="!article.optional" :id="`radio_table_3_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_table_3_${tabId}_${index}_${array_index}_${item.type}`">
                       </b-form-radio-group>
                     </b-form-group>
                   </div>
