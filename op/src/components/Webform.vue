@@ -92,13 +92,45 @@ export default {
     prefill(data) {
      for(let table in this.form.country.tables) {
           for (let value of this.form.country.tables[table]) {
-            console.log(value.name)
             value.selected = data.BC_OP.contacting_party[value.name]
             if(value.name === 'partyname') {
               value.selected = this.country;
             }
           }
       }
+
+
+
+     // if(data.BC_OP.measuresdata.Row.length) {
+     //        for(let agreement of data.BC_OP.measuresdata.Row) {
+     //          // console.log(agreement.collection_id)
+     //            let collection_id = agreement.collection_id
+     //            let parent_collection_id = agreement.parent_collection_id
+     //            for (let tab in this.form){
+     //              // console.log(tab)
+     //              if(tab === 'tab_1') {
+     //                for(let article of this.form[tab].data.articles){
+     //                  for(let article_item of article.article_items){
+     //                    if(article_item.collection_id === collection_id) {
+     //                      for(let item of article_item.items) {
+     //                        if(item.type === 'changes') {
+     //                          item.selected = agreement.changes
+     //                        } else if (item.type === 'status') {
+     //                          item.selected = agreement.status
+     //                          item.comments = agreement.status_comments
+     //                        } else {
+     //                          item.comments = agreement.difficulties_comments;
+     //                        }
+     //                      }
+     //                    }
+     //                  }
+     //                }
+     //              }
+     //            }
+     //        }
+
+     //      }
+
     },
 
 
