@@ -17,7 +17,7 @@
           </div>
 
           <div role="tablist">
-          <b-card v-for="(article,index) in info.data.articles" :key="article.article_title" class="mb-1">
+          <b-card  v-for="(article,index) in info.data.articles" :key="article.article_title" class="mb-1">
             <h5 :id="titleSlugify(article.article_title)" style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
               {{article.article_title}} <span style="float:right">▼</span>
             </h5>
@@ -30,7 +30,7 @@
                 </p>
                 <div class="form-fields">
              
-                  <b-form-textarea :disabled="item.disabled" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-textarea>
+                  <b-form-input :disabled="item.disabled" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                   
                 </div>
                 

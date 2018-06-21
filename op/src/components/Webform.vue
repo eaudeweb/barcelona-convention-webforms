@@ -4,7 +4,7 @@
     <center><h5><small class="text-muted">Implementation of the protocol for the protection of the mediterranean sea against pollution resulting from exploration and exploitation of the continental shelf and the sea bed and its subsoil (offshore protocol)</small></h5></center>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
-          <b-tabs card>
+          <b-tabs v-if="prefilled" card>
             <b-tab title="Reporting party" active>
               <countrytab tabId="0" :info.sync="form.country"></countrytab>
             </b-tab>
@@ -69,6 +69,7 @@ export default {
       form: {},
       validation_data: [],
       button_text: 'Hide list',
+      prefilled: false,
       country: '',
     }
   },
@@ -100,36 +101,320 @@ export default {
       }
 
 
+     if(data.BC_OP.measuresdata.Row.length) {
+            for(let agreement of data.BC_OP.measuresdata.Row) {
+                let collection_id = agreement.collection_id
+                let parent_collection_id = agreement.parent_collection_id
+                for (let tab in this.form){
+                  if(tab === 'tab_1') {
+                    for(let article of this.form[tab].data.articles){
+                      for(let article_item of article.article_items){
+                        if(article_item.collection_id === collection_id) {
+                          for(let item of article_item.items) {
+                            if(item.type === 'changes') {
+                              item.selected = agreement.changes
+                            } else if (item.type === 'status') {
+                              item.selected = agreement.status
+                              item.comments = agreement.status_comments
+                            } else {
+                              item.comments = agreement.difficulties_comments;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+            }
 
-     // if(data.BC_OP.measuresdata.Row.length) {
-     //        for(let agreement of data.BC_OP.measuresdata.Row) {
-     //          // console.log(agreement.collection_id)
-     //            let collection_id = agreement.collection_id
-     //            let parent_collection_id = agreement.parent_collection_id
-     //            for (let tab in this.form){
-     //              // console.log(tab)
-     //              if(tab === 'tab_1') {
-     //                for(let article of this.form[tab].data.articles){
-     //                  for(let article_item of article.article_items){
-     //                    if(article_item.collection_id === collection_id) {
-     //                      for(let item of article_item.items) {
-     //                        if(item.type === 'changes') {
-     //                          item.selected = agreement.changes
-     //                        } else if (item.type === 'status') {
-     //                          item.selected = agreement.status
-     //                          item.comments = agreement.status_comments
-     //                        } else {
-     //                          item.comments = agreement.difficulties_comments;
-     //                        }
-     //                      }
-     //                    }
-     //                  }
-     //                }
-     //              }
-     //            }
-     //        }
+          }
 
-     //      }
+
+
+
+      if(data.BC_OP.measuredata_difficulty) {
+
+          if(data.BC_OP.measuredata_difficulty.Row.length) {
+            for(let agreement of data.BC_OP.measuredata_difficulty.Row) {
+
+              // console.log(agreement.collection_id)
+                let collection_id = agreement.collection_id
+                let difficulty = agreement.difficulty
+                for (let tab in this.form){
+                  // console.log(tab)
+                  if(tab === 'tab_1') {
+                    for(let article of this.form[tab].data.articles){
+                      for(let article_item of article.article_items){
+                        if(article_item.collection_id === collection_id) {
+                          for(let item of article_item.items) {
+                            if(item.type === 'difficulties') {
+                              item.selected.push(difficulty)
+                            } 
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+            }
+
+          }
+      }
+
+
+
+    if (data.BC_OP.permits_and_quantities) {
+      if (data.BC_OP.permits_and_quantities.Row && data.BC_OP.permits_and_quantities.Row.length && data.BC_OP.permits_and_quantities.Row.length > 1) {
+        for (let perm of data.BC_OP.permits_and_quantities.Row) {
+          // TODO: change this to colleciton collection id
+          let title = perm.title
+          for (let article of this.form.tab_2.data.articles) {
+            if (article.article_title === title) {
+              for (let article_items of article.article_items) {
+                for(let items of article_items.items) {
+                  items.selected = perm[items.name]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    if (data.BC_OP.inventory_offshore_installations) {
+      if (data.BC_OP.inventory_offshore_installations.Row.length) {
+        for (let inventory of data.BC_OP.inventory_offshore_installations.Row) {
+          // console.log(inventory)
+          // let collection_id = agreement.collection_id
+          // let difficulty = agreement.difficulty
+          let inventoryJson = {
+            article_title: {
+              label: 'Operator',
+              type: 'text',
+              name: 'operator',
+              selected: '',
+            },
+            article_items: [{
+              label: 'Production Start',
+              description: '',
+              type: 'date',
+              name: 'production_start',
+              selected: '',
+            }, {
+              label: 'Current status',
+              type: 'select',
+              name: 'current_status',
+              options: [{
+                value: 1,
+                text: 'closed down'
+              }, {
+                value: 2,
+                text: 'decommissioned'
+              }, {
+                value: 3,
+                text: 'derogation'
+              }, {
+                value: 4,
+                text: 'operational'
+              }],
+              selected: '',
+            }, {
+              label: 'Primary Production',
+              type: 'select',
+              name: 'primary_production',
+              options: [{
+                value: 1,
+                text: 'Condensate'
+              }, {
+                value: 2,
+                text: 'Gas'
+              }, {
+                value: 3,
+                text: 'Oil and gas'
+              }, {
+                value: 4,
+                text: 'Oil'
+              }],
+              selected: '',
+            }, {
+              label: 'Category',
+              type: 'select',
+              name: 'category',
+              options: [{
+                value: 1,
+                text: 'Fixed steel'
+              }, {
+                value: 2,
+                text: 'Floating concrete'
+              }, {
+                value: 3,
+                text: 'Floating Steel'
+              }, {
+                value: 4,
+                text: 'Gravity based concrete'
+              }, {
+                value: 5,
+                text: 'Subsea Steel'
+              }, {
+                value: 6,
+                text: 'Others'
+              }],
+              selected: '',
+            }, {
+              label: 'Weight Substructure',
+              description: 'tonnes',
+              type: 'number',
+              name: 'weight_substructure',
+              selected: '',
+            }, {
+              label: 'Weight Topside',
+              description: 'tonnes',
+              type: 'number',
+              name: 'weight_topside',
+              selected: '',
+            }, {
+              label: 'Remarks',
+              description: 'E.g. measures taken to not affect other legitimate uses of the sea: navigation, fishing and the protection of the marine environment',
+              type: 'text',
+              name: 'remarks',
+              selected: '',
+            }]
+          }
+          let inventoryobj = inventoryJson
+          inventoryobj.article_title.selected = inventory.operator;
+          for (let article of inventoryobj.article_items) {
+            article.selected = inventory[article.name]
+          }
+          this.form.tab_3.data.articles.push(inventoryobj)
+        }
+      }
+      else if (data.BC_OP.inventory_offshore_installations.Row) {
+        let inventory = data.BC_OP.inventory_offshore_installations.Row;
+        let inventoryJson = {
+          article_title: {
+            label: 'Operator',
+            type: 'text',
+            name: 'operator',
+            selected: '',
+          },
+          article_items: [{
+            label: 'Production Start',
+            description: '',
+            type: 'date',
+            name: 'production_start',
+            selected: '',
+          }, {
+            label: 'Current status',
+            type: 'select',
+            name: 'current_status',
+            options: [{
+              value: 1,
+              text: 'closed down'
+            }, {
+              value: 2,
+              text: 'decommissioned'
+            }, {
+              value: 3,
+              text: 'derogation'
+            }, {
+              value: 4,
+              text: 'operational'
+            }],
+            selected: '',
+          }, {
+            label: 'Primary Production',
+            type: 'select',
+            name: 'primary_production',
+            options: [{
+              value: 1,
+              text: 'Condensate'
+            }, {
+              value: 2,
+              text: 'Gas'
+            }, {
+              value: 3,
+              text: 'Oil and gas'
+            }, {
+              value: 4,
+              text: 'Oil'
+            }],
+            selected: '',
+          }, {
+            label: 'Category',
+            type: 'select',
+            name: 'category',
+            options: [{
+              value: 1,
+              text: 'Fixed steel'
+            }, {
+              value: 2,
+              text: 'Floating concrete'
+            }, {
+              value: 3,
+              text: 'Floating Steel'
+            }, {
+              value: 4,
+              text: 'Gravity based concrete'
+            }, {
+              value: 5,
+              text: 'Subsea Steel'
+            }, {
+              value: 6,
+              text: 'Others'
+            }],
+            selected: '',
+          }, {
+            label: 'Weight Substructure',
+            description: 'tonnes',
+            type: 'number',
+            name: 'weight_substructure',
+            selected: '',
+          }, {
+            label: 'Weight Topside',
+            description: 'tonnes',
+            type: 'number',
+            name: 'weight_topside',
+            selected: '',
+          }, {
+            label: 'Remarks',
+            description: 'E.g. measures taken to not affect other legitimate uses of the sea: navigation, fishing and the protection of the marine environment',
+            type: 'text',
+            name: 'remarks',
+            selected: '',
+          }]
+        }
+        let inventoryobj = inventoryJson
+        inventoryobj.article_title.selected = inventory.operator;
+        for (let article of inventoryobj.article_items) {
+          article.selected = inventory[article.name]
+        }
+        this.form.tab_3.data.articles.push(inventoryobj)
+      }
+    }
+
+
+
+
+
+    if (data.BC_OP.enf_measures) {
+      if (data.BC_OP.enf_measures.Row && data.BC_OP.enf_measures.Row.length && data.BC_OP.enf_measures.Row.length > 1) {
+        for (let perm of data.BC_OP.enf_measures.Row) {
+          let collection_id = perm.collection_id
+          for (let article of this.form.tab_4.data.articles) {
+            if (article.collection_id === collection_id) {
+              for (let article_items of article.article_items) {
+                  article_items.value = perm[article_items.name]
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    this.prefilled = true;
+
 
     },
 

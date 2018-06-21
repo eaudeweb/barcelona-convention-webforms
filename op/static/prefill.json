@@ -3,60 +3,60 @@
   {
     "@xmlns": "https://dd.info-rac.org/namespaces/4",
     "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
-    "country": "AL",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/21/schema-dst-21.xsd",
+    "country": null,
     "contacting_party":
     {
       "partyname": "AL",
-      "rep_period_from": "51512-02-04",
-      "rep_period_to": "0515-05-12",
-      "institution_name": "5wras",
-      "officer_name": "gasgsag",
-      "mailing_address": "fssa",
-      "tel": "gasgas",
-      "fax": "gasgas",
-      "email": "gasgasg@saga",
-      "contact_point": "sgasg",
-      "instituion_full_name": "sagsag",
-      "national_mailing_address": "asgasg",
-      "national_tel": null,
-      "national_fax": null,
-      "national_email": null,
-      "national_signature": null,
-      "national_date": null,
-      "org_name": "gasgas",
-      "org_contact_point": "gasgas",
-      "org_tel": "gasgas",
-      "org_fax": null,
-      "org_email": null
+      "rep_period_from": "0111-11-11",
+      "rep_period_to": "0022-02-22",
+      "institution_name": 3,
+      "officer_name": 4,
+      "mailing_address": 5,
+      "tel": 6,
+      "fax": 7,
+      "email": 8,
+      "contact_point": 9,
+      "instituion_full_name": 10,
+      "national_mailing_address": 11,
+      "national_tel": 12,
+      "national_fax": 13,
+      "national_email": 14,
+      "national_signature": 15,
+      "national_date": "0512-11-11",
+      "org_name": 16,
+      "org_contact_point": 17,
+      "org_tel": 18,
+      "org_fax": 19,
+      "org_email": 20
     },
     "measuresdata":
     {
       "Row": [
       {
-        "description": "Maintenance and promotion of contingency plans and other means (i.e. pre-positioned response equipment and training courses for both operating and supervisory level response personnel) of preventing and combating oil and hazardous and noxious substances(HNS) pollution incidents",
-        "parent_collection_id": 302,
-        "collection_id": 3001,
+        "description": "Exploration and  exploitation offshore activities subject to prior authorization issued by the national competent authority in accordance with Articles 5 and 6 and the criteria set forth in Annex IV",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": true,
         "difficulties": null,
-        "difficulties_comments": "asgasgas",
+        "difficulties_comments": "gassg",
         "status": 1,
-        "status_comments": "gasgasg"
+        "status_comments": "gsagas"
       },
       {
-        "description": "Designation of a national authority or authorities responsible for the implementation of the Prevention and Emergency Protocol",
-        "parent_collection_id": 302,
-        "collection_id": 3002,
+        "description": "Obligation upon operators to use the best available, environmentally effective and economically appropriate techniques in order to minimize the risk of offshore pollution",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": true,
         "difficulties": null,
-        "difficulties_comments": null,
+        "difficulties_comments": "sgasgsa",
         "status": 1,
-        "status_comments": "asgasgs"
+        "status_comments": "asfs"
       },
       {
-        "description": "Informing the Regional Centre (REMPEC) every two years of the measures taken for the implementation of the Prevention and Emergency Protocol",
-        "parent_collection_id": 302,
-        "collection_id": 3003,
+        "description": "Prohibition of disposal of harmful and noxious substances and materials listed in Annex I to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -64,19 +64,9 @@
         "status_comments": null
       },
       {
-        "description": "Development of monitoring and surveillance programmes and activities aimed at detecting oil and HNS pollution incidents whether accidental or operational and illicit discharges",
-        "parent_collection_id": 302,
-        "collection_id": 3004,
-        "changes": true,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": 1,
-        "status_comments": "gasgasggsagagasg"
-      },
-      {
-        "description": "Issuing of instructions to masters of ships flying your flag and pilots of aircrafts registered in their territory to report on actual or potential oil and HNS pollution incidents to the designated national authority or authorities and the nearest Coastal State",
-        "parent_collection_id": 302,
-        "collection_id": 3005,
+        "description": "Disposal of harmful and noxious substances and materials listed in Annex II to the Protocol is subject to a prior special permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -84,9 +74,9 @@
         "status_comments": null
       },
       {
-        "description": "Ensuring that the master of every ship sailing in their territorial waters report on actual or potential oil and HNS pollution incidents to the designated national authority or authorities and the nearest Coastal State",
-        "parent_collection_id": 302,
-        "collection_id": 3006,
+        "description": "Disposal of harmful and noxious substances and materials that are not listed in Annexes I and II to the Protocol is subject to a prior general permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -94,9 +84,9 @@
         "status_comments": null
       },
       {
-        "description": "Issuing of instructions to Port and Port Facility Authorities and offshore installations under their jurisdiction to report on actual or potential oil and HNS pollution incidents to the designated national authorities or authorities",
-        "parent_collection_id": 302,
-        "collection_id": 3007,
+        "description": "Use and storage of offshore chemicals is approved by the competent national authority on the basis of the Chemical Use Plan",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -104,9 +94,9 @@
         "status_comments": null
       },
       {
-        "description": "Communication to REMPEC and those Contracting Parties likely to be affected of information on actual or potential oil and HNS pollution incidents collected by masters of ships flying your flag, pilots of aircrafts registered in your territory, Port and Port Facility Authorities and offshore installations under their jurisdiction",
-        "parent_collection_id": 302,
-        "collection_id": 3008,
+        "description": "Disposal of oil and oily mixtures in accordance with the provisions of Annex V A to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -114,9 +104,9 @@
         "status_comments": null
       },
       {
-        "description": "Conducting oil and HNS pollution incident assessments (i.e. nature, extent and possible consequences) and taking every practical measure to prevent, reduce and, to the fullest possible extent, eliminate the effects of the pollution incident",
-        "parent_collection_id": 302,
-        "collection_id": 3009,
+        "description": "Use and disposal of drilling fluids and cuttings in accordance with the provisions of Annex V B to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -124,9 +114,9 @@
         "status_comments": null
       },
       {
-        "description": "Ensuring that ships flying their flag have on board a pollution emergency plan as required by, and in accordance with, the relevant international regulations",
-        "parent_collection_id": 302,
-        "collection_id": 3010,
+        "description": "Discharge of sewage prohibited with the exception of those cases provided for in Article 11.1 of the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -134,9 +124,9 @@
         "status_comments": null
       },
       {
-        "description": "Masters of ships flying their flag follow the procedures described in the shipboard emergency plan in case of oil and HNS pollution incidents",
-        "parent_collection_id": 302,
-        "collection_id": 3011,
+        "description": "Prohibition of disposal into the Protocol area of all plastics, such as synthetic ropes , synthetic fishing nets and plastic garbage bags and all non- biodegradable garbage, including paper products, rags, galls, metal, bottles, crockery, dunnage, lining and packing materials",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -144,9 +134,9 @@
         "status_comments": null
       },
       {
-        "description": "Ensuring that the master of every ship sailing in their territorial waters follows the procedures described in the shipboard emergency plan in case of oil and HNS pollution incidents",
-        "parent_collection_id": 302,
-        "collection_id": 3012,
+        "description": "Disposal of food waste to take place as far away as possible from land in accordance with international rules and standards",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -154,9 +144,9 @@
         "status_comments": null
       },
       {
-        "description": "Authorities or operators in charge of sea ports handling facilities have pollution emergency plans or other similar arrangements coordinated with the national system",
-        "parent_collection_id": 302,
-        "collection_id": 3013,
+        "description": "Ensure that operators dispose of all waste and harmful or noxious substances and materials in designated onshore reception facilities",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -164,9 +154,9 @@
         "status_comments": null
       },
       {
-        "description": "Operators in charge of offshore installations under their jurisdiction have a contingency plan coordinated with the national system",
-        "parent_collection_id": 302,
-        "collection_id": 3014,
+        "description": "Certificate of safety and fitness required to the offshore installation by the competent national authority",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -174,9 +164,9 @@
         "status_comments": null
       },
       {
-        "description": "Taking the necessary legal or administrative measures to facilitate the entry into, stay in and departure from their national territory of equipment, products and personnel engaged in responding to a pollution incident",
-        "parent_collection_id": 302,
-        "collection_id": 3015,
+        "description": "Contingency Plan in accordance with Annex VII to the Protocol required to the operator by the competent national authority",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -184,9 +174,9 @@
         "status_comments": null
       },
       {
-        "description": "Ensuring that port reception facilities meeting the needs of ships (including pleasure craft), are available in their ports and terminals",
-        "parent_collection_id": 302,
-        "collection_id": 3016,
+        "description": "Establishment of environmental and compliance monitoring programmes and activities",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -194,9 +184,9 @@
         "status_comments": null
       },
       {
-        "description": "Ensuring that port reception facilities are used efficiently, without causing any undue delay to ships and limiting discharges to the marine environment",
-        "parent_collection_id": 302,
-        "collection_id": 3017,
+        "description": "Obligation upon operators to remove disused offshore installations and pipelines in accordance with the guidelines and standards adopted by the competent international organization",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -204,158 +194,9 @@
         "status_comments": null
       },
       {
-        "description": "Ensuring that ships using the ports of the Parties are provided with updated information with respect to obligations under the MARPOL Convention and applicable national legislation",
-        "parent_collection_id": 302,
-        "collection_id": 3018,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Assessing the environmental risks of the recognized routes used in maritime traffic",
-        "parent_collection_id": 302,
-        "collection_id": 3019,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Taking appropriate measures aimed at reducing the risks of accidents or their environmental consequences",
-        "parent_collection_id": 302,
-        "collection_id": 3020,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Defining national, sub-regional or regional strategies concerning reception in ports and places of refuge, of ships in distress presenting a threat to the marine environment",
-        "parent_collection_id": 302,
-        "collection_id": 3021,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Dissemination of information on designated national authorities with responsibilities, including operational responsibilities, in case of oil and HNS pollution incidents",
-        "parent_collection_id": 302,
-        "collection_id": 3022,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Dissemination of information on national regulations and other matters directly related to preparedness for and response to pollution of the sea by oil or other hazardous and noxious substances",
-        "parent_collection_id": 302,
-        "collection_id": 3023,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Dissemination of information on new ways in which pollution of the sea by oil or other hazardous and noxious substances may be avoided, new measures for combating pollution, new developments in the technology of conducting monitoring and the development of research programmes.",
-        "parent_collection_id": 302,
-        "collection_id": 3024,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Coordination of the means of communication to ensure, with the necessary speed ad and reliability, the reception, transmission and dissemination of reports and urgent information concerning pollution incidents",
-        "parent_collection_id": 302,
-        "collection_id": 3025,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "National response strategy for marine pollution incidents adopted including a policy for the use of dispersants",
-        "parent_collection_id": 304,
-        "collection_id": 3026,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": "gsagsag",
-        "status": 1,
-        "status_comments": "saga"
-      },
-      {
-        "description": "National Contingency Plan covers:",
-        "parent_collection_id": 304,
-        "collection_id": 3027,
-        "changes": null,
-        "difficulties": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "National stockpiles of pre-positioned oil and HNS spill response equipment, including naval and aerial means, established",
-        "parent_collection_id": 304,
-        "collection_id": 3028,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Regular exercises are carried out to test the National Contingency Plan",
-        "parent_collection_id": 304,
-        "collection_id": 3029,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Local contingency plans, including port contingency plans, adopted",
-        "parent_collection_id": 304,
-        "collection_id": 3030,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Local plans, including port contingency plans, are integrated with the National Contingency Plan",
-        "parent_collection_id": 304,
-        "collection_id": 3031,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Local plans, including port contingency plans, are integrated with the industry emergency procedures",
-        "parent_collection_id": 304,
-        "collection_id": 3032,
-        "changes": null,
-        "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
-      },
-      {
-        "description": "Participation in sub-regional agreements regarding emergency situations adopted",
-        "parent_collection_id": 304,
-        "collection_id": 3033,
+        "description": "Adoption of special measures to prevent, abate, combat and control pollution in specially protected areas arising from offshore activities in these areas",
+        "parent_collection_id": null,
+        "collection_id": null,
         "changes": null,
         "difficulties": null,
         "difficulties_comments": null,
@@ -367,126 +208,183 @@
     {
       "Row": [
       {
-        "collection_id": 3001,
+        "collection_id": null,
         "difficulty": 1
       },
       {
-        "collection_id": 3001,
-        "difficulty": 2
-      },
-      {
-        "collection_id": 3001,
+        "collection_id": null,
         "difficulty": 3
       },
       {
-        "collection_id": 3001,
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
         "difficulty": 4
       },
       {
-        "collection_id": 3001,
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
         "difficulty": 5
       },
       {
-        "collection_id": 3002,
-        "difficulty": 2
-      },
-      {
-        "collection_id": 3002,
-        "difficulty": 4
-      },
-      {
-        "collection_id": 3002,
-        "difficulty": 5
-      },
-      {
-        "collection_id": 3002,
+        "collection_id": null,
         "difficulty": 3
       },
       {
-        "collection_id": 3004,
+        "collection_id": null,
         "difficulty": 4
-      },
-      {
-        "collection_id": 3004,
-        "difficulty": 2
-      },
-      {
-        "collection_id": 3004,
-        "difficulty": 3
-      },
-      {
-        "collection_id": 3004,
-        "difficulty": 1
-      },
-      {
-        "collection_id": 3026,
-        "difficulty": 2
-      },
-      {
-        "collection_id": 3026,
-        "difficulty": 1
-      },
-      {
-        "collection_id": 3026,
-        "difficulty": 4
-      },
-      {
-        "collection_id": 3026,
-        "difficulty": 3
-      },
-      {
-        "collection_id": 3026,
-        "difficulty": 5
       }]
     },
-    "pollincidents":
+    "permits_and_quantities":
     {
       "Row": [
       {
-        "collection_id": null,
-        "parent_collection_id": null,
-        "description": null,
-        "ship_name": 3523532,
-        "latitude": 5125125,
-        "longitude": 1512512,
-        "geo_info": 512521512,
-        "country": "5wafaga",
-        "accident": 8,
-        "date": "3252-03-25",
-        "pollution": true,
-        "pollution_type": 1,
-        "ship_category": 4,
-        "ship_flag": "awgasg",
-        "offshore_name_id": "sgasgas",
-        "installation_type": 2,
-        "oil_name_id": 3525235,
-        "oil_type": 2,
-        "actions": true,
-        "actions_taken": "gasgasgas"
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 9.5, Annex II",
+        "permit_type": "Special Permit",
+        "waste_cateogry": 1,
+        "permits_number_issued": 23,
+        "waste_quantity_permited": 3,
+        "waste_reporting_unit": 4,
+        "waste_quanity_actual": 5,
+        "waste_reporting_units": 6,
+        "dumping_regulated": 7,
+        "notes": 8
       },
       {
-        "collection_id": null,
-        "parent_collection_id": null,
-        "description": null,
-        "ship_name": "sgasgasg",
-        "latitude": "gasgsaggas",
-        "longitude": null,
-        "geo_info": null,
-        "country": null,
-        "accident": null,
-        "date": null,
-        "pollution": null,
-        "pollution_type": null,
-        "ship_category": null,
-        "ship_flag": null,
-        "offshore_name_id": null,
-        "installation_type": null,
-        "oil_name_id": null,
-        "oil_type": null,
-        "actions": null,
-        "actions_taken": null
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 9.6",
+        "permit_type": "General Permit",
+        "waste_cateogry": 9,
+        "permits_number_issued": 10,
+        "waste_quantity_permited": 11,
+        "waste_reporting_unit": 12,
+        "waste_quanity_actual": 13,
+        "waste_reporting_units": 14,
+        "dumping_regulated": 15,
+        "notes": 16
+      },
+      {
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 14.1.a",
+        "permit_type": "Force Majeure",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 14.1.b",
+        "permit_type": "Minimize Pollution Permit",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "dumping_regulated": null,
+        "notes": null
       }]
     },
-    "pollincidentsInfo": false
+    "inventory_offshore_installations":
+    {
+      "Row": [
+      {
+        "collection_id": 606,
+        "parent_collection_id": 605,
+        "title": "wfasf",
+        "operator": "wfasf",
+        "production_start": "0312-11-12",
+        "current_status": 1,
+        "primary_production": 2,
+        "category": 3,
+        "weight_substructure": 4,
+        "weight_topside": 5,
+        "remarks": 6
+      },
+      {
+        "collection_id": 606,
+        "parent_collection_id": 605,
+        "title": 12512,
+        "operator": 12512,
+        "production_start": "5125-05-12",
+        "current_status": 1,
+        "primary_production": 2,
+        "category": 3,
+        "weight_substructure": 59,
+        "weight_topside": 59,
+        "remarks": 123
+      }]
+    },
+    "enf_measures":
+    {
+      "Row": [
+      {
+        "collection_id": 6018,
+        "parent_collection_id": 608,
+        "title": "Protocol obligations and national legislation and regulations implementing the Protocol - Article 3 of the Protocol",
+        "inspections": 1,
+        "non_compliance": 2,
+        "suspensions": 4,
+        "shutdowns": 5,
+        "enforcement": 6,
+        "implemented": 7,
+        "remarks": 8,
+        "total_amount": 3
+      },
+      {
+        "collection_id": 6019,
+        "parent_collection_id": 608,
+        "title": "Specific conditions attached to authorizations or permits-Article 4 and 5",
+        "inspections": 9,
+        "non_compliance": 10,
+        "suspensions": 12,
+        "shutdowns": 13,
+        "enforcement": 14,
+        "implemented": 15,
+        "remarks": 16,
+        "total_amount": 11
+      },
+      {
+        "collection_id": 6020,
+        "parent_collection_id": 608,
+        "title": "Provisions regarding to illegal disposal-Article 9",
+        "inspections": null,
+        "non_compliance": null,
+        "suspensions": null,
+        "shutdowns": null,
+        "enforcement": null,
+        "implemented": null,
+        "remarks": null,
+        "total_amount": null
+      },
+      {
+        "collection_id": 6021,
+        "parent_collection_id": 608,
+        "title": "Provisions regarding safety measures-Article",
+        "inspections": null,
+        "non_compliance": null,
+        "suspensions": null,
+        "shutdowns": null,
+        "enforcement": null,
+        "implemented": null,
+        "remarks": null,
+        "total_amount": null
+      }]
+    }
   }
 }
