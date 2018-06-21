@@ -107,14 +107,321 @@ export default {
     },
 
     prefill(data) {
-     for(let table in this.form.country.tables) {
-          for (let value of this.form.country.tables[table]) {
-            value.selected = data.BC_SPA.contacting_party[value.name]
-            if(value.name === 'partyname') {
-              value.selected = this.country;
-            }
+     for (let table in this.form.country.tables) {
+       for (let value of this.form.country.tables[table]) {
+         value.selected = data.BC_SPA.contacting_party[value.name]
+         if (value.name === 'partyname') {
+           value.selected = this.country;
+         }
+       }
+     }
+     let classic_tabs = {
+       tab_2: ['table_1', 'table_3'],
+       tab_3: ['table_1'],
+       tab_4: ['table_1']
+     }
+     if (data.BC_SPA.measuresdata.Row.length) {
+       for (let agreement of data.BC_SPA.measuresdata.Row) {
+         let collection_id = agreement.collection_id
+         let parent_collection_id = agreement.parent_collection_id
+         for (let tab in this.form) {
+           if (tab === 'tab_1' || tab === 'tab_5' || tab === 'tab_7') {
+             for (let article of this.form[tab].data.articles) {
+               for (let article_item of article.article_items) {
+                 if (article_item.collection_id === collection_id) {
+                   for (let item of article_item.items) {
+                     if (item.type === 'changes') {
+                       item.selected = agreement.changes
+                     }
+                     else if (item.type === 'status') {
+                       item.selected = agreement.status
+                       item.comments = agreement.status_comments
+                     }
+                     else {
+                       item.comments = agreement.difficulties_comments;
+                     }
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+     if (data.BC_SPA.measuredata_difficulty) {
+       if (data.BC_SPA.measuredata_difficulty.Row.length) {
+         for (let agreement of data.BC_SPA.measuredata_difficulty.Row) {
+           // console.log(agreement.collection_id)
+           let collection_id = agreement.collection_id
+           let difficulty = agreement.difficulty
+           for (let tab in this.form) {
+             // console.log(tab)
+             if (tab === 'tab_1' || tab === 'tab_5' || tab === 'tab_7') {
+               for (let article of this.form[tab].data.articles) {
+                 for (let article_item of article.article_items) {
+                   if (article_item.collection_id === collection_id) {
+                     for (let item of article_item.items) {
+                       if (item.type === 'difficulties') {
+                         item.selected.push(difficulty)
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+     if (data.BC_SPA.measuresdata.Row.length) {
+       for (let agreement of data.BC_SPA.measuresdata.Row) {
+         let collection_id = agreement.collection_id
+         let parent_collection_id = agreement.parent_collection_id
+         for (let tab in this.form) {
+           if (tab != 'tab_1' && tab != 'tab_6' && tab != 'country' && tab != 'tab_5' && tab != 'tab_7') {
+             for (let table of classic_tabs[tab]) {
+               for (let article of this.form[tab].data[table].articles) {
+                 for (let article_item of article.article_items) {
+                   if (article_item.collection_id === collection_id) {
+                     for (let item of article_item.items) {
+                       if (item.type === 'changes') {
+                         item.selected = agreement.changes
+                       }
+                       else if (item.type === 'status') {
+                         item.selected = agreement.status
+                         item.comments = agreement.status_comments
+                       }
+                       else {
+                         item.comments = agreement.difficulties_comments;
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+     if (data.BC_SPA.measuredata_difficulty) {
+       if (data.BC_SPA.measuredata_difficulty.Row.length) {
+         for (let agreement of data.BC_SPA.measuredata_difficulty.Row) {
+           // console.log(agreement.collection_id)
+           let collection_id = agreement.collection_id
+           let difficulty = agreement.difficulty
+           for (let tab in this.form) {
+             // console.log(tab)
+             if (tab != 'tab_1' && tab != 'tab_6' && tab != 'country' && tab != 'tab_5' && tab != 'tab_7') {
+               for (let table of classic_tabs[tab]) {
+                 for (let article of this.form[tab].data[table].articles) {
+                   for (let article_item of article.article_items) {
+                     if (article_item.collection_id === collection_id) {
+                       for (let item of article_item.items) {
+                         if (item.type === 'difficulties') {
+                           item.selected.push(difficulty)
+                         }
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+
+
+
+
+
+
+
+
+// TODO: FIX TEMPLATE LIKE OP INVETORY DATA
+
+
+
+
+
+
+    if (data.BC_SPA.spa) {
+      if (data.BC_SPA.spa.Row.length) {
+        for (let inventory of data.BC_SPA.spa.Row) {
+          // console.log(inventory)
+          // let collection_id = agreement.collection_id
+          // let difficulty = agreement.difficulty
+          let inventoryJson = {
+          article_title: {
+            label: "Name of the SPA",
+            selected: 'please specify a name',
+            name: 'name',
+            type: 'text'
+          },
+          article_items: [{
+              label: 'Date of establishment',
+              type: 'date',
+              name: 'date',
+              selected: '',
+            }, {
+              label: 'Category',
+              type: 'text',
+              name: 'category',
+              selected: '',
+            }, 
+            {
+                  type: 'select',
+                  label: 'Jurisdiction',
+                  name: 'jurisdiction',
+                  selected: null,
+                  options: [
+                    { text: 'Please select one item', value: null },
+                    { text: 'National', value: 1 },
+                    { text: 'Adiacent', value: 2 },
+                    { text: 'High seas', value: 3 }
+                  ]
+                },
+            {
+              label: 'Coordinates',
+              type: 'text',
+              name: 'coordinates',
+              selected: '',
+            }, {
+              label: 'Surface (marine, terrestrial, wetland)',
+              type: 'text',
+              name: 'surface',
+              selected: '',
+            }, {
+              label: 'Main ecosystems, species and their habits',
+              type: 'text',
+              name: 'ecosystems',
+              selected: '',
+            },
+             {
+              type: 'radio',
+              label: 'Management plan',
+              name: 'management',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under Development', value: 3 }
+              ]
+            },
+            {
+              label: 'Date of adoption',
+              type: 'date',
+              name: 'dateofadoption',
+              selected: '',
+            } 
+          ]
+        }
+          let inventoryobj = inventoryJson
+          inventoryobj.article_title.selected = inventory.operator;
+          for (let article of inventoryobj.article_items) {
+            article.selected = inventory[article.name]
           }
+          this.form.tab_2.data.table_2.articles.push(inventoryobj)
+        }
       }
+      else if (data.BC_SPA.spa.Row) {
+        let inventory = data.BC_SPA.spa.Row;
+        let inventoryJson = {
+          article_title: {
+            label: "Name of the SPA",
+            selected: 'please specify a name',
+            name: 'name',
+            type: 'text'
+          },
+          article_items: [{
+              label: 'Date of establishment',
+              type: 'date',
+              name: 'date',
+              selected: '',
+            }, {
+              label: 'Category',
+              type: 'text',
+              name: 'category',
+              selected: '',
+            }, 
+            {
+                  type: 'select',
+                  label: 'Jurisdiction',
+                  name: 'jurisdiction',
+                  selected: null,
+                  options: [
+                    { text: 'Please select one item', value: null },
+                    { text: 'National', value: 1 },
+                    { text: 'Adiacent', value: 2 },
+                    { text: 'High seas', value: 3 }
+                  ]
+                },
+            {
+              label: 'Coordinates',
+              type: 'text',
+              name: 'coordinates',
+              selected: '',
+            }, {
+              label: 'Surface (marine, terrestrial, wetland)',
+              type: 'text',
+              name: 'surface',
+              selected: '',
+            }, {
+              label: 'Main ecosystems, species and their habits',
+              type: 'text',
+              name: 'ecosystems',
+              selected: '',
+            },
+             {
+              type: 'radio',
+              label: 'Management plan',
+              name: 'management',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+                { text: 'Under Development', value: 3 }
+              ]
+            },
+            {
+              label: 'Date of adoption',
+              type: 'date',
+              name: 'dateofadoption',
+              selected: '',
+            } 
+          ]
+        }
+        let inventoryobj = inventoryJson
+        inventoryobj.article_title.selected = inventory.operator;
+        for (let article of inventoryobj.article_items) {
+          article.selected = inventory[article.name]
+        }
+        this.form.tab_2.data.table_2.articles.push(inventoryobj)
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     },
 
     doTitle(title) {

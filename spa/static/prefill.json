@@ -5,7 +5,7 @@
     "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
     "country": null,
-    "contacting_party": "AL"
+    "contacting_party":
     {
       "partyname": null,
       "rep_period_from": "0325-02-05",
