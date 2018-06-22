@@ -39,7 +39,8 @@
 
 <script>
 
-import {getCompanyData} from '../api.js';
+
+import {getInstance, getCountry} from '../api.js';
 
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
@@ -81,15 +82,30 @@ export default {
 
   created() {
     this.form = form;
-  	// getCompanyData().then(response => {
-   //    console.log(response.data)
-   //    this.form.organization = response.data
-  	// })
+      getInstance().then((response) => {
+        let instance_data = response.data
+        getCountry().then((response) => {
+            this.country = response.data
+            this.prefill(instance_data)
+          })
+      })
   },
 
   methods: {
     getValidationData(data) {
       this.validation_data = data
+    },
+
+    prefill(data) {
+      for(let table in this.form.country.tables) {
+          for (let value of this.form.country.tables[table]) {
+            value.selected = data.BC_HWP.contacting_party[value.name]
+            if(value.name === 'partyname') {
+              value.selected = this.country;
+            }
+          }
+      }
+
     },
 
     doTitle(title) {

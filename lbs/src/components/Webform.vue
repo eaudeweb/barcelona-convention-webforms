@@ -84,13 +84,13 @@ export default {
 
   created() {
     this.form = form;
-    getInstance().then((response) => {
-      this.prefill(response.data)
-    })
-    getCountry().then((response) => {
-      this.country = response.data
-    })
-    // this.prefill(prefilldata)
+      getInstance().then((response) => {
+        let instance_data = response.data
+        getCountry().then((response) => {
+            this.country = response.data
+            this.prefill(instance_data)
+          })
+      })
   },
 
   methods: {
