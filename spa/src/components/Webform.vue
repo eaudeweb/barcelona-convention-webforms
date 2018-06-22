@@ -4,7 +4,7 @@
     <center><h5 style="margin-bottom:3rem;" ><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL FOR THE SPECIALLY PROTECTED AREAS AND BIODIVERSITY </small></h5></center>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
-          <b-tabs card>
+          <b-tabs v-if="prefilled" card>
             <b-tab title="Reporting party" active>
               <countrytab tabId="0" :info.sync="form.country"></countrytab>
             </b-tab>
@@ -34,7 +34,7 @@
         <formsubmit :country.sync="country" :info.sync="form"></formsubmit>
 
         <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-                  <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
+        <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
                   <validation :validationData="validation_data"></validation>
           </div>
       </b-card>
@@ -86,6 +86,7 @@ export default {
       validation_data: [],
       button_text: 'Hide list',
       country: '',
+      prefilled: false,
     }
   },
 
@@ -230,17 +231,6 @@ export default {
          }
        }
      }
-
-
-
-
-
-
-
-
-// TODO: FIX TEMPLATE LIKE OP INVETORY DATA
-
-
 
 
 
@@ -416,6 +406,195 @@ export default {
 
 
 
+
+
+
+
+
+
+    if (data.BC_SPA.management_plans_imp) {
+      if (data.BC_SPA.management_plans_imp.Row.length) {
+        for (let inventory of data.BC_SPA.management_plans_imp.Row) {
+          // console.log(inventory)
+          // let collection_id = agreement.collection_id
+          // let difficulty = agreement.difficulty
+          let inventoryJson = {
+                    article_title: {
+                      label: "Name of the SPA",
+                      value: 'please specify a name',
+                      name: 'name',
+                      type: 'text'
+                    },
+                    article_items: [{
+                      type: 'select',
+                      label: 'Implementation of Protection measures',
+                      info: 'Please select an option',
+                      name: 'protection_measures',
+                      selected: null,
+                      options: [
+                        { text: 'Dumping and releases of wastes/other substances likely to impair the integrity of the SPAMI', value: 1 },
+                        { text: 'Monitoring programme implemented', value: 2 },
+                        { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
+                        { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
+                        { text: 'Activities in the zone surrounding the area', value: 5 },
+
+                      ]
+                    }, {
+                      type: 'checkbox',
+                      label: 'Difficulties/Challenges',
+                      info: 'Please tick all that apply',
+                      name: 'difficulties',
+
+                      selected: [],
+                      options: [
+                        { text: 'Policy framework', value: 1 },
+                        { text: 'Regulatory framework', value: 2 },
+                        { text: 'Financial resources', value: 3 },
+                        { text: 'Administrative management', value: 4 },
+                        { text: 'Technical Guidance Capabilities', value: 5 }
+                      ],
+                    }]
+                  }
+          let inventoryobj = inventoryJson
+          inventoryobj.article_title.selected = inventory.operator;
+          for (let article of inventoryobj.article_items) {
+            article.selected = inventory[article.name]
+          }
+          this.form.tab_3.data.table_3.articles.push(inventoryobj)
+        }
+      }
+      else if (data.BC_SPA.management_plans_imp.Row) {
+        let inventory = data.BC_SPA.management_plans_imp.Row;
+        let inventoryJson = {
+          article_title: {
+            label: "Name of the SPA",
+            value: 'please specify a name',
+            name: 'name',
+            type: 'text'
+          },
+          article_items: [{
+            type: 'select',
+            label: 'Implementation of Protection measures',
+            info: 'Please select an option',
+            name: 'protection_measures',
+            selected: null,
+            options: [
+              { text: 'Dumping and releases of wastes/other substances likely to impair the integrity of the SPAMI', value: 1 },
+              { text: 'Monitoring programme implemented', value: 2 },
+              { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
+              { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
+              { text: 'Activities in the zone surrounding the area', value: 5 },
+
+            ]
+          }, {
+            type: 'checkbox',
+            label: 'Difficulties/Challenges',
+            info: 'Please tick all that apply',
+            name: 'difficulties',
+
+            selected: [],
+            options: [
+              { text: 'Policy framework', value: 1 },
+              { text: 'Regulatory framework', value: 2 },
+              { text: 'Financial resources', value: 3 },
+              { text: 'Administrative management', value: 4 },
+              { text: 'Technical Guidance Capabilities', value: 5 }
+            ],
+          }]
+        }
+        let inventoryobj = inventoryJson
+        inventoryobj.article_title.selected = inventory.operator;
+        for (let article of inventoryobj.article_items) {
+          article.selected = inventory[article.name]
+        }
+        this.form.tab_3.data.table_3.articles.push(inventoryobj)
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    if (data.BC_SPA.measures_to_protect_species) {
+      if (data.BC_SPA.measures_to_protect_species.Row && data.BC_SPA.measures_to_protect_species.Row.length && data.BC_SPA.measures_to_protect_species.Row.length > 1) {
+        for (let perm of data.BC_SPA.measures_to_protect_species.Row) {
+          // TODO: change this to colleciton collection id
+          let collection_id = perm.collection_id
+         for (let article of this.form.tab_4.data.table_2.articles) {
+            if (article.collection_id == collection_id) {
+
+              for (let article_items of article.article_items) {
+                for(let items of article_items.items) {
+                  items.selected = perm[items.name]
+                }
+              }
+            }
+          }
+        }
+      } else {
+          for (let item in data.BC_SPA.measures_to_protect_species.Row) {
+          // TODO: change this to colleciton collection id
+          let perm = data.BC_SPA.measures_to_protect_species.Row
+          let collection_id = perm['collection_id']
+          for (let article of this.form.tab_4.data.table_2.articles) {
+            if (article.collection_id == collection_id) {
+              for (let article_items of article.article_items) {
+                for(let items of article_items.items) {
+                  items.comments = perm['comments']
+                  items.selected = perm[items.name]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+
+    if (data.BC_SPA.enf_measures) {
+      if (data.BC_SPA.enf_measures.Row && data.BC_SPA.enf_measures.Row.length && data.BC_SPA.enf_measures.Row.length > 1) {
+        for (let perm of data.BC_SPA.enf_measures.Row) {
+          // TODO: change this to colleciton collection id
+          let title = perm.collection_id
+          for (let article of this.form.tab_6.data.articles) {
+            if (article.article_title === title) {
+              for (let article_items of article.article_items) {
+                for(let items of article_items.items) {
+                  items.selected = perm[items.name]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    this.prefilled = true;
 
 
 

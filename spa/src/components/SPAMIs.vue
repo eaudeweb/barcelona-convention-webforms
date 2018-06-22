@@ -140,6 +140,13 @@ export default {
     
   },
 
+  created() {
+    if(this.info.data.table_3.articles.length > 0){
+    } else {
+      this.addSpa()
+    }
+  },
+
   data () {
     return {
 

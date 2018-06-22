@@ -677,11 +677,11 @@
     {
       "Row":
       {
-        "collection_id": null,
+        "collection_id": 6800,
         "parent_collection_id": null,
-        "description": null,
+        "comments": "fasgas",
         "posidonia_oceania": null,
-        "xiphias_gladius": null
+        "xiphias_gladius": [2,1,3]
       }
     },
     "enf_measures":

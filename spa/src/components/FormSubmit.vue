@@ -492,7 +492,7 @@ export default {
         let row = {
           collection_id : collection_id,
           parent_collection_id: parent_collection_id,
-          description: description,
+          comments: null,
           posidonia_oceania: null,
           xiphias_gladius: null
         }

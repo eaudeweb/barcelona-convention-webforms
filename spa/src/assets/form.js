@@ -1343,43 +1343,7 @@ var form = {
 
       table_3: {
         table_label: 'Table VII – IMPLEMENTATION OF MANAGEMENT PLANS (Annex I to the Protocol)',
-        articles: [{
-          article_title: {
-            label: "Name of the SPA",
-            value: 'please specify a name',
-            name: 'name',
-            type: 'text'
-          },
-          article_items: [{
-            type: 'select',
-            label: 'Implementation of Protection measures',
-            info: 'Please select an option',
-            name: 'protection_measures',
-            selected: null,
-            options: [
-              { text: 'Dumping and releases of wastes/other substances likely to impair the integrity of the SPAMI', value: 1 },
-              { text: 'Monitoring programme implemented', value: 2 },
-              { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
-              { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
-              { text: 'Activities in the zone surrounding the area', value: 5 },
-
-            ]
-          }, {
-            type: 'checkbox',
-            label: 'Difficulties/Challenges',
-            info: 'Please tick all that apply',
-            name: 'difficulties',
-
-            selected: [],
-            options: [
-              { text: 'Policy framework', value: 1 },
-              { text: 'Regulatory framework', value: 2 },
-              { text: 'Financial resources', value: 3 },
-              { text: 'Administrative management', value: 4 },
-              { text: 'Technical Guidance Capabilities', value: 5 }
-            ],
-          }]
-        }]
+        articles: []
       },
     }
   },
@@ -1820,6 +1784,7 @@ var form = {
         table_label: 'Table IX – MEASURES TO PROTECT SPECIES,PER EACH SPECIES ',
         articles: [{
           article_title: 'List of species as per the Annexes to the Protocol(For each species, tick the box that applies)',
+          collection_id: 6800,
           article_items: [{
             items: [{
                 type: 'checkbox',
