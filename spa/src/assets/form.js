@@ -905,71 +905,7 @@ var form = {
 
       table_2: {
         table_label: 'Table III - LIST OF SPAs WITHIN THE PROTOCOL´S GEOGRAPHICAL COVERAGE',
-        articles: [{
-          article_title: {
-            label: "Name of the SPA",
-            selected: 'please specify a name',
-            name: 'name',
-            type: 'text'
-          },
-          article_items: [{
-              label: 'Date of establishment',
-              type: 'date',
-              name: 'date',
-              selected: '',
-            }, {
-              label: 'Category',
-              type: 'text',
-              name: 'category',
-              selected: '',
-            }, 
-            {
-                  type: 'select',
-                  label: 'Jurisdiction',
-                  name: 'jurisdiction',
-                  selected: null,
-                  options: [
-                    { text: 'Please select one item', value: null },
-                    { text: 'National', value: 1 },
-                    { text: 'Adiacent', value: 2 },
-                    { text: 'High seas', value: 3 }
-                  ]
-                },
-            {
-              label: 'Coordinates',
-              type: 'text',
-              name: 'coordinates',
-              selected: '',
-            }, {
-              label: 'Surface (marine, terrestrial, wetland)',
-              type: 'text',
-              name: 'surface',
-              selected: '',
-            }, {
-              label: 'Main ecosystems, species and their habits',
-              type: 'text',
-              name: 'ecosystems',
-              selected: '',
-            },
-             {
-              type: 'radio',
-              label: 'Management plan',
-              name: 'management',
-              selected: null,
-              options: [
-                { text: 'Yes', value: 1 },
-                { text: 'No', value: 2 },
-                { text: 'Under Development', value: 3 }
-              ]
-            },
-            {
-              label: 'Date of adoption',
-              type: 'date',
-              name: 'dateofadoption',
-              selected: '',
-            } 
-          ]
-        }]
+        articles: []
       },
 
 

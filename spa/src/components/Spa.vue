@@ -204,6 +204,14 @@ export default {
     
   },
 
+  created() {
+
+    if(this.info.data.table_2.articles.length > 0){
+    } else {
+      this.addSpa()
+    }
+  },
+
   data () {
     return {
       showAdoptionDate: false
