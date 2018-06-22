@@ -70,7 +70,6 @@ export default {
               },
               "measuresdata": {Row:[]},
               "measuredata_difficulty": {Row:[]},
-              "pollincidents": {Row:[]},
               "management_plans_imp": {Row:[]},
               "spa": {Row:[]},
               "measures_to_protect_species":{Row:[]},
@@ -102,7 +101,46 @@ export default {
 
     doStuff(){
 
+        this.jsonemptyinstance = {
+          "BC_SPA": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "country": null,
+              "contacting_party":{
+                "partyname":null,
+                "rep_period_from":null,
+                "rep_period_to":null,
+                "institution_name":null,
+                "officer_name":null,
+                "mailing_address":null,
+                "tel":null,
+                "fax":null,
+                "email":null,
+                "contact_point":null,
+                "instituion_full_name":null,
+                "national_mailing_address":null,
+                "national_tel":null,
+                "national_fax":null,
+                "national_email":null,
+                "national_signature":null,
+                "national_date":null,
+                "org_name":null,
+                "org_contact_point":null,
+                "org_tel":null,
+                "org_fax":null,
+                "org_email":null,
 
+              },
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]},
+              "management_plans_imp": {Row:[]},
+              "spa": {Row:[]},
+              "measures_to_protect_species":{Row:[]},
+              "enf_measures":{Row:[]}
+
+          }
+      }
 
     let country_tab = this.dataset.country.tables
 
