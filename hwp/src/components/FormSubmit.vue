@@ -486,7 +486,7 @@ export default {
           remarks: null,
         }
         for (let article_item of article.article_items){
-            row[article_item.name] = article_item.value
+            row[article_item.name] = article_item.selected
         }
 
         this.jsonemptyinstance.BC_HWP.enf_measures.Row.push(row);
