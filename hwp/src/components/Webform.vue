@@ -134,29 +134,5 @@ export default {
   max-width: 700px;
 }
 
-.validation {
-  position: fixed;
-  right: 0;
-  transform:translateX(0);
-  width: 300px;
-  top: 0;
-  background: white;
-  border: 1px solid #aaa;
-      padding: 1rem;
-    box-shadow: 1px 1px 3px #aaa;
-    z-index: 1;
-  transition: all 300ms;
-}
 
-.validation.closed {
-  transform: translateX(100%);
-}
-
-.validation-toggle {
-      position: absolute;
-    right: 100%;
-    top: -1px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
 </style>

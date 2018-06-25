@@ -1005,7 +1005,7 @@ var form = {
             }, {
               label: '1997',
               type: 'text',
-              name: '1997`',
+              name: '1997',
               selected: '',
             }, {
               label: '1998',
