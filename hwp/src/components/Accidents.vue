@@ -193,8 +193,12 @@ export default {
   },
 
   created(){
-    this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
-    console.log(this.hazardCount)
+    if(this.info.data.table_1.articles.length === 0) {
+      this.addIncident()
+    }
+    if(this.info.data.table_2.articles.length === 0) {
+      this.addIncidentmov()
+    }
   },
 
 

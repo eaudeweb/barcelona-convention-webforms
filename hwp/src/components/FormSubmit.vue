@@ -111,6 +111,55 @@ export default {
 
     doStuff(){
 
+        this.jsonemptyinstance = {
+          "BC_HWP": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
+              "country": null,
+              "contacting_party":{
+                "partyname":null,
+                "rep_period_from":null,
+                "rep_period_to":null,
+                "institution_name":null,
+                "officer_name":null,
+                "mailing_address":null,
+                "tel":null,
+                "fax":null,
+                "email":null,
+                "contact_point":null,
+                "instituion_full_name":null,
+                "national_mailing_address":null,
+                "national_tel":null,
+                "national_fax":null,
+                "national_email":null,
+                "national_signature":null,
+                "national_date":null,
+                "org_name":null,
+                "org_contact_point":null,
+                "org_tel":null,
+                "org_fax":null,
+                "org_email":null,
+
+              },
+              "measuresdata": {Row:[]},
+              "measuredata_difficulty": {Row:[]},
+              "hazardous_wastes_domestic_legislation": {Row:[]},
+              "total_hazardous_wastes": {Row:[]},
+              "wastes_y": {Row:[]},
+              "export_hazardous_wastes_total": {Row:[]},
+              "export_hazardous_wastes_y": {Row:[]},
+
+              "import_hazardous_wastes_total": {Row:[]},
+              "import_hazardous_wastes_y": {Row:[]},
+
+              "disposals_incidents": {Row:[]},
+              "accidents_during_disposal": {Row:[]},
+              "enf_measures": {Row:[]},
+          }
+      }
+
+
    let country_tab = this.dataset.country.tables
 
       for(let table in country_tab) {
@@ -449,9 +498,6 @@ export default {
 
 
 
-
-
-      console.log(this.jsonemptyinstance.BC_HWP.import_hazardous_wastes_y)
       
       this.showAlert();
       saveInstance(this.jsonemptyinstance);

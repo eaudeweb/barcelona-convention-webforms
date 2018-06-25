@@ -141,14 +141,20 @@ export default {
   },
 
   created(){
-    this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
-    console.log(this.hazardCount)
+
+    if(this.info.data.table_1.articles.length === 0) {
+      this.addHazard(0)
+      this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
+
+    } else {
+      this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
+    }
   },
 
 
   data () {
     return {
-      hazardCount: 1
+      hazardCount: 0
     }
   },
 
@@ -198,7 +204,7 @@ export default {
     updateHazards() {
       let hazardCount = 1;
       for(let hazard of this.info.data.table_1.articles) {
-        console.log(hazard)
+
         hazard.article_title = hazardCount
         hazardCount += 1
       }
