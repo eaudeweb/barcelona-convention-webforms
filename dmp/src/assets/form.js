@@ -632,7 +632,7 @@ var form = {
                   type: 'text',
                   label: '2.6.2 Waste Reporting Units',
                   description: 'Reporting units used by the permitting authority for a waste',
-                  name: 'waste_reporting_units',
+                  name: 'waste_reporting_units_2',
                   selected: '',
                   info: 'Depends on waste dumped',
                 },
@@ -1532,14 +1532,7 @@ var form = {
             name: 'coord_b_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          }, 
-          {
-            label: '4.6.1 Coordinate B - Latitude',
-            type: 'text',
-            name: 'coord_b_latitude',
-            selected: '',
-            info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.6.2 Coordinate B -Longitude',
             type: 'text',
@@ -1578,7 +1571,7 @@ var form = {
           {
             label: '4.9 Notes',
             type: 'text',
-            name: 'coord_c_longitude',
+            name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 4,',
           }]
