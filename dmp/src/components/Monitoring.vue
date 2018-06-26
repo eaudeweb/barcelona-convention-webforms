@@ -78,6 +78,9 @@ export default {
   },
 
   created() {
+    if(this.info.data.articles.length === 0) {
+      this.addDump();
+    }
   },
 
 

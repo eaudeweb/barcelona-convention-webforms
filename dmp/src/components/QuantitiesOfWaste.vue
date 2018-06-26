@@ -112,6 +112,12 @@ export default {
   },
 
   created() {
+    if(this.info.data.table_1.articles.length === 0) {
+      this.addDump1();
+    }
+    if(this.info.data.table_2.articles.length === 0) {
+      this.addDump2();
+    }
   },
 
 

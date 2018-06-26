@@ -1,0 +1,462 @@
+{
+  "BC_DMP":
+  {
+    "@xmlns": "https://dd.info-rac.org/namespaces/4",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/20/schema-dst-20.xsd",
+    "country": null,
+    "contacting_party":
+    {
+      "partyname": "AL",
+      "rep_period_from": "0003-01-02",
+      "rep_period_to": "0044-12-31",
+      "institution_name": "a",
+      "officer_name": "b",
+      "mailing_address": "c",
+      "tel": "d",
+      "fax": "e",
+      "email": "f@f",
+      "contact_point": "g",
+      "instituion_full_name": "j",
+      "national_mailing_address": "k",
+      "national_tel": "l",
+      "national_fax": "m",
+      "national_email": "n",
+      "national_signature": "o",
+      "national_date": "0011-11-11",
+      "org_name": "p",
+      "org_contact_point": "q",
+      "org_tel": "r",
+      "org_fax": "s",
+      "org_email": "t@t"
+    },
+    "measuresdata":
+    {
+      "Row": [
+      {
+        "description": "Prohibition of dumping of wastes and other matter with the exception of those listed in Article4.2",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 2,
+        "status_comments": null
+      },
+      {
+        "description": "Dumping of wastes and other matter listed in Article 4.2 is subject to a prior special permit from the designated competent national authority or authorities in conformity with the criteria set forth in the Annex to the Protocol and the related Guidelines adopted by the Meetings of the Contracting Parties",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 2,
+        "status_comments": null
+      },
+      {
+        "description": "Designated competent national authority or authorities keep(s) records of the nature and quantities of the waste or other matter, dumping location and method",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Prohibition of incineration at sea",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Force majeure dumping at sea is conducted under the conditions set out in Article 8 and reported to UNEP/MAP Secretariat immediately",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Critical dumping at sea is conducted under the conditions set out in Article 95 and UNEP/MAP Secretariat consulted immediately",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Dumping permits provided for in Article 5 are issued for wastes or other matter loaded in your territory or loaded in the territory of a non-Contracting Party",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Application of measures to implement this Protocol to your vessels and aircrafts, those loading in your territory and those believed to be engaged in dumping in areas under your jurisdiction.",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Issuing of instructions to maritime inspection ships and aircraft and other appropriate services to report to the relevant national authorities any incidents or conditions giving rise to suspicions that dumping in contravention to the Protocol had occurred or was about to occur",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      }]
+    },
+    "measuredata_difficulty":
+    {
+      "Row": [
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      }]
+    },
+    "dumping_at_sea_permits":
+    {
+      "Row": [
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1976 Protocol Article 5, Annex II",
+        "permit_type": "Special Permit",
+        "waste_cateogry": 1,
+        "permits_number_issued": 2,
+        "waste_quantity_permited": 3,
+        "waste_reporting_unit": 4,
+        "waste_quanity_actual": 5,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": 6,
+        "dumping_regulated": 7,
+        "notes": 8
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1976 Protocol Article 6",
+        "permit_type": "General Permit",
+        "waste_cateogry": 9,
+        "permits_number_issued": 10,
+        "waste_quantity_permited": 11,
+        "waste_reporting_unit": 12,
+        "waste_quanity_actual": 13,
+        "waste_reporting_units": 14,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": 15,
+        "notes": 16
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1976 Protocol Article 8",
+        "permit_type": "Force Majeure",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1976 Protocol Article 9",
+        "permit_type": "Critical Situation",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1995 Protocol Article 4.2.a",
+        "permit_type": "Permit",
+        "waste_cateogry": "Dredged Material",
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1995 Protocol Article 4.2.b",
+        "permit_type": "Permit",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1995 Protocol Article 4.d",
+        "permit_type": "Permit",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1995 Protocol Article 4.e",
+        "permit_type": "Permit",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1995 Protocol Article 8",
+        "permit_type": "Force Majeure",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "title": "1995 Protocol Article 9",
+        "permit_type": "Critical Situation",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "waste_reporting_units_2": null,
+        "dumping_regulated": null,
+        "notes": null
+      }]
+    },
+    "quantities_dry_weight_of_dredged_material":
+    {
+      "Row": [
+      {
+        "cr-tons": 1,
+        "cu-tons": 2,
+        "pb-tons": 3,
+        "ni-tons": 4,
+        "zn-tons": 5,
+        "oil-tons": 5,
+        "pah9-tons": 6,
+        "pah16-tons": 7,
+        "pcb7-tons": 8,
+        "hcb-kg": 9,
+        "g-hch-kg": 0,
+        "pp-ddt-kg": 1,
+        "pp-dde-kg": 2,
+        "pp-ddd-kg": 3,
+        "ddx-kg": 4,
+        "tbt-kg": 5,
+        "dbt-kg": 6,
+        "notes": 7
+      },
+      {
+        "cr-tons": 0,
+        "cu-tons": 9,
+        "pb-tons": 8,
+        "ni-tons": 7,
+        "zn-tons": 6,
+        "oil-tons": 5,
+        "pah9-tons": 55,
+        "pah16-tons": 444,
+        "pcb7-tons": 333,
+        "hcb-kg": 2222,
+        "g-hch-kg": 111,
+        "pp-ddt-kg": 12,
+        "pp-dde-kg": 33131,
+        "pp-ddd-kg": 34351,
+        "ddx-kg": 4124,
+        "tbt-kg": 42351,
+        "dbt-kg": 41323,
+        "notes": 5124
+      }]
+    },
+    "biennieal_summary_wastes":
+    {
+      "Row": [
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "dump_site_code": 12412,
+        "dumping_map": "afs",
+        "dumping_sea_method": "asf",
+        "waste_type_sea": "fjsaif",
+        "total_waste_dumped": "saklf",
+        "waste_reporting_units": "fa9r12",
+        "notes": "214ijopsmv"
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "dump_site_code": "sfas",
+        "dumping_map": 1,
+        "dumping_sea_method": 2,
+        "waste_type_sea": 3,
+        "total_waste_dumped": 4,
+        "waste_reporting_units": 5,
+        "notes": 6
+      }]
+    },
+    "dump_sites_coordinates":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "dump_site_code": "afgsa",
+        "geodetic_datum": "sfa",
+        "dump_site_shape": "ugoqfj",
+        "radius_of_circle": "qwhg",
+        "coord_a_latitude": "fj",
+        "coord_a_longitude": "ngi",
+        "coord_b_latitude": "irq3t0i0",
+        "coord_b_longitude": "gjw",
+        "coord_c_latitude": "g=h",
+        "coord_c_longitude": "wg",
+        "coord_d_latitude": "jwnbh",
+        "coord_d_longitude": "u9fb",
+        "notes": "whg"
+      }
+    },
+    "monitoring":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "dump_site_code_monitore_d": 1,
+        "monitoring_conducted_rep_period": true,
+        "field_monitoring_when": [2, 3],
+        "field_monitoring_survey_type": [1, 2, 4, 5],
+        "adverse_impact_found": null,
+        "impact_description": "sagas",
+        "compliance_monitoring_permit": true,
+        "operations_in_compliance_with_permit": false,
+        "is_follow_up_planned": true
+      }
+    },
+    "placement":
+    {
+      "Row": [
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "placement_site_code": "nameblabla",
+        "placement_location": 2,
+        "placement_purpose": 3,
+        "material_characteristics_and_quantity": 4,
+        "impact_hypothesis_status": 5,
+        "permitting_authority_name": 6,
+        "plans_for_monitoring": 7,
+        "notes": 8
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "placement_site_code": 659,
+        "placement_location": "wtjiwtwq",
+        "placement_purpose": "gjidsjgw",
+        "material_characteristics_and_quantity": null,
+        "impact_hypothesis_status": "gj",
+        "permitting_authority_name": "g",
+        "plans_for_monitoring": "wjg",
+        "notes": "jg9"
+      }]
+    }
+  }
+}

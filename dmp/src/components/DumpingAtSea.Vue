@@ -30,7 +30,7 @@
                 </p>
                 <div class="form-fields">
              
-                  <b-form-textarea :disabled="item.disabled" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-textarea>
+                  <b-form-input :disabled="item.disabled" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                   
                 </div>
                 
@@ -103,6 +103,13 @@ export default {
     info: null,
     tabId:null
     
+  },
+
+
+  created(){
+    if(this.info.data.table_2.articles.length === 0) {
+      this.addRow()
+    }
   },
 
   data () {
