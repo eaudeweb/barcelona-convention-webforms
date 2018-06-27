@@ -1,0 +1,483 @@
+{
+  "BC_BCRS":
+  {
+    "@xmlns": "https://dd.info-rac.org/namespaces/4",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/1/schema-dst-1.xsd",
+    "contacting_party":
+    {
+      "partyname": "AL",
+      "rep_period_from": "0011-11-11",
+      "rep_period_to": "0011-11-11",
+      "institution_name": "a",
+      "officer_name": "b",
+      "mailing_address": "c",
+      "tel": "d",
+      "fax": "e",
+      "email": "f",
+      "contact_point": "g",
+      "instituion_full_name": "h",
+      "national_mailing_address": "i",
+      "national_tel": "j",
+      "national_fax": "k",
+      "national_email": "l",
+      "national_signature": "m",
+      "national_date": "0241-02-21",
+      "org_name": "o",
+      "org_contact_point": "p",
+      "org_tel": "q",
+      "org_fax": "r",
+      "org_email": "s"
+    },
+    "bilateralmultilateralagreementsdata":
+    {
+      "Row": [
+      {
+        "agreementname": "fasfsa",
+        "website_other_reference": "safa",
+        "collection_id": 102
+      },
+      {
+        "agreementname": 142121,
+        "website_other_reference": "awfasfsa",
+        "collection_id": 102
+      }]
+    },
+    "measuresdata":
+    {
+      "Row": [
+      {
+        "description": "Application of the Precautionary Principle",
+        "parent_collection_id": 104,
+        "collection_id": 1001,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The application of this principle is regulated by the Law on the Environment (Official Gazette of Montenegro, No. 12/96, 48/08, 52/16).\nPrecautionary principle:\nWhen it is not certain what kind of consequences may cause an eventual action, all available procedures for the evaluation of expected effects and preventive measures need to be implemented in order to avoid negative impacts on human health and the environment. When there is a risk of actual and irreparable harm to human health ant the environment, undertaking of necessary protection measures cannot be postponed, not even when the risk is scientifically proven. The activity will be quit, actually the activity which has scientifically proven or assumed probability of being harmful and having lasting adverse impact on the environment will not be performed.\nEnvironment is promoted through the implementation of \nrelevant policies and strategic documents such as the \nNational Strategy for Sustainable Development (NSSD), the Environmental Protection Policy, the Water Management Policy, etc. Its implementation is also supported by enacting the new laws which are harmonized with EU requirements, such as the laws on EIA, SEA, IPPC, nature protection, waste management, etc. In order to provide efficient application of the precautionary principle it is necessary to adapt specific bylaws that would provide efficient implementation of this principle."
+      },
+      {
+        "description": "Application of the Polluter Pays Principle",
+        "parent_collection_id": 104,
+        "collection_id": 1002,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The application of this principle is regulated by the Law on the Environment, (Official Gazette of Montenegro, No. br. 12/96, 48/08, 52/16) which stipulates that legal and natural persons have to pay compensation for environmental pollution, based on the polluter pays\nprinciple. The same provisions of the Regulation on compensation amounts, accounting procedures and payment of compensation  for  pollution  caused  to  the  environment, above specified under point related to the precautionary principle, are of relevance for the application of the polluter pays principle.\nThe process of development of the Law on Eco Fund that has been in its final stage was interrupted. The provisions of the draft of this Law defined the establishment of Eco fund as the separate institution to regulate the use of economic instruments and management of financial sources for the realization of the environmental protection measures. Due to the lack of the policy support to separation of the environmental projects financing out of the centralized financing, since all activities are financed through the unique National Budget under direct responsibility of Ministry of Finance, the adoption of this law has been postponed. Therefore, there are not specific measures out of those that have been defined by the Decree on the amount, method of calculation and paying the fees for environmental pollution (Official Gazette of Montenegro, No. 64/09) and Decree on the criteria, amount and method of payment of a special fee for waste management (Official Gazette of Montenegro, No. 73/08)."
+      },
+      {
+        "description": "Undertake EIA for proposed activities that are likely to cause a significant adverse effect and/or are subject to an authorization by competent authorities",
+        "parent_collection_id": 104,
+        "collection_id": 1003,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "According to the Law on EIA, Official Gazette of Montenegro, \nNo. 80/05, 40/10, 73/10, 40/11. Beside these provisions, Law on EIA defines: the aim of which EIA has to be done, the procedure of EIA, decision making about need for EIA realization, defining of the content of the Study on EIA, decision making on issuing authorization for Study on EIA, public hearing, costs of EIA, measures for law enforcement. The provisions of the Article 5 of this Law which are related to the projects that are subject of EIA application are further developed by the Regulation on the projects that are subjects to EIA implementation (Official Gazette of the Republic of Montenegro, No: 20/07 from 04/04/2007). In accordance with this regulation there is the classification based on the establishment of two lists of projects: the first one is related to the projects that are subject to EIA implementation, where the EIA study is obligatory, and the second one is related to those projects for which the development of the Study on EIA may be requested. These two lists contain the projects which activities can cause the negative impacts on the marine environment. The content of the Study on EIA is defined by the Rule book on contents of an elaborate on the environment impact assessment (Official Gazette of Montenegro, No. 14/07 from 21/12/07). "
+      },
+      {
+        "description": "Use of Best available techniques (BAT) and Best Environmental Practices (BEP)",
+        "parent_collection_id": 104,
+        "collection_id": 1004,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establishment of a system to monitor the pollution of the marine environment and its coastal areas",
+        "parent_collection_id": 104,
+        "collection_id": 1005,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "This matter has been regulated by the Law on the Environment, Official Gazette of Montenegro, No. 12/96, 48/08, 52/16. The monitoring of the marine ecosystem is based on the provisions of the Law on the Environment which refers to the obligation to provide information on the state of the environment in general. Monitoring of the state of the environment in Montenegro has been realized from 1997. It consists of the program of monitoring of all segments of the environment, including waters. Due to the shared responsibilities between different Ministries and institutions regarding waters protection and management, a certain lack of capacities exists. In order to improve the monitoring of the state of the marine ecosystem, the monitoring of the state of marine ecosystem is defined in accordance with MEDPOL methodology and requirements of the Barcelona Convention, combined with relevant EEA requirements. \nThe realization of the National Programme for Monitoring of the State of the Environment in Montenegro is one of the key responsibilities of the Environmental Protection Agency. As explained above, the Programme for monitoring of the impacts of marine pollution is a part of comprehensive National Programme for Monitoring of the State of the Environment in Montenegro. The technical and administrative capacities to provide efficient realization of the monitoring of the state of marine and coastal area environment, including impacts of marine pollution, have to be strengthened. It is a continual task of EPA and other competent national institutions which participate in realization of the monitoring of the state of environment to constantly improve their capacities. "
+      },
+      {
+        "description": "Designation of competent authorities responsible for pollution monitoring within areas under national jurisdiction",
+        "parent_collection_id": 104,
+        "collection_id": 1006,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The Agency for Environmental Protection (EPA) is defined as the competent national authority for pollution monitoring in accordance with the Law on the Environment, Official Gazette of Montenegro, No. 12/96, 48/08, 52/16. Monitoring of the marine ecosystem has been improved through the activities of EPA, starting from 2009. The monitoring of the marine ecosystem is realized on the annual basis as a part of an comprehensive National Monitoring Program. Due to financial limitations and capacities much work still remains to be done in order to provide the adequate technical, human and institutional capacities, especially in regard to the improvement of bio-monitoring. EPA defines and realizes the monitoring program on annual basis. In such a manner, collected data are used both to report in the framework of Barcelona Convention and for the preparation of the National Report on the state of the environment in Montenegro, which are regularly submitted to the MEDPOL Secretariat. "
+      },
+      {
+        "description": "Ensure public access to information on the state of the marine environment and its coastal areas",
+        "parent_collection_id": 104,
+        "collection_id": 1007,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "It is regulated by the Law on the Environment, Official Gazette of Montenegro, No. 12/96, 48/08, 52/16 and Law on Free Access to information, Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/05. The implementation of the provisions of here stated laws is also supported by the implementation of the Aarhus Ratification. At the same time, strengthening of the capacities of the EPA, especially with establishment of the Arhus Center as the part of the EPA, improved the access to information of the state of the environment in Montenegro. All the reports drafted on the basis of the annual national monitoring programmes on the state of the environment, including the marine and coastal zones, can be found on the official website of the EPA. \nThe Law on Environment (Official Gazette of Montenegro, No. 12/96, 48/08, 52/16) and Law on Free Access to information (Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/2005) define the provisions of relevance for public access to information on the state of the environment. The provisions of the Law are compatible with the provisions of the Aarhus Convention which has been ratified in the end of 2008. In accordance with such defined legal provisions, access to the information on the environment is granted through the services of EPA and its Arhus Center, Ministry of Sustainable Development, and all other institutions with competencies in the field of environment. \nAs stated above, after the adoption, the Report on the state of the environment in Montenegro by the Government is made available on the official website of the Environmental Protection Agency. If there is a request to publicize the specific data related to the values of the parameters of relevance for the state of marine environment, an official request can be submitted. According to the provisions of the Law on the Environment and the Law on Free Access to Information, the competent national authority is obliged to provide the access to collected data . Among the most important tasks of the Environmental Protection Agency are those related to the establishment of comprehensive monitoring and reporting system on the state of the environment in accordance with requirements of the EEA. In 2010, Arhus center was established within Environmental Protection Agency in order to ensure efficient implementation of the Arhus Convention in Montenegro and to ensure an easy access to the environmental information to the citizens, NGOs and all other stakeholders. "
+      },
+      {
+        "description": "Ensure public access to information related to the activities adversely affecting or likely to affect the marine environment and its coastal areas",
+        "parent_collection_id": 104,
+        "collection_id": 1008,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The information on the impacts of the activities adversely affecting or likely to affect the marine environment and its coastal areas are subject to the National report on the state of the environment. The request for the access to this kind of information has to be submitted to the competent national authority (EPA, Ministry for Sustainable Development and Tourism, and other competent national institutions having competences in the field of environment). After consideration of the request, competent national authority will inform subject requested the information on the relevant data according to the provision of the Law on Free Access to information and the Law on the Environment. Functioning of the Arhus center that was established within the Environmental Protection Agency in accordance with the Arhus convention facilitated the access to the environmental information to the citizens, NGOs and all other stakeholders. In addition, the center provides legal assistance and advices in the field of environmental protection. "
+      },
+      {
+        "description": "Ensure public access to information related to activities carried out and/or measures taken to implement the Barcelona Convention and its Protocols",
+        "parent_collection_id": 104,
+        "collection_id": 1009,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "It is regulated by the: Law on ratification of the Convention for the Protection of the Marine Environment and the Coastal Region of the Mediterranean; Protocol on Cooperation in Preventing Pollution from Ships and, in Cases of Emergency, Combating Pollution of the Mediterranean Sea; Protocol for the Protection of the Mediterranean Sea against Pollution from Land-based Sources and Activities; Protocol concerning Specially Protected Areas and Biological Diversity in the Mediterranean; Protocol on the Prevention of Pollution of the Mediterranean Sea by Trans-boundary Movements of Hazardous Wastes and their Disposal (Official Gazette of Montenegro, No. 64/07, from 22/10/2007), Law on the Environment, Official Gazette of Montenegro (Official Gazette of Montenegro, No. 12/96, 48/08, 52/16) and Law on Free Access to information, Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/05. The Ministry of Sustainable Development and Tourism, as the competent national authority for cooperation with UNEP/MAP, regularly informs public about activities related to the Barcelona Convention implementation using different forms of communication: e.g. press conferences for media are organized from time to time in order to inform the public on the realization of the specific project and programme activities, information on regular thematic overviews and reports are available on the web site of the Ministry, etc. Round tables on the protection of the sea and coastal area of Montenegro are organized annually. These events are open for public participation and also frequently broadcasted keeping in mind the importance of the resources of coastal area for the entire national development."
+      },
+      {
+        "description": "Ensure public participation and consultation in decision-making processes related to the development of policies and legislation for the protection of the marine environment and its coastal area",
+        "parent_collection_id": 104,
+        "collection_id": 1010,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "It is regulated by the Law on the Environment, Official Gazette of Montenegro (Official Gazette of Montenegro, No. 12/96, 48/08, 52/16) and Law on Free Access to information (Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/05). According to the provisions of these and other specific national legislation, development of the national legislation for the protection of the marine environment and its coastal area has to be followed by public hearings and dissemination of related data via media. The similar procedure should be applied for the development of related policies. There is a difference regarding organization of the public hearings of relevance for development of policy documents in comparison with the procedure of relevance for development of legislation. In the case of policy documents development, the responsible national authority could decide on the way to communicate the public. At the same time, the organization of the participatory processes is recognized as a way to motivate the public to take participation in drafting and adopting the national policies of relevance for the protection of the marine environment In the framework of reforming the ICZM policy, the improvement of legal framework and administrative capacities of relevance for the protection of the marine environment and its coastal area have to be done. The crucial support was provided by the PAP/RAC with the aim to enable the analyse of the national institutional and legal framework with the aim to support ratification procedure, and foster implementation of the Protocol on ICZM. As it is stated above the NS ICZM was adopted by the Government of Montenegro in June 2015 in the scope of CAMP implementation, and it represents the national policy framework for ICZM. Strengthening the capacities for implementation of the Protocol on ICZM is of the utmost importance. The provisions of this Protocol have already been inserted in a certain number of the bylaws, especially those that regulate the spatial planning area. There is an ongoing process of integrating ICZM provisions in the legislation of relevance for public domain management and spatial planning. \nTaking into account the provisions of the Law on Free Access to information (Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/05), as well as numerous specific laws, procedures for public participation in the processes of these laws implementation have been determined, in particular regarding development and adoption of different policy and strategic documents. "
+      },
+      {
+        "description": "Ensure public participation and consultation in the EIA process for proposed activities that are likely to cause damage to the marine environment and its coastal areas",
+        "parent_collection_id": 104,
+        "collection_id": 1011,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "It is regulated by the Law on the Environment, Official Gazette of Montenegro (Official Gazette of Montenegro, No. 12/96, 48/08, 52/16), Law on Free Access to information (Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/05) and Law on EIA (Official Gazette of of Montenegro, No. 80/05, 40/10, 73/10,40/11). In addition to already stated provisions of the Law on Free Access to information and the Law on the Environment,mthe Law on EIA defines the procedures that have to be applied in order to enable public access to information in different phases of EIA development. The Law on EIA is mostly harmonized with relevant EU directive and EIA."
+      },
+      {
+        "description": "Ensure public participation in the process of authorization of proposed activities likely to cause damage to the marine environment and its coastal areas",
+        "parent_collection_id": 104,
+        "collection_id": 1012,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "It is regulated by the Law on the Environment, Official Gazette of Montenegro (Official Gazette of Montenegro, No. 12/96, 48/08, 52/16) and Law on Free Access to information (Official Gazette of the Republic of Montenegro, No. 68/05 from 15/11/05). Public can be informed and participate in the process of authorization of the proposed activities likely to cause damage to the marine environment and its coastal areas, in accordance with the provisions of the above stated laws. It is necessary to submit the request to the competent national authority in charge of the access to the information on the related activities. After this first step, the responsible national authority is obliged to decide what kind of information can be submitted to the requester by taking into account relevant legal provisions. In the scope of the reform of ICZM policy in Montenegro, the need to improve the existing provisions related to the public participation and consultation in the EIA process, and/or to create the specific provisions strictly related to public participation and consultation in the EIA process for proposed activities that are likely to cause damage to the marine environment and its coastal areas will be considered. "
+      },
+      {
+        "description": "Promotion of cooperation on the basis of notification, exchange of information and consultation among parties concerned, when an EIA is undertaken in a transboundary context",
+        "parent_collection_id": 104,
+        "collection_id": 1013,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "According to the Law on EIA, Official Gazette of Montenegro, No. 80/05, 40/10, 73/10,40/11, the notification on EIA in transboundary context is regulated by the Article 31, while public hearing is regulated by Article 20. In accordance with this provisions following procedures are regulated: exchange of information on the project that may have negative impact on the environment of other country in transboundary context, and terms in which other country may submit relevant opinion; exchange of the information on the decision that is done regarding the project that is subject of EIA procedure with other countries; the opinion of other country is to be taken into account while having public hearing procedure; the exchange of information is based on the principle of reciprocity and in accordance with relevant international treaties.\nThe Law on EIA (Official Gazette of Montenegro, No. 80/05, 40/10, 73/10, 40/11) defines the procedure for EIA application, as well as the activities for which EIA application is necessary to be done, including the procedure of notification, exchange of information and consultation in case of EIA in a transboundary context. The Environmental Protection Agency was established at the end of 2008 with the main goal to create and provide the appropriate institutional framework for the realization of executive activities in the field of environmental protection, especially those related to EIA and SEA application."
+      },
+      {
+        "description": "Promotion of integrated planning and management of coastal areas, when preparing coastal zone management plans at the national, regional or local level, taking into account areas of ecological and landscape interest and the rational use of natural resources",
+        "parent_collection_id": 104,
+        "collection_id": 1014,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "Promotion of Integrated planning and management of coastal area has been regulated by the Law on ratification of the Protocol on Integrated Coastal Zone Management of Mediterranean, Official Gazette of Montenegro, No. 16/11 from 15/12/2011. In that regard, the National Strategy for ICZM was adopted by the Government of Montenegro in June 2015. Also, there is an ongoing actions aimed to amend Law on Public Domain of Montenegro and Law on Spatial Planning and Constructions with the provisions of relevance for implementation of the Protocol on ICZM. Policy and strategic planning level related to the integrated coastal zone management is more advanced than regulatory framework. Following the measures and actions defined in the NSSD, the National Strategy for Integrated Coastal Zone Management has been developed with support of the MED Partnership and adopted by the Government of Montenegro, in accordance with activities related to realization of CAMP Montenegro and will result in development of the Plan on ICZM, providing a number of studies and analyzes that are based on the provisions of the Protocol on ICZM. The studies are created in a manner to provide inputs for a new Coastal Area Spatial Plan of Montenegro, enabling integration of ICZM principles into spatial planning practice. The most important activities are related to the vulnerability, attractiveness and suitability assessment of the coastal area of Montenegro, as well as the analyze of the urbanization of the coastal area of Montenegro and determination of the proposal for establishment of set back.\nAs stated above, the functioning of the Public Enterprise for Coastal Zone Management is created in order to provide protection and management of the very narrow strip of the coastal zone in Montenegro in line with the existing Low on Maritime Domain (the new one is under development). This is also of relevance for ICZM application in the scope of coastal zone management plans at the national, regional or local level preparation and ratification of the ICZM protocol was of the utmost importance in that regard. In accordance with the provisions of the Protocol on ICZM, CAMP Montenegro was realized in period 2011-2014. The National Strategy for ICZM with Action Plan until 2030 has been prepared and adopted by the Government of Montenegro in June 2015. It defines coordination mechanism of importance for ICZM implementation: The National Council for Sustainable Development and Climate Change, chaired by the President of the State will also act as the Council for ICZM, while Coordination Body Chaired by the Minister of Sustainable Development and Tourism will act as the forum to support ICZM policy implementation and work of the National Council. Specific Administrative Unit for Integrated Coastal Zone Management, as the component of the Ministry of Sustainable Development and Tourism, will be responsible for NS ICZM implementation. NS ICZM is based on a broad analytical basis that has been created over 3 years. At the same time, it serves as the expert basis for development of the new Coastal Area Spatial Plan in accordance with the principles of the Protocol on ICZM. "
+      },
+      {
+        "description": "Cooperation in the fields of science and technology by inter alia the exchange of scientific data and other information",
+        "parent_collection_id": 104,
+        "collection_id": 1015,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Promotion the research on, access to and transfer of environmental sound technology, including clean production technologies",
+        "parent_collection_id": 104,
+        "collection_id": 1016,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Implementation of the Guidelines for the Determination of Liability and Compensation for Damage resulting from Pollution of the Marine Environment in the Mediterranean Sea Area",
+        "parent_collection_id": 104,
+        "collection_id": 1017,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Protection of the marine environment and its coastal areas is part of the domestic strategy for sustainable development",
+        "parent_collection_id": 106,
+        "collection_id": 1018,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The Integrated coastal zone management has been one of 24 areas for priority  actions  of  the  National Strategy for  Sustainable Development of Montenegro, 2007. The related two priority measures and the sets of priority actions in the scope of each of them are defined in a way to provide the appropriate answers to challenges of relevance for sustainable development of the coastal region of Montenegro, including those related to pollution reduction from land based sources and sea based sources, protection and sustainable management of the protected areas, establishment of the marine protected areas, prevention of the urbanization sprawl and linear urbanization, realization of programmes for human and technical capacity building based on the requirements of the international conventions and treaties. \nThe strategically defined measures and actions represented the basis for the national ICZM policy. In that respect, after ratification of the ICZM Protocol appropriate adjustments of the national policy and legal framework has been initiated resulting in a further harmonization of the national legislation and the adoption of the National Strategy for IZCM (NSICZM) by the Government of Montenegro in June 2015. At the same time, once the Integrated Coastal Zone Management Plan is developed (which is the main outcome of the CAMP Montenegro together with NSICZM), it will create the basis for improvement of the policy and related strategic framework related to the protection of the marine environment and coastal area. In the new NSSD until 2030, adopted in 2016, the entire set of measures and action defined in the NS ICZM until 2030 has been incorporated."
+      },
+      {
+        "description": "Protection of the marine environment and its coastal areas from land-based sources of pollution and activities and pollution from ships is part of the Party’s NSSD and other relevant sectoral development policies such as industry, energy, agriculture, transport, etc. by giving due regard to priority objectives, actions and targets of the SAP MED and the respective NAPs and the regional strategy to combat pollution from ships",
+        "parent_collection_id": 106,
+        "collection_id": 1019,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The policy measures that are relevant for mitigation and reduction of the pollution from land based sources and from ships are defined in several policy documents: - The National\tStrategy for Sustainable Development, 2007 - The National\tStrategy for Sustainable Development until 2030 adopted in July 2016 - The National Action Plan for reduction of the pollution from land based sources, updated in 2015 - National Strategy for Integrated Coastal Zone Management - National Spatial Plan of Montenegro - Coastal Area Spatial Plan of Montenegro 2007 (CASP) - Policy and Master Plans for Solid Waste management and Waste water Treatment - National Contingency Plan - National Strategy for Tourism Development - Strategy for Agriculture Development - Strategy for Energy Development - Strategy for transport development - Biodiversity Strategy with the Action Plan - The First and Second National Communication on Climate Change - The Fishery Strategy The NSSD, the National Action Plan for reduction of the pollution from land based sources, the National Strategy for Integrated Coastal Zone Management, Spatial Plan of Montenegro and CASP are the mos important strategic documents that define the measures and objectives for reduction of pressures of the pollution to the ecosystem and coastal areas. Although the relevant sectoral policy documents have been created, there is a lack of coordination mechanisms, instruments and tools that are necessary to be created in order to provide harmonization of the overall strategic framework with sectoral policies. In that respect regular monitoring of the environment concerns integration into sectoral polices and implementation of sustainable development principles have to be enforced. In the new NSSD adopted in July 2016, with the purpose of creating conditions for measuring the sustainability of national development within the time horizon of the NSSD 2030, decisive step has been made towards overcoming the weaknesses from the previous stage of the NSSD implementation and establishing a functional system which enables precise measurability of the processes and outcomes, both planned - expected and the unplanned ones. This is crucial issue for the efficient monitoring and reporting on the implementation of sustainable development policy until 2030. In order to establish the system for progress monitoring and for reporting on NSSD 2030 implementation, the anaysis of 241 UN sustainable development indicators was made. Although relevant institutional organization is in place, the efforts to establish mechanisms and tools for efficient cross checking and harmonization of the sectoral plans and measures with SD principles and goals have to be undertaken. Regarding the reduction of land based and ship based pollution, the most significant challenges are related to the installation of the facilities for solid waste and waste water treatment, as well as for creating the technical capacities for response in cases of emergency on the sea. The significant challenge refers to the restoration of a certain number of the hot spot pollution locations, such as the aquatorium of the Shipyard Bijela."
+      },
+      {
+        "description": "Protection and conservation of marine and coastal biodiversity is part of the Party’s NSSD and other relevant sectoral development policies such as fisheries, industry, energy, agriculture, etc. by giving due regard to priority objectives, actions targets of the SAP BIO and the respective NAPs",
+        "parent_collection_id": 106,
+        "collection_id": 1020,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The policy measures that are relevant for the protection and conservation of the marine and coastal biodiversity are defined in several policy documents: - The National Strategy for Sustainable Development of Montenegro, 2007 - The National Strategy for Sustainable Development of Montenegro until 2030 adopted in July 2016 - National Strategy for Biodiversity with Action Plan (BSAP) - The National Action Plan for reduction of the pollution from land based sources, updated in 2015 - National Strategy for Integrated Coastal Zone Management - National Spatial Plan of Montenegro - Coastal Area Spatial Plan of Montenegro - Policy and Master Plans for Solid Waste management and Waste water Treatment - The National Contingency Plan - National report on status, problems and conservation of coastal and marine biodiversity in Montenegro According to the measures and objectives defined in the NSSD until 2030, the priorities related to the prevention of degradation, conservation, protection and monitoring of marine and coastal biodiversity refer to the improvement of the management capacities and extension of the protected areas with special emphasize on the marine protected areas. NSSD until 2030 supports the realization of objectives and measures defined in the National Strategy for Biodiversity with Action Plan until 2020, National Strategy for Integrated Coastal Zone Management until 2030 and priorities identified in the framework of the process of accession to the EU. At the same time integrated approach to the management of human capacities in order to provide more efficient control of the human activities impacts on the marine and coastal ecosystems is recognized as the overall priority in the field of biodiversity protection. NSSD 2007 objectives regarding the increase of the national nature protected areas to 10% of the territory have been achieved, as well as the initial steps in the process of establishment of protected areas, according to the European classification of habitats significant for protection purposes (EMERALD, Natura 2000). As for the proclamation of the marine protected areas which has been foreseen by NSSD 2007 and other policy documents, basic studies for a number of marine localities have been conducted. Following the requirements of the CBD Convention and in line with NSSD, the biodiversity policy is defined in line with BSAP. At the same time the obligations that come out from the process of integration of Montenegro to EU, create another layer of the national policy in the field of biodiversity protection, especially towards establishment of the NATURA network in line with Habitat and Bird Directive. "
+      },
+      {
+        "description": "Physical plan of the Party’s coastal zone(s) has given due regard to the protection of the marine environment and its coastal zone through the use of ICZM or ICAM methodology and necessary environmental assessment",
+        "parent_collection_id": 106,
+        "collection_id": 1021,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "According to the national legislation, the National Spatial Plan and the Coastal Area Spatial Plan have to be adopted by the Parliament. The National Spatial Plan is the document of the highest importance for planning the usage of space for different purposes of economic and social development. Therefore, all local plans have to be harmonized with directions of the National SP. The narrow strip of coastal area, so called Morsko Dobro (Maritime Domain), is recognized as the space of special purpose and national importance. Therefore, the Coastal Area Spatial Plan has to be also adopted by the Parliament. The current CASP has been adopted in 2007. This plan recognizes the need to implement ICZM principles and tools while it defines and implement measures for the usage of the coastal area. Despite that there is a lack of practical tools which have to provide long term sustainable usage of coastal area. After ratification of the Protocol on ICZM in 2011 and recognition of strong pressures of the growing urbanization in the coastal area, development of new CASP has been initiated. The process has started in 2011, in parallel with the development of the NS ICZM and CAMP Montenegro realization. Based on the Agreement for CAMP development that is signed between Montenegro and UNEP/MAP, CAMP Montenegro was created as to provide full integration of ICZM principles into spatial planning policy and new CASP. Under supervision of PAP/RAC the process of CAMP Montenegro realization resulted with the outcomes of crucial importance for reform of spatial planning policy in accordance with ICZM principles."
+      },
+      {
+        "description": "Economic instruments such as taxes, fees, funds, charges, earmarked taxes, etc. have been established to promote protection of the marine environment and its coastal areas and conserve their biodiversity",
+        "parent_collection_id": 106,
+        "collection_id": 1022,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 2,
+        "status_comments": "There is no economic instruments for here specified purposes. It is expected that further development of national legislation (e.g. development of the Law on Eco Fund) together with the reform of institutional and legal framework for ICZM will introduce the economic instruments to support measures for the protection of the marine environment and coastal areas. "
+      },
+      {
+        "description": "Establishment of monitoring programmes to assess the state of the marine environment and its coastal areas and compliance with domestic standards on releases and/or quality marine environment criteria for the effective implementation of the Barcelona Convention and its Protocols",
+        "parent_collection_id": 108,
+        "collection_id": 1023,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "The monitoring of the state of the marine ecosystem environment is based on the provisions of the Law on Environment related to the monitoring of the state of environment, as well as on the implementation of the Barcelona Convention and its Protocols. The program of monitoring of the state of marine environment has been realized as the component of the National Programme for monitoring of the state of the marine environment in Montenegro. Although this program is a separate component which realization is a part of national programme of monitoring of the state of environment, it is important to note that the program has been further improved through the implementation of ADRICOSM intermediate Project, financed by Italian Ministry of the Land, Sea and Environment. The main goal of the Project was to develop Master plan for monitoring of the marine environment which will contain recommendations for the improvement and harmonization of the existing national monitoring program related to marine environment with EEA requirements, relevant EU Directives and Barcelona Convention, its Protocol and ongoing related activities (Ecosystem approach). The adoption of a certain number of new bylaws under umbrella of WFD implementation, as well as the initiation of the preparatory activities for the transposition of the EU Marine Strategy Framework Directive (MSFD) has been considered as crucial in the upgrading process of the national system of monitoring of marine environment. The harmonization of the threshold values related to the release of the polluting substances to the marine environment with relevant Barcelona Convention and EEA standards is of particular importance. At the same time, the first list of national indicators has been adopted."
+      },
+      {
+        "description": "Publication of periodical assessment reports on the state of the marine environment and its coastal areas, including description of measures taken and related technical data or indicators, and their effectiveness for the implementation of the Barcelona Convention and its Protocols",
+        "parent_collection_id": 108,
+        "collection_id": 1024,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "In accordance with the National Programme for monitoring of the state of the environment in Montenegro, the tender procedure for the realization of the programme is being organized by the Environmental Protection Agency. Institutions (Environmental Protection Agency, Institute for Marine Biology, Centre for Eco-toxicological Research, and Institute for Hidrometherology and Seismology) closely cooperate in collecting, analyzing and submitting data on the status and quality of the marine ecosystem. In such a manner, collected data are used for reporting annually on the state of marine environment in the national context, but also to report in the context of the Barcelona Convention implementation. After its adoption by the Government of Montenegro, the Report on the state of the environment in Montenegro is available on the official web site of the Environmental Protection Agency. In 2011, Report “Information on the state on the Environment for 2010” in Montenegro was published in hard copy as a publication for the first time. Apart from the assessment of the state of environment, the Report also contains the assessment of the effectiveness of measures that are applied to improve the state of environment in the coastal area as well as recommendation of the measures that should be undertaken in order to improve the current state of the marine environment. As such, it is also relevant for the assessment of the effectiveness of the Barcelona Convention implementation. Among the most important tasks of the Environmental Protection Agency of Montenegro are those related to the establishment of the comprehensive monitoring and reporting system of the state of the environment in accordance with the requirements of the EEA. In that regard, the relevant data base has to be established, including continual improvement of the management of the data on the state of the environment. There are many challenges that EPA still has to face, in order to establish an operational management system of data. In that regard, the efforts to improve the reporting system is expected to be done in the upcoming period. ADRICOSM intermediate Project, financed by Italian Ministry for Environment, Land and Sea, will provide, at certain level, a support to the Environmental Protection Agency in establishing a data base including data on the state of marine-ecosystem in order to gather all the existing data at the national level. "
+      }]
+    },
+    "measuredata_difficulty":
+    {
+      "Row": [
+      {
+        "collection_id": 1001,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1001,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1001,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 1002,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 1002,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1002,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1005,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1005,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 1005,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1005,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1006,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1006,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 1006,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1007,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1008,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1009,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1010,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1011,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1012,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1014,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1014,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1014,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 1014,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1018,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 1018,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1018,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 1018,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1018,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1019,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1019,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 1019,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1019,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1020,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1020,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 1020,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1020,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1021,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 1021,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1021,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1021,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1022,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 1022,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 1023,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 1023,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1023,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 1024,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 1024,
+        "difficulty": 5
+      }]
+    }
+  }
+}

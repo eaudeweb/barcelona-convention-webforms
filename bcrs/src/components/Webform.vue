@@ -21,15 +21,9 @@
                 <b-tab :title="doTitle(form.tab_4.label)" >
                   <infoaccess tabId="4" :info.sync="form.tab_4"></infoaccess>
                 </b-tab>
-       
-                <!-- <b-tab v-if="visibleTab" title="tabatabtab"></b-tab> -->
               </b-tabs>
-              <formsubmit :country="country" v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
+              <formsubmit :country="country" :info.sync="form"></formsubmit>
           </b-form>
-<!--           <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-                  <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn> 
-                  <validation :validationData="validation_data"></validation>
-          </div> -->
       </b-card>
 
     </b-container>
@@ -37,7 +31,7 @@
 
 <script>
 
-import {getCompanyData, getInstance, getCountry} from '../api.js';
+import {getInstance, getCountry} from '../api.js';
 import BilateralAgreement from './BilateralAgreement.vue'
 import LRMeasures from './LRMeasures.vue'
 import PolMeasures from './PolMeasures.vue'
@@ -47,7 +41,6 @@ import Countrytab from './Country.vue'
 
 import Validation from './Validation.vue'
 import {slugify} from '../utils.js';
-import instance from '../assets/empty-instance.js';
 
 import form from '../assets/form.js'
 
@@ -67,11 +60,8 @@ export default {
 
   data () {
     return {
-    	visibleTab: false,
       form: {},
-      prefilled: true,
-      validation_data: [],
-      button_text: 'Hide list',
+      prefilled: false,
       country: '',
 
     }
@@ -93,69 +83,80 @@ export default {
     slugifyTitle(text) {
       return slugify(text)
     },
-    getValidationData(data) {
-      // this.validation_data = data
-    },
+
     prefill(data) {
-      let agremeents = []; 
+      let agremeents = [];
 
-
-
-      for(let table in this.form.country.tables) {
-          for (let value of this.form.country.tables[table]) {
-            value.selected = data.BC_BCRS.contacting_party[value.name]
-            if(value.name === 'partyname') {
-              value.selected = this.country;
-            }
+      for (let table in this.form.country.tables) {
+        for (let value of this.form.country.tables[table]) {
+          value.selected = data.BC_BCRS.contacting_party[value.name]
+          if (value.name === 'partyname') {
+            value.selected = this.country;
           }
+        }
       }
 
-
-      if(data.BC_BCRS.bilateralmultilateralagreementsdata) {
-        if(data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length === undefined) { 
+      if (data.BC_BCRS.bilateralmultilateralagreementsdata) {
+        if (data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length === undefined) {
           agremeents.push({
             name: data.BC_BCRS.bilateralmultilateralagreementsdata.Row.agreementname,
             reference: data.BC_BCRS.bilateralmultilateralagreementsdata.Row.website_other_reference
           })
           this.form.tab_1.data.question.agreements = agremeents
-        
-        } else if (data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length > 1)  {
-            for(let agreement of data.BC_BCRS.bilateralmultilateralagreementsdata.Row) {
-              console.log(agreement)
-              agremeents.push({
-                name: agreement.agreementname,
-                reference: agreement.website_other_reference
-              })
-            }
+        }
+        else if (data.BC_BCRS.bilateralmultilateralagreementsdata.Row.length > 1) {
+          for (let agreement of data.BC_BCRS.bilateralmultilateralagreementsdata.Row) {
+            agremeents.push({
+              name: agreement.agreementname,
+              reference: agreement.website_other_reference
+            })
+          }
           this.form.tab_1.data.question.agreements = agremeents
         }
-
       }
 
+      if (data.BC_BCRS.measuresdata.Row.length) {
+        for (let agreement of data.BC_BCRS.measuresdata.Row) {
+          let collection_id = agreement.collection_id
+          let parent_collection_id = agreement.parent_collection_id
+          for (let tab in this.form) {
+            if (tab != 'tab_1' && tab != 'country') {
+              for (let article of this.form[tab].data.articles) {
+                for (let article_item of article.article_items) {
+                  if (article_item.collection_id === collection_id) {
+                    for (let item of article_item.items) {
+                      if (item.type === 'changes') {
+                        item.selected = agreement.changes
+                      }
+                      else if (item.type === 'status') {
+                        item.selected = agreement.status
+                        item.comments = agreement.status_comments
+                      }
+                      else {
+                        item.comments = agreement.difficulties_comments;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
 
-
-      if(data.BC_BCRS.measuresdata.Row.length) {
-
-
-        for(let agreement of data.BC_BCRS.measuresdata.Row) {
-          console.log(agreement)
-          // console.log(agreement.collection_id)
+      if (data.BC_BCRS.measuredata_difficulty) {
+        if (data.BC_BCRS.measuredata_difficulty.Row.length) {
+          for (let agreement of data.BC_BCRS.measuredata_difficulty.Row) {
             let collection_id = agreement.collection_id
-            let parent_collection_id = agreement.parent_collection_id
-            for (let tab in this.form){
-              // console.log(tab)
-              if(tab != 'tab_1' && tab != 'country') {
-                for(let article of this.form[tab].data.articles){
-                  for(let article_item of article.article_items){
-                    if(article_item.collection_id === collection_id) {
-                      for(let item of article_item.items) {
-                        if(item.type === 'changes') {
-                          item.selected = agreement.changes
-                        } else if (item.type === 'status') {
-                          item.selected = agreement.status
-                          item.comments = agreement.status_comments
-                        } else {
-                          item.comments = agreement.difficulties_comments;
+            let difficulty = agreement.difficulty
+            for (let tab in this.form) {
+              if (tab != 'tab_1' && tab != 'country') {
+                for (let article of this.form[tab].data.articles) {
+                  for (let article_item of article.article_items) {
+                    if (article_item.collection_id === collection_id) {
+                      for (let item of article_item.items) {
+                        if (item.type === 'difficulties') {
+                          item.selected.push(difficulty)
                         }
                       }
                     }
@@ -163,39 +164,30 @@ export default {
                 }
               }
             }
+          }
         }
-
-      }
-
-      if(data.BC_BCRS.measuredata_difficulty) {
-
-          if(data.BC_BCRS.measuredata_difficulty.Row.length) {
-            for(let agreement of data.BC_BCRS.measuredata_difficulty.Row) {
-              console.log(agreement)
-
-              // console.log(agreement.collection_id)
-                let collection_id = agreement.collection_id
-                let difficulty = agreement.difficulty
-                for (let tab in this.form){
-                  // console.log(tab)
-                  if(tab != 'tab_1' && tab != 'country') {
-                    for(let article of this.form[tab].data.articles){
-                      for(let article_item of article.article_items){
-                        if(article_item.collection_id === collection_id) {
-                          for(let item of article_item.items) {
-                            if(item.type === 'difficulties') {
-                              item.selected.push(difficulty)
-                            } 
-                          }
-                        }
+        else {
+          let agreement = data.BC_BCRS.measuredata_difficulty.Row
+          let collection_id = agreement.collection_id
+          let difficulty = agreement.difficulty
+          for (let tab in this.form) {
+            if (tab != 'tab_1' && tab != 'country') {
+              for (let article of this.form[tab].data.articles) {
+                for (let article_item of article.article_items) {
+                  if (article_item.collection_id === collection_id) {
+                    for (let item of article_item.items) {
+                      if (item.type === 'difficulties') {
+                        item.selected.push(difficulty)
                       }
                     }
                   }
                 }
+              }
             }
-
           }
+        }
       }
+
 
       this.prefilled = true;
 
@@ -208,11 +200,7 @@ export default {
     onSubmit (evt) {
        evt.preventDefault();
     },
-    toggleValidationContainer(){
-      if(this.button_text === 'Hide list') this.button_text = 'Show List'
-        else this.button_text = 'Hide list'
-      this.$refs.validationContainer.classList.toggle('closed')
-    },
+
   },
 
 }
@@ -220,36 +208,34 @@ export default {
 
 <style lang="css">
 .subtitle {
-  max-width: 488px;margin: auto;display: block;
+     max-width: 488px;
+    margin: auto;
+    display: block;
 }
-
-.container {
-  max-width: 700px;
+ .container {
+     max-width: 700px;
 }
-
-.validation {
-  position: fixed;
-  right: 0;
-  transform:translateX(0);
-  width: 300px;
-  top: 0;
-  background: white;
-  border: 1px solid #aaa;
-      padding: 1rem;
-    box-shadow: 1px 1px 3px #aaa;
-    z-index: 1;
-  transition: all 300ms;
+ .validation {
+     position: fixed;
+     right: 0;
+     transform:translateX(0);
+     width: 300px;
+     top: 0;
+     background: white;
+     border: 1px solid #aaa;
+     padding: 1rem;
+     box-shadow: 1px 1px 3px #aaa;
+     z-index: 1;
+     transition: all 300ms;
 }
-
-.validation.closed {
-  transform: translateX(100%);
+ .validation.closed {
+     transform: translateX(100%);
 }
-
-.validation-toggle {
-      position: absolute;
-    right: 100%;
-    top: -1px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+ .validation-toggle {
+     position: absolute;
+     right: 100%;
+     top: -1px;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
 }
 </style>
