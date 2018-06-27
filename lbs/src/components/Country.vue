@@ -3,7 +3,6 @@
       <div class="question-wrapper">
         <h3>INFORMATION ON THE REPORTING PARTY</h3>
         <div class="question">
-          
         </div>
         <div v-for="(tables,index) in info.tables" class="table table-striped answer">
           <div class="table-head">
@@ -25,15 +24,19 @@
             </div>
           </div>
           <div style="padding: 1rem" class="table-body">
-            <b-row style="margin-bottom:5px" v-for="table in tables">
-              
+            <b-row style="margin-bottom:5px" v-for="table in tables" :key="table.name">
               <b-col style="text-align: right; font-weight: bold;" lg="6">
                 <label style="cursor: pointer;" :for="table.name">
                   {{table.label}}
                 </label>
               </b-col>
               <b-col lg="6">
-                <b-input :id="table.name" :type="table.type" v-model="table.selected"></b-input>
+                <div v-if="table.name ==='partyname'">
+                  <b-input :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
+                </div>
+                <div v-else>
+                  <b-input :id="table.name" :type="table.type" v-model="table.selected"></b-input>
+                </div>
               </b-col>
             </b-row>
 
@@ -56,7 +59,6 @@ export default {
 
   data () {
     return {
-
     }
   }
 }

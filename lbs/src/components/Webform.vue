@@ -28,11 +28,7 @@
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit :country="country" v-on:validationDone="getValidationData($event)" :info.sync="form"></formsubmit>
-        <div  v-if="validation_data.length" ref="validationContainer" class="validation closed">
-                  <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn> 
-                  <validation :validationData="validation_data"></validation>
-          </div>
+   			<formsubmit :country="country" :info.sync="form"></formsubmit>
       </b-card>
 
     </b-container>
@@ -48,7 +44,6 @@ import RAPs from './RAPs.vue'
 import NAPs from './NAPs.vue'
 import Monitoring from './Monitoring.vue'
 import ENFMeasures from './ENFMeasures.vue'
-import Validation from './Validation.vue'
 import Countrytab from './Country.vue'
 
 
@@ -68,7 +63,6 @@ export default {
     monitoring: Monitoring,
     enfmeasures: ENFMeasures,
   	formsubmit: FormSubmit,
-    validation: Validation,
     countrytab: Countrytab
   },
 
@@ -76,7 +70,6 @@ export default {
     return {
     	visibleTab: false,
       form: {},
-      validation_data: [],
       button_text: 'Hide list',
       country: '',
     }
@@ -94,9 +87,7 @@ export default {
   },
 
   methods: {
-    getValidationData(data) {
-      this.validation_data = data
-    },
+
     prefill(data){
 
       
@@ -104,6 +95,9 @@ export default {
       for(let table in this.form.country.tables) {
           for (let value of this.form.country.tables[table]) {
             value.selected = data.BC_LBS.contacting_party[value.name]
+            if (value.name === 'partyname') {
+              value.selected = this.country;
+            }
           }
       }
 
@@ -231,12 +225,6 @@ export default {
     onSubmit (evt) {
        evt.preventDefault();
     },
-    toggleValidationContainer(){
-      if(this.button_text === 'Hide list') this.button_text = 'Show List'
-        else this.button_text = 'Hide list'
-      this.$refs.validationContainer.classList.toggle('closed')
-    },
-
 
      matchEnfField(name){
       switch (name) {
@@ -320,29 +308,4 @@ export default {
   max-width: 700px;
 }
 
-.validation {
-  position: fixed;
-  right: 0;
-  transform:translateX(0);
-  width: 300px;
-  top: 0;
-  background: white;
-  border: 1px solid #aaa;
-      padding: 1rem;
-    box-shadow: 1px 1px 3px #aaa;
-    z-index: 1;
-  transition: all 300ms;
-}
-
-.validation.closed {
-  transform: translateX(100%);
-}
-
-.validation-toggle {
-      position: absolute;
-    right: 100%;
-    top: -1px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
 </style>
