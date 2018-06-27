@@ -2,29 +2,28 @@
 	<b-container style="position: relative">
     <center><h1 class="mb-3 mt-2">Barcelona Convention</h1></center>
     <center><h5><small class="subtitle text-muted">Implementation of the Barcelona Convention for the Protection of the Marine Environment and the Coastal Region of the Mediterranean and its Protocols (Barcelona Convention)</small></h5></center>
-      <b-card v-if="prefilled" no-body>
-          
-            <b-form validated novalidate @submit="onSubmit">
-              <b-tabs card>
-                <b-tab title="Reporting party" active>
-                  <countrytab tabId="0" :info.sync="form.country"></countrytab>
-                </b-tab>
-                <b-tab :title="doTitle(form.tab_1.label)">
-                  <bilateralagreement tabId="1" :info.sync="form.tab_1"></bilateralagreement>
-                </b-tab>
-                <b-tab :title="doTitle(form.tab_2.label)" >
-                  <lrmeasures tabId="2" :info.sync="form.tab_2"></lrmeasures>
-                </b-tab>
-                <b-tab :title="doTitle(form.tab_3.label)" >
-                  <polmeasures tabId="3"  :info.sync="form.tab_3"></polmeasures>
-                </b-tab>
-                <b-tab :title="doTitle(form.tab_4.label)" >
-                  <infoaccess tabId="4" :info.sync="form.tab_4"></infoaccess>
-                </b-tab>
-              </b-tabs>
-              <formsubmit :country="country" :info.sync="form"></formsubmit>
-          </b-form>
-      </b-card>
+    <b-card v-if="prefilled" no-body>
+      <b-form validated novalidate @submit="onSubmit">
+        <b-tabs card>
+          <b-tab title="Reporting party" active>
+            <countrytab tabId="0" :info.sync="form.country"></countrytab>
+          </b-tab>
+          <b-tab :title="doTitle(form.tab_1.label)">
+            <bilateralagreement tabId="1" :info.sync="form.tab_1"></bilateralagreement>
+          </b-tab>
+          <b-tab :title="doTitle(form.tab_2.label)" >
+            <lrmeasures tabId="2" :info.sync="form.tab_2"></lrmeasures>
+          </b-tab>
+          <b-tab :title="doTitle(form.tab_3.label)" >
+            <polmeasures tabId="3"  :info.sync="form.tab_3"></polmeasures>
+          </b-tab>
+          <b-tab :title="doTitle(form.tab_4.label)" >
+            <infoaccess tabId="4" :info.sync="form.tab_4"></infoaccess>
+          </b-tab>
+        </b-tabs>
+        <formsubmit :country="country" :info.sync="form"></formsubmit>
+      </b-form>
+    </b-card>
 
     </b-container>
 </template>
@@ -38,8 +37,6 @@ import PolMeasures from './PolMeasures.vue'
 import InfoAccess from './InfoAccess.vue'
 import FormSubmit from './FormSubmit.vue'
 import Countrytab from './Country.vue'
-
-import Validation from './Validation.vue'
 import {slugify} from '../utils.js';
 
 import form from '../assets/form.js'
@@ -54,7 +51,6 @@ export default {
     lrmeasures: LRMeasures,
     polmeasures: PolMeasures,
     infoaccess: InfoAccess,
-    validation: Validation,
     countrytab: Countrytab
   },
 
@@ -63,7 +59,6 @@ export default {
       form: {},
       prefilled: false,
       country: '',
-
     }
   },
 
@@ -76,7 +71,6 @@ export default {
           this.prefill(instance_data)
         })
     })
-
   },
 
   methods: {
@@ -188,7 +182,6 @@ export default {
         }
       }
 
-
       this.prefilled = true;
 
     },
@@ -208,34 +201,11 @@ export default {
 
 <style lang="css">
 .subtitle {
-     max-width: 488px;
-    margin: auto;
-    display: block;
+  max-width: 488px;
+  margin: auto;
+  display: block;
 }
  .container {
-     max-width: 700px;
-}
- .validation {
-     position: fixed;
-     right: 0;
-     transform:translateX(0);
-     width: 300px;
-     top: 0;
-     background: white;
-     border: 1px solid #aaa;
-     padding: 1rem;
-     box-shadow: 1px 1px 3px #aaa;
-     z-index: 1;
-     transition: all 300ms;
-}
- .validation.closed {
-     transform: translateX(100%);
-}
- .validation-toggle {
-     position: absolute;
-     right: 100%;
-     top: -1px;
-     border-top-right-radius: 0;
-     border-bottom-right-radius: 0;
+  max-width: 700px;
 }
 </style>
