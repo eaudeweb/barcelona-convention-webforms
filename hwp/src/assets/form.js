@@ -1137,10 +1137,12 @@ var form = {
       },
       table_3: {
         question: '',
-        table_label: 'Table IV: Generation of hazardous wastes and other wastes by Y-categories',
+        table_label: 'Table IV - Generation of hazardous wastes and other wastes by Y-categories',
         collection_id: 706,
         parent_collection_id: 703,
         articles: [{
+          collection_id: 7021,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y1',
             label: 'Clinical wastes from medical care in hospitals, medical centres and clinics',
@@ -1176,6 +1178,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7022,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y2',
             label: 'Wastes from the production and preparation of pharmaceutical products',
@@ -1211,6 +1215,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7023,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y3',
             label: 'Waste pharmaceuticals, drugs and medicines',
@@ -1246,6 +1252,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7024,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y4',
             label: 'Wastes from the production of biocides and phytopharmaceuticals',
@@ -1281,6 +1289,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7025,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y5',
             label: 'Wastes from the manufacture of wood preserving chemicals',
@@ -1316,6 +1326,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7026,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y6',
             label: 'Wastes from the production, formulation and use of organic solvent',
@@ -1351,6 +1363,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7027,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y7',
             label: 'Wastes from heat treatment and tempering operations containing cyanides',
@@ -1386,6 +1400,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7028,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y8',
             label: 'Waste mineral oils unfit for their originally intended use',
@@ -1421,6 +1437,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7029,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y9',
             label: 'Waste oils/water, hydrocarbons/water mixtures, emulsion',
@@ -1456,6 +1474,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7030,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y10',
             label: 'Waste substances containing or contaminated with PCBs, PCTs, PBBs',
@@ -1491,6 +1511,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7031,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y11',
             label: 'Waste tarry residues from refining, distillation and any pyrolytic treatment',
@@ -1526,6 +1548,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7032,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y12',
             label: 'Wastes from production of inks, dyes, pigments, paints, etc.',
@@ -1561,6 +1585,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7033,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y13',
             label: 'Wastes from production resins, latex, plasticizers, glues, etc. ',
@@ -1596,6 +1622,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7034,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y14',
             label: 'Waste chemical substances whose effects on the environment are not known',
@@ -1631,6 +1659,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7035,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y15',
             label: 'Wastes of an explosive nature not subject to other legislation',
@@ -1666,6 +1696,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7036,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y16',
             label: 'Wastes from production, formulation and use of photographic chemicals…',
@@ -1701,6 +1733,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7037,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y17',
             label: 'Wastes resulting from surface treatment of metals and plastics  ',
@@ -1736,6 +1770,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7038,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y18',
             label: 'Residues arising from industrial waste disposal operations',
@@ -1771,6 +1807,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7039,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y19',
             label: 'Metal carbonyls',
@@ -1806,6 +1844,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7040,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y20',
             label: 'Beryllium;berylliumcompounds',
@@ -1841,6 +1881,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7041,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y21',
             label: 'Hexavalentchromiumcompounds',
@@ -1876,6 +1918,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7042,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y22',
             label: 'Coppercompounds',
@@ -1911,6 +1955,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7043,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y23',
             label: 'Zinccompounds',
@@ -1946,6 +1992,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7044,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y24',
             label: 'Arsenic; arseniccompounds',
@@ -1981,6 +2029,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7045,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y25',
             label: 'Selenium;seleniumcompounds',
@@ -2016,6 +2066,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7046,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y26',
             label: 'Cadmium; cadmiumcompounds',
@@ -2051,6 +2103,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7047,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y27',
             label: 'Antimony; antimonycompounds',
@@ -2086,6 +2140,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7048,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y28',
             label: 'Tellurium;telluriumcompounds',
@@ -2121,6 +2177,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7049,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y29',
             label: 'Mercury; mercurycompounds',
@@ -2156,6 +2214,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7050,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y30',
             label: 'Thallium; thalliumcompounds',
@@ -2191,6 +2251,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7051,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y31',
             label: 'Lead; lead compound',
@@ -2226,6 +2288,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7052,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y32',
             label: 'Inorganic fluorine compounds excluding calciumfluoride  ',
@@ -2261,6 +2325,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7053,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y33',
             label: 'Inorganiccyanides',
@@ -2296,6 +2362,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7054,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y34',
             label: 'Acidic solutions or acids in solid form',
@@ -2331,6 +2399,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7055,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y35',
             label: 'Basic solutions or bases in solid form  ',
@@ -2366,6 +2436,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7056,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y36',
             label: 'Asbestos (dust and fibres)  ',
@@ -2401,6 +2473,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7057,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y37',
             label: 'Organic phosphorus compounds',
@@ -2436,6 +2510,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7058,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y38',
             label: 'Organic cyanides',
@@ -2471,6 +2547,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7059,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y39',
             label: 'Phenols; phenolcompounds including chlorophenols',
@@ -2506,6 +2584,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7060,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y40',
             label: 'Ethers',
@@ -2541,6 +2621,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7061,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y41',
             label: 'Halogenated organic solvents',
@@ -2576,6 +2658,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7062,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y42',
             label: 'Organic solvents excluding halogenated solvents',
@@ -2611,6 +2695,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7063,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y43',
             label: 'Any congenor of polychlorinated dibenzo-furan',
@@ -2646,6 +2732,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7064,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y44',
             label: 'Any congenor of polychlorinated dibenzo-p-dioxin',
@@ -2681,6 +2769,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7065,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y45',
             label: 'Organohalogen compounds other than … (e.g. Y39, Y41, Y42, Y43, Y44)',
@@ -2716,6 +2806,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7066,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y46',
             label: 'Wastes collected from households',
@@ -2751,6 +2843,8 @@ var form = {
             selected: '',
           }]
         }, {
+          collection_id: 7067,
+          parent_collection_id: 706,
           article_title: {
             name: 'Y47',
             label: 'Residues arising from the incineration of household wastes',
