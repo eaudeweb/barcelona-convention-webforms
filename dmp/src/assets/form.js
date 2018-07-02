@@ -143,14 +143,20 @@ var form = {
 
   },
   tab_1: {
-    label: 'Part I: LEGAL AND REGULATORY MEASURES',
+    label: 'Part I: Legal and Regulatory Measures',
+    collection_id: 201,
+    parent_collection_id: 2,
     data: {
       question: 'Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Dumping Protocol, as listed in Table I below?',
       table_label: 'Table I – LEGAL AND REGULATORY MEASURES',
+      collection_id: 202,
+      parent_collection_id: 201,
       articles: [{
         article_title: 'Article 4.1',
         article_items: [{
           description: 'Prohibition of dumping of wastes and other matter with the exception of those listed in Article4.2',
+          collection_id: 2001,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -197,6 +203,8 @@ var form = {
         article_title: 'Article 5, Article 6, Article 10.1',
         article_items: [{
           description: 'Dumping of wastes and other matter listed in Article 4.2 is subject to a prior special permit from the designated competent national authority or authorities in conformity with the criteria set forth in the Annex to the Protocol and the related Guidelines adopted by the Meetings of the Contracting Parties',
+          collection_id: 2002,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -243,6 +251,8 @@ var form = {
         article_title: 'Article 10.1',
         article_items: [{
           description: 'Designated competent national authority or authorities keep(s) records of the nature and quantities of the waste or other matter, dumping location and method',
+          collection_id: 2003,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -289,6 +299,8 @@ var form = {
         article_title: 'Article 7',
         article_items: [{
           description: 'Prohibition of incineration at sea',
+          collection_id: 2004,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -335,6 +347,8 @@ var form = {
         article_title: 'Article 8',
         article_items: [{
           description: 'Force majeure dumping at sea is conducted under the conditions set out in Article 8 and reported to UNEP/MAP Secretariat immediately',
+          collection_id: 2005,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -381,6 +395,8 @@ var form = {
         article_title: 'Article 9',
         article_items: [{
           description: 'Critical dumping at sea is conducted under the conditions set out in Article 95 and UNEP/MAP Secretariat consulted immediately',
+          collection_id: 2006,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -427,6 +443,8 @@ var form = {
         article_title: 'Article 10.2',
         article_items: [{
           description: 'Dumping permits provided for in Article 5 are issued for wastes or other matter loaded in your territory or loaded in the territory of a non-Contracting Party',
+          collection_id: 2007,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -473,6 +491,8 @@ var form = {
         article_title: 'Article 11',
         article_items: [{
           description: 'Application of measures to implement this Protocol to your vessels and aircrafts, those loading in your territory and those believed to be engaged in dumping in areas under your jurisdiction.',
+          collection_id: 2008,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -520,6 +540,8 @@ var form = {
         optional: true,
         article_items: [{
           description: 'Issuing of instructions to maritime inspection ships and aircraft and other appropriate services to report to the relevant national authorities any incidents or conditions giving rise to suspicions that dumping in contravention to the Protocol had occurred or was about to occur',
+          collection_id: 2009,
+          parent_collection_id: 202,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -566,16 +588,18 @@ var form = {
     }
   },
   tab_2: {
-    label: 'Part II: DUMPING AT SEA PERMITS AND QUANTITIES',
+    label: 'Part II: Dumping at sea permits and quantities',
+    collection_id: 203,
+    parent_collection_id: 2,
     data: {
       table_1: {
         question: '',
         table_label: 'Table 2a . Biennial Summary of Dumping at Sea Permits and Quantities',
+        collection_id: 204,
+        parent_collection_id: 203,
         table_note: 'Tables 2 to 5 harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5)',
-
         table_article_label: '2.1 1976 Protocol Article or 1995 Protocol Article',
         table_aritcle_description: 'Reference to Articles pertaining to permits',
-
         articles: [{
             article_title: '1976 Protocol Article 5, Annex II',
             article_items: [{
@@ -1369,38 +1393,54 @@ var form = {
         ]
       },
       table_2: {
-      table_label: 'Table 2b: Quantities in Dry Weight1 of Dredged Material as specified in table 2 (for conversion factors see the footnote)',
-      articles:  []
+        table_label: 'Table 2b: Quantities in Dry Weight1 of Dredged Material as specified in table 2 (for conversion factors see the footnote)',
+        collection_id: 205,
+        parent_collection_id: 203,
+        articles:  []
       },
     },
-  
+
   },
   tab_3: {
-    label: 'Part III: QUANTITIES OF WASTES OR OTHER MATTER FOR EACH DUMP SITE AND COORDINATES FOR DUMP SITES',
+    label: 'Part III: Quantities of wastes or other matter for each dump site and coordinates for dump sites',
+    collection_id: 206,
+    parent_collection_id: 2,
     data: {
       table_1: {
       table_label: 'Table 3.  Biennial Summary of Quantities of Wastes or Other Matter at Sea for Each Dump Site',
+        collection_id: 207,
+        parent_collection_id: 206,
         articles: []
       },
       table_2: {
       table_label: 'Table 4.  Coordinates for Dump Sites',
+        collection_id: 208,
+        parent_collection_id: 206,
         articles: []
       },
     }
   },
   tab_4: {
-    label: 'Part IV: MONITORING',
+    label: 'Part IV: Monitoring',
+    collection_id: 209,
+    parent_collection_id: 2,
     data: {
       table_label: 'Table 5: Monitoring',
-        articles: []
+      collection_id: 210,
+      parent_collection_id: 209,
+      articles: []
     }
   },
 
   tab_5: {
     label: 'Part V: PLACEMENT (Dumping Protocol, Article 3.4.b)',
+    collection_id: 211,
+    parent_collection_id: 2,
     data: {
       table_label: 'Table 6: Biennial Summary of Information on Placement for Artificial Reefs',
-        articles: []
+      collection_id: 212,
+      parent_collection_id: 211,
+      articles: []
     }
   },
 
