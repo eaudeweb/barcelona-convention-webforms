@@ -68,6 +68,48 @@
           </div>
         </div>
 
+        <div class="answer" style="position: relative;">
+          <div class="table-head">
+            <b>{{info.data.table_2.table_label}}</b>
+          </div>
+          <div role="tablist">
+            <div role="tablist">
+              <b-card v-for="(article,index) in info.data.table_2.articles" :key="index" class="mb-1">
+                <h5 style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
+                  {{article.article_title}}
+                  <span style="float:right">▼</span>
+                </h5>
+               <label>
+                  {{article.article_title.label}}
+               </label>
+                <b-collapse class="mt-3" visible :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
+                  <div class="form-subsection" v-for="(item,item_index) in article.article_items">
+                    <div v-if="(item.type === 'text' || item.type ==='date' || item.type ==='number')">
+                      <div class="mt-2">{{item.label}}</div>
+                      <div class="form-fields">
+                        <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                      </div>
+                    </div>
+                     <div v-else-if="item.type === 'radio'">
+                      <div class="mt-2">{{item.label}}</div>
+                      <div class="form-fields">
+                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" @change="updateAdoptionDateField($event)" :options="item.options" v-model="item.selected"></b-form-radio-group>
+                      </div>
+                    </div>
+                    <div v-else-if="item.type === 'checkbox'">
+                      <div class="mt-2">{{item.label}}</div>
+                      <div class="form-fields">
+                        <b-form-checkbox-group stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" :options="item.options" v-model="item.selected"></b-form-checkbox-group>
+                      </div>
+                    </div>
+                  </div>
+                </b-collapse>
+              </b-card>
+
+            </div>
+          </div>
+        </div>
+
        <div class="answer" style="position: relative;">
           <div class="table-head">
             <b>{{info.data.table_3.table_label}}</b>

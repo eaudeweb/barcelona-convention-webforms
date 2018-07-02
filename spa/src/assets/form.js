@@ -2,11 +2,11 @@ var form = {
   country: {
     tables: {
       table_1: [{
-        name: 'partyname',
-        type: 'text',
-        label: 'Contracting Party',
-        selected: '',
-      },
+          name: 'partyname',
+          type: 'text',
+          label: 'Contracting Party',
+          selected: '',
+        },
         {
           name: 'rep_period_from',
           type: 'date',
@@ -58,11 +58,11 @@ var form = {
       ],
 
       table_2: [{
-        name: 'contact_point',
-        type: 'text',
-        label: 'Contact point for the national report, if any',
-        selected: '',
-      },
+          name: 'contact_point',
+          type: 'text',
+          label: 'Contact point for the national report, if any',
+          selected: '',
+        },
         {
           name: 'instituion_full_name',
           type: 'text',
@@ -108,11 +108,11 @@ var form = {
       ],
 
       table_3: [{
-        name: 'org_name',
-        type: 'text',
-        label: 'Full name of the institution',
-        selected: '',
-      },
+          name: 'org_name',
+          type: 'text',
+          label: 'Full name of the institution',
+          selected: '',
+        },
         {
           name: 'org_contact_point',
           type: 'text',
@@ -1101,9 +1101,9 @@ var form = {
         }, {
           article_title: 'Article 7.2.c',
           article_items: [{
-            description: 'Measures for the involvement of local communities in the process of managing the protected areas',
-            collection_id: 5020,
-            parent_collection_id: 506,
+              description: 'Measures for the involvement of local communities in the process of managing the protected areas',
+              collection_id: 5020,
+              parent_collection_id: 506,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1403,6 +1403,2938 @@ var form = {
             ]
           }]
         }]
+      },
+
+      table_2: {
+        table_label: 'Table VI – LIST OF SPAMIs AND RELATED DATA',
+        collection_id: 509,
+        parent_collection_id: 5,
+        table_question: 'Question 4:  Are there changes in the status of SPAMIs?',
+        articles: [{
+            "article_title": "Albania AL1. Karaburun Sazan National Marine Park",
+            "collection_id": 5026,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Algeria DZ1.Banc des Kabyles Marine Reserve",
+            "collection_id": 5027,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Algeria DZ2.Habibas Islands",
+            "collection_id": 5028,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Cyprus CY1. Lara- Toxeftra Turtle Reserve",
+            "collection_id": 5029,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "France FR1 Port Cross National Park",
+            "collection_id": 5030,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "France FR2 Natural Reserve of Bouches of Bonifacio",
+            "collection_id": 5031,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "France FR3 The Blue Coast Marine Park",
+            "collection_id": 5032,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "France FR4 The Embiez Archipelago-Six Fours",
+            "collection_id": 5033,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT1 Plemmirio Protected Areas",
+            "collection_id": 5034,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT2 Marine Protected Area of Portofino",
+            "collection_id": 5035,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT3 Miramare Marine Protected Area",
+            "collection_id": 5036,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT4 Tavolara-Punta Coda Cavallo Marine Protected Area",
+            "collection_id": 5037,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT5 Marine Protected Area of Torre Guaceto",
+            "collection_id": 5038,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT6 Marine Protected Area Punta Campanella",
+            "collection_id": 5039,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT7 Marine Protected Area of Capo Caccia-Isola Piana",
+            "collection_id": 5040,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT8 Porto Cesareo Marine Protected Area",
+            "collection_id": 5041,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT9 Capo Carbonara Marine Protected Area",
+            "collection_id": 5042,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Italy IT10 Marine Protected Area of Penisola del Sinis",
+            "collection_id": 5043,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Lebanon LB1 Palm Islands Nature Reserve",
+            "collection_id": 5044,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Lebanon LB2 Tyre Coast Nature Reserve",
+            "collection_id": 5045,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Morocco MA1 Al- Hoceima National Park",
+            "collection_id": 5046,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES1 Maro-Cerro Gordo Cliffs",
+            "collection_id": 5047,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES2 Archipielago of Cabrera National Park",
+            "collection_id": 5048,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES3 Natural Park of Cabo de Gata-Nijar",
+            "collection_id": 5049,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES4 Natural Park of Cap de Creus",
+            "collection_id": 5050,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES5 Sea Bottom of the Levante of Almeria",
+            "collection_id": 5051,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES6 Alboran Island",
+            "collection_id": 5052,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES7 Columbretes Islands",
+            "collection_id": 5053,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES8 Medes Islands",
+            "collection_id": 5054,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Spain ES9 Mar Menor",
+            "collection_id": 5055,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Tunisia TN1 La Galite Archipelago",
+            "collection_id": 5056,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Tunisia TN2 Kneiss Islands",
+            "collection_id": 5057,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "Tunisa TN3 Zembra and Zembretta National Park",
+            "collection_id": 5058,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          },
+          {
+            "article_title": "France, Italy and Monaco Int1 Pelagos Sanctuary for the Conservation of Marine Mammals",
+            "collection_id": 5059,
+            "parent_collection_id": 509,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          }
+        ]
       },
 
       table_3: {
@@ -1877,7 +4809,7 @@ var form = {
           article_items: [{
             items: [{
                 type: 'checkbox',
-                name:'posidonia_oceania',
+                name: 'posidonia_oceania',
                 label: 'Posidonia Oceanica',
                 info: 'Please tick all that apply',
                 selected: [],
@@ -4554,8 +7486,8 @@ var form = {
         article_title: 'RAP for the conservation of Mediterranean Marine Turtles (COP Decision IG 21/4)',
         article_items: [{
             description: 'Protection of turtles–general species protection. Timeline: as soon as possible',
-          collection_id: 5125,
-          parent_collection_id: 519,
+            collection_id: 5125,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4601,8 +7533,8 @@ var form = {
             ]
           }, {
             description: 'Enforce legislation to eliminate deliberate killing. Timeline: as soon as possible',
-          collection_id: 5126,
-          parent_collection_id: 519,
+            collection_id: 5126,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4648,8 +7580,8 @@ var form = {
             ]
           }, {
             description: 'Habitat protection and management (nesting, mating, feeding, wintering and key migration passages). Timeline: as soon as possible',
-          collection_id: 5127,
-          parent_collection_id: 519,
+            collection_id: 5127,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4695,8 +7627,8 @@ var form = {
             ]
           }, {
             description: 'Setting up and implementing management plans. Timeline: from 2014 to 2019',
-          collection_id: 5128,
-          parent_collection_id: 519,
+            collection_id: 5128,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4742,8 +7674,8 @@ var form = {
             ]
           }, {
             description: 'Restoration of damaged nesting habitats. Timeline: from 2014 to 2019',
-          collection_id: 5129,
-          parent_collection_id: 519,
+            collection_id: 5129,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4789,8 +7721,8 @@ var form = {
             ]
           }, {
             description: 'Fishing regulations (depth, season, gear) in key areas. Timeline: from 2014 to 2019',
-          collection_id: 5130,
-          parent_collection_id: 519,
+            collection_id: 5130,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4836,8 +7768,8 @@ var form = {
             ]
           }, {
             description: 'Setting up and/or improving operation of Rescue Centers. Timeline: as soon as possible',
-          collection_id: 5131,
-          parent_collection_id: 519,
+            collection_id: 5131,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4883,8 +7815,8 @@ var form = {
             ]
           }, {
             description: 'Identification of new mating, feeding and wintering areas and key migration passages. Timeline: from 2014 to 2019',
-          collection_id: 5132,
-          parent_collection_id: 519,
+            collection_id: 5132,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4930,8 +7862,8 @@ var form = {
             ]
           }, {
             description: 'Elaboration and execution of cooperative research projects of regional importance aimed at assessing the interaction between turtles and fisheries. Timeline: from 2014 to 2019',
-          collection_id: 5133,
-          parent_collection_id: 519,
+            collection_id: 5133,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4977,8 +7909,8 @@ var form = {
             ]
           }, {
             description: 'Tagging and genetic analysis (as appropriate). Timeline: from 2014 to 2019',
-          collection_id: 5134,
-          parent_collection_id: 519,
+            collection_id: 5134,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5311,8 +8243,8 @@ var form = {
         article_title: 'Dark Habitats Action Plan (COP Decision IG 21/4)',
         article_items: [{
             description: 'Making a summary of knowledge of dark populations and their distribution around the Mediterranean in the form of a geo-referenced information system',
-          collection_id: 5141,
-          parent_collection_id: 519,
+            collection_id: 5141,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5358,8 +8290,8 @@ var form = {
             ]
           }, {
             description: 'Identify and assess proven pressures on each of the various types of habitat',
-          collection_id: 5142,
-          parent_collection_id: 519,
+            collection_id: 5142,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5405,8 +8337,8 @@ var form = {
             ]
           }, {
             description: 'Revise the reference list of types of marine habitat for the selection of sites for inclusion in the national inventories of natural sites of conservation interest, in order to take account of dark assemblages',
-          collection_id: 5143,
-          parent_collection_id: 519,
+            collection_id: 5143,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5452,8 +8384,8 @@ var form = {
             ]
           }, {
             description: 'Revise the list of endangered or threatened species in order to take account of dark assemblages species',
-          collection_id: 5144,
-          parent_collection_id: 519,
+            collection_id: 5144,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5499,8 +8431,8 @@ var form = {
             ]
           }, {
             description: 'Promote the identifying of areas of interest for the conservation of dark assemblages in the Mediterranean and Carry out concerted actions in national and/or cross-border sites',
-          collection_id: 5145,
-          parent_collection_id: 519,
+            collection_id: 5145,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5546,8 +8478,8 @@ var form = {
             ]
           }, {
             description: 'Finalise the implementing of MPAs in already identified sites at national level and outside waters that lie within national jurisdiction',
-          collection_id: 5146,
-          parent_collection_id: 519,
+            collection_id: 5146,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5593,8 +8525,8 @@ var form = {
             ]
           }, {
             description: 'Propose the creation of new MPAs',
-          collection_id: 5147,
-          parent_collection_id: 519,
+            collection_id: 5147,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5640,8 +8572,8 @@ var form = {
             ]
           }, {
             description: 'Extent existing MPAs to integrate nearby sites that host dark assemblages',
-          collection_id: 5148,
-          parent_collection_id: 519,
+            collection_id: 5148,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5687,8 +8619,8 @@ var form = {
             ]
           }, {
             description: 'Introduce national legislation to reduce negative impacts',
-          collection_id: 5149,
-          parent_collection_id: 519,
+            collection_id: 5149,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5734,8 +8666,8 @@ var form = {
             ]
           }, {
             description: 'Integrate taking dark assemblages into account within impact studies procedures',
-          collection_id: 5150,
-          parent_collection_id: 519,
+            collection_id: 5150,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
