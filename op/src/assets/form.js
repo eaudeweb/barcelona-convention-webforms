@@ -155,6 +155,8 @@ var form = {
         article_title: 'Articles 4., 5 and 6 Annex IV Granting of authorizations',
         article_items: [{
           description: 'Exploration and  exploitation offshore activities subject to prior authorization issued by the national competent authority in accordance with Articles 5 and 6 and the criteria set forth in Annex IV',
+          collection_id: 6001,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -201,6 +203,8 @@ var form = {
         article_title: 'Article 8 BAT and BEP',
         article_items: [{
           description: 'Obligation upon operators to use the best available, environmentally effective and economically appropriate techniques in order to minimize the risk of offshore pollution',
+          collection_id: 6002,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -247,6 +251,8 @@ var form = {
         article_title: 'Article 9 Harmful or noxious substances and materials',
         article_items: [{
           description: 'Prohibition of disposal of harmful and noxious substances and materials listed in Annex I to the Protocol',
+          collection_id: 6003,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -290,6 +296,8 @@ var form = {
           ]
         },{
           description: 'Disposal of harmful and noxious substances and materials listed in Annex II to the Protocol is subject to a prior special permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol',
+          collection_id: 6004,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -333,6 +341,8 @@ var form = {
           ]
         },{
           description: 'Disposal of harmful and noxious substances and materials that are not listed in Annexes I and II to the Protocol is subject to a prior general permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol',
+          collection_id: 6005,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -376,6 +386,8 @@ var form = {
           ]
         },{
           description: 'Use and storage of offshore chemicals is approved by the competent national authority on the basis of the Chemical Use Plan',
+          collection_id: 6006,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -422,6 +434,8 @@ var form = {
         article_title: 'Article 10 Oil and Oily Mixtures and Drilling Fluids and Cuttings',
         article_items: [{
           description: 'Disposal of oil and oily mixtures in accordance with the provisions of Annex V A to the Protocol',
+          collection_id: 6007,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -465,6 +479,8 @@ var form = {
           ]
         },{
           description: 'Use and disposal of drilling fluids and cuttings in accordance with the provisions of Annex V B to the Protocol',
+          collection_id: 6008,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -511,6 +527,8 @@ var form = {
         article_title: 'Article 11 Sewage',
         article_items: [{
           description: 'Discharge of sewage prohibited with the exception of those cases provided for in Article 11.1 of the Protocol',
+          collection_id: 6009,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -557,6 +575,8 @@ var form = {
         article_title: 'Article 12 Garbage',
         article_items: [{
           description: 'Prohibition of disposal into the Protocol area of all plastics, such as synthetic ropes , synthetic fishing nets and plastic garbage bags and all non- biodegradable garbage, including paper products, rags, galls, metal, bottles, crockery, dunnage, lining and packing materials',
+          collection_id: 6010,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -600,6 +620,8 @@ var form = {
           ]
         },{
           description: 'Disposal of food waste to take place as far away as possible from land in accordance with international rules and standards',
+          collection_id: 6011,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -646,6 +668,8 @@ var form = {
         article_title: 'Article 13 Reception facilities',
         article_items: [{
           description: 'Ensure that operators dispose of all waste and harmful or noxious substances and materials in designated onshore reception facilities',
+          collection_id: 6012,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -692,6 +716,8 @@ var form = {
         article_title: 'Article 15 Safety Measures',
         article_items: [{
           description: 'Certificate of safety and fitness required to the offshore installation by the competent national authority',
+          collection_id: 6013,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -738,6 +764,8 @@ var form = {
         article_title: 'Article 16 Contingency Planning',
         article_items: [{
           description: 'Contingency Plan in accordance with Annex VII to the Protocol required to the operator by the competent national authority',
+          collection_id: 6014,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -784,6 +812,8 @@ var form = {
         article_title: 'Article 12 Monitoring',
         article_items: [{
           description: 'Establishment of environmental and compliance monitoring programmes and activities',
+          collection_id: 6015,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -830,6 +860,8 @@ var form = {
         article_title: 'Article 20 Removal',
         article_items: [{
           description: 'Obligation upon operators to remove disused offshore installations and pipelines in accordance with the guidelines and standards adopted by the competent international organization',
+          collection_id: 6016,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -876,6 +908,8 @@ var form = {
         article_title: 'Article 21 SPA',
         article_items: [{
           description: 'Adoption of special measures to prevent, abate, combat and control pollution in specially protected areas arising from offshore activities in these areas',
+          collection_id: 6017,
+          parent_collection_id: 602,
           items: [{
             type: 'changes',
             label: 'Changes in the information provided in the previous report',
@@ -926,8 +960,9 @@ var form = {
     collection_id: 603,
     parent_collection_id: 6,
     data: {
-      table_label: 'TABLE II. Biennial Summary of Permits and Quantities',
-
+      table_label: 'TABLE II - Biennial Summary of Permits and Quantities',
+      collection_id: 604,
+      parent_collection_id: 603,
         table_article_label: '2.1 1994 Protocol Article',
         table_aritcle_description: 'Reference to Articles pertaining to permits',
 
