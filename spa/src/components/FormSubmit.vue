@@ -72,6 +72,7 @@ export default {
               "measuredata_difficulty": {Row:[]},
               "management_plans_imp": {Row:[]},
               "spa": {Row:[]},
+              "spamis": {Row:[]},
               "measures_to_protect_species":{Row:[]},
               "enf_measures":{Row:[]}
 
@@ -136,6 +137,8 @@ export default {
               "measuredata_difficulty": {Row:[]},
               "management_plans_imp": {Row:[]},
               "spa": {Row:[]},
+              "spamis": {Row:[]},
+              
               "measures_to_protect_species":{Row:[]},
               "enf_measures":{Row:[]}
 
@@ -325,6 +328,41 @@ export default {
           this.jsonemptyinstance.BC_SPA.measuresdata.Row.push(row)
         }
       }
+
+
+
+
+      let tab_3_2 = this.dataset.tab_3.data.table_2;
+      for (let article of tab_3_2.articles) {
+          let collection_id = article.collection_id || null;
+          let parent_collection_id = article.parent_collection_id || null
+          let spami_name = article.article_title
+          let row =  {
+                      "spami_name": spami_name,
+                      "parent_collection_id": parent_collection_id,
+                      "collection_id": collection_id,
+                      "date_of_establishment": null,
+                      "surface": null,
+                      "coordinates": null,
+                      "jurisdiction":null,
+                      "management_plan": null,
+                      "date_of_adoption": null,
+                      "delimitation_change": null,
+                      "legal_status_change": null,
+                      "changes_reasons": null,
+
+                  }
+        for (let article_item of article.article_items){
+          row[article_item.name] = article_item.selected
+        }
+          this.jsonemptyinstance.BC_SPA.spamis.Row.push(row)
+      }
+
+      console.log(this.jsonemptyinstance.BC_SPA.spamis)
+
+
+
+
 
 
       let tab_4_1 = this.dataset.tab_4.data.table_1;

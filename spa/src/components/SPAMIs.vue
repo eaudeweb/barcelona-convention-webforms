@@ -93,7 +93,7 @@
                      <div v-else-if="item.type === 'radio'">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
-                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" @change="updateAdoptionDateField($event)" :options="item.options" v-model="item.selected"></b-form-radio-group>
+                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" :options="item.options" v-model="item.selected"></b-form-radio-group>
                       </div>
                     </div>
                     <div v-else-if="item.type === 'checkbox'">

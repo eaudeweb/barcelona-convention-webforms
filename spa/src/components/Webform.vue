@@ -585,6 +585,23 @@ export default {
 
 
 
+    if (data.BC_SPA.spamis) {
+      if (data.BC_SPA.spamis.Row && data.BC_SPA.spamis.Row.length && data.BC_SPA.spamis.Row.length > 1) {
+        for (let perm of data.BC_SPA.spamis.Row) {
+          let collection_id = perm.collection_id
+          for (let article of this.form.tab_3.data.table_2.articles) {
+            if (article.collection_id === collection_id) {
+              for (let article_items of article.article_items) {
+                  article_items.selected = perm[article_items.name]
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
 
 
 
