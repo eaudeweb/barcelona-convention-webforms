@@ -368,7 +368,7 @@ export default {
 
 
 
-
+      console.log(this.jsonemptyinstance)
 
       // console.log(info)
       saveInstance(this.jsonemptyinstance)

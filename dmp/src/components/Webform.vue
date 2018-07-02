@@ -96,6 +96,9 @@ export default {
   methods: {
 
     prefill(data) {
+
+
+
       for(let table in this.form.country.tables) {
           for (let value of this.form.country.tables[table]) {
             value.selected = data.BC_DMP.contacting_party[value.name]
@@ -105,12 +108,7 @@ export default {
           }
       }
 
-
-
-
-
-
-           if(data.BC_DMP.measuresdata.Row.length) {
+      if(data.BC_DMP.measuresdata.Row.length) {
             for(let agreement of data.BC_DMP.measuresdata.Row) {
                 let collection_id = agreement.collection_id
                 let parent_collection_id = agreement.parent_collection_id
@@ -415,7 +413,7 @@ export default {
             name: 'dump_site_code',
             type: 'text',
             info: 'Two-letter prefix for country code and the Contracting Party\'s own alphanumeric dump site code',
-            selected: invenotry.dump_site_code,
+            selected: inventory.dump_site_code,
           },
           article_items: [{
             label: '3.2 Map of Dumping Site',

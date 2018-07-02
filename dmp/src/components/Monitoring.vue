@@ -17,7 +17,7 @@
 
           <div style="position: relative" role="tablist">
           <b-card v-for="(article,index) in info.data.articles" class="mb-1">
-            <h5 :id="titleSlugify(article.article_title.selected)" style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
+            <h5 :id="`titleSlugify(${article.article_title.label}_${index})`" style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
             {{article.article_title.label}} : {{article.article_title.selected}} <span style="float:right">▼</span>
             </h5>
 

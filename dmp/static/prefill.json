@@ -8,27 +8,27 @@
     "contacting_party":
     {
       "partyname": "AL",
-      "rep_period_from": "0003-01-02",
-      "rep_period_to": "0044-12-31",
-      "institution_name": "a",
-      "officer_name": "b",
-      "mailing_address": "c",
-      "tel": "d",
-      "fax": "e",
-      "email": "f@f",
-      "contact_point": "g",
-      "instituion_full_name": "j",
-      "national_mailing_address": "k",
-      "national_tel": "l",
-      "national_fax": "m",
-      "national_email": "n",
-      "national_signature": "o",
-      "national_date": "0011-11-11",
-      "org_name": "p",
-      "org_contact_point": "q",
-      "org_tel": "r",
-      "org_fax": "s",
-      "org_email": "t@t"
+      "rep_period_from": "0011-11-11",
+      "rep_period_to": "0111-11-11",
+      "institution_name": 11,
+      "officer_name": 2,
+      "mailing_address": 3,
+      "tel": 4,
+      "fax": 5,
+      "email": 6,
+      "contact_point": 7,
+      "instituion_full_name": 8,
+      "national_mailing_address": 9,
+      "national_tel": 10,
+      "national_fax": 11,
+      "national_email": 12,
+      "national_signature": 13,
+      "national_date": "12512-12-05",
+      "org_name": 14,
+      "org_contact_point": 15,
+      "org_tel": 16,
+      "org_fax": 17,
+      "org_email": 18
     },
     "measuresdata":
     {
@@ -39,17 +39,17 @@
         "collection_id": null,
         "changes": true,
         "difficulties": null,
-        "difficulties_comments": null,
-        "status": 2,
-        "status_comments": null
+        "difficulties_comments": 111111,
+        "status": 1,
+        "status_comments": "safsasgas"
       },
       {
         "description": "Dumping of wastes and other matter listed in Article 4.2 is subject to a prior special permit from the designated competent national authority or authorities in conformity with the criteria set forth in the Annex to the Protocol and the related Guidelines adopted by the Meetings of the Contracting Parties",
         "parent_collection_id": null,
         "collection_id": null,
-        "changes": true,
+        "changes": false,
         "difficulties": null,
-        "difficulties_comments": null,
+        "difficulties_comments": "zzzzzzzz",
         "status": 2,
         "status_comments": null
       },
@@ -57,21 +57,21 @@
         "description": "Designated competent national authority or authorities keep(s) records of the nature and quantities of the waste or other matter, dumping location and method",
         "parent_collection_id": null,
         "collection_id": null,
-        "changes": null,
+        "changes": false,
         "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
+        "difficulties_comments": "aaaaaaaa",
+        "status": 1,
+        "status_comments": 5235325
       },
       {
         "description": "Prohibition of incineration at sea",
         "parent_collection_id": null,
         "collection_id": null,
-        "changes": null,
+        "changes": true,
         "difficulties": null,
-        "difficulties_comments": null,
-        "status": null,
-        "status_comments": null
+        "difficulties_comments": 1255555,
+        "status": 1,
+        "status_comments": "bbbbbbbbb"
       },
       {
         "description": "Force majeure dumping at sea is conducted under the conditions set out in Article 8 and reported to UNEP/MAP Secretariat immediately",
@@ -129,11 +129,51 @@
       "Row": [
       {
         "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
         "difficulty": 2
       },
       {
         "collection_id": null,
         "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
       },
       {
         "collection_id": null,
@@ -161,11 +201,11 @@
       },
       {
         "collection_id": null,
-        "difficulty": 5
+        "difficulty": 4
       },
       {
         "collection_id": null,
-        "difficulty": 4
+        "difficulty": 5
       }]
     },
     "dumping_at_sea_permits":
@@ -191,15 +231,15 @@
         "parent_collection_id": null,
         "title": "1976 Protocol Article 6",
         "permit_type": "General Permit",
-        "waste_cateogry": 9,
-        "permits_number_issued": 10,
-        "waste_quantity_permited": 11,
-        "waste_reporting_unit": 12,
-        "waste_quanity_actual": 13,
-        "waste_reporting_units": 14,
+        "waste_cateogry": "a",
+        "permits_number_issued": "b",
+        "waste_quantity_permited": "c",
+        "waste_reporting_unit": "z",
+        "waste_quanity_actual": "d",
+        "waste_reporting_units": "g",
         "waste_reporting_units_2": null,
-        "dumping_regulated": 15,
-        "notes": 16
+        "dumping_regulated": "h",
+        "notes": "h"
       },
       {
         "collection_id": null,
@@ -324,73 +364,42 @@
     },
     "quantities_dry_weight_of_dredged_material":
     {
-      "Row": [
+      "Row":
       {
-        "cr-tons": 1,
-        "cu-tons": 2,
-        "pb-tons": 3,
-        "ni-tons": 4,
-        "zn-tons": 5,
-        "oil-tons": 5,
-        "pah9-tons": 6,
-        "pah16-tons": 7,
-        "pcb7-tons": 8,
-        "hcb-kg": 9,
-        "g-hch-kg": 0,
-        "pp-ddt-kg": 1,
-        "pp-dde-kg": 2,
-        "pp-ddd-kg": 3,
-        "ddx-kg": 4,
-        "tbt-kg": 5,
-        "dbt-kg": 6,
-        "notes": 7
-      },
-      {
-        "cr-tons": 0,
-        "cu-tons": 9,
-        "pb-tons": 8,
-        "ni-tons": 7,
-        "zn-tons": 6,
-        "oil-tons": 5,
-        "pah9-tons": 55,
-        "pah16-tons": 444,
-        "pcb7-tons": 333,
-        "hcb-kg": 2222,
-        "g-hch-kg": 111,
-        "pp-ddt-kg": 12,
-        "pp-dde-kg": 33131,
-        "pp-ddd-kg": 34351,
-        "ddx-kg": 4124,
-        "tbt-kg": 42351,
-        "dbt-kg": 41323,
-        "notes": 5124
-      }]
+        "cr-tons": 12412,
+        "cu-tons": 2314216,
+        "pb-tons": 746,
+        "ni-tons": 98,
+        "zn-tons": 69,
+        "oil-tons": 868,
+        "pah9-tons": 89,
+        "pah16-tons": 689,
+        "pcb7-tons": 698,
+        "hcb-kg": 68,
+        "g-hch-kg": 89,
+        "pp-ddt-kg": 689,
+        "pp-dde-kg": 89,
+        "pp-ddd-kg": 698,
+        "ddx-kg": 8,
+        "tbt-kg": 68,
+        "dbt-kg": 96,
+        "notes": 896
+      }
     },
     "biennieal_summary_wastes":
     {
-      "Row": [
+      "Row":
       {
         "collection_id": null,
         "parent_collection_id": null,
-        "dump_site_code": 12412,
-        "dumping_map": "afs",
-        "dumping_sea_method": "asf",
-        "waste_type_sea": "fjsaif",
-        "total_waste_dumped": "saklf",
-        "waste_reporting_units": "fa9r12",
-        "notes": "214ijopsmv"
-      },
-      {
-        "collection_id": null,
-        "parent_collection_id": null,
-        "dump_site_code": "sfas",
+        "dump_site_code": 2414124,
         "dumping_map": 1,
         "dumping_sea_method": 2,
         "waste_type_sea": 3,
         "total_waste_dumped": 4,
         "waste_reporting_units": 5,
         "notes": 6
-      }]
+      }
     },
     "dump_sites_coordinates":
     {
@@ -398,19 +407,19 @@
       {
         "collection_id": null,
         "parent_collection_id": null,
-        "dump_site_code": "afgsa",
-        "geodetic_datum": "sfa",
-        "dump_site_shape": "ugoqfj",
-        "radius_of_circle": "qwhg",
-        "coord_a_latitude": "fj",
-        "coord_a_longitude": "ngi",
-        "coord_b_latitude": "irq3t0i0",
-        "coord_b_longitude": "gjw",
-        "coord_c_latitude": "g=h",
-        "coord_c_longitude": "wg",
-        "coord_d_latitude": "jwnbh",
-        "coord_d_longitude": "u9fb",
-        "notes": "whg"
+        "dump_site_code": null,
+        "geodetic_datum": null,
+        "dump_site_shape": null,
+        "radius_of_circle": null,
+        "coord_a_latitude": null,
+        "coord_a_longitude": null,
+        "coord_b_latitude": null,
+        "coord_b_longitude": null,
+        "coord_c_latitude": null,
+        "coord_c_longitude": null,
+        "coord_d_latitude": null,
+        "coord_d_longitude": null,
+        "notes": null
       }
     },
     "monitoring":
@@ -419,13 +428,13 @@
       {
         "collection_id": null,
         "parent_collection_id": null,
-        "dump_site_code_monitore_d": 1,
+        "dump_site_code_monitore_d": 523532,
         "monitoring_conducted_rep_period": true,
-        "field_monitoring_when": [2, 3],
-        "field_monitoring_survey_type": [1, 2, 4, 5],
-        "adverse_impact_found": null,
-        "impact_description": "sagas",
-        "compliance_monitoring_permit": true,
+        "field_monitoring_when": [2, 1, 3, 4],
+        "field_monitoring_survey_type": [2, 4, 5],
+        "adverse_impact_found": true,
+        "impact_description": "fasfasf",
+        "compliance_monitoring_permit": false,
         "operations_in_compliance_with_permit": false,
         "is_follow_up_planned": true
       }
@@ -436,7 +445,7 @@
       {
         "collection_id": null,
         "parent_collection_id": null,
-        "placement_site_code": "nameblabla",
+        "placement_site_code": 1,
         "placement_location": 2,
         "placement_purpose": 3,
         "material_characteristics_and_quantity": 4,
@@ -448,14 +457,14 @@
       {
         "collection_id": null,
         "parent_collection_id": null,
-        "placement_site_code": 659,
-        "placement_location": "wtjiwtwq",
-        "placement_purpose": "gjidsjgw",
-        "material_characteristics_and_quantity": null,
-        "impact_hypothesis_status": "gj",
-        "permitting_authority_name": "g",
-        "plans_for_monitoring": "wjg",
-        "notes": "jg9"
+        "placement_site_code": "a",
+        "placement_location": "b",
+        "placement_purpose": "c",
+        "material_characteristics_and_quantity": "d",
+        "impact_hypothesis_status": "e",
+        "permitting_authority_name": "f",
+        "plans_for_monitoring": "g",
+        "notes": "h"
       }]
     }
   }
