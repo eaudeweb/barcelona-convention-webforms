@@ -144,13 +144,19 @@ var form = {
   },
   tab_1: {
     label: 'Part I: Legal and Regulatory measures',
+    collection_id: 501,
+    parent_collection_id: 5,
     data: {
       question: 'Question 1: Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the SPA and Biodiversity Protocol listed in Table I below?',
       table_label: 'Table I: Legal and regulatory measures',
+      collection_id: 502,
+      parent_collection_id: 501,
       articles: [{
           article_title: 'Article 2.1',
           article_items: [{
             description: 'Designation of the terrestrial areas (including wetlands) under their jurisdiction that are included in the area to which the SPA and Biological Diversity Protocol applies',
+            collection_id: 5001,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -197,6 +203,8 @@ var form = {
           article_title: 'Article 3.1.a',
           article_items: [{
             description: 'Protection, preservation and management in a sustainable and environmentally sound way of areas of particular natural or cultural value, notably by the establishment of specially protected areas',
+            collection_id: 5002,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -243,6 +251,8 @@ var form = {
           article_title: 'Article 3.1.b',
           article_items: [{
             description: 'Protection, preservation and management of endangered or threatened flora and fauna species',
+            collection_id: 5003,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -289,6 +299,8 @@ var form = {
           article_title: 'Article 3.3',
           article_items: [{
             description: 'Compilation of an inventory of the components of marine and coastal biodiversity',
+            collection_id: 5004,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -335,6 +347,8 @@ var form = {
           article_title: 'Article 3.4',
           article_items: [{
             description: 'Formulation of a national strategy and action plan to protect the components of marine and coastal biodiversity',
+            collection_id: 5005,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -381,6 +395,8 @@ var form = {
           article_title: 'Article 3.5',
           article_items: [{
             description: 'Monitoring the components of marine and coastal biodiversity and those processes and categories of activities which have or are likely to have a significant adverse impact on them',
+            collection_id: 5006,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -428,6 +444,8 @@ var form = {
           article_title: 'Article 17',
           article_items: [{
             description: 'Taking into consideration, in the planning process leading to decisions on projects and activities that could significantly affect protected areas, species and their habitats, of possible direct or indirect, immediate or long- term, impact, including the cumulative impact of projects and activities on habitats',
+            collection_id: 5007,
+            parent_collection_id: 502,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -476,16 +494,21 @@ var form = {
   },
   tab_2: {
     label: 'Part II: Specially protected areas',
+    collection_id: 503,
+    parent_collection_id: 5,
     data: {
       question: 'Question 2: Has the Party established specially protected areas and taken necessary measures for their protection and the implementation of their management plans?',
 
       table_1: {
-
-        table_label: 'Table II – MEASURES TO PROTECT SPAs',
+        collection_id: 504,
+        parent_collection_id: 503,
+        table_label: 'Table II – Measures to protect SPAs',
         articles: [{
             article_title: 'Article 3.1.a',
             article_items: [{
               description: 'Setting up of protected areas that come within the Protocol’s geographical coverage',
+              collection_id: 5008,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -532,6 +555,8 @@ var form = {
             article_title: 'Article 6.b',
             article_items: [{
               description: 'Prohibition of the dumping and any discharge likely to directly or indirectly harm the integrity of specially protected areas',
+              collection_id: 5009,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -578,6 +603,8 @@ var form = {
             article_title: 'Article 6.c',
             article_items: [{
               description: 'Regulation of the passage of ships and all stopping or anchoring in the specially protected areas’ extension zone',
+              collection_id: 5010,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -624,6 +651,8 @@ var form = {
             article_title: 'Article 6.d',
             article_items: [{
               description: 'Regulation of the introduction of any species not indigenous to the specially protected area or of genetically modified species',
+              collection_id: 5011,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -670,6 +699,8 @@ var form = {
             article_title: 'Article 6.e',
             article_items: [{
               description: 'Regulation or prohibition of all exploration activities or activities that involve modifying the soil or subsoil of the land part, of the seabed or of its subsoil in the specially protected areas',
+              collection_id: 5012,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -716,6 +747,8 @@ var form = {
             article_title: 'Article 6.f',
             article_items: [{
               description: 'Regulation of scientific research in the specific protected area',
+              collection_id: 5013,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -763,6 +796,8 @@ var form = {
             article_title: 'Article 6.g',
             article_items: [{
               description: 'Prohibition and regulation of all activities involving taking of species. (i.e. fishing, hunting, taking of animals and harvesting of plants and their destruction, as well as trade in animals, parts of animals, plants and parts of plants)which originate in specially protected areas',
+              collection_id: 5014,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -810,6 +845,8 @@ var form = {
             article_title: 'Article 6.h',
             article_items: [{
               description: 'Regulation and if necessary prohibition of any other activity likely to have an adverse impact on the specially protected areas. These include activities that may harm or disturb the species or that might endanger the state of conservation of the ecosystems or species or might impair the natural or cultural characteristics of the Specially Protected Area',
+              collection_id: 5015,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -857,6 +894,8 @@ var form = {
             article_title: 'Article 18',
             article_items: [{
               description: 'Traditional subsistence and cultural activities of local populations taken into account when formulating protective measures for Specially Protected Areas',
+              collection_id: 5016,
+              parent_collection_id: 504,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -904,18 +943,23 @@ var form = {
       },
 
       table_2: {
-        table_label: 'Table III - LIST OF SPAs WITHIN THE PROTOCOL´S GEOGRAPHICAL COVERAGE',
+        table_label: 'Table III - List of SPAs within the protocol\'s geographical coverage',
+        collection_id: 505,
+        parent_collection_id: 503,
         articles: []
       },
 
 
       table_3: {
-
-        table_label: 'Table IV - MANAGEMENT OF SPAs',
+        table_label: 'Table IV - Management of SPAs',
+        collection_id: 506,
+        parent_collection_id: 503,
         articles: [{
           article_title: 'Article 7.1',
           article_items: [{
             description: 'Adoption of planning, management, supervision and monitoring  measures for Specially Protected Areas',
+            collection_id: 5017,
+            parent_collection_id: 506,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -962,6 +1006,8 @@ var form = {
           article_title: 'Article 7.2.a',
           article_items: [{
             description: 'Elaboration and implementation of a management plan for each Specially Protected Area',
+            collection_id: 5018,
+            parent_collection_id: 506,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -1008,6 +1054,8 @@ var form = {
           article_title: 'Article 7.2.b',
           article_items: [{
             description: 'Programmes for  the  observation and scientific monitoring of changes in the Protocol Areas\' ecosystems and of the impact of human activities',
+            collection_id: 5019,
+            parent_collection_id: 506,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -1053,7 +1101,9 @@ var form = {
         }, {
           article_title: 'Article 7.2.c',
           article_items: [{
-              description: 'Measures for the involvement of local communities in the process of managing the protected areas',
+            description: 'Measures for the involvement of local communities in the process of managing the protected areas',
+            collection_id: 5020,
+            parent_collection_id: 506,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1098,6 +1148,8 @@ var form = {
             },
             {
               description: 'Providing assistance to local inhabitants to compensate for the possible adverse impact which the protection measures introduced in the SPA might have on their income',
+              collection_id: 5021,
+              parent_collection_id: 506,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1145,6 +1197,8 @@ var form = {
           article_title: 'Article 7.2.d',
           article_items: [{
             description: 'Funding mechanisms for managing and promoting the protected areas or income- generating activities that are compatible with the protection measures',
+            collection_id: 5022,
+            parent_collection_id: 506,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -1191,6 +1245,8 @@ var form = {
           article_title: 'Article 7.2.f',
           article_items: [{
             description: 'Appropriate training for the technical managers and other qualified staff of SPAs',
+            collection_id: 5023,
+            parent_collection_id: 506,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -1241,15 +1297,21 @@ var form = {
   },
 
   tab_3: {
-    label: 'Part III: SPECIALLY PROTECTED AREAS OF MEDITERRANEAN IMPORTANCE (SPAMIs)',
+    label: 'PART III: Specially protected areas of mediterranean importance (SPAMIs)',
+    collection_id: 507,
+    parent_collection_id: 5,
     data: {
       table_1: {
-        table_label: 'Table V – ESTABLISHMENT OF SPAMIs',
+        table_label: 'Table V – Establishment of SPAMIs',
+        collection_id: 508,
+        parent_collection_id: 507,
         table_question: 'Question 3:  Has the Party established SPAMIs and taken necessary measures to implement management plans for such areas?',
         articles: [{
           article_title: 'Article 3.1.a',
           article_items: [{
             description: 'Setting up of Specially Protected Areas of Mediterranean Importance (SPAMIs)',
+            collection_id: 5024,
+            parent_collection_id: 508,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -1296,6 +1358,8 @@ var form = {
           article_title: 'Article 7.2.a',
           article_items: [{
             description: 'Elaboration and implementation of a management plan for each SPAMI',
+            collection_id: 5025,
+            parent_collection_id: 508,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -1342,7 +1406,9 @@ var form = {
       },
 
       table_3: {
-        table_label: 'Table VII – IMPLEMENTATION OF MANAGEMENT PLANS (Annex I to the Protocol)',
+        table_label: 'Table VII – Implementation of management plans (Annex I to the Protocol)',
+        collection_id: 510,
+        parent_collection_id: 507,
         articles: []
       },
     }
@@ -1353,16 +1419,20 @@ var form = {
 
   tab_4: {
     label: 'Part IV: Endangered and threatened species',
+    collection_id: 511,
+    parent_collection_id: 5,
     data: {
       question: 'Question 5:  Has the Party implemented measures to protect and conserve endangered and threatened species as indicated in Table VIII?',
-
       table_1: {
-
-        table_label: 'Table VIII - MEASURES TO PROTECT ENDANGERED AND THREATENED SPECIES',
+        collection_id: 512,
+        parent_collection_id: 511,
+        table_label: 'Table VIII - Measures to protect endangered and threatened species',
         articles: [{
             article_title: 'Article 11.2',
             article_items: [{
               description: 'Drawing up of a list of endangered or threatened species of fauna and flora and identification of their distribution in the zones subject to Party\'s jurisdiction',
+              collection_id: 5060,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1409,6 +1479,8 @@ var form = {
             article_title: 'Article 11.2, Article 12.1',
             article_items: [{
               description: 'Management of species of fauna and flora, listed in Annexes II and III to the Protocol , to ensure their favourable state of conservation',
+              collection_id: 5061,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1455,6 +1527,8 @@ var form = {
             article_title: 'Article 11.3.a, Article 12.2',
             article_items: [{
               description: 'Controlling and, where appropriate, prohibiting the taking, possession or killing, the commercial trade, the transport and the exhibition for commercial purposes of protected species of fauna, particularly those listed in Annex II to the Protocol',
+              collection_id: 5062,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1501,6 +1575,8 @@ var form = {
             article_title: 'Article 11.3.b',
             article_items: [{
               description: 'Controlling and where appropriate prohibiting the disturbance of protected wild fauna, particularly during the period of breeding, incubation, hibernation or migration',
+              collection_id: 5063,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1547,6 +1623,8 @@ var form = {
             article_title: 'Article 11.4',
             article_items: [{
               description: 'Establishment of bilateral or multilateral cooperation (including agreements) to protect and restore the population of migrant species in the area where the Protocol is applied',
+              collection_id: 5064,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1593,6 +1671,8 @@ var form = {
             article_title: 'Article 11.5, Article 12.2',
             article_items: [{
               description: 'Regulating and where appropriate prohibiting all forms of destruction and disturbance of protected species of flora, particularly those listed in Annex II to the Protocol',
+              collection_id: 5065,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1640,6 +1720,8 @@ var form = {
             article_title: 'Article 11.6',
             article_items: [{
               description: 'Formulation and adoption of measures and plans concerning ex situ reproduction, particularly in captivity, of protected fauna and the growing of protected flora',
+              collection_id: 5066,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1687,6 +1769,8 @@ var form = {
             article_title: 'Article 12.6',
             article_items: [{
               description: 'Granting of exceptions, to the prohibitions prescribed for the protection of the species listed in the Annexes to the Protocol for scientific, educational, or management purposes necessary to ensure the survival of the species',
+              collection_id: 5067,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1734,6 +1818,8 @@ var form = {
             article_title: 'Article 13',
             article_items: [{
               description: 'Taking steps to deal with the deliberate or accidental introduction into the wild of non- indigenous or genetically modified species and prohibiting those that may have harmful impacts on the ecosystems habitats or species',
+              collection_id: 5068,
+              parent_collection_id: 512,
               items: [{
                   type: 'changes',
                   label: 'Changes in the information provided in the previous report',
@@ -1781,10 +1867,13 @@ var form = {
       },
 
       table_2: {
-        table_label: 'Table IX – MEASURES TO PROTECT SPECIES,PER EACH SPECIES ',
+        table_label: 'Table IX – Measures to protect species, per each species',
+        collection_id: 513,
+        parent_collection_id: 511,
         articles: [{
           article_title: 'List of species as per the Annexes to the Protocol(For each species, tick the box that applies)',
           collection_id: 6800,
+          parent_collection_id: 513,
           article_items: [{
             items: [{
                 type: 'checkbox',
@@ -1829,13 +1918,19 @@ var form = {
 
   tab_5: {
     label: 'Part V: Monitoring',
+    collection_id: 514,
+    parent_collection_id: 5,
     data: {
       question: '',
       table_label: 'Table X: Monitoring',
+      collection_id: 515,
+      parent_collection_id: 514,
       articles: [{
         article_title: '1. Implementation of quality status monitoring and Integrated Monitoring and Assessment (IMAP)',
         article_items: [{
           description: '',
+          collection_id: 5069,
+          parent_collection_id: 515,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1884,6 +1979,8 @@ var form = {
         article_title: '2. Ecological Objective-EO 1 Biodiversity:',
         article_items: [{
           description: '',
+          collection_id: 5070,
+          parent_collection_id: 515,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1932,6 +2029,8 @@ var form = {
         article_title: '3. Ecological Objective-EO 2 Non- indigenous species',
         article_items: [{
           description: '',
+          collection_id: 5071,
+          parent_collection_id: 515,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -1980,6 +2079,8 @@ var form = {
         article_title: '4.Ecological Objective -EO 3 Harvest of commercially exploited fish and shellfish',
         article_items: [{
           description: '',
+          collection_id: 5072,
+          parent_collection_id: 515,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2028,6 +2129,8 @@ var form = {
         article_title: '5.Ecological Objective EO 6 Sea-floor integrity',
         article_items: [{
           description: '',
+          collection_id: 5073,
+          parent_collection_id: 515,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2079,11 +2182,17 @@ var form = {
 
   tab_6: {
     label: 'Part VI: Enforcements measures',
+    collection_id: 516,
+    parent_collection_id: 5,
     data: {
       question: 'Please insert the data or tick the appropriate cell or describe the enforcement measures taken',
       table_label: 'Table XI: Enforcements measures',
+      collection_id: 517,
+      parent_collection_id: 516,
       articles: [{
           article_title: 'Article 6.g: Prohibition and regulation of all activities involving taking of species (i.e. fishing, hunting, taking of animals and harvesting of plants and their destruction, as well as trade in animals, parts of animals, plants and parts of plants) which originate in specially protected areas',
+          collection_id: 5074,
+          parent_collection_id: 517,
           article_items: [{
             label: 'Number of inspections',
             type: 'number',
@@ -2112,6 +2221,8 @@ var form = {
           }]
         }, {
           article_title: 'Article11.3.a: Controlling and, where appropriate, prohibiting the taking, possession or killing, the commercial trade, the transport and the exhibition for commercial purposes of protected species of fauna, particularly those listed in Annex II to the Protocol ',
+          collection_id: 5075,
+          parent_collection_id: 517,
           article_items: [{
             label: 'Number of inspections',
             type: 'number',
@@ -2141,6 +2252,8 @@ var form = {
         },
         {
           article_title: 'Article 11.3.b Controlling and where appropriate prohibiting the disturbance of protected wild fauna, particularly during the period of breeding, incubation, hibernation or migration ',
+          collection_id: 5076,
+          parent_collection_id: 517,
           article_items: [{
             label: 'Number of inspections',
             type: 'number',
@@ -2170,6 +2283,8 @@ var form = {
         },
         {
           article_title: 'Article11.5 Regulating and where appropriate prohibiting all forms of destruction and disturbance of protected species of flora, particularly those listed in Annex II to the Protocol ',
+          collection_id: 5077,
+          parent_collection_id: 517,
           article_items: [{
             label: 'Number of inspections',
             type: 'number',
@@ -2203,20 +2318,20 @@ var form = {
 
 
   tab_7: {
-    label: 'Part VII: IMPLEMENTATION OF REGIONAL ACTIONS PLANS (RAPs)',
-    collection_id: 405,
-    parent_collection_id: 4,
+    label: 'PART VII: Implementation of regional actions plans (RAPs)',
+    collection_id: 518,
+    parent_collection_id: 5,
     data: {
       question: '',
       table_label: 'Table XII: Implementation of RAPs',
-      collection_id: 406,
-      parent_collection_id: 405,
+      collection_id: 519,
+      parent_collection_id: 518,
       articles: [{
         article_title: 'RAP for the conservation of Cartilaginous Fishes (Chondrichthyans) (COP Decision IG 21/4)',
         article_items: [{
           description: 'Formalize/reinforce synchronous submission of catch, bycatch and discard data to both scientific and management bodies, and annually to the General Fisheries Commission for the Mediterranean (GFCM)-Timeline: every year from 2014 to 2019',
-          collection_id: 4010,
-          parent_collection_id: 406,
+          collection_id: 5078,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2261,8 +2376,8 @@ var form = {
           ]
         }, {
           description: 'Establish strict legal protection for species listed in Annex II and GFCM Recommendation through national laws and regulations – Timeline: as soon as possible',
-          collection_id: 4011,
-          parent_collection_id: 406,
+          collection_id: 5079,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2308,8 +2423,8 @@ var form = {
           ]
         }, {
           description: 'Support GFCM finning prohibition by enacting national regulations and monitoring their implementation and enforcement-Timeline: as soon as possible',
-          collection_id: 4012,
-          parent_collection_id: 406,
+          collection_id: 5080,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2355,8 +2470,8 @@ var form = {
           ]
         }, {
           description: 'Complete and disseminate inventories of critical habitats (mating, spawning and nursery grounds)-Timeline: 2015',
-          collection_id: 4013,
-          parent_collection_id: 406,
+          collection_id: 5081,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2401,8 +2516,8 @@ var form = {
           ]
         }, {
           description: 'Increase compliance with obligations to collect and submit species-specific commercial catch and bycatch data to FAO and GFCM, including through increased use of observers-Timeline: from 2014 to 2015',
-          collection_id: 4014,
-          parent_collection_id: 406,
+          collection_id: 5082,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2448,8 +2563,8 @@ var form = {
           ]
         }, {
           description: 'Comply with obligations under GFCM Recommendations to collect and submit data on pelagic shark catches._Timeline: as soon as possible',
-          collection_id: 4015,
-          parent_collection_id: 406,
+          collection_id: 5083,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2495,8 +2610,8 @@ var form = {
           ]
         }, {
           description: 'Improve programmes for the collection and reporting of data from coastal fisheries-Timeline: as soon as possible',
-          collection_id: 4016,
-          parent_collection_id: 406,
+          collection_id: 5084,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2542,8 +2657,8 @@ var form = {
           ]
         }, {
           description: 'Monitor Critically Endangered, Endangered and endemic species – Timeline: from 2014 to 2019',
-          collection_id: 4017,
-          parent_collection_id: 406,
+          collection_id: 5085,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2589,8 +2704,8 @@ var form = {
           ]
         }, {
           description: 'Submit to the GFCM annual Shark Assessment Reports describing all national target and/or bycatch fisheries-Timeline: every year',
-          collection_id: 4018,
-          parent_collection_id: 406,
+          collection_id: 5086,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2636,8 +2751,8 @@ var form = {
           ]
         }, {
           description: 'Develop and adopt (where these do not exist) national Shark Plans and specific regulations for fisheries exploiting chondrichthyans, whether target or bycatch-Timeline: as soon as possible',
-          collection_id: 4019,
-          parent_collection_id: 406,
+          collection_id: 5087,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2686,8 +2801,8 @@ var form = {
         article_title: 'RAP concerning Species Introductions and Invasive Species (COP Decision IG 22/12)',
         article_items: [{
           description: 'Set up a mechanism to promote and coordinate the actions listed in paragraph 22 of the RAP1 -Timeline: 2016',
-          collection_id: 4020,
-          parent_collection_id: 406,
+          collection_id: 5088,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2733,8 +2848,8 @@ var form = {
           ]
         }, {
           description: 'Conduct a baseline study to feed the Marine Mediterranean Invasive Species (MAMIAS )2_Timeline: 2017',
-          collection_id: 4021,
-          parent_collection_id: 406,
+          collection_id: 5089,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2780,8 +2895,8 @@ var form = {
           ]
         }, {
           description: 'Development of programmes for data collection and monitoring Timeline: 2017',
-          collection_id: 4022,
-          parent_collection_id: 406,
+          collection_id: 5090,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2827,8 +2942,8 @@ var form = {
           ]
         }, {
           description: 'Launch the procedures for enacting or strengthening national legislation governing the control of alien species introduction Timeline: 2017',
-          collection_id: 4023,
-          parent_collection_id: 406,
+          collection_id: 5091,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2874,8 +2989,8 @@ var form = {
           ]
         }, {
           description: 'Develop programmes to raise the awareness of the general public and target groups, including decision- makers, concerning the risks associated with species introduction Timeline: 2017',
-          collection_id: 4024,
-          parent_collection_id: 406,
+          collection_id: 5092,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2924,8 +3039,8 @@ var form = {
         article_title: 'RAP for the conservation of Bird Species (COP Decision IG 21/4)',
         article_items: [{
           description: 'Protect legally all bird species listed in Annex II to the SPA/BD Protocol- Timeline: by 2019',
-          collection_id: 4025,
-          parent_collection_id: 406,
+          collection_id: 5093,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -2971,8 +3086,8 @@ var form = {
           ]
         }, {
           description: 'Optimize synergies with international agreements and organizations dedicated to bird conservation_ Timeline: from 2014 to 2019',
-          collection_id: 4026,
-          parent_collection_id: 406,
+          collection_id: 5094,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3018,8 +3133,8 @@ var form = {
           ]
         }, {
           description: 'Organize specific training courses and workshops in coordination/synergy with international and/or national NGOs_ Timeline: from 2014 to 2019',
-          collection_id: 4027,
-          parent_collection_id: 406,
+          collection_id: 5095,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3065,8 +3180,8 @@ var form = {
           ]
         }, {
           description: 'Establishment / support of research and monitoring programs to fill gaps in the knowledge of threatened species in partnership with other organizations –Timeline: from 2014 to 2019',
-          collection_id: 4028,
-          parent_collection_id: 406,
+          collection_id: 5096,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3112,8 +3227,8 @@ var form = {
           ]
         }, {
           description: 'Establishment and implementation of National Action Plans for the conservation of endangered and threatened bird species in the Mediterranean –Timeline: from 2014- 2019',
-          collection_id: 4029,
-          parent_collection_id: 406,
+          collection_id: 5097,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3159,8 +3274,8 @@ var form = {
           ]
         }, {
           description: 'Identification of areas of important for birds on land and at sea (mapping of breeding, feeding, molting and wintering areas)- Timeline: from 2014 to 2019',
-          collection_id: 4030,
-          parent_collection_id: 406,
+          collection_id: 5098,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3205,8 +3320,8 @@ var form = {
           ]
         }, {
           description: 'Legal establishment of Protected Areas with adequate management plans at breeding sites-Timeline: by 2019',
-          collection_id: 4031,
-          parent_collection_id: 406,
+          collection_id: 5099,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3255,8 +3370,8 @@ var form = {
         article_title: 'RAP for the conservation of Cetaceans (COP Decision IG 22/12)',
         article_items: [{
           description: 'Ratify the ACCOBAMS Agreement and implement its Resolutions and Recommendations of relevance for the Mediterranean Sea',
-          collection_id: 4036,
-          parent_collection_id: 406,
+          collection_id: 5100,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3302,8 +3417,8 @@ var form = {
           ]
         }, {
           description: 'Ensure that cetaceans are covered, at national level, by appropriate regulation measures providing for the elimination of deliberate killing and for the mitigation of the adverse impacts from their interactions with human activities-',
-          collection_id: 4037,
-          parent_collection_id: 406,
+          collection_id: 5101,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3349,8 +3464,8 @@ var form = {
           ]
         }, {
           description: 'Ensure, through regulation or other appropriate approaches,  that whale-watching activity is environmentally sound and sustainably conducted',
-          collection_id: 4038,
-          parent_collection_id: 406,
+          collection_id: 5102,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3396,8 +3511,8 @@ var form = {
           ]
         }, {
           description: 'Undertake the comprehensive survey of abundance and distribution of cetaceans being planned by ACCOBAMS (ACCOBAMS Survey initiative)-',
-          collection_id: 4039,
-          parent_collection_id: 406,
+          collection_id: 5103,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3443,8 +3558,8 @@ var form = {
           ]
         }, {
           description: 'Assess the cetacean bycatch and depredation in their fisheries and adopt mitigation measures',
-          collection_id: 4040,
-          parent_collection_id: 406,
+          collection_id: 5104,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3490,8 +3605,8 @@ var form = {
           ]
         }, {
           description: 'Pursue the development and the implementation of a basin-wide strategy for underwater noise monitoring in the Mediterranean under the Ecological Objective 11 of the EcAp process',
-          collection_id: 4041,
-          parent_collection_id: 406,
+          collection_id: 5105,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3537,8 +3652,8 @@ var form = {
           ]
         }, {
           description: 'Development of acoustic mapping to build a comprehensive picture of the spatial and temporal distribution of anthropogenic noise sources, in particular for the noise hotspot areas identified in the Mediterranean by ACCOBAMS-',
-          collection_id: 4042,
-          parent_collection_id: 406,
+          collection_id: 5106,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3584,8 +3699,8 @@ var form = {
           ]
         }, {
           description: 'Promote awareness of the anthropogenic noise impacts on cetaceans, targeting in particular decision makers, key players in the industry organisations and the stockholders in the shipping sectors.',
-          collection_id: 4020,
-          parent_collection_id: 406,
+          collection_id: 5107,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3631,8 +3746,8 @@ var form = {
           ]
         }, {
           description: 'Establish a list of marine areas under its jurisdiction identified as of special importance for cetaceans',
-          collection_id: 4021,
-          parent_collection_id: 406,
+          collection_id: 5108,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3681,8 +3796,8 @@ var form = {
         article_title: 'RAP for the conservation of Marine Vegetation (COP Decision IG 20/6)',
         article_items: [{
           description: 'Take new vegetation species in Annex II to the SPA/BD Protocol into account: Timeline: as soon as possible',
-          collection_id: 4036,
-          parent_collection_id: 406,
+          collection_id: 5109,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3728,8 +3843,8 @@ var form = {
           ]
         }, {
           description: 'Create MPAs to conserve marine vegetation: Timeline: as soon as possible',
-          collection_id: 4037,
-          parent_collection_id: 406,
+          collection_id: 5110,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3775,8 +3890,8 @@ var form = {
           ]
         }, {
           description: 'Set up a programme for making national inventories on macrophyta species, with staggered planning according to the regions’ priorities. Timeline: from 2012',
-          collection_id: 4038,
-          parent_collection_id: 406,
+          collection_id: 5111,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3822,8 +3937,8 @@ var form = {
           ]
         }, {
           description: 'Make theoretical probable distribution maps for the main plant assemblages. Timeline: as soon as possible',
-          collection_id: 4039,
-          parent_collection_id: 406,
+          collection_id: 5112,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3869,8 +3984,8 @@ var form = {
           ]
         }, {
           description: 'Implement targeted mapping and inventorying actions (Annex II species, priority sites). Timeline: from 2012',
-          collection_id: 4040,
-          parent_collection_id: 406,
+          collection_id: 5113,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3916,8 +4031,8 @@ var form = {
           ]
         }, {
           description: 'Establish a programme for setting up monitoring networks for the main marine plant assemblages at national and regional level. Timeline: as soon as possible',
-          collection_id: 4041,
-          parent_collection_id: 406,
+          collection_id: 5114,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -3963,8 +4078,8 @@ var form = {
           ]
         }, {
           description: 'Set up and/or extend their networks for follow-up of plants in the Mediterranean. Timeline: from 2013',
-          collection_id: 4042,
-          parent_collection_id: 406,
+          collection_id: 5115,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4010,8 +4125,8 @@ var form = {
           ]
         }, {
           description: 'To develop short, medium and long term action plans according to national and regional priorities. Timeline: from 2012',
-          collection_id: 4020,
-          parent_collection_id: 406,
+          collection_id: 5116,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4060,8 +4175,8 @@ var form = {
         article_title: 'RAP for the conservation of the Monk Seal (1985 COP Decision)',
         article_items: [{
           description: 'Has the Party given the monk seal protection status?',
-          collection_id: 4036,
-          parent_collection_id: 406,
+          collection_id: 5117,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4107,8 +4222,8 @@ var form = {
           ]
         }, {
           description: 'For fishing, does the Party explicitly ban the use of dynamite, the carrying of firearms on boats, and all fishing techniques that can endanger monk seals?',
-          collection_id: 4037,
-          parent_collection_id: 406,
+          collection_id: 5118,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4154,8 +4269,8 @@ var form = {
           ]
         }, {
           description: 'If the Party still has breeding monk seal populations, have measures been taken to isolate monk seals from any human activity?',
-          collection_id: 4038,
-          parent_collection_id: 406,
+          collection_id: 5119,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4201,8 +4316,8 @@ var form = {
           ]
         }, {
           description: 'In the Party\'s territory, have SPAs been created to conserve monk seal populations or their potential habitats?',
-          collection_id: 4039,
-          parent_collection_id: 406,
+          collection_id: 5120,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4248,8 +4363,8 @@ var form = {
           ]
         }, {
           description: 'Has the Party established a list of breeding caves and other habitats that are of importance for monk seal conservation?',
-          collection_id: 4040,
-          parent_collection_id: 406,
+          collection_id: 5121,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4295,8 +4410,8 @@ var form = {
           ]
         }, {
           description: 'Has the Party carried out programmes for data collection on the monk seal?',
-          collection_id: 4041,
-          parent_collection_id: 406,
+          collection_id: 5122,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4342,8 +4457,8 @@ var form = {
           ]
         }, {
           description: 'Has the Party developed programmes for awareness raising, information and training concerning monk sea conservation?',
-          collection_id: 4042,
-          parent_collection_id: 406,
+          collection_id: 5123,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4389,8 +4504,8 @@ var form = {
           ]
         }, {
           description: 'Does the Party have an action plan for the conservation of monk seal and its potential habitats?',
-          collection_id: 4020,
-          parent_collection_id: 406,
+          collection_id: 5124,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -4439,8 +4554,8 @@ var form = {
         article_title: 'RAP for the conservation of Mediterranean Marine Turtles (COP Decision IG 21/4)',
         article_items: [{
             description: 'Protection of turtles–general species protection. Timeline: as soon as possible',
-            collection_id: 4036,
-            parent_collection_id: 406,
+          collection_id: 5125,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4486,8 +4601,8 @@ var form = {
             ]
           }, {
             description: 'Enforce legislation to eliminate deliberate killing. Timeline: as soon as possible',
-            collection_id: 4037,
-            parent_collection_id: 406,
+          collection_id: 5126,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4533,8 +4648,8 @@ var form = {
             ]
           }, {
             description: 'Habitat protection and management (nesting, mating, feeding, wintering and key migration passages). Timeline: as soon as possible',
-            collection_id: 4038,
-            parent_collection_id: 406,
+          collection_id: 5127,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4580,8 +4695,8 @@ var form = {
             ]
           }, {
             description: 'Setting up and implementing management plans. Timeline: from 2014 to 2019',
-            collection_id: 4039,
-            parent_collection_id: 406,
+          collection_id: 5128,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4627,8 +4742,8 @@ var form = {
             ]
           }, {
             description: 'Restoration of damaged nesting habitats. Timeline: from 2014 to 2019',
-            collection_id: 4040,
-            parent_collection_id: 406,
+          collection_id: 5129,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4674,8 +4789,8 @@ var form = {
             ]
           }, {
             description: 'Fishing regulations (depth, season, gear) in key areas. Timeline: from 2014 to 2019',
-            collection_id: 4041,
-            parent_collection_id: 406,
+          collection_id: 5130,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4721,8 +4836,8 @@ var form = {
             ]
           }, {
             description: 'Setting up and/or improving operation of Rescue Centers. Timeline: as soon as possible',
-            collection_id: 4042,
-            parent_collection_id: 406,
+          collection_id: 5131,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4768,8 +4883,8 @@ var form = {
             ]
           }, {
             description: 'Identification of new mating, feeding and wintering areas and key migration passages. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+          collection_id: 5132,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4815,8 +4930,8 @@ var form = {
             ]
           }, {
             description: 'Elaboration and execution of cooperative research projects of regional importance aimed at assessing the interaction between turtles and fisheries. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+          collection_id: 5133,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4862,8 +4977,8 @@ var form = {
             ]
           }, {
             description: 'Tagging and genetic analysis (as appropriate). Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+          collection_id: 5134,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4910,8 +5025,8 @@ var form = {
           },
           {
             description: 'Modification of gear, methods and strategies. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5135,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -4957,8 +5072,8 @@ var form = {
             ]
           }, {
             description: 'Setting up and/or improving long-term monitoring programmes. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5136,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5004,8 +5119,8 @@ var form = {
             ]
           }, {
             description: 'Setting up stranding networks. Timeline: as soon as possible',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5137,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5051,8 +5166,8 @@ var form = {
             ]
           }, {
             description: 'Public awareness and Information campaigns in particular for fishermen and local populations. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5138,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5098,8 +5213,8 @@ var form = {
             ]
           }, {
             description: 'Training courses. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5139,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5145,8 +5260,8 @@ var form = {
             ]
           }, {
             description: 'Elaboration of National Action Plans and assessment of progress in implementation. Timeline: from 2014 to 2019',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5140,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5196,8 +5311,8 @@ var form = {
         article_title: 'Dark Habitats Action Plan (COP Decision IG 21/4)',
         article_items: [{
             description: 'Making a summary of knowledge of dark populations and their distribution around the Mediterranean in the form of a geo-referenced information system',
-            collection_id: 4036,
-            parent_collection_id: 406,
+          collection_id: 5141,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5243,8 +5358,8 @@ var form = {
             ]
           }, {
             description: 'Identify and assess proven pressures on each of the various types of habitat',
-            collection_id: 4037,
-            parent_collection_id: 406,
+          collection_id: 5142,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5290,8 +5405,8 @@ var form = {
             ]
           }, {
             description: 'Revise the reference list of types of marine habitat for the selection of sites for inclusion in the national inventories of natural sites of conservation interest, in order to take account of dark assemblages',
-            collection_id: 4038,
-            parent_collection_id: 406,
+          collection_id: 5143,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5337,8 +5452,8 @@ var form = {
             ]
           }, {
             description: 'Revise the list of endangered or threatened species in order to take account of dark assemblages species',
-            collection_id: 4039,
-            parent_collection_id: 406,
+          collection_id: 5144,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5384,8 +5499,8 @@ var form = {
             ]
           }, {
             description: 'Promote the identifying of areas of interest for the conservation of dark assemblages in the Mediterranean and Carry out concerted actions in national and/or cross-border sites',
-            collection_id: 4040,
-            parent_collection_id: 406,
+          collection_id: 5145,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5431,8 +5546,8 @@ var form = {
             ]
           }, {
             description: 'Finalise the implementing of MPAs in already identified sites at national level and outside waters that lie within national jurisdiction',
-            collection_id: 4041,
-            parent_collection_id: 406,
+          collection_id: 5146,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5478,8 +5593,8 @@ var form = {
             ]
           }, {
             description: 'Propose the creation of new MPAs',
-            collection_id: 4042,
-            parent_collection_id: 406,
+          collection_id: 5147,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5525,8 +5640,8 @@ var form = {
             ]
           }, {
             description: 'Extent existing MPAs to integrate nearby sites that host dark assemblages',
-            collection_id: 4020,
-            parent_collection_id: 406,
+          collection_id: 5148,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5572,8 +5687,8 @@ var form = {
             ]
           }, {
             description: 'Introduce national legislation to reduce negative impacts',
-            collection_id: 4020,
-            parent_collection_id: 406,
+          collection_id: 5149,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5619,8 +5734,8 @@ var form = {
             ]
           }, {
             description: 'Integrate taking dark assemblages into account within impact studies procedures',
-            collection_id: 4020,
-            parent_collection_id: 406,
+          collection_id: 5150,
+          parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5667,8 +5782,8 @@ var form = {
           },
           {
             description: 'Step up awareness and information about dark assemblages with the various actors',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5151,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5714,8 +5829,8 @@ var form = {
             ]
           }, {
             description: 'Implement monitoring systems',
-            collection_id: 4020,
-            parent_collection_id: 406,
+            collection_id: 5152,
+            parent_collection_id: 519,
             items: [{
                 type: 'changes',
                 label: 'Changes in the information provided in the previous report',
@@ -5765,8 +5880,8 @@ var form = {
         article_title: 'RAP for the conservation of Coralligenous and Other Calcareous Bio-concretions (COP Decision IG 22/12)',
         article_items: [{
           description: 'Improve habitat modeling methods could provide new predictive models on coralligenous distribution and guide cost-effective field surveys for data acquisition. Timeline: 2017',
-          collection_id: 4010,
-          parent_collection_id: 406,
+          collection_id: 5153,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -5811,8 +5926,8 @@ var form = {
           ]
         }, {
           description: 'Promote research programs on coralligenous assemblages and maerl beds. Timeline: 2016',
-          collection_id: 4011,
-          parent_collection_id: 406,
+          collection_id: 5154,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -5858,8 +5973,8 @@ var form = {
           ]
         }, {
           description: 'Develop and implement legislation initiatives for the conservation of coralligenous assemblages. Timeline: ongoing',
-          collection_id: 4012,
-          parent_collection_id: 406,
+          collection_id: 5155,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
@@ -5905,8 +6020,8 @@ var form = {
           ]
         }, {
           description: 'Coordinate the design of an Integrated Monitoring and Assessment Program for the assessment of the state coralligenous/maërl assemblages in view to be included the assessment of the state of the Mediterranean.Timeline: 2016',
-          collection_id: 4013,
-          parent_collection_id: 406,
+          collection_id: 5156,
+          parent_collection_id: 519,
           items: [{
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
