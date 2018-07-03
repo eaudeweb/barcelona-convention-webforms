@@ -197,6 +197,7 @@ export default {
 
 
     if (data.BC_DMP.quantities_dry_weight_of_dredged_material) {
+      if(data.BC_DMP.quantities_dry_weight_of_dredged_material.Row) {
       if (data.BC_DMP.quantities_dry_weight_of_dredged_material.Row.length) {
         for (let inventory of data.BC_DMP.quantities_dry_weight_of_dredged_material.Row) {
       let inventoryJson = {
@@ -270,7 +271,7 @@ export default {
           this.form.tab_2.data.table_2.articles.push(inventoryobj)
         }
       }
-      else if (data.BC_DMP.quantities_dry_weight_of_dredged_material.Row) {
+      else {
         let inventory = data.BC_DMP.quantities_dry_weight_of_dredged_material.Row;
       let inventoryJson = {
         items: [{
@@ -342,6 +343,7 @@ export default {
           }
         this.form.tab_2.data.table_2.articles.push(inventoryobj)
       }
+     }
     }
 
 
@@ -349,6 +351,7 @@ export default {
 
 
     if (data.BC_DMP.biennieal_summary_wastes) {
+     if (data.BC_DMP.biennieal_summary_wastes.Row) {
       if (data.BC_DMP.biennieal_summary_wastes.Row.length) {
         for (let inventory of data.BC_DMP.biennieal_summary_wastes.Row) {
       let inventoryJson = {
@@ -404,8 +407,8 @@ export default {
           }
           this.form.tab_3.data.table_1.articles.push(inventoryobj)
         }
-      }
-      else if (data.BC_DMP.biennieal_summary_wastes.Row) {
+    }
+      else  {
         let inventory = data.BC_DMP.biennieal_summary_wastes.Row;
       let inventoryJson = {
           article_title: {
@@ -460,11 +463,15 @@ export default {
         }
         this.form.tab_3.data.table_1.articles.push(inventoryobj)
       }
+      }
+
     }
 
 
 
     if (data.BC_DMP.dump_sites_coordinates) {
+    if (data.BC_DMP.dump_sites_coordinates.Row) {
+
       if (data.BC_DMP.dump_sites_coordinates.Row.length) {
         for (let inventory of data.BC_DMP.dump_sites_coordinates.Row) {
       let inventoryJson = {
@@ -562,8 +569,8 @@ export default {
           }
           this.form.tab_3.data.table_2.articles.push(inventoryobj)
         }
-      }
-      else if (data.BC_DMP.dump_sites_coordinates.Row) {
+    }
+      else  {
         let inventory = data.BC_DMP.dump_sites_coordinates.Row;
       let inventoryJson = {
           article_title: {
@@ -662,12 +669,16 @@ export default {
       }
     }
 
+    }
+
 
 
 
 
 
     if (data.BC_DMP.monitoring) {
+    if (data.BC_DMP.monitoring.Row) {
+
       if (data.BC_DMP.monitoring.Row.length) {
         for (let inventory of data.BC_DMP.monitoring.Row) {
       let inventoryJson = {
@@ -760,8 +771,8 @@ export default {
           }
           this.form.tab_4.data.articles.push(inventoryobj)
         }
-      }
-      else if (data.BC_DMP.monitoring.Row) {
+    }
+      else {
         let inventory = data.BC_DMP.monitoring.Row;
       let inventoryJson = {
           article_title: {
@@ -853,6 +864,7 @@ export default {
         }
         this.form.tab_4.data.articles.push(inventoryobj)
       }
+      }
     }
 
 
@@ -861,6 +873,8 @@ export default {
 
 
     if (data.BC_DMP.placement) {
+    if (data.BC_DMP.placement.Row) {
+
       if (data.BC_DMP.placement.Row.length) {
         for (let inventory of data.BC_DMP.placement.Row) {
       let inventoryJson = {
@@ -926,8 +940,8 @@ export default {
           }
           this.form.tab_5.data.articles.push(inventoryobj)
         }
-      }
-      else if (data.BC_DMP.placement.Row) {
+    }
+      else {
         let inventory = data.BC_DMP.placement.Row;
       let inventoryJson = {
           article_title: {
@@ -993,6 +1007,7 @@ export default {
         this.form.tab_5.data.articles.push(inventoryobj)
       }
     }
+      }
 
 
 

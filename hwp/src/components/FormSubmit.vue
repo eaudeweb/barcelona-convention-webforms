@@ -18,7 +18,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {saveInstance, envelope} from '../api.js';
 
 export default {
 
@@ -95,6 +95,7 @@ export default {
   },
 
   methods: {
+    
     exitForm(){
       window.location.replace(envelope)
     },

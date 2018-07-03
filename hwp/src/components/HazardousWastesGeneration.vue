@@ -19,7 +19,6 @@
                   <span style="float:right">▼</span>
                 </h5>
                <label>
-                    {{article.article_title.label}}
                </label>
               <b-btn variant="danger" @click="removeSpa(index)"> X Remove hazard</b-btn> 
 
@@ -140,14 +139,13 @@ export default {
     
   },
 
-  created(){
 
+ 
+  created(){
     if(this.info.data.table_1.articles.length === 0) {
       this.addHazard(0)
-      this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
-
     } else {
-      this.hazardCount = this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
+      this.info.data.table_1.articles[this.info.data.table_1.articles.length - 1].article_title
     }
   },
 
@@ -190,6 +188,7 @@ export default {
           }]
         }
       this.info.data.table_1.articles.push(incident)
+      console.log(incident)
     },
 
 

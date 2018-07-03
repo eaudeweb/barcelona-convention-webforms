@@ -19,7 +19,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {saveInstance, envelope} from '../api.js';
 
 export default {
 

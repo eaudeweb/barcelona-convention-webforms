@@ -178,6 +178,8 @@ export default {
 
 
     if (data.BC_HWP.hazardous_wastes_domestic_legislation) {
+    if (data.BC_HWP.hazardous_wastes_domestic_legislation.Row) {
+
       if (data.BC_HWP.hazardous_wastes_domestic_legislation.Row.length) {
         for (let inventory of data.BC_HWP.hazardous_wastes_domestic_legislation.Row) {
           // console.log(inventory)
@@ -215,7 +217,7 @@ export default {
           this.form.tab_2.data.table_1.articles.push(inventoryobj)
         }
       }
-      else if (data.BC_HWP.hazardous_wastes_domestic_legislation.Row) {
+      else {
         let inventory = data.BC_HWP.hazardous_wastes_domestic_legislation.Row;
         let inventoryJson = {
               article_title: inventory.title,
@@ -246,6 +248,7 @@ export default {
           article.selected = inventory[article.name]
         }
         this.form.tab_2.data.table_1.articles.push(inventoryobj)
+      }
       }
     }
 
@@ -332,6 +335,8 @@ export default {
 
 
     if (data.BC_HWP.export_hazardous_wastes_y) {
+    if (data.BC_HWP.export_hazardous_wastes_y.Row) {
+
       if (data.BC_HWP.export_hazardous_wastes_y.Row.length) {
         for (let inventory of data.BC_HWP.export_hazardous_wastes_y.Row) {
         let inventoryJson = {
@@ -2408,7 +2413,7 @@ export default {
           this.form.tab_3.data.table_1.articles.push(inventoryobj)
         }
       }
-      else if (data.BC_HWP.export_hazardous_wastes_y.Row) {
+      else  {
         let inventory = data.BC_HWP.export_hazardous_wastes_y.Row;
         let inventoryJson = {
           article_title: {
@@ -4483,6 +4488,7 @@ export default {
         }
         this.form.tab_3.data.table_1.articles.push(inventoryobj)
       }
+    }
     }
 
 
@@ -8882,10 +8888,7 @@ export default {
       if (data.BC_HWP.enf_measures.Row) {
           for (let article of this.form.tab_5.data.articles) {
             for(let article_items of article.article_items) {
-              console.log(data.BC_HWP.enf_measures.Row[article_items.name])
-
               article_items.selected = data.BC_HWP.enf_measures.Row[article_items.name]
-              console.log(article_items.selected)
             }
           }
       }

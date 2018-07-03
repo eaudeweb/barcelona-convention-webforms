@@ -18,7 +18,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {saveInstance, envelope} from '../api.js';
 
 import {slugify} from '../utils.js';
 
