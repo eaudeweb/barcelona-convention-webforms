@@ -441,7 +441,7 @@
     },
     "pollincidents":
     {
-      "Row": [
+      "Row": 
       {
         "collection_id": null,
         "parent_collection_id": null,
@@ -463,29 +463,8 @@
         "oil_type": 2,
         "actions": true,
         "actions_taken": "gasgasgas"
-      },
-      {
-        "collection_id": null,
-        "parent_collection_id": null,
-        "description": null,
-        "ship_name": "sgasgasg",
-        "latitude": "gasgsaggas",
-        "longitude": null,
-        "geo_info": null,
-        "country": null,
-        "accident": null,
-        "date": null,
-        "pollution": null,
-        "pollution_type": null,
-        "ship_category": null,
-        "ship_flag": null,
-        "offshore_name_id": null,
-        "installation_type": null,
-        "oil_name_id": null,
-        "oil_type": null,
-        "actions": null,
-        "actions_taken": null
-      }]
+      }
+     
     },
     "pollincidentsInfo": false
   }
