@@ -138,7 +138,6 @@ export default {
               "management_plans_imp": {Row:[]},
               "spa": {Row:[]},
               "spamis": {Row:[]},
-              
               "measures_to_protect_species":{Row:[]},
               "enf_measures":{Row:[]}
 
@@ -541,7 +540,7 @@ export default {
           collection_id : collection_id,
           parent_collection_id: parent_collection_id,
           description: description,
-          spa_name: spa_name,
+          name: spa_name,
           protection_measures: null,
           difficulties: null
         }
@@ -564,18 +563,20 @@ export default {
       for (let article of tab_4_2.articles) {
         let collection_id = article.collection_id || null;
         let parent_collection_id = article.parent_collection_id || null
-        let description = article.description || null
-        let row = {
-          collection_id : collection_id,
-          parent_collection_id: parent_collection_id,
-          comments: null,
-          posidonia_oceania: null,
-          xiphias_gladius: null
-        }
         for (let article_item of article.article_items){
           // let row = {};
           // console.log(article_item)
-          row[article_item.name] = article_item.selected
+          for(let item of article_item.items){
+          let row = {
+            collection_id : collection_id,
+            parent_collection_id: parent_collection_id,
+            comments: item.comments,
+            name: null,
+            value: null,
+          }
+            row.name = item.name
+            row.value = item.selected
+          }
 
         }
 

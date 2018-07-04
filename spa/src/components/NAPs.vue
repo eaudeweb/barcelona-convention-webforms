@@ -45,12 +45,10 @@
                   
                  <b-col lg="5" v-if="item.type === 'status' && item.selected == '1'">
                    <b-form-textarea v-model="item.comments"
-                      type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
                   <b-col lg="5" v-else-if="item.type != 'status' && item.selected !=false ">
                    <b-form-textarea v-model="item.comments"
-                      type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
                 </b-row>

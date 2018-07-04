@@ -234,8 +234,8 @@ export default {
 
 
 
-
     if (data.BC_SPA.spa) {
+      if(data.BC_SPA.spa.Row){
       if (data.BC_SPA.spa.Row.length) {
         for (let inventory of data.BC_SPA.spa.Row) {
           // console.log(inventory)
@@ -244,7 +244,7 @@ export default {
           let inventoryJson = {
           article_title: {
             label: "Name of the SPA",
-            selected: 'please specify a name',
+            selected: inventory.spa_name,
             name: 'name',
             type: 'text'
           },
@@ -307,19 +307,18 @@ export default {
           ]
         }
           let inventoryobj = inventoryJson
-          inventoryobj.article_title.selected = inventory.operator;
           for (let article of inventoryobj.article_items) {
             article.selected = inventory[article.name]
           }
           this.form.tab_2.data.table_2.articles.push(inventoryobj)
         }
       }
-      else if (data.BC_SPA.spa.Row) {
+      else  {
         let inventory = data.BC_SPA.spa.Row;
         let inventoryJson = {
           article_title: {
             label: "Name of the SPA",
-            selected: 'please specify a name',
+            selected: inventory.spa_name,
             name: 'name',
             type: 'text'
           },
@@ -382,13 +381,13 @@ export default {
           ]
         }
         let inventoryobj = inventoryJson
-        inventoryobj.article_title.selected = inventory.operator;
         for (let article of inventoryobj.article_items) {
           article.selected = inventory[article.name]
         }
         this.form.tab_2.data.table_2.articles.push(inventoryobj)
       }
     }
+  }
 
 
 
@@ -413,6 +412,7 @@ export default {
 
 
     if (data.BC_SPA.management_plans_imp) {
+      if(data.BC_SPA.management_plans_imp.Row) {
       if (data.BC_SPA.management_plans_imp.Row.length) {
         for (let inventory of data.BC_SPA.management_plans_imp.Row) {
           // console.log(inventory)
@@ -421,7 +421,7 @@ export default {
           let inventoryJson = {
                     article_title: {
                       label: "Name of the SPA",
-                      value: 'please specify a name',
+                      selected: inventory.name,
                       name: 'name',
                       type: 'text'
                     },
@@ -456,19 +456,18 @@ export default {
                     }]
                   }
           let inventoryobj = inventoryJson
-          inventoryobj.article_title.selected = inventory.operator;
           for (let article of inventoryobj.article_items) {
             article.selected = inventory[article.name]
           }
           this.form.tab_3.data.table_3.articles.push(inventoryobj)
         }
       }
-      else if (data.BC_SPA.management_plans_imp.Row) {
+      else {
         let inventory = data.BC_SPA.management_plans_imp.Row;
         let inventoryJson = {
           article_title: {
             label: "Name of the SPA",
-            value: 'please specify a name',
+            selected: inventory.name,
             name: 'name',
             type: 'text'
           },
@@ -503,13 +502,13 @@ export default {
           }]
         }
         let inventoryobj = inventoryJson
-        inventoryobj.article_title.selected = inventory.operator;
         for (let article of inventoryobj.article_items) {
           article.selected = inventory[article.name]
         }
         this.form.tab_3.data.table_3.articles.push(inventoryobj)
       }
     }
+  }
 
 
 
@@ -526,32 +525,31 @@ export default {
       if (data.BC_SPA.measures_to_protect_species.Row && data.BC_SPA.measures_to_protect_species.Row.length && data.BC_SPA.measures_to_protect_species.Row.length > 1) {
         for (let perm of data.BC_SPA.measures_to_protect_species.Row) {
           // TODO: change this to colleciton collection id
-          let collection_id = perm.collection_id
          for (let article of this.form.tab_4.data.table_2.articles) {
-            if (article.collection_id == collection_id) {
 
               for (let article_items of article.article_items) {
                 for(let items of article_items.items) {
-                  items.selected = perm[items.name]
+                  if(items.name === perm.name){
+                    items.selected = perm.value
+                    items.comments = perm.comments
+                  }
                 }
               }
-            }
           }
         }
       } else {
           for (let item in data.BC_SPA.measures_to_protect_species.Row) {
           // TODO: change this to colleciton collection id
           let perm = data.BC_SPA.measures_to_protect_species.Row
-          let collection_id = perm['collection_id']
           for (let article of this.form.tab_4.data.table_2.articles) {
-            if (article.collection_id == collection_id) {
               for (let article_items of article.article_items) {
                 for(let items of article_items.items) {
-                  items.comments = perm['comments']
-                  items.selected = perm[items.name]
+                  if(items.name === perm.name){
+                    items.selected = perm.value
+                    items.comments = perm.comments
+                  }
                 }
               }
-            }
           }
         }
       }
@@ -567,13 +565,12 @@ export default {
       if (data.BC_SPA.enf_measures.Row && data.BC_SPA.enf_measures.Row.length && data.BC_SPA.enf_measures.Row.length > 1) {
         for (let perm of data.BC_SPA.enf_measures.Row) {
           // TODO: change this to colleciton collection id
-          let title = perm.collection_id
+          let collection_id = perm.collection_id
           for (let article of this.form.tab_6.data.articles) {
-            if (article.article_title === title) {
+            console.log(article)
+            if (article.collection_id === collection_id) {
               for (let article_items of article.article_items) {
-                for(let items of article_items.items) {
-                  items.selected = perm[items.name]
-                }
+                  article_items.selected = perm[article_items.name]
               }
             }
           }

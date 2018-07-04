@@ -45,12 +45,10 @@
                   
                  <b-col lg="5" v-if="item.type === 'status' && item.selected == '1'">
                    <b-form-textarea v-model="item.comments"
-                      type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
                   <b-col lg="5" v-else-if="item.type != 'status' && item.selected !=false ">
                    <b-form-textarea v-model="item.comments"
-                      type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
                 </b-row>
@@ -118,7 +116,7 @@
             <div role="tablist">
               <b-card style="background: #eee" v-for="(article,index) in info.data.table_3.articles" :key="index" class="mb-1">
                 <h5 style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
-                  {{article.article_title.value}}
+                  {{article.article_title.selected}}
                   <span style="float:right">▼</span>
                 </h5>
                <label>
@@ -126,7 +124,7 @@
                </label>
 
                <b-input-group>
-                <b-form-input :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.value"></b-form-input>
+                <b-form-input :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
                 <b-input-group-append>
                   <b-btn variant="danger" @click="removeSpa(index)"> X Remove spa</b-btn> 
                 </b-input-group-append>
@@ -204,7 +202,7 @@ export default {
       let spa ={
           article_title: {
             label: "Name of the SPA",
-            value: 'please specify a name',
+            selected: 'please specify a name',
             name: 'name',
             type: 'text'
           },
