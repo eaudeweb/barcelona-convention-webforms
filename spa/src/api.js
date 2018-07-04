@@ -1,3 +1,4 @@
+import 'promise-polyfill/src/polyfill';
 import axios from 'axios';
 
 // const logRequests = process.env.NODE_ENV === 'production';
