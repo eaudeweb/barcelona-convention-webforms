@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import 'date-input-polyfill';
 
 import BootstrapVue from 'bootstrap-vue'
 import './css/main.scss'

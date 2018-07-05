@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "bootstrap-vue": "^2.0.0-rc.1",
+    "date-input-polyfill": "^2.14.0",
     "es6-promise-polyfill": "^1.2.0",
     "json-xml": "^1.0.9",
     "json2xml": "^0.1.3",
