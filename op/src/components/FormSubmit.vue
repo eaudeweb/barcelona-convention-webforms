@@ -28,6 +28,7 @@ export default {
 
   props: {
     info: null,
+    country: null,
   },
 
   updated() {
@@ -282,6 +283,7 @@ export default {
 
       }
 
+      this.jsonemptyinstance.BC_OP.country = this.country
 
       console.log(this.jsonemptyinstance.BC_OP.inventory_offshore_installations);
          saveInstance(this.jsonemptyinstance)

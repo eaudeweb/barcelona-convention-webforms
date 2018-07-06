@@ -611,6 +611,7 @@ export default {
 
       }
       
+      this.jsonemptyinstance.BC_SPA.country = this.country
 
 
       console.log(this.jsonemptyinstance)

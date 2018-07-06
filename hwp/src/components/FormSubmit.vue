@@ -27,6 +27,7 @@ export default {
 
   props: {
     info: null,
+    country: null,
   },
 
   updated() {
@@ -499,6 +500,7 @@ export default {
 
 
 
+      this.jsonemptyinstance.BC_HWP.country = this.country
       
       this.showAlert();
       saveInstance(this.jsonemptyinstance);

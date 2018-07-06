@@ -29,6 +29,7 @@ export default {
 
   props: {
     info: null,
+    country: null,
   },
 
   updated() {
@@ -362,11 +363,15 @@ export default {
 
         }
 
+
+
+
         this.jsonemptyinstance.BC_DMP.placement.Row.push(row);
 
       }
 
 
+      this.jsonemptyinstance.BC_DMP.country = this.country
 
       console.log(this.jsonemptyinstance)
 
