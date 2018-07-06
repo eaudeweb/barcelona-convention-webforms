@@ -6,7 +6,7 @@
       <div class="question">
         <div class="mt-2">{{info.data.question.label}} <small class="muted">({{info.data.question.info}})</small></div>
         <b-form-group>
-          <b-form-radio-group stacked id="radio_MEDPOL_option" v-model="info.data.question.selected" :options="info.data.question.options" name="radio_MEDPOL_option">
+          <b-form-radio-group required stacked id="radio_MEDPOL_option" v-model="info.data.question.selected" :options="info.data.question.options" name="radio_MEDPOL_option">
           </b-form-radio-group>
         </b-form-group>
         <small style="font-style:italic; font-size: .6rem">
@@ -32,7 +32,7 @@
                     {{article.article_title.label}}
                </label>
                <b-input-group>
-                <b-form-input :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.value"></b-form-input>
+                <b-form-input required :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.value"></b-form-input>
                 <b-input-group-append>
                   <b-btn variant="danger" @click="removeSpa(index)"> X Remove spa</b-btn> 
                 </b-input-group-append>
@@ -44,8 +44,8 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input v-if="item.type != 'select' && item.type != 'radio'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
-                          <b-form-select v-else-if="item.type === 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`"  :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+                          <b-form-input required v-if="item.type != 'select' && item.type != 'radio'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
+                          <b-form-select required v-else-if="item.type === 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`"  :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
                           <b-form-radio-group stacked v-else-if="item.type ==='radio'" :required="!article.optional" :id="`radio_${tabId}_${index}_${item_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_${tabId}_${index}_${item_index}_${item.type}`">
                             </b-form-radio-group>
 

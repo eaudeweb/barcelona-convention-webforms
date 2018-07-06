@@ -23,7 +23,7 @@
 
             <b-btn variant="danger" @click="removeDump(index)"> X</b-btn> 
 
-            <b-form-input :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
+            <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
 
             <b-collapse class="mt-3"  :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
@@ -32,9 +32,9 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
                 
-                  <b-form-textarea v-if="item.type === 'text'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-textarea>
+                  <b-form-textarea required v-if="item.type === 'text'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-textarea>
 
-                  <b-form-radio-group stacked v-if="item.type === 'radio'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-radio-group>
+                  <b-form-radio-group required stacked v-if="item.type === 'radio'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-radio-group>
 
                   <b-form-checkbox-group stacked v-if="item.type === 'checkbox'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-checkbox-group>
 

@@ -17,7 +17,7 @@
 
 <script>
 
-import {saveInstance} from '../api.js';
+import {saveInstance, envelope} from '../api.js';
 
 export default {
 
@@ -41,7 +41,7 @@ export default {
           "BC_SPA": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/17/schema-dst-17.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -106,7 +106,7 @@ export default {
           "BC_SPA": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/17/schema-dst-17.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -564,27 +564,26 @@ export default {
         let collection_id = article.collection_id || null;
         let parent_collection_id = article.parent_collection_id || null
         for (let article_item of article.article_items){
-          // let row = {};
+
           // console.log(article_item)
           for(let item of article_item.items){
-          let row = {
-            collection_id : collection_id,
-            parent_collection_id: parent_collection_id,
-            comments: item.comments,
-            name: null,
-            value: null,
-          }
+             let row = {
+              collection_id : collection_id,
+              parent_collection_id: parent_collection_id,
+              comments: null,
+              name: null,
+              value: null,
+            }
             row.name = item.name
             row.value = item.selected
+            row.comments = item.comments
+            this.jsonemptyinstance.BC_SPA.measures_to_protect_species.Row.push(row);
           }
 
         }
-
-        this.jsonemptyinstance.BC_SPA.measures_to_protect_species.Row.push(row);
-
       }
       
-
+      console.log(this.jsonemptyinstance.BC_SPA.measures_to_protect_species.Row)
 
       let tab_6 = this.dataset.tab_6.data;
       for (let article of tab_6.articles) {

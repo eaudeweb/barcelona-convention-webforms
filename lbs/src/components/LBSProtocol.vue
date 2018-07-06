@@ -33,15 +33,15 @@
                   <div class="mt-2">{{item.label}} <small class="muted">({{item.info}})</small></div>
                   <div class="form-fields">
                     <div v-if="item.type === 'select'">
-                      <b-form-select v-model="item.selected" :options="item.options" class="mb-3">
+                      <b-form-select required v-model="item.selected" :options="item.options" class="mb-3">
                       </b-form-select>
                     </div>
                     <div v-else-if="item.type === 'number'">
-                      <b-form-input :id="`${tabId}_${index}_${array_index}_${item.name}`" :type="`${item.type}`" :name="`${item.name}`" v-model="item.value"></b-form-input>
+                      <b-form-input required :id="`${tabId}_${index}_${array_index}_${item.name}`" :type="`${item.type}`" :name="`${item.name}`" v-model="item.value"></b-form-input>
                     </div>
                     <div v-else>
                       <b-form-group>
-                        <b-form-radio-group stacked :id="`${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`">
+                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`">
                         </b-form-radio-group>
                       </b-form-group>
                     </div>

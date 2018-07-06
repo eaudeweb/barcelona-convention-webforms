@@ -20,7 +20,7 @@
               <b-row v-for="question in info.data.table_1.questions">
                 <b-col>{{question.label}}</b-col>
                 <b-col>
-                <b-form-input :id="`${tabId}_${question.name}_${question.type}`" :type="question.type" :name="question.name" v-model="question.selected"></b-form-input>
+                <b-form-input required :id="`${tabId}_${question.name}_${question.type}`" :type="question.type" :name="question.name" v-model="question.selected"></b-form-input>
                 </b-col>
               </b-row>
 
@@ -36,7 +36,7 @@
                     {{article.article_title.selected}}
                </label>
 
-              <b-form-input :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
+              <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
               <b-btn variant="danger" @click="removeSpa(index)"> X</b-btn> 
 
@@ -46,7 +46,7 @@
                       <div class="form-fields">
                         <div class="mt-2"><small>({{item.category_label}})</small>  {{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                           <b-form-select  v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options">
                           </b-form-select>
                           <small>{{item.note}}</small>
@@ -79,7 +79,7 @@
               <b-row v-for="question in info.data.table_2.questions">
                 <b-col>{{question.label}}</b-col>
                 <b-col>
-                <b-form-input :id="`${tabId}_${question.name}_${question.type}`" :type="question.type" :name="question.name" v-model="question.selected"></b-form-input>
+                <b-form-input required :id="`${tabId}_${question.name}_${question.type}`" :type="question.type" :name="question.name" v-model="question.selected"></b-form-input>
                 </b-col>
               </b-row>
 
@@ -95,7 +95,7 @@
                     {{article.article_title.selected}}
                </label>
 
-              <b-form-input :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
+              <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
               <b-btn variant="danger" @click="addYimport(index)"> X</b-btn> 
 
@@ -105,8 +105,8 @@
                       <div class="form-fields">
                         <div class="mt-2"><small>({{item.category_label}})</small>  {{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
-                          <b-form-select  v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options">
+                          <b-form-input required v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-select required  v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options">
                           </b-form-select>
                           <small>{{item.note}}</small>
                       </div>

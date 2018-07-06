@@ -18,10 +18,7 @@
                   <span style="float:right">▼</span>
                 </h5>
               <br>
-
-              <b-form-input :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
-
-
+              <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
               <b-btn variant="danger" @click="removeInventory(index)"> X</b-btn>
 
                 <b-collapse class="mt-3" visible :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
@@ -29,9 +26,9 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}  <small v-if="item.description" class="muted">({{item.description}})</small></div>
                             <!-- {{field}} -->
-                          <b-form-input v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
 
-                          <b-form-select v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+                          <b-form-select required v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
                       </div>
                   </div>
                 </b-collapse>

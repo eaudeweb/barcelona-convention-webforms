@@ -28,7 +28,7 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
+                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
               
 
                       </div>
@@ -69,7 +69,7 @@
                       <div class="form-fields mt-2">
 
                       <b-input-group size="md" :prepend="item.label">
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                       </b-input-group>
 
                       </div>
@@ -107,7 +107,7 @@
                       <div class="form-fields mt-2">
 
                       <b-input-group size="md" :prepend="item.label">
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                       </b-input-group>
 
                       </div>

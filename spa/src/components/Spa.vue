@@ -39,11 +39,7 @@
                 </div>
                 
                 <b-row >
-                 <b-col lg="5" v-if="item.type === 'status' && item.selected == '1'">
-                   <b-form-textarea v-model="item.comments"
-                      placeholder="additional comments"></b-form-textarea>
-                  </b-col>
-                  <b-col lg="5" v-else-if="item.type != 'status' && item.type != 'changes' ">
+                 <b-col lg="5" v-if="item.type === 'status' || item.type === 'difficulties'">
                    <b-form-textarea v-model="item.comments"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
@@ -110,7 +106,7 @@
                     <div v-if="item.name === 'dateofadoption' && showAdoptionDate">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
-                        <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                        <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                       </div>
                     </div>
 
@@ -159,19 +155,13 @@
                   </div>
                 </div>
                 
+             
                 <b-row >
-                 <b-col lg="5" v-if="item.type === 'status' && item.selected == '1'">
+                 <b-col lg="5" v-if="item.type === 'status' || item.type === 'difficulties'">
                    <b-form-textarea v-model="item.comments"
-                      type="text"
-                      placeholder="additional comments"></b-form-textarea>
-                  </b-col>
-                  <b-col lg="5" v-else-if="item.type != 'status' && item.type != 'changes' ">
-                   <b-form-textarea v-model="item.comments"
-                      type="text"
                       placeholder="additional comments"></b-form-textarea>
                   </b-col>
                 </b-row>
-
 
                 <small style="font-style:italic; font-size: .6rem">
                   <p class="mb-0" v-for="option of item.options_description">

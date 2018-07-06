@@ -56,8 +56,6 @@ export default {
   	formsubmit: FormSubmit,
     validation: Validation,
     countrytab: Countrytab
-
-
   },
 
   data () {

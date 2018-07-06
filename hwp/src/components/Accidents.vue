@@ -22,7 +22,7 @@
                 </h5>
               <br>
 
-              <b-form-input :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
+              <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
               <b-btn variant="danger" @click="removeIncident(index)"> X</b-btn> 
 
@@ -32,7 +32,7 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                      
                       </div>
                   </div>
@@ -65,7 +65,7 @@
                 </h5>
               <br>
 
-              <b-form-input :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
+              <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
               <b-btn variant="danger" @click="removeIncidentmov(index)"> X</b-btn> 
 
@@ -75,7 +75,7 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                      
                       </div>
                   </div>
@@ -90,89 +90,6 @@
           </div>
         </div>
         <br><br>
-
-
-
-
-
-
-
-
-<!-- 
-       <div class="answer" style="position: relative;">
-          <div class="table-head">
-            <b>{{info.data.table_2.table_label}}</b>
-            <hr>
-            <p>{{info.data.table_2.question}}</p>
-          </div>
-          <div role="tablist">
-            <div role="tablist">
-              <b-card style="background: #eee" v-for="(article,index) in info.data.table_2.articles" :key="index" class="mb-1">
-                <h5 style="cursor: pointer" href="#" v-b-toggle="`table_2_article_${index}`" variant="info">
-                  {{article.article_title}}
-                  <span style="float:right">▼</span>
-                </h5>
-               <label>
-                    {{article.article_title.label}}
-               </label>
-
-                <b-collapse class="mt-3" visible :id="`table_2_article_${index}`" accordion="my-accordion" role="tabpanel">
-                  <div class="form-subsection" v-for="(item,item_index) in article.article_items">
-               
-                      <div class="form-fields mt-2">
-
-                      <b-input-group size="md" :prepend="item.label">
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
-                      </b-input-group>
-
-                      </div>
-                  </div>
-                </b-collapse>
-              </b-card>
-            </div>
-          </div>
-        </div>
-
-
-
-        <br><br>
-
-       <div class="answer" style="position: relative;">
-          <div class="table-head">
-            <b>{{info.data.table_3.table_label}}</b>
-          </div>
-          <div role="tablist">
-            <div role="tablist">
-              <b-card style="background: #eee" v-for="(article,index) in info.data.table_3.articles" :key="index" class="mb-1">
-                <h5 style="cursor: pointer" href="#" v-b-toggle="`table_3_article_${index}`" variant="info">
-                  {{article.article_title.name}} - {{article.article_title.label}}
-
-                  <span style="float:right">▼</span>
-                </h5>
-               <label>
-                   {{article.article_label.label}}
-
-               </label>
-
-                <b-collapse class="mt-3" visible :id="`table_3_article_${index}`" accordion="my-accordion" role="tabpanel">
-                  <div class="form-subsection" v-for="(item,item_index) in article.article_items">
-               
-                      <div class="form-fields mt-2">
-
-                      <b-input-group size="md" :prepend="item.label">
-                          <b-form-input :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
-                      </b-input-group>
-
-                      </div>
-                  </div>
-                </b-collapse>
-              </b-card>
-            </div>
-          </div>
-        </div>
- -->
-
-
 
       </div>
   </div>
