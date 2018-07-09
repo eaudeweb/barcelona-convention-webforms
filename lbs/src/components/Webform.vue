@@ -2,7 +2,7 @@
 	<b-container style="position: relative">
     <center><h1 class="mb-3 mt-2">LBS Protocol</h1></center>
     <center><h5><small class="text-muted">Implementation of the protocol for the protection of the mediterranean sea against pollution from land-based sources and activities (LBS Protocol)</small></h5></center>
-      <b-card no-body>
+      <b-card v-if="prefilled" no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
             <b-tab title="Country" active>
@@ -75,6 +75,7 @@ export default {
       form: {},
       button_text: 'Hide list',
       country: '',
+      prefilled: false,
     }
   },
 
@@ -191,32 +192,53 @@ export default {
         }
       }
 
-      if(data.BC_LBS.measuredata_difficulty) {
-          if(data.BC_LBS.measuredata_difficulty.Row.length) {
-            for(let agreement of data.BC_LBS.measuredata_difficulty.Row) {
-                let collection_id = agreement.collection_id
-                let difficulty = agreement.difficulty
-                for (let tab in this.form){
-                  // console.log(tab)
-                  if(tab != 'tab_2' && tab != 'tab_6' && tab != 'country') {
-                    for(let article of this.form[tab].data.articles){
-                      for(let article_item of article.article_items){
-                        if(article_item.collection_id === collection_id) {
-                          for(let item of article_item.items) {
-                            if(item.type === 'difficulties') {
-                              item.selected.push(difficulty)
-                            } 
+   
+         if (data.BC_LBS.measuredata_difficulty) {
+          if (data.BC_LBS.measuredata_difficulty.Row.length) {
+            for (let agreement of data.BC_LBS.measuredata_difficulty.Row) {
+              let collection_id = agreement.collection_id
+              let difficulty = agreement.difficulty
+              for (let tab in this.form) {
+                if (tab != 'tab_2' && tab != 'tab_6' && tab != 'country') {
+                  for (let article of this.form[tab].data.articles) {
+                    for (let article_item of article.article_items) {
+                      if (article_item.collection_id === collection_id) {
+                        for (let item of article_item.items) {
+                          if (item.type === 'difficulties') {
+                            item.selected.push(difficulty)
                           }
                         }
                       }
                     }
                   }
                 }
+              }
             }
-
           }
-      }
+          else {
+            let agreement = data.BC_LBS.measuredata_difficulty.Row
+            let collection_id = agreement.collection_id
+            let difficulty = agreement.difficulty
+            for (let tab in this.form) {
+              if (tab != 'tab_2' && tab != 'tab_6' && tab != 'country') {
+                for (let article of this.form[tab].data.articles) {
+                  for (let article_item of article.article_items) {
+                    if (article_item.collection_id === collection_id) {
+                      for (let item of article_item.items) {
+                        if (item.type === 'difficulties') {
+                          item.selected.push(difficulty)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
 
+
+    this.prefilled = true;
 
 
     },

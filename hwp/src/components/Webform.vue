@@ -27,11 +27,8 @@
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit v-on:validationDone="getValidationData($event)" :country.sync="country" :info.sync="form"></formsubmit>
-        <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-                  <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
-                  <validation :validationData="validation_data"></validation>
-          </div>
+   			<formsubmit :country.sync="country" :info.sync="form"></formsubmit>
+  
       </b-card>
       <div v-if="!prefilled" class="spinner">
         <div class="loader"></div>
@@ -47,7 +44,6 @@ import {getInstance, getCountry} from '../api.js';
 
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
-import Validation from './Validation.vue'
 import Wastes from './HazardousWastesGeneration.vue'
 import TransWastes from './TransboundaryWastesMovements.vue'
 import Accidents from './Accidents.vue'
@@ -66,7 +62,6 @@ export default {
     countrytab: Countrytab,
     lrmeasures: LRMeasures,
   	formsubmit: FormSubmit,
-    validation: Validation,
     waste: Wastes,
     trwastes: TransWastes,
     accidents: Accidents,
@@ -77,7 +72,6 @@ export default {
     return {
     	visibleTab: false,
       form: {},
-      validation_data: [],
       button_text: 'Hide list',
       country: '',
       prefilled: false,
@@ -96,9 +90,7 @@ export default {
   },
 
   methods: {
-    getValidationData(data) {
-      this.validation_data = data
-    },
+
 
     prefill(data) {
       for(let table in this.form.country.tables) {
@@ -145,37 +137,49 @@ export default {
 
 
 
-      if(data.BC_HWP.measuredata_difficulty) {
-
-          if(data.BC_HWP.measuredata_difficulty.Row.length) {
-            for(let agreement of data.BC_HWP.measuredata_difficulty.Row) {
-
-              // console.log(agreement.collection_id)
-                let collection_id = agreement.collection_id
-                let difficulty = agreement.difficulty
-                for (let tab in this.form){
-                  // console.log(tab)
-                  if(tab === 'tab_1') {
-                    for(let article of this.form[tab].data.articles){
-                      for(let article_item of article.article_items){
-                        if(article_item.collection_id === collection_id) {
-                          for(let item of article_item.items) {
-                            if(item.type === 'difficulties') {
-                              item.selected.push(difficulty)
-                            } 
+    if (data.BC_HWP.measuredata_difficulty) {
+          if (data.BC_HWP.measuredata_difficulty.Row.length) {
+            for (let agreement of data.BC_HWP.measuredata_difficulty.Row) {
+              let collection_id = agreement.collection_id
+              let difficulty = agreement.difficulty
+              for (let tab in this.form) {
+                if (tab === 'tab_1') {
+                  for (let article of this.form[tab].data.articles) {
+                    for (let article_item of article.article_items) {
+                      if (article_item.collection_id === collection_id) {
+                        for (let item of article_item.items) {
+                          if (item.type === 'difficulties') {
+                            item.selected.push(difficulty)
                           }
                         }
                       }
                     }
                   }
                 }
+              }
             }
-
           }
-      }
-
-
-
+          else {
+            let agreement = data.BC_HWP.measuredata_difficulty.Row
+            let collection_id = agreement.collection_id
+            let difficulty = agreement.difficulty
+            for (let tab in this.form) {
+              if (tab === 'tab_1') {
+                for (let article of this.form[tab].data.articles) {
+                  for (let article_item of article.article_items) {
+                    if (article_item.collection_id === collection_id) {
+                      for (let item of article_item.items) {
+                        if (item.type === 'difficulties') {
+                          item.selected.push(difficulty)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
 
 
 
@@ -193,22 +197,22 @@ export default {
               article_title: inventory.title,
               article_items: [{
                 label: 'Waste description',
-                type: 'text',
+                type: 'textarea',
                 name: 'wastedescription',
                 selected: '',
               }, {
                 label: 'Definition',
-                type: 'text',
+                type: 'textarea',
                 name: 'definition',
                 selected: '',
               }, {
                 label: 'Main characteristics',
-                type: 'text',
+                type: 'textarea',
                 name: 'main_characteristics',
                 selected: '',
               }, {
                 label: 'Transboundary movement procedure established',
-                type: 'text',
+                type: 'textarea',
                 name: 'movement_procedure',
                 selected: '',
               }]
@@ -226,22 +230,22 @@ export default {
               article_title: inventory.title,
               article_items: [{
                 label: 'Waste description',
-                type: 'text',
+                type: 'textarea',
                 name: 'wastedescription',
                 selected: '',
               }, {
                 label: 'Definition',
-                type: 'text',
+                type: 'textarea',
                 name: 'definition',
                 selected: '',
               }, {
                 label: 'Main characteristics',
-                type: 'text',
+                type: 'textarea',
                 name: 'main_characteristics',
                 selected: '',
               }, {
                 label: 'Transboundary movement procedure established',
-                type: 'text',
+                type: 'textarea',
                 name: 'movement_procedure',
                 selected: '',
               }]
@@ -8673,12 +8677,12 @@ export default {
           },
           article_items: [{
             label: 'Countries involved',
-            type: 'text',
+            type: 'textarea',
             name: 'countries_involved',
             selected: '',
           }, {
             label: 'Type of wastes',
-            type: 'text',
+            type: 'textarea',
             name: 'wastes_type',
             selected: '',
           }, {
@@ -8688,23 +8692,23 @@ export default {
             selected: '',
           }, {
             label: 'Reason for the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'incident_reason',
             selected: '',
           }, {
             label: 'Measures taken to deal with the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_taken',
             selected: '',
           }, {
             label: 'Effectiveness of the measures taken',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_effectiveness',
             selected: '',
           },
           {
             label: 'Remarks',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]
@@ -8727,12 +8731,12 @@ export default {
           },
           article_items: [{
             label: 'Countries involved',
-            type: 'text',
+            type: 'textarea',
             name: 'countries_involved',
             selected: '',
           }, {
             label: 'Type of wastes',
-            type: 'text',
+            type: 'textarea',
             name: 'wastes_type',
             selected: '',
           }, {
@@ -8742,23 +8746,23 @@ export default {
             selected: '',
           }, {
             label: 'Reason for the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'incident_reason',
             selected: '',
           }, {
             label: 'Measures taken to deal with the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_taken',
             selected: '',
           }, {
             label: 'Effectiveness of the measures taken',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_effectiveness',
             selected: '',
           },
           {
             label: 'Remarks',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]
@@ -8788,12 +8792,12 @@ export default {
           },
           article_items: [{
             label: 'Countries involved',
-            type: 'text',
+            type: 'textarea',
             name: 'countries_involved_movement',
             selected: '',
           }, {
             label: 'Type of wastes',
-            type: 'text',
+            type: 'textarea',
             name: 'wastes_type_movement',
             selected: '',
           }, {
@@ -8803,23 +8807,23 @@ export default {
             selected: '',
           }, {
             label: 'Type of accident',
-            type: 'text',
+            type: 'textarea',
             name: 'accident_type_movement',
             selected: '',
           }, {
             label: 'Measures taken to deal with the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_taken_movement',
             selected: '',
           }, {
             label: 'Effectiveness of the measures taken',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_effectiveness_movement',
             selected: '',
           },
           {
             label: 'Remarks',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks_movement',
             selected: '',
           }]
@@ -8842,12 +8846,12 @@ export default {
           },
           article_items: [{
             label: 'Countries involved',
-            type: 'text',
+            type: 'textarea',
             name: 'countries_involved_movement',
             selected: '',
           }, {
             label: 'Type of wastes',
-            type: 'text',
+            type: 'textarea',
             name: 'wastes_type_movement',
             selected: '',
           }, {
@@ -8857,23 +8861,23 @@ export default {
             selected: '',
           }, {
             label: 'Type of accident',
-            type: 'text',
+            type: 'textarea',
             name: 'accident_type_movement',
             selected: '',
           }, {
             label: 'Measures taken to deal with the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_taken_movement',
             selected: '',
           }, {
             label: 'Effectiveness of the measures taken',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_effectiveness_movement',
             selected: '',
           },
           {
             label: 'Remarks',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks_movement',
             selected: '',
           }]
@@ -8899,10 +8903,6 @@ export default {
 
 
 
-
-
-
-
     this.prefilled = true;
 
     },
@@ -8913,11 +8913,6 @@ export default {
 
     onSubmit (evt) {
        evt.preventDefault();
-    },
-    toggleValidationContainer(){
-      // if(this.button_text === 'Hide list') this.button_text = 'Show List'
-        // else this.button_text = 'Hide list'
-      // this.$refs.validationContainer.classList.toggle('closed')
     },
   },
 

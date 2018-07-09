@@ -32,15 +32,17 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
                 
-                  <b-form-textarea required v-if="item.type === 'text'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-textarea>
+                  <b-form-input class="form-control" required v-if="item.type === 'text'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
 
                   <b-form-radio-group required stacked v-if="item.type === 'radio'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-radio-group>
 
                   <b-form-checkbox-group stacked v-if="item.type === 'checkbox'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-checkbox-group>
+                  <textarea class="form-control" v-if="item.type === 'textarea'"  v-model="item.selected"></textarea>
 
-                  <div v-if="item.comments != undefined ">
+
+                  <div v-if="item.comments != undefined">
                     Comments
-                    <b-form-textarea  v-model="item.comments"></b-form-textarea>
+                    <textarea class="form-control"  v-model="item.comments"></textarea>
                   </div>
                 </div>
             </b-collapse>
@@ -143,7 +145,7 @@ export default {
             options: [{text:'yes', value: true}, {text:'no', value:false}],
           }, {
             label: '5.3.4 If an adverse impacts(s) was noted in 5.3.3 describe briefly',
-            type: 'text',
+            type: 'textarea',
             name: 'impact_description',
             selected: '',
             info: 'Brief information on: impacts (e.g. physical, chemical or biological) and their spatial or temporal variation'

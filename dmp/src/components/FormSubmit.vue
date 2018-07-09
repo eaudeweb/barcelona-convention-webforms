@@ -324,22 +324,27 @@ export default {
           dump_site_code_monitore_d: article.article_title.selected,
           monitoring_conducted_rep_period: null,
           field_monitoring_when: null,
+          field_monitoring_when_comments: '',
           field_monitoring_survey_type: null,
           adverse_impact_found: null,
           impact_description: null,
           compliance_monitoring_permit: null,
           operations_in_compliance_with_permit: null,
           is_follow_up_planned: null,
+          is_follow_up_planned_comments: '',
         }
         for (let article_item of article.article_items){
             row[article_item.name] = article_item.selected
-
+            if(article_item.name === 'field_monitoring_when' || article_item.name === 'is_follow_up_planned'){
+              row[article_item.name + '_comments'] = article_item.comments
+            }
         }
 
         this.jsonemptyinstance.BC_DMP.monitoring.Row.push(row);
 
       }
-
+        
+      console.log(this.jsonemptyinstance.BC_DMP.monitoring.Row)
 
 
       let tab_5 = this.dataset.tab_5.data.articles;
@@ -377,6 +382,7 @@ export default {
 
       // console.log(info)
       saveInstance(this.jsonemptyinstance)
+      this.showAlert();
     },
 
     validate() {
@@ -388,4 +394,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.alert.alert-success {
+  position: fixed;
+  top:3rem;
+  left: 20%;
+  right: 20%;
+}
 </style>

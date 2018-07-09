@@ -12376,7 +12376,7 @@ var form = {
           value: '',
         }, {
           label: 'Remarks/Comments',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           value: '',
         }]
@@ -12421,7 +12421,7 @@ var form = {
           value: '',
         }, {
           label: 'Remarks/Comments',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           value: '',
         }]

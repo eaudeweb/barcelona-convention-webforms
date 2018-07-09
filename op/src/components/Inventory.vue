@@ -26,9 +26,11 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}  <small v-if="item.description" class="muted">({{item.description}})</small></div>
                             <!-- {{field}} -->
-                          <b-form-input required v-if="item.type != 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input required v-if="item.type != 'select' && item.type!='textarea'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
 
-                          <b-form-select required v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+                          <b-form-select required v-else-if="item.type !='textarea'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
+
+                          <textarea v-else-if="item.type === 'textarea'" class="form-control" v-model ="item.selected"></textarea> 
                       </div>
                   </div>
                 </b-collapse>
@@ -142,7 +144,7 @@ export default {
         },{
           label: 'Remarks',
           description: 'E.g. measures taken to not affect other legitimate uses of the sea: navigation, fishing and the protection of the marine environment',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           selected: '',
         }]

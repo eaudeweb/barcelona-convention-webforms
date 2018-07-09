@@ -28,7 +28,7 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
+                          <textarea class="form-control" required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="item.name" v-model="item.selected"></textarea>
               
 
                       </div>
@@ -167,22 +167,22 @@ export default {
           article_title: this.hazardCount,
           article_items: [{
             label: 'Waste description',
-            type: 'text',
+            type: 'textarea',
             name: 'wastedescription',
             selected: '',
           }, {
             label: 'Definition',
-            type: 'text',
+            type: 'textarea',
             name: 'definition',
             selected: '',
           }, {
             label: 'Main characteristics',
-            type: 'text',
+            type: 'textarea',
             name: 'main_characteristics',
             selected: '',
           }, {
             label: 'Transboundary movement procedure established',
-            type: 'text',
+            type: 'textarea',
             name: 'movement_procedure',
             selected: '',
           }]
@@ -195,6 +195,10 @@ export default {
     removeSpa(index) {
       // console.log(this.info.data.table_2.articles[index])
       this.hazardCount -= 1
+
+      if(this.hazardCount < 0) {
+        this.hazardCount = 0;
+      }
 
       this.info.data.table_1.articles.splice(index, 1)
       this.updateHazards();

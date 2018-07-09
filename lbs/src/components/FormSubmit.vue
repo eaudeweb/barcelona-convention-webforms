@@ -61,7 +61,7 @@ export default {
           "BC_LBS": {
               "@xmlns": "https://dd.info-rac.org/namespaces/9",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://biodiversity.eionet.europa.eu/schemas/barcelona_convention/lbs.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/9 https://dd.info-rac.org/v2/dataset/8/schema-dst-8.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,

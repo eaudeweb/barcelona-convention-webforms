@@ -28,10 +28,11 @@
                 <p>
                   {{item.description}}
                 </p>
+
                 <div class="form-fields">
              
-                  <b-form-input required :disabled="item.disabled" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
-                  
+                  <b-form-input required v-if="item.type != 'textarea'" :disabled="item.disabled" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <textarea class="form-control" v-else  v-model="item.selected"></textarea>
                 </div>
                 
            
@@ -70,9 +71,10 @@
               
             <td><b-btn variant="danger" @click="removeRow(index)">X</b-btn></td>
             <td v-for="item in items.items">
-            <b-form-input required v-model="item.selected"
+            <b-form-input v-if="item.label != 'Notes'" required v-model="item.selected"
                   type="number"
                   placeholder=""></b-form-input>
+            <textarea style="height: auto" v-else class="form-control" v-model="item.selected"></textarea>
             </td>
           </tr>
           </tbody>

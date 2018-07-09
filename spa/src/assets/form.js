@@ -5147,7 +5147,7 @@ var form = {
             selected: '',
           }, {
             label: 'Remarks/Comments',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]
@@ -5177,7 +5177,7 @@ var form = {
             selected: '',
           }, {
             label: 'Remarks/Comments',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]
@@ -5208,7 +5208,7 @@ var form = {
             selected: '',
           }, {
             label: 'Remarks/Comments',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]
@@ -5239,7 +5239,7 @@ var form = {
             selected: '',
           }, {
             label: 'Remarks/Comments',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]

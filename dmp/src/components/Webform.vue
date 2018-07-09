@@ -27,11 +27,8 @@
             </b-tab>
           </b-tabs>
         </b-form>
-   			<formsubmit v-on:validationDone="getValidationData($event)" :country.sync="country" :info.sync="form"></formsubmit>
-        <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-                  <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
-                  <validation :validationData="validation_data"></validation>
-          </div>
+   			<formsubmit :country.sync="country" :info.sync="form"></formsubmit>
+
       </b-card>
       <div v-if="!prefilled" class="spinner">
         <div class="loader"></div>
@@ -48,7 +45,6 @@ import {getInstance, getCountry} from '../api.js';
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
 import Dummy from './Dummy.vue'
-import Validation from './Validation.vue'
 import DumpingAtSea from './DumpingAtSea.vue'
 import QuantitiesOfWaste from './QuantitiesOfWaste.vue'
 import Monitoring from './Monitoring.vue'
@@ -67,7 +63,6 @@ export default {
     dummy: Dummy,
     monitoring: Monitoring,
   	formsubmit: FormSubmit,
-    validation: Validation,
     dumpingatsea: DumpingAtSea,
     wastequantity: QuantitiesOfWaste,
     monitoring: Monitoring,
@@ -78,7 +73,6 @@ export default {
     return {
     	visibleTab: false,
       form: {},
-      validation_data: [],
       button_text: 'Hide list',
       country: '',
       prefilled: false,
@@ -140,36 +134,49 @@ export default {
           }
 
 
-
-
-      if(data.BC_DMP.measuredata_difficulty) {
-
-          if(data.BC_DMP.measuredata_difficulty.Row.length) {
-            for(let agreement of data.BC_DMP.measuredata_difficulty.Row) {
-
-              // console.log(agreement.collection_id)
-                let collection_id = agreement.collection_id
-                let difficulty = agreement.difficulty
-                for (let tab in this.form){
-                  // console.log(tab)
-                  if(tab === 'tab_1') {
-                    for(let article of this.form[tab].data.articles){
-                      for(let article_item of article.article_items){
-                        if(article_item.collection_id === collection_id) {
-                          for(let item of article_item.items) {
-                            if(item.type === 'difficulties') {
-                              item.selected.push(difficulty)
-                            } 
+   if (data.BC_DMP.measuredata_difficulty) {
+          if (data.BC_DMP.measuredata_difficulty.Row.length) {
+            for (let agreement of data.BC_DMP.measuredata_difficulty.Row) {
+              let collection_id = agreement.collection_id
+              let difficulty = agreement.difficulty
+              for (let tab in this.form) {
+                if (tab === 'tab_1') {
+                  for (let article of this.form[tab].data.articles) {
+                    for (let article_item of article.article_items) {
+                      if (article_item.collection_id === collection_id) {
+                        for (let item of article_item.items) {
+                          if (item.type === 'difficulties') {
+                            item.selected.push(difficulty)
                           }
                         }
                       }
                     }
                   }
                 }
+              }
             }
-
           }
-      }
+          else {
+            let agreement = data.BC_DMP.measuredata_difficulty.Row
+            let collection_id = agreement.collection_id
+            let difficulty = agreement.difficulty
+            for (let tab in this.form) {
+              if (tab === 'tab_1') {
+                for (let article of this.form[tab].data.articles) {
+                  for (let article_item of article.article_items) {
+                    if (article_item.collection_id === collection_id) {
+                      for (let item of article_item.items) {
+                        if (item.type === 'difficulties') {
+                          item.selected.push(difficulty)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
 
 
 
@@ -398,7 +405,7 @@ export default {
           }, 
           {
             label: '3.6 Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 3',
@@ -454,7 +461,7 @@ export default {
           }, 
           {
             label: '3.6 Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 3',
@@ -560,7 +567,7 @@ export default {
           }, 
           {
             label: '4.9 Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 4,',
@@ -658,7 +665,7 @@ export default {
           }, 
           {
             label: '4.9 Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 4,',
@@ -711,7 +718,7 @@ export default {
             {text: 'after dumping at sea', value: 3},
             {text: 'other', value: 4}
             ],
-            comments: '',
+            comments: inventory.field_monitoring_when_comments,
           }, {
             label: '5.3.2 If Field Monitoring was Conducted, what type of survey was completed?',
             type: 'checkbox',
@@ -735,7 +742,7 @@ export default {
             options: [{text:'yes', value: true}, {text:'no', value:false}],
           }, {
             label: '5.3.4 If an adverse impacts(s) was noted in 5.3.3 describe briefly',
-            type: 'text',
+            type: 'textarea',
             name: 'impact_description',
             selected: '',
             info: 'Brief information on: impacts (e.g. physical, chemical or biological) and their spatial or temporal variation'
@@ -765,7 +772,7 @@ export default {
             selected: '',
             info: 'If Yes explain e.g. amendment of or revoking of the dumping permit, redefinition or closing of the dumping site',
             options: [{text:'yes', value: true}, {text:'no', value:false}],
-            comments: '',
+            comments: inventory.is_follow_up_planned_comments,
           }]
         }
           let inventoryobj = inventoryJson
@@ -804,7 +811,7 @@ export default {
             {text: 'after dumping at sea', value: 3},
             {text: 'other', value: 4}
             ],
-            comments: '',
+            comments: inventory.field_monitoring_when_comments,
           }, {
             label: '5.3.2 If Field Monitoring was Conducted, what type of survey was completed?',
             type: 'checkbox',
@@ -828,7 +835,7 @@ export default {
             options: [{text:'yes', value: true}, {text:'no', value:false}],
           }, {
             label: '5.3.4 If an adverse impacts(s) was noted in 5.3.3 describe briefly',
-            type: 'text',
+            type: 'textarea',
             name: 'impact_description',
             selected: '',
             info: 'Brief information on: impacts (e.g. physical, chemical or biological) and their spatial or temporal variation'
@@ -858,11 +865,12 @@ export default {
             selected: '',
             info: 'If Yes explain e.g. amendment of or revoking of the dumping permit, redefinition or closing of the dumping site',
             options: [{text:'yes', value: true}, {text:'no', value:false}],
-            comments: '',
+            comments: inventory.is_follow_up_planned_comments,
           }]
         }
         let inventoryobj = inventoryJson
         for (let article of inventoryobj.article_items) {
+          console.log(inventory[article.name])
           article.selected = inventory[article.name]
         }
         this.form.tab_4.data.articles.push(inventoryobj)
@@ -931,7 +939,7 @@ export default {
           }, 
           {
             label: 'Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Other relevant information in details',
@@ -997,7 +1005,7 @@ export default {
           }, 
           {
             label: 'Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Other relevant information in details',
@@ -1019,10 +1027,6 @@ export default {
 
     this.prefilled = true;
 
-    },
-
-    getValidationData(data) {
-      this.validation_data = data
     },
 
     UnslugifyQuantities(quantity) {
@@ -1056,11 +1060,7 @@ export default {
     onSubmit (evt) {
        evt.preventDefault();
     },
-    toggleValidationContainer(){
-      if(this.button_text === 'Hide list') this.button_text = 'Show List'
-        else this.button_text = 'Hide list'
-      this.$refs.validationContainer.classList.toggle('closed')
-    },
+
   },
 
 }

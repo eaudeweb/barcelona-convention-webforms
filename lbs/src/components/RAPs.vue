@@ -39,19 +39,17 @@
                   </div>
                 </div>
                 
-                <b-row>
-                  
-                 <b-col lg="12" v-if="item.type === 'status'">
-                   <b-form-textarea v-model="item.comments"
-                      type="text"
-                      placeholder="additional comments"></b-form-textarea>
-                  </b-col>
-                  <b-col lg="12" v-else-if="item.type != 'status' && item.type != 'changes'">
-                   <b-form-textarea v-model="item.comments"
-                      type="text"
-                      placeholder="additional comments"></b-form-textarea>
+                    
+                <b-row >
+                 <b-col lg="12" v-if="item.type === 'status' || item.type === 'difficulties'">
+                   <textarea 
+                      class="form-control"
+                      v-model="item.comments"
+                      placeholder="additional comments"></textarea>
                   </b-col>
                 </b-row>
+
+                
                 <small style="font-style:italic; font-size: .6rem">
                   <p class="mb-0" v-for="option of item.options_description">
                     {{option}}

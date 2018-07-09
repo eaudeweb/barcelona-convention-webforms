@@ -128,7 +128,7 @@
     {
       "Row": [
       {
-        "collection_id": null,
+        "collection_id": 2001,
         "difficulty": 1
       },
       {
@@ -424,7 +424,7 @@
     },
     "monitoring":
     {
-      "Row":
+      "Row":[
       {
         "collection_id": null,
         "parent_collection_id": null,
@@ -432,12 +432,30 @@
         "monitoring_conducted_rep_period": true,
         "field_monitoring_when": [2, 1, 3, 4],
         "field_monitoring_survey_type": [2, 4, 5],
+        "field_monitoring_when_comments": "test",
         "adverse_impact_found": true,
         "impact_description": "fasfasf",
         "compliance_monitoring_permit": false,
         "operations_in_compliance_with_permit": false,
+        "is_follow_up_planned_comments": "tsestsest",
+        "is_follow_up_planned": true
+      },
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "dump_site_code_monitore_d": 4532523,
+        "monitoring_conducted_rep_period": true,
+        "field_monitoring_when": [2, 1, 3, 4],
+        "field_monitoring_survey_type": [2, 4, 5],
+        "field_monitoring_when_comments": "2222",
+        "adverse_impact_found": true,
+        "impact_description": "fasfasf",
+        "compliance_monitoring_permit": false,
+        "operations_in_compliance_with_permit": false,
+        "is_follow_up_planned_comments": "11111",
         "is_follow_up_planned": true
       }
+      ]
     },
     "placement":
     {

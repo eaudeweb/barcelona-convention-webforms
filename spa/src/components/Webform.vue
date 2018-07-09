@@ -33,10 +33,6 @@
         </b-form>
         <formsubmit :country.sync="country" :info.sync="form"></formsubmit>
 
-        <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-        <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
-                  <validation :validationData="validation_data"></validation>
-          </div>
       </b-card>
       <div v-if="!prefilled" class="spinner">
         <div class="loader"></div>
@@ -59,7 +55,6 @@ import RAPs from './RAPs.vue'
 import SPAMIs from './SPAMIs.vue'
 import Monitoring from './Monitoring.vue'
 import ENFMeasures from './ENFMeasures.vue'
-import Validation from './Validation.vue'
 
 
 import FormSubmit from './FormSubmit.vue'
@@ -79,14 +74,12 @@ export default {
     monitoring: Monitoring,
     endangered: EndAndThSp,
   	formsubmit: FormSubmit,
-    validation: Validation
   },
 
   data () {
     return {
     	visibleTab: false,
       form: {},
-      validation_data: [],
       button_text: 'Hide list',
       country: '',
       prefilled: false,
@@ -106,9 +99,7 @@ export default {
   },
 
   methods: {
-    getValidationData(data) {
-      this.validation_data = data
-    },
+
 
     prefill(data) {
      for (let table in this.form.country.tables) {
@@ -175,8 +166,32 @@ export default {
              }
            }
          }
+       } else {
+            let agreement = data.BC_SPA.measuredata_difficulty.Row
+           // console.log(agreement.collection_id)
+           let collection_id = agreement.collection_id
+           let difficulty = agreement.difficulty
+           for (let tab in this.form) {
+             // console.log(tab)
+             if (tab === 'tab_1' || tab === 'tab_5' || tab === 'tab_7') {
+               for (let article of this.form[tab].data.articles) {
+                 for (let article_item of article.article_items) {
+                   if (article_item.collection_id === collection_id) {
+                     for (let item of article_item.items) {
+                       if (item.type === 'difficulties') {
+                         item.selected.push(difficulty)
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+           }
        }
      }
+
+
+
      if (data.BC_SPA.measuresdata.Row.length) {
        for (let agreement of data.BC_SPA.measuresdata.Row) {
          let collection_id = agreement.collection_id
@@ -232,6 +247,32 @@ export default {
              }
            }
          }
+       } else {
+          let agreement = data.BC_SPA.measuredata_difficulty.Row 
+           // console.log(agreement.collection_id)
+           let collection_id = agreement.collection_id
+           let difficulty = agreement.difficulty
+           for (let tab in this.form) {
+             // console.log(tab)
+             if (tab != 'tab_1' && tab != 'tab_6' && tab != 'country' && tab != 'tab_5' && tab != 'tab_7') {
+               for (let table of classic_tabs[tab]) {
+                 for (let article of this.form[tab].data[table].articles) {
+                   for (let article_item of article.article_items) {
+                     if (article_item.collection_id === collection_id) {
+                       for (let item of article_item.items) {
+                         if (item.type === 'difficulties') {
+                           item.selected.push(difficulty)
+                         }
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+           }
+
+
+
        }
      }
 
@@ -627,11 +668,7 @@ export default {
     onSubmit (evt) {
        evt.preventDefault();
     },
-    toggleValidationContainer(){
-      if(this.button_text === 'Hide list') this.button_text = 'Show List'
-        else this.button_text = 'Hide list'
-      this.$refs.validationContainer.classList.toggle('closed')
-    },
+
   },
 
 }

@@ -1035,7 +1035,7 @@ var form = {
                   info: '',
                 },
                 {
-                  type: 'text',
+                  type: 'textarea',
                   label: '2.8 Notes',
                   description: 'Brief notes on any entry in Table 2',
                   name: 'notes',
@@ -1114,7 +1114,7 @@ var form = {
                   info: '',
                 },
                 {
-                  type: 'text',
+                  type: 'textarea',
                   label: '2.8 Notes',
                   description: 'Brief notes on any entry in Table 2',
                   name: 'notes',
@@ -1193,7 +1193,7 @@ var form = {
                   info: '',
                 },
                 {
-                  type: 'text',
+                  type: 'textarea',
                   label: '2.8 Notes',
                   description: 'Brief notes on any entry in Table 2',
                   name: 'notes',
@@ -1272,7 +1272,7 @@ var form = {
                   info: '',
                 },
                 {
-                  type: 'text',
+                  type: 'textarea',
                   label: '2.8 Notes',
                   description: 'Brief notes on any entry in Table 2',
                   name: 'notes',
@@ -1348,7 +1348,7 @@ var form = {
           value: '',
         }, {
           label: 'Remarks/Comments',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           value: '',
         }]
@@ -1393,7 +1393,7 @@ var form = {
           value: '',
         }, {
           label: 'Remarks/Comments',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           value: '',
         }]
@@ -1438,7 +1438,7 @@ var form = {
           value: '',
         }, {
           label: 'Remarks/Comments',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           value: '',
         }]
@@ -1483,7 +1483,7 @@ var form = {
           value: '',
         }, {
           label: 'Remarks/Comments',
-          type: 'text',
+          type: 'textarea',
           name: 'remarks',
           value: '',
         }]

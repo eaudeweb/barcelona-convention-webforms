@@ -44,10 +44,11 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input required v-if="item.type != 'select' && item.type != 'radio'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
+                          <b-form-input required v-if="item.type != 'select' && item.type != 'radio' && item.type != 'textarea'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-input>
                           <b-form-select required v-else-if="item.type === 'select'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`"  :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
                           <b-form-radio-group stacked v-else-if="item.type ==='radio'" :required="!article.optional" :id="`radio_${tabId}_${index}_${item_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_${tabId}_${index}_${item_index}_${item.type}`">
                             </b-form-radio-group>
+                          <textarea v-else class="form-control" v-model="item.selected"></textarea>
 
                       </div>
                   </div>
@@ -248,7 +249,7 @@ export default {
           },
 
           {
-            type: 'text',
+            type: 'textarea',
             name: 'actions_taken',
             label: 'If yes, specify the actions taken',
             selected: ''

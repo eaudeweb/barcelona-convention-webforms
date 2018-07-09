@@ -41,13 +41,16 @@
                   </div>
                 </div>
                 
-             
-                <b-row >
-                 <b-col lg="5" v-if="item.type === 'status' || item.type === 'difficulties'">
-                   <b-form-textarea v-model="item.comments"
-                      placeholder="additional comments"></b-form-textarea>
+                
+                <b-row>
+                 <b-col lg="12" v-if="item.type === 'status' || item.type === 'difficulties'">
+                   <textarea 
+                      class="form-control"
+                      v-model="item.comments"
+                      placeholder="additional comments"></textarea>
                   </b-col>
                 </b-row>
+
 
 
                 <small style="font-style:italic; font-size: .6rem">

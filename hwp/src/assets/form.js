@@ -3014,7 +3014,7 @@ var form = {
           },
           {
             label: 'Remarks/Comments',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]

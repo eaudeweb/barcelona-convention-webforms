@@ -31,8 +31,11 @@
               <div class="form-fields mb-3" v-for="(item, array_index) in article.article_items">
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
-                
-                  <b-form-input required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+
+                  <b-form-input required v-if="item.type != 'textarea'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+
+                  <textarea v-else class="form-control" v-model="item.selected"></textarea>
+                  
                 </div>
 
 
@@ -75,7 +78,8 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
                 
-                  <b-form-input required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <b-form-input required v-if="item.type != 'textarea'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <textarea v-else class="form-control" v-model="item.selected"></textarea>
                 </div>
 
 
@@ -170,7 +174,7 @@ export default {
           }, 
           {
             label: '3.6 Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 3',
@@ -267,7 +271,7 @@ export default {
           }, 
           {
             label: '4.9 Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Brief notes on any entry in Table 4,',

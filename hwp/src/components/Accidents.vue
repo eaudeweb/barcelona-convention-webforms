@@ -32,7 +32,8 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input v-if="item.type !='textarea'" required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <textarea v-else class="form-control" v-model="item.selected"></textarea>
                      
                       </div>
                   </div>
@@ -75,7 +76,8 @@
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
-                          <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <b-form-input v-if="item.type !='textarea'" required :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                          <textarea v-else class="form-control" v-model="item.selected"></textarea>
                      
                       </div>
                   </div>
@@ -139,12 +141,12 @@ export default {
           },
           article_items: [{
             label: 'Countries involved',
-            type: 'text',
+            type: 'textarea',
             name: 'countries_involved',
             selected: '',
           }, {
             label: 'Type of wastes',
-            type: 'text',
+            type: 'textarea',
             name: 'wastes_type',
             selected: '',
           }, {
@@ -154,23 +156,23 @@ export default {
             selected: '',
           }, {
             label: 'Reason for the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'incident_reason',
             selected: '',
           }, {
             label: 'Measures taken to deal with the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_taken',
             selected: '',
           }, {
             label: 'Effectiveness of the measures taken',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_effectiveness',
             selected: '',
           },
           {
             label: 'Remarks',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks',
             selected: '',
           }]
@@ -195,12 +197,12 @@ export default {
           },
           article_items: [{
             label: 'Countries involved',
-            type: 'text',
+            type: 'textarea',
             name: 'countries_involved_movement',
             selected: '',
           }, {
             label: 'Type of wastes',
-            type: 'text',
+            type: 'textarea',
             name: 'wastes_type_movement',
             selected: '',
           }, {
@@ -210,23 +212,23 @@ export default {
             selected: '',
           }, {
             label: 'Type of accident',
-            type: 'text',
+            type: 'textarea',
             name: 'accident_type_movement',
             selected: '',
           }, {
             label: 'Measures taken to deal with the incident',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_taken_movement',
             selected: '',
           }, {
             label: 'Effectiveness of the measures taken',
-            type: 'text',
+            type: 'textarea',
             name: 'measures_effectiveness_movement',
             selected: '',
           },
           {
             label: 'Remarks',
-            type: 'text',
+            type: 'textarea',
             name: 'remarks_movement',
             selected: '',
           }]

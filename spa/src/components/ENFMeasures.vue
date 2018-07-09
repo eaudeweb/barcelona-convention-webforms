@@ -20,7 +20,8 @@
               <div class="form-subsection" v-for="(item,item_index) in article.article_items">
                 <div class="mt-2">{{item.label}}</div>
                 <div class="form-fields">
-                  <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <b-form-input v-if="item.type != 'textarea'" required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <textarea class="form-control" v-else v-model="item.selected"></textarea>
                 </div>
               </div>
             </b-collapse>

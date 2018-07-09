@@ -3,7 +3,7 @@
     <center><h1 class="mb-3 mt-2">Prevention and Emergency Protocol</h1></center>
     <center><h5><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL CONCERNING COOPERATION IN PREVENTING POLLUTION FROM SHIPS AND, IN CASES OF EMERGENCY,
       COMBATING POLLUTION OF THE MEDITERRANEAN SEA (PREVENTION AND EMERGENCY PROTOCOL)</small></h5></center>
-      <b-card no-body>
+      <b-card v-if="prefilled" no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-tabs card>
             <b-tab title="Reporting party" active>
@@ -21,10 +21,7 @@
           </b-tabs>
         </b-form>
    			<formsubmit :country.sync="country" :info.sync="form"></formsubmit>
-        <div  v-if="validation_data.length" ref="validationContainer" class="validation">
-            <b-btn @click="toggleValidationContainer" class="validation-toggle" variant="default">{{button_text}}</b-btn>
-            <validation :validationData="validation_data"></validation>
-        </div>
+        
       </b-card>
       <div v-if="!prefilled" class="spinner">
         <div class="loader"></div>
@@ -40,7 +37,6 @@ import {getInstance, getCountry} from '../api.js';
 import LRMeasures from './LRMeasures.vue'
 import OpMeasures from './OpMeasures.vue'
 import PolIncidents from './PolIncidents.vue'
-import Validation from './Validation.vue'
 import Countrytab from './Country.vue'
 // import incidentJson from '../assets/incident.js';
 
@@ -57,7 +53,6 @@ export default {
     opmeasures: OpMeasures,
     polincidents: PolIncidents,
   	formsubmit: FormSubmit,
-    validation: Validation,
     countrytab: Countrytab
   },
 
@@ -65,10 +60,9 @@ export default {
     return {
     	visibleTab: false,
       form: {},
-      validation_data: [],
       button_text: 'Hide list',
       country: '',
-
+      prefilled: false,
     }
   },
 
@@ -86,9 +80,7 @@ export default {
   },
 
   methods: {
-    getValidationData(data) {
-      this.validation_data = data
-    },
+
 
     prefill(data){
 
@@ -133,35 +125,51 @@ export default {
 
           }
 
+          // TODO: National contingency plans
 
-      if(data.BC_PEP.measuredata_difficulty) {
-
-          if(data.BC_PEP.measuredata_difficulty.Row.length) {
-            for(let agreement of data.BC_PEP.measuredata_difficulty.Row) {
-
-              // console.log(agreement.collection_id)
-                let collection_id = agreement.collection_id
-                let difficulty = agreement.difficulty
-                for (let tab in this.form){
-                  // console.log(tab)
-                  if(tab != 'tab_3' && tab != 'country') {
-                    for(let article of this.form[tab].data.articles){
-                      for(let article_item of article.article_items){
-                        if(article_item.collection_id === collection_id) {
-                          for(let item of article_item.items) {
-                            if(item.type === 'difficulties') {
-                              item.selected.push(difficulty)
-                            } 
+      if (data.BC_PEP.measuredata_difficulty) {
+          if (data.BC_PEP.measuredata_difficulty.Row.length) {
+            for (let agreement of data.BC_PEP.measuredata_difficulty.Row) {
+              let collection_id = agreement.collection_id
+              let difficulty = agreement.difficulty
+              for (let tab in this.form) {
+                if (tab != 'tab_3' && tab != 'country') {
+                  for (let article of this.form[tab].data.articles) {
+                    for (let article_item of article.article_items) {
+                      if (article_item.collection_id === collection_id) {
+                        for (let item of article_item.items) {
+                          if (item.type === 'difficulties') {
+                            item.selected.push(difficulty)
                           }
                         }
                       }
                     }
                   }
                 }
+              }
             }
-
           }
-      }
+          else {
+            let agreement = data.BC_PEP.measuredata_difficulty.Row
+            let collection_id = agreement.collection_id
+            let difficulty = agreement.difficulty
+            for (let tab in this.form) {
+              if (tab != 'tab_3' && tab != 'country') {
+                for (let article of this.form[tab].data.articles) {
+                  for (let article_item of article.article_items) {
+                    if (article_item.collection_id === collection_id) {
+                      for (let item of article_item.items) {
+                        if (item.type === 'difficulties') {
+                          item.selected.push(difficulty)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
 
       var question = data.BC_PEP.pollincidentsInfo
       this.form.tab_3.data.question.selected = question;
@@ -332,7 +340,7 @@ export default {
                               },
 
                               {
-                                type: 'text',
+                                type: 'textarea',
                                 name: 'actions_taken',
                                 label: 'If yes, specify the actions taken',
                                 selected: ''
@@ -512,7 +520,7 @@ export default {
                               },
 
                               {
-                                type: 'text',
+                                type: 'textarea',
                                 name: 'actions_taken',
                                 label: 'If yes, specify the actions taken',
                                 selected: ''
@@ -540,11 +548,6 @@ export default {
 
     onSubmit (evt) {
        evt.preventDefault();
-    },
-    toggleValidationContainer(){
-      if(this.button_text === 'Hide list') this.button_text = 'Show List'
-        else this.button_text = 'Hide list'
-      this.$refs.validationContainer.classList.toggle('closed')
     },
   },
 

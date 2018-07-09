@@ -38,10 +38,12 @@
                   </div>
                 </div>
                 
-                <b-row >
-                 <b-col lg="5" v-if="item.type === 'status' || item.type === 'difficulties'">
-                   <b-form-textarea v-model="item.comments"
-                      placeholder="additional comments"></b-form-textarea>
+                <b-row>
+                 <b-col lg="12" v-if="item.type === 'status' || item.type === 'difficulties'">
+                   <textarea 
+                      class="form-control"
+                      v-model="item.comments"
+                      placeholder="additional comments"></textarea>
                   </b-col>
                 </b-row>
 
@@ -83,7 +85,7 @@
 
                 <b-collapse class="mt-3" visible :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
                   <div class="form-subsection" v-for="(item,item_index) in article.article_items">
-                    <div v-if="(item.type === 'text' || item.type ==='date') && item.name != 'dateofadoption'">
+                    <div v-if="item.type === 'text' || item.type === 'date'">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
                         <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
@@ -92,7 +94,7 @@
                      <div v-else-if="item.type === 'radio'">
                       <div class="mt-2">{{item.label}}</div>
                       <div class="form-fields">
-                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" @change="updateAdoptionDateField($event)" :options="item.options" v-model="item.selected"></b-form-radio-group>
+                        <b-form-radio-group required stacked :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" :options="item.options" v-model="item.selected"></b-form-radio-group>
                       </div>
                     </div>
                     <div v-else-if="item.type === 'select'">
@@ -101,15 +103,6 @@
                         <b-form-select required :id="`${tabId}_${index}_${item_index}_${item.name}`" :name="item.name" :options="item.options" v-model="item.selected"></b-form-select>
                       </div>
                     </div>
-
-
-                    <div v-if="item.name === 'dateofadoption' && showAdoptionDate">
-                      <div class="mt-2">{{item.label}}</div>
-                      <div class="form-fields">
-                        <b-form-input required :id="`${tabId}_${index}_${item_index}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
-                      </div>
-                    </div>
-
 
                   </div>
                 </b-collapse>
@@ -156,12 +149,15 @@
                 </div>
                 
              
-                <b-row >
-                 <b-col lg="5" v-if="item.type === 'status' || item.type === 'difficulties'">
-                   <b-form-textarea v-model="item.comments"
-                      placeholder="additional comments"></b-form-textarea>
+                <b-row>
+                 <b-col lg="12" v-if="item.type === 'status' || item.type === 'difficulties'">
+                   <textarea 
+                      class="form-control"
+                      v-model="item.comments"
+                      placeholder="additional comments"></textarea>
                   </b-col>
                 </b-row>
+
 
                 <small style="font-style:italic; font-size: .6rem">
                   <p class="mb-0" v-for="option of item.options_description">
@@ -203,7 +199,6 @@ export default {
 
   data () {
     return {
-      showAdoptionDate: false
     }
   },
 
@@ -212,13 +207,6 @@ export default {
       return slugify(text)
     },
 
-    updateAdoptionDateField(e){
-      if(e === 1) {
-        this.showAdoptionDate = true;
-      } else {
-        this.showAdoptionDate = false;
-      }
-    },
 
     addSpa(){
       let spa = {

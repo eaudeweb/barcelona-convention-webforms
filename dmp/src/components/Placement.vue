@@ -31,7 +31,8 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
                 
-                  <b-form-input required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <b-form-input v-if="item.type != 'textarea'" required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <textarea v-else v-model="item.selected" class="form-control"></textarea>
 
                 </div>
             </b-collapse>
@@ -44,12 +45,6 @@
                   variant="primary" @click="addDump"> + Add</b-btn> 
           </div>
         </div>
-
-
-
-
-
-
 
     </div>
   </div>
@@ -135,7 +130,7 @@ export default {
           }, 
           {
             label: 'Notes',
-            type: 'text',
+            type: 'textarea',
             name: 'notes',
             selected: '',
             info: 'Other relevant information in details',
