@@ -300,7 +300,8 @@
         "changes": null,
         "difficulties": null,
         "status": null,
-        "status_comments": null
+        "status_comments": null,
+        "contingency_plan":[1,2]
       },
       {
         "description": "National stockpiles of pre-positioned oil and HNS spill response equipment, including naval and aerial means, established",

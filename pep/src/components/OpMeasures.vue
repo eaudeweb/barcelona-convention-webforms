@@ -27,9 +27,8 @@
                 <div class="form-fields">
                   <div v-if="item.type === 'difficulties' || item.type === 'special'">
                     <b-form-group>
-                      <b-form-checkbox-group stacked :id="`checkbox_${tabId}_${index}_${array_index}_${item.type}`" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options">
+                      <b-form-checkbox-group stacked :id="`checkbox_${tabId}_${index}_${array_index}_${item.type}`" :name="`checkbox_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options">
                       </b-form-checkbox-group>
-
                       </b-form-group>
                   </div>
                   <div v-else>

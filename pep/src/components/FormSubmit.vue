@@ -208,6 +208,7 @@ export default {
                       "difficulties_comments": null,
                       "status":null,
                       "status_comments": null,
+                      "contingency_plan":null,
                   }
             for(let item of article_item.items) {
               if(item.type ==='changes') {
@@ -215,6 +216,8 @@ export default {
               } else if (item.type === 'status') {
                 row.status = item.selected;
                 row.status_comments = item.comments
+              } else if (item.type === 'special') {
+                row.contingency_plan = item.selected
               } else {
                 // row.difficulties = item.selected
                 row.difficulties_comments = item.comments
@@ -235,6 +238,7 @@ export default {
         }
       }
 
+      console.log(this.jsonemptyinstance.BC_PEP.measuresdata)
 
 
       let showtab3 = this.dataset.tab_3.data.question.selected;

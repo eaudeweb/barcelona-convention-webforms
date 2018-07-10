@@ -112,6 +112,9 @@ export default {
                             } else if (item.type === 'status') {
                               item.selected = agreement.status
                               item.comments = agreement.status_comments
+                            } else if (item.type === 'special') {
+                              console.log(agreement)
+                              item.selected = agreement.contingency_plan
                             } else {
                               item.comments = agreement.difficulties_comments;
                             }
