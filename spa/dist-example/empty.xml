@@ -52,6 +52,8 @@
             <difficulties/>
         </Row>
     </management_plans_imp>
+    <spamis>
+    </spamis>
     <enf_measures>
         <Row>
             <collection_id/>

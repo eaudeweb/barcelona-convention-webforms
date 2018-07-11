@@ -1,31 +1,1967 @@
 {
-	"BC_SPA": {
-		"@xmlns": "https://dd.info-rac.org/namespaces/4",
-		"@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-		"@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
-		"contacting_party": {
-			"partyname": null,
-			"rep_period_from": "51512-02-04",
-			"rep_period_to": "0515-05-12",
-			"institution_name": "5wras",
-			"officer_name": "gasgsag",
-			"mailing_address": "fssa",
-			"tel": "gasgas",
-			"fax": "gasgas",
-			"email": "gasgasg@saga",
-			"contact_point": "sgasg",
-			"instituion_full_name": "sagsag",
-			"national_mailing_address": "asgasg",
-			"national_tel": null,
-			"national_fax": null,
-			"national_email": null,
-			"national_signature": null,
-			"national_date": null,
-			"org_name": "gasgas",
-			"org_contact_point": "gasgas",
-			"org_tel": "gasgas",
-			"org_fax": null,
-			"org_email": null
-		}
-	}
+  "BC_SPA":
+  {
+    "@xmlns": "https://dd.info-rac.org/namespaces/4",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+    "country": null,
+    "contacting_party":
+    {
+      "partyname": "AL",
+      "rep_period_from": "0012-12-05",
+      "rep_period_to": "0512-12-21",
+      "institution_name": 2512525,
+      "officer_name": 215,
+      "mailing_address": "afsasf",
+      "tel": "asfsf",
+      "fax": "safas",
+      "email": "gsagas",
+      "contact_point": null,
+      "instituion_full_name": null,
+      "national_mailing_address": null,
+      "national_tel": null,
+      "national_fax": null,
+      "national_email": null,
+      "national_signature": null,
+      "national_date": null,
+      "org_name": null,
+      "org_contact_point": null,
+      "org_tel": null,
+      "org_fax": null,
+      "org_email": null
+    },
+    "measuresdata":
+    {
+      "Row": [
+      {
+        "description": "Designation of the terrestrial areas (including wetlands) under their jurisdiction that are included in the area to which the SPA and Biological Diversity Protocol applies",
+        "parent_collection_id": 502,
+        "collection_id": 5001,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gsagg",
+        "status": 1,
+        "status_comments": "sga"
+      },
+      {
+        "description": "Protection, preservation and management in a sustainable and environmentally sound way of areas of particular natural or cultural value, notably by the establishment of specially protected areas",
+        "parent_collection_id": 502,
+        "collection_id": 5002,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gaga",
+        "status": 1,
+        "status_comments": "sgsagas"
+      },
+      {
+        "description": "Protection, preservation and management of endangered or threatened flora and fauna species",
+        "parent_collection_id": 502,
+        "collection_id": 5003,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Compilation of an inventory of the components of marine and coastal biodiversity",
+        "parent_collection_id": 502,
+        "collection_id": 5004,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Formulation of a national strategy and action plan to protect the components of marine and coastal biodiversity",
+        "parent_collection_id": 502,
+        "collection_id": 5005,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Monitoring the components of marine and coastal biodiversity and those processes and categories of activities which have or are likely to have a significant adverse impact on them",
+        "parent_collection_id": 502,
+        "collection_id": 5006,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Taking into consideration, in the planning process leading to decisions on projects and activities that could significantly affect protected areas, species and their habitats, of possible direct or indirect, immediate or long- term, impact, including the cumulative impact of projects and activities on habitats",
+        "parent_collection_id": 502,
+        "collection_id": 5007,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up of protected areas that come within the Protocol’s geographical coverage",
+        "parent_collection_id": 504,
+        "collection_id": 5008,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gsgas",
+        "status": 1,
+        "status_comments": "asgsag"
+      },
+      {
+        "description": "Prohibition of the dumping and any discharge likely to directly or indirectly harm the integrity of specially protected areas",
+        "parent_collection_id": 504,
+        "collection_id": 5009,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "sgasgas",
+        "status": 1,
+        "status_comments": "gasga"
+      },
+      {
+        "description": "Regulation of the passage of ships and all stopping or anchoring in the specially protected areas’ extension zone",
+        "parent_collection_id": 504,
+        "collection_id": 5010,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation of the introduction of any species not indigenous to the specially protected area or of genetically modified species",
+        "parent_collection_id": 504,
+        "collection_id": 5011,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation or prohibition of all exploration activities or activities that involve modifying the soil or subsoil of the land part, of the seabed or of its subsoil in the specially protected areas",
+        "parent_collection_id": 504,
+        "collection_id": 5012,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation of scientific research in the specific protected area",
+        "parent_collection_id": 504,
+        "collection_id": 5013,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Prohibition and regulation of all activities involving taking of species. (i.e. fishing, hunting, taking of animals and harvesting of plants and their destruction, as well as trade in animals, parts of animals, plants and parts of plants)which originate in specially protected areas",
+        "parent_collection_id": 504,
+        "collection_id": 5014,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulation and if necessary prohibition of any other activity likely to have an adverse impact on the specially protected areas. These include activities that may harm or disturb the species or that might endanger the state of conservation of the ecosystems or species or might impair the natural or cultural characteristics of the Specially Protected Area",
+        "parent_collection_id": 504,
+        "collection_id": 5015,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Traditional subsistence and cultural activities of local populations taken into account when formulating protective measures for Specially Protected Areas",
+        "parent_collection_id": 504,
+        "collection_id": 5016,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Adoption of planning, management, supervision and monitoring  measures for Specially Protected Areas",
+        "parent_collection_id": 506,
+        "collection_id": 5017,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gasgas",
+        "status": 1,
+        "status_comments": "gasgas"
+      },
+      {
+        "description": "Elaboration and implementation of a management plan for each Specially Protected Area",
+        "parent_collection_id": 506,
+        "collection_id": 5018,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Programmes for  the  observation and scientific monitoring of changes in the Protocol Areas' ecosystems and of the impact of human activities",
+        "parent_collection_id": 506,
+        "collection_id": 5019,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Measures for the involvement of local communities in the process of managing the protected areas",
+        "parent_collection_id": 506,
+        "collection_id": 5020,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Providing assistance to local inhabitants to compensate for the possible adverse impact which the protection measures introduced in the SPA might have on their income",
+        "parent_collection_id": 506,
+        "collection_id": 5021,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Funding mechanisms for managing and promoting the protected areas or income- generating activities that are compatible with the protection measures",
+        "parent_collection_id": 506,
+        "collection_id": 5022,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Appropriate training for the technical managers and other qualified staff of SPAs",
+        "parent_collection_id": 506,
+        "collection_id": 5023,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up of Specially Protected Areas of Mediterranean Importance (SPAMIs)",
+        "parent_collection_id": 508,
+        "collection_id": 5024,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gsagas",
+        "status": 1,
+        "status_comments": "gsagas"
+      },
+      {
+        "description": "Elaboration and implementation of a management plan for each SPAMI",
+        "parent_collection_id": 508,
+        "collection_id": 5025,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Drawing up of a list of endangered or threatened species of fauna and flora and identification of their distribution in the zones subject to Party's jurisdiction",
+        "parent_collection_id": 512,
+        "collection_id": 5060,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 1,
+        "status_comments": "aaa"
+      },
+      {
+        "description": "Management of species of fauna and flora, listed in Annexes II and III to the Protocol , to ensure their favourable state of conservation",
+        "parent_collection_id": 512,
+        "collection_id": 5061,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Controlling and, where appropriate, prohibiting the taking, possession or killing, the commercial trade, the transport and the exhibition for commercial purposes of protected species of fauna, particularly those listed in Annex II to the Protocol",
+        "parent_collection_id": 512,
+        "collection_id": 5062,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Controlling and where appropriate prohibiting the disturbance of protected wild fauna, particularly during the period of breeding, incubation, hibernation or migration",
+        "parent_collection_id": 512,
+        "collection_id": 5063,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establishment of bilateral or multilateral cooperation (including agreements) to protect and restore the population of migrant species in the area where the Protocol is applied",
+        "parent_collection_id": 512,
+        "collection_id": 5064,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Regulating and where appropriate prohibiting all forms of destruction and disturbance of protected species of flora, particularly those listed in Annex II to the Protocol",
+        "parent_collection_id": 512,
+        "collection_id": 5065,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Formulation and adoption of measures and plans concerning ex situ reproduction, particularly in captivity, of protected fauna and the growing of protected flora",
+        "parent_collection_id": 512,
+        "collection_id": 5066,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Granting of exceptions, to the prohibitions prescribed for the protection of the species listed in the Annexes to the Protocol for scientific, educational, or management purposes necessary to ensure the survival of the species",
+        "parent_collection_id": 512,
+        "collection_id": 5067,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Taking steps to deal with the deliberate or accidental introduction into the wild of non- indigenous or genetically modified species and prohibiting those that may have harmful impacts on the ecosystems habitats or species",
+        "parent_collection_id": 512,
+        "collection_id": 5068,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": 515,
+        "collection_id": 5069,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": 3532532,
+        "status": 1,
+        "status_comments": "aaaa"
+      },
+      {
+        "description": null,
+        "parent_collection_id": 515,
+        "collection_id": 5070,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": 4,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": 515,
+        "collection_id": 5071,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": 515,
+        "collection_id": 5072,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": null,
+        "parent_collection_id": 515,
+        "collection_id": 5073,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Formalize/reinforce synchronous submission of catch, bycatch and discard data to both scientific and management bodies, and annually to the General Fisheries Commission for the Mediterranean (GFCM)-Timeline: every year from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5078,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "aaaa",
+        "status": 1,
+        "status_comments": "asgasga"
+      },
+      {
+        "description": "Establish strict legal protection for species listed in Annex II and GFCM Recommendation through national laws and regulations – Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5079,
+        "changes": false,
+        "difficulties": null,
+        "difficulties_comments": "zzzzzzzz",
+        "status": 3,
+        "status_comments": null
+      },
+      {
+        "description": "Support GFCM finning prohibition by enacting national regulations and monitoring their implementation and enforcement-Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5080,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Complete and disseminate inventories of critical habitats (mating, spawning and nursery grounds)-Timeline: 2015",
+        "parent_collection_id": 519,
+        "collection_id": 5081,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Increase compliance with obligations to collect and submit species-specific commercial catch and bycatch data to FAO and GFCM, including through increased use of observers-Timeline: from 2014 to 2015",
+        "parent_collection_id": 519,
+        "collection_id": 5082,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Comply with obligations under GFCM Recommendations to collect and submit data on pelagic shark catches._Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5083,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Improve programmes for the collection and reporting of data from coastal fisheries-Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5084,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Monitor Critically Endangered, Endangered and endemic species – Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5085,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Submit to the GFCM annual Shark Assessment Reports describing all national target and/or bycatch fisheries-Timeline: every year",
+        "parent_collection_id": 519,
+        "collection_id": 5086,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Develop and adopt (where these do not exist) national Shark Plans and specific regulations for fisheries exploiting chondrichthyans, whether target or bycatch-Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5087,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Set up a mechanism to promote and coordinate the actions listed in paragraph 22 of the RAP1 -Timeline: 2016",
+        "parent_collection_id": 519,
+        "collection_id": 5088,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Conduct a baseline study to feed the Marine Mediterranean Invasive Species (MAMIAS )2_Timeline: 2017",
+        "parent_collection_id": 519,
+        "collection_id": 5089,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Development of programmes for data collection and monitoring Timeline: 2017",
+        "parent_collection_id": 519,
+        "collection_id": 5090,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Launch the procedures for enacting or strengthening national legislation governing the control of alien species introduction Timeline: 2017",
+        "parent_collection_id": 519,
+        "collection_id": 5091,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Develop programmes to raise the awareness of the general public and target groups, including decision- makers, concerning the risks associated with species introduction Timeline: 2017",
+        "parent_collection_id": 519,
+        "collection_id": 5092,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Protect legally all bird species listed in Annex II to the SPA/BD Protocol- Timeline: by 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5093,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Optimize synergies with international agreements and organizations dedicated to bird conservation_ Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5094,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Organize specific training courses and workshops in coordination/synergy with international and/or national NGOs_ Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5095,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establishment / support of research and monitoring programs to fill gaps in the knowledge of threatened species in partnership with other organizations –Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5096,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establishment and implementation of National Action Plans for the conservation of endangered and threatened bird species in the Mediterranean –Timeline: from 2014- 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5097,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Identification of areas of important for birds on land and at sea (mapping of breeding, feeding, molting and wintering areas)- Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5098,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Legal establishment of Protected Areas with adequate management plans at breeding sites-Timeline: by 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5099,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Ratify the ACCOBAMS Agreement and implement its Resolutions and Recommendations of relevance for the Mediterranean Sea",
+        "parent_collection_id": 519,
+        "collection_id": 5100,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Ensure that cetaceans are covered, at national level, by appropriate regulation measures providing for the elimination of deliberate killing and for the mitigation of the adverse impacts from their interactions with human activities-",
+        "parent_collection_id": 519,
+        "collection_id": 5101,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Ensure, through regulation or other appropriate approaches,  that whale-watching activity is environmentally sound and sustainably conducted",
+        "parent_collection_id": 519,
+        "collection_id": 5102,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Undertake the comprehensive survey of abundance and distribution of cetaceans being planned by ACCOBAMS (ACCOBAMS Survey initiative)-",
+        "parent_collection_id": 519,
+        "collection_id": 5103,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Assess the cetacean bycatch and depredation in their fisheries and adopt mitigation measures",
+        "parent_collection_id": 519,
+        "collection_id": 5104,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Pursue the development and the implementation of a basin-wide strategy for underwater noise monitoring in the Mediterranean under the Ecological Objective 11 of the EcAp process",
+        "parent_collection_id": 519,
+        "collection_id": 5105,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Development of acoustic mapping to build a comprehensive picture of the spatial and temporal distribution of anthropogenic noise sources, in particular for the noise hotspot areas identified in the Mediterranean by ACCOBAMS-",
+        "parent_collection_id": 519,
+        "collection_id": 5106,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Promote awareness of the anthropogenic noise impacts on cetaceans, targeting in particular decision makers, key players in the industry organisations and the stockholders in the shipping sectors.",
+        "parent_collection_id": 519,
+        "collection_id": 5107,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establish a list of marine areas under its jurisdiction identified as of special importance for cetaceans",
+        "parent_collection_id": 519,
+        "collection_id": 5108,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Take new vegetation species in Annex II to the SPA/BD Protocol into account: Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5109,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Create MPAs to conserve marine vegetation: Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5110,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Set up a programme for making national inventories on macrophyta species, with staggered planning according to the regions’ priorities. Timeline: from 2012",
+        "parent_collection_id": 519,
+        "collection_id": 5111,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Make theoretical probable distribution maps for the main plant assemblages. Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5112,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Implement targeted mapping and inventorying actions (Annex II species, priority sites). Timeline: from 2012",
+        "parent_collection_id": 519,
+        "collection_id": 5113,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establish a programme for setting up monitoring networks for the main marine plant assemblages at national and regional level. Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5114,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Set up and/or extend their networks for follow-up of plants in the Mediterranean. Timeline: from 2013",
+        "parent_collection_id": 519,
+        "collection_id": 5115,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "To develop short, medium and long term action plans according to national and regional priorities. Timeline: from 2012",
+        "parent_collection_id": 519,
+        "collection_id": 5116,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Has the Party given the monk seal protection status?",
+        "parent_collection_id": 519,
+        "collection_id": 5117,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "For fishing, does the Party explicitly ban the use of dynamite, the carrying of firearms on boats, and all fishing techniques that can endanger monk seals?",
+        "parent_collection_id": 519,
+        "collection_id": 5118,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "If the Party still has breeding monk seal populations, have measures been taken to isolate monk seals from any human activity?",
+        "parent_collection_id": 519,
+        "collection_id": 5119,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "In the Party's territory, have SPAs been created to conserve monk seal populations or their potential habitats?",
+        "parent_collection_id": 519,
+        "collection_id": 5120,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Has the Party established a list of breeding caves and other habitats that are of importance for monk seal conservation?",
+        "parent_collection_id": 519,
+        "collection_id": 5121,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Has the Party carried out programmes for data collection on the monk seal?",
+        "parent_collection_id": 519,
+        "collection_id": 5122,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Has the Party developed programmes for awareness raising, information and training concerning monk sea conservation?",
+        "parent_collection_id": 519,
+        "collection_id": 5123,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Does the Party have an action plan for the conservation of monk seal and its potential habitats?",
+        "parent_collection_id": 519,
+        "collection_id": 5124,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Protection of turtles–general species protection. Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5125,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Enforce legislation to eliminate deliberate killing. Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5126,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Habitat protection and management (nesting, mating, feeding, wintering and key migration passages). Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5127,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up and implementing management plans. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5128,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Restoration of damaged nesting habitats. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5129,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Fishing regulations (depth, season, gear) in key areas. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5130,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up and/or improving operation of Rescue Centers. Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5131,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Identification of new mating, feeding and wintering areas and key migration passages. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5132,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Elaboration and execution of cooperative research projects of regional importance aimed at assessing the interaction between turtles and fisheries. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5133,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Tagging and genetic analysis (as appropriate). Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5134,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Modification of gear, methods and strategies. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5135,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up and/or improving long-term monitoring programmes. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5136,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Setting up stranding networks. Timeline: as soon as possible",
+        "parent_collection_id": 519,
+        "collection_id": 5137,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Public awareness and Information campaigns in particular for fishermen and local populations. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5138,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Training courses. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5139,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Elaboration of National Action Plans and assessment of progress in implementation. Timeline: from 2014 to 2019",
+        "parent_collection_id": 519,
+        "collection_id": 5140,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Making a summary of knowledge of dark populations and their distribution around the Mediterranean in the form of a geo-referenced information system",
+        "parent_collection_id": 519,
+        "collection_id": 5141,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Identify and assess proven pressures on each of the various types of habitat",
+        "parent_collection_id": 519,
+        "collection_id": 5142,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Revise the reference list of types of marine habitat for the selection of sites for inclusion in the national inventories of natural sites of conservation interest, in order to take account of dark assemblages",
+        "parent_collection_id": 519,
+        "collection_id": 5143,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Revise the list of endangered or threatened species in order to take account of dark assemblages species",
+        "parent_collection_id": 519,
+        "collection_id": 5144,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Promote the identifying of areas of interest for the conservation of dark assemblages in the Mediterranean and Carry out concerted actions in national and/or cross-border sites",
+        "parent_collection_id": 519,
+        "collection_id": 5145,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Finalise the implementing of MPAs in already identified sites at national level and outside waters that lie within national jurisdiction",
+        "parent_collection_id": 519,
+        "collection_id": 5146,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Propose the creation of new MPAs",
+        "parent_collection_id": 519,
+        "collection_id": 5147,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Extent existing MPAs to integrate nearby sites that host dark assemblages",
+        "parent_collection_id": 519,
+        "collection_id": 5148,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Introduce national legislation to reduce negative impacts",
+        "parent_collection_id": 519,
+        "collection_id": 5149,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Integrate taking dark assemblages into account within impact studies procedures",
+        "parent_collection_id": 519,
+        "collection_id": 5150,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Step up awareness and information about dark assemblages with the various actors",
+        "parent_collection_id": 519,
+        "collection_id": 5151,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Implement monitoring systems",
+        "parent_collection_id": 519,
+        "collection_id": 5152,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Improve habitat modeling methods could provide new predictive models on coralligenous distribution and guide cost-effective field surveys for data acquisition. Timeline: 2017",
+        "parent_collection_id": 519,
+        "collection_id": 5153,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Promote research programs on coralligenous assemblages and maerl beds. Timeline: 2016",
+        "parent_collection_id": 519,
+        "collection_id": 5154,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Develop and implement legislation initiatives for the conservation of coralligenous assemblages. Timeline: ongoing",
+        "parent_collection_id": 519,
+        "collection_id": 5155,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Coordinate the design of an Integrated Monitoring and Assessment Program for the assessment of the state coralligenous/maërl assemblages in view to be included the assessment of the state of the Mediterranean.Timeline: 2016",
+        "parent_collection_id": 519,
+        "collection_id": 5156,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      }]
+    },
+    "measuredata_difficulty":
+    {
+      "Row": [
+      {
+        "collection_id": 5001,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5001,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5001,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5001,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5001,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5002,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5002,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5002,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5002,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5002,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5008,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5008,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5008,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5008,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5008,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5009,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5017,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5017,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5017,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5024,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5024,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5024,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5024,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5024,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5060,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5060,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5069,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5069,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5069,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5069,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5069,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5070,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5070,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5078,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5078,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5078,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5078,
+        "difficulty": 5
+      },
+      {
+        "collection_id": 5078,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5079,
+        "difficulty": 2
+      },
+      {
+        "collection_id": 5079,
+        "difficulty": 1
+      },
+      {
+        "collection_id": 5079,
+        "difficulty": 3
+      },
+      {
+        "collection_id": 5079,
+        "difficulty": 4
+      },
+      {
+        "collection_id": 5079,
+        "difficulty": 5
+      }]
+    },
+    "management_plans_imp":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "description": null,
+        "name": "ASGASG",
+        "protection_measures": 3,
+        "difficulties": [4, 1, 2, 3, 5]
+      }
+    },
+    "spa":
+    {
+      "Row":
+      {
+        "collection_id": null,
+        "parent_collection_id": null,
+        "description": null,
+        "spa_name": "asgasgsa",
+        "date": "12512-12-05",
+        "category": "sagasgag",
+        "jurisdiction": 1,
+        "coordinates": "gasgas",
+        "surface": "asgsaga",
+        "ecosystems": "gsaasgas",
+        "management": 1,
+        "dateofadoption": "0125-02-15"
+      }
+    },
+    "spamis":
+    {
+      "Row": [
+      {
+        "spami_name": "Albania AL1. Karaburun Sazan National Marine Park",
+        "parent_collection_id": 509,
+        "collection_id": 5026,
+        "date_of_establishment": "21512-12-04",
+        "surface": "fasgasg",
+        "coordinates": "gasgas",
+        "jurisdiction": [1, 2, 3],
+        "management_plan": 1,
+        "date_of_adoption": "0125-12-05",
+        "delimitation_change": "sagas",
+        "legal_status_change": "wt",
+        "changes_reasons": "t"
+      },
+      {
+        "spami_name": "Algeria DZ1.Banc des Kabyles Marine Reserve",
+        "parent_collection_id": 509,
+        "collection_id": 5027,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Algeria DZ2.Habibas Islands",
+        "parent_collection_id": 509,
+        "collection_id": 5028,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Cyprus CY1. Lara- Toxeftra Turtle Reserve",
+        "parent_collection_id": 509,
+        "collection_id": 5029,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "France FR1 Port Cross National Park",
+        "parent_collection_id": 509,
+        "collection_id": 5030,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "France FR2 Natural Reserve of Bouches of Bonifacio",
+        "parent_collection_id": 509,
+        "collection_id": 5031,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "France FR3 The Blue Coast Marine Park",
+        "parent_collection_id": 509,
+        "collection_id": 5032,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "France FR4 The Embiez Archipelago-Six Fours",
+        "parent_collection_id": 509,
+        "collection_id": 5033,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT1 Plemmirio Protected Areas",
+        "parent_collection_id": 509,
+        "collection_id": 5034,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT2 Marine Protected Area of Portofino",
+        "parent_collection_id": 509,
+        "collection_id": 5035,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT3 Miramare Marine Protected Area",
+        "parent_collection_id": 509,
+        "collection_id": 5036,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT4 Tavolara-Punta Coda Cavallo Marine Protected Area",
+        "parent_collection_id": 509,
+        "collection_id": 5037,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT5 Marine Protected Area of Torre Guaceto",
+        "parent_collection_id": 509,
+        "collection_id": 5038,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT6 Marine Protected Area Punta Campanella",
+        "parent_collection_id": 509,
+        "collection_id": 5039,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT7 Marine Protected Area of Capo Caccia-Isola Piana",
+        "parent_collection_id": 509,
+        "collection_id": 5040,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT8 Porto Cesareo Marine Protected Area",
+        "parent_collection_id": 509,
+        "collection_id": 5041,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT9 Capo Carbonara Marine Protected Area",
+        "parent_collection_id": 509,
+        "collection_id": 5042,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Italy IT10 Marine Protected Area of Penisola del Sinis",
+        "parent_collection_id": 509,
+        "collection_id": 5043,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Lebanon LB1 Palm Islands Nature Reserve",
+        "parent_collection_id": 509,
+        "collection_id": 5044,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Lebanon LB2 Tyre Coast Nature Reserve",
+        "parent_collection_id": 509,
+        "collection_id": 5045,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Morocco MA1 Al- Hoceima National Park",
+        "parent_collection_id": 509,
+        "collection_id": 5046,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES1 Maro-Cerro Gordo Cliffs",
+        "parent_collection_id": 509,
+        "collection_id": 5047,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES2 Archipielago of Cabrera National Park",
+        "parent_collection_id": 509,
+        "collection_id": 5048,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES3 Natural Park of Cabo de Gata-Nijar",
+        "parent_collection_id": 509,
+        "collection_id": 5049,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES4 Natural Park of Cap de Creus",
+        "parent_collection_id": 509,
+        "collection_id": 5050,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES5 Sea Bottom of the Levante of Almeria",
+        "parent_collection_id": 509,
+        "collection_id": 5051,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES6 Alboran Island",
+        "parent_collection_id": 509,
+        "collection_id": 5052,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES7 Columbretes Islands",
+        "parent_collection_id": 509,
+        "collection_id": 5053,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES8 Medes Islands",
+        "parent_collection_id": 509,
+        "collection_id": 5054,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Spain ES9 Mar Menor",
+        "parent_collection_id": 509,
+        "collection_id": 5055,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Tunisia TN1 La Galite Archipelago",
+        "parent_collection_id": 509,
+        "collection_id": 5056,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Tunisia TN2 Kneiss Islands",
+        "parent_collection_id": 509,
+        "collection_id": 5057,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "Tunisa TN3 Zembra and Zembretta National Park",
+        "parent_collection_id": 509,
+        "collection_id": 5058,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      },
+      {
+        "spami_name": "France, Italy and Monaco Int1 Pelagos Sanctuary for the Conservation of Marine Mammals",
+        "parent_collection_id": 509,
+        "collection_id": 5059,
+        "date_of_establishment": null,
+        "surface": null,
+        "coordinates": null,
+        "jurisdiction": null,
+        "management_plan": null,
+        "date_of_adoption": null,
+        "delimitation_change": null,
+        "legal_status_change": null,
+        "changes_reasons": null
+      }]
+    },
+    "measures_to_protect_species":
+    {
+      "Row":[
+      {
+        "collection_id": 6800,
+        "parent_collection_id": 513,
+        "comments": "fasgas",
+        "name":"posidonia_oceania",
+        "value": [1,2]
+      },
+      {
+        "collection_id": 6800,
+        "parent_collection_id": 513,
+        "comments": "123",
+        "value":[1,2,3],
+        "name": "xiphias_gladius"
+      }
+      ]
+    },
+    "enf_measures":
+    {
+      "Row": [
+      {
+        "collection_id": 5074,
+        "parent_collection_id": 517,
+        "description": null,
+        "inspections": 1,
+        "non_compliance": 2,
+        "total_amount": 3,
+        "remarks": 5,
+        "enforcement": 4
+      },
+      {
+        "collection_id": 5075,
+        "parent_collection_id": 517,
+        "description": null,
+        "inspections": 6,
+        "non_compliance": 7,
+        "total_amount": 8,
+        "remarks": 10,
+        "enforcement": 9
+      },
+      {
+        "collection_id": 5076,
+        "parent_collection_id": 517,
+        "description": null,
+        "inspections": null,
+        "non_compliance": null,
+        "total_amount": null,
+        "remarks": null,
+        "enforcement": null
+      },
+      {
+        "collection_id": 5077,
+        "parent_collection_id": 517,
+        "description": null,
+        "inspections": null,
+        "non_compliance": null,
+        "total_amount": null,
+        "remarks": null,
+        "enforcement": null
+      }]
+    }
+  }
 }

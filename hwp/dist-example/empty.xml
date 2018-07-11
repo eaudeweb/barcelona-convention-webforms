@@ -42,17 +42,7 @@
             <difficulty/>
         </Row>
     </measuredata_difficulty>
-    <hazardous_wastes_domestic_legislation>
-        <Row>
-            <collection_id/>
-            <parent_collection_id/>
-            <title/>
-            <wastedescription/>
-            <definition/>
-            <main_characteristics/>
-            <movement_procedure/>
-        </Row>
-    </hazardous_wastes_domestic_legislation>
+
     <enf_measures>
         <Row>
             <collection_id/>

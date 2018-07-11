@@ -1,0 +1,390 @@
+{
+  "BC_OP":
+  {
+    "@xmlns": "https://dd.info-rac.org/namespaces/4",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/21/schema-dst-21.xsd",
+    "country": null,
+    "contacting_party":
+    {
+      "partyname": "AL",
+      "rep_period_from": "0111-11-11",
+      "rep_period_to": "0022-02-22",
+      "institution_name": 3,
+      "officer_name": 4,
+      "mailing_address": 5,
+      "tel": 6,
+      "fax": 7,
+      "email": 8,
+      "contact_point": 9,
+      "instituion_full_name": 10,
+      "national_mailing_address": 11,
+      "national_tel": 12,
+      "national_fax": 13,
+      "national_email": 14,
+      "national_signature": 15,
+      "national_date": "0512-11-11",
+      "org_name": 16,
+      "org_contact_point": 17,
+      "org_tel": 18,
+      "org_fax": 19,
+      "org_email": 20
+    },
+    "measuresdata":
+    {
+      "Row": [
+      {
+        "description": "Exploration and  exploitation offshore activities subject to prior authorization issued by the national competent authority in accordance with Articles 5 and 6 and the criteria set forth in Annex IV",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "gassg",
+        "status": 1,
+        "status_comments": "gsagas"
+      },
+      {
+        "description": "Obligation upon operators to use the best available, environmentally effective and economically appropriate techniques in order to minimize the risk of offshore pollution",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": true,
+        "difficulties": null,
+        "difficulties_comments": "sgasgsa",
+        "status": 1,
+        "status_comments": "asfs"
+      },
+      {
+        "description": "Prohibition of disposal of harmful and noxious substances and materials listed in Annex I to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Disposal of harmful and noxious substances and materials listed in Annex II to the Protocol is subject to a prior special permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Disposal of harmful and noxious substances and materials that are not listed in Annexes I and II to the Protocol is subject to a prior general permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Use and storage of offshore chemicals is approved by the competent national authority on the basis of the Chemical Use Plan",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Disposal of oil and oily mixtures in accordance with the provisions of Annex V A to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Use and disposal of drilling fluids and cuttings in accordance with the provisions of Annex V B to the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Discharge of sewage prohibited with the exception of those cases provided for in Article 11.1 of the Protocol",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Prohibition of disposal into the Protocol area of all plastics, such as synthetic ropes , synthetic fishing nets and plastic garbage bags and all non- biodegradable garbage, including paper products, rags, galls, metal, bottles, crockery, dunnage, lining and packing materials",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Disposal of food waste to take place as far away as possible from land in accordance with international rules and standards",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Ensure that operators dispose of all waste and harmful or noxious substances and materials in designated onshore reception facilities",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Certificate of safety and fitness required to the offshore installation by the competent national authority",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Contingency Plan in accordance with Annex VII to the Protocol required to the operator by the competent national authority",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Establishment of environmental and compliance monitoring programmes and activities",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Obligation upon operators to remove disused offshore installations and pipelines in accordance with the guidelines and standards adopted by the competent international organization",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      },
+      {
+        "description": "Adoption of special measures to prevent, abate, combat and control pollution in specially protected areas arising from offshore activities in these areas",
+        "parent_collection_id": null,
+        "collection_id": null,
+        "changes": null,
+        "difficulties": null,
+        "difficulties_comments": null,
+        "status": null,
+        "status_comments": null
+      }]
+    },
+    "measuredata_difficulty":
+    {
+      "Row": [
+      {
+        "collection_id": null,
+        "difficulty": 1
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      },
+      {
+        "collection_id": null,
+        "difficulty": 2
+      },
+      {
+        "collection_id": null,
+        "difficulty": 5
+      },
+      {
+        "collection_id": null,
+        "difficulty": 3
+      },
+      {
+        "collection_id": null,
+        "difficulty": 4
+      }]
+    },
+    "permits_and_quantities":
+    {
+      "Row": [
+      {
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 9.5, Annex II",
+        "permit_type": "Special Permit",
+        "waste_cateogry": 1,
+        "permits_number_issued": 23,
+        "waste_quantity_permited": 3,
+        "waste_reporting_unit": 4,
+        "waste_quanity_actual": 5,
+        "waste_reporting_units": 6,
+        "dumping_regulated": 7,
+        "notes": 8
+      },
+      {
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 9.6",
+        "permit_type": "General Permit",
+        "waste_cateogry": 9,
+        "permits_number_issued": 10,
+        "waste_quantity_permited": 11,
+        "waste_reporting_unit": 12,
+        "waste_quanity_actual": 13,
+        "waste_reporting_units": 14,
+        "dumping_regulated": 15,
+        "notes": 16
+      },
+      {
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 14.1.a",
+        "permit_type": "Force Majeure",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "dumping_regulated": null,
+        "notes": null
+      },
+      {
+        "collection_id": 603,
+        "parent_collection_id": 6,
+        "title": "1994 Protocol Article 14.1.b",
+        "permit_type": "Minimize Pollution Permit",
+        "waste_cateogry": null,
+        "permits_number_issued": null,
+        "waste_quantity_permited": null,
+        "waste_reporting_unit": null,
+        "waste_quanity_actual": null,
+        "waste_reporting_units": null,
+        "dumping_regulated": null,
+        "notes": null
+      }]
+    },
+    "inventory_offshore_installations":
+    {
+      "Row": [
+      {
+        "collection_id": 606,
+        "parent_collection_id": 605,
+        "title": "wfasf",
+        "operator": "wfasf",
+        "production_start": "0312-11-12",
+        "current_status": 1,
+        "primary_production": 2,
+        "category": 3,
+        "weight_substructure": 4,
+        "weight_topside": 5,
+        "remarks": 6
+      },
+      {
+        "collection_id": 606,
+        "parent_collection_id": 605,
+        "title": 12512,
+        "operator": 12512,
+        "production_start": "5125-05-12",
+        "current_status": 1,
+        "primary_production": 2,
+        "category": 3,
+        "weight_substructure": 59,
+        "weight_topside": 59,
+        "remarks": 123
+      }]
+    },
+    "enf_measures":
+    {
+      "Row": [
+      {
+        "collection_id": 6018,
+        "parent_collection_id": 608,
+        "title": "Protocol obligations and national legislation and regulations implementing the Protocol - Article 3 of the Protocol",
+        "inspections": 1,
+        "non_compliance": 2,
+        "suspensions": 4,
+        "shutdowns": 5,
+        "enforcement": 6,
+        "implemented": 7,
+        "remarks": 8,
+        "total_amount": 3
+      },
+      {
+        "collection_id": 6019,
+        "parent_collection_id": 608,
+        "title": "Specific conditions attached to authorizations or permits-Article 4 and 5",
+        "inspections": 9,
+        "non_compliance": 10,
+        "suspensions": 12,
+        "shutdowns": 13,
+        "enforcement": 14,
+        "implemented": 15,
+        "remarks": 16,
+        "total_amount": 11
+      },
+      {
+        "collection_id": 6020,
+        "parent_collection_id": 608,
+        "title": "Provisions regarding to illegal disposal-Article 9",
+        "inspections": null,
+        "non_compliance": null,
+        "suspensions": null,
+        "shutdowns": null,
+        "enforcement": null,
+        "implemented": null,
+        "remarks": null,
+        "total_amount": null
+      },
+      {
+        "collection_id": 6021,
+        "parent_collection_id": 608,
+        "title": "Provisions regarding safety measures-Article",
+        "inspections": null,
+        "non_compliance": null,
+        "suspensions": null,
+        "shutdowns": null,
+        "enforcement": null,
+        "implemented": null,
+        "remarks": null,
+        "total_amount": null
+      }]
+    }
+  }
+}
