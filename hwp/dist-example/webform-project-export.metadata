@@ -54,7 +54,7 @@
     "localForm": false,
     "remoteForm": false,
     "fileType": "FILE"
-  },  
+  },
   {
     "title": "schema.xsd",
     "file":
@@ -65,9 +65,9 @@
     "localForm": false,
     "remoteForm": false,
     "fileType": "FILE"
-  },    
+  },
   {
-    "title": "Barcelona convention",
+    "title": "Hazardous Wastes Protocol",
     "file":
     {
       "name": "index.html"

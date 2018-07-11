@@ -1,6 +1,6 @@
 <template>
 	<b-container style="position: relative">
-    <center><h1 class="mb-3 mt-2">Barcelona Convention</h1></center>
+    <center><h1 class="mb-3 mt-2">Barcelona Convention Protocol</h1></center>
     <center><h5><small class="subtitle text-muted">Implementation of the Barcelona Convention for the Protection of the Marine Environment and the Coastal Region of the Mediterranean and its Protocols (Barcelona Convention)</small></h5></center>
     <b-card v-if="prefilled" no-body>
       <b-form validated novalidate @submit="onSubmit">
