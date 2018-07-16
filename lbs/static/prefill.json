@@ -777,7 +777,7 @@
         "pollutantgroup": 14,
         "reportednbb": false,
         "description": "Pollutant Group: Organohalogen compounds <small class=\"text-muted\">(Annex I to the LBS Protocol)</small>",
-        "activitysector": 14,
+        "activitysector": 1,
         "activitysubsector": 1,
         "reportedinfotypeair": "C",
         "airquantity": 12,

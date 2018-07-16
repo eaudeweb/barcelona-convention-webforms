@@ -33,8 +33,12 @@
                   <div class="mt-2">{{item.label}} <small class="muted">({{item.info}})</small></div>
                   <div class="form-fields">
                     <div v-if="item.type === 'select'">
-                      <b-form-select required v-model="item.selected" :options="item.options" class="mb-3">
+
+                      <b-form-select v-if="item.name != 'sector'" required v-model="item.selected" :options="item.options" class="mb-3">
                       </b-form-select>
+                      <b-form-select v-else required v-model="item.selected" @change="fillSubsectors(item_array, item.selected)" :options="item.options" class="mb-3">
+                      </b-form-select>
+
                     </div>
                     <div v-else-if="item.type === 'number'">
                       <b-form-input required :id="`${tabId}_${index}_${array_index}_${item.name}`" :type="`${item.type}`" :name="`${item.name}`" v-model="item.value"></b-form-input>
@@ -68,6 +72,28 @@ export default {
   },
 
   created() {
+    for (let article of this.info.data.articles) {
+      for(let article_item of article.article_items){
+        for(let item of article_item.items) {
+          if(item.name === 'sector' && item.selected != null){
+            this.fillSubsectors(article_item, item.selected)
+          }
+        }
+      }
+    }
+  },
+
+  methods: {
+    fillSubsectors(items, index) {
+      for (let item of items.items) {
+        if(item.name === 'sub_sector'){
+        console.log(item)
+        console.log(index)
+        console.log(this.info.data.sub_sectors[index])
+          item.options = this.info.data.sub_sectors[index - 1]
+        }
+      }
+    }
   },
 
   data () {
