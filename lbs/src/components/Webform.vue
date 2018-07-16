@@ -12,7 +12,7 @@
      			    <lrmeasures tabId="1" :info.sync="form.tab_1"></lrmeasures>
             </b-tab>
             <b-tab :title="doTitle(form.tab_2.label)" >
-              <lbsprotocol tabId="2" :info.sync="form.tab_2"></lbsprotocol>
+              <lbsprotocol tabId="2" :prefillData.sync="prefillInventory" :info.sync="form.tab_2"></lbsprotocol>
             </b-tab>
             <b-tab :title="doTitle(form.tab_3.label)" >
               <raps tabId="3"  :info.sync="form.tab_3"></raps>
@@ -66,7 +66,7 @@ export default {
     monitoring: Monitoring,
     enfmeasures: ENFMeasures,
   	formsubmit: FormSubmit,
-    countrytab: Countrytab
+    countrytab: Countrytab,
   },
 
   data () {
@@ -76,6 +76,7 @@ export default {
       button_text: 'Hide list',
       country: '',
       prefilled: false,
+      prefillInventory: null,
     }
   },
 
@@ -133,6 +134,7 @@ export default {
 
     if(data.BC_LBS.lbsinventorydata){
       if(data.BC_LBS.lbsinventorydata.Row && data.BC_LBS.lbsinventorydata.Row.length && data.BC_LBS.lbsinventorydata.Row.length > 1){
+      this.prefillInventory = data.BC_LBS.lbsinventorydata.Row
       let inv_reported = data.BC_LBS.lbsinventorydata.Row[0].reportednbb
       this.form.tab_2.data.question.selected = inv_reported
         for(let invdata of data.BC_LBS.lbsinventorydata.Row) {
