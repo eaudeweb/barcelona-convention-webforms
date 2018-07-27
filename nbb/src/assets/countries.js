@@ -3,6 +3,7 @@ var countries = [
     "country_id":1,
     "country_name":"Albania",
     "country_code":"ALB",
+    "country_code_iso2":"AL",
     "regions": [
       {
         "region_id":1,
@@ -70,6 +71,7 @@ var countries = [
     "country_id":2,
     "country_name":"Algeria",
     "country_code":"ALG",
+    "country_code_iso2":"DZ",
     "regions" : [
       {
         "region_id":16,
@@ -133,6 +135,7 @@ var countries = [
     "country_id":3,
     "country_name":"Bosnia Herzegovina",
     "country_code":"BOS",
+    "country_code_iso2":"BA",
     "regions" : [
       {
         "region_id":30,
@@ -156,6 +159,7 @@ var countries = [
     "country_id":4,
     "country_name":"Croatia",
     "country_code":"CRO",
+    "country_code_iso2":"HR",
     "regions" : [
       {
         "region_id":34,
@@ -191,6 +195,7 @@ var countries = [
     "country_id":5,
     "country_name":"Cyprus",
     "country_code":"CYP",
+    "country_code_iso2":"CY",
     "regions" : [
       {
         "region_id":41,
@@ -202,6 +207,7 @@ var countries = [
     "country_id":6,
     "country_name":"Egypt",
     "country_code":"EGY",
+    "country_code_iso2":"EG",
     "regions" : [
       {
         "region_id":42,
@@ -213,6 +219,7 @@ var countries = [
     "country_id":7,
     "country_name":"France",
     "country_code":"FRA",
+    "country_code_iso2":"FR",
     "regions" : [
       {
         "region_id":43,
@@ -268,6 +275,7 @@ var countries = [
     "country_id":8,
     "country_name":"Greece",
     "country_code":"GRE",
+    "country_code_iso2":"GR",
     "regions" : [
       {
         "region_id":56,
@@ -331,6 +339,7 @@ var countries = [
     "country_id":9,
     "country_name":"Israel",
     "country_code":"ISR",
+    "country_code_iso2":"IL",
     "regions" : [
       {
         "region_id":70,
@@ -342,6 +351,7 @@ var countries = [
     "country_id":10,
     "country_name":"Italy",
     "country_code":"ITA",
+    "country_code_iso2":"IT",
     "regions" : [
       {
         "region_id":71,
@@ -429,6 +439,7 @@ var countries = [
     "country_id":11,
     "country_name":"Spain",
     "country_code":"SPA",
+    "country_code_iso2":"ES",
     "regions" : [
       {
         "region_id":116,
@@ -540,6 +551,7 @@ var countries = [
     "country_id":12,
     "country_name":"Libya",
     "country_code":"LBY",
+    "country_code_iso2":"LY",
     "regions" : [
       {
         "region_id":92,
@@ -595,6 +607,7 @@ var countries = [
     "country_id":13,
     "country_name":"Syria",
     "country_code":"SYR",
+    "country_code_iso2":"SY",
     "regions" : [
       {
         "region_id":142,
@@ -610,6 +623,7 @@ var countries = [
     "country_id":14,
     "country_name":"Tunisia",
     "country_code":"TUN",
+    "country_code_iso2":"TN",
     "regions" : [
       {
         "region_id":144,
@@ -661,6 +675,7 @@ var countries = [
     "country_id":15,
     "country_name":"Turkey",
     "country_code":"TUR",
+    "country_code_iso2":"TR",
     "regions" : [
       {
         "region_id":155,
@@ -736,6 +751,7 @@ var countries = [
     "country_id":16,
     "country_name":"Malta",
     "country_code":"MAT",
+    "country_code_iso2":"MT",
     "regions" : [
       {
         "region_id":104,
@@ -747,6 +763,7 @@ var countries = [
     "country_id":17,
     "country_name":"Montenegro",
     "country_code":"MNE",
+    "country_code_iso2":"ME",
     "regions" : [
       {
         "region_id":105,
@@ -778,6 +795,7 @@ var countries = [
     "country_id":18,
     "country_name":"Slovenia",
     "country_code":"SLO",
+    "country_code_iso2":"SI",
     "regions" : [
       {
         "region_id":115,
@@ -789,6 +807,7 @@ var countries = [
     "country_id":19,
     "country_name":"Lebanon",
     "country_code":"LEB",
+    "country_code_iso2":"LB",
     "regions" : [
       {
         "region_id":91,
@@ -800,6 +819,7 @@ var countries = [
     "country_id":20,
     "country_name":"Morocco",
     "country_code":"MOR",
+    "country_code_iso2":"MC",
     "regions" : [
       {
         "region_id":111,
@@ -819,6 +839,7 @@ var countries = [
     "country_id":21,
     "country_name":"Palestine",
     "country_code":"PSE",
+    "country_code_iso2":"PS",
     "regions" : [
       {
         "region_id":114,
@@ -827,6 +848,5 @@ var countries = [
     ]
   }
 ]
-
 
 export default countries
