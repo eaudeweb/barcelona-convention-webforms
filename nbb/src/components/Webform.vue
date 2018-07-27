@@ -6,20 +6,23 @@
         <b-form validated novalidate @submit="onSubmit">
           <b-card header="Report details">
             <b-col v-for="table in form.country.tables" lg="6">
-              <div v-if="table.name ==='partyname'">
                 <label>{{table.label}}</label>
+              <div v-if="table.name ==='partyname'">
                 <b-input required :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
               </div>
               <div v-else-if="table.name === 'region'">
-                <b-form-select v-model="selectedRegion" :options="regionOptions"></b-form-select>
+                <b-form-select v-model="selectedRegion" @change="getSelectedRegionName($event)" :options="regionOptions">
+                  <template slot="first">
+                    <option :value="null" disabled>-- Please select a region --</option>
+                  </template>
+                </b-form-select>
               </div>
               <div v-else>
-                <label>{{table.label}}</label>
                 <b-input required :id="table.name" :type="table.type" v-model="table.selected"></b-input>
               </div>
             </b-col>
             <b-col>
-              <baselines :info.sync="form.content"></baselines>
+              <baselines v-if="selectedRegion" :regionName="selectedRegionName" :region="selectedRegion" :country="country" :info.sync="form.content"></baselines>
             </b-col>
           </b-card>
         </b-form>
@@ -60,6 +63,7 @@ export default {
       countryData: null,
       regionOptions: [],
       selectedRegion: null,
+      selectedRegionName: null,
       prefilled: false,
     }
   },
@@ -81,15 +85,37 @@ export default {
 
 
     prefill(data){
+      for(let value of this.form.country.tables) {
+            value.selected = data.NBB_Report.contacting_party[value.name]
+            if(value.name === 'partyname') {
+              value.selected = this.country;
+            }
+      }
+
+
+
+
 
       this.prefilled = true;
 
 
     },
 
+
+    getSelectedRegionName(region) {
+
+      for(let option of this.regionOptions) {
+        if(option.value === region) {
+          this.selectedRegionName = option.text
+        }
+      }
+
+      console.log(this.selectedRegionName)
+    },
+
     getRegionOptions(countries, current_country) {
       for(let country of countries) {
-        if(country.country_code === current_country) {
+        if(country.country_code_iso2 === current_country) {
           this.countryData = country
         }
       }
