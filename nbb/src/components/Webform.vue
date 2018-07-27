@@ -5,25 +5,25 @@
       <b-card v-if="prefilled" no-body>
         <b-form validated novalidate @submit="onSubmit">
           <b-card header="Report details">
-            <b-col style="text-align: right; font-weight: bold;" lg="6">
-              <label style="cursor: pointer;" for="country.name">
-                {{table.label}}
-              </label>
-            </b-col>
-            <b-col lg="6">
+            <b-col v-for="table in form.country.tables" lg="6">
               <div v-if="table.name ==='partyname'">
+                <label>{{table.label}}</label>
                 <b-input required :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
               </div>
+              <div v-else-if="table.name === 'region'">
+                <b-form-select v-model="selectedRegion" :options="regionOptions"></b-form-select>
+              </div>
               <div v-else>
+                <label>{{table.label}}</label>
                 <b-input required :id="table.name" :type="table.type" v-model="table.selected"></b-input>
               </div>
             </b-col>
             <b-col>
-              <lrmeasures :info.sync="form.content"></lrmeasures>
+              <baselines :info.sync="form.content"></baselines>
             </b-col>
           </b-card>
         </b-form>
-   			<formsubmit :country.sync="country" :info.sync="form"></formsubmit>
+   			<!-- <formsubmit :country.sync="country" :info.sync="form"></formsubmit> -->
 
       </b-card>
       <div v-if="!prefilled" class="spinner">
@@ -37,8 +37,8 @@
 
 import {getInstance, getCountry} from '../api.js';
 
-import LRMeasures from './LRMeasures.vue'
-
+import Baselines from './Baselines.vue'
+import countries from '../assets/countries.js'
 
 import FormSubmit from './FormSubmit.vue'
 import form from '../assets/form.js'
@@ -57,6 +57,9 @@ export default {
       form: {},
       button_text: 'Hide list',
       country: '',
+      countryData: null,
+      regionOptions: [],
+      selectedRegion: null,
       prefilled: false,
     }
   },
@@ -69,9 +72,9 @@ export default {
       getCountry().then((response) => {
           this.country = response.data
           this.prefill(instance_data)
+          this.getRegionOptions(countries, response.data);
         })
     })
-
   },
 
   methods: {
@@ -79,465 +82,24 @@ export default {
 
     prefill(data){
 
-      let agreements = [];
-
-      for(let table in this.form.country.tables) {
-          for (let value of this.form.country.tables[table]) {
-            value.selected = data.BC_PEP.contacting_party[value.name]
-            if(value.name === 'partyname') {
-              value.selected = this.country;
-            }
-          }
-      }
-
-     if(data.BC_PEP.measuresdata.Row.length) {
-            for(let agreement of data.BC_PEP.measuresdata.Row) {
-              // console.log(agreement.collection_id)
-                let collection_id = agreement.collection_id
-                let parent_collection_id = agreement.parent_collection_id
-                for (let tab in this.form){
-                  // console.log(tab)
-                  if(tab != 'tab_3' && tab != 'country') {
-                    for(let article of this.form[tab].data.articles){
-                      for(let article_item of article.article_items){
-                        if(article_item.collection_id === collection_id) {
-                          for(let item of article_item.items) {
-                            if(item.type === 'changes') {
-                              item.selected = agreement.changes
-                            } else if (item.type === 'status') {
-                              item.selected = agreement.status
-                              item.comments = agreement.status_comments
-                            } else if (item.type === 'special') {
-                              console.log(agreement)
-                              item.selected = agreement.contingency_plan
-                            } else {
-                              item.comments = agreement.difficulties_comments;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-            }
-
-          }
-
-          // TODO: National contingency plans
-
-      if (data.BC_PEP.measuredata_difficulty) {
-          if (data.BC_PEP.measuredata_difficulty.Row.length) {
-            for (let agreement of data.BC_PEP.measuredata_difficulty.Row) {
-              let collection_id = agreement.collection_id
-              let difficulty = agreement.difficulty
-              for (let tab in this.form) {
-                if (tab != 'tab_3' && tab != 'country') {
-                  for (let article of this.form[tab].data.articles) {
-                    for (let article_item of article.article_items) {
-                      if (article_item.collection_id === collection_id) {
-                        for (let item of article_item.items) {
-                          if (item.type === 'difficulties') {
-                            item.selected.push(difficulty)
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          else {
-            let agreement = data.BC_PEP.measuredata_difficulty.Row
-            let collection_id = agreement.collection_id
-            let difficulty = agreement.difficulty
-            for (let tab in this.form) {
-              if (tab != 'tab_3' && tab != 'country') {
-                for (let article of this.form[tab].data.articles) {
-                  for (let article_item of article.article_items) {
-                    if (article_item.collection_id === collection_id) {
-                      for (let item of article_item.items) {
-                        if (item.type === 'difficulties') {
-                          item.selected.push(difficulty)
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-      var question = data.BC_PEP.pollincidentsInfo
-      this.form.tab_3.data.question.selected = question;
-
-          if(data.BC_PEP.pollincidents) {
-            if(data.BC_PEP.pollincidents.Row) {
-              if(data.BC_PEP.pollincidents.Row.length) {
-                for(let incident of data.BC_PEP.pollincidents.Row) {
-
-                  // console.log(incident)
-                    // let collection_id = agreement.collection_id
-                    // let difficulty = agreement.difficulty
-
-
-                    var incidentJson = {
-                            article_title: {
-                              label: "Ship name or IMO number",
-                              value: 'Ship name or IMO number',
-                              name: 'name',
-                              type: 'text'
-                            },
-                            article_items: [{
-                                type: 'text',
-                                name: 'latitude',
-                                label: 'Latitude: decimal (36.406944) or DMS (36°24\'25”N)',
-                                selected: '',
-                              },
-                              {
-                                type: 'text',
-                                name: 'longitude',
-                                label: 'Longitude: decimal (4.646111) or DMS(4°38\'46”)',
-                                selected: '',
-                              },
-                              {
-                                type: 'text',
-                                name: 'geo_info',
-                                label: 'Alternative geographical information',
-                                selected: '',
-                                placeholder: 'e.g. closest shore location'
-                              },
-                              {
-                                type: 'text',
-                                name: 'country',
-                                label: 'Country',
-                                selected: '',
-                              },
-                              {
-                                type: 'select',
-                                label: 'Accident Type',
-                                name: 'accident',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'Blow-out', value: 1 },
-                                  { text: 'cargo transfer failure', value: 2 },
-                                  { text: 'contact', value: 3 },
-                                  { text: 'collision', value: 4 },
-                                  { text: 'engine or machine breakdown', value: 5 },
-                                  { text: 'fire or explosion', value: 6 },
-                                  { text: 'grounding', value: 7 },
-                                  { text: 'foundering', value: 8 },
-                                  { text: 'hull structural failure', value: 9 },
-                                  { text: 'installation structural failure', value: 10 },
-                                  { text: 'oil and gas leak', value: 11 },
-                                  { text: 'other', value: 12 }
-                                ]
-                              },
-                              {
-                                type: 'date',
-                                name: 'date',
-                                label: 'Date',
-                                selected: '',
-                              },
-                              {
-                                label: 'Pollution',
-                                type: 'radio',
-                                name: 'pollution',
-                                selected: null,
-                                options: [
-                                  { text: 'Yes', value: true },
-                                  { text: 'No', value: false }
-                                ]
-                              },
-                              {
-                                label: 'Pollution type',
-                                type: 'radio',
-                                name: 'pollution_type',
-                                selected: null,
-                                options: [
-                                  { text: 'MARPOL Annex I', value: 1 },
-                                  { text: 'MARPOL Annex II ', value: 2 },
-                                  { text: 'MARPOL Annex III ', value: 3 }
-
-                                ]
-                              },
-                              {
-                                type: 'select',
-                                label: 'Ship Category',
-                                name: 'ship_category',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'passenger ship', value: 1 },
-                                  { text: 'fishing vessel', value: 2 },
-                                  { text: 'bulk carrier', value: 3 },
-                                  { text: 'oil tanker', value: 4 },
-                                  { text: 'general cargo ship', value: 5 },
-                                  { text: 'ro-ro cargo ship', value: 6 },
-                                  { text: 'container', value: 7 },
-                                  { text: 'chemical tanker', value: 8 },
-                                  { text: 'other', value: 9 }
-                                ]
-                              },
-                              {
-                                type: 'text',
-                                name: 'ship_flag',
-                                label: 'Ship flag',
-                                selected: '',
-                              },
-                              {
-                                type: 'text',
-                                name: 'offshore_name_id',
-                                label: 'Offshore installation name or ID number',
-                                selected: '',
-                              },
-                              {
-                                type: 'select',
-                                label: 'Offshore installation type',
-                                name: 'installation_type',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'floating concrete', value: 1 },
-                                  { text: 'gravity-based concrete', value: 2 },
-                                  { text: 'floating steel', value: 3 },
-                                  { text: 'fixed steel', value: 4 },
-                                  { text: 'subsea steel ', value: 5 },
-                                  { text: 'other', value: 6 }
-                                ]
-                              },
-                              {
-                                type: 'text',
-                                name: 'oil_name_id',
-                                label: 'Oil handling facility name or ID number',
-                                selected: '',
-                              },
-                              {
-                                type: 'select',
-                                label: 'Oil handling facility type',
-                                name: 'oil_type',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'Oil terminal', value: 1 },
-                                  { text: 'port', value: 2 },
-                                  { text: 'power station refinery', value: 3 }
-                                ]
-                              },
-                              {
-                                label: 'Have any actions been taken?',
-                                type: 'radio',
-                                name: 'actions',
-                                selected: null,
-                                options: [
-                                  { text: 'Yes', value: true },
-                                  { text: 'No', value: false }
-                                ]
-                              },
-
-                              {
-                                type: 'textarea',
-                                name: 'actions_taken',
-                                label: 'If yes, specify the actions taken',
-                                selected: ''
-                              }
-
-                            ]
-                          }
-
-                    let incidentobj = incidentJson
-
-
-                    incidentobj.article_title.value = incident.ship_name;
-                  for(let article of incidentobj.article_items){
-                      article.selected = incident[article.name]
-                      console.log(article.name)
-                      console.log(incident[article.name])
-                  }
-                  this.form.tab_3.data.articles.push(incidentobj)
-              }
-          } else  {
-                    let incident = data.BC_PEP.pollincidents.Row;
-
-
-                                 var incidentJson = {
-                            article_title: {
-                              label: "Ship name or IMO number",
-                              value: 'Ship name or IMO number',
-                              name: 'name',
-                              type: 'text'
-                            },
-                            article_items: [{
-                                type: 'text',
-                                name: 'latitude',
-                                label: 'Latitude: decimal (36.406944) or DMS (36°24\'25”N)',
-                                selected: '',
-                              },
-                              {
-                                type: 'text',
-                                name: 'longitude',
-                                label: 'Longitude: decimal (4.646111) or DMS(4°38\'46”)',
-                                selected: '',
-                              },
-                              {
-                                type: 'text',
-                                name: 'geo_info',
-                                label: 'Alternative geographical information',
-                                selected: '',
-                                placeholder: 'e.g. closest shore location'
-                              },
-                              {
-                                type: 'text',
-                                name: 'country',
-                                label: 'Country',
-                                selected: '',
-                              },
-                              {
-                                type: 'select',
-                                label: 'Accident Type',
-                                name: 'accident',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'Blow-out', value: 1 },
-                                  { text: 'cargo transfer failure', value: 2 },
-                                  { text: 'contact', value: 3 },
-                                  { text: 'collision', value: 4 },
-                                  { text: 'engine or machine breakdown', value: 5 },
-                                  { text: 'fire or explosion', value: 6 },
-                                  { text: 'grounding', value: 7 },
-                                  { text: 'foundering', value: 8 },
-                                  { text: 'hull structural failure', value: 9 },
-                                  { text: 'installation structural failure', value: 10 },
-                                  { text: 'oil and gas leak', value: 11 },
-                                  { text: 'other', value: 12 }
-                                ]
-                              },
-                              {
-                                type: 'date',
-                                name: 'date',
-                                label: 'Date',
-                                selected: '',
-                              },
-                              {
-                                label: 'Pollution',
-                                type: 'radio',
-                                name: 'pollution',
-                                selected: null,
-                                options: [
-                                  { text: 'Yes', value: true },
-                                  { text: 'No', value: false }
-                                ]
-                              },
-                              {
-                                label: 'Pollution type',
-                                type: 'radio',
-                                name: 'pollution_type',
-                                selected: null,
-                                options: [
-                                  { text: 'MARPOL Annex I', value: 1 },
-                                  { text: 'MARPOL Annex II ', value: 2 },
-                                  { text: 'MARPOL Annex III ', value: 3 }
-
-                                ]
-                              },
-                              {
-                                type: 'select',
-                                label: 'Ship Category',
-                                name: 'ship_category',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'passenger ship', value: 1 },
-                                  { text: 'fishing vessel', value: 2 },
-                                  { text: 'bulk carrier', value: 3 },
-                                  { text: 'oil tanker', value: 4 },
-                                  { text: 'general cargo ship', value: 5 },
-                                  { text: 'ro-ro cargo ship', value: 6 },
-                                  { text: 'container', value: 7 },
-                                  { text: 'chemical tanker', value: 8 },
-                                  { text: 'other', value: 9 }
-                                ]
-                              },
-                              {
-                                type: 'text',
-                                name: 'ship_flag',
-                                label: 'Ship flag',
-                                selected: '',
-                              },
-                              {
-                                type: 'text',
-                                name: 'offshore_name_id',
-                                label: 'Offshore installation name or ID number',
-                                selected: '',
-                              },
-                              {
-                                type: 'select',
-                                label: 'Offshore installation type',
-                                name: 'installation_type',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'floating concrete', value: 1 },
-                                  { text: 'gravity-based concrete', value: 2 },
-                                  { text: 'floating steel', value: 3 },
-                                  { text: 'fixed steel', value: 4 },
-                                  { text: 'subsea steel ', value: 5 },
-                                  { text: 'other', value: 6 }
-                                ]
-                              },
-                              {
-                                type: 'text',
-                                name: 'oil_name_id',
-                                label: 'Oil handling facility name or ID number',
-                                selected: '',
-                              },
-                              {
-                                type: 'select',
-                                label: 'Oil handling facility type',
-                                name: 'oil_type',
-                                selected: null,
-                                options: [
-                                  { text: 'Please select one item', value: null },
-                                  { text: 'Oil terminal', value: 1 },
-                                  { text: 'port', value: 2 },
-                                  { text: 'power station refinery', value: 3 }
-                                ]
-                              },
-                              {
-                                label: 'Have any actions been taken?',
-                                type: 'radio',
-                                name: 'actions',
-                                selected: null,
-                                options: [
-                                  { text: 'Yes', value: true },
-                                  { text: 'No', value: false }
-                                ]
-                              },
-
-                              {
-                                type: 'textarea',
-                                name: 'actions_taken',
-                                label: 'If yes, specify the actions taken',
-                                selected: ''
-                              }
-
-                            ]
-                          }
-                    let incidentobj = incidentJson
-                    incidentobj.article_title.value = incident.ship_name;
-                  for(let article of incidentobj.article_items){
-                      article.selected = incident[article.name]
-                  }
-                  this.form.tab_3.data.articles.push(incidentobj)
-          }
-        }
-      }
       this.prefilled = true;
 
 
+    },
+
+    getRegionOptions(countries, current_country) {
+      for(let country of countries) {
+        if(country.country_code === current_country) {
+          this.countryData = country
+        }
+      }
+      this.makeRegionOptions(this.countryData)
+    },
+
+    makeRegionOptions(country) {
+      for(let region of country.regions) {
+        this.regionOptions.push({text: region.region_name, value: region.region_id})
+      }
     },
 
     doTitle(title) {

@@ -1,6 +1,6 @@
 <template>
   <div v-if="info">
-  <div class="question-wrapper">
+<!--   <div class="question-wrapper">
         <h3>{{info.label}}</h3>
 
         <div class="question">
@@ -60,7 +60,7 @@
             </b-card>
           </div>
         </div>
-      </div>
+      </div> -->
   </div>
 </template>
 
