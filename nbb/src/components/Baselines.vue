@@ -97,12 +97,9 @@ export default {
   },
 
 
-
   created() {
     this.makeFormData()
   },
-
-
 
   methods: {
     makeFormData() {
@@ -202,7 +199,7 @@ export default {
         this.current_selections.subsector = selected
 
       if(item.name === 'process' || item.name === 'sector' || item.name === 'subsector') {
-        
+
         for(let defaultValue of defaultValues) {
 
           if(defaultValue.pollutant_pollutant_id === this.current_selections.pollutant && defaultValue.process_process_id === this.current_selections.process && defaultValue.sector_sector_id === this.current_selections.sector && defaultValue.subsector_subsector_id === this.current_selections.subsector) {

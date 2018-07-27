@@ -45,7 +45,7 @@ export default {
       dataset: null,
       validation: [],
       jsonemptyinstance: {
-          "BC_PEP": {
+          "NBB_Report": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
               "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
@@ -54,31 +54,7 @@ export default {
                 "partyname":null,
                 "rep_period_from":null,
                 "rep_period_to":null,
-                "institution_name":null,
-                "officer_name":null,
-                "mailing_address":null,
-                "tel":null,
-                "fax":null,
-                "email":null,
-                "contact_point":null,
-                "instituion_full_name":null,
-                "national_mailing_address":null,
-                "national_tel":null,
-                "national_fax":null,
-                "national_email":null,
-                "national_signature":null,
-                "national_date":null,
-                "org_name":null,
-                "org_contact_point":null,
-                "org_tel":null,
-                "org_fax":null,
-                "org_email":null,
-
               },
-              "measuresdata": {Row:[]},
-              "measuredata_difficulty": {Row:[]},
-              "pollincidents": {Row:[]},
-              "pollincidentsInfo": null,
           }
       },
       dismissSecs: 2,
@@ -103,203 +79,23 @@ export default {
 
     doStuff(){
 
-      this.jsonemptyinstance = {
-          "BC_PEP": {
-              "@xmlns": "https://dd.info-rac.org/namespaces/4",
-              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
-              "country": null,
-              "contacting_party":{
-                "partyname":null,
-                "rep_period_from":null,
-                "rep_period_to":null,
-                "institution_name":null,
-                "officer_name":null,
-                "mailing_address":null,
-                "tel":null,
-                "fax":null,
-                "email":null,
-                "contact_point":null,
-                "instituion_full_name":null,
-                "national_mailing_address":null,
-                "national_tel":null,
-                "national_fax":null,
-                "national_email":null,
-                "national_signature":null,
-                "national_date":null,
-                "org_name":null,
-                "org_contact_point":null,
-                "org_tel":null,
-                "org_fax":null,
-                "org_email":null,
-              },
-              "measuresdata": {Row:[]},
-              "measuredata_difficulty": {Row:[]},
-              "pollincidents": {Row:[]},
-              "pollincidentsInfo": null,
-          }
-      }
-
+ 
+        
     let country_tab = this.dataset.country.tables
 
       for(let table in country_tab) {
           for (let value of country_tab[table]) {
-            this.jsonemptyinstance.BC_PEP.contacting_party[value.name] = value.selected
+            this.jsonemptyinstance.NBB_Report.contacting_party[value.name] = value.selected
           }
       }
-
-
-      let tab_1 = this.dataset.tab_1.data;
-      for (let article of tab_1.articles) {
-        for (let article_item of article.article_items){
-          let collection_id = article_item.collection_id || null;
-          let parent_collection_id = article_item.parent_collection_id || null
-          let description = article_item.description
-          let row =  {
-                      "description": description,
-                      "parent_collection_id": parent_collection_id,
-                      "collection_id": collection_id,
-                      "changes": null,
-                      "difficulties": null,
-                      "difficulties_comments": null,
-                      "status":null,
-                      "status_comments": null,
-                  }
-            for(let item of article_item.items) {
-              if(item.type ==='changes') {
-                row.changes = item.selected
-              } else if (item.type === 'status') {
-                row.status = item.selected;
-                row.status_comments = item.comments
-              } else {
-                // row.difficulties = item.selected
-                row.difficulties_comments = item.comments
-                if(item.selected.length){
-                  for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_PEP.measuredata_difficulty.Row.push(
-                          {
-                                    "collection_id": collection_id || null,
-                                    "difficulty": difficulty
-                                }
-                        )
-                  }
-                }
-
-              }
-            }
-          this.jsonemptyinstance.BC_PEP.measuresdata.Row.push(row)
-        }
-      }
-
-
-
-      let tab_2 = this.dataset.tab_2.data;
-      for (let article of tab_2.articles) {
-        for (let article_item of article.article_items){
-          let collection_id = article_item.collection_id || null;
-          let parent_collection_id = article_item.parent_collection_id || null
-          let description = article_item.description
-          let row =  {
-                      "description": description,
-                      "parent_collection_id": parent_collection_id,
-                      "collection_id": collection_id,
-                      "changes": null,
-                      "difficulties": null,
-                      "difficulties_comments": null,
-                      "status":null,
-                      "status_comments": null,
-                      "contingency_plan":null,
-                  }
-            for(let item of article_item.items) {
-              if(item.type ==='changes') {
-                row.changes = item.selected
-              } else if (item.type === 'status') {
-                row.status = item.selected;
-                row.status_comments = item.comments
-              } else if (item.type === 'special') {
-                row.contingency_plan = item.selected
-              } else {
-                // row.difficulties = item.selected
-                row.difficulties_comments = item.comments
-                if(item.selected.length){
-                  for(let difficulty of item.selected) {
-                      this.jsonemptyinstance.BC_PEP.measuredata_difficulty.Row.push(
-                          {
-                                    "collection_id": collection_id || null,
-                                    "difficulty": difficulty
-                                }
-                        )
-                  }
-                }
-
-              }
-            }
-          this.jsonemptyinstance.BC_PEP.measuresdata.Row.push(row)
-        }
-      }
-
-      console.log(this.jsonemptyinstance.BC_PEP.measuresdata)
-
-
-      let showtab3 = this.dataset.tab_3.data.question.selected;
-
-      this.jsonemptyinstance.BC_PEP.pollincidentsInfo = showtab3
-
-      let tab_3 = this.dataset.tab_3.data;
-      for (let article of tab_3.articles) {
-        let collection_id = article.collection_id || null;
-        let parent_collection_id = article.parent_collection_id || null
-        let description = article.description || null
-        let ship_name = article.article_title.value || null
-        let row = {
-          collection_id : collection_id,
-          parent_collection_id: parent_collection_id,
-          description: description,
-          ship_name: ship_name,
-          latitude: null,
-          longitude: null,
-          geo_info: null,
-          country: null,
-          accident: null,
-          date: null,
-          pollution: null,
-          pollution_type: null,
-          ship_category: null,
-          ship_flag: null,
-          offshore_name_id: null,
-          installation_type: null,
-          oil_name_id: null,
-          oil_type: null,
-          actions: null,
-          actions_taken: null
-        }
-        for (let article_item of article.article_items){
-          // let row = {};
-          // console.log(article_item)
-          row[article_item.name] = article_item.selected
-
-        }
-
-        this.jsonemptyinstance.BC_PEP.pollincidents.Row.push(row);
-
-      }
-      
-
-      this.jsonemptyinstance.BC_PEP.country = this.country
-
-
-      console.log(this.jsonemptyinstance)
 
        saveInstance(this.jsonemptyinstance)
       this.showAlert();
 
 
-
     },
 
-    validate() {
-    }
-  },
+    },
     watch: {
     info: {
       handler: function(old_val,new_val) {
