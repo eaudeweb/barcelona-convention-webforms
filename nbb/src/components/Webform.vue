@@ -26,7 +26,7 @@
             </b-col>
           </b-card>
         </b-form>
-   			<!-- <formsubmit :country.sync="country" :info.sync="form"></formsubmit> -->
+   			<formsubmit :region="selectedRegion" :country.sync="country" :info.sync="form"></formsubmit>
 
       </b-card>
       <div v-if="!prefilled" class="spinner">
@@ -52,6 +52,7 @@ export default {
   name: 'Webform',
   components: {
     baselines: Baselines,
+    formsubmit: FormSubmit
   },
 
   data () {

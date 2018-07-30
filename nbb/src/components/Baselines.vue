@@ -1,11 +1,5 @@
 <template>
-  <div v-if="info && country && region && regionName">
-
- <!--    {{info}}
-
-    {{country}}
-    {{region}} -->
-
+  <div v-if="info && country && region && regionName && region">
 
   <div class="question-wrapper">
         <h3>{{info.label}} {{regionName}} </h3>
@@ -22,9 +16,9 @@
 
             <div role="tablist">
 
-              <b-card style="background: #eee" v-for="(pollutant,index) in info.data.table.pollutants" :key="index" class="mb-1">
+              <b-card v-if="pollutant.region === region" style="background: #eee" v-for="(pollutant,index) in info.data.table.pollutants" :key="index" class="mb-1">
                 <h5 style="cursor: pointer" href="#" v-b-toggle="`pollutant_table_${index}`" variant="info">
-                   {{pollutant.pollutant_title.label}} : {{getPollutantTitle(pollutant.pollutant_title.selected)}}
+                   {{pollutant.pollutant_title.label}} : {{getPollutantTitle(pollutant.pollutant_title.selected)}} 
                   <span style="float:right">▼</span>
                 </h5>
               <br>
@@ -98,6 +92,11 @@ export default {
 
 
   created() {
+
+    if(this.info.data.table.pollutants.length === 0) {
+      this.addPollutant()
+    }
+
     this.makeFormData()
   },
 
@@ -241,6 +240,7 @@ export default {
 
     addPollutant() {
       const pollutant = {
+          region: this.region,
           pollutant_title: {
             name: 'pollutant',
             type: 'select',
