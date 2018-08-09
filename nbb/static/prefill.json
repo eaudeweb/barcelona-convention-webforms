@@ -1,14 +1,96 @@
 {
-  "NBB_Report": {
-    "@xmlns": "https://dd.info-rac.org/schemas/nbb-dataflow/",
+  "NBB_Report":
+  {
+    "@xmlns": "https://dd.info-rac.org/namespaces/4",
     "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "@xsi:schemaLocation": "https://dd.info-rac.org/schemas/nbb-dataflow/ https://dd.info-rac.org/schemas/nbb-dataflow/nbb-dataflow-2018.xsd",
+    "@xsi:schemaLocation": "https://dd.info-rac.org/schemas/nbb-dataflow https://dd.info-rac.org/schemas/nbb-dataflow/nbb-dataflow-2018.xsd",
     "country": null,
-    "contacting_party": {
+    "contacting_party":
+    {
       "partyname": "AL",
-      "rep_period_from": "0011-11-11",
-      "rep_period_to": "0222-11-12"
-    }
+      "rep_period_from": "2018-01-01",
+      "rep_period_to": "2019-05-05"
+    },
+    "region": [
+    {
+      "region_id": null,
+      "record":
+      {
+        "pollutant_id": null,
+        "budget_year": null,
+        "sector_id": null,
+        "subsector_id": null,
+        "process_id": null,
+        "facility": null,
+        "from_prtr": null,
+        "estimated_on_id": null,
+        "emission_factor_value": null,
+        "emission_factor_unit_id": null,
+        "production_value": null,
+        "production_unit_id": null,
+        "total_release_value": null,
+        "total_release_unit_id": null
+      }
+    },
+    {
+      "region_id": 1,
+      "record":
+      {
+        "pollutant_id": 2,
+        "budget_year": 2005,
+        "sector_id": 18,
+        "subsector_id": 51,
+        "process_id": null,
+        "facility": null,
+        "from_prtr": true,
+        "estimated_on_id": 3,
+        "emission_factor_value": 252,
+        "emission_factor_unit_id": 2,
+        "production_value": 215125,
+        "production_unit_id": null,
+        "total_release_value": 512512,
+        "total_release_unit_id": null
+      }
+    },
+    {
+      "region_id": 1,
+      "record":
+      {
+        "pollutant_id": 160,
+        "budget_year": 2005,
+        "sector_id": 1,
+        "subsector_id": 27,
+        "process_id": 82,
+        "facility": null,
+        "from_prtr": true,
+        "estimated_on_id": 2,
+        "emission_factor_value": 4324,
+        "emission_factor_unit_id": 1,
+        "production_value": 432423,
+        "production_unit_id": null,
+        "total_release_value": 241241,
+        "total_release_unit_id": null
+      }
+    },
+    {
+      "region_id": 2,
+      "record":
+      {
+        "pollutant_id": 131,
+        "budget_year": 2009,
+        "sector_id": 18,
+        "subsector_id": 49,
+        "process_id": 84,
+        "facility": null,
+        "from_prtr": true,
+        "estimated_on_id": 3,
+        "emission_factor_value": 4124,
+        "emission_factor_unit_id": 2,
+        "production_value": 51251,
+        "production_unit_id": null,
+        "total_release_value": 512512,
+        "total_release_unit_id": null
+      }
+    }]
   }
-
 }

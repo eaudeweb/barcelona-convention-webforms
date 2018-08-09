@@ -47,7 +47,7 @@ export default {
           "NBB_Report": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/schemas/nbb-dataflow https://dd.info-rac.org/schemas/nbb-dataflow/nbb-dataflow-2018.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -103,7 +103,7 @@ export default {
           "NBB_Report": {
               "@xmlns": "https://dd.info-rac.org/namespaces/4",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/schemas/nbb-dataflow https://dd.info-rac.org/schemas/nbb-dataflow/nbb-dataflow-2018.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -143,7 +143,7 @@ export default {
                   }                  
             }
             for(let pollutant of pollutants.pollutant_items) {
-              pollutantSubmitItem.record[pollutant.name] = pollutant.selected
+              pollutantSubmitItem.record[this.getBaselineName(pollutant.name)] = pollutant.selected
             }
             this.jsonemptyinstance.NBB_Report.region.push(pollutantSubmitItem)
         }

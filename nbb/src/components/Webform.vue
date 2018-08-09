@@ -93,6 +93,267 @@ export default {
             }
       }
 
+      if(data.NBB_Report.region.length) {
+
+
+        for(let prefillData of data.NBB_Report.region) {
+          const pollutant = {
+            region: prefillData.region_id,
+            pollutant_title: {
+              name: 'pollutant',
+              type: 'select',
+              label: 'Pollutant',
+              selected: prefillData.record.pollutant_id,
+              options: [],
+              required: true,
+            },
+            pollutant_items: [{
+                label: 'Year',
+                type: 'select',
+                name: 'year',
+                selected: '',
+                options: [],
+                required: true,
+
+              }, {
+                label: 'Sector',
+                type: 'select',
+                name: 'sector',
+                selected: '',
+                options: [],
+                required: true,
+
+              }, {
+                label: 'Subsector',
+                type: 'select',
+                name: 'subsector',
+                selected: '',
+                options: [],
+                required: true,
+
+              }, {
+                label: 'Process',
+                type: 'select',
+                name: 'process',
+                selected: '',
+                options: [],
+              }, {
+                label: 'Facility',
+                type: 'select',
+                name: 'facility',
+                selected: '',
+                options: [],
+              }, {
+                label: 'From PRTR',
+                type: 'checkbox',
+                name: 'from_prtr',
+                selected: false,
+                options: [{ value: false, text: '' }, { value: true, text: '' }]
+              },
+              {
+                label: 'Estimated based on',
+                type: 'select',
+                name: 'estimated',
+                selected: '',
+                options: [],
+                required: true,
+
+              },
+              {
+                label: 'Emission factor',
+                type: 'number',
+                name: 'emission_factor',
+                validation: 'double',
+                selected: '',
+                required: true,
+              },
+              {
+                label: 'Emission factor unit',
+                type: 'select',
+                name: 'emission_factor_unit',
+                selected: '',
+                options: [],
+              },
+              {
+                label: 'Production',
+                type: 'number',
+                name: 'production',
+                validation: 'double',
+                selected: '',
+                required: true,
+              },
+              {
+                label: 'Production unit',
+                type: 'select',
+                name: 'production_unit',
+                selected: '',
+                options: [],
+                required: true,
+              },
+              {
+                label: 'Total releases',
+                type: 'number',
+                name: 'total_releases',
+                validation: 'double',
+                selected: '',
+                disabled: true,
+              },
+              {
+                label: 'Total releases unit',
+                type: 'select',
+                name: 'total_releases_unit',
+                selected: '',
+                options: [],
+                disabled: true,
+              },
+            ]
+          }
+
+
+
+          for(let entry of pollutant.pollutant_items) {
+              // let entryField = pollutant[entry]
+            for(let prefillField in prefillData.record) {
+              let selected = prefillData.record[prefillField]
+              // console.log(this.getBaselineReverse(prefillField))
+              if(entry.name === this.getBaselineReverse(prefillField)) {
+                entry.selected = selected
+              }
+            }
+          }
+          this.form.content.data.table.pollutants.push(pollutant)
+        } 
+      } else {
+
+
+        let prefillData = data.NBB_Report.region
+          const pollutant = {
+            region: prefillData.region_id,
+            pollutant_title: {
+              name: 'pollutant',
+              type: 'select',
+              label: 'Pollutant',
+              selected: prefillData.record.pollutant_id,
+              options: [],
+              required: true,
+            },
+            pollutant_items: [{
+                label: 'Year',
+                type: 'select',
+                name: 'year',
+                selected: '',
+                options: [],
+                required: true,
+
+              }, {
+                label: 'Sector',
+                type: 'select',
+                name: 'sector',
+                selected: '',
+                options: [],
+                required: true,
+
+              }, {
+                label: 'Subsector',
+                type: 'select',
+                name: 'subsector',
+                selected: '',
+                options: [],
+                required: true,
+
+              }, {
+                label: 'Process',
+                type: 'select',
+                name: 'process',
+                selected: '',
+                options: [],
+              }, {
+                label: 'Facility',
+                type: 'select',
+                name: 'facility',
+                selected: '',
+                options: [],
+              }, {
+                label: 'From PRTR',
+                type: 'checkbox',
+                name: 'from_prtr',
+                selected: false,
+                options: [{ value: false, text: '' }, { value: true, text: '' }]
+              },
+              {
+                label: 'Estimated based on',
+                type: 'select',
+                name: 'estimated',
+                selected: '',
+                options: [],
+                required: true,
+
+              },
+              {
+                label: 'Emission factor',
+                type: 'number',
+                name: 'emission_factor',
+                validation: 'double',
+                selected: '',
+                required: true,
+              },
+              {
+                label: 'Emission factor unit',
+                type: 'select',
+                name: 'emission_factor_unit',
+                selected: '',
+                options: [],
+              },
+              {
+                label: 'Production',
+                type: 'number',
+                name: 'production',
+                validation: 'double',
+                selected: '',
+                required: true,
+              },
+              {
+                label: 'Production unit',
+                type: 'select',
+                name: 'production_unit',
+                selected: '',
+                options: [],
+                required: true,
+              },
+              {
+                label: 'Total releases',
+                type: 'number',
+                name: 'total_releases',
+                validation: 'double',
+                selected: '',
+                disabled: true,
+              },
+              {
+                label: 'Total releases unit',
+                type: 'select',
+                name: 'total_releases_unit',
+                selected: '',
+                options: [],
+                disabled: true,
+              },
+            ]
+          }
+
+
+
+          for(let entry of pollutant.pollutant_items) {
+              // let entryField = pollutant[entry]
+            for(let prefillField in prefillData.record) {
+              let selected = prefillData.record[prefillField]
+              // console.log(this.getBaselineReverse(prefillField))
+              if(entry.name === this.getBaselineReverse(prefillField)) {
+                entry.selected = selected
+              }
+            }
+          }
+          this.form.content.data.table.pollutants.push(pollutant)
+
+      }
 
 
 
@@ -101,6 +362,55 @@ export default {
 
 
     },
+
+
+
+      getBaselineReverse(name) {
+        switch (name) {
+          case 'budget_year':
+            return 'year'
+            break;
+          case 'sector_id':
+            return 'sector'
+            break;
+          case 'subsector_id':
+            return 'subsector'
+            break;
+          case 'process_id':
+            return 'process'
+            break;
+          case 'facility':
+            return 'facility'
+            break;
+          case 'from_prtr':
+            return 'from_prtr'
+            break;
+          case 'estimated_on_id':
+            return 'estimated'
+            break;
+          case 'emission_factor_value':
+            return 'emission_factor'
+            break;
+          case 'emission_factor_unit_id':
+            return 'emission_factor_unit'
+            break;
+          case 'production_value':
+            return 'production'
+            break;
+          case 'production_unit_id':
+            return 'production_unit'
+            break;
+          case 'total_release_value':
+            return 'total_releases'
+            break;
+          case 'total_release_unit_id':
+            return 'total_releases_unit'
+            break;
+          default:
+            return ''
+            break;
+        }
+      },
 
 
     getSelectedRegionName(region) {

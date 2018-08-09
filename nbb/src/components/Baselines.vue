@@ -92,12 +92,17 @@ export default {
 
 
   created() {
-
     if(this.info.data.table.pollutants.length === 0) {
       this.addPollutant()
     }
-
     this.makeFormData()
+
+    for(let field of this.info.data.table.pollutants) {
+      for(let item of field.pollutant_items) {
+        this.makeOtherFields(item.selected, item, field.pollutant_items)
+      }
+    }
+
   },
 
   methods: {
@@ -140,6 +145,7 @@ export default {
 
 
     makeOtherFields(selected, item, parent){
+      console.log(parent)
       if(item.name === 'sector') {
         for (let sector of sectorsJson) {
           if(sector.sector_id === selected) {
