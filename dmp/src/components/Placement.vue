@@ -10,7 +10,7 @@
 
         <div class="answer">
           <div class="table-head">
-            
+
             <b>{{info.data.table_label}}</b>
 
           </div>
@@ -20,7 +20,7 @@
             <h5 :id="`titleSlugify(${article.article_title.label}_${index})`" style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
             {{article.article_title.label}} : {{article.article_title.selected}} <span style="float:right">▼</span>
             </h5>
-            <b-btn variant="danger" @click="removeDump(index)"> X</b-btn> 
+            <b-btn variant="danger" @click="removeDump(index)"> X</b-btn>
 
             <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
@@ -30,7 +30,7 @@
               <div class="form-fields mb-3" v-for="(item, array_index) in article.article_items">
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
-                
+
                   <b-form-input v-if="item.type != 'textarea'" required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                   <textarea v-else v-model="item.selected" class="form-control"></textarea>
 
@@ -38,11 +38,11 @@
             </b-collapse>
             </b-card>
 
-            <b-btn style="    
+            <b-btn style="
                   position: absolute;
                   top: -3rem;
-                  right: 13px;" 
-                  variant="primary" @click="addDump"> + Add</b-btn> 
+                  right: 13px;"
+                  variant="primary" @click="addDump"> + Add</b-btn>
           </div>
         </div>
 
@@ -119,15 +119,15 @@ export default {
             name: 'permitting_authority_name',
             selected: '',
             info: 'Name of the authority; legislation name and number as official gazette'
-          }, 
+          },
           {
-            label: 'Plans for Monitoring activities are in place (3) (YES/NO)',
+            label: 'Plans for Monitoring activities are in place (YES/NO)',
             type: 'text',
             name: 'plans_for_monitoring',
             selected: '',
             info: 'Explain the monitoring and modalities including a plan for pre-placement and post- placement monitoring and evaluation.',
             additional_info: 'Pre-placement monitoring plans should set a reference baseline. Post-Placement monitoring plans should aim to produce scientific evidence to impact hypothesis',
-          }, 
+          },
           {
             label: 'Notes',
             type: 'textarea',
