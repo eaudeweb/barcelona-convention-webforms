@@ -22,13 +22,13 @@ var form = {
         {
           name: 'institution_name',
           type: 'text',
-          label: 'Name of the institution/s responsible for the LBS Protocol',
+          label: 'Name of the institution/s responsible for the Hazardous Wastes Protocol',
           selected: '',
         },
         {
           name: 'officer_name',
           type: 'text',
-          label: 'Name of the officer who is the focal point for the LBS Protocol',
+          label: 'Name of the officer who is the focal point for the Hazardous Wastes Protocol',
           selected: '',
         },
         {
@@ -966,58 +966,28 @@ var form = {
         collection_id: 705,
         parent_collection_id: 703,
         articles: [{
-            article_title: 'Total amount of hazardous wastes under Article 3.1.a (Annex IA: Y1- Y45) generated',
+            article_title: 'Total amount of hazardous wastes under Article 3.1.a (Annex IA: Y1 - Y45) generated',
             collection_id: 7018,
             parent_collection_id: 705,
             article_items: [{
-              label: '1995',
+              label: '2014',
               type: 'text',
-              name: '1995',
+              name: '2014',
               selected: '',
             }, {
-              label: '1996',
+              label: '2015',
               type: 'text',
-              name: '1996',
+              name: '2015',
               selected: '',
             }, {
-              label: '1997',
+              label: '2016',
               type: 'text',
-              name: '1997',
+              name: '2016',
               selected: '',
             }, {
-              label: '1998',
+              label: '2017',
               type: 'text',
-              name: '1998',
-              selected: '',
-            }, {
-              label: '1999',
-              type: 'text',
-              name: '1999',
-              selected: '',
-            }, {
-              label: '2000',
-              type: 'text',
-              name: '2000',
-              selected: '',
-            }, {
-              label: '2001',
-              type: 'text',
-              name: '2001',
-              selected: '',
-            }, {
-              label: '2002',
-              type: 'text',
-              name: '2002',
-              selected: '',
-            }, {
-              label: '2003',
-              type: 'text',
-              name: '2003',
-              selected: '',
-            }, {
-              label: '2004',
-              type: 'text',
-              name: '2004',
+              name: '2017',
               selected: '',
             }]
           },
@@ -1026,54 +996,24 @@ var form = {
             collection_id: 7019,
             parent_collection_id: 705,
             article_items: [{
-              label: '1995',
+              label: '2014',
               type: 'text',
-              name: '1995',
+              name: '2014',
               selected: '',
             }, {
-              label: '1996',
+              label: '2015',
               type: 'text',
-              name: '1996',
+              name: '2015',
               selected: '',
             }, {
-              label: '1997',
+              label: '2016',
               type: 'text',
-              name: '1997`',
+              name: '2016',
               selected: '',
             }, {
-              label: '1998',
+              label: '2017',
               type: 'text',
-              name: '1998',
-              selected: '',
-            }, {
-              label: '1999',
-              type: 'text',
-              name: '1999',
-              selected: '',
-            }, {
-              label: '2000',
-              type: 'text',
-              name: '2000',
-              selected: '',
-            }, {
-              label: '2001',
-              type: 'text',
-              name: '2001',
-              selected: '',
-            }, {
-              label: '2002',
-              type: 'text',
-              name: '2002',
-              selected: '',
-            }, {
-              label: '2003',
-              type: 'text',
-              name: '2003',
-              selected: '',
-            }, {
-              label: '2004',
-              type: 'text',
-              name: '2004',
+              name: '2017',
               selected: '',
             }]
           },
@@ -1082,54 +1022,24 @@ var form = {
             collection_id: 7020,
             parent_collection_id: 705,
             article_items: [{
-              label: '1995',
+              label: '2014',
               type: 'text',
-              name: '1995',
+              name: '2014',
               selected: '',
             }, {
-              label: '1996',
+              label: '2015',
               type: 'text',
-              name: '1996',
+              name: '2015',
               selected: '',
             }, {
-              label: '1997',
+              label: '2016',
               type: 'text',
-              name: '1997`',
+              name: '2016',
               selected: '',
             }, {
-              label: '1998',
+              label: '2017',
               type: 'text',
-              name: '1998',
-              selected: '',
-            }, {
-              label: '1999',
-              type: 'text',
-              name: '1999',
-              selected: '',
-            }, {
-              label: '2000',
-              type: 'text',
-              name: '2000',
-              selected: '',
-            }, {
-              label: '2001',
-              type: 'text',
-              name: '2001',
-              selected: '',
-            }, {
-              label: '2002',
-              type: 'text',
-              name: '2002',
-              selected: '',
-            }, {
-              label: '2003',
-              type: 'text',
-              name: '2003',
-              selected: '',
-            }, {
-              label: '2004',
-              type: 'text',
-              name: '2004',
+              name: '2017',
               selected: '',
             }]
           }
@@ -1152,29 +1062,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1189,29 +1094,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1226,29 +1126,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1263,29 +1158,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1300,29 +1190,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1337,29 +1222,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1374,29 +1254,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1411,29 +1286,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1448,29 +1318,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1485,29 +1350,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1522,29 +1382,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1559,29 +1414,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1596,29 +1446,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1633,29 +1478,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1670,29 +1510,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1707,29 +1542,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1744,29 +1574,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1781,29 +1606,24 @@ var form = {
             label: 'Waste streams (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1818,29 +1638,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1855,29 +1670,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1892,29 +1702,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1929,29 +1734,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -1966,29 +1766,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2003,29 +1798,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2040,29 +1830,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2077,29 +1862,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2114,29 +1894,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2151,29 +1926,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2188,29 +1958,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2225,29 +1990,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2262,29 +2022,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2299,29 +2054,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2336,29 +2086,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2373,29 +2118,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2410,29 +2150,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2447,29 +2182,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2484,29 +2214,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2521,29 +2246,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2558,29 +2278,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2595,29 +2310,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2632,29 +2342,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2669,29 +2374,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2706,29 +2406,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2743,29 +2438,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2780,29 +2470,24 @@ var form = {
             label: 'Wastes having as constituents (Annex I to the Protocol) ',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2817,29 +2502,24 @@ var form = {
             label: 'Household wastes (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, {
@@ -2854,29 +2534,24 @@ var form = {
             label: 'Household wastes (Annex I to the Protocol)',
           },
           article_items: [{
-            label: '2002',
+            label: '2014',
             type: 'text',
-            name: '2002',
+            name: '2014',
             selected: '',
           }, {
-            label: '2003',
+            label: '2015',
             type: 'text',
-            name: '2003',
+            name: '2015',
             selected: '',
           }, {
-            label: '2005',
+            label: '2016',
             type: 'text',
-            name: '2005',
+            name: '2016',
             selected: '',
           }, {
-            label: '2006',
+            label: '2017',
             type: 'text',
-            name: '2006',
-            selected: '',
-          }, {
-            label: '2007',
-            type: 'text',
-            name: '2007',
+            name: '2017',
             selected: '',
           }]
         }, ]
