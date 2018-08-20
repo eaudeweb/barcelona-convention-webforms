@@ -23,13 +23,13 @@ var form = {
         {
           name: 'institution_name',
           type: 'text',
-          label: 'Name of the institution/s responsible for the LBS Protocol',
+          label: 'Name of the institution/s responsible for the Prevention and Emergency Protocol',
           selected: '',
         },
         {
           name: 'officer_name',
           type: 'text',
-          label: 'Name of the officer who is the focal point for the LBS Protocol',
+          label: 'Name of the officer who is the focal point for the Prevention and Emergency Protocol',
           selected: '',
         },
         {
