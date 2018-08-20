@@ -22,13 +22,13 @@ var form = {
         {
           name: 'institution_name',
           type: 'text',
-          label: 'Name of the institution/s responsible for the LBS Protocol',
+          label: 'Name of the institution/s responsible for the Barcelona Convention',
           selected: '',
         },
         {
           name: 'officer_name',
           type: 'text',
-          label: 'Name of the officer who is the focal point for the LBS Protocol',
+          label: 'Name of the officer who is the focal point for the Barcelona Convention',
           selected: '',
         },
         {
@@ -96,7 +96,7 @@ var form = {
         {
           name: 'national_signature',
           type: 'text',
-          label: 'Signature of the Protocol’s Focal Point',
+          label: 'Signature of the Convention’s Focal Point',
           selected: '',
         },
         {
@@ -141,7 +141,7 @@ var form = {
       ]
     }
   },
-  
+
   tab_1: {
     label: 'Part I: Bilateral and multilateral agreements',
     collection_id: 101,
@@ -151,7 +151,7 @@ var form = {
       collection_id: 102,
       parent_collection_id: 101,
       question: {
-        label: 'Question 1: If during the period under review, the Party has signed, as per Article 3 para. 2 of the Convention, any bilateral and/or multilateral agreement(s), including, sub-regional and/or regional agreement(s) with another Party or with other States, falling under the scope of application of the Convention and its Protocols, please complete Table I below',
+        label: 'Question 1: If during the period under review, the Party has signed, as per Article 3 para. 2 of the Convention, any bilateral and/or multilateral agreement(s), including, sub-regional and/or regional agreement(s) with another Party or with other States, falling under the scope of application of the Convention and its Protocols, please complete Table I below. <br> Agreement name: List of individual agreements are not needed. Agreements can be listed at a suitable level of aggregation to avoid unnecessary level of detail. Suitable aggregations could be, for instance: agreements dealing with maritime safety, prevention of pollution from ships, combating pollution, liability and compensation for pollution damage, biological diversity or contaminants.',
         label_name: 'Agreement <span title="List of individual agreements are not needed. Agreements can be listed at a suitable level of aggregation to avoid unnecessary level of detail. Suitable aggregations could be, for instance: agreements dealing with maritime safety, prevention of, pollution from ships, combating pollution, liability and compensation for pollution damage, biological diversity or contaminants." class="label">name</span>',
         label_url: 'Indicate website/URL link/other reference',
         agreements: []
