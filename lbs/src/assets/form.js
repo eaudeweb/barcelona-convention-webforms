@@ -152,7 +152,7 @@ var form = {
     collection_id: 401,
     parent_collection_id: 4,
     data: {
-      question: 'Question 1: If during the period under review, the Party has signed, as per Article 3 para. 2 of the Convention, any bilateral and/or multilateral agreement(s), including, sub-regional and/or regional agreement(s) with another Party or with other States, falling under the scope of application of the Convention and its Protocols, please complete Table I below.',
+      question: 'Question 1: Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Land Based Sources and Activities Protocol (LBS Protocol) as listed in Table I below?',
       table_label: 'Table I: Legal and Regulatory Measures',
       collection_id: 402,
       parent_collection_id: 401,
@@ -2255,7 +2255,7 @@ var form = {
       collection_id: 406,
       parent_collection_id: 405,
       articles: [{
-        article_title: 'Regional Action Plans on POPs * (COP IG Decisions 19/8, 19/9, 20/8.3.1-4)',
+        article_title: 'Regional Action Plans on POPs (COP IG Decisions 19/8, 19/9, 20/8.3.1-4)',
         article_items: [{
           description: 'Prohibit and/or take legal and administrative measures necessary to eliminate the production and use, import and export of POPs and their wastes (Provision that follows Article 3 of the Stockholm Convention)',
           collection_id: 4010,
