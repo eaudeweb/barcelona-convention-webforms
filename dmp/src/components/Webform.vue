@@ -499,74 +499,68 @@ export default {
             selected: '',
             info: 'Geodetic Datum defines the size and shape of the earth and the origin and orientation of the coordinate systems used to map the earth'
           }, {
-            label: '4.3 Shape of Dump Site',
-            type: 'text',
-            name: 'dump_site_shape',
-            selected: '',
-            info: 'Select from: point, line, circle, segment of a circle, or polygon (Geodetic datum for coordinates to be included in the online version)',
-          }, {
-            label: '4.4 Radius of Circle',
+            label: '4.3 Radius of Circle',
             type: 'text',
             name: 'radius_of_circle',
             selected: '',
             info: 'Nautical miles (2 significant figures)',
           }, {
-            label: '4.5.1 Coordinate A - Latitude',
+            label: '4.4.1 Coordinate A - Latitude',
             type: 'text',
             name: 'coord_a_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
           }, {
-            label: '4.5.2 Coordinate A - Longitude',
+            label: '4.4.2 Coordinate A - Longitude',
             type: 'text',
             name: 'coord_a_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds'
           }, 
           {
-            label: '4.6.1 Coordinate B - Latitude',
+            label: '4.5.1 Coordinate B - Latitude',
             type: 'text',
             name: 'coord_b_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
           },
           {
-            label: '4.6.2 Coordinate B -Longitude',
+            label: '4.5.2 Coordinate B -Longitude',
             type: 'text',
             name: 'coord_b_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or  East/West degrees, minutes, seconds',
           }, 
           {
-            label: '4.7.1 Coordinate C - Latitude',
+            label: '4.6.1 Coordinate C - Latitude',
             type: 'text',
             name: 'coord_c_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
           }, 
           {
-            label: '4.7.2 Coordinate C - Longitude',
+            label: '4.6.2 Coordinate C - Longitude',
             type: 'text',
             name: 'coord_c_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds',
           }, 
           {
-            label: '4.8.1 Coordinate D - Latitude',
+            label: '4.7.1 Coordinate D - Latitude',
             type: 'text',
             name: 'coord_d_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
           }, 
           {
-            label: '4.8.2 Coordinate D - Longitude',
+            label: '4.7.2 Coordinate D - Longitude',
             type: 'text',
             name: 'coord_d_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or    East/West degrees, minutes, seconds',
           }, 
           {
-            label: '4.9 Notes',
+            label: '4.8 Notes',
             type: 'textarea',
             name: 'notes',
             selected: '',
@@ -731,8 +725,8 @@ export default {
             {text: 'chemical', value: 3},
             {text: 'physical', value: 4},
             {text: 'other', value: 5}
-
             ],
+            comments: inventory.field_monitoring_survey_type_comments,
           }, {
             label: '5.3.3 If Field Monitoring was Conducted, has an Adverse Impact(s) been found beyond that predicted?',
             type: 'radio',
@@ -824,8 +818,8 @@ export default {
             {text: 'chemical', value: 3},
             {text: 'physical', value: 4},
             {text: 'other', value: 5}
-
             ],
+            comments: inventory.field_monitoring_survey_type_comments,
           }, {
             label: '5.3.3 If Field Monitoring was Conducted, has an Adverse Impact(s) been found beyond that predicted?',
             type: 'radio',
@@ -916,13 +910,7 @@ export default {
             name: 'material_characteristics_and_quantity',
             selected: '',
             info: 'Detailed explanation of the composition of the material and their quantity (in tons)',
-          }, {
-            label: 'Is Impact Hypothesis conducted and when by who (yes/no; date; name)',
-            type: 'text',
-            name: 'impact_hypothesis_status',
-            selected: '',
-            info: '',
-          }, {
+          },  {
             label: 'The name of the permitting authority and the name of national legislation',
             type: 'text',
             name: 'permitting_authority_name',
@@ -983,12 +971,6 @@ export default {
             selected: '',
             info: 'Detailed explanation of the composition of the material and their quantity (in tons)',
           }, {
-            label: 'Is Impact Hypothesis conducted and when by who (yes/no; date; name)',
-            type: 'text',
-            name: 'impact_hypothesis_status',
-            selected: '',
-            info: '',
-          }, {
             label: 'The name of the permitting authority and the name of national legislation',
             type: 'text',
             name: 'permitting_authority_name',
@@ -996,7 +978,7 @@ export default {
             info: 'Name of the authority; legislation name and number as official gazette'
           }, 
           {
-            label: 'Plans for Monitoring activities are in place (3) (YES/NO)',
+            label: 'Plans for Monitoring activities are in place (YES/NO)',
             type: 'text',
             name: 'plans_for_monitoring',
             selected: '',

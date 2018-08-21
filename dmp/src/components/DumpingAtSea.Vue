@@ -11,7 +11,7 @@
             
             <b>{{info.data.table_1.table_label}}</b>
             <hr>
-            <p>{{info.data.table_1.table_note}}</p>
+            <p v-html="info.data.table_1.table_note"></p>
 
 
           </div>

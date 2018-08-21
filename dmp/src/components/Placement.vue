@@ -108,12 +108,6 @@ export default {
             selected: '',
             info: 'Detailed explanation of the composition of the material and their quantity (in tons)',
           }, {
-            label: 'Is Impact Hypothesis conducted and when by who (yes/no; date; name)',
-            type: 'text',
-            name: 'impact_hypothesis_status',
-            selected: '',
-            info: '',
-          }, {
             label: 'The name of the permitting authority and the name of national legislation',
             type: 'text',
             name: 'permitting_authority_name',

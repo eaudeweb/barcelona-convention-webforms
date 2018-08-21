@@ -134,8 +134,8 @@ export default {
             {text: 'chemical', value: 3},
             {text: 'physical', value: 4},
             {text: 'other', value: 5}
-
             ],
+            comments: '',
           }, {
             label: '5.3.3 If Field Monitoring was Conducted, has an Adverse Impact(s) been found beyond that predicted?',
             type: 'radio',

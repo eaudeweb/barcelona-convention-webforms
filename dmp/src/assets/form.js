@@ -155,6 +155,7 @@ var form = {
         article_title: 'Article 4.1',
         article_items: [{
           description: 'Prohibition of dumping of wastes and other matter with the exception of those listed in Article4.2',
+          additional_description: "Wastes or other matter listed in Article 4.2. are: “(a) dredged material; (b) fish waste or organic materials resulting from the processing of fish and other marine organisms; (c) vessels, until 31 December 2000; (d) platforms and other ma-made structures at sea, provided that material capable of creating floating debris or otherwise contributing to pollution of the marine environment has been removed to the maximum extent, without prejudice to the provisions of the Protocol concerning Pollution Resulting from Exploration and Exploitation of the  Continental Shelf, the Seabed and its Subsoil; and (e) inert uncontaminated geological materials the chemical constituents of which are unlikely to be released into the marine environment”.",
           collection_id: 2001,
           parent_collection_id: 202,
           items: [{
@@ -203,6 +204,7 @@ var form = {
         article_title: 'Article 5, Article 6, Article 10.1',
         article_items: [{
           description: 'Dumping of wastes and other matter listed in Article 4.2 is subject to a prior special permit from the designated competent national authority or authorities in conformity with the criteria set forth in the Annex to the Protocol and the related Guidelines adopted by the Meetings of the Contracting Parties',
+          additional_description: "The Annex to the Protocol lists the factors to be considered in establishing criteria governing the issue of permits for the dumping of matter at sea taking into account Article 6. These are: “A. Characteristics and Composition of the Matter, B. Characteristics of Dumping Site and Method of Deposit and C. General Considerations and Conditions”. <br> Guidelines adopted by the Meeting of the Contracting Parties refer to the wastes or other matter listed in Article 4.2 of the Dumping Protocol.",
           collection_id: 2002,
           parent_collection_id: 202,
           items: [{
@@ -347,6 +349,7 @@ var form = {
         article_title: 'Article 8',
         article_items: [{
           description: 'Force majeure dumping at sea is conducted under the conditions set out in Article 8 and reported to UNEP/MAP Secretariat immediately',
+          additional_description: "The Article 8 conditions refer to force majeure due to stress of weather or any other cause when human life or the safety of a ship or aircraft is threatened.",
           collection_id: 2005,
           parent_collection_id: 202,
           items: [{
@@ -395,6 +398,7 @@ var form = {
         article_title: 'Article 9',
         article_items: [{
           description: 'Critical dumping at sea is conducted under the conditions set out in Article 9 and UNEP/MAP Secretariat consulted immediately',
+          additional_description: "The Article 9 conditions refer to a critical situation of an exceptional nature where wastes or other matter not listed in Article 4.2 cannot be disposed of on land without unacceptable danger or damage, above all for the safety of human life.",
           collection_id: 2006,
           parent_collection_id: 202,
           items: [{
@@ -695,7 +699,7 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: '',
                   info: 'Specify waste category',
                   selected: '',
                 },
@@ -774,7 +778,7 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: '',
                   info: 'Specify waste category',
                   selected: '',
                 },
@@ -853,7 +857,7 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: '',
                   info: 'Specify waste category',
                   selected: '',
                 },
@@ -932,7 +936,7 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: '',
                   selected: 'Dredged Material',
                   info: '',
                 },
@@ -1011,9 +1015,9 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: 'Fish Waste or Organic Materials Resulting from the Processing of Fish and other Marine Organisms',
                   selected: '',
-                  info: 'Fish Waste or Organic Materials Resulting from the Processing of Fish and other Marine Organisms',
+                  info: '',
                 },
                 {
                   type: 'text',
@@ -1090,9 +1094,9 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: 'Platforms or other Man-Made Structures at Sea',
                   selected: '',
-                  info: 'Platforms or Other Man Made Structures at Sea',
+                  info: '',
                 },
                 {
                   type: 'text',
@@ -1169,9 +1173,9 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: 'Inert Uncontaminated Geological Material',
                   selected: '',
-                  info: 'Inert Uncontaminated Geological Material',
+                  info: '',
                 },
                 {
                   type: 'text',
@@ -1248,7 +1252,7 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: '',
                   selected: '',
                   info: 'Specify waste category',
                 },
@@ -1327,7 +1331,7 @@ var form = {
                   type: 'text',
                   label: '2.3 Waste Category',
                   name: 'waste_cateogry',
-                  description: 'Waste Category as defined in Annex II to the 1976 Protocol',
+                  description: '',
                   selected: '',
                   info: 'Specify waste category',
                 },
