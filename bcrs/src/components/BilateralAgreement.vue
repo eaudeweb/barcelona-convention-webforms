@@ -4,8 +4,7 @@
       <div class="question-wrapper">
         <h3>{{info.label}}</h3>
         <div class="question">
-          <p>
-            {{info.data.question.label}}
+          <p v-html="info.data.question.label">
           </p>
         </div>
         <div class="answer">
