@@ -126,7 +126,9 @@ export default {
                  if (article_item.collection_id === collection_id) {
                    for (let item of article_item.items) {
                      if (item.type === 'changes') {
+                      if(agreement.changes != null) {
                        item.selected = agreement.changes
+                      }
                      }
                      else if (item.type === 'status') {
                        item.selected = agreement.status
