@@ -4220,7 +4220,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4267,7 +4267,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4317,7 +4317,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4367,7 +4367,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4414,7 +4414,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4461,7 +4461,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4520,7 +4520,7 @@ var form = {
               type: 'status',
               label: 'Status of implementation',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: 1 },
                 { text: 'No', value: 2 },
@@ -4555,7 +4555,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4618,7 +4618,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4668,7 +4668,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4718,7 +4718,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
@@ -4768,7 +4768,7 @@ var form = {
               type: 'changes',
               label: 'Changes in the information provided in the previous report',
               info: 'Please tick the box that applies',
-              selected: null,
+              selected: false,
               options: [
                 { text: 'Yes', value: true },
                 { text: 'No', value: false }
