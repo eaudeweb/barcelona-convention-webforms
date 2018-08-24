@@ -35,16 +35,18 @@
                   <b-form-input required v-if="item.type != 'textarea' && item.type != 'file'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
 
                   <div v-else-if="item.type === 'file'">
-                    
-
                     <b-input-group>
+                      <b-input-group-prepend>
+                        <b-badge class="upload-badge" variant="success" v-show="item.selected && fileIsUploading === false && doneUpload">✓ Uploaded</b-badge>
+                        <b-badge class="upload-badge" variant="info" v-show="fileIsUploading === true && doneUpload === false">Uploading</b-badge>
+                     </b-input-group-prepend>
                       <b-form-file v-model="file" :state="Boolean(file)" placeholder="Upload a map..."></b-form-file>
                       <b-input-group-append>
                         <b-btn @click="uploadFormFile(file,item)" variant="primary">Upload</b-btn>
                       </b-input-group-append>
                     </b-input-group>
 
-                    <p>File uploaded: <a :href="item.selected">{{item.selected}}</a></p>
+                    <p>File uploaded: <a :href="item.selected" blank="_true">{{item.selected}}</a></p>
 
                   </div>
 
@@ -143,7 +145,7 @@ export default {
     return {
       file: null,
       fileIsUploading: false,
-      filesList: [],
+      doneUpload: false,
     }
   },
 
@@ -166,23 +168,16 @@ export default {
       file.append('userfile', userfile)
 
       uploadFile(file).then((response) => {
-        this.filesList = [];
+        this.doneUpload = false;
         getSupportingFiles().then((response) => {
-          let files = []
-          for(let file of response.data) {
-            this.pushUnique(files, envelope + '/' + file)
-          }
-          this.filesList =  files
           this.file = null;
-          formfield.selected = envelope + '/' + userfile.name  
+          formfield.selected = envelope + '/' + userfile.name
+          this.fileIsUploading = false
+          this.doneUpload = true  
         })
       }).catch((error) => {
         console.log(error)
       })
-
-
-      console.log(formfield)
-
     },
 
 

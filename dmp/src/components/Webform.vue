@@ -374,7 +374,7 @@ export default {
           },
           article_items: [{
             label: '3.2 Map of Dumping Site',
-            type: 'text',
+            type: 'file',
             name: 'dumping_map',
             selected: '',
             info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MA Secretariat'
@@ -430,7 +430,7 @@ export default {
           },
           article_items: [{
             label: '3.2 Map of Dumping Site',
-            type: 'text',
+            type: 'file',
             name: 'dumping_map',
             selected: '',
             info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MA Secretariat'
