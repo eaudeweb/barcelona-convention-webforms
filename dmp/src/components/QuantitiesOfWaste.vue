@@ -32,7 +32,22 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
 
-                  <b-form-input required v-if="item.type != 'textarea'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <b-form-input required v-if="item.type != 'textarea' && item.type != 'file'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+
+                  <div v-else-if="item.type === 'file'">
+                    
+
+                    <b-input-group>
+                      <b-form-file v-model="file" :state="Boolean(file)" placeholder="Upload a map..."></b-form-file>
+                      <b-input-group-append>
+                        <b-btn @click="uploadFormFile(file,item)" variant="primary">Upload</b-btn>
+                      </b-input-group-append>
+                    </b-input-group>
+
+                    <p>File uploaded: <a :href="item.selected">{{item.selected}}</a></p>
+
+                  </div>
+
 
                   <textarea v-else class="form-control" v-model="item.selected"></textarea>
                   
@@ -103,7 +118,7 @@
 <script>
 
 import {slugify} from '../utils.js';
-
+import {uploadFile, getSupportingFiles, envelope} from '../api.js';
 
 export default {
 
@@ -124,11 +139,58 @@ export default {
     }
   },
 
+  data () {
+    return {
+      file: null,
+      fileIsUploading: false,
+      filesList: [],
+    }
+  },
+
 
   methods :{
 
     titleSlugify(text) {
       return slugify(text)
+    },
+
+    uploadFormFile(userfile, formfield){
+
+      console.log(userfile)
+      console.log(formfield)      
+
+      this.fileIsUploading = true;
+
+      let file = new FormData()
+
+      file.append('userfile', userfile)
+
+      uploadFile(file).then((response) => {
+        this.filesList = [];
+        getSupportingFiles().then((response) => {
+          let files = []
+          for(let file of response.data) {
+            this.pushUnique(files, envelope + '/' + file)
+          }
+          this.filesList =  files
+          this.file = null;
+          formfield.selected = envelope + '/' + userfile.name  
+        })
+      }).catch((error) => {
+        console.log(error)
+      })
+
+
+      console.log(formfield)
+
+    },
+
+
+
+    pushUnique(array, item) {
+      if (array.indexOf(item) === -1) {
+        array.push(item);
+      }
     },
 
 
@@ -143,7 +205,7 @@ export default {
           },
           article_items: [{
             label: '3.2 Map of Dumping Site',
-            type: 'text',
+            type: 'file',
             name: 'dumping_map',
             selected: '',
             info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MA Secretariat'
@@ -280,10 +342,6 @@ export default {
     },
   },
 
-  data () {
-    return {
-    }
-  },
 }
 </script>
 
