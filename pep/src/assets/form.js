@@ -10,14 +10,14 @@ var form = {
         },
         {
           name: 'rep_period_from',
-          type: 'date',
-          label: 'Reporting period from D/M/Y',
+          type: 'number',
+          label: 'Reporting period from (year)',
           selected: '',
         },
         {
           name: 'rep_period_to',
-          type: 'date',
-          label: 'Reporting period to D/M/Y',
+          type: 'number',
+          label: 'Reporting period to (year)',
           selected: '',
         },
         {

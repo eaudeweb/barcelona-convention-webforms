@@ -10,13 +10,13 @@ var form = {
         {
           name: 'rep_period_from',
           type: 'number',
-          label: 'Reporting period from D/M/Y',
+          label: 'Reporting period from (year)',
           selected: '',
         },
         {
           name: 'rep_period_to',
           type: 'number',
-          label: 'Reporting period to D/M/Y',
+          label: 'Reporting period to (year)',
           selected: '',
         },
         {

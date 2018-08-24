@@ -8,8 +8,8 @@
     "contacting_party":
     {
       "partyname": "AL",
-      "rep_period_from": "0012-12-05",
-      "rep_period_to": "0512-12-21",
+      "rep_period_from": "0012",
+      "rep_period_to": "0512",
       "institution_name": 2512525,
       "officer_name": 215,
       "mailing_address": "afsasf",
