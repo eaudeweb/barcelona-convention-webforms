@@ -40,7 +40,7 @@
                   <textarea class="form-control" v-if="item.type === 'textarea'"  v-model="item.selected"></textarea>
 
 
-                  <div v-if="item.comments != undefined">
+                  <div v-if="checkForCommentsField(item)">
                     Comments
                     <textarea class="form-control"  v-model="item.comments"></textarea>
                   </div>
@@ -90,6 +90,16 @@ export default {
 
     titleSlugify(text) {
       return slugify(text)
+    },
+
+
+    checkForCommentsField(item){
+      if(item.hasOwnProperty('comments')) {
+        console.log(item)
+        return true
+      } else {
+        return false
+      }
     },
 
 

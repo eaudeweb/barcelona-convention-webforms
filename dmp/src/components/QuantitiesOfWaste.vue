@@ -55,7 +55,10 @@
 
 
                   <textarea v-else class="form-control" v-model="item.selected"></textarea>
-                  
+                   <div v-if="checkForCommentsField(item)">
+                    Comments
+                    <textarea class="form-control"  v-model="item.comments"></textarea>
+                  </div>
                 </div>
 
 
@@ -100,6 +103,11 @@
                 
                   <b-form-input required v-if="item.type != 'textarea'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                   <textarea v-else class="form-control" v-model="item.selected"></textarea>
+                
+                 <div v-if="checkForCommentsField(item)">
+                    Comments
+                    <textarea class="form-control"  v-model="item.comments"></textarea>
+                  </div>
                 </div>
 
 
@@ -197,6 +205,15 @@ export default {
     pushUnique(array, item) {
       if (array.indexOf(item) === -1) {
         array.push(item);
+      }
+    },
+
+   checkForCommentsField(item){
+      if(item.hasOwnProperty('comments')) {
+        console.log(item)
+        return true
+      } else {
+        return false
       }
     },
 

@@ -360,11 +360,14 @@ export default {
           material_characteristics_and_quantity: null,
           permitting_authority_name: null,
           plans_for_monitoring: null,
+          plans_for_monitoring_comments: null,
           notes: null,
         }
         for (let article_item of article.article_items){
             row[article_item.name] = article_item.selected
-
+            if(article_item.name === 'plans_for_monitoring'){
+              row[article_item.name + '_comments'] = article_item.comments
+            }
         }
 
 

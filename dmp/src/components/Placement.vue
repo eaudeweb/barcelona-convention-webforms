@@ -31,7 +31,7 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
 
-                  <b-form-input v-if="item.type != 'textarea' && item.type != 'file'" required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <b-form-input v-if="item.type != 'textarea' && item.type != 'file' && item.type != 'radio'" required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
 
 
                   <div v-else-if="item.type === 'file'">
@@ -53,8 +53,17 @@
 
                   </div>
 
+                  <b-form-group v-else-if="item.type === 'radio'">
+                      <b-form-radio-group stacked required :id="`radio_${tabId}_${index}_${array_index}_${item.type}`" v-model="item.selected" :options="item.options" :name="`radio_${tabId}_${index}_${array_index}_${item.type}`">
+                      </b-form-radio-group>
+                  </b-form-group>
 
                   <textarea v-else v-model="item.selected" class="form-control"></textarea>
+
+                  <div v-if="checkForCommentsField(item)">
+                    Comments
+                    <textarea class="form-control"  v-model="item.comments"></textarea>
+                  </div>
 
                 </div>
             </b-collapse>
@@ -149,6 +158,14 @@ export default {
       }
     },
 
+    checkForCommentsField(item){
+      if(item.hasOwnProperty('comments')) {
+        console.log(item)
+        return true
+      } else {
+        return false
+      }
+    },
 
 
 
@@ -190,11 +207,13 @@ export default {
           },
           {
             label: 'Plans for Monitoring activities are in place (YES/NO)',
-            type: 'text',
+            type: 'radio',
             name: 'plans_for_monitoring',
+            options:[{text:"Yes", value: true}, {text: "No", value: false}],
             selected: '',
-            info: 'Explain the monitoring and modalities including a plan for pre-placement and post- placement monitoring and evaluation.',
+            info: 'If yes, explain the monitoring and modalities including a plan for pre-placement and post-placement monitoring and evaluation.',
             additional_info: 'Pre-placement monitoring plans should set a reference baseline. Post-Placement monitoring plans should aim to produce scientific evidence to impact hypothesis',
+            comments: ''
           },
           {
             label: 'Notes',

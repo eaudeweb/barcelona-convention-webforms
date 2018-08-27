@@ -924,6 +924,7 @@ export default {
             selected: '',
             info: 'Explain the monitoring and modalities including a plan for pre-placement and post- placement monitoring and evaluation.',
             additional_info: 'Pre-placement monitoring plans should set a reference baseline. Post-Placement monitoring plans should aim to produce scientific evidence to impact hypothesis',
+            comments: inventory.plans_for_monitoring_comments
           }, 
           {
             label: 'Notes',
@@ -984,6 +985,7 @@ export default {
             selected: '',
             info: 'Explain the monitoring and modalities including a plan for pre-placement and post- placement monitoring and evaluation.',
             additional_info: 'Pre-placement monitoring plans should set a reference baseline. Post-Placement monitoring plans should aim to produce scientific evidence to impact hypothesis',
+            comments: inventory.plans_for_monitoring_comments
           }, 
           {
             label: 'Notes',
