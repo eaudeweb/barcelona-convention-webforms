@@ -893,7 +893,7 @@ export default {
           article_items: [{
             label: 'Locations of the placement',
             additional_info: 'As defined in the Updated Guidelines on artificial reefs ',
-            type: 'text',
+            type: 'file',
             name: 'placement_location',
             selected: '',
             info: 'A Map showing the placement site location with coordinates including depth and distance to shore and distance to the other reefs marked (YES/NO)',
@@ -953,7 +953,7 @@ export default {
           article_items: [{
             label: 'Locations of the placement',
             additional_info: 'As defined in the Updated Guidelines on artificial reefs ',
-            type: 'text',
+            type: 'file',
             name: 'placement_location',
             selected: '',
             info: 'A Map showing the placement site location with coordinates including depth and distance to shore and distance to the other reefs marked (YES/NO)',

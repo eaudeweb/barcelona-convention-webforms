@@ -46,9 +46,10 @@
                       </b-input-group-append>
                     </b-input-group>
 
-                    <p>File uploaded: <a :href="item.selected" blank="_true">{{item.selected}}</a></p>
+                    <p v-if="item.selected">File uploaded: <a :href="item.selected" blank="_true">{{item.selected}}</a>
+                      <b-badge style="cursor: pointer" variant="danger" @click="deleteFormFile(item.selected, item)">Delete file</b-badge>
+                    </p>
 
-                    <b-btn variant="warning" @click="deleteFormFile(item.selected)">Delete file</b-btn> 
 
                   </div>
 
@@ -173,7 +174,7 @@ export default {
         this.doneUpload = false;
         getSupportingFiles().then((response) => {
           this.file = null;
-          formfield.selected = envelope + '/' + userfile.name
+          formfield.selected = envelope + '/' + response.data[response.data.length - 1]
           this.fileIsUploading = false
           this.doneUpload = true  
         })
@@ -182,11 +183,11 @@ export default {
       })
     },
 
-    deleteFormFile(fileId) {
+    deleteFormFile(fileId, field) {
       let id = fileId.split('/')
       let finalId = id[id.length - 1]
       deleteFile(finalId).then((response) => {
-        console.log(response)
+        field.selected = null
       }).catch((error) => {
         console.log(error)
       })

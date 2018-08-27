@@ -31,7 +31,29 @@
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
 
-                  <b-form-input v-if="item.type != 'textarea'" required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+                  <b-form-input v-if="item.type != 'textarea' && item.type != 'file'" required :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
+
+
+                  <div v-else-if="item.type === 'file'">
+                    <b-input-group>
+                      <b-input-group-prepend>
+                        <b-badge class="upload-badge" variant="success" v-show="item.selected && fileIsUploading === false && doneUpload">✓ Uploaded</b-badge>
+                        <b-badge class="upload-badge" variant="info" v-show="fileIsUploading === true && doneUpload === false">Uploading</b-badge>
+                     </b-input-group-prepend>
+                      <b-form-file v-model="file" :state="Boolean(file)" placeholder="Upload a map..."></b-form-file>
+                      <b-input-group-append>
+                        <b-btn @click="uploadFormFile(file,item)" variant="primary">Upload</b-btn>
+                      </b-input-group-append>
+                    </b-input-group>
+
+                    <p v-if="item.selected">File uploaded: <a :href="item.selected" blank="_true">{{item.selected}}</a>
+                      <b-badge style="cursor: pointer" variant="danger" @click="deleteFormFile(item.selected, item)">Delete file</b-badge>
+                    </p>
+
+
+                  </div>
+
+
                   <textarea v-else v-model="item.selected" class="form-control"></textarea>
 
                 </div>
@@ -52,6 +74,7 @@
 <script>
 
 import {slugify} from '../utils.js';
+import {deleteFile, uploadFile, getSupportingFiles, envelope} from '../api.js';
 
 
 export default {
@@ -69,12 +92,63 @@ export default {
     }
   },
 
+  data () {
+    return {
+      file: null,
+      fileIsUploading: false,
+      doneUpload: false,
+    }
+  },
+
 
   methods :{
 
     titleSlugify(text) {
       return slugify(text)
     },
+
+
+    uploadFormFile(userfile, formfield){
+
+      console.log(userfile)
+      console.log(formfield)      
+
+      this.fileIsUploading = true;
+
+      let file = new FormData()
+
+      file.append('userfile', userfile)
+
+      uploadFile(file).then((response) => {
+        this.doneUpload = false;
+        getSupportingFiles().then((response) => {
+          this.file = null;
+          formfield.selected = envelope + '/' + response.data[response.data.length - 1]
+          this.fileIsUploading = false
+          this.doneUpload = true  
+        })
+      }).catch((error) => {
+        console.log(error)
+      })
+    },
+
+    deleteFormFile(fileId, field) {
+      let id = fileId.split('/')
+      let finalId = id[id.length - 1]
+      deleteFile(finalId).then((response) => {
+        field.selected = null
+      }).catch((error) => {
+        console.log(error)
+      })
+    },
+
+
+    pushUnique(array, item) {
+      if (array.indexOf(item) === -1) {
+        array.push(item);
+      }
+    },
+
 
 
 
@@ -90,7 +164,7 @@ export default {
           article_items: [{
             label: 'Locations of the placement',
             additional_info: 'As defined in the Updated Guidelines on artificial reefs ',
-            type: 'text',
+            type: 'file',
             name: 'placement_location',
             selected: '',
             info: 'A Map showing the placement site location with coordinates including depth and distance to shore and distance to the other reefs marked (YES/NO)',
@@ -139,10 +213,6 @@ export default {
 
   },
 
-  data () {
-    return {
-    }
-  },
 }
 </script>
 
