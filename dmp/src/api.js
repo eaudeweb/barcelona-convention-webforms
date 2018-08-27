@@ -95,6 +95,31 @@ let testCompanyId = getParameterByName('testCompanyId');
 
 
 
+
+    export function deleteFile(fileName) {
+      if(isTestSession) {
+        return axios({
+          method: "get",
+          withCredentials: true,
+          cache: false,
+          url: "http://localhost:8080/static/files.json"
+        })
+      } else {
+         return axios({
+          method: 'post',
+          withCredentials: true,
+          async: false,
+          cache: false,
+          contentType: false,
+          processData: false,
+          url: envelope,
+          data: {"ids-list" : fileName, "manage_delObjects-method": Delete}
+        })
+      }
+
+    }
+
+
     export function uploadFile(file) {
 
       if(isTestSession){

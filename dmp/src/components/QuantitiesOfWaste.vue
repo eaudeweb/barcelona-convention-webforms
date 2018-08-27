@@ -48,6 +48,8 @@
 
                     <p>File uploaded: <a :href="item.selected" blank="_true">{{item.selected}}</a></p>
 
+                    <b-btn variant="warning" @click="deleteFormFile(item.selected)">Delete file</b-btn> 
+
                   </div>
 
 
@@ -120,7 +122,7 @@
 <script>
 
 import {slugify} from '../utils.js';
-import {uploadFile, getSupportingFiles, envelope} from '../api.js';
+import {deleteFile, uploadFile, getSupportingFiles, envelope} from '../api.js';
 
 export default {
 
@@ -180,6 +182,13 @@ export default {
       })
     },
 
+    deleteFormFile(fileId) {
+      deleteFile(fileId).then((response) => {
+        console.log(response)
+      }).catch((error) => {
+        console.log(error)
+      })
+    },
 
 
     pushUnique(array, item) {
