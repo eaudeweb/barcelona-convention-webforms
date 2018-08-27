@@ -183,7 +183,9 @@ export default {
     },
 
     deleteFormFile(fileId) {
-      deleteFile(fileId).then((response) => {
+      let id = fileId.split('/')
+      let finalId = id[id.length - 1]
+      deleteFile(finalId).then((response) => {
         console.log(response)
       }).catch((error) => {
         console.log(error)

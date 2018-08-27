@@ -105,15 +105,17 @@ let testCompanyId = getParameterByName('testCompanyId');
           url: "http://localhost:8080/static/files.json"
         })
       } else {
+   
+        var deleteData = encodeURIComponent(`ids:list=${filename}&manage_delObjects:method=Delete`)
+
          return axios({
           method: 'post',
           withCredentials: true,
-          async: false,
           cache: false,
-          contentType: false,
-          processData: false,
+          headers: {'content-type': 'application/x-www-form-urlencoded'},
+          // contentType: "multipart/form-data",
           url: envelope,
-          data: {"ids-list" : fileName, "manage_delObjects-method": Delete}
+          data: deleteData
         })
       }
 
