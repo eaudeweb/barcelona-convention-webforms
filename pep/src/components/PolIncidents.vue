@@ -50,6 +50,13 @@
                             </b-form-radio-group>
                           <textarea v-else class="form-control" v-model="item.selected"></textarea>
 
+
+                       <div v-if="checkForCommentsField(item)">
+                          In case of others, please fill in more details here
+                          <textarea class="form-control"  v-model="item.comments"></textarea>
+                        </div>
+
+
                       </div>
                   </div>
                 </b-collapse>
@@ -91,6 +98,15 @@ export default {
     titleSlugify(text) {
       return slugify(text)
     },
+
+       checkForCommentsField(item){
+      if(item.hasOwnProperty('comments')) {
+        return true
+      } else {
+        return false
+      }
+    },
+
 
   addSpa(){
       let incident ={
@@ -144,7 +160,8 @@ export default {
               { text: 'installation structural failure', value: 10 },
               { text: 'oil and gas leak', value: 11 },
               { text: 'other', value: 12 }
-            ]
+            ],
+            comments: ''
           },
           {
             type: 'date',
@@ -190,7 +207,9 @@ export default {
               { text: 'container', value: 7 },
               { text: 'chemical tanker', value: 8 },
               { text: 'other', value: 9 }
-            ]
+            ],
+            comments: ''
+
           },
           {
             type: 'text',
@@ -217,7 +236,9 @@ export default {
               { text: 'fixed steel', value: 4 },
               { text: 'subsea steel ', value: 5 },
               { text: 'other', value: 6 }
-            ]
+            ],
+            comments: ''
+
           },
           {
             type: 'text',

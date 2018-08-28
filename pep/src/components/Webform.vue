@@ -182,7 +182,6 @@ export default {
               if(data.BC_PEP.pollincidents.Row.length) {
                 for(let incident of data.BC_PEP.pollincidents.Row) {
 
-                  // console.log(incident)
                     // let collection_id = agreement.collection_id
                     // let difficulty = agreement.difficulty
                     
@@ -238,7 +237,8 @@ export default {
                                   { text: 'installation structural failure', value: 10 },
                                   { text: 'oil and gas leak', value: 11 },
                                   { text: 'other', value: 12 }
-                                ]
+                                ],
+                                comments: incident.accident_comments
                               },
                               {
                                 type: 'date',
@@ -284,7 +284,9 @@ export default {
                                   { text: 'container', value: 7 },
                                   { text: 'chemical tanker', value: 8 },
                                   { text: 'other', value: 9 }
-                                ]
+                                ],
+                                comments: incident.ship_category_comments
+
                               },
                               {
                                 type: 'text',
@@ -311,7 +313,8 @@ export default {
                                   { text: 'fixed steel', value: 4 },
                                   { text: 'subsea steel ', value: 5 },
                                   { text: 'other', value: 6 }
-                                ]
+                                ],
+                                comments: incident.installation_type_comments
                               },
                               {
                                 type: 'text',
@@ -358,8 +361,8 @@ export default {
                     incidentobj.article_title.value = incident.ship_name;
                   for(let article of incidentobj.article_items){
                       article.selected = incident[article.name]
-                      console.log(article.name)
-                      console.log(incident[article.name])
+                      // console.log(article.name)
+                      // console.log(incident[article.name])
                   }
                   this.form.tab_3.data.articles.push(incidentobj)
               }
@@ -418,7 +421,8 @@ export default {
                                   { text: 'installation structural failure', value: 10 },
                                   { text: 'oil and gas leak', value: 11 },
                                   { text: 'other', value: 12 }
-                                ]
+                                ],
+                                comments: incident.accident_comments
                               },
                               {
                                 type: 'date',
@@ -464,7 +468,8 @@ export default {
                                   { text: 'container', value: 7 },
                                   { text: 'chemical tanker', value: 8 },
                                   { text: 'other', value: 9 }
-                                ]
+                                ],
+                                comments: incident.ship_category_comments
                               },
                               {
                                 type: 'text',
@@ -491,7 +496,8 @@ export default {
                                   { text: 'fixed steel', value: 4 },
                                   { text: 'subsea steel ', value: 5 },
                                   { text: 'other', value: 6 }
-                                ]
+                                ],
+                                comments: incident.installation_type_comments
                               },
                               {
                                 type: 'text',

@@ -261,13 +261,16 @@ export default {
           geo_info: null,
           country: null,
           accident: null,
+          accident_comments: null,
           date: null,
           pollution: null,
           pollution_type: null,
           ship_category: null,
+          ship_category_comments: null,
           ship_flag: null,
           offshore_name_id: null,
           installation_type: null,
+          installation_type_comments: null,
           oil_name_id: null,
           oil_type: null,
           actions: null,
@@ -276,6 +279,9 @@ export default {
         for (let article_item of article.article_items){
           // let row = {};
           // console.log(article_item)
+          if(article_item.name === "accident" || article_item.name === "ship_category" || article_item.name === "installation_type") {
+            row[article_item.name + "_comments"] = article_item.comments
+          }
           row[article_item.name] = article_item.selected
 
         }
