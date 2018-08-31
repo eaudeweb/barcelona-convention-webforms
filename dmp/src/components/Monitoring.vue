@@ -95,7 +95,6 @@ export default {
 
     checkForCommentsField(item){
       if(item.hasOwnProperty('comments')) {
-        console.log(item)
         return true
       } else {
         return false

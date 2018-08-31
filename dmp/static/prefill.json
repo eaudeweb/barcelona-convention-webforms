@@ -467,7 +467,6 @@
         "placement_location": 2,
         "placement_purpose": 3,
         "material_characteristics_and_quantity": 4,
-        "impact_hypothesis_status": 5,
         "permitting_authority_name": 6,
         "plans_for_monitoring": 7,
         "notes": 8
@@ -479,7 +478,6 @@
         "placement_location": "b",
         "placement_purpose": "c",
         "material_characteristics_and_quantity": "d",
-        "impact_hypothesis_status": "e",
         "permitting_authority_name": "f",
         "plans_for_monitoring": "g",
         "notes": "h"
