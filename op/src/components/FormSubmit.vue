@@ -274,8 +274,12 @@ export default {
           weight_substructure: null,
           weight_topside: null,
           remarks: null,
+          category_comments: null,
         }
         for (let article_item of article.article_items){
+          if(article_item.name === "category") {
+            row.category_comments = article_item.comments 
+          }
             row[article_item.name] = article_item.selected
         }
 

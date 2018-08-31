@@ -31,6 +31,11 @@
                           <b-form-select required v-else-if="item.type !='textarea'" :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
 
                           <textarea v-else-if="item.type === 'textarea'" class="form-control" v-model ="item.selected"></textarea> 
+
+                          <div v-if="checkForCommentsField(item)">
+                            Comments (in case of other, please fill in additional info)
+                            <textarea class="form-control"  v-model="item.comments"></textarea>
+                          </div>
                       </div>
                   </div>
                 </b-collapse>
@@ -78,6 +83,16 @@ export default {
   methods: {
     titleSlugify(text) {
       return slugify(text)
+    },
+
+
+
+   checkForCommentsField(item){
+      if(item.hasOwnProperty('comments')) {
+        return true
+      } else {
+        return false
+      }
     },
 
   addInventory(){
@@ -128,6 +143,7 @@ export default {
             {value: 5, text: 'Subsea Steel'},
             {value: 6, text: 'Others'}
           ],
+          comments:"",
           selected: '',
         },{
           label: 'Weight Substructure',

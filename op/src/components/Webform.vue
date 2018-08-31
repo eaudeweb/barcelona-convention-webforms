@@ -270,6 +270,7 @@ export default {
                 text: 'Others'
               }],
               selected: '',
+              comments: inventory.category_comments
             }, {
               label: 'Weight Substructure',
               description: 'tonnes',
@@ -373,6 +374,7 @@ export default {
               text: 'Others'
             }],
             selected: '',
+            comments: inventory.category_comments
           }, {
             label: 'Weight Substructure',
             description: 'tonnes',
