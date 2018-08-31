@@ -351,6 +351,7 @@ export default {
                       "legal_status_change": null,
                       "changes_reasons": null,
                       "custom_spami": custom_spami || null,
+                      "iso": articles.iso
                   }
         for (let article_item of article.article_items){
           row[article_item.name] = article_item.selected
@@ -543,11 +544,19 @@ export default {
           description: description,
           name: spa_name,
           protection_measures: null,
-          difficulties: null
+          difficulties: null,
+          protection_comments: null,
+          difficulties_comments: null,
         }
         for (let article_item of article.article_items){
           // let row = {};
           // console.log(article_item)
+          if(item.name === "protection_measures") {
+            row.protection_comments = item.comments
+          } else if (item.name === "difficulties") {
+            row.difficulties_comments = item.comments
+          }
+
           row[article_item.name] = article_item.selected
 
         }

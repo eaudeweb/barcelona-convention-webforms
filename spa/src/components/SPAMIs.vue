@@ -153,15 +153,14 @@
 
 
 
-                          <b-form-checkbox-group v-if="item.type ==='checkbox'" stacked  :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="`radio_${tabId}_${index}_${item_index}_${item.name}_${item.name}`" v-model="item.selected" :options="item.options">
+                          <b-form-checkbox-group v-if="item.type ==='checkbox'" stacked  :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="`checkbox_${tabId}_${index}_${item_index}_${item.name}_${item.name}`" v-model="item.selected" :options="item.options">
                           </b-form-checkbox-group>
-                          <b-form-select v-else :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :type="item.type" :name="item.name" v-model="item.selected" :options="item.options"></b-form-select>
-
-
-
-
-                  
-
+                           <b-form-radio-group required v-else stacked  :id="`${tabId}_${index}_${item_index}_${item.name}_${item.name}`" :name="`radio_${tabId}_${index}_${item_index}_${item.name}_${item.name}`" v-model="item.selected" :options="item.options">
+                          </b-form-radio-group>
+                          <div v-if="checkForCommentsField(item)">
+                            Comments
+                            <textarea class="form-control"  v-model="item.comments"></textarea>
+                          </div>
 
                       </div>
                   </div>
@@ -225,6 +224,13 @@ export default {
     },
 
 
+   checkForCommentsField(item){
+      if(item.hasOwnProperty('comments')) {
+        return true
+      } else {
+        return false
+      }
+    },
 
   addSpami(){
       let spami = {
@@ -328,7 +334,7 @@ export default {
             type: 'text'
           },
           article_items: [{
-            type: 'select',
+            type: 'checkbox',
             label: 'Implementation of Protection measures',
             info: 'Please select an option',
             selected: null,
@@ -338,10 +344,10 @@ export default {
               { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
               { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
               { text: 'Activities in the zone surrounding the area', value: 5 },
-
-            ]
+            ],
+            comments: "",
           }, {
-            type: 'checkbox',
+            type: 'radio',
             label: 'Difficulties/Challenges',
             info: 'Please tick all that apply',
             selected: [],
@@ -352,6 +358,7 @@ export default {
               { text: 'Administrative management', value: 4 },
               { text: 'Technical Guidance Capabilities', value: 5 }
             ],
+            comments: "",
           }]
         }
       this.info.data.table_3.articles.push(spa)

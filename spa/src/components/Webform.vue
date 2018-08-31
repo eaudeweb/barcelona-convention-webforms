@@ -474,7 +474,7 @@ export default {
                     article_items: [{
                       type: 'select',
                       label: 'Implementation of Protection measures',
-                      info: 'Please select an option',
+                      info: 'Please tick all that apply',
                       name: 'protection_measures',
                       selected: null,
                       options: [
@@ -483,10 +483,10 @@ export default {
                         { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
                         { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
                         { text: 'Activities in the zone surrounding the area', value: 5 },
-
-                      ]
+                      ],
+                      comments: inventory.protection_comments,
                     }, {
-                      type: 'checkbox',
+                      type: 'radio',
                       label: 'Difficulties/Challenges',
                       info: 'Please tick all that apply',
                       name: 'difficulties',
@@ -499,6 +499,8 @@ export default {
                         { text: 'Administrative management', value: 4 },
                         { text: 'Technical Guidance Capabilities', value: 5 }
                       ],
+                      comments: inventory.difficulties_comments,
+
                     }]
                   }
           let inventoryobj = inventoryJson
@@ -518,9 +520,9 @@ export default {
             type: 'text'
           },
           article_items: [{
-            type: 'select',
+            type: 'checkbox',
             label: 'Implementation of Protection measures',
-            info: 'Please select an option',
+            info: 'Please tick all that apply',
             name: 'protection_measures',
             selected: null,
             options: [
@@ -529,10 +531,11 @@ export default {
               { text: 'Introduction and reintroduction of any species into the SPAMI', value: 3 },
               { text: 'Any activity or act likely to harm or disturb the species/ecosyste ms/natural, cultural or aesthetics characteristics of the SPAMI', value: 4 },
               { text: 'Activities in the zone surrounding the area', value: 5 },
+            ],
+              comments: inventory.protection_comments
 
-            ]
           }, {
-            type: 'checkbox',
+            type: 'radio',
             label: 'Difficulties/Challenges',
             info: 'Please tick all that apply',
             name: 'difficulties',
@@ -545,6 +548,8 @@ export default {
               { text: 'Administrative management', value: 4 },
               { text: 'Technical Guidance Capabilities', value: 5 }
             ],
+              comments: inventory.difficulties_comments,
+
           }]
         }
         let inventoryobj = inventoryJson
