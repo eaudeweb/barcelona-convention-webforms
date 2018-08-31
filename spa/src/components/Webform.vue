@@ -15,7 +15,7 @@
               <spa tabId="2" :info.sync="form.tab_2"></spa>
             </b-tab>
              <b-tab :title="doTitle(form.tab_3.label)" >
-              <spamis tabId="3" :info.sync="form.tab_3"></spamis>
+              <spamis tabId="3" :country="country" :info.sync="form.tab_3"></spamis>
             </b-tab>
             <b-tab :title="doTitle(form.tab_4.label)" >
               <endangered tabId="4"  :info.sync="form.tab_4"></endangered>
@@ -631,14 +631,115 @@ export default {
     if (data.BC_SPA.spamis) {
       if (data.BC_SPA.spamis.Row && data.BC_SPA.spamis.Row.length && data.BC_SPA.spamis.Row.length > 1) {
         for (let perm of data.BC_SPA.spamis.Row) {
-          let collection_id = perm.collection_id
-          for (let article of this.form.tab_3.data.table_2.articles) {
-            if (article.collection_id === collection_id) {
-              for (let article_items of article.article_items) {
-                  article_items.selected = perm[article_items.name]
+
+          if(perm.custom) {
+
+            let spami = {
+            "article_title": perm.spami_name,
+            "parent_collection_id": 509,
+            "iso": perm.iso,
+            "custom": perm.custom,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          }
+
+          for(let field of spami.article_items) {
+            field.selected = perm[field.name]
+          }
+          this.form.tab_3.data.table_2.articles.push(spami)
+
+
+          } else {
+
+            let collection_id = perm.collection_id
+            for (let article of this.form.tab_3.data.table_2.articles) {
+              if (article.collection_id === collection_id) {
+                for (let article_items of article.article_items) {
+                    article_items.selected = perm[article_items.name]
+                }
               }
             }
           }
+
         }
       }
     }

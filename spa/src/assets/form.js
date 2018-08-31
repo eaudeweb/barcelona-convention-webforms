@@ -1414,6 +1414,7 @@ var form = {
             "article_title": "Albania AL1. Karaburun Sazan National Marine Park",
             "collection_id": 5026,
             "parent_collection_id": 509,
+            "iso": "AL",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -1500,6 +1501,7 @@ var form = {
             "article_title": "Algeria DZ1.Banc des Kabyles Marine Reserve",
             "collection_id": 5027,
             "parent_collection_id": 509,
+            "iso": "DZ",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -1586,6 +1588,7 @@ var form = {
             "article_title": "Algeria DZ2.Habibas Islands",
             "collection_id": 5028,
             "parent_collection_id": 509,
+            "iso": "DZ",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -1672,6 +1675,7 @@ var form = {
             "article_title": "Cyprus CY1. Lara- Toxeftra Turtle Reserve",
             "collection_id": 5029,
             "parent_collection_id": 509,
+            "iso": "CY",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -1758,6 +1762,7 @@ var form = {
             "article_title": "France FR1 Port Cross National Park",
             "collection_id": 5030,
             "parent_collection_id": 509,
+            "iso": "FR",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -1844,6 +1849,7 @@ var form = {
             "article_title": "France FR2 Natural Reserve of Bouches of Bonifacio",
             "collection_id": 5031,
             "parent_collection_id": 509,
+            "iso": "FR",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -1930,6 +1936,7 @@ var form = {
             "article_title": "France FR3 The Blue Coast Marine Park",
             "collection_id": 5032,
             "parent_collection_id": 509,
+            "iso": "FR",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2016,6 +2023,7 @@ var form = {
             "article_title": "France FR4 The Embiez Archipelago-Six Fours",
             "collection_id": 5033,
             "parent_collection_id": 509,
+            "iso": "FR",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2102,6 +2110,7 @@ var form = {
             "article_title": "Italy IT1 Plemmirio Protected Areas",
             "collection_id": 5034,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2188,6 +2197,7 @@ var form = {
             "article_title": "Italy IT2 Marine Protected Area of Portofino",
             "collection_id": 5035,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2274,6 +2284,7 @@ var form = {
             "article_title": "Italy IT3 Miramare Marine Protected Area",
             "collection_id": 5036,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2360,6 +2371,7 @@ var form = {
             "article_title": "Italy IT4 Tavolara-Punta Coda Cavallo Marine Protected Area",
             "collection_id": 5037,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2446,6 +2458,7 @@ var form = {
             "article_title": "Italy IT5 Marine Protected Area of Torre Guaceto",
             "collection_id": 5038,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2532,6 +2545,7 @@ var form = {
             "article_title": "Italy IT6 Marine Protected Area Punta Campanella",
             "collection_id": 5039,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2618,6 +2632,7 @@ var form = {
             "article_title": "Italy IT7 Marine Protected Area of Capo Caccia-Isola Piana",
             "collection_id": 5040,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2704,6 +2719,7 @@ var form = {
             "article_title": "Italy IT8 Porto Cesareo Marine Protected Area",
             "collection_id": 5041,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2790,6 +2806,7 @@ var form = {
             "article_title": "Italy IT9 Capo Carbonara Marine Protected Area",
             "collection_id": 5042,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2876,6 +2893,7 @@ var form = {
             "article_title": "Italy IT10 Marine Protected Area of Penisola del Sinis",
             "collection_id": 5043,
             "parent_collection_id": 509,
+            "iso": "IT",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -2962,6 +2980,7 @@ var form = {
             "article_title": "Lebanon LB1 Palm Islands Nature Reserve",
             "collection_id": 5044,
             "parent_collection_id": 509,
+            "iso": "LB",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3048,6 +3067,7 @@ var form = {
             "article_title": "Lebanon LB2 Tyre Coast Nature Reserve",
             "collection_id": 5045,
             "parent_collection_id": 509,
+            "iso": "LB2",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3134,6 +3154,7 @@ var form = {
             "article_title": "Morocco MA1 Al- Hoceima National Park",
             "collection_id": 5046,
             "parent_collection_id": 509,
+            "iso": "MA",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3220,6 +3241,7 @@ var form = {
             "article_title": "Spain ES1 Maro-Cerro Gordo Cliffs",
             "collection_id": 5047,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3306,6 +3328,7 @@ var form = {
             "article_title": "Spain ES2 Archipielago of Cabrera National Park",
             "collection_id": 5048,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3392,6 +3415,7 @@ var form = {
             "article_title": "Spain ES3 Natural Park of Cabo de Gata-Nijar",
             "collection_id": 5049,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3478,6 +3502,7 @@ var form = {
             "article_title": "Spain ES4 Natural Park of Cap de Creus",
             "collection_id": 5050,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3564,6 +3589,7 @@ var form = {
             "article_title": "Spain ES5 Sea Bottom of the Levante of Almeria",
             "collection_id": 5051,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3650,6 +3676,7 @@ var form = {
             "article_title": "Spain ES6 Alboran Island",
             "collection_id": 5052,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3736,6 +3763,7 @@ var form = {
             "article_title": "Spain ES7 Columbretes Islands",
             "collection_id": 5053,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3822,6 +3850,7 @@ var form = {
             "article_title": "Spain ES8 Medes Islands",
             "collection_id": 5054,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3908,6 +3937,7 @@ var form = {
             "article_title": "Spain ES9 Mar Menor",
             "collection_id": 5055,
             "parent_collection_id": 509,
+            "iso": "ES",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -3994,6 +4024,7 @@ var form = {
             "article_title": "Tunisia TN1 La Galite Archipelago",
             "collection_id": 5056,
             "parent_collection_id": 509,
+            "iso": "TN",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -4080,6 +4111,7 @@ var form = {
             "article_title": "Tunisia TN2 Kneiss Islands",
             "collection_id": 5057,
             "parent_collection_id": 509,
+            "iso": "TN",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -4166,6 +4198,7 @@ var form = {
             "article_title": "Tunisa TN3 Zembra and Zembretta National Park",
             "collection_id": 5058,
             "parent_collection_id": 509,
+            "iso": "TN",
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",
@@ -4252,6 +4285,7 @@ var form = {
             "article_title": "France, Italy and Monaco Int1 Pelagos Sanctuary for the Conservation of Marine Mammals",
             "collection_id": 5059,
             "parent_collection_id": 509,
+            "iso": ["FR", "IT", "MC"],
             "article_items": [{
                 "type": "date",
                 "label": "Dates of establishment and inclusion",

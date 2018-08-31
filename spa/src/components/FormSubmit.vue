@@ -336,6 +336,7 @@ export default {
           let collection_id = article.collection_id || null;
           let parent_collection_id = article.parent_collection_id || null
           let spami_name = article.article_title
+          let custom_spami = article.custom
           let row =  {
                       "spami_name": spami_name,
                       "parent_collection_id": parent_collection_id,
@@ -349,7 +350,7 @@ export default {
                       "delimitation_change": null,
                       "legal_status_change": null,
                       "changes_reasons": null,
-
+                      "custom_spami": custom_spami || null,
                   }
         for (let article_item of article.article_items){
           row[article_item.name] = article_item.selected

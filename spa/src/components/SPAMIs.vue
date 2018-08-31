@@ -73,7 +73,7 @@
           </div>
           <div role="tablist">
             <div role="tablist">
-              <b-card v-for="(article,index) in info.data.table_2.articles" :key="index" class="mb-1">
+              <b-card v-if="checkCountry(article.iso)" v-for="(article,index) in info.data.table_2.articles" :key="index" class="mb-1">
                 <h5 style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">
                   {{article.article_title}}
                   <span style="float:right">▼</span>
@@ -81,6 +81,15 @@
                <label>
                   {{article.article_title.label}}
                </label>
+
+              <b-input-group v-if="article.custom">
+                <b-form-input placeholder="name of the spami" required :type="text" :name="article.article_title" v-model="article.article_title"></b-form-input>
+                <b-input-group-append>
+                  <b-btn variant="danger" @click="removeSpami(index)"> X Remove spami</b-btn> 
+                </b-input-group-append>
+               </b-input-group>
+
+
                 <b-collapse class="mt-3" visible :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
                   <div class="form-subsection" v-for="(item,item_index) in article.article_items">
                     <div v-if="(item.type === 'text' || item.type ==='date' || item.type ==='number')">
@@ -104,7 +113,11 @@
                   </div>
                 </b-collapse>
               </b-card>
-
+               <b-btn style="    
+                  position: absolute;
+                  top: 9px;
+                  right: 13px;" 
+                  variant="primary" @click="addSpami"> + Add</b-btn> 
             </div>
           </div>
         </div>
@@ -177,8 +190,8 @@ export default {
 
   props: {
     info: null,
-    tabId:null
-    
+    tabId:null,
+    country: null,
   },
 
   created() {
@@ -198,6 +211,113 @@ export default {
     titleSlugify(text) {
       return slugify(text)
     },
+
+    checkCountry(iso) {
+      if(typeof(iso) === "string") {
+        if(iso === this.country) {
+          return true
+        }
+      } else {
+        if (iso.includes(this.country)) {
+          return true
+        }
+      }
+    },
+
+
+
+  addSpami(){
+      let spami = {
+            "article_title": "",
+            "parent_collection_id": 509,
+            "iso": this.country,
+            "custom": true,
+            "article_items": [{
+                "type": "date",
+                "label": "Dates of establishment and inclusion",
+                "name": "date_of_establishment",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Surface",
+                "name": "surface",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Coordinates",
+                "name": "coordinates",
+                "selected": null
+              },
+              {
+                "type": "checkbox",
+                "label": "Jurisdiction",
+                "name": "jurisdiction",
+                "selected": null,
+                "options": [{
+                    "text": "National",
+                    "value": 1
+                  },
+                  {
+                    "text": "Adjacent water",
+                    "value": 2
+                  },
+                  {
+                    "text": "High seas",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "label": "Management plan",
+                "name": "management_plan",
+                "selected": null,
+                "options": [{
+                    "text": "Yes",
+                    "value": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 2
+                  },
+                  {
+                    "text": "In process",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "label": "Date of adoption",
+                "name": "date_of_adoption",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of delimitation",
+                "name": "delimitation_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Change of legal status",
+                "name": "legal_status_change",
+                "selected": null
+              },
+              {
+                "type": "text",
+                "label": "Reasons for changes",
+                "name": "changes_reasons",
+                "selected": null
+              }
+            ]
+          }
+      this.info.data.table_2.articles.push(spami)
+    },
+
+
 
   addSpa(){
       let spa ={
@@ -242,6 +362,11 @@ export default {
       // console.log(this.info.data.table_2.articles[index])
       console.log(index)
       this.info.data.table_3.articles.splice(index, 1)
+    },
+
+     removeSpami(index) {
+      // console.log(this.info.data.table_2.articles[index])
+      this.info.data.table_2.articles.splice(index, 1)
     },
   },
 }
