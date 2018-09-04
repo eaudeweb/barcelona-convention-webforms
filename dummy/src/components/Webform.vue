@@ -1,8 +1,7 @@
 <template>
 	<b-container style="position: relative">
-    <center><h1 class="mb-3 mt-2">Hazardous Wastes Protocol</h1></center>
-    <center><h5><small class="text-muted">IMPLEMENTATION OF THE PROTOCOL ON THE PREVENTION OF POLLUTION OF THE MEDITERRANEAN SEA BY
-      TRANSBOUNDARY MOVEMENTS OF HAZARDOUS WASTES AND THEIR DISPOSAL (HAZARDOUS WASTES PROTOCOL)</small></h5></center>
+    <center><h1 class="mb-3 mt-2">Dummy Protocol</h1></center>
+    <center><h5><small class="text-muted">Dummy description for dummy protocol</small></h5></center>
       <br><br><br>
       <b-card no-body>
         <b-form validated novalidate @submit="onSubmit">
