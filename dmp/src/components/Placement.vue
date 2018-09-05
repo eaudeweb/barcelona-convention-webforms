@@ -185,6 +185,7 @@ export default {
             name: 'placement_location',
             selected: '',
             info: 'A Map showing the placement site location with coordinates including depth and distance to shore and distance to the other reefs marked (YES/NO)',
+            comments:'',
           }, {
             label: 'Purpose of Placement',
             type: 'text',

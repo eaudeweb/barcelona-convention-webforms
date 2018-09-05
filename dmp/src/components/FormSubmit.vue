@@ -358,6 +358,7 @@ export default {
           parent_collection_id: parent_collection_id,
           placement_site_code: article.article_title.selected,
           placement_location: null,
+          placement_location_comments: null,
           placement_purpose: null,
           material_characteristics_and_quantity: null,
           permitting_authority_name: null,
@@ -367,7 +368,7 @@ export default {
         }
         for (let article_item of article.article_items){
             row[article_item.name] = article_item.selected
-            if(article_item.name === 'plans_for_monitoring'){
+            if(article_item.name === 'plans_for_monitoring' || article_item.name ==='placement_location'){
               row[article_item.name + '_comments'] = article_item.comments
             }
         }
