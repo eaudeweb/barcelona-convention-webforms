@@ -106,7 +106,7 @@ let testCompanyId = getParameterByName('testCompanyId');
         })
       } else {
    
-        var deleteData = encodeURIComponent(`ids:list=${filename}&manage_delObjects:method=Delete`)
+        var deleteData = encodeURIComponent(`ids:list=${fileName}&manage_delObjects:method=Delete`)
 
          return axios({
           method: 'post',
