@@ -377,7 +377,7 @@ export default {
             type: 'file',
             name: 'dumping_map',
             selected: '',
-            info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MA Secretariat'
+            info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MAP Secretariat'
           }, {
             label: '3.3 Method of Dumping at Sea',
             type: 'text',
@@ -402,7 +402,7 @@ export default {
             name: 'waste_reporting_units',
             selected: '',
             info: '[Depends on waste dumped]'
-          }, 
+          },
           {
             label: '3.6 Notes',
             type: 'textarea',
@@ -433,7 +433,7 @@ export default {
             type: 'file',
             name: 'dumping_map',
             selected: '',
-            info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MA Secretariat'
+            info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MAP Secretariat'
           }, {
             label: '3.3 Method of Dumping at Sea',
             type: 'text',
@@ -458,7 +458,7 @@ export default {
             name: 'waste_reporting_units',
             selected: '',
             info: '[Depends on waste dumped]'
-          }, 
+          },
           {
             label: '3.6 Notes',
             type: 'textarea',
@@ -516,7 +516,7 @@ export default {
             name: 'coord_a_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds'
-          }, 
+          },
           {
             label: '4.5.1 Coordinate B - Latitude',
             type: 'text',
@@ -530,35 +530,35 @@ export default {
             name: 'coord_b_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or  East/West degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.6.1 Coordinate C - Latitude',
             type: 'text',
             name: 'coord_c_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.6.2 Coordinate C - Longitude',
             type: 'text',
             name: 'coord_c_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.7.1 Coordinate D - Latitude',
             type: 'text',
             name: 'coord_d_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.7.2 Coordinate D - Longitude',
             type: 'text',
             name: 'coord_d_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or    East/West degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.8 Notes',
             type: 'textarea',
@@ -608,7 +608,7 @@ export default {
             name: 'coord_a_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds'
-          }, 
+          },
           {
             label: '4.5.1 Coordinate B - Latitude',
             type: 'text',
@@ -622,35 +622,35 @@ export default {
             name: 'coord_b_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or  East/West degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.6.1 Coordinate C - Latitude',
             type: 'text',
             name: 'coord_c_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.6.2 Coordinate C - Longitude',
             type: 'text',
             name: 'coord_c_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.7.1 Coordinate D - Latitude',
             type: 'text',
             name: 'coord_d_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.7.2 Coordinate D - Longitude',
             type: 'text',
             name: 'coord_d_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or    East/West degrees, minutes, seconds',
-          }, 
+          },
           {
             label: '4.8 Notes',
             type: 'textarea',
@@ -734,7 +734,7 @@ export default {
             name: 'impact_description',
             selected: '',
             info: 'Brief information on: impacts (e.g. physical, chemical or biological) and their spatial or temporal variation'
-          }, 
+          },
           {
             label: '5.4.1 Was Compliance Monitoring Conducted for a Permit(s) Issued to Use the Dump Site?',
             type: 'radio',
@@ -743,7 +743,7 @@ export default {
             info: '',
             options: [{text:'yes', value: true}, {text:'no', value:false}],
 
-          }, 
+          },
           {
             label: '5.4.2 If Compliance Monitoring was Conducted, were the dumping at sea operations found to be in compliance with the permit(s)?',
             type: 'radio',
@@ -752,7 +752,7 @@ export default {
             info: '',
             options: [{text:'yes', value: true}, {text:'no', value:false}],
 
-          }, 
+          },
           {
             label: '5.4.3 If dumping at sea operations were not in compliance, is follow-up action planned?',
             type: 'radio',
@@ -827,7 +827,7 @@ export default {
             name: 'impact_description',
             selected: '',
             info: 'Brief information on: impacts (e.g. physical, chemical or biological) and their spatial or temporal variation'
-          }, 
+          },
           {
             label: '5.4.1 Was Compliance Monitoring Conducted for a Permit(s) Issued to Use the Dump Site?',
             type: 'radio',
@@ -836,7 +836,7 @@ export default {
             info: '',
             options: [{text:'yes', value: true}, {text:'no', value:false}],
 
-          }, 
+          },
           {
             label: '5.4.2 If Compliance Monitoring was Conducted, were the dumping at sea operations found to be in compliance with the permit(s)?',
             type: 'radio',
@@ -845,7 +845,7 @@ export default {
             info: '',
             options: [{text:'yes', value: true}, {text:'no', value:false}],
 
-          }, 
+          },
           {
             label: '5.4.3 If dumping at sea operations were not in compliance, is follow-up action planned?',
             type: 'radio',
@@ -910,7 +910,7 @@ export default {
             name: 'permitting_authority_name',
             selected: '',
             info: 'Name of the authority; legislation name and number as official gazette'
-          }, 
+          },
           {
             label: 'Plans for Monitoring activities are in place (3) (YES/NO)',
             type: 'text',
@@ -919,7 +919,7 @@ export default {
             info: 'Explain the monitoring and modalities including a plan for pre-placement and post- placement monitoring and evaluation.',
             additional_info: 'Pre-placement monitoring plans should set a reference baseline. Post-Placement monitoring plans should aim to produce scientific evidence to impact hypothesis',
             comments: inventory.plans_for_monitoring_comments
-          }, 
+          },
           {
             label: 'Notes',
             type: 'textarea',
@@ -971,7 +971,7 @@ export default {
             name: 'permitting_authority_name',
             selected: '',
             info: 'Name of the authority; legislation name and number as official gazette'
-          }, 
+          },
           {
             label: 'Plans for Monitoring activities are in place (YES/NO)',
             type: 'text',
@@ -980,7 +980,7 @@ export default {
             info: 'Explain the monitoring and modalities including a plan for pre-placement and post- placement monitoring and evaluation.',
             additional_info: 'Pre-placement monitoring plans should set a reference baseline. Post-Placement monitoring plans should aim to produce scientific evidence to impact hypothesis',
             comments: inventory.plans_for_monitoring_comments
-          }, 
+          },
           {
             label: 'Notes',
             type: 'textarea',
