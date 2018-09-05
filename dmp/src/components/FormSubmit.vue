@@ -262,6 +262,7 @@ export default {
           parent_collection_id: parent_collection_id,
           dump_site_code: article.article_title.selected,
           dumping_map: null,
+          dumping_map_comments: null,
           dumping_sea_method: null,
           waste_type_sea: null,
           total_waste_dumped: null,
@@ -269,8 +270,9 @@ export default {
           notes: null,
         }
         for (let article_item of article.article_items){
-          // let row = {};
-          // console.log(article_item)
+          if(article_item.name === 'dumping_map') {
+            row[article_item.name + '_comments'] = article_item.comments 
+          }
             row[article_item.name] = article_item.selected
 
         }

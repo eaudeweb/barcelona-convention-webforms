@@ -10,7 +10,7 @@
 
         <div class="answer">
           <div class="table-head">
-
+            
             <b>{{info.data.table_1.table_label}}</b>
 
           </div>
@@ -21,7 +21,7 @@
             {{article.article_title.label}} : {{article.article_title.selected}} <span style="float:right">▼</span>
             </h5>
 
-              <b-btn variant="danger" @click="removeDump1(index)"> X</b-btn>
+              <b-btn variant="danger" @click="removeDump1(index)"> X</b-btn> 
 
             <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
@@ -65,11 +65,11 @@
 
             </b-collapse>
             </b-card>
-             <b-btn style="
+             <b-btn style="    
                   position: absolute;
                   top: -4rem;
-                  right: 13px;"
-                  variant="primary" @click="addDump1"> + Add</b-btn>
+                  right: 13px;" 
+                  variant="primary" @click="addDump1"> + Add</b-btn> 
           </div>
         </div>
 
@@ -79,7 +79,7 @@
 
         <div class="answer">
           <div class="table-head">
-
+            
             <b>{{info.data.table_2.table_label}}</b>
 
           </div>
@@ -90,7 +90,7 @@
             {{article.article_title.label}} : {{article.article_title.selected}} <span style="float:right">▼</span>
             </h5>
 
-              <b-btn variant="danger" @click="removeDump2(index)"> X</b-btn>
+              <b-btn variant="danger" @click="removeDump2(index)"> X</b-btn> 
 
             <b-form-input required :id="`${tabId}_${index}_${article.article_title.name}_${article.article_title.type}`" :type="article.article_title.type" :name="article.article_title.name" v-model="article.article_title.selected"></b-form-input>
 
@@ -100,10 +100,10 @@
               <div class="form-fields mb-3" v-for="(item, array_index) in article.article_items">
 
                 <div><b>{{item.label}}</b> <small class="muted" v-if="item.info">({{item.info}})</small></div>
-
+                
                   <b-form-input required v-if="item.type != 'textarea'" :id="`${tabId}_${index}_${array_index}_${item.name}_${item.type}`" :type="item.type" :name="item.name" v-model="item.selected"></b-form-input>
                   <textarea v-else class="form-control" v-model="item.selected"></textarea>
-
+                
                  <div v-if="checkForCommentsField(item)">
                     Comments
                     <textarea class="form-control"  v-model="item.comments"></textarea>
@@ -114,11 +114,11 @@
 
             </b-collapse>
             </b-card>
-                    <b-btn style="
+                    <b-btn style="    
                   position: absolute;
                   top: -3rem;
-                  right: 13px;"
-                  variant="primary" @click="addDump2"> + Add</b-btn>
+                  right: 13px;" 
+                  variant="primary" @click="addDump2"> + Add</b-btn> 
           </div>
         </div>
 
@@ -170,7 +170,7 @@ export default {
     uploadFormFile(userfile, formfield){
 
       console.log(userfile)
-      console.log(formfield)
+      console.log(formfield)      
 
       this.fileIsUploading = true;
 
@@ -184,7 +184,7 @@ export default {
           this.file = null;
           formfield.selected = envelope + '/' + response.data[response.data.length - 1]
           this.fileIsUploading = false
-          this.doneUpload = true
+          this.doneUpload = true  
         })
       }).catch((error) => {
         console.log(error)
@@ -232,7 +232,8 @@ export default {
             type: 'file',
             name: 'dumping_map',
             selected: '',
-            info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MAP Secretariat'
+            info: 'Confirm that a small scale map showing the dump site location has been "Provided" or "Not Provided" to UNEP/MAP Secretariat',
+            comments: ''
           }, {
             label: '3.3 Method of Dumping at Sea',
             type: 'text',
@@ -257,7 +258,7 @@ export default {
             name: 'waste_reporting_units',
             selected: '',
             info: '[Depends on waste dumped]'
-          },
+          }, 
           {
             label: '3.6 Notes',
             type: 'textarea',
@@ -306,49 +307,49 @@ export default {
             name: 'coord_a_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds'
-          },
+          }, 
           {
             label: '4.5.1 Coordinate B - Latitude',
             type: 'text',
             name: 'coord_b_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          },
+          }, 
           {
             label: '4.5.2 Coordinate B -Longitude',
             type: 'text',
             name: 'coord_b_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or  East/West degrees, minutes, seconds',
-          },
+          }, 
           {
             label: '4.6.1 Coordinate C - Latitude',
             type: 'text',
             name: 'coord_c_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          },
+          }, 
           {
             label: '4.6.2 Coordinate C - Longitude',
             type: 'text',
             name: 'coord_c_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or East/West degrees, minutes, seconds',
-          },
+          }, 
           {
             label: '4.7.1 Coordinate D - Latitude',
             type: 'text',
             name: 'coord_d_latitude',
             selected: '',
             info: 'North/South decimal degrees (4 significant figures), or North/South degrees, minutes, seconds',
-          },
+          }, 
           {
             label: '4.7.2 Coordinate D - Longitude',
             type: 'text',
             name: 'coord_d_longitude',
             selected: '',
             info: 'East/West decimal degrees (4 significant figures), or    East/West degrees, minutes, seconds',
-          },
+          }, 
           {
             label: '4.8 Notes',
             type: 'textarea',
