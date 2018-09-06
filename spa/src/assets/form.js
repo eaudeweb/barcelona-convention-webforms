@@ -498,7 +498,6 @@ var form = {
     parent_collection_id: 5,
     data: {
       question: 'Question 2: Has the Party established specially protected areas and taken necessary measures for their protection and the implementation of their management plans?',
-
       table_1: {
         collection_id: 504,
         parent_collection_id: 503,
@@ -4834,17 +4833,33 @@ var form = {
 
       table_2: {
         table_label: 'Table IX – Measures to protect species, per each species',
+        description: 'List of species as per the Annexes to the Protocol (For each species, tick the box that applies)',
         collection_id: 513,
         parent_collection_id: 511,
         articles: [{
-          article_title: 'List of species as per the Annexes to the Protocol(For each species, tick the box that applies)',
+          article_title: 'Magnoliophyta',
           collection_id: 6800,
           parent_collection_id: 513,
           article_items: [{
             items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Cymodocea nodosa (Ucria) Ascherson',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
                 type: 'checkbox',
-                name: 'posidonia_oceania',
-                label: 'Posidonia Oceanica',
+                label: 'Posidonia oceanica (Linnaeus) Delile',
                 info: 'Please tick all that apply',
                 selected: [],
                 options: [
@@ -4857,9 +4872,2722 @@ var form = {
                 comments: ''
               },
               {
-                type: 'checkbox',
-                label: 'Xiphias gladius',
                 name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Zostera marina Linnaeus',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Zostera noltii Hornemann',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Bryozoa',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Hornera lichenoides (Linnaeus, 1758)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            }
+            ]
+          }]
+        },{
+          article_title: 'Chlorophyta',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Caulerpa ollivieri Dostál',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            }
+            ]
+          }]
+        },{
+          article_title: 'Cnidaria',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Antipathella subpinnata (Ellis & Solander, 1786)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Antipathes dichotoma Pallas, 1766',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Antipathes fragilis Gravier, 1918',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Antipathes sp. plur.',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'posidonia_oceania',
+                type: 'checkbox',
+                label: 'Astroides calycularis (Pallas, 1766)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Corallium rubrum (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Callogorgia verticillata(Pallas, 1766)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Cladocora caespitosa (Linnaeus, 1767)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Cladocora debilis Milne Edwards & Haime, 1849',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Ellisella paraplexauroides (Stiasny, 1936)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Errina aspera (Linnaeus, 1767)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lophelia pertusa (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Madrepora oculata Linnaeus, 1758',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Savalia savaglia Nardo, 1844 (synon.Gerardia savaglia)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Crustacea',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Homarus gammarus (Linnaeus, 1758)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Maja squinado (Herbst, 1788)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Ocypode cursor (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pachylasma giganteum (Philippi, 1836)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Palinurus elephas (Fabricius, 1787)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Scyllarides latus (Latreille, 1803)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Scyllarus arctus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Scyllarus pygmaeus (Bate, 1888)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Echinodermata',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Paracentrotus lividus (Lamarck, 1816)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'posidonia_oceania',
+                type: 'checkbox',
+                label: 'Asterina pancerii (Gasco, 1870)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'posidonia_oceania',
+                type: 'checkbox',
+                label: 'Centrostephanus longispinus (Philippi, 1845)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'posidonia_oceania',
+                type: 'checkbox',
+                label: 'Ophidiaster ophidianus (Lamarck, 1816)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Heterokontophyta',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Cystoseira genus (except Cystoseira compressa)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Kallymenia spathulata (J. Agardh) P.G. Parkinson',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Laminaria rodriguezii Bornet Sargassum acinarium (Linnaeus) Setchell',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sargassum flavifolium Kützing',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sargassum hornschuchii C. Agardh',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sargassum trichocarpum J. Agardh',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Rhodophyta',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Fucus virsoides J. Agardh',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Gymnogongrus crenulatus (Turner) J. Agardh',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lithophyllum byssoides (Lamarck) Foslie (Synon. Lithophyllum lichenoides)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Ptilophora mediterranea (H. Huvé) R.E. Norris',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Schimmelmannia schousboei (J. Agardh) J. Agardh',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sphaerococcus rhizophylloides J.J. Rodríguez',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Tenarea tortuosa (Esper) Lemoine',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Titanoderma ramosissimum (Heydrich) Bressan & Cabioch (Synon. Goniolithon byssoides)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Titanoderma trochanter (Bory) Benhissoune et al.',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Porifera',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Aplysina sp. plur.',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Asbestopluma hypogea Vacelet & Boury-Esnault, 1995',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Axinella cannabina (Esper, 1794)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Axinella polypoides Schmidt, 1862',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Geodia hydronium (Jameson, 1811)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Petrobiona massiliana (Vacelet & Lévi, 1958)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sarcotragus foetidus Schmidt, 1862* (synon. Ircina foetida)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sarcotragus pipetta (Schmidt, 1868)* (synon. Ircinia pipetta)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Tethya sp. plur.',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Pisces',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Acipenser naccarii (Bonaparte, 1836)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Acipenser sturio (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Alopias vulpinus (Bonnaterre, 1788)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Alosa alosa (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Alosa fallax (Lacépède, 1803)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Anguilla anguilla (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Aphanius fasciatus (Valenciennes, 1821)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Aphanius iberus (Valenciennes, 1846)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Carcharias taurus (Rafinesque, 1810)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Carcharodon carcharias (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Carcharhinus plumbeus (Nardo, 1827)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Centrophorus granulosus (Bloch & Schneider, 1801)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Cetorhinus maximus (Gunnerus, 1765)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Dipturus batis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Epinephelus marginatus (Lowe, 1834)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Galeorhinus galeus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Gymnura altavela (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Heptranchias perlo (Bonnaterre, 1788)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Hippocampus guttulatus (Cuvier, 1829) (synon. Hippocampus ramulosus)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Hippocampus hippocampus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Huso huso (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Isurus oxyrinchus (Rafinesque, 1810)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lamna nasus (Bonnaterre, 1788)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lampetra fluviatilis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lethenteron zanandreai (Vladykov, 1955)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Leucoraja circularis (Couch, 1838)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Leucoraja melitensis (Clark, 1926)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Mustelus asterias (Cloquet, 1821)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Mustelus mustelus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Mustelus punctulatus (Risso, 1826)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Mobula mobular (Bonnaterre, 1788)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Odontaspis ferox (Risso, 1810)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Oxynotus centrina (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Petromyzon marinus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Prionace glauca (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pomatoschistus canestrini (Ninni, 1883)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pomatoschistus tortonesei (Miller, 1969)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pristis pectinata (Latham, 1794)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pristis pristis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Rhinobatos cemiculus (E. Geoffroy Saint-Hilaire, 1817)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Rhinobatos rhinobatos (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Rostroraja alba (Lacépède, 1803)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sphyrna lewini (Griffith & Smith, 1834)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sphyrna mokarran (Rüppell, 1837)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sphyrna zygaena (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Squatina aculeata (Dumeril, in Cuvier, 1817)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Squatina oculata (Bonaparte, 1840)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Squatina squatina (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sciaena umbra (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Squalus acanthias (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Valencia hispanica (Valenciennes, 1846)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Valencia letourneuxi (Sauvage, 1880)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Thunnus thynnus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Umbrina cirrosa (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Xiphias gladius (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Reptiles',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Caretta caretta (Linnaeus, 1758)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Chelonia mydas (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Dermochelys coriacea (Vandelli, 1761)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Eretmochelys imbricata (Linnaeus, 1766)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lepidochelys kempii (Garman, 1880)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Trionyx triunguis (Forskål, 1775)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Aves',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Calonectris diomedea (Scopoli, 1769)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Ceryle rudis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Charadrius alexandrinus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Charadrius leschenaultii columbinus (Lesson, 1826)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Falco eleonorae (Géné, 1834)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Halcyon smyrnensis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Hydrobates pelagicus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Larus armenicus (Buturlin, 1934)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Larus audouinii (Payraudeau, 1826)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Larus genei (Breme, 1839)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Larus melanocephalus (Temminck, 1820)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Numenius tenuirostris (Viellot, 1817)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pandion haliaetus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pelecanus crispus (Bruch, 1832)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pelecanus onocrotalus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Phalacrocorax aristotelis (Linnaeus, 1761)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Phalacrocorax pygmeus (Pallas, 1773)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Phoenicopterus ruber (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Puffinus mauretanicus (Lowe, PR, 1921)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Puffinus yelkouan (Brünnich, 1764)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sterna albifrons (Pallas, 1764)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sterna bengalensis (Lesson, 1831)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sterna caspia (Pallas, 1770)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sterna nilotica (Gmelin, JF, 1789)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Sterna sandvicensis (Latham, 1878)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Mammalia',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Balaenoptera acutorostrata (Lacépède, 1804)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Balaenoptera borealis (Lesson, 1828)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Balaenoptera physalus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Delphinus delphis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Eubalaena glacialis (Müller, 1776)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Globicephala melas (Trail, 1809)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Grampus griseus (Cuvier G., 1812)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Kogia simus (Owen, 1866)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Megaptera novaeangliae (Borowski, 1781)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Mesoplodon densirostris (de Blainville, 1817)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Monachus monachus (Hermann, 1779)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Orcinus orca (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Phocoena phocoena (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Physeter macrocephalus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pseudorca crassidens (Owen, 1846)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Stenella coeruleoalba (Meyen, 1833)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Steno bredanensis (Cuvier in Lesson, 1828)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Tursiops truncatus (Montagu, 1821)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Ziphius cavirostris (Cuvier G., 1832)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              }
+            ]
+          }]
+        },{
+          article_title: 'Mollusca',
+          collection_id: 6800,
+          parent_collection_id: 513,
+          article_items: [{
+            items: [{
+              name: 'posidonia_oceania',
+              type: 'checkbox',
+              label: 'Charonia lampas (Linnaeus, 1758) (= Ch. Rubicunda = Ch. Nodifera)',
+              info: 'Please tick all that apply',
+              selected: [],
+              options: [
+                { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                { text: 'Ex situ protection measures', value: 3 },
+                { text: 'Exemption granted', value: 4 },
+                { text: 'Introduction of species or genetically modified species', value: 5 }
+              ],
+              comments: ''
+            },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Charonia tritonis variegata (Lamarck, 1816) (= Ch. Seguenziae)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Dendropoma petraeum (Monterosato, 1884)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Erosaria spurca (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Gibbula nivosa (Adams, 1851)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Lithophaga lithophaga (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Luria lurida (Linnaeus, 1758) (= Cypraea lurida)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Mitra zonata (Marryat, 1818)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Patella ferruginea (Gmelin, 1791)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Patella nigra (Da Costa, 1771)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pholas dactylus (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pinna nobilis (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Pinna rudis (= P. pernula) (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Ranella olearia (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Schilderia achatidea (Gray in G.B. Sowerby II, 1837)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Tonna galea (Linnaeus, 1758)',
+                info: 'Please tick all that apply',
+                selected: [],
+                options: [
+                  { text: 'Party‘s list of endangered/threatened animals and plants', value: 1 },
+                  { text: 'Sub-regional cooperation for migrants species', value: 2 },
+                  { text: 'Ex situ protection measures', value: 3 },
+                  { text: 'Exemption granted', value: 4 },
+                  { text: 'Introduction of species or genetically modified species', value: 5 }
+                ],
+                comments: ''
+              },
+              {
+                name: 'xiphias_gladius',
+                type: 'checkbox',
+                label: 'Zonaria pyrum (Gmelin, 1791)',
                 info: 'Please tick all that apply',
                 selected: [],
                 options: [
@@ -4877,11 +7605,6 @@ var form = {
       },
     }
   },
-
-
-
-
-
   tab_5: {
     label: 'Part V: Monitoring',
     collection_id: 514,

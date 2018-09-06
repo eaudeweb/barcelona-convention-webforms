@@ -37,12 +37,12 @@
                     </b-form-group>
                   </div>
                 </div>
-                
-              
-                 
+
+
+
                 <b-row>
                  <b-col lg="12" v-if="item.type === 'status' || item.type === 'difficulties'">
-                   <textarea 
+                   <textarea
                       class="form-control"
                       v-model="item.comments"
                       placeholder="additional comments"></textarea>
@@ -66,6 +66,7 @@
            <div class="answer">
           <div class="table-head">
             <b>{{info.data.table_2.table_label}}</b>
+            <p>{{info.data.table_2.description}}</p>
           </div>
           <div role="tablist">
           <b-card v-for="(article,index) in info.data.table_2.articles" :key="article.article_title" class="mb-1">
@@ -86,10 +87,10 @@
                       </b-form-group>
                 </div>
 
-               
+
                 <b-row>
                  <b-col lg="12">
-                   <textarea 
+                   <textarea
                       class="form-control"
                       v-model="item.comments"
                       placeholder="additional comments"></textarea>
@@ -118,7 +119,7 @@ export default {
   props: {
     info: null,
     tabId:null
-    
+
   },
 
   data () {
@@ -169,7 +170,7 @@ export default {
                 type: 'text',
                 name: 'ecosystems',
                 value: '',
-              }, 
+              },
               {
                 label: 'Management plan',
                 type: 'multiple',
@@ -185,13 +186,13 @@ export default {
                   label: "No",
                   value: '',
                   type: 'number',
-                  name: 'number' 
+                  name: 'number'
                 },
                 {
                   label: "Under development",
                   value: '',
                   type: 'text',
-                  name: 'under_dev' 
+                  name: 'under_dev'
                 }]
               }]
             }
