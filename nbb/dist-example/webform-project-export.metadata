@@ -74,7 +74,7 @@
     },
     "newXmlFileName": "nbb_report.xml",
     "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/nbb/file/empty.xml",
-    "xmlSchema": "https://dd.info-rac.org/v2/dataset/15/schema-dst-15.xsd",
+    "xmlSchema": "https://dd.info-rac.org/schemas/nbb-dataflow/nbb-dataflow-2018.xsd",
     "active": true,
     "localForm": true,
     "remoteForm": true,

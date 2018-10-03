@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NBB_Report>
+<NBB_Report xmlns="https://dd.info-rac.org/namespaces/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/schemas/nbb-dataflow https://dd.info-rac.org/schemas/nbb-dataflow/nbb-dataflow-2018.xsd">
   <country></country>
   <contacting_party>
     <partyname></partyname>
