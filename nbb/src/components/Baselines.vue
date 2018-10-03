@@ -335,7 +335,13 @@ export default {
               type: 'select',
               name: 'production_unit',
               selected: '',
-              options: [],
+              options: [
+                {value: 0, text: 'mg/y'},
+                {value: 1, text: 'kg/y'},
+                {value: 2, text: 'Tons/y'},
+                {value: 3, text: '1000L/y'},
+                {value: 4, text: '1000m²/y'}
+              ],
               required: true,
             },
             {
@@ -351,7 +357,13 @@ export default {
               type: 'select',
               name: 'total_releases_unit',
               selected: '',
-              options: [],
+              options: [
+                {value: 0, text: 'mg/y'},
+                {value: 1, text: 'kg/y'},
+                {value: 2, text: 'Tons/y'},
+                {value: 3, text: '1000L/y'},
+                {value: 4, text: '1000m²/y'}
+              ],
               disabled: true,
             },
           ]
