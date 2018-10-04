@@ -7,18 +7,18 @@
         <div class="question">
             <p>{{info.data.question}}</p>
         </div>
-      
+
   <div class="answer" style="position: relative;">
         <!-- <div class="table-head">
           </div> -->
-   
+
           <div role="tablist">
 
             <div role="tablist">
 
               <b-card v-if="pollutant.region === region" style="background: #eee" v-for="(pollutant,index) in info.data.table.pollutants" :key="index" class="mb-1">
                 <h5 style="cursor: pointer" href="#" v-b-toggle="`pollutant_table_${index}`" variant="info">
-                   {{pollutant.pollutant_title.label}} : {{getPollutantTitle(pollutant.pollutant_title.selected)}} 
+                   {{pollutant.pollutant_title.label}} : {{getPollutantTitle(pollutant.pollutant_title.selected)}}
                   <span style="float:right">▼</span>
                 </h5>
               <br>
@@ -29,7 +29,7 @@
 
                 <b-collapse class="mt-3" visible :id="`pollutant_table_${index}`" accordion="my-accordion" role="tabpanel">
                   <div class="form-subsection" v-for="(item,item_index) in pollutant.pollutant_items">
-               
+
                       <div class="form-fields">
                         <div class="mt-2">{{item.label}}</div>
                             <!-- {{field}} -->
@@ -40,11 +40,11 @@
                   </div>
                 </b-collapse>
               </b-card>
-               <b-btn style="    
+               <b-btn style="
                   position: absolute;
-                  top: 9px;
-                  right: 13px;" 
-                  variant="primary" @click="addPollutant"> + Add</b-btn> 
+                  top: -46px;
+                  right: 13px;"
+                  variant="primary" @click="addPollutant"> + Add</b-btn>
             </div>
           </div>
         </div>
@@ -122,13 +122,13 @@ export default {
             }
           }
 
-          if(item.name === 'estimated') { 
+          if(item.name === 'estimated') {
             for (let estimation of estimationtypeJson) {
              item.options.push({value: estimation.estimation_type_id, text: estimation.name})
             }
           }
 
-          if(item.name === 'emission_factor_unit') { 
+          if(item.name === 'emission_factor_unit') {
             for(let emission of emissionfactorunitJson) {
               item.options.push({value: emission.emission_factor_unit_id, text: emission.name})
             }
@@ -137,7 +137,7 @@ export default {
           if(item.name === 'year')  {
             item.options = this.generateYears(1998)
           }
-        } 
+        }
 
       }
 
@@ -190,7 +190,7 @@ export default {
           efv = field
 
         if(field.name === 'emission_factor_unit')
-          efu = field        
+          efu = field
       }
 
 
@@ -225,7 +225,7 @@ export default {
       for(let pollutant of pollutantsJson) {
         if(pollutant.pollutant_id === selected)
           return pollutant.pollutant_name
-      } 
+      }
     },
 
     generateYears(startYear) {
@@ -234,14 +234,14 @@ export default {
 
         while ( startYear <= currentYear ) {
                 years.push({text:startYear++ , value: startYear++});
-        } 
+        }
 
         return years;
     },
 
     getSelectItems(name) {
       return this.selectsOptions[name]
-    },  
+    },
 
 
     addPollutant() {
