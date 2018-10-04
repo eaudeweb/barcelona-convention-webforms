@@ -70,11 +70,11 @@
           </div>
           <div role="tablist">
           <b-card v-for="(article,index) in info.data.table_2.articles" :key="article.article_title" class="mb-1">
-            <h5 :id="titleSlugify(article.article_title)" style="cursor: pointer"  variant="info">
+            <h5 :id="titleSlugify(article.article_title)" style="cursor: pointer"  href="#" v-b-toggle="`article_${index}`">
               <span class="text-muted" v-if="article.optional">Optional: </span>
-              {{article.article_title}}
+              {{article.article_title}} <span style="float:right">▼</span>
             </h5>
-            <div class="mt-3"  :id="`article_${index}`">
+            <b-collapse class="mt-3"  :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
               <div class="form-section" v-for="(item_array,array_index) in article.article_items">
                 <h6><b>{{item_array.description}}</b></h6>
                 <div class="form-subsection" v-for="(item, item_index) in item_array.items">
@@ -99,7 +99,7 @@
 
               </div>
               </div>
-            </div>
+            </b-collapse>
             </b-card>
           </div>
         </div>
@@ -127,6 +127,8 @@ export default {
 
     }
   },
+
+
 
   methods: {
     titleSlugify(text) {

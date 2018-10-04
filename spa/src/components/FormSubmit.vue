@@ -351,7 +351,7 @@ export default {
                       "legal_status_change": null,
                       "changes_reasons": null,
                       "custom_spami": custom_spami || null,
-                      "iso": articles.iso
+                      "iso": article.iso
                   }
         for (let article_item of article.article_items){
           row[article_item.name] = article_item.selected
@@ -359,7 +359,6 @@ export default {
           this.jsonemptyinstance.BC_SPA.spamis.Row.push(row)
       }
 
-      console.log(this.jsonemptyinstance.BC_SPA.spamis)
 
 
 
@@ -551,10 +550,10 @@ export default {
         for (let article_item of article.article_items){
           // let row = {};
           // console.log(article_item)
-          if(item.name === "protection_measures") {
-            row.protection_comments = item.comments
-          } else if (item.name === "difficulties") {
-            row.difficulties_comments = item.comments
+          if(article_item.name === "protection_measures") {
+            row.protection_comments = article_item.comments
+          } else if (article_item.name === "difficulties") {
+            row.difficulties_comments = article_item.comments
           }
 
           row[article_item.name] = article_item.selected
@@ -593,7 +592,8 @@ export default {
         }
       }
       
-      console.log(this.jsonemptyinstance.BC_SPA.measures_to_protect_species.Row)
+
+      console.log(this.jsonemptyinstance.BC_SPA.measures_to_protect_species)
 
       let tab_6 = this.dataset.tab_6.data;
       for (let article of tab_6.articles) {
