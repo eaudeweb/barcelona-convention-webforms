@@ -846,5 +846,17 @@
         "region_name":"Wadi Gaza"
       }
     ]
+  },
+  {
+    "country_id":9999,
+    "country_name":"Monaco",
+    "country_code":"MCO",
+    "country_code_iso2":"MC",
+    "regions" : [
+      {
+        "region_id":9998,
+        "region_name":"Monaco"
+      }
+    ]
   }
 ]
