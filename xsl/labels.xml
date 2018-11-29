@@ -1,0 +1,24 @@
+<labels>
+    <partyname>Contracting Party</partyname>
+    <rep_period_from>Reporting period from (year)</rep_period_from>
+    <rep_period_to>Reporting period to (year)</rep_period_to>
+    <institution_name>Name of the institution/s responsible for the Barcelona Convention</institution_name>
+    <officer_name>Name of the officer who is the focal point for the Barcelona Convention</officer_name>
+    <mailing_address>Mailing address</mailing_address>
+    <tel>Tel.</tel>
+    <fax>Fax</fax>
+    <email>Email</email>
+    <contact_point>Contact point for the national report, if any</contact_point>
+    <instituion_full_name>Full name of the institution</instituion_full_name>
+    <national_mailing_address>Mailing address</national_mailing_address>
+    <national_tel>Tel.</national_tel>
+    <national_fax>Fax</national_fax>
+    <national_email>Email</national_email>
+    <national_signature>Signature of the Convention’s Focal Point</national_signature>
+    <national_date>Date of submission of the Report</national_date>
+    <org_name>Full name of the institution</org_name>
+    <org_contact_point>Name of the contact point (optional)</org_contact_point>
+    <org_tel>Tel.</org_tel>
+    <org_fax>Fax</org_fax>
+    <org_email>Email</org_email>
+</labels>
