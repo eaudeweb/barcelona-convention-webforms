@@ -4,7 +4,7 @@
                 xmlns:local="http://local"
                 version="2.0" exclude-result-prefixes="xml">
 
-    <xsl:variable name="labels" select="document('labels.xml')/labels"/>
+    <xsl:variable name="labels" select="document('bcrs_labels.xml')/labels"/>
 
     <xsl:function name="local:get_difficulty_label" as="xs:string">
         <xsl:param name="diff" as="xs:string"/>
