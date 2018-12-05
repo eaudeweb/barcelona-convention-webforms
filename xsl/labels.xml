@@ -1,24 +1,142 @@
 <labels>
-    <partyname>Contracting Party</partyname>
-    <rep_period_from>Reporting period from (year)</rep_period_from>
-    <rep_period_to>Reporting period to (year)</rep_period_to>
-    <institution_name>Name of the institution/s responsible for the Barcelona Convention</institution_name>
-    <officer_name>Name of the officer who is the focal point for the Barcelona Convention</officer_name>
-    <mailing_address>Mailing address</mailing_address>
-    <tel>Tel.</tel>
-    <fax>Fax</fax>
-    <email>Email</email>
-    <contact_point>Contact point for the national report, if any</contact_point>
-    <instituion_full_name>Full name of the institution</instituion_full_name>
-    <national_mailing_address>Mailing address</national_mailing_address>
-    <national_tel>Tel.</national_tel>
-    <national_fax>Fax</national_fax>
-    <national_email>Email</national_email>
-    <national_signature>Signature of the Convention’s Focal Point</national_signature>
-    <national_date>Date of submission of the Report</national_date>
-    <org_name>Full name of the institution</org_name>
-    <org_contact_point>Name of the contact point (optional)</org_contact_point>
-    <org_tel>Tel.</org_tel>
-    <org_fax>Fax</org_fax>
-    <org_email>Email</org_email>
+    <general>
+        <tab_1>
+            <labels>
+                <value>Please provide information on the reporting Party by completing the following table.</value>
+            </labels>
+            <partyname>Contracting Party</partyname>
+            <rep_period_from>Reporting period from (year)</rep_period_from>
+            <rep_period_to>Reporting period to (year)</rep_period_to>
+            <institution_name>Name of the institution/s responsible for the Barcelona Convention</institution_name>
+            <officer_name>Name of the officer who is the focal point for the Barcelona Convention</officer_name>
+            <mailing_address>Mailing address</mailing_address>
+            <tel>Tel.</tel>
+            <fax>Fax</fax>
+            <email>Email</email>
+        </tab_1>
+        <tab_2>
+            <labels>
+                <value>Contact point for the national report, if any</value>
+            </labels>
+            <contact_point>Contact point for the national report, if any</contact_point>
+            <instituion_full_name>Full name of the institution</instituion_full_name>
+            <national_mailing_address>Mailing address</national_mailing_address>
+            <national_tel>Tel.</national_tel>
+            <national_fax>Fax</national_fax>
+            <national_email>Email</national_email>
+            <national_signature>Signature of the Convention’s Focal Point</national_signature>
+            <national_date>Date of submission of the Report</national_date>
+        </tab_2>
+        <tab_3>
+            <labels>
+                <value>Organizations/bodies/agencies providing information for the compilation of the report</value>
+                <value>Please provide information on the preparation of this report, including, where appropriate, stakeholders involved and material used, by completing the following Table.</value>
+            </labels>
+            <org_name>Full name of the institution</org_name>
+            <org_contact_point>Name of the contact point (optional)</org_contact_point>
+            <org_tel>Tel.</org_tel>
+            <org_fax>Fax</org_fax>
+            <org_email>Email</org_email>
+        </tab_3>
+    </general>
+    <article_titles>
+        <collection_id>1001</collection_id>
+        <article_title>Article 4.3.a Precautionary Principle</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1002</collection_id>
+        <article_title>Article 4.3.b Polluter Pays Principle</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1003</collection_id>
+        <article_title>Article 4.3.c Environmental Impact Assessment (EIA)</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1004</collection_id>
+        <article_title>Article 4.4.b. BAT and BEP</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1005</collection_id>
+        <article_title>Article 12 Monitoring</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1007</collection_id>
+        <article_title>Article 15.1 and 2 Public information and Participation</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1013</collection_id>
+        <article_title>Article 4.3.d Environmental Impact Assessment (EIA)</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1014</collection_id>
+        <article_title>Article 4.3.e Intergrated Coastal Zone Mangement (ICZM)</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1015</collection_id>
+        <article_title>Article 13 Scientific and Technological Cooperation</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1017</collection_id>
+        <article_title>Article 16 Liability and Compensation</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1018</collection_id>
+        <article_title>Domestic Strategy for sustainable development</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1019</collection_id>
+        <article_title>Regional Strategies adopted in the framework of MAP</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1021</collection_id>
+        <article_title>ICZM and physical planning</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1022</collection_id>
+        <article_title>Economic Instruments</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1023</collection_id>
+        <article_title>Article 12 Monitoring</article_title>
+    </article_titles>
+    <article_titles>
+        <collection_id>1024</collection_id>
+        <article_title>Article 15.1 Public information and Participation</article_title>
+    </article_titles>
+    <statuses>
+        <status>1</status>
+        <label>Yes</label>
+    </statuses>
+    <statuses>
+        <status>2</status>
+        <label>No</label>
+    </statuses>
+    <statuses>
+        <status>3</status>
+        <label>Under development</label>
+    </statuses>
+    <statuses>
+        <status>4</status>
+        <label>Not applicable</label>
+    </statuses>
+    <difficulties>
+        <value>1</value>
+        <label>Policy framework</label>
+    </difficulties>
+    <difficulties>
+        <value>2</value>
+        <label>Regulatory framework</label>
+    </difficulties>
+    <difficulties>
+        <value>3</value>
+        <label>Financial resources</label>
+    </difficulties>
+    <difficulties>
+        <value>4</value>
+        <label>Administrative management</label>
+    </difficulties>
+    <difficulties>
+        <value>5</value>
+        <label>Technical Guidance Capabilities</label>
+    </difficulties>
 </labels>
