@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels xmlns="https://dd.info-rac.org/namespaces/4">
+    <contacting_party>
+        <tab_1>
+            <labels>
+                <value>Please provide information on the reporting Party by completing the following table.</value>
+            </labels>
+            <partyname>Contracting Party</partyname>
+            <rep_period_from>Reporting period from (year)</rep_period_from>
+            <rep_period_to>Reporting period to (year)</rep_period_to>
+            <institution_name>Name of the institution/s responsible for the Dumping Protocol</institution_name>
+            <officer_name>Name of the officer who is the focal point for the Dumping Protocol</officer_name>
+            <mailing_address>Mailing address</mailing_address>
+            <tel>Tel.</tel>
+            <fax>Fax</fax>
+            <email>Email</email>
+        </tab_1>
+        <tab_2>
+            <labels>
+                <value>Contact point for the national report, if any</value>
+            </labels>
+            <contact_point>Contact point for the national report, if any</contact_point>
+            <instituion_full_name>Full name of the institution</instituion_full_name>
+            <national_mailing_address>Mailing address</national_mailing_address>
+            <national_tel>Tel.</national_tel>
+            <national_fax>Fax</national_fax>
+            <national_email>Email</national_email>
+            <national_signature>Signature of the Protocol’s Focal Point</national_signature>
+            <national_date>Date of submission of the Report</national_date>
+        </tab_2>
+        <tab_3>
+            <labels>
+                <value>Organizations/bodies/agencies providing information for the compilation of the report</value>
+                <value>Please provide information on the preparation of this report, including, where appropriate, stakeholders involved and material used, by completing the following Table.</value>
+            </labels>
+            <org_name>Full name of the institution</org_name>
+            <org_contact_point>Name of the contact point (optional)</org_contact_point>
+            <org_tel>Tel.</org_tel>
+            <org_fax>Fax</org_fax>
+            <org_email>Email</org_email>
+        </tab_3>
+    </contacting_party>
+    <table1>
+        <article_titles>
+            <collection_id>2001</collection_id>
+            <article_title>Article 4.1</article_title>
+            <additional_description>Wastes or other matter listed in Article 4.2. are: “(a) dredged material; (b) fish waste or organic materials resulting from the processing of fish and other marine organisms; (c) vessels, until 31 December 2000; (d) platforms and other ma-made structures at sea, provided that material capable of creating floating debris or otherwise contributing to pollution of the marine environment has been removed to the maximum extent, without prejudice to the provisions of the Protocol concerning Pollution Resulting from Exploration and Exploitation of the Continental Shelf, the Seabed and its Subsoil; and (e) inert uncontaminated geological materials the chemical constituents of which are unlikely to be released into the marine environment”.</additional_description>
+        </article_titles>
+        <article_titles>
+            <collection_id>2002</collection_id>
+            <article_title>Article 5, Article 6, Article 10.1</article_title>
+            <additional_description>The Annex to the Protocol lists the factors to be considered in establishing criteria governing the issue of permits for the dumping of matter at sea taking into account Article 6. These are: “A. Characteristics and Composition of the Matter, B. Characteristics of Dumping Site and Method of Deposit and C. General Considerations and Conditions”. Guidelines adopted by the Meeting of the Contracting Parties refer to the wastes or other matter listed in Article 4.2 of the Dumping Protocol.</additional_description>
+        </article_titles>
+        <article_titles>
+            <collection_id>2003</collection_id>
+            <article_title>Article 10.1</article_title>
+        </article_titles>
+        <article_titles>
+            <collection_id>2004</collection_id>
+            <article_title>Article 7</article_title>
+        </article_titles>
+        <article_titles>
+            <collection_id>2005</collection_id>
+            <article_title>Article 8</article_title>
+            <additional_description>The Article 8 conditions refer to force majeure due to stress of weather or any other cause when human life or the safety of a ship or aircraft is threatened.</additional_description>
+        </article_titles>
+        <article_titles>
+            <collection_id>2006</collection_id>
+            <article_title>Article 9</article_title>
+            <additional_description>The Article 9 conditions refer to a critical situation of an exceptional nature where wastes or other matter not listed in Article 4.2 cannot be disposed of on land without unacceptable danger or damage, above all for the safety of human life.</additional_description>
+        </article_titles>
+        <article_titles>
+            <collection_id>2007</collection_id>
+            <article_title>Article 10.2</article_title>
+        </article_titles>
+        <article_titles>
+            <collection_id>2008</collection_id>
+            <article_title>Article 11</article_title>
+        </article_titles>
+        <article_titles>
+            <collection_id>2009</collection_id>
+            <article_title optional="true">Article 12</article_title>
+        </article_titles>
+    </table1>
+    <table2a>
+        <permit_type>2.2 Type of Permit</permit_type>
+        <waste_cateogry>2.3 Waste Category</waste_cateogry>
+        <permits_number_issued>2.4 Total Number of New Permits Issued</permits_number_issued>
+        <waste_quantity_permited>2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea</waste_quantity_permited>
+        <waste_reporting_unit>2.5.2 Waste Reporting Unit</waste_reporting_unit>
+        <waste_quanity_actual>2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea</waste_quanity_actual>
+        <waste_reporting_units>2.6.2 Waste Reporting Units</waste_reporting_units>
+        <waste_reporting_units_2>Waste Reporting Units 2</waste_reporting_units_2>
+        <dumping_regulated>2.7 Dumping at Sea Operations Regulated by Other Means</dumping_regulated>
+        <notes>2.8 Notes</notes>
+    </table2a>
+    <table2b>
+        <cr-tons>Cr (tons)</cr-tons>
+        <cu-tons>Cu (tons)</cu-tons>
+        <pb-tons>Pb (tons)</pb-tons>
+        <ni-tons>Ni (tons)</ni-tons>
+        <zn-tons>Zn (tons)</zn-tons>
+        <oil-tons>Oil (tons)</oil-tons>
+        <pah9-tons>ΣPAH9 (tons)</pah9-tons>
+        <pah16-tons>ΣPAH16 (tons)</pah16-tons>
+        <pcb7-tons>ΣPCB7 (tons)</pcb7-tons>
+        <hcb-kg>HCB (kg)</hcb-kg>
+        <g-hch-kg>g-HCH (kg)</g-hch-kg>
+        <pp-ddt-kg>p,p' DDT (kg)</pp-ddt-kg>
+        <pp-dde-kg>p,p' DDE (kg)</pp-dde-kg>
+        <pp-ddd-kg>p,p' DDD (kg)</pp-ddd-kg>
+        <ddx-kg>ΣDDX (kg)</ddx-kg>
+        <tbt-kg>TBT (kg)</tbt-kg>
+        <dbt-kg>DBT (kg)</dbt-kg>
+        <notes>Note</notes>
+    </table2b>
+    <table3>
+      <dump_site_code>3.1 Dump Site Code</dump_site_code>
+      <dumping_map>3.2 Map of Dumping Site</dumping_map>
+      <dumping_sea_method>3.3 Method of Dumping at Sea</dumping_sea_method>
+      <waste_type_sea>3.4 Type of Waste Dumped at the Sea</waste_type_sea>
+      <total_waste_dumped>3.5 Total Quantity of a Waste Actually Dumped at the Site</total_waste_dumped>
+      <waste_reporting_units>3.5.1 Waste Reporting Units</waste_reporting_units>
+      <notes>3.6 Notes</notes>
+    </table3>
+    <table4>
+      <dump_site_code>4.1 Dump Site Code</dump_site_code>
+      <geodetic_datum>4.2 Geodetic Datum for Coordinates</geodetic_datum>
+      <radius_of_circle>4.3 Radius of Circle</radius_of_circle>
+      <coord_a_latitude>4.4.1 Coordinate A - Latitude</coord_a_latitude>
+      <coord_a_longitude>4.4.2 Coordinate A - Longitude</coord_a_longitude>
+      <coord_b_latitude>4.5.1 Coordinate B - Latitude</coord_b_latitude>
+      <coord_b_longitude>4.5.2 Coordinate B -Longitude</coord_b_longitude>
+      <coord_c_latitude>4.6.1 Coordinate C - Latitude</coord_c_latitude>
+      <coord_c_longitude>4.6.2 Coordinate C - Longitude</coord_c_longitude>
+      <coord_d_latitude>4.7.1 Coordinate D - Latitude</coord_d_latitude>
+      <coord_d_longitude>4.7.2 Coordinate D - Longitude</coord_d_longitude>
+      <notes>4.8 Notes</notes>
+    </table4>
+    <table5>
+        <dump_site_code_monitore_d>5.1 Dump Site Code for Sites Monitore d during Reporting Period</dump_site_code_monitore_d>
+        <monitoring_conducted_rep_period>5.2 Was Monitoring Conducted during the Reporting Period?</monitoring_conducted_rep_period>
+        <field_monitoring_when>5.3.1 If Field Monitoring was Conducted, when was it done?</field_monitoring_when>
+        <field_monitoring_survey_type>5.3.2 If Field Monitoring was Conducted, what type of survey was completed?</field_monitoring_survey_type>
+        <field_monitoring_survey_type_comments></field_monitoring_survey_type_comments>
+        <adverse_impact_found>5.3.3 If Field Monitoring was Conducted, has an Adverse Impact(s) been found beyond that predicted?</adverse_impact_found>
+        <impact_description>5.3.4 If an adverse impacts(s) was noted in 5.3.3 describe briefly</impact_description>
+        <compliance_monitoring_permit>5.4.1 Was Compliance Monitoring Conducted for a Permit(s) Issued to Use the Dump Site?</compliance_monitoring_permit>
+        <operations_in_compliance_with_permit>5.4.2 If Compliance Monitoring was Conducted, were the dumping at sea operations found to be in compliance with the permit(s)?</operations_in_compliance_with_permit>
+        <is_follow_up_planned>5.4.3 If dumping at sea operations were not in compliance, is follow-up action planned?</is_follow_up_planned>
+    </table5>
+    <table6>
+        <placement_site_code>Placement Site Code</placement_site_code>
+        <placement_location>Locations of the placement</placement_location>
+        <placement_location_comments>Placement location comments</placement_location_comments>
+        <placement_purpose>Purpose of Placement</placement_purpose>
+        <material_characteristics_and_quantity>Material Characteristics and Quantity</material_characteristics_and_quantity>
+        <permitting_authority_name>The name of the permitting authority and the name of national legislation</permitting_authority_name>
+        <plans_for_monitoring>Plans for Monitoring activities are in place (3) (YES/NO)</plans_for_monitoring>
+        <plans_for_monitoring_comments>Plans for Monitoring comments</plans_for_monitoring_comments>
+        <notes>Notes</notes>
+    </table6>
+    <statuses>
+        <label>
+            <status>1</status>
+            <label>Yes</label>
+        </label>
+        <label>
+            <status>2</status>
+            <label>No</label>
+        </label>
+        <label>
+            <status>3</status>
+            <label>Under development</label>
+        </label>
+        <label>
+            <status>4</status>
+            <label>Not applicable</label>
+        </label>
+    </statuses>
+    <difficulties>
+        <label>
+            <value>1</value>
+            <label>Policy framework</label>
+        </label>
+        <label>
+            <value>2</value>
+            <label>Regulatory framework</label>
+        </label>
+        <label>
+            <value>3</value>
+            <label>Financial resources</label>
+        </label>
+        <label>
+            <value>4</value>
+            <label>Administrative management</label>
+        </label>
+        <label>
+            <value>5</value>
+            <label>Technical Guidance Capabilities</label>
+        </label>
+    </difficulties>
+    <monitoring_when>
+        <label>
+            <value>before dumping at sea</value>
+            <code>1</code>
+        </label>
+        <label>
+            <value>during dumping at sea</value>
+            <code>2</code>
+        </label>
+        <label>
+            <value>after dumping at sea</value>
+            <code>3</code>
+        </label>
+        <label>
+            <value>other</value>
+            <code>4</code>
+        </label>
+    </monitoring_when>
+    <monitoring_survey_type>
+        <label>
+            <value>biological</value>
+            <code>1</code>
+        </label>
+        <label>
+            <value>geological</value>
+            <code>2</code>
+        </label>
+        <label>
+            <value>chemical</value>
+            <code>3</code>
+        </label>
+        <label>
+            <value>physical</value>
+            <code>4</code>
+        </label>
+        <label>
+            <value>other</value>
+            <code>5</code>
+        </label>
+    </monitoring_survey_type>
+</labels>
