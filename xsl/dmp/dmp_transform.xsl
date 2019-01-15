@@ -5,8 +5,6 @@
         xmlns:local="http://local"
         version="2.0" exclude-result-prefixes="xml">
 
-    <xsl:import href="../common-utils.xsl"/>
-
     <xsl:variable name="labels" select="document('dmp_labels.xml')/labels"/>
 
     <xsl:function name="local:get_difficulty_label" as="xs:string">
@@ -73,7 +71,7 @@
                                     <xsl:value-of select="."/>
                                 </th>
                                 <td>
-                                    <xsl:call-template name="conditional-print">
+                                    <xsl:call-template name="simple-print">
                                         <xsl:with-param name="label" select="''"/>
                                         <xsl:with-param name="value" select="$contacting_party/*[local-name() = current()/name()]"/>
                                     </xsl:call-template>
@@ -204,29 +202,29 @@
                             <xsl:otherwise>No</xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'Changes in the information provided in the previous report: '"/>
                         <xsl:with-param name="value" select="$changes"/>
                     </xsl:call-template>
 
                     <xsl:variable name="status" select="status"/>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'Status: '"/>
                         <xsl:with-param name="value" select="$labels/statuses/label[status = $status]/label"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-list-print">
+                    <xsl:call-template name="list-print">
                         <xsl:with-param name="label" select="'Status comments: '"/>
                         <xsl:with-param name="value" select="status_comments"/>
                     </xsl:call-template>
 
                     <xsl:variable name="difficulties" select="string-join(../../measuredata_difficulty/Row[collection_id = $col_id]/local:get_difficulty_label(difficulty), ', ')"/>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'Difficulties/Challenges: '"/>
                         <xsl:with-param name="value" select="$difficulties"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-list-print">
+                    <xsl:call-template name="list-print">
                         <xsl:with-param name="label" select="'Difficulties comments: '"/>
                         <xsl:with-param name="value" select="difficulties_comments"/>
                     </xsl:call-template>
@@ -244,47 +242,47 @@
                     <xsl:value-of select="title"/>
                 </div>
                 <div class="fs-container fs-data">
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.2 Type of Permit: '"/>
                         <xsl:with-param name="value" select="permit_type"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.3 Waste Category: '"/>
                         <xsl:with-param name="value" select="waste_cateogry"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.4 Total Number of New Permits Issued: '"/>
                         <xsl:with-param name="value" select="permits_number_issued"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea: '"/>
                         <xsl:with-param name="value" select="waste_quantity_permited"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.5.2 Waste Reporting Unit: '"/>
                         <xsl:with-param name="value" select="waste_reporting_unit"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea: '"/>
                         <xsl:with-param name="value" select="waste_quanity_actual"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.6.2 Waste Reporting Units: '"/>
                         <xsl:with-param name="value" select="waste_reporting_units"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'2.7 Dumping at Sea Operations Regulated by Other Means: '"/>
                         <xsl:with-param name="value" select="dumping_regulated"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-list-print">
+                    <xsl:call-template name="list-print">
                         <xsl:with-param name="label" select="'2.8 Notes: '"/>
                         <xsl:with-param name="value" select="notes"/>
                     </xsl:call-template>
@@ -318,27 +316,27 @@
                             <xsl:otherwise>No</xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/monitoring_conducted_rep_period/text(), ': ')"/>
                         <xsl:with-param name="value" select="$monitoring_conducted_rep_period"/>
                     </xsl:call-template>
 
                     <xsl:variable name="monitoring_when" select="string-join(./field_monitoring_when/local:get_monitoring_when_label(.), ', ')"/>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/field_monitoring_when/text(), ': ')"/>
                         <xsl:with-param name="value" select="$monitoring_when"/>
                     </xsl:call-template>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'Comments: '"/>
                         <xsl:with-param name="value" select="field_monitoring_when_comments"/>
                     </xsl:call-template>
 
                     <xsl:variable name="monitoring_survey_type" select="string-join(./field_monitoring_survey_type/local:get_monitoring_survey_type(.), ', ')"/>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/field_monitoring_survey_type/text(), ': ')"/>
                         <xsl:with-param name="value" select="$monitoring_survey_type"/>
                     </xsl:call-template>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="'Comments: '"/>
                         <xsl:with-param name="value" select="field_monitoring_survey_type_comments"/>
                     </xsl:call-template>
@@ -349,7 +347,7 @@
                             <xsl:otherwise>No</xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/adverse_impact_found/text(), ': ')"/>
                         <xsl:with-param name="value" select="$adverse_impact_found"/>
                     </xsl:call-template>
@@ -360,12 +358,12 @@
                             <xsl:otherwise>No</xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/adverse_impact_found/text(), ': ')"/>
                         <xsl:with-param name="value" select="$adverse_impact_found"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/impact_description/text(), ': ')"/>
                         <xsl:with-param name="value" select="impact_description"/>
                     </xsl:call-template>
@@ -376,7 +374,7 @@
                             <xsl:otherwise>No</xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/compliance_monitoring_permit/text(), ': ')"/>
                         <xsl:with-param name="value" select="$compliance_monitoring_permit"/>
                     </xsl:call-template>
@@ -387,12 +385,12 @@
                             <xsl:otherwise>No</xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/operations_in_compliance_with_permit/text(), ': ')"/>
                         <xsl:with-param name="value" select="$operations_in_compliance_with_permit"/>
                     </xsl:call-template>
 
-                    <xsl:call-template name="conditional-print">
+                    <xsl:call-template name="simple-print">
                         <xsl:with-param name="label" select="concat($labels//table5/is_follow_up_planned/text(), ': ')"/>
                         <xsl:with-param name="value" select="is_follow_up_planned"/>
                     </xsl:call-template>
@@ -426,7 +424,7 @@
                         <xsl:variable name="local_name" select="./local-name()"/>
                         <xsl:variable name="lab" select="$labels//*[local-name() = $label_name]/*[local-name() = $local_name]/text()"/>
 
-                        <xsl:call-template name="conditional-print">
+                        <xsl:call-template name="simple-print">
                             <xsl:with-param name="label">
                                 <xsl:choose>
                                     <xsl:when test="string-length($lab) > 0">
@@ -457,7 +455,7 @@
                         <xsl:variable name="local_name" select="./local-name()"/>
                         <xsl:variable name="lab" select="$labels//*[local-name() = $label_name]/*[local-name() = $local_name]/text()"/>
 
-                        <xsl:call-template name="conditional-print">
+                        <xsl:call-template name="simple-print">
                             <xsl:with-param name="label">
                                 <xsl:choose>
                                     <xsl:when test="string-length($lab) > 0">
@@ -475,6 +473,42 @@
             </td>
             </tr>
         </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="list-print">
+        <xsl:param name="label"/>
+        <xsl:param name="value"/>
+        <div>
+            <span class="header">
+                <xsl:value-of select="$label"/>
+            </span>
+            <xsl:choose>
+                <xsl:when test="string-length($value) > 0">
+                    <ul>
+                        <li>
+                            <xsl:value-of select="$value"/>
+                        </li>
+                    </ul>
+                </xsl:when>
+                <xsl:otherwise>-</xsl:otherwise>
+            </xsl:choose>
+        </div>
+    </xsl:template>
+
+    <xsl:template name="simple-print">
+        <xsl:param name="label"/>
+        <xsl:param name="value"/>
+        <div>
+            <span class="header">
+                <xsl:value-of select="$label"/>
+            </span>
+            <xsl:choose>
+                <xsl:when test="string-length($value) > 0">
+                    <xsl:value-of select="$value"/>
+                </xsl:when>
+                <xsl:otherwise>-</xsl:otherwise>
+            </xsl:choose>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

@@ -42,59 +42,49 @@
     </contacting_party>
     <table1>
         <article_titles>
-            <collection_id>2001</collection_id>
-            <article_title>Article 4.1</article_title>
-            <additional_description>Wastes or other matter listed in Article 4.2. are: “(a) dredged material; (b) fish waste or organic materials resulting from the processing of fish and other marine organisms; (c) vessels, until 31 December 2000; (d) platforms and other ma-made structures at sea, provided that material capable of creating floating debris or otherwise contributing to pollution of the marine environment has been removed to the maximum extent, without prejudice to the provisions of the Protocol concerning Pollution Resulting from Exploration and Exploitation of the Continental Shelf, the Seabed and its Subsoil; and (e) inert uncontaminated geological materials the chemical constituents of which are unlikely to be released into the marine environment”.</additional_description>
+            <collection_id>7001</collection_id>
+            <article_title>Article 4.1 Article 3.1(a) (b) Wastes Controlled for the Purpose of Transboundary Movement</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2002</collection_id>
-            <article_title>Article 5, Article 6, Article 10.1</article_title>
-            <additional_description>The Annex to the Protocol lists the factors to be considered in establishing criteria governing the issue of permits for the dumping of matter at sea taking into account Article 6. These are: “A. Characteristics and Composition of the Matter, B. Characteristics of Dumping Site and Method of Deposit and C. General Considerations and Conditions”. Guidelines adopted by the Meeting of the Contracting Parties refer to the wastes or other matter listed in Article 4.2 of the Dumping Protocol.</additional_description>
+            <collection_id>7005</collection_id>
+            <article_title>Article 5.2 Reduction/elimination of the generation of hazardous wastes</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2003</collection_id>
-            <article_title>Article 10.1</article_title>
+            <collection_id>7006</collection_id>
+            <article_title>Article 5.3 Reduction of the amount of hazardous wastes subject to transboundary movement</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2004</collection_id>
-            <article_title>Article 7</article_title>
+            <collection_id>7007</collection_id>
+            <article_title>Article 5.4 Restrictions/prohibitions on the export and transit of hazardous wastes</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2005</collection_id>
-            <article_title>Article 8</article_title>
-            <additional_description>The Article 8 conditions refer to force majeure due to stress of weather or any other cause when human life or the safety of a ship or aircraft is threatened.</additional_description>
+            <collection_id>7008</collection_id>
+            <article_title>Article 5.4 Restrictions/prohibitions on the import and transit of hazardous wastes</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2006</collection_id>
-            <article_title>Article 9</article_title>
-            <additional_description>The Article 9 conditions refer to a critical situation of an exceptional nature where wastes or other matter not listed in Article 4.2 cannot be disposed of on land without unacceptable danger or damage, above all for the safety of human life.</additional_description>
+            <collection_id>7009</collection_id>
+            <article_title>Article. 6.3 Article 6.4 Notification procedure of the transboundary movement of waste</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2007</collection_id>
-            <article_title>Article 10.2</article_title>
+            <collection_id>7011</collection_id>
+            <article_title>Article 5.1 Restrictions on the export/import/transit/ of hazardous wastes</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2008</collection_id>
-            <article_title>Article 11</article_title>
+            <collection_id>7016</collection_id>
+            <article_title>Article 5.5 Article 9</article_title>
         </article_titles>
         <article_titles>
-            <collection_id>2009</collection_id>
-            <article_title optional="true">Article 12</article_title>
+            <collection_id>7017</collection_id>
+            <article_title>Article 12 Information to and Participation to the Public</article_title>
         </article_titles>
     </table1>
-    <table2a>
-        <permit_type>2.2 Type of Permit</permit_type>
-        <waste_cateogry>2.3 Waste Category</waste_cateogry>
-        <permits_number_issued>2.4 Total Number of New Permits Issued</permits_number_issued>
-        <waste_quantity_permited>2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea</waste_quantity_permited>
-        <waste_reporting_unit>2.5.2 Waste Reporting Unit</waste_reporting_unit>
-        <waste_quanity_actual>2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea</waste_quanity_actual>
-        <waste_reporting_units>2.6.2 Waste Reporting Units</waste_reporting_units>
-        <waste_reporting_units_2>Waste Reporting Units 2</waste_reporting_units_2>
-        <dumping_regulated>2.7 Dumping at Sea Operations Regulated by Other Means</dumping_regulated>
-        <notes>2.8 Notes</notes>
-    </table2a>
-    <table2b>
+    <table2>
+        <wastedescription>Waste description</wastedescription>
+        <definition>Definition</definition>
+        <main_characteristics>Main characteristics</main_characteristics>
+        <movement_procedure>Transboundary movement procedure established</movement_procedure>
+    </table2>
+    <table3>
         <cr-tons>Cr (tons)</cr-tons>
         <cu-tons>Cu (tons)</cu-tons>
         <pb-tons>Pb (tons)</pb-tons>
@@ -113,7 +103,7 @@
         <tbt-kg>TBT (kg)</tbt-kg>
         <dbt-kg>DBT (kg)</dbt-kg>
         <notes>Note</notes>
-    </table2b>
+    </table3>
     <table3>
         <dump_site_code>3.1 Dump Site Code</dump_site_code>
         <dumping_map>3.2 Map of Dumping Site</dumping_map>
