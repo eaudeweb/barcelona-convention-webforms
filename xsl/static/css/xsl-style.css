@@ -61,6 +61,11 @@ th {
     font-weight: bold;
     font-size: 18px;
 }
+.article-title .title-sub {
+    font-weight: normal;
+    font-size: initial;
+    padding-top: 8px;
+}
 .additional_description {
     margin-top: 0px;
 }
@@ -83,5 +88,8 @@ span.header {
 }
 .border-bottom {
     border-bottom: solid 1px #CCC;
-    padding: 16px;
+    padding-bottom: 16px;
+}
+.padding-fix {
+  padding: 16px;
 }

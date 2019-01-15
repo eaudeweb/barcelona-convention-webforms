@@ -238,7 +238,7 @@
         <xsl:for-each select=".">
             <tr>
             <td class="bordered">
-                <div class="fs-container article-title border-bottom">
+                <div class="fs-container article-title border-bottom padding-fix">
                     <xsl:value-of select="title"/>
                 </div>
                 <div class="fs-container fs-data">
@@ -298,7 +298,7 @@
 
             <tr>
             <td class="bordered">
-                <div class="fs-container article-title border-bottom">
+                <div class="fs-container article-title border-bottom padding-fix">
                     <xsl:variable name="title_label" select="$labels//table5/dump_site_code_monitore_d/text()"/>
                     <xsl:choose>
                         <xsl:when test="string-length($title_label) > 0">
@@ -408,7 +408,7 @@
         <xsl:for-each select=".">
             <tr>
             <td class="bordered">
-                <div class="fs-container article-title border-bottom">
+                <div class="fs-container article-title border-bottom padding-fix">
                     <xsl:variable name="title_label" select="$labels//*[local-name() = $label_name]/*[local-name() = $title]/text()"/>
                     <xsl:choose>
                         <xsl:when test="string-length($title_label) > 0">

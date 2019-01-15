@@ -38,9 +38,20 @@
                     <h2>PART II: Generation of hazardous wastes and other wastes</h2>
                     <div class="form-section">
                         <xsl:apply-templates select="//hazardous_wastes_domestic_legislation"/>
-                        <!--<xsl:apply-templates select="//total_hazardous_wastes"/>-->
-                        <!--<xsl:apply-templates select="//wastes_y"/>-->
+                        <xsl:apply-templates select="//total_hazardous_wastes"/>
+                        <xsl:apply-templates select="//wastes_y"/>
                     </div>
+                    <h2>PART III: Transboundary movements of hazardous wastes or other wastes</h2>
+                    <div class="form-section">
+                        <xsl:call-template name="export_hazardous"/>
+                        <xsl:call-template name="import_hazardous"/>
+                    </div>
+                    <h2>PART II: Generation of hazardous wastes and other wastes</h2>
+                    <div class="form-section">
+                        <xsl:apply-templates select="//disposals_incidents"/>
+                        <xsl:apply-templates select="//accidents_during_disposal"/>
+                    </div>
+                    <xsl:apply-templates select="//enf_measures"/>
                 </div>
             </body>
         </html>
@@ -107,14 +118,210 @@
     </xsl:template>
 
     <xsl:template match="total_hazardous_wastes">
+        <xsl:variable name="total_hazardous_wastes_node" select="node()"/>
         <table class="table-measures">
             <div class="fs-container fs-title">
-                Table III - Total amount of generation of hazardous wastes and other wastes (Article 8.2)
+                <div class="newline-separated border-bottom">Table III - Total amount of generation of hazardous wastes and other wastes (Article 8.2)</div>
+                <div class="newline-separated">Total amount of hazardous wastes and other wastes generated (metric tonnes)</div>
             </div>
-            <xsl:apply-templates select="Row" mode="simple">
-                <xsl:with-param name="label_name" select="'table3'"/>
+            <xsl:variable name="table3_elements" select="$labels//table3/element"/>
+            <xsl:call-template name="generate-table-part-2">
+                <xsl:with-param name="table_elements" select="$table3_elements"/>
+                <xsl:with-param name="report_node" select="$total_hazardous_wastes_node"/>
+            </xsl:call-template>
+        </table>
+    </xsl:template>
+
+    <xsl:template match="wastes_y">
+        <xsl:variable name="wastes_y_node" select="node()"/>
+        <table class="table-measures">
+            <div class="fs-container fs-title">
+                Table IV - Generation of hazardous wastes and other wastes by Y-categories
+            </div>
+            <xsl:variable name="table4_elements" select="$labels//table4/element"/>
+            <xsl:call-template name="generate-table-part-2">
+                <xsl:with-param name="table_elements" select="$table4_elements"/>
+                <xsl:with-param name="report_node" select="$wastes_y_node"/>
+            </xsl:call-template>
+        </table>
+    </xsl:template>
+
+    <xsl:template name="generate-table-part-2">
+        <xsl:param name="table_elements"/>
+        <xsl:param name="report_node"/>
+        <xsl:variable name="part_2_years" select="(2014, 2015, 2016, 2017)"/>
+
+        <xsl:for-each select="$table_elements">
+            <xsl:variable name="label_node" select="current()"/>
+            <tr>
+            <td class="bordered">
+                <div class="fs-container article-title border-bottom">
+                    <xsl:value-of select="$label_node/title"/>
+                    <xsl:if test="string-length($label_node/title_sub) > 0">
+                        <div class="title-sub">
+                            <xsl:value-of select="$label_node/title_sub"/>
+                        </div>
+                    </xsl:if>
+                </div>
+
+                <div class="fs-container fs-data">
+                    <xsl:for-each select="$part_2_years">
+                        <xsl:variable name="current_year" select="current()"/>
+                        <xsl:variable name="value" select="$report_node[collection_id = $label_node/collection_id and year=$current_year]/hazardous_waste_value"/>
+
+                        <xsl:call-template name="simple-print">
+                            <xsl:with-param name="label" select="concat($current_year, ': ')"/>
+                            <xsl:with-param name="value" select="$value"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </div>
+            </td>
+            </tr>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="export_hazardous">
+        <table class="table-measures">
+            <div class="fs-container fs-title">
+                Table V - Export of hazardous wastes and other wastes
+            </div>
+            <xsl:call-template name="hazardous_wastes_total">
+                <xsl:with-param name="node" select="//export_hazardous_wastes_total"/>
+            </xsl:call-template>
+            <xsl:call-template name="hazardous_wastes_y">
+                <xsl:with-param name="node" select="//export_hazardous_wastes_y"/>
+            </xsl:call-template>
+        </table>
+    </xsl:template>
+
+    <xsl:template name="import_hazardous">
+        <table class="table-measures">
+            <div class="fs-container fs-title">
+                Table VI - Import of hazardous wastes and other wastes
+            </div>
+            <xsl:call-template name="hazardous_wastes_total">
+                <xsl:with-param name="node" select="//import_hazardous_wastes_total"/>
+            </xsl:call-template>
+            <xsl:call-template name="hazardous_wastes_y">
+                <xsl:with-param name="node" select="//import_hazardous_wastes_y"/>
+            </xsl:call-template>
+        </table>
+    </xsl:template>
+
+    <xsl:template name="hazardous_wastes_total">
+        <xsl:param name="node"/>
+        <xsl:variable name="node_name" select="$node/local-name()"/>
+        <xsl:variable name="excluded_nodes" select="('collection_id', 'parent_collection_id')"/>
+        <tr>
+        <td class="bordered">
+            <div class="fs-container fs-data">
+                <xsl:for-each select="$node/Row/*[not(local-name() = $excluded_nodes)]">
+                    <xsl:variable name="local_name" select="./local-name()"/>
+                    <xsl:variable name="lab" select="$labels//table5-6/*[local-name() = $node_name]/*[local-name() = $local_name]/text()"/>
+
+                    <xsl:call-template name="simple-print">
+                        <xsl:with-param name="label">
+                            <xsl:choose>
+                                <xsl:when test="string-length($lab) > 0">
+                                    <xsl:value-of select="concat($lab, ': ')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="concat($local_name, ': ')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:with-param>
+                        <xsl:with-param name="value" select="current()"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+            </div>
+        </td>
+        </tr>
+    </xsl:template>
+
+    <xsl:template name="hazardous_wastes_y">
+        <xsl:param name="node"/>
+        <xsl:variable name="node_name" select="$node/local-name()"/>
+        <xsl:variable name="excluded_nodes" select="('collection_id', 'parent_collection_id', 'title')"/>
+
+        <xsl:for-each select="$node/Row">
+            <tr>
+            <td class="bordered">
+                <div class="fs-container article-title border-bottom">
+                    <xsl:variable name="title_label" select="$labels//*[local-name() = $node_name]/title/text()"/>
+                    <xsl:choose>
+                        <xsl:when test="string-length($title_label) > 0">
+                            <xsl:value-of select="concat($title_label, ': ', title)"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="title"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </div>
+                <div class="fs-container fs-data">
+                    <xsl:for-each select="./*[not(local-name() = $excluded_nodes)]">
+                        <xsl:variable name="local_name" select="./local-name()"/>
+                        <xsl:variable name="lab" select="$labels//table5-6/*[local-name() = $node_name]/*[local-name() = $local_name]/text()"/>
+
+                        <xsl:call-template name="simple-print">
+                            <xsl:with-param name="label">
+                                <xsl:choose>
+                                    <xsl:when test="string-length($lab) > 0">
+                                        <xsl:value-of select="concat($lab, ': ')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="concat($local_name, ': ')"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:with-param>
+                            <xsl:with-param name="value" select="current()"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </div>
+            </td>
+            </tr>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="disposals_incidents">
+        <table class="table-measures">
+            <div class="fs-container fs-title">
+                Table VII - Disposals which did not proceed as intended
+            </div>
+            <xsl:apply-templates select="Row" mode="title">
+                <xsl:with-param name="label_name" select="'table7'"/>
+                <xsl:with-param name="title" select="'incident_date'"/>
+                <xsl:with-param name="ignored-nodes" select="('collection_id', 'parent_collection_id', 'title')"/>
             </xsl:apply-templates>
         </table>
+    </xsl:template>
+
+    <xsl:template match="accidents_during_disposal">
+        <table class="table-measures">
+            <div class="fs-container fs-title">
+                Table VIII. Accidents occurring during the transboundary movement and disposal of hazardous wastes and other wastes
+            </div>
+            <xsl:apply-templates select="Row" mode="title">
+                <xsl:with-param name="label_name" select="'table8'"/>
+                <xsl:with-param name="title" select="'incident_date_place'"/>
+                <xsl:with-param name="ignored-nodes" select="('collection_id', 'parent_collection_id', 'title')"/>
+            </xsl:apply-templates>
+        </table>
+    </xsl:template>
+
+    <xsl:template match="enf_measures">
+        <h2>Part V: Enforcement measures</h2>
+        <div class="form-section">
+            <table class="table-measures">
+                <div class="fs-container fs-title">
+                    Table VI – Enforcement measures
+                </div>
+                <xsl:apply-templates select="Row" mode="title">
+                    <xsl:with-param name="label_name" select="'table9'"/>
+                    <xsl:with-param name="title" select="'title'"/>
+                    <xsl:with-param name="ignored-nodes" select="('collection_id', 'parent_collection_id', 'title')"/>
+                </xsl:apply-templates>
+            </table>
+        </div>
     </xsl:template>
 
     <xsl:template match="Row" mode="measure">
@@ -170,6 +377,49 @@
                         <xsl:with-param name="label" select="'Difficulties comments: '"/>
                         <xsl:with-param name="value" select="difficulties_comments"/>
                     </xsl:call-template>
+                </div>
+            </td>
+            </tr>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="Row" mode="title">
+        <xsl:param name="label_name"/>
+        <xsl:param name="title"/>
+        <xsl:param name="ignored-nodes"/>
+        <xsl:for-each select=".">
+            <tr>
+            <td class="bordered">
+                <div class="fs-container article-title border-bottom">
+                    <xsl:variable name="title_label" select="$labels//*[local-name() = $label_name]/*[local-name() = $title]/text()"/>
+                    <xsl:choose>
+                        <xsl:when test="string-length($title_label) > 0">
+                            <xsl:value-of select="concat($title_label, ': ', *[local-name() = $title])"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="*[local-name() = $title]"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </div>
+                <div class="fs-container fs-data">
+                    <xsl:for-each select="./*[not(local-name() = $ignored-nodes)]">
+                        <xsl:variable name="local_name" select="./local-name()"/>
+                        <xsl:variable name="lab" select="$labels//*[local-name() = $label_name]/*[local-name() = $local_name]/text()"/>
+
+                        <xsl:call-template name="simple-print">
+                            <xsl:with-param name="label">
+                                <xsl:choose>
+                                    <xsl:when test="string-length($lab) > 0">
+                                        <xsl:value-of select="concat($lab, ': ')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="concat($local_name, ': ')"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:with-param>
+                            <xsl:with-param name="value" select="node()"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
                 </div>
             </td>
             </tr>
