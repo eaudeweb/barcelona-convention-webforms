@@ -2583,7 +2583,7 @@ var form = {
           },
           {
             name: 'Y46-Y47',
-            label: 'Total amount of hazardous wastes under Article 3.1.a Annex IA(Y0-Y45) exported in metric tons',
+            label: 'Total amount of hazardous wastes under Article3.1.a Annex IB(Y46-Y47) exported in metric tons',
             type: 'number',
             selected: '',
           },
