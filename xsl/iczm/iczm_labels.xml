@@ -1,0 +1,836 @@
+<root xmlns="https://dd.info-rac.org/namespaces/21">
+    <contacting_party>
+        <labels>
+            <value>Please provide information on the reporting Party by completing the following table.</value>
+        </labels>
+        <partyname>1.1 Contracting Party</partyname>
+        <rep_period_from>1.2.1 Reporting period from (year)</rep_period_from>
+        <rep_period_to>1.2.2 Reporting period to (year)</rep_period_to>
+        <responsible_full_name>Full name of national body responsible</responsible_full_name>
+        <reporter_full_name_function>1.3 Name and functions of official completing the report</reporter_full_name_function>
+        <mail>1.3 Name and functions of official completing the report</mail>
+        <mailing_address>1.4 Mailing address</mailing_address>
+        <tel>1.5 Telephone</tel>
+        <email>1.6 Email</email>
+        <validation_map_fp>1.7 Validation by MAP Focal Point</validation_map_fp>
+        <date_dispatch>1.8 Date of dispatch of report</date_dispatch>
+    </contacting_party>
+    <tab_2>
+        <collection_id/>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>public_authorities_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>2.1 Public authorities consulted</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>stakeholders_consulted_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>2.2 Stakeholders consulted</article_title>
+                </element>
+            </articles>
+            <collection_id/>
+            <parent_collection_id/>
+            <question/>
+            <table_label>Table II - Preparation of Report</table_label>
+        </data>
+        <label>Part II: Preparation of Report</label>
+        <parent_collection_id/>
+    </tab_2>
+    <tab_3>
+        <collection_id/>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>date_signature_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.1 Date of signature of Protocol</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>date_ratification_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.2 Date of ratification or approval of Protocol</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>date_filling_spanish_government_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.3 Date of filing with the Spanish Government</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>publication_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.4 Date of publication in the country</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>entry_into_force_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.5 Date of entry into force in national law</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>ratification_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        3.6 In the absence of ratification, status of the process for ratification
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>protocol_legal_acts_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                Please specify titles and dates of such general legal acts?
+                            </label>
+                            <name>title_date_legal_acts</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                Which provisions of the Protocol have been transposed into the country’s general legal acts?
+                            </label>
+                            <name>provisions_country_legal_acts</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                Please give a synthetic description of each of them
+                            </label>
+                            <name>synthetic_description</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                Please provide brief comparison between the requirements of the Protocol and Contracting Party legislation
+                            </label>
+                            <name>brief_comparison</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        3.7 Have the provisions of the Protocol been transposed into one or more general legal acts?
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>acts_prepared_remarks</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>Anticipated adoption date ?</label>
+                            <name>adoption_date</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.8 Are any such acts being prepared?</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>objectives_and_general_principles_art5</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        3.9 Are the objectives and general principles of Article 5 and 6 of the Protocol included in such acts?
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>objectives_and_general_principles_art5_why</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>3.10 In case not, can you please explain why?</article_title>
+                </element>
+            </articles>
+            <collection_id/>
+            <parent_collection_id/>
+            <question/>
+            <table_label>
+                Table III - Ratification and general legal transposition into national law Articles 37, 5 and 6
+            </table_label>
+        </data>
+        <label>
+            Part III: Ratification and general legal transposition into national law Articles 37, 5 and 6
+        </label>
+        <parent_collection_id/>
+    </tab_3>
+    <tab_4>
+        <collection_id/>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>article33_implemented_national</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        4.1 - How was Article 3-3 implemented at national and/ or local level in relation to the obligation to inform the public and stakeholders?
+                    </article_title>
+                </element>
+            </articles>
+            <collection_id/>
+            <parent_collection_id/>
+            <question/>
+            <table_label>
+                Table IV - Informations on geographical coverage Article 3-3
+            </table_label>
+        </data>
+        <label>
+            Part IV: Informations on geographical coverage Article 3-3
+        </label>
+        <parent_collection_id/>
+    </tab_4>
+    <tab_5>
+        <collection_id/>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>department_central_level_iczm</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        5.1 Which department is responsible at central level for ICZM?
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>ministerial_national_body_iczm</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                Please, give a short description of name, establishment, competencies and process
+                            </label>
+                            <name>establishment_competencies_process</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                If there is no such body, is there an intention to create it?
+                            </label>
+                            <name>intention</name>
+                            <selected/>
+                            <type>intention_to_create_body</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        5.2 Is there an inter-ministerial/ national body for ICZM?
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>maritime_land_coordination</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>How and at what level?</label>
+                            <name>how_details</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        5.3 Is there coordination between maritime and land authorities (Art.7-1-b)?
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>on strategies, plans and programs?</label>
+                            <name>coordination_strategies_plans</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>on permissions for activities?</label>
+                            <name>coordination_permissions</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>How (article 7-1-c)?</label>
+                            <name>how_details</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        5.4 Is there coordination between the national level and the local level:
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>measures_to_choerence_article72</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        5.5 What measures contribute to the coherence and effectiveness referred to under Article 7-2?
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>article72_difficulties</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>5.6 What difficulties have been encountered?</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label/>
+                            <name>support_of_bcrs</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        5.7 How the application of the Protocol has supported the implementation of the provisions of other Protocols of the Barcelona Convention?
+                    </article_title>
+                </element>
+            </articles>
+            <collection_id/>
+            <parent_collection_id/>
+            <question/>
+            <table_label>Table V - Institutional measures Article 7</table_label>
+        </data>
+        <label>Part V: Institutional measures Article 7</label>
+        <parent_collection_id/>
+    </tab_5>
+    <tab_6>
+        <collection_id/>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                8.2.a Has a zone not less than 100 meters in width where construction is not allowed been legally established?
+                            </label>
+                            <name>legally_established_zone</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                8.2.b Have other existing measures been adapted in a manner consistent with this article ?
+                            </label>
+                            <name>existing_measures_adapted</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                8.3.a Has the national legislation identified and delimited areas in which urban development and other activities are restricted or, where necessary, prohibited ?
+                            </label>
+                            <name>national_legistlation_delimited_areas</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                8.3.b Does national legislation limit the linear extension of urban development and the creation of new transport infrastructure along the coast ?
+                            </label>
+                            <name>linear_extention_limitation</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                8.3.c Does national legislation provide for freedom of access by the public to the sea and along the shore ?
+                            </label>
+                            <name>freedom_of_access_by_public_at_sea</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                8.3.d Does national legislation restrict or, where necessary, prohibit the movement and parking of land vehicles, as well as the movement and anchoring of marine vessels, in fragile natural areas on land or at sea, including beaches and dunes?
+                            </label>
+                            <name>prohibition_parking_in_fragile_areas</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 8</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                Are there any specific economic indicators relating to the sustainable use of the coastal zone defined in national legislation?
+                            </label>
+                            <name>economic_indicators_costal_zone</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 9 - Economic Activities</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Wetlands - Are measures in place by national legislation to regulate or, if necessary, prohibit activities that may have adverse effects on wetlands and estuaries?
+                            </label>
+                            <name>wetlands_measures</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2.a Marine Habitats - Have measures to ensure the protection and conservation, through legislation, planning and management of marine and coastal areas been adopted?
+                            </label>
+                            <name>conservation_measures</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2.b Marine Habitats - Does your country participate in international cooperation programmes, agreements or activities to protect marine habitats?
+                            </label>
+                            <name>international_cooperation</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 10 - Specific coastal ecosystems, landscapes &amp; cultural heritage
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                Does national legislation include planning and management measures to ensure the protection of coastal landscapes?
+                            </label>
+                            <name>protection_of_costal_landscapes_planning</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 11 - Coastal landscapes</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                Are the specificities of islands taken into account in coastal strategies, plans and programmes?
+                            </label>
+                            <name>specificities_taken_into_account</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 12 - Islands</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                Have appropriate measures to preserve and protect coastal cultural, archaeological and historic heritage including the underwater heritage been included in national legislation?
+                            </label>
+                            <name>cultural_heritage</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 13 - Cultural Heritage</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>National</label>
+                            <name>national</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>Regional</label>
+                            <name>regional</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>Local</label>
+                            <name>local</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 15 - Awareness raising, Training, Education &amp; Research
+                    </article_title>
+                    <description>
+                        Have awareness-raising activities, educational programmes, training and public education on ICZM been undertaken at the following levels? :
+                    </description>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                Resources &amp; activities that may influence coastal zones?
+                            </label>
+                            <name>resources_activities</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>Institutions that may influence coastal zones?</label>
+                            <name>institutions</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                Legislation and Planning that may influence coastal zones?
+                            </label>
+                            <name>legislation_planning</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 16 - Monitoring &amp; Review</article_title>
+                    <description>
+                        Has a national coastal inventory been prepared covering the following informations:
+                    </description>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Has a national strategy for integrated coastal zone management been formulated or strengthened?
+                            </label>
+                            <name>national_strategy</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Are there up-to-date assessments of the use and management of coastal zones?
+                            </label>
+                            <name>assessments</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                3. Are appropriate indicators defined in order to evaluate the effectiveness of integrated coastal zone management strategies, plans &amp; programmes, as well as the progress of implementation of the Protocol?
+                            </label>
+                            <name>indicators</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 18 - National coastal strategies, Plans &amp; Programmes, Tranboundary cooperation
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Are appropriate EIAs required by national legislation for public and private projects likely to have significant environmental effects on the coastal zones?
+                            </label>
+                            <name>appropriate_eia</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Does national legislation require a strategic environmental assessment of plans and programmes affecting the coastal zone?
+                            </label>
+                            <name>national_legislation</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 19 - Environnemental Assessment</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Have appropriate land policy instruments and measures been envisaged by national legislation for the purpose of promoting integrated coastal zone management?
+                            </label>
+                            <name>land_policy</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Are there mechanisms for the acquisition, cession, donation or transfer of land to the public domain and institute easements on properties in the coastal zone?
+                            </label>
+                            <name>mechanisms</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                3. What is the area or percentage of land acquired in the Country?
+                            </label>
+                            <name>area_acquired</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                4. Who is responsible for the management of the land?
+                            </label>
+                            <name>land_responsible</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                5. Are there examples of private or non-governmental organizations established for the preservation of coastal land?
+                            </label>
+                            <name>private_examples</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 20 - Land Policy</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Have measures to adopt relevant economic. Financial and? Or fiscal instruments intended to support local, regional and national initiatives for the integrated management of coastal zone been adopted?
+                            </label>
+                            <name>relevant_economic</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Are there economic, financial and/ or fiscal instruments which are potentially counter to the objectives of the integrated management of the coastal zone?
+                            </label>
+                            <name>fiscal_instruments</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 21 - Economic, Financial &amp; Fiscal Instruments
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Have vulnerability and hazard assessments of coastal zones been undertaken?
+                            </label>
+                            <name>vulnerability</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Have prevention, mitigation and adaptation measures to address the effects of natural disasters, in particular of climate change, been implemented in coastal areas?
+                            </label>
+                            <name>prevention_measures</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                3. Have measures been adopted to maintain or restore the natural capacity of the coast to adapt to changes, including those caused by the rise in sea levels?
+                            </label>
+                            <name>measures_adopted</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Articles 22 and 23 - Natural hazards &amp; coastal erosion
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Do you have a national contingency plan for natural disasters affecting the coastal zone and responsible organization?
+                            </label>
+                            <name>national_contingency_plan</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Which national authorities are competent to act in the case of natural disaster?
+                            </label>
+                            <name>national_authorities</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 24 - Response to natural disasters</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                1. Have coastal management indicators been defined?
+                            </label>
+                            <name>coastal_management</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                2. Have up-to-date assessments of the use and management of coastal zones been carried out and updated?
+                            </label>
+                            <name>assessments</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                3. Have activities of common interest, such as demonstration projects of integrated zone management been carried out?
+                            </label>
+                            <name>activities</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                        <element>
+                            <label>
+                                4. Have Centres of specific ICZM scientific capacity been established in your country?
+                            </label>
+                            <name>scientific capacity</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 27 - Exchange of information and activities of common interest
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                In contiguous coastal zones are bilateral or multilateral national coastal strategies, plans and programmes coordinated?
+                            </label>
+                            <name>contiguous_costal_zones</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>Article 28 - Transboundary cooperation</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>
+                                Is there cooperation by means of notification, exchange of information and consultation in assessing the environmental impacts of plans, programmes and projects?
+                            </label>
+                            <name>cooperation_enviromental_impact_of_plans</name>
+                            <selected/>
+                            <type>textarea</type>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 29 - Transboundary environmental assessment
+                    </article_title>
+                </element>
+            </articles>
+            <collection_id/>
+            <parent_collection_id/>
+            <question/>
+            <table_label>Table VI - Operational measures</table_label>
+        </data>
+        <label>Part VI: Operational measures</label>
+        <parent_collection_id/>
+    </tab_6>
+</root>

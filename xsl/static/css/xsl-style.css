@@ -61,6 +61,9 @@ th {
     font-weight: bold;
     font-size: 18px;
 }
+.article-title:not(.border-bottom) + .fs-data {
+  padding-top: 0px;
+}
 .article-title .title-sub {
     font-weight: normal;
     font-size: initial;
@@ -86,9 +89,15 @@ span.optional {
 span.header {
   font-weight: bold;
 }
+span.value {
+  display: block;
+}
+div.print-row + div.print-row {
+  padding-top: 8px;
+}
 .border-bottom {
     border-bottom: solid 1px #CCC;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
 }
 .padding-fix {
   padding: 16px;

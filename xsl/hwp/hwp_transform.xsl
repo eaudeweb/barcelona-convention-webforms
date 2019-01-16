@@ -46,7 +46,7 @@
                         <xsl:call-template name="export_hazardous"/>
                         <xsl:call-template name="import_hazardous"/>
                     </div>
-                    <h2>PART II: Generation of hazardous wastes and other wastes</h2>
+                    <h2>Part IV: Disposals which did not proceed as intended and accidents</h2>
                     <div class="form-section">
                         <xsl:apply-templates select="//disposals_incidents"/>
                         <xsl:apply-templates select="//accidents_during_disposal"/>

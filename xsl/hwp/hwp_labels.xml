@@ -327,19 +327,19 @@
         <element>
             <collection_id>7066</collection_id>
             <title>Y46 - Wastes collected from households</title>
-            <title_sub>Wastes having as constituents (Annex I to the Protocol)</title_sub>
+            <title_sub>Household wastes (Annex I to the Protocol)</title_sub>
         </element>
         <element>
             <collection_id>7067</collection_id>
             <title>Y47 - Residues arising from the incineration of household wastes</title>
-            <title_sub>Wastes having as constituents (Annex I to the Protocol)</title_sub>
+            <title_sub>Household wastes (Annex I to the Protocol)</title_sub>
         </element>
     </table4>
     <table5-6>
         <export_hazardous_wastes_total>
             <amounts_exported>Total amounts exported</amounts_exported>
 			<Y0-Y45>Total amount of hazardous wastes under Article 3.1.a Annex IA(Y0-Y45) exported in metric tons</Y0-Y45>
-			<Y46-Y47>Total amount of hazardous wastes under Article 3.1.a Annex IA(Y0-Y45) exported in metric tons</Y46-Y47>
+			<Y46-Y47>Total amount of hazardous wastes under Article 3.1.a Annex IB(Y46-Y47) exported in metric tons</Y46-Y47>
 			<total_amount>Total amount of hazardous wastes or other wastes imported in metric tons</total_amount>
         </export_hazardous_wastes_total>
         <export_hazardous_wastes_y>
@@ -357,7 +357,7 @@
         <import_hazardous_wastes_total>
             <amounts_imported>Total amounts exported</amounts_imported>
 			<Y0-Y45_imported>Total amount of hazardous wastes under Article 3.1.a Annex IA(Y0-Y45) imported in metric tons</Y0-Y45_imported>
-			<Y46-Y47_imported>Total amount of hazardous wastes under Article 3.1.a Annex IA(Y0-Y45) imported in metric tons</Y46-Y47_imported>
+			<Y46-Y47_imported>Total amount of hazardous wastes under Article 3.1.a Annex IB(Y46-Y47) imported in metric tons</Y46-Y47_imported>
 			<total_amount_imported>Total amount of hazardous wastes or other wastes imported in metric tons</total_amount_imported>
         </import_hazardous_wastes_total>
         <import_hazardous_wastes_y>
