@@ -51,8 +51,8 @@
     </xsl:template>
 
     <xsl:template match="contacting_party">
-
         <xsl:variable name="contacting_party" select="."/>
+
         <h2>Information on the reporting party</h2>
         <xsl:for-each select="$labels/contacting_party/*">
             <div class="form-section">

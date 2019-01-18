@@ -27,6 +27,10 @@ div.newline-separated + div.newline-separated {
 .fs-container {
     padding: 1em;
 }
+.fs-container.fs-data + .fs-container.fs-data {
+  /*border-top: solid 1px #CCC;*/
+  padding-top: 0;
+}
 table {
     font-size: medium;
     border-collapse: collapse;
@@ -69,8 +73,16 @@ th {
     font-size: initial;
     padding-top: 8px;
 }
-.additional_description {
-    margin-top: 0px;
+.fs-data > :first-child {
+  border-top: solid 1px #CCC;
+  padding-top: 1em;
+}
+.additional-description {
+  border-top: solid 1px #CCC;
+  padding-top: 16px;
+}
+.additional-description + h4 {
+  border: 0px;
 }
 ul {
     margin: 0px;
@@ -81,7 +93,7 @@ h2 {
 h4 {
     padding: 1em 0em;
     margin: 0em;
-    border-top: solid 1px #CCC;
+    font-size: 17px;
 }
 span.optional {
     color: grey;
@@ -101,4 +113,7 @@ div.print-row + div.print-row {
 }
 .padding-fix {
   padding: 16px;
+}
+.sub-title {
+  margin: 0 12px;
 }
