@@ -1,0 +1,2574 @@
+<root xmlns="https://dd.info-rac.org/namespaces/4">
+    <country>
+        <tables>
+            <table_1>
+                <labels>
+                    <val>Please provide information on the reporting Party by completing the following table.</val>
+                </labels>
+                <element>
+                    <label>Contracting Party</label>
+                    <name>partyname</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Reporting period from (year)</label>
+                    <name>rep_period_from</name>
+                    <selected/>
+                    <type>number</type>
+                </element>
+                <element>
+                    <label>Reporting period to (year)</label>
+                    <name>rep_period_to</name>
+                    <selected/>
+                    <type>number</type>
+                </element>
+                <element>
+                    <label>
+                        Name of the institution/s responsible for the Offshore Protocol
+                    </label>
+                    <name>institution_name</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>
+                        Name of the officer who is the focal point for the Offshore Protocol
+                    </label>
+                    <name>officer_name</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Mailing address</label>
+                    <name>mailing_address</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Tel.</label>
+                    <name>tel</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Fax</label>
+                    <name>fax</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Email</label>
+                    <name>email</name>
+                    <selected/>
+                    <type>email</type>
+                </element>
+            </table_1>
+            <table_2>
+                <labels>
+                    <val>Contact point for the national report, if any</val>
+                </labels>
+                <element>
+                    <label>Contact point for the national report, if any</label>
+                    <name>contact_point</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Full name of the institution</label>
+                    <name>instituion_full_name</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Mailing address</label>
+                    <name>national_mailing_address</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Tel.</label>
+                    <name>national_tel</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Fax</label>
+                    <name>national_fax</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Email</label>
+                    <name>national_email</name>
+                    <selected/>
+                    <type>email</type>
+                </element>
+                <element>
+                    <label>Signature of the Protocol’s Focal Point</label>
+                    <name>national_signature</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Date of submission of the Report</label>
+                    <name>national_date</name>
+                    <selected/>
+                    <type>date</type>
+                </element>
+            </table_2>
+            <table_3>
+                <labels>
+                    <val>Organizations/bodies/agencies providing information for the compilation of the report</val>
+                    <val>Please provide information on the preparation of this report, including, where appropriate, stakeholders involved and material used, by completing the following Table.</val>
+                </labels>
+                <element>
+                    <label>Full name of the institution</label>
+                    <name>org_name</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Name of the contact point (optional)</label>
+                    <name>org_contact_point</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Tel.</label>
+                    <name>org_tel</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Fax</label>
+                    <name>org_fax</name>
+                    <selected/>
+                    <type>text</type>
+                </element>
+                <element>
+                    <label>Email</label>
+                    <name>org_email</name>
+                    <selected/>
+                    <type>email</type>
+                </element>
+            </table_3>
+        </tables>
+    </country>
+    <tab_1>
+        <collection_id>601</collection_id>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6001</collection_id>
+                            <description>
+                                Exploration and exploitation offshore activities subject to prior authorization issued by the national competent authority in accordance with Articles 5 and 6 and the criteria set forth in Annex IV
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Articles 4., 5 and 6 Annex IV Granting of authorizations
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6002</collection_id>
+                            <description>
+                                Obligation upon operators to use the best available, environmentally effective and economically appropriate techniques in order to minimize the risk of offshore pollution
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 8 BAT and BEP</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6003</collection_id>
+                            <description>
+                                Prohibition of disposal of harmful and noxious substances and materials listed in Annex I to the Protocol
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                        <element>
+                            <collection_id>6004</collection_id>
+                            <description>
+                                Disposal of harmful and noxious substances and materials listed in Annex II to the Protocol is subject to a prior special permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                        <element>
+                            <collection_id>6005</collection_id>
+                            <description>
+                                Disposal of harmful and noxious substances and materials that are not listed in Annexes I and II to the Protocol is subject to a prior general permit from the competent national authority in conformity with the criteria set forth in Annex III to the Protocol
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                        <element>
+                            <collection_id>6006</collection_id>
+                            <description>
+                                Use and storage of offshore chemicals is approved by the competent national authority on the basis of the Chemical Use Plan
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 9 Harmful or noxious substances and materials
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6007</collection_id>
+                            <description>
+                                Disposal of oil and oily mixtures in accordance with the provisions of Annex V A to the Protocol
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                        <element>
+                            <collection_id>6008</collection_id>
+                            <description>
+                                Use and disposal of drilling fluids and cuttings in accordance with the provisions of Annex V B to the Protocol
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Article 10 Oil and Oily Mixtures and Drilling Fluids and Cuttings
+                    </article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6009</collection_id>
+                            <description>
+                                Discharge of sewage prohibited with the exception of those cases provided for in Article 11.1 of the Protocol
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 11 Sewage</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6010</collection_id>
+                            <description>
+                                Prohibition of disposal into the Protocol area of all plastics, such as synthetic ropes , synthetic fishing nets and plastic garbage bags and all non- biodegradable garbage, including paper products, rags, galls, metal, bottles, crockery, dunnage, lining and packing materials
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                        <element>
+                            <collection_id>6011</collection_id>
+                            <description>
+                                Disposal of food waste to take place as far away as possible from land in accordance with international rules and standards
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 12 Garbage</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6012</collection_id>
+                            <description>
+                                Ensure that operators dispose of all waste and harmful or noxious substances and materials in designated onshore reception facilities
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 13 Reception facilities</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6013</collection_id>
+                            <description>
+                                Certificate of safety and fitness required to the offshore installation by the competent national authority
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 15 Safety Measures</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6014</collection_id>
+                            <description>
+                                Contingency Plan in accordance with Annex VII to the Protocol required to the operator by the competent national authority
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 16 Contingency Planning</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6015</collection_id>
+                            <description>
+                                Establishment of environmental and compliance monitoring programmes and activities
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 12 Monitoring</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6016</collection_id>
+                            <description>
+                                Obligation upon operators to remove disused offshore installations and pipelines in accordance with the guidelines and standards adopted by the competent international organization
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 20 Removal</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <collection_id>6017</collection_id>
+                            <description>
+                                Adoption of special measures to prevent, abate, combat and control pollution in specially protected areas arising from offshore activities in these areas
+                            </description>
+                            <items>
+                                <element>
+                                    <info>Please tick the box that applies</info>
+                                    <label>
+                                        Changes in the information provided in the previous report
+                                    </label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>true</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>false</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>If your answer is “Yes”, please update accordingly</element>
+                                        <element>If your answer is “No”, please go to next question</element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>changes</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick the box that applies</info>
+                                    <label>Status</label>
+                                    <options>
+                                        <element>
+                                            <text>Yes</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>No</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Under development</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Not applicable</text>
+                                            <value>4</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            If your answer is “Yes”, on a voluntary basis please provide title, date of enactment and a summary of the relevant provisions (Indicate website/URL link or other reference)
+                                        </element>
+                                        <element>
+                                            If your answer is “No”, please in the column difficulties/challenges, tick all that apply
+                                        </element>
+                                    </options_description>
+                                    <selected null="true"/>
+                                    <type>status</type>
+                                </element>
+                                <element>
+                                    <comments/>
+                                    <info>Please tick all that apply</info>
+                                    <label>Difficulties/Challenges</label>
+                                    <options>
+                                        <element>
+                                            <text>Policy framework</text>
+                                            <value>1</value>
+                                        </element>
+                                        <element>
+                                            <text>Regulatory framework</text>
+                                            <value>2</value>
+                                        </element>
+                                        <element>
+                                            <text>Financial resources</text>
+                                            <value>3</value>
+                                        </element>
+                                        <element>
+                                            <text>Administrative management</text>
+                                            <value>4</value>
+                                        </element>
+                                        <element>
+                                            <text>Technical Guidance Capabilities</text>
+                                            <value>5</value>
+                                        </element>
+                                    </options>
+                                    <options_description>
+                                        <element>
+                                            On a voluntary basis, please briefly describe difficulties/challenges and the type of attention or assistance that is required
+                                        </element>
+                                    </options_description>
+                                    <selected/>
+                                    <type>difficulties</type>
+                                </element>
+                            </items>
+                            <parent_collection_id>602</parent_collection_id>
+                        </element>
+                    </article_items>
+                    <article_title>Article 21 SPA</article_title>
+                </element>
+            </articles>
+            <collection_id>602</collection_id>
+            <parent_collection_id>601</parent_collection_id>
+            <question>
+                Question 1: Has the Party, in accordance with Article 14 of the Barcelona Convention, adopted legislation implementing the provisions of the Offshore Protocol as listed in Table I?
+            </question>
+            <table_label>Table I – LEGAL AND REGULATORY MEASURES</table_label>
+        </data>
+        <label>Part I: Legal and regulatory measures</label>
+        <parent_collection_id>6</parent_collection_id>
+    </tab_1>
+    <tab_2>
+        <collection_id>603</collection_id>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <items>
+                                <element>
+                                    <description/>
+                                    <disabled>true</disabled>
+                                    <info/>
+                                    <label>2.2 Type of Permit</label>
+                                    <name>permit_type</name>
+                                    <selected>Special Permit</selected>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description/>
+                                    <info>Specify waste category</info>
+                                    <label>2.3 Waste Category</label>
+                                    <name>waste_cateogry</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of
+                                    </description>
+                                    <info/>
+                                    <label>2.4 Total Number of New Permits Issued</label>
+                                    <name>permits_number_issued</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea
+                                    </label>
+                                    <name>waste_quantity_permited</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a specific waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.5.2 Waste Reporting Unit</label>
+                                    <name>waste_reporting_unit</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was actually dumped at the dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea
+                                    </label>
+                                    <name>waste_quanity_actual</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.6.2 Waste Reporting Units</label>
+                                    <name>waste_reporting_units</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Provide information on other programs that also manage dumping at sea operations,
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.7 Dumping at Sea Operations Regulated by Other Means
+                                    </label>
+                                    <name>dumping_regulated</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>Brief notes on any entry in Table 2</description>
+                                    <info/>
+                                    <label>2.8 Notes</label>
+                                    <name>notes</name>
+                                    <selected/>
+                                    <type>textarea</type>
+                                </element>
+                            </items>
+                        </element>
+                    </article_items>
+                    <article_title>1994 Protocol Article 9.5, Annex II</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <items>
+                                <element>
+                                    <description/>
+                                    <disabled>true</disabled>
+                                    <info/>
+                                    <label>2.2 Type of Permit</label>
+                                    <name>permit_type</name>
+                                    <selected>General Permit</selected>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description/>
+                                    <info>Specify waste category</info>
+                                    <label>2.3 Waste Category</label>
+                                    <name>waste_cateogry</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of
+                                    </description>
+                                    <info/>
+                                    <label>2.4 Total Number of New Permits Issued</label>
+                                    <name>permits_number_issued</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea
+                                    </label>
+                                    <name>waste_quantity_permited</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a specific waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.5.2 Waste Reporting Unit</label>
+                                    <name>waste_reporting_unit</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was actually dumped at the dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea
+                                    </label>
+                                    <name>waste_quanity_actual</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.6.2 Waste Reporting Units</label>
+                                    <name>waste_reporting_units</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Provide information on other programs that also manage dumping at sea operations,
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.7 Dumping at Sea Operations Regulated by Other Means
+                                    </label>
+                                    <name>dumping_regulated</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>Brief notes on any entry in Table 2</description>
+                                    <info/>
+                                    <label>2.8 Notes</label>
+                                    <name>notes</name>
+                                    <selected/>
+                                    <type>textarea</type>
+                                </element>
+                            </items>
+                        </element>
+                    </article_items>
+                    <article_title>1994 Protocol Article 9.6</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <items>
+                                <element>
+                                    <description/>
+                                    <disabled>true</disabled>
+                                    <info/>
+                                    <label>2.2 Type of Permit</label>
+                                    <name>permit_type</name>
+                                    <selected>Force Majeure</selected>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description/>
+                                    <info>Specify waste category</info>
+                                    <label>2.3 Waste Category</label>
+                                    <name>waste_cateogry</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of
+                                    </description>
+                                    <info/>
+                                    <label>2.4 Total Number of New Permits Issued</label>
+                                    <name>permits_number_issued</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea
+                                    </label>
+                                    <name>waste_quantity_permited</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a specific waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.5.2 Waste Reporting Unit</label>
+                                    <name>waste_reporting_unit</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was actually dumped at the dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea
+                                    </label>
+                                    <name>waste_quanity_actual</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.6.2 Waste Reporting Units</label>
+                                    <name>waste_reporting_units</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Provide information on other programs that also manage dumping at sea operations,
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.7 Dumping at Sea Operations Regulated by Other Means
+                                    </label>
+                                    <name>dumping_regulated</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>Brief notes on any entry in Table 2</description>
+                                    <info>
+                                        Website/URL link or other reference to MEDPOL Report
+                                    </info>
+                                    <label>2.8 Notes</label>
+                                    <name>notes</name>
+                                    <selected/>
+                                    <type>textarea</type>
+                                </element>
+                            </items>
+                        </element>
+                    </article_items>
+                    <article_title>1994 Protocol Article 14.1.a</article_title>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <items>
+                                <element>
+                                    <description/>
+                                    <disabled>true</disabled>
+                                    <info/>
+                                    <label>2.2 Type of Permit</label>
+                                    <name>permit_type</name>
+                                    <selected>Minimize Pollution Permit</selected>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description/>
+                                    <info>Specify waste category</info>
+                                    <label>2.3 Waste Category</label>
+                                    <name>waste_cateogry</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total of all new permits issued, single year valid permits and valid multiple year permits under a "Type of
+                                    </description>
+                                    <info/>
+                                    <label>2.4 Total Number of New Permits Issued</label>
+                                    <name>permits_number_issued</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was permitted for dumping at sea at a dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.5.1 Total Quantity of a Waste Category Permitted for Dumping at Sea
+                                    </label>
+                                    <name>waste_quantity_permited</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a specific waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.5.2 Waste Reporting Unit</label>
+                                    <name>waste_reporting_unit</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Total quantity of a specific waste that was actually dumped at the dump site during the reporting period
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.6.1 Total Quantity of a Waste Category Actually Dumped at Sea
+                                    </label>
+                                    <name>waste_quanity_actual</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Reporting units used by the permitting authority for a waste
+                                    </description>
+                                    <info>Depends on waste dumped</info>
+                                    <label>2.6.2 Waste Reporting Units</label>
+                                    <name>waste_reporting_units</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>
+                                        Provide information on other programs that also manage dumping at sea operations,
+                                    </description>
+                                    <info/>
+                                    <label>
+                                        2.7 Dumping at Sea Operations Regulated by Other Means
+                                    </label>
+                                    <name>dumping_regulated</name>
+                                    <selected/>
+                                    <type>text</type>
+                                </element>
+                                <element>
+                                    <description>Brief notes on any entry in Table 2</description>
+                                    <info>
+                                        Website/URL link or other reference to MEDPOL Report
+                                    </info>
+                                    <label>2.8 Notes</label>
+                                    <name>notes</name>
+                                    <selected/>
+                                    <type>textarea</type>
+                                </element>
+                            </items>
+                        </element>
+                    </article_items>
+                    <article_title>1994 Protocol Article 14.1.b</article_title>
+                </element>
+            </articles>
+            <collection_id>604</collection_id>
+            <parent_collection_id>603</parent_collection_id>
+            <table_aritcle_description>Reference to Articles pertaining to permits</table_aritcle_description>
+            <table_article_label>2.1 1994 Protocol Article</table_article_label>
+            <table_label>
+                TABLE II - Biennial Summary of Permits and Quantities
+            </table_label>
+        </data>
+        <label>Part II: Permits and quantities</label>
+        <parent_collection_id>6</parent_collection_id>
+    </tab_2>
+    <tab_3>
+        <title>Operator</title>
+        <operator>Operator</operator>
+        <production_start>Production Start</production_start>
+        <current_status>Current status</current_status>
+        <primary_production>Primary Production</primary_production>
+        <category>Category</category>
+        <category_comments>Comments</category_comments>
+        <weight_substructure>Weight Substructure</weight_substructure>
+        <weight_topside>Weight Topside</weight_topside>
+        <remarks>Remarks</remarks>
+    </tab_3>
+    <tab_4>
+        <collection_id>607</collection_id>
+        <data>
+            <articles>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>Number of inspections</label>
+                            <name>inspections</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of non-compliance cases</label>
+                            <name>non_compliance</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of fines issued and total amount</label>
+                            <name>total_amount</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of suspensions of authorizations or permits</label>
+                            <name>suspensions</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of operation shutdowns</label>
+                            <name>shutdowns</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of other enforcement measures</label>
+                            <name>enforcement</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of clean measures implemented</label>
+                            <name>implemented</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Remarks/Comments</label>
+                            <name>remarks</name>
+                            <type>textarea</type>
+                            <value/>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Protocol obligations and national legislation and regulations implementing the Protocol - Article 3 of the Protocol
+                    </article_title>
+                    <collection_id>6018</collection_id>
+                    <parent_collection_id>608</parent_collection_id>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>Number of inspections</label>
+                            <name>inspections</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of non-compliance cases</label>
+                            <name>non_compliance</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of fines issued and total amount</label>
+                            <name>total_amount</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of suspensions of authorizations or permits</label>
+                            <name>suspensions</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of operation shutdowns</label>
+                            <name>shutdowns</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of other enforcement measures</label>
+                            <name>enforcement</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of clean measures implemented</label>
+                            <name>implemented</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Remarks/Comments</label>
+                            <name>remarks</name>
+                            <type>textarea</type>
+                            <value/>
+                        </element>
+                    </article_items>
+                    <article_title>
+                        Specific conditions attached to authorizations or permits-Article 4 and 5
+                    </article_title>
+                    <collection_id>6019</collection_id>
+                    <parent_collection_id>608</parent_collection_id>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>Number of inspections</label>
+                            <name>inspections</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of non-compliance cases</label>
+                            <name>non_compliance</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of fines issued and total amount</label>
+                            <name>total_amount</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of suspensions of authorizations or permits</label>
+                            <name>suspensions</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of operation shutdowns</label>
+                            <name>shutdowns</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of other enforcement measures</label>
+                            <name>enforcement</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of clean measures implemented</label>
+                            <name>implemented</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Remarks/Comments</label>
+                            <name>remarks</name>
+                            <type>textarea</type>
+                            <value/>
+                        </element>
+                    </article_items>
+                    <article_title>Provisions regarding to illegal disposal-Article 9</article_title>
+                    <collection_id>6020</collection_id>
+                    <parent_collection_id>608</parent_collection_id>
+                </element>
+                <element>
+                    <article_items>
+                        <element>
+                            <label>Number of inspections</label>
+                            <name>inspections</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of non-compliance cases</label>
+                            <name>non_compliance</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of fines issued and total amount</label>
+                            <name>total_amount</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of suspensions of authorizations or permits</label>
+                            <name>suspensions</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of operation shutdowns</label>
+                            <name>shutdowns</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of other enforcement measures</label>
+                            <name>enforcement</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Number of clean measures implemented</label>
+                            <name>implemented</name>
+                            <type>number</type>
+                            <value/>
+                        </element>
+                        <element>
+                            <label>Remarks/Comments</label>
+                            <name>remarks</name>
+                            <type>textarea</type>
+                            <value/>
+                        </element>
+                    </article_items>
+                    <article_title>Provisions regarding safety measures-Article</article_title>
+                    <collection_id>6021</collection_id>
+                    <parent_collection_id>608</parent_collection_id>
+                </element>
+            </articles>
+            <collection_id>608</collection_id>
+            <parent_collection_id>607</parent_collection_id>
+            <question/>
+            <table_label>Table IV – Enforcement measures</table_label>
+        </data>
+        <label>Part IV: Enforcement</label>
+        <parent_collection_id>6</parent_collection_id>
+    </tab_4>
+</root>

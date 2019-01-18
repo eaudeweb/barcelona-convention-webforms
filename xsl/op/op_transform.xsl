@@ -1,10 +1,10 @@
-<xsl:stylesheet xpath-default-namespace="https://dd.info-rac.org/namespaces/9"
+<xsl:stylesheet xpath-default-namespace="https://dd.info-rac.org/namespaces/4"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:local="http://local"
         version="2.0" exclude-result-prefixes="xml">
 
-    <xsl:variable name="labels" select="document('lbs_labels.xml')/root"/>
+    <xsl:variable name="labels" select="document('op_labels.xml')/root"/>
 
     <xsl:function name="local:get_difficulty_label" as="xs:string">
         <xsl:param name="difficulty"/>
@@ -22,10 +22,8 @@
                     <xsl:call-template name="contacting_party"/>
                     <xsl:call-template name="tab_1"/>
                     <xsl:call-template name="tab_2"/>
-                    <xsl:call-template name="tab_3"/>
+                    <xsl:apply-templates select="//inventory_offshore_installations"/>
                     <xsl:call-template name="tab_4"/>
-                    <xsl:call-template name="tab_5"/>
-                    <xsl:call-template name="tab_6"/>
                 </div>
             </body>
         </html>
@@ -76,35 +74,30 @@
     <xsl:template name="tab_2">
         <xsl:call-template name="construct-tab">
             <xsl:with-param name="tab-node" select="$labels/tab_2"/>
-            <xsl:with-param name="report-node" select="./*[1]//lbsinventorydata"/>
+            <xsl:with-param name="report-node" select="./*[1]//permits_and_quantities"/>
         </xsl:call-template>
     </xsl:template>
 
-    <xsl:template name="tab_3">
-        <xsl:call-template name="construct-tab">
-            <xsl:with-param name="tab-node" select="$labels/tab_3"/>
-            <xsl:with-param name="report-node" select="./*[1]//measuresdata"/>
-        </xsl:call-template>
+    <xsl:template match="inventory_offshore_installations">
+        <h2>Part III: Inventory of offshore installations</h2>
+        <div class="form-section">
+            <table class="table-measures">
+                <div class="fs-container fs-title">
+                    Table III – Inventory of offshore installations including disused installations
+                </div>
+                <xsl:apply-templates select="Row" mode="title">
+                    <xsl:with-param name="label_name" select="'tab_3'"/>
+                    <xsl:with-param name="title" select="'title'"/>
+                    <xsl:with-param name="ignored-nodes" select="('collection_id', 'parent_collection_id', 'title')"/>
+                </xsl:apply-templates>
+            </table>
+        </div>
     </xsl:template>
 
     <xsl:template name="tab_4">
-        <xsl:call-template name="construct-tab">
-            <xsl:with-param name="tab-node" select="$labels/tab_4"/>
-            <xsl:with-param name="report-node" select="./*[1]//measuresdata"/>
-        </xsl:call-template>
-    </xsl:template>
-
-    <xsl:template name="tab_5">
-        <xsl:call-template name="construct-tab">
-            <xsl:with-param name="tab-node" select="$labels/tab_5"/>
-            <xsl:with-param name="report-node" select="./*[1]//measuresdata"/>
-        </xsl:call-template>
-    </xsl:template>
-
-    <xsl:template name="tab_6">
         <xsl:call-template name="construct-tab-alternate">
-            <xsl:with-param name="tab-node" select="$labels/tab_6"/>
-            <xsl:with-param name="report-node" select="./*[1]//enforcementmeasuresdata"/>
+            <xsl:with-param name="tab-node" select="$labels/tab_4"/>
+            <xsl:with-param name="report-node" select="./*[1]//enf_measures"/>
         </xsl:call-template>
     </xsl:template>
 
@@ -237,6 +230,12 @@
                                                 <xsl:with-param name="value" select="$report-node/Row[starts-with(description, $description)]/*[local-name() = $node_name]"/>
                                             </xsl:call-template>
                                         </xsl:when>
+                                        <xsl:when test="$type = ('text', 'textarea')">
+                                            <xsl:call-template name="simple-print">
+                                                <xsl:with-param name="label" select="current()/label"/>
+                                                <xsl:with-param name="value" select="$report-node/Row[title = $article_title]/*[local-name() = $node_name]"/>
+                                            </xsl:call-template>
+                                        </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:call-template name="simple-print">
                                                 <xsl:with-param name="label" select="current()/label"/>
@@ -346,6 +345,49 @@
                 </xsl:for-each>
             </table>
         </div>
+    </xsl:template>
+
+    <xsl:template match="Row" mode="title">
+        <xsl:param name="label_name"/>
+        <xsl:param name="title"/>
+        <xsl:param name="ignored-nodes"/>
+        <xsl:for-each select=".">
+            <tr>
+            <td class="bordered">
+                <div class="fs-container article-title">
+                    <xsl:variable name="title_label" select="$labels//*[local-name() = $label_name]/*[local-name() = $title]/text()"/>
+                    <xsl:choose>
+                        <xsl:when test="string-length($title_label) > 0">
+                            <xsl:value-of select="concat($title_label, ': ', *[local-name() = $title])"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="*[local-name() = $title]"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </div>
+                <div class="fs-container fs-data">
+                    <xsl:for-each select="./*[not(local-name() = $ignored-nodes)]">
+                        <xsl:variable name="local_name" select="./local-name()"/>
+                        <xsl:variable name="lab" select="$labels//*[local-name() = $label_name]/*[local-name() = $local_name]/text()"/>
+
+                        <xsl:call-template name="simple-print">
+                            <xsl:with-param name="label">
+                                <xsl:choose>
+                                    <xsl:when test="string-length($lab) > 0">
+                                        <xsl:value-of select="concat($lab, ': ')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="concat($local_name, ': ')"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:with-param>
+                            <xsl:with-param name="value" select="node()"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </div>
+            </td>
+            </tr>
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template name="choose-one-print">
