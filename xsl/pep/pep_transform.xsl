@@ -217,10 +217,10 @@
                                             </xsl:call-template>
                                         </xsl:when>
                                         <xsl:when test="$type = ('special')">
-                                            <xsl:call-template name="choose-print">
+                                            <xsl:call-template name="special-print">
                                                 <xsl:with-param name="options" select="$options-label"/>
                                                 <xsl:with-param name="label" select="current()/label"/>
-                                                <xsl:with-param name="value" select="$report-node/Row[collection_id = $collection_id and parent_collection_id = $parent_collection_id]/*[local-name() = $node_name]"/>
+                                                <xsl:with-param name="values" select="$report-node/Row[collection_id = $collection_id and parent_collection_id = $parent_collection_id]/*[local-name() = $node_name]"/>
                                             </xsl:call-template>
                                         </xsl:when>
                                         <xsl:when test="$type = ('difficulties')">
@@ -266,93 +266,6 @@
                                 </xsl:for-each>
                             </div>
                         </xsl:for-each>
-                    </td>
-                    </tr>
-                </xsl:for-each>
-            </table>
-        </div>
-    </xsl:template>
-
-    <xsl:template name="construct-tab-alternate">
-        <xsl:param name="tab-node"/>
-        <xsl:param name="report-node"/>
-
-        <xsl:variable name="main_collection_id" select="$tab-node/collection_id"/>
-        <xsl:variable name="table" select="$tab-node/data"/>
-
-        <h2>
-            <xsl:value-of select="$tab-node/label"/>
-        </h2>
-        <div class="sub-title">
-            <xsl:value-of select="$table/question/text()"/>
-        </div>
-        <div class="form-section">
-            <table class="table-measures">
-                <div class="fs-container fs-title">
-                    <xsl:value-of select="$table/table_label"/>
-                </div>
-                <xsl:for-each select="$table/articles/element">
-                    <xsl:variable name="article" select="current()"/>
-                    <xsl:variable name="article_title" select="$article/article_title"/>
-                    <xsl:variable name="fields" select="$article/article_items/element"/>
-                    <xsl:variable name="optional" select="$article/optional"/>
-
-                    <tr>
-                    <td class="bordered">
-                        <div class="fs-container article-title">
-                            <xsl:if test="$optional = 'true'">
-                                <span class="optional">Optional: </span>
-                            </xsl:if>
-                            <xsl:value-of select="$article_title"/>
-                        </div>
-
-                        <xsl:variable name="article_item" select="current()"/>
-                        <xsl:variable name="collection_id" select="$article/collection_id"/>
-                        <xsl:variable name="parent_collection_id" select="$article/parent_collection_id"/>
-                        <xsl:variable name="description" select="normalize-space($article_item/description)"/>
-                        <xsl:variable name="additional_description" select="$article_item/additional_description"/>
-
-                        <!-- debug -->
-                        <!--<xsl:value-of select="$collection_id"/> - <xsl:value-of select="$parent_collection_id"/>-->
-
-                        <div class="fs-container fs-data">
-                            <xsl:if test="string-length($additional_description) > 0">
-                                <div class="additional-description">
-                                    <xsl:value-of select="$additional_description"/>
-                                </div>
-                            </xsl:if>
-                            <xsl:if test="string-length($description) > 0">
-                                <h4>
-                                    <xsl:value-of select="$description"/>
-                                </h4>
-                            </xsl:if>
-                            <xsl:for-each select="$fields">
-                                <xsl:variable name="type" select="current()/type"/>
-                                <xsl:variable name="node_name" select="current()/name"/>
-
-                                <xsl:variable name="options-label" select="current()/options"/>
-
-                                <!-- debug -->
-                                <!--<div>type: <xsl:value-of select="$type"/></div>-->
-                                <!--<div>node_name: <xsl:value-of select="$node_name"/></div>-->
-                                <!--<div>options: <xsl:value-of select="$options-label"/></div>-->
-
-                                <xsl:choose>
-                                    <xsl:when test="$type = ('number', 'textarea')">
-                                        <xsl:call-template name="simple-print">
-                                            <xsl:with-param name="label" select="current()/label"/>
-                                            <xsl:with-param name="value" select="$report-node/Row[collection_id = $collection_id and parent_collection_id = $parent_collection_id]/*[local-name() = $node_name]"/>
-                                        </xsl:call-template>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <xsl:call-template name="simple-print">
-                                            <xsl:with-param name="label" select="current()/label"/>
-                                            <xsl:with-param name="value" select="'#Unknown type'"/>
-                                        </xsl:call-template>
-                                    </xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:for-each>
-                        </div>
                     </td>
                     </tr>
                 </xsl:for-each>
@@ -410,19 +323,6 @@
         <xsl:param name="label"/>
         <xsl:param name="value"/>
 
-<!--
-        <xsl:variable name="new_value">
-            <xsl:choose>
-                <xsl:when test="string-length($value) = 0">
-                    <xsl:value-of select="$options/element[value = 'false']/text"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="$options/element[value = $label]/text"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
--->
-
         <xsl:variable name="new_value">
             <xsl:choose>
                 <xsl:when test="exists($options//*)">
@@ -458,7 +358,7 @@
         <xsl:param name="label"/>
         <xsl:param name="values"/>
 
-        <xsl:variable name="new_value" select="string-join($values//contingency_plan/local:get_label(text(), $options//options), ', ')"/>
+        <xsl:variable name="new_value" select="string-join($values/local:get_label(text(), $options/descendant-or-self::options), ', ')"/>
 
         <xsl:call-template name="simple-print">
             <xsl:with-param name="label" select="$label"/>
