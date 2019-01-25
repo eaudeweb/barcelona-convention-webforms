@@ -110,7 +110,8 @@ export default {
                 "rep_period_from":null,
                 "rep_period_to":null,
               },
-              "region": []
+              "region": [],
+              "basins": []
           }
       }
           
@@ -146,6 +147,15 @@ export default {
               pollutantSubmitItem.record[this.getBaselineName(pollutant.name)] = pollutant.selected
             }
             this.jsonemptyinstance.NBB_Report.region.push(pollutantSubmitItem)
+        }
+
+
+         for(let basin of this.dataset.content.data.table.basins) {
+          let basinSubmitItem = {
+                  "region_id": basin.region,
+                  "basin":  basin.selected        
+            }
+            this.jsonemptyinstance.NBB_Report.basins.push(basinSubmitItem)
         }
 
         console.log(this.jsonemptyinstance)

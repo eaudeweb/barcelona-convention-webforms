@@ -93,6 +93,33 @@ export default {
             }
       }
 
+      if(data.NBB_Report.basins.length) {
+        for(let entry of data.NBB_Report.basins) {
+          const basin = {
+              name: 'hydrological_basin',
+              type: 'textarea',
+              region: entry.region_id,
+              label: 'Hydrological basin',
+              selected: entry.basin,
+              required: true,
+          }
+          this.form.content.data.table.basins.push(basin)
+        }
+
+      } else {
+        if(data.NBB_Report.basins.basin) {
+          const basin = {
+              name: 'hydrological_basin',
+              type: 'textarea',
+              region: data.NBB_Report.basins.region_id,
+              label: 'Hydrological basin',
+              selected: data.NBB_Report.basins.basin,
+              required: true,
+          }
+          this.form.content.data.table.basins.push(basin)
+        }
+      }
+
       if(data.NBB_Report.region.length) {
 
 

@@ -41,7 +41,7 @@
         "sector_id": 18,
         "subsector_id": 51,
         "process_id": null,
-        "facility": null,
+        "facility": "lolo",
         "from_prtr": true,
         "estimated_on_id": 3,
         "emission_factor_value": 252,
@@ -91,6 +91,11 @@
         "total_release_value": 512512,
         "total_release_unit_id": null
       }
-    }]
+    }],
+    "basins": 
+    {
+      "region_id": 6,
+      "basin": "1"
+    }
   }
 }

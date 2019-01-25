@@ -25,4 +25,8 @@
       <total_release_unit_id></total_release_unit_id>
     </record>
   </region>
+  <basins>
+      <region_id></region_id>
+      <basin></basin>
+  </basins>
 </NBB_Report>

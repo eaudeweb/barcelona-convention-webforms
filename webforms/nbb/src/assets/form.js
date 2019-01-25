@@ -33,7 +33,8 @@ var form = {
     label: 'Baseline of region ',
     data: {
       table: {
-        pollutants: []
+        pollutants: [],
+        basins: [],
       },
     }
 
