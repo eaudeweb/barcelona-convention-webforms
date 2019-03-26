@@ -1,6 +1,6 @@
 var polutants = [{
     text: "Please select a pollutant",
-    value: 1
+    value: null
   },
   {
     text: "NH3",
