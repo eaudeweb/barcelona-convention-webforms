@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<H2020_DEM xmlns="https://dd.info-rac.org/namespaces/23" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/namespaces/23  https://dd.info-rac.org/v2/dataset/25/schema-dst-25.xsd">
+    <demographicdataset xmlns="https://dd.info-rac.org/namespaces/24">
+        <Row>
+            <reportID/>
+            <countryCode/>
+            <reportingYear/>
+        </Row>
+    </demographicdataset>
+    <demographicdataset_records xmlns="https://dd.info-rac.org/namespaces/25">
+        <Row>
+            <reportID/>
+            <rowID/>
+            <year/>
+            <totalPopulation/>
+            <urbanPopulation/>
+            <ruralPopulation/>
+            <Total_Pop_Coast_Hydro_Basin/>
+            <Urban_Pop_Coast_Hydro_Basin/>
+            <Rural_Pop_Coast_Hydro_Basin/>
+            <Total_Pop_more_2000_Inhabitants_Hydro_Coast/>
+            <Total_Pop_more_2000_Inhabitants_Coast/>
+            <Total_Pop_Coast/>
+        </Row>
+    </demographicdataset_records>
+</H2020_DEM>
