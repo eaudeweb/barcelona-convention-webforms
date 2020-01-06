@@ -1,9 +1,6 @@
 <template>
   <div v-if="data">
-    <br/>
-    <h2>
-      <center>Demographic information</center>
-    </h2>
+    <h4 class="text-center"><i>{{data.description}}</i></h4>
     <br/>
     <b-card>
       <div v-for="(field, field_index) in data.form_fields" :id="field_index" :key="field_index">

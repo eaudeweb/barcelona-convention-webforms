@@ -3,10 +3,10 @@ import reference_years from './reference_years'
 const dem_entry = () => ({
   year: {
 		name: 'year',
-		label: 'Year',
+		label: 'Reference year',
 		type: 'select',
 		selected: null,
-		options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+		options: reference_years.map(p => ({text: `${    p.text    }`, value: p.value})),
 		get validation() {
 			if(!this.selected)
 			 return `${this.label} is required`

@@ -1,7 +1,7 @@
 <template>
   <div v-if="data" class="question-wrapper">
     <h4 class="text-center"><i>{{data.description}}</i></h4>
-
+    <br>
     <div class="table-body">
       <div style="width: 50%" class="container">
         <b-row class="mb-2" v-for="(field,index) in data.form_fields" :key="index">

@@ -1,18 +1,18 @@
 <template>
-  <div>
-    <b-btn variant="success" style="position: absolute;
-    top: -3rem;
-    right: 5px;" @click="saveForm">Save</b-btn>
-    <b-btn variant="danger" style="position: absolute;
-    top: -3rem;
-    right: 85px;" @click="exitForm">Back to envelope</b-btn>
+  <div class="wrapper">
+    <div class="buttons-wrapper">
+      <b-btn variant="success" id="save_button" @click="saveForm">Save</b-btn>
+<!--      <b-btn variant="primary" @click="validateSections" style="">Validate</b-btn>-->
+<!--      <b-btn variant="danger" @click="openErrorModal">Errors</b-btn>-->
+      <b-btn variant="danger" @click="exitForm">Back to envelope</b-btn>
+    </div>
 
     <b-alert :show="dismissCountDown"
-       variant="success"
-       @dismissed="dismissCountDown=0"
-       @dismiss-count-down="countDownChanged">
-        <h3 style="color: black; font-weight: bold;">The report is saved</h3>
-      </b-alert>
+             variant="success"
+             @dismissed="dismissCountDown=0"
+             @dismiss-count-down="countDownChanged">
+      <h3 style="color: black; font-weight: bold; text-align: center">The report is saved</h3>
+    </b-alert>
   </div>
 </template>
 
@@ -161,5 +161,32 @@ export default {
   top:3rem;
   left: 20%;
   right: 20%;
+}
+.wrapper {
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-bottom: .5rem;
+
+.buttons-wrapper {
+  display: inline-block;
+  padding: .5rem;
+  background: white;
+  border: 1px solid #eee;
+}
+}
+
+.errorSectionTitle {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.03);
+    height: 3rem;
+  }
 }
 </style>
