@@ -67,14 +67,14 @@
     "fileType": "FILE"
   },    
   {
-    "title": "Hazardous Wastes Protocol",
+    "title": "H2020 - Waste Management Indicators",
     "file":
     {
       "name": "index.html"
     },
-    "newXmlFileName": "hwp.xml",
-    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/hwp/file/empty.xml",
-    "xmlSchema": "https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
+    "newXmlFileName": "h2020-waste.xml",
+    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/h2020-waste/file/empty.xml",
+    "xmlSchema": "https://dd.info-rac.org/v2/dataset/28/schema-dst-28.xsd",
     "active": true,
     "localForm": true,
     "remoteForm": true,

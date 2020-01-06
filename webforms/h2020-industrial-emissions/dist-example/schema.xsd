@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:datasets="https://dd.info-rac.org/namespaces/1" xmlns:dd26="https://dd.info-rac.org/namespaces/26" xmlns:dd27="https://dd.info-rac.org/namespaces/27" xmlns:dd32="https://dd.info-rac.org/namespaces/32" xmlns:dd33="https://dd.info-rac.org/namespaces/33" xmlns:dd34="https://dd.info-rac.org/namespaces/34" xmlns:dd35="https://dd.info-rac.org/namespaces/35" xmlns:dd36="https://dd.info-rac.org/namespaces/36" xmlns:dd37="https://dd.info-rac.org/namespaces/37" xmlns:dd38="https://dd.info-rac.org/namespaces/38" xmlns:dd39="https://dd.info-rac.org/namespaces/39" xmlns:dd40="https://dd.info-rac.org/namespaces/40" xmlns:dd41="https://dd.info-rac.org/namespaces/41" xmlns:dd42="https://dd.info-rac.org/namespaces/42" xmlns:dd43="https://dd.info-rac.org/namespaces/43" xmlns:ddattrs="https://dd.info-rac.org/namespaces/3" xmlns:isoattrs="https://dd.info-rac.org/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://dd.info-rac.org/namespaces/26" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+  <xs:import namespace="https://dd.info-rac.org/namespaces/27" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-50.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/32" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-57.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/33" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-58.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/34" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-59.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/35" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-60.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/36" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-61.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/37" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-62.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/38" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-63.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/39" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-64.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/40" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-65.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/41" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-66.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/42" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-67.xsd"/>
+  <xs:import namespace="https://dd.info-rac.org/namespaces/43" schemaLocation="https://dd.info-rac.org/v2/dataset/27/schema-tbl-68.xsd"/>
+  <xs:element name="H2020_IND_EMISSIONS">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        <isoattrs:Name>H2020 Industrial Emission indicators</isoattrs:Name>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd27:industrialemissions"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd32:ind_6_1_1_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd33:ind_6_1_2_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd34:ind_6_1_3_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd35:ind_6_2_1_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd36:ind_6_2_2_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd37:ind_6_2_3_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd38:ind_6_2_4_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd39:ind_6_3_1_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd40:ind_6_3_2_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd41:ind_6_4_1_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd42:ind_6_4_2_records"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="dd43:ind_6_4_3_records"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

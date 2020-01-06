@@ -67,14 +67,14 @@
     "fileType": "FILE"
   },    
   {
-    "title": "Hazardous Wastes Protocol",
+    "title": "H2020 - Water Indicators",
     "file":
     {
       "name": "index.html"
     },
-    "newXmlFileName": "hwp.xml",
-    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/hwp/file/empty.xml",
-    "xmlSchema": "https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
+    "newXmlFileName": "h2020-water.xml",
+    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/h2020-water/file/empty.xml",
+    "xmlSchema": "https://dd.info-rac.org/v2/dataset/29/schema-dst-29.xsd",
     "active": true,
     "localForm": true,
     "remoteForm": true,
