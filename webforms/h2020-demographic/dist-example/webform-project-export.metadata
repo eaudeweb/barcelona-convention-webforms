@@ -73,7 +73,7 @@
       "name": "index.html"
     },
     "newXmlFileName": "h2020-demographic.xml",
-    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/h2020-demographic-dataset/file/empty.xml",
+    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/h2020-demographic/file/empty.xml",
     "xmlSchema": "https://dd.info-rac.org/v2/dataset/25/schema-dst-25.xsd",
     "active": true,
     "localForm": true,

@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import 'date-input-polyfill';
+import store from './store'
+// import 'date-input-polyfill'
+
+import './polyfills.js'
 
 import BootstrapVue from 'bootstrap-vue'
 import './css/main.scss'
@@ -12,5 +15,6 @@ Vue.use(BootstrapVue);
 
 new Vue({
   el: '#app',
+  store,
   render: h => h(App)
 })

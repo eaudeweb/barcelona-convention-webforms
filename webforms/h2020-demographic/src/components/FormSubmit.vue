@@ -2,7 +2,7 @@
   <div>
     <b-btn variant="success" style="position: absolute;
     top: -3rem;
-    right: 5px;" @click="doStuff">Save</b-btn>
+    right: 5px;" @click="saveForm">Save</b-btn>
     <b-btn variant="danger" style="position: absolute;
     top: -3rem;
     right: 85px;" @click="exitForm">Back to envelope</b-btn>
@@ -21,59 +21,52 @@
 import {saveInstance, envelope} from '../api.js';
 
 export default {
-
   name: 'FormSubmit',
-
-
-  props: {
-    info: null,
-    country: null,
-  },
-
-  updated() {
-  },
+  props: ['form', 'country'],
 
   created() {
-    this.dataset = this.info
-    this.validate()
+    this.dataset = this.form;
+    this.currentCountry = this.country;
+    // this.validate()
   },
 
   data () {
     return {
       dataset: null,
-      validation: [],
+      structure:{
+        demographicdataset_records: {
+          reportID: null,
+          rowID: null,
+          year: null,
+          totalPopulation: null,
+          urbanPopulation: null,
+          ruralPopulation: null,
+          Total_Pop_Coast_Hydro_Basin: null,
+          Urban_Pop_Coast_Hydro_Basin: null,
+          Rural_Pop_Coast_Hydro_Basin: null,
+          Total_Pop_more_2000_Inhabitants_Hydro_Coast: null,
+          Total_Pop_more_2000_Inhabitants_Coast: null,
+          Total_Pop_Coast: null
+        }
+      },
+      currentCountry: null,
       jsonemptyinstance: {
-          "BC_HWP": {
-              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+          "H2020_DEM": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/23",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
-              "country": null,
-              "contacting_party":{
-                "partyname":null,
-                "rep_period_from":null,
-                "rep_period_to":null,
-                "institution_name":null,
-                "officer_name":null,
-                "mailing_address":null,
-                "tel":null,
-                "fax":null,
-                "email":null,
-                "contact_point":null,
-                "instituion_full_name":null,
-                "national_mailing_address":null,
-                "national_tel":null,
-                "national_fax":null,
-                "national_email":null,
-                "national_signature":null,
-                "national_date":null,
-                "org_name":null,
-                "org_contact_point":null,
-                "org_tel":null,
-                "org_fax":null,
-                "org_email":null,
-
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/23  https://dd.info-rac.org/v2/dataset/25/schema-dst-25.xsd",
+              "demographicdataset": {
+                "@xmlns": "https://dd.info-rac.org/namespaces/24",
+                "Row": {
+                  reportID: null,
+                  countryCode: null,
+                  reportingYear: null,
+                }
               },
-              "enf_measures": {Row:[]},
+            "demographicdataset_records": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/25",
+              "Row": []
+            },
           }
       },
       dismissSecs: 2,
@@ -88,9 +81,7 @@ export default {
       window.location.replace(envelope)
     },
 
-
     showAlert () {
-      console.log('showingalert')
       this.dismissCountDown = this.dismissSecs
     },
 
@@ -98,90 +89,65 @@ export default {
       this.dismissCountDown = dismissCountDown
     },
 
-    doStuff(){
+    saveForm(){
+      let emptyInstance = JSON.parse(JSON.stringify(this.jsonemptyinstance))
+      let data = JSON.parse(JSON.stringify(this.dataset))
+      let reportID = `${this.currentCountry}-2020`
 
-        this.jsonemptyinstance = {
-          "BC_HWP": {
-              "@xmlns": "https://dd.info-rac.org/namespaces/4",
-              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
-              "country": null,
-              "contacting_party":{
-                "partyname":null,
-                "rep_period_from":null,
-                "rep_period_to":null,
-                "institution_name":null,
-                "officer_name":null,
-                "mailing_address":null,
-                "tel":null,
-                "fax":null,
-                "email":null,
-                "contact_point":null,
-                "instituion_full_name":null,
-                "national_mailing_address":null,
-                "national_tel":null,
-                "national_fax":null,
-                "national_email":null,
-                "national_signature":null,
-                "national_date":null,
-                "org_name":null,
-                "org_contact_point":null,
-                "org_tel":null,
-                "org_fax":null,
-                "org_email":null,
+      emptyInstance.H2020_DEM.demographicdataset.Row.reportID = reportID
+      emptyInstance.H2020_DEM.demographicdataset.Row.countryCode = this.currentCountry
+      emptyInstance.H2020_DEM.demographicdataset.Row.reportingYear = 2020
 
-              },
-              "enf_measures": {Row:[]},
-          }
-      }
+      this.$store.dispatch('setDataLoading', true)
 
+      this.storeTab1(data, emptyInstance, reportID)
 
-   let country_tab = this.dataset.country.tables
-
-      for(let table in country_tab) {
-          for (let value of country_tab[table]) {
-            this.jsonemptyinstance.BC_HWP.contacting_party[value.name] = value.selected
-          }
-      }
-
-
-      let tab_5 = this.dataset.tab_5.data;
-      for (let article of tab_5.articles) {
-        let collection_id = this.dataset.tab_5.data.collection_id || null;
-        let parent_collection_id = this.dataset.tab_5.data.parent_collection_id || null
-        let title = article.article_title || null
-        let row = {
-          collection_id : collection_id,
-          parent_collection_id: parent_collection_id,
-          title: title,
-          inspections_number: null,
-          contraventions_number: null,
-          sanctions_number: null,
-          enf_measures_number: null,
-          clean_measures_number: null,
-          remarks: null,
-        }
-        for (let article_item of article.article_items){
-            row[article_item.name] = article_item.selected
-        }
-
-        this.jsonemptyinstance.BC_HWP.enf_measures.Row.push(row);
-
-      }
-
-
-
-
-
-
-      this.jsonemptyinstance.BC_HWP.country = this.country
-      
-      this.showAlert();
-      saveInstance(this.jsonemptyinstance);
+      saveInstance(emptyInstance).then(r => {
+        this.showAlert()
+        this.$store.dispatch('setDataLoading', false)
+      }).catch(error => {
+        console.log(error)
+        this.$store.dispatch('setDataLoading', false)
+      })
     },
 
-    validate() {
+    storeTab1(data, emptyInstance, reportID) {
+      const structure = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
+      const section = data.tabs.tab_1.form_fields
+      structure.reportID = reportID
 
+      Object.keys(section).forEach(field => {
+        if (structure.hasOwnProperty(field)) structure[field] = section[field].selected
+      })
+      section.demographicdataset_records.fields.forEach((row, row_index) => {
+        console.dir(row)
+      //   pathway.EASINCode.selected.forEach((species, species_index) => {
+        const record = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
+        record.reportID = reportID
+        record.rowID = row_index
+        record.year = row.year.selected
+        record.totalPopulation = row.totalPopulation.selected
+        record.urbanPopulation = row.urbanPopulation.selected
+        record.ruralPopulation = row.ruralPopulation.selected
+        record.Total_Pop_Coast_Hydro_Basin = row.Total_Pop_Coast_Hydro_Basin.selected
+        record.Urban_Pop_Coast_Hydro_Basin = row.Urban_Pop_Coast_Hydro_Basin.selected
+        record.Rural_Pop_Coast_Hydro_Basin = row.Rural_Pop_Coast_Hydro_Basin.selected
+        record.Total_Pop_more_2000_Inhabitants_Hydro_Coast = row.Total_Pop_more_2000_Inhabitants_Hydro_Coast.selected
+        record.Total_Pop_more_2000_Inhabitants_Coast = row.Total_Pop_more_2000_Inhabitants_Coast.selected
+        record.Total_Pop_Coast = row.Total_Pop_Coast.selected;
+        emptyInstance.H2020_DEM.demographicdataset_records.Row.push(record)
+      //   })
+      })
+      emptyInstance.H2020_DEM.demographicdataset_records.Row.push(structure)
+    }
+  },
+  watch: {
+    country: {
+      handler: function (old_val, new_val) {
+        this.currentCountry = new_val
+      },
+      deep: true,
+      immediate: true,
     }
   }
 

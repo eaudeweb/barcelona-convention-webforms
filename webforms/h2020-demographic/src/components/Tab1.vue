@@ -1,54 +1,51 @@
 <template>
-  <div v-if="info">
-    <div class="question-wrapper">
-      <h3>{{info.label}}</h3>
-      <div class="question">
-        <p>{{info.data.question}}</p>
-      </div>
-      <div class="answer">
-        <div class="table-head">
-          <b>{{info.data.table_label}}</b>
+  <div v-if="data">
+    <br/>
+    <h2>
+      <center>Demographic information</center>
+    </h2>
+    <br/>
+    <b-card>
+      <div v-for="(field, field_index) in data.form_fields" :id="field_index" :key="field_index">
+        <div class="table-wrapper">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th v-for="(header,header_index) in field.fields[0]" :key="header_index">
+                {{header.label}}
+              </th>
+              <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(row, row_index) in field.fields" :key="row_index">
+              <td style="max-width: 250px; min-width: 40%;" v-for="(cell, cell_index) in row" :key="`${row_index}_${cell_index}`">
+                <FieldGenerator :field="cell"></FieldGenerator>
+              </td>
+              <td style="width: 50px"><b-btn  v-if="field.fields.length > 1"  variant="danger" @click="$store.commit('removeDemographicDataRow', {row_index})">X</b-btn></td>
+            </tr>
+            </tbody>
+          </table>
+          <b-btn class="btn-big" variant="primary" @click="$store.commit('addDemographicDataRow')">Add</b-btn>
         </div>
-        <div role="tablist">
-          <b-card v-for="(article,index) in info.data.articles" :key="article.article_title" class="mb-1">
-            <h5 style="cursor: pointer" href="#" v-b-toggle="`article_${index}`" variant="info">{{article.article_title}} <span style="float:right">▼</span></h5>
-            <b-collapse class="mt-3" visible :id="`article_${index}`" accordion="my-accordion" role="tabpanel">
-              <div class="form-subsection" v-for="(item,item_index) in article.article_items">
-                <div class="mt-2">{{item.label}}</div>
-                <div class="form-fields">
-                   <textarea
-                    required
-                      class="form-control"
-                      v-model="item.selected"
-                      ></textarea>
-                </div>
-              </div>
-            </b-collapse>
-          </b-card>
-        </div>
+
       </div>
-    </div>
+    </b-card>
   </div>
 </template>
+
 <script>
-export default {
+  import FieldGenerator from '@/components/FieldGenerator'
 
-  name: 'Tab1',
-
-  props: {
-  	info: null,
-    tabId:null
-
-  },
-
-  created() {
-  },
-
-  data () {
-    return {
-    }
-  },
-}
+  export default {
+    props: {
+      data: null
+    },
+    components: {
+      FieldGenerator
+    },
+    methods: {}
+  }
 </script>
 
 <style lang="css" scoped>
