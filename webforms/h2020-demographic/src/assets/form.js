@@ -9,14 +9,14 @@ const form = (country, formData) => ({
           name: 'countryCode',
           type: 'text',
           label: 'Reporting Country',
-          selected: '',
+          selected: country,
           disabled: true,
         },
         reportiogYear: {
           name: 'reportiogYear',
           type: 'number',
           label: 'Reporting year',
-          selected: '',
+          selected: '2020',
           disabled: true,
         }
       }
@@ -24,7 +24,7 @@ const form = (country, formData) => ({
     tab_1: {
       description: 'Demographic dataset',
       form_fields: {
-        demographic_row: {
+        demographicdataset_records: {
           fields: [dem_entry()]
         }
       }

@@ -69,31 +69,20 @@ export default {
     },
   },
 
-  // created() {
-  //   this.form = form();
-  //     getInstance().then((response) => {
-  //       let instance_data = response.data
-  //       getCountry().then((response) => {
-  //           this.country = response.data
-  //           this.prefill(instance_data)
-  //         })
-  //     })
-  // },
-
   methods: {
 
     sanitizeSection(data, prefillData) {
-      let section = data.IAS[prefillData].Row
+      let section = data.H2020_DEM[prefillData].Row
       if(!section)
         section = []
       if(section && !Array.isArray(section))
         section = [section]
       return section
     },
+
     getPrefillData(){
       getInstance().then((response) => {
-        console.dir('ssdsda')
-        console.log(JSON.stringify(response.data))
+        // console.log(JSON.stringify(response.data))
         this.prefill(response.data);
       })
     },
@@ -104,9 +93,48 @@ export default {
         return
       }
       const form = this.$store.state.form
-      // this.prefillTab1(data, form)
+      this.prefillTab1(data, form)
       this.prefilled = true
     },
+
+    prefillTab1(data, form) {
+      const section = form.tabs.tab_1.form_fields
+      const demographicData = this.sanitizeSection(data, 'demographicdataset_records')
+      const demographicDestination = section.demographicdataset_records.fields
+
+      const mergedRecords = []
+
+      demographicData.forEach(record => {
+        const existing = mergedRecords.find(mergedRecords => mergedRecords.row_id === record.row_id && mergedRecords.year === record.year)
+        if(existing) {
+          existing.year = [...(Array.isArray(existing.year) ? existing.year: [existing.year]), record.year]
+        } else {
+          mergedRecords.push(record)
+        }
+      })
+
+      mergedRecords.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.demographicdataset_records.fields[0]))
+        if(!Array.isArray(record.year)) record.year = [record.year]
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field == 'year') {
+              //TODO: Check values for year
+              recordEmpty.year.selected = record.year ? recordEmpty.year.options.find(p => p.value == record.year[0]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          demographicDestination.splice(0,1)
+        }
+        demographicDestination.push(recordEmpty)
+      })
+
+    }
   },
   watch: {
     '$store.state.form': {

@@ -120,8 +120,6 @@ export default {
         if (structure.hasOwnProperty(field)) structure[field] = section[field].selected
       })
       section.demographicdataset_records.fields.forEach((row, row_index) => {
-        console.dir(row)
-      //   pathway.EASINCode.selected.forEach((species, species_index) => {
         const record = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
         record.reportID = reportID
         record.rowID = row_index
@@ -136,9 +134,7 @@ export default {
         record.Total_Pop_more_2000_Inhabitants_Coast = row.Total_Pop_more_2000_Inhabitants_Coast.selected
         record.Total_Pop_Coast = row.Total_Pop_Coast.selected;
         emptyInstance.H2020_DEM.demographicdataset_records.Row.push(record)
-      //   })
       })
-      emptyInstance.H2020_DEM.demographicdataset_records.Row.push(structure)
     }
   },
   watch: {

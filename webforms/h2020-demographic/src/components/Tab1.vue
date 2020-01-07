@@ -1,9 +1,9 @@
 <template>
-  <div v-if="data">
+  <div class="sectionTab1" v-if="data">
     <h4 class="text-center"><i>{{data.description}}</i></h4>
     <br/>
     <b-card>
-      <div v-for="(field, field_index) in data.form_fields" :id="field_index" :key="field_index">
+      <div v-for="(field, field_index) in data.form_fields" class="sectionTab1Fields" :id="field_index" :key="field_index">
         <div class="table-wrapper">
           <table class="table table-striped">
             <thead>

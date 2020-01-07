@@ -25,7 +25,6 @@ export default new Vuex.Store({
       getCountry().then(r => {
         console.log('got Country', r.data)
         context.commit('addCurrentCountry', r.data)
-        // context.commit('initiateForm', formData)
         context.dispatch('getCurrentFormData', { country: r.data }).then((formData) => {
           context.commit('initiateForm', formData)
         })
@@ -74,10 +73,10 @@ export default new Vuex.Store({
       state.formData[field] = data
     },
     removeDemographicDataRow(state, {row_index}){
-      state.form.tabs.tab_1.form_fields.demographic_row.fields.splice(row_index, 1)
+      state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.splice(row_index, 1)
     },
     addDemographicDataRow(state) {
-      state.form.tabs.tab_1.form_fields.demographic_row.fields.push(demographicData())
+      state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.push(demographicData())
     },
 
     setDataLoadingValue(state, {value}) {

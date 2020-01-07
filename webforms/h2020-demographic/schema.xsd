@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://dd.info-rac.org/namespace.jsp?ns_id=1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dd1="http://dd.info-rac.org/namespace.jsp?ns_id=1" xmlns:dd23="http://dd.info-rac.org/namespace.jsp?ns_id=23" xmlns:dd2="http://dd.info-rac.org/namespace.jsp?ns_id=2" xmlns:dd3="http://dd.info-rac.org/namespace.jsp?ns_id=3" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://dd.info-rac.org/namespace.jsp?ns_id=23" schemaLocation="http://dd.info-rac.org/GetSchema?id=TBL46"/>
+	<xs:import namespace="http://dd.info-rac.org/namespace.jsp?ns_id=23" schemaLocation="http://dd.info-rac.org/GetSchema?id=TBL47"/>
+	<xs:element name="H2020_DEM">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">
+				<dd2:Name><![CDATA[H2020 Demographic datasets]]></dd2:Name>
+				<dd3:ShortDescription><![CDATA[Demographic datasets]]></dd3:ShortDescription>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="dd23:demographicdataset" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="dd23:demographicdataset_records" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
