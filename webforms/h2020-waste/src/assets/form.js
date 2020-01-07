@@ -1,193 +1,87 @@
-var form = {
-  country: {
-    tables: {
-      table_1: [{
-          name: 'partyname',
+// import dem_entry from './demographicData'
+
+const form = (country, formData) => ({
+  tabs: {
+    tab_0: {
+      description: 'Information on the reporting Party.',
+      form_fields: {
+        countryCode: {
+          name: 'countryCode',
           type: 'text',
-          label: 'Contracting Party',
-          selected: '',
+          label: 'Reporting Country',
+          selected: country,
+          disabled: true,
         },
-        {
-          name: 'rep_period_from',
+        reportingYear: {
+          name: 'reportingYear',
           type: 'number',
-          label: 'Reporting period from (year)',
-          selected: '',
-        },
-        {
-          name: 'rep_period_to',
-          type: 'number',
-          label: 'Reporting period to (year)',
-          selected: '',
-        },
-        {
-          name: 'institution_name',
-          type: 'text',
-          label: 'Name of the institution/s responsible for the Hazardous Wastes Protocol',
-          selected: '',
-        },
-        {
-          name: 'officer_name',
-          type: 'text',
-          label: 'Name of the officer who is the focal point for the Hazardous Wastes Protocol',
-          selected: '',
-        },
-        {
-          name: 'mailing_address',
-          type: 'text',
-          label: 'Mailing address',
-          selected: '',
-        },
-        {
-          name: 'tel',
-          type: 'text',
-          label: 'Tel.',
-          selected: '',
-        },
-        {
-          name: 'fax',
-          type: 'text',
-          label: 'Fax',
-          selected: '',
-        },
-        {
-          name: 'email',
-          type: 'email',
-          label: 'Email',
-          selected: '',
+          label: 'Reporting year',
+          selected: '2020',
+          disabled: true,
         }
-      ],
-
-      table_2: [{
-          name: 'contact_point',
-          type: 'text',
-          label: 'Contact point for the national report, if any',
-          selected: '',
+      }
+    },
+    tab_1: {
+      description: 'Municipal Waste Generation',
+      form_fields: {
+        ind_1_1_records: {
+          fields: []
         },
-        {
-          name: 'instituion_full_name',
-          type: 'text',
-          label: 'Full name of the institution',
-          selected: '',
+        ind_1_A_records: {
+          fields: []
         },
-        {
-          name: 'national_mailing_address',
-          type: 'text',
-          label: 'Mailing address',
-          selected: '',
+        ind_1_B_records: {
+          fields: []
         },
-        {
-          name: 'national_tel',
-          type: 'text',
-          label: 'Tel.',
-          selected: '',
+        ind_1_C_records: {
+          fields: []
         },
-        {
-          name: 'national_fax',
-          type: 'text',
-          label: 'Fax',
-          selected: '',
-        },
-        {
-          name: 'national_email',
-          type: 'email',
-          label: 'Email',
-          selected: '',
-        },
-        {
-          name: 'national_signature',
-          type: 'text',
-          label: 'Signature of the Protocol’s Focal Point',
-          selected: '',
-        },
-        {
-          name: 'national_date',
-          type: 'date',
-          label: 'Date of submission of the Report',
-          selected: '',
+        ind_1_D_records: {
+          fields: []
         }
-      ],
-
-      table_3: [{
-          name: 'org_name',
-          type: 'text',
-          label: 'Full name of the institution',
-          selected: '',
+      }
+    },
+    tab_2: {
+      description: '"Hardware" of waste management',
+      form_fields: {
+        ind_2_A_1_records: {
+          fields: []
         },
-        {
-          name: 'org_contact_point',
-          type: 'text',
-          label: 'Name of the contact point (optional)',
-          selected: '',
+        ind_2_A_2_records: {
+          fields: []
         },
-
-        {
-          name: 'org_tel',
-          type: 'text',
-          label: 'Tel.',
-          selected: '',
+        ind_2_B_records: {
+          fields: []
         },
-        {
-          name: 'org_fax',
-          type: 'text',
-          label: 'Fax',
-          selected: '',
+        ind_2_B_1_records: {
+          fields: []
         },
-        {
-          name: 'org_email',
-          type: 'email',
-          label: 'Email',
-          selected: '',
+        ind_2_B_2_records: {
+          fields: []
+        },
+        ind_2_B_3_records: {
+          fields: []
+        },
+        ind_2_C_records: {
+          fields: []
         }
-      ]
-    }
-
-  },
-  tab_1: {
-    label: 'Part I: Dummy title',
-    collection_id: 713,
-    parent_collection_id: 7,
-    data: {
-      question: '',
-      table_label: 'Table I – Dummy table',
-      collection_id: 714,
-      parent_collection_id: 713,
-        articles: [{
-          article_title: 'Requirements of Articles 5.5 and 9: Prevention and punishment of illegal traffic of hazardous wastes',
-          article_items: [{
-            label: 'Number of inspections',
-            type: 'number',
-            name: 'inspections_number',
-            selected: '',
-          }, {
-            label: 'Number of contraventions',
-            type: 'number',
-            name: 'contraventions_number',
-            selected: '',
-          }, {
-            label: 'Number of criminal sanctions applied',
-            type: 'number',
-            name: 'sanctions_number',
-            selected: '',
-          }, {
-            label: 'Number of other enforcement measures applied',
-            type: 'number',
-            name: 'enf_measures_number',
-            selected: '',
-          }, {
-            label: 'Number of clean measures implemented',
-            type: 'text',
-            name: 'clean_measures_number',
-            selected: '',
-          },
-          {
-            label: 'Remarks/Comments',
-            type: 'textarea',
-            name: 'remarks',
-            selected: '',
-          }]
-        }]
+      }
+    },
+    tab_3: {
+      description: '"Software" of waste management',
+      form_fields: {
+        ind_Q_A_records: {
+          fields: []
+        },
+        ind_Q_B_records: {
+          fields: []
+        },
+        ind_Q_C_records: {
+          fields: []
+        }
+      }
     }
   }
-}
+})
 
 export default form
