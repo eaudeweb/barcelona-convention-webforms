@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
-import 'date-input-polyfill';
+import store from './store'
+
+import './polyfills.js'
 
 import BootstrapVue from 'bootstrap-vue'
 import './css/main.scss'
-// import Promise from './polyfills.js'
 
 Vue.use(BootstrapVue);
 // Vue.config.productionTip = false
@@ -12,5 +13,6 @@ Vue.use(BootstrapVue);
 
 new Vue({
   el: '#app',
+  store,
   render: h => h(App)
 })

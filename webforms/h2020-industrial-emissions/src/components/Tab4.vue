@@ -1,9 +1,9 @@
 <template>
-  <div class="sectionTab1" v-if="data">
+  <div class="sectionTab4" v-if="data">
     <h4 class="text-center"><i>{{data.description}}</i></h4>
     <br/>
     <b-card>
-      <div v-for="(field, field_index) in data.form_fields" class="sectionTab1Fields" :id="field_index" :key="field_index">
+      <div v-for="(field, field_index) in data.form_fields" class="sectionTab4Fields" :id="field_index" :key="field_index">
         <div class="table-wrapper">
           <table class="table table-striped">
             <thead>
@@ -19,11 +19,11 @@
               <td style="max-width: 250px; min-width: 40%;" v-for="(cell, cell_index) in row" :key="`${row_index}_${cell_index}`">
                 <FieldGenerator :field="cell"></FieldGenerator>
               </td>
-<!--              <td style="width: 50px"><b-btn  v-if="field.fields.length > 1"  variant="danger" @click="$store.commit('removeDemographicDataRow', {row_index})">X</b-btn></td>-->
+              <!--              <td style="width: 50px"><b-btn  v-if="field.fields.length > 1"  variant="danger" @click="$store.commit('removeDemographicDataRow', {row_index})">X</b-btn></td>-->
             </tr>
             </tbody>
           </table>
-<!--          <b-btn class="btn-big" variant="primary" @click="$store.commit('addDemographicDataRow')">Add</b-btn>-->
+          <!--          <b-btn class="btn-big" variant="primary" @click="$store.commit('addDemographicDataRow')">Add</b-btn>-->
         </div>
 
       </div>
