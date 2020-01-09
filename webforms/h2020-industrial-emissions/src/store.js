@@ -2,7 +2,18 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { getCountry, getFormData } from './api'
 import getForm from '@/assets/form'
-// import demographicData from '@/assets/demographicData'
+import ind_6_1_1_records_structure from '@/assets/ind_6_1_1_records_structure'
+import ind_6_1_2_records_structure from '@/assets/ind_6_1_2_records_structure'
+import ind_6_1_3_records_structure from '@/assets/ind_6_1_3_records_structure'
+import ind_6_2_1_records_structure from '@/assets/ind_6_2_1_records_structure'
+import ind_6_2_2_records_structure from '@/assets/ind_6_2_2_records_structure'
+import ind_6_2_3_records_structure from '@/assets/ind_6_2_3_records_structure'
+import ind_6_2_4_records_structure from '@/assets/ind_6_2_4_records_structure'
+import ind_6_3_1_records_structure from '@/assets/ind_6_3_1_records_structure'
+import ind_6_3_2_records_structure from '@/assets/ind_6_3_2_records_structure'
+import ind_6_4_1_records_structure from '@/assets/ind_6_4_1_records_structure'
+import ind_6_4_2_records_structure from '@/assets/ind_6_4_2_records_structure'
+import ind_6_4_3_records_structure from '@/assets/ind_6_4_3_records_structure'
 
 Vue.use(Vuex)
 
@@ -72,12 +83,78 @@ export default new Vuex.Store({
     addFormData(state, { field, data }) {
       state.formData[field] = data
     },
-    // removeDemographicDataRow(state, {row_index}){
-    //   state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.splice(row_index, 1)
-    // },
-    // addDemographicDataRow(state) {
-    //   state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.push(demographicData())
-    // },
+    remove_ind_6_1_1_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_1.form_fields.ind_6_1_1_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_1_1_records_DataRow(state) {
+      state.form.tabs.tab_1.form_fields.ind_6_1_1_records.fields.push(ind_6_1_1_records_structure())
+    },
+    remove_ind_6_1_2_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_1.form_fields.ind_6_1_2_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_1_2_records_DataRow(state) {
+      state.form.tabs.tab_1.form_fields.ind_6_1_2_records.fields.push(ind_6_1_2_records_structure())
+    },
+    remove_ind_6_1_3_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_1.form_fields.ind_6_1_3_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_1_3_records_DataRow(state) {
+      state.form.tabs.tab_1.form_fields.ind_6_1_3_records.fields.push(ind_6_1_3_records_structure())
+    },
+    remove_ind_6_2_1_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_2.form_fields.ind_6_2_1_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_2_1_records_DataRow(state) {
+      state.form.tabs.tab_2.form_fields.ind_6_2_1_records.fields.push(ind_6_2_1_records_structure())
+    },
+    remove_ind_6_2_2_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_2.form_fields.ind_6_2_2_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_2_2_records_DataRow(state) {
+      state.form.tabs.tab_2.form_fields.ind_6_2_2_records.fields.push(ind_6_2_2_records_structure())
+    },
+    remove_ind_6_2_3_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_2.form_fields.ind_6_2_3_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_2_3_records_DataRow(state) {
+      state.form.tabs.tab_2.form_fields.ind_6_2_3_records.fields.push(ind_6_2_3_records_structure())
+    },
+    remove_ind_6_2_4_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_2.form_fields.ind_6_2_4_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_2_4_records_DataRow(state) {
+      state.form.tabs.tab_2.form_fields.ind_6_2_4_records.fields.push(ind_6_2_4_records_structure())
+    },
+    remove_ind_6_3_1_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_3.form_fields.ind_6_3_1_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_3_1_records_DataRow(state) {
+      state.form.tabs.tab_3.form_fields.ind_6_3_1_records.fields.push(ind_6_3_1_records_structure())
+    },
+    remove_ind_6_3_2_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_3.form_fields.ind_6_3_2_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_3_2_records_DataRow(state) {
+      state.form.tabs.tab_3.form_fields.ind_6_3_2_records.fields.push(ind_6_3_2_records_structure())
+    },
+    remove_ind_6_4_1_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_4.form_fields.ind_6_4_1_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_4_1_records_DataRow(state) {
+      state.form.tabs.tab_4.form_fields.ind_6_4_1_records.fields.push(ind_6_4_1_records_structure())
+    },
+    remove_ind_6_4_2_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_4.form_fields.ind_6_4_2_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_4_2_records_DataRow(state) {
+      state.form.tabs.tab_4.form_fields.ind_6_4_2_records.fields.push(ind_6_4_2_records_structure())
+    },
+    remove_ind_6_4_3_records_DataRow(state, {row_index}){
+      state.form.tabs.tab_4.form_fields.ind_6_4_3_records.fields.splice(row_index, 1)
+    },
+    add_ind_6_4_3_records_DataRow(state) {
+      state.form.tabs.tab_4.form_fields.ind_6_4_3_records.fields.push(ind_6_4_3_records_structure())
+    },
 
     setDataLoadingValue(state, {value}) {
       state.dataLoading = value;
