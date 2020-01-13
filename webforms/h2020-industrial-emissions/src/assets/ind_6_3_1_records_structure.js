@@ -1,4 +1,5 @@
 import reference_years from './reference_years'
+import collection_method from './collection_method'
 
 const ind_6_3_1_records_structure = () => ({
   administrativeRegion: {
@@ -64,7 +65,7 @@ const ind_6_3_1_records_structure = () => ({
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: collection_method.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
     }

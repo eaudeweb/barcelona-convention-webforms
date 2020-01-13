@@ -1,4 +1,6 @@
 import reference_years from './reference_years'
+import heavy_metal from './heavy_metal_options'
+import collection_method from './collection_method'
 
 const ind_6_2_1_records_structure = () => ({
   administrativeRegion: {
@@ -31,7 +33,7 @@ const ind_6_2_1_records_structure = () => ({
     tooltip: 'Select an option from the list.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: heavy_metal.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
     }
@@ -75,7 +77,7 @@ const ind_6_2_1_records_structure = () => ({
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: collection_method.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
     }
