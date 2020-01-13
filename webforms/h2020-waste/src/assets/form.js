@@ -1,4 +1,18 @@
-// import dem_entry from './demographicData'
+import ind_1_1_records_structure from './ind_1_1_records_structure'
+import ind_1_A_records_structure from './ind_1_A_records_structure'
+import ind_1_B_records_structure from './ind_1_B_records_structure'
+import ind_1_C_records_structure from './ind_1_C_records_structure'
+import ind_1_D_records_structure from './ind_1_D_records_structure'
+import ind_2_A_1_records_structure from './ind_2_A_1_records_structure'
+import ind_2_A_2_records_structure from './ind_2_A_2_records_structure'
+import ind_2_B_records_structure from './ind_2_B_records_structure'
+import ind_2_B_1_records_structure from './ind_2_B_1_records_structure'
+import ind_2_B_2_records_structure from './ind_2_B_2_records_structure'
+import ind_2_B_3_records_structure from './ind_2_B_3_records_structure'
+import ind_2_C_records_structure from './ind_2_C_records_structure'
+import ind_Q_A_records_structure from './ind_Q_A_records_structure'
+import ind_Q_B_records_structure from './ind_Q_B_records_structure'
+import ind_Q_C_records_structure from './ind_Q_C_records_structure'
 
 const form = (country, formData) => ({
   tabs: {
@@ -25,19 +39,24 @@ const form = (country, formData) => ({
       description: 'Municipal Waste Generation',
       form_fields: {
         ind_1_1_records: {
-          fields: []
+          description: 'Total municipal solid waste (MSW) generation on a specific geographical level',
+          fields: [ind_1_1_records_structure()]
         },
         ind_1_A_records: {
-          fields: []
+          description: 'Municipal Solid Waste Composition',
+          fields: [ind_1_A_records_structure()]
         },
         ind_1_B_records: {
-          fields: []
+          description: 'Plastic waste generation per capita',
+          fields: [ind_1_B_records_structure()]
         },
         ind_1_C_records: {
-          fields: []
+          description: '% of population in Coastal Areas / Total Population',
+          fields: [ind_1_C_records_structure()]
         },
         ind_1_D_records: {
-          fields: []
+          description: '% of Time of Tourist visitors in Coastal Areas / Population in Coastal Areas',
+          fields: [ind_1_D_records_structure()]
         }
       }
     },
@@ -45,25 +64,32 @@ const form = (country, formData) => ({
       description: '"Hardware" of waste management',
       form_fields: {
         ind_2_A_1_records: {
-          fields: []
+          description: 'Waste Collection Coverage (Wcc on population)',
+          fields: [ind_2_A_1_records_structure()]
         },
         ind_2_A_2_records: {
-          fields: []
+          description: 'Waste captured by the system (Ws)',
+          fields: [ind_2_A_2_records_structure()]
         },
         ind_2_B_records: {
-          fields: []
+          description: 'Environmental Control',
+          fields: [ind_2_B_records_structure()]
         },
         ind_2_B_1_records: {
-          fields: []
+          description: '% of waste that goes to uncontrolled dumpsites (Wd)',
+          fields: [ind_2_B_1_records_structure()]
         },
         ind_2_B_2_records: {
-          fields: []
+          description: 'Number of Dumpsites in Coastal Areas (NdC)',
+          fields: [ind_2_B_2_records_structure()]
         },
         ind_2_B_3_records: {
-          fields: []
+          description: 'Waste going to dumpsites in the Coastal Areas (WdC)',
+          fields: [ind_2_B_3_records_structure()]
         },
         ind_2_C_records: {
-          fields: []
+          description: 'Resource Recovery and % of plastic waste generated that is recycled',
+          fields: [ind_2_C_records_structure()]
         }
       }
     },
@@ -71,13 +97,16 @@ const form = (country, formData) => ({
       description: '"Software" of waste management',
       form_fields: {
         ind_Q_A_records: {
-          fields: []
+          description: 'Marine Litter & waste management framework',
+          fields: [ind_Q_A_records_structure()]
         },
         ind_Q_B_records: {
-          fields: []
+          description: 'Resource recovery',
+          fields: [ind_Q_B_records_structure()]
         },
         ind_Q_C_records: {
-          fields: []
+          description: 'SUSTAINABLE CONSUMPTION AND PRODUCTION',
+          fields: [ind_Q_C_records_structure()]
         }
       }
     }

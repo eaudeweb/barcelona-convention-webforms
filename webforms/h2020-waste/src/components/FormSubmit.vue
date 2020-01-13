@@ -284,7 +284,9 @@
 
         this.$store.dispatch('setDataLoading', true)
 
-        // this.storeTab1(data, emptyInstance, reportID)
+        this.storeTab1(data, emptyInstance, reportID)
+        this.storeTab2(data, emptyInstance, reportID)
+        this.storeTab3(data, emptyInstance, reportID)
 
         saveInstance(emptyInstance).then(r => {
           this.showAlert()
@@ -295,31 +297,210 @@
         })
       },
 
-      // storeTab1(data, emptyInstance, reportID) {
-      //   const structure = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
-      //   const section = data.tabs.tab_1.form_fields
-      //   structure.reportID = reportID
-      //
-      //   Object.keys(section).forEach(field => {
-      //     if (structure.hasOwnProperty(field)) structure[field] = section[field].selected
-      //   })
-      //   section.demographicdataset_records.fields.forEach((row, row_index) => {
-      //     const record = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
-      //     record.reportID = reportID
-      //     record.rowID = row_index
-      //     record.year = row.year.selected
-      //     record.totalPopulation = row.totalPopulation.selected
-      //     record.urbanPopulation = row.urbanPopulation.selected
-      //     record.ruralPopulation = row.ruralPopulation.selected
-      //     record.Total_Pop_Coast_Hydro_Basin = row.Total_Pop_Coast_Hydro_Basin.selected
-      //     record.Urban_Pop_Coast_Hydro_Basin = row.Urban_Pop_Coast_Hydro_Basin.selected
-      //     record.Rural_Pop_Coast_Hydro_Basin = row.Rural_Pop_Coast_Hydro_Basin.selected
-      //     record.Total_Pop_more_2000_Inhabitants_Hydro_Coast = row.Total_Pop_more_2000_Inhabitants_Hydro_Coast.selected
-      //     record.Total_Pop_more_2000_Inhabitants_Coast = row.Total_Pop_more_2000_Inhabitants_Coast.selected
-      //     record.Total_Pop_Coast = row.Total_Pop_Coast.selected;
-      //     emptyInstance.H2020_DEM.demographicdataset_records.Row.push(record)
-      //   })
-      // }
+      storeTab1(data, emptyInstance, reportID) {
+        const section = data.tabs.tab_1.form_fields
+
+        section.ind_1_1_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_1_1_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.MSW_gen_calculated = row.MSW_gen_calculated.selected
+          record.MSW_gen_estimated = row.MSW_gen_estimated.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_1_1_records.Row.push(record)
+        })
+
+        section.ind_1_A_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_1_A_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.frcID = row.frcID.selected
+          record.frcMSWComposition = row.frcMSWComposition.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_1_A_records.Row.push(record)
+        })
+
+        section.ind_1_B_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_1_B_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.frcPlasticMSW = row.frcPlasticMSW.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_1_B_records.Row.push(record)
+        })
+
+        section.ind_1_C_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_1_C_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegionCostal = row.administrativeRegionCostal.selected
+          record.year = row.year.selected
+          record.totalPopCoastBufferZone = row.totalPopCoastBufferZone.selected
+          record.totalPopulation = row.totalPopulation.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_1_C_records.Row.push(record)
+        })
+
+        section.ind_1_D_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_1_D_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegionCostal = row.administrativeRegionCostal.selected
+          record.year = row.year.selected
+          record.touristStaysOvernight = row.touristStaysOvernight.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_1_D_records.Row.push(record)
+        })
+      },
+
+      storeTab2(data, emptyInstance, reportID) {
+        const section = data.tabs.tab_2.form_fields
+
+        section.ind_2_A_1_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_A_1_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.pCoveredCollection = row.pCoveredCollection.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_A_1_records.Row.push(record)
+        })
+
+        section.ind_2_A_2_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_A_2_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.wasteCapturedWs = row.wasteCapturedWs.selected
+          record.wasteCapturedWf = row.wasteCapturedWf.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_A_2_records.Row.push(record)
+        })
+
+        section.ind_2_B_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_B_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.noDumpsitesCoastalAdminRegions = row.noDumpsitesCoastalAdminRegions.selected
+          record.wasteRecycledAndReusedWr = row.wasteRecycledAndReusedWr.selected
+          record.wasteRecycledAndReusedWe = row.wasteRecycledAndReusedWe.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_B_records.Row.push(record)
+        })
+
+        section.ind_2_B_1_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_B_1_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.wasteUncontrolledWd = row.wasteUncontrolledWd.selected
+          record.wasteDumpsiteWu = row.wasteDumpsiteWu.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_B_1_records.Row.push(record)
+        })
+
+        section.ind_2_B_2_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_B_2_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.noDumpsitesCoastalAdminRegions = row.noDumpsitesCoastalAdminRegions.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_B_2_records.Row.push(record)
+        })
+
+        section.ind_2_B_3_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_B_3_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.wasteUncontrolledWdC = row.wasteUncontrolledWdC.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_B_3_records.Row.push(record)
+        })
+
+        section.ind_2_C_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_2_C_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.administrativeRegion = row.administrativeRegion.selected
+          record.year = row.year.selected
+          record.resourceRecoveryRR = row.resourceRecoveryRR.selected
+          record.amountRecycledPlastics = row.amountRecycledPlastics.selected
+          record.percentageRecycledPlastics = row.percentageRecycledPlastics.selected
+          record.waste_collection_method = row.waste_collection_method.selected
+          record.remarks = row.remarks.selected
+          emptyInstance.H2020_WASTE.ind_2_C_records.Row.push(record)
+        })
+      },
+
+      storeTab3(data, emptyInstance, reportID) {
+        // const ind_6_1_1_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_1_records))
+        // const ind_6_1_2_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_2_records))
+        // const ind_6_1_3_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_3_records))
+        const section = data.tabs.tab_3.form_fields
+        //
+        // Object.keys(section).forEach(field => {
+        //   if (ind_6_1_1_records.hasOwnProperty(field)) ind_6_1_1_records[field] = section[field].selected
+        // })
+        section.ind_Q_A_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_Q_A_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.QA1 = row.QA1.selected
+          record.QA2 = row.QA2.selected
+          record.QA3 = row.QA3.selected
+          record.QA4 = row.QA4.selected
+          record.QA5 = row.QA5.selected
+          record.QA6 = row.QA6.selected
+          emptyInstance.H2020_WASTE.ind_Q_A_records.Row.push(record)
+        })
+
+        section.ind_Q_B_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_Q_B_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.QB1 = row.QB1.selected
+          record.QB2 = row.QB2.selected
+          record.QB3 = row.QB3.selected
+          record.QB4 = row.QB4.selected
+          record.QB5 = row.QB5.selected
+          emptyInstance.H2020_WASTE.ind_Q_B_records.Row.push(record)
+        })
+
+        section.ind_Q_C_records.fields.forEach((row, row_index) => {
+          const record = JSON.parse(JSON.stringify(this.structure.ind_Q_C_records))
+          record.reportID = reportID
+          record.rowID = row_index
+          record.QC1 = row.QC1.selected
+          record.QC2 = row.QC2.selected
+          record.QC3 = row.QC3.selected
+          record.QC4 = row.QC4.selected
+          emptyInstance.H2020_WASTE.ind_Q_C_records.Row.push(record)
+        })
+      },
     },
     watch: {
       country: {

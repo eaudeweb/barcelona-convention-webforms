@@ -11,13 +11,13 @@
             <b-tab title="Reporting party" active>
               <countrytab :data="$store.state.form.tabs.tab_0"></countrytab>
             </b-tab>
-            <b-tab title="IND 6.1" >
+            <b-tab title="IND 1" >
               <tab1 :data="$store.state.form.tabs.tab_1"></tab1>
             </b-tab>
-            <b-tab title="IND 6.2" >
+            <b-tab title="IND 2" >
               <tab1 :data="$store.state.form.tabs.tab_2"></tab1>
             </b-tab>
-            <b-tab title="IND 6.3" >
+            <b-tab title="IND Q" >
               <tab1 :data="$store.state.form.tabs.tab_3"></tab1>
             </b-tab>
           </b-tabs>
