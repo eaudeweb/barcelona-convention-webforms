@@ -1,4 +1,14 @@
-// import dem_entry from './demographicData'
+import ind_3_1_1_records_structure from './ind_3_1_1_records_structure'
+import ind_3_1_2_records_structure from './ind_3_1_2_records_structure'
+import ind_3_2_1_records_structure from './ind_3_2_1_records_structure'
+import ind_3_2_2_records_structure from './ind_3_2_2_records_structure'
+import ind_4_1_1_records_structure from './ind_4_1_1_records_structure'
+import ind_4_1_2_records_structure from './ind_4_1_2_records_structure'
+import ind_4_2_records_structure from './ind_4_2_records_structure'
+import ind_4_3_records_structure from './ind_4_3_records_structure'
+import ind_5_1_1_records_structure from './ind_5_1_1_records_structure'
+import ind_5_1_2_records_structure from './ind_5_1_2_records_structure'
+import ind_5_2_records_structure from './ind_5_2_records_structure'
 
 const form = (country, formData) => ({
   tabs: {
@@ -25,16 +35,20 @@ const form = (country, formData) => ({
       description: 'Access to sanitation',
       form_fields: {
         ind_3_1_1_records: {
-          fields: []
+          description: 'Share of national population with access to an improved sanitation system (ISS)',
+          fields: [ind_3_1_1_records_structure]
         },
         ind_3_1_2_records: {
-          fields: []
+          description: 'Share of population in the catchment/hydrological basin at the coastal area with access to an improved sanitation system (ISS)',
+          fields: [ind_3_1_2_records_structure()]
         },
         ind_3_2_1_records: {
-          fields: []
+          description: 'Proportion of national population using safely managed sanitation services (SMSS)',
+          fields: [ind_3_2_1_records_structure()]
         },
         ind_3_2_2_records: {
-          fields: []
+          description: 'Proportion of population in the catchment/ hydrological basin at the coastal area using safely managed sanitation services (SMSS)',
+          fields: [ind_3_2_2_records_structure()]
         }
       }
     },
@@ -42,16 +56,20 @@ const form = (country, formData) => ({
       description: 'Municipal Wastewater Management',
       form_fields: {
         ind_4_1_1_records: {
-          fields: []
+          description: 'Municipal wastewater collected and wastewater treated at the national level',
+          fields: [ind_4_1_1_records_structure()]
         },
         ind_4_1_2_records: {
-          fields: []
+          description: 'Municipal wastewater collected and wastewater treated per catchment/ hydrological basin at the coastal area',
+          fields: [ind_4_1_2_records_structure()]
         },
         ind_4_2_records: {
-          fields: []
+          description: 'Direct use of treated municipal wastewater at the National level',
+          fields: [ind_4_2_records_structure()]
         },
         ind_4_3_records: {
-          fields: []
+          description: 'Release of nutrients from municipal effluents per catchment/ hydrological basin at the coastal area',
+          fields: [ind_4_3_records_structure()]
         }
       }
     },
@@ -59,13 +77,16 @@ const form = (country, formData) => ({
       description: 'Coastal and Marine Water Quality',
       form_fields: {
         ind_5_1_1_records: {
-          fields: []
+          description: 'Nutrient concentrations in transitional, coastal and marine waters (Station)',
+          fields: [ind_5_1_1_records_structure()]
         },
         ind_5_1_2_records: {
-          fields: []
+          description: 'Nutrient concentrations in transitional, coastal and marine waters (Parameters)',
+          fields: [ind_5_1_2_records_structure()]
         },
         ind_5_2_records: {
-          fields: []
+          description: 'Bathing Water Quality',
+          fields: [ind_5_2_records_structure()]
         }
       }
     }

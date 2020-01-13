@@ -14,6 +14,39 @@
         </b-row>
       </div>
     </div>
+    <br>
+    <div style="width: 50%" class="container">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col" style="min-width: 100px;">No.</th>
+          <th scope="col">Title of indicator</th>
+          <th scope="col">Sub-indicators</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">IND 3</th>
+          <td>Access to sanitation</td>
+          <td>3.1 Share of total, urban and rural population with access to an Improved  Sanitation System (ISS)<br>
+            3.2 Proportion of population using Safely Managed Sanitation Services (SMSS)</td>
+        </tr>
+        <tr>
+          <th scope="row">IND 4</th>
+          <td>Municipal Wastewater Management</td>
+          <td>4.1 Municipal wastewater collected and wastewater treated<br>
+            4.2 Direct use of treated municipal wastewater<br>
+            4.3 Release of nutrients from municipal wastewater</td>
+        </tr>
+        <tr>
+          <th scope="row">IND 5</th>
+          <td>Coastal and Marine Water Quality</td>
+          <td>5.1 Nutrient concentrations in transitional, coastal and marine waters<br>
+            5.2 Bathing water quality</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 

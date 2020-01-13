@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<H2020_WATER xmlns="https://dd.info-rac.org/namespaces/29" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/namespaces/29  https://dd.info-rac.org/v2/dataset/29/schema-dst-29.xsd">
+<H2020_WATER xmlns="https://dd.info-rac.org/namespaces/29" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://dd.info-rac.org/namespaces/29  https://dd.info-rac.org/v2/dataset/29/schema-dst-29.xsd">
   <waterindicators xmlns="https://dd.info-rac.org/namespaces/31">
     <Row>
       <reportID/>
@@ -46,6 +47,7 @@
       <totalPopulation/>
       <urbanPopulation/>
       <ruralPopulation/>
+      <Total_Population_SMSS/>
       <Urban_Population_SMSS/>
       <Rural_Population_SMSS/>
       <water_collection_method/>
