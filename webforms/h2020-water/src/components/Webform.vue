@@ -15,10 +15,10 @@
               <tab1 :data="$store.state.form.tabs.tab_1"></tab1>
             </b-tab>
             <b-tab title="IND 4" >
-              <tab1 :data="$store.state.form.tabs.tab_2"></tab1>
+              <tab2 :data="$store.state.form.tabs.tab_2"></tab2>
             </b-tab>
             <b-tab title="IND 5" >
-              <tab1 :data="$store.state.form.tabs.tab_3"></tab1>
+              <tab3 :data="$store.state.form.tabs.tab_3"></tab3>
             </b-tab>
           </b-tabs>
       </b-card>

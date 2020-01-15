@@ -36,7 +36,7 @@ const form = (country, formData) => ({
       form_fields: {
         ind_3_1_1_records: {
           description: 'Share of national population with access to an improved sanitation system (ISS)',
-          fields: [ind_3_1_1_records_structure]
+          fields: [ind_3_1_1_records_structure()]
         },
         ind_3_1_2_records: {
           description: 'Share of population in the catchment/hydrological basin at the coastal area with access to an improved sanitation system (ISS)',
