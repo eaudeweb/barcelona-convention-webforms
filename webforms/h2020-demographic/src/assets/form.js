@@ -12,8 +12,8 @@ const form = (country, formData) => ({
           selected: country,
           disabled: true,
         },
-        reportiogYear: {
-          name: 'reportiogYear',
+        reportingYear: {
+          name: 'reportingYear',
           type: 'number',
           label: 'Reporting year',
           selected: '2020',

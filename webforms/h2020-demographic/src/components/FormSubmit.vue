@@ -119,6 +119,7 @@ export default {
       Object.keys(section).forEach(field => {
         if (structure.hasOwnProperty(field)) structure[field] = section[field].selected
       })
+
       section.demographicdataset_records.fields.forEach((row, row_index) => {
         const record = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
         record.reportID = reportID

@@ -115,13 +115,11 @@ export default {
 
       mergedRecords.forEach((record, index) => {
         const recordEmpty = JSON.parse(JSON.stringify(section.demographicdataset_records.fields[0]))
-        if(!Array.isArray(record.year)) record.year = [record.year]
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
             if (field == 'year') {
-              //TODO: Check values for year
-              recordEmpty.year.selected = record.year ? recordEmpty.year.options.find(p => p.value == record.year[0]).value : null
+              recordEmpty.year.selected = record.year ? recordEmpty.year.options.find(p => p.value == record.year).value : null
             } else {
               recordEmpty[field].selected = record[field]
             }
