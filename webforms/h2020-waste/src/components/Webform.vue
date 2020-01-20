@@ -15,10 +15,10 @@
               <tab1 :data="$store.state.form.tabs.tab_1"></tab1>
             </b-tab>
             <b-tab title="IND 2" >
-              <tab1 :data="$store.state.form.tabs.tab_2"></tab1>
+              <tab2 :data="$store.state.form.tabs.tab_2"></tab2>
             </b-tab>
             <b-tab title="IND Q" >
-              <tab1 :data="$store.state.form.tabs.tab_3"></tab1>
+              <tab3 :data="$store.state.form.tabs.tab_3"></tab3>
             </b-tab>
           </b-tabs>
       </b-card>
@@ -103,48 +103,351 @@ export default {
         return
       }
       const form = this.$store.state.form
-      // this.prefillTab1(data, form)
+      this.prefillTab1(data, form)
+      this.prefillTab2(data, form)
+      this.prefillTab3(data, form)
       this.prefilled = true
     },
 
-    // prefillTab1(data, form) {
-    //   const section = form.tabs.tab_1.form_fields
-    //   const demographicData = this.sanitizeSection(data, 'demographicdataset_records')
-    //   const demographicDestination = section.demographicdataset_records.fields
-    //
-    //   const mergedRecords = []
-    //
-    //   demographicData.forEach(record => {
-    //     const existing = mergedRecords.find(mergedRecords => mergedRecords.row_id === record.row_id && mergedRecords.year === record.year)
-    //     if(existing) {
-    //       existing.year = [...(Array.isArray(existing.year) ? existing.year: [existing.year]), record.year]
-    //     } else {
-    //       mergedRecords.push(record)
-    //     }
-    //   })
-    //
-    //   mergedRecords.forEach((record, index) => {
-    //     const recordEmpty = JSON.parse(JSON.stringify(section.demographicdataset_records.fields[0]))
-    //     if(!Array.isArray(record.year)) record.year = [record.year]
-    //
-    //     Object.keys(recordEmpty).forEach(field => {
-    //       if(recordEmpty.hasOwnProperty(field)) {
-    //         if (field == 'year') {
-    //           //TODO: Check values for year
-    //           recordEmpty.year.selected = record.year ? recordEmpty.year.options.find(p => p.value == record.year[0]).value : null
-    //         } else {
-    //           recordEmpty[field].selected = record[field]
-    //         }
-    //       }
-    //     })
-    //
-    //     if(index === 0) {
-    //       demographicDestination.splice(0,1)
-    //     }
-    //     demographicDestination.push(recordEmpty)
-    //   })
-    //
-    // }
+    prefillTab1(data, form) {
+      const section = form.tabs.tab_1.form_fields
+      const ind_1_1_recordsData = this.sanitizeSection(data, 'ind_1_1_records')
+      const ind_1_1_recordsDestination = section.ind_1_1_records.fields
+
+      const ind_1_A_recordsData = this.sanitizeSection(data, 'ind_1_A_records')
+      const ind_1_A_recordsDestination = section.ind_1_A_records.fields
+
+      const ind_1_B_recordsData = this.sanitizeSection(data, 'ind_1_B_records')
+      const ind_1_B_recordsDestination = section.ind_1_B_records.fields
+
+      const ind_1_C_recordsData = this.sanitizeSection(data, 'ind_1_C_records')
+      const ind_1_C_recordsDestination = section.ind_1_C_records.fields
+
+      const ind_1_D_recordsData = this.sanitizeSection(data, 'ind_1_D_records')
+      const ind_1_D_recordsDestination = section.ind_1_D_records.fields
+
+      ind_1_1_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_1_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_1_1_recordsDestination.splice(0,1)
+        }
+        ind_1_1_recordsDestination.push(recordEmpty)
+      })
+
+      ind_1_A_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_A_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_1_A_recordsDestination.splice(0,1)
+        }
+        ind_1_A_recordsDestination.push(recordEmpty)
+      })
+
+      ind_1_B_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_B_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_1_B_recordsDestination.splice(0,1)
+        }
+        ind_1_B_recordsDestination.push(recordEmpty)
+      })
+
+      ind_1_C_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_C_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_1_C_recordsDestination.splice(0,1)
+        }
+        ind_1_C_recordsDestination.push(recordEmpty)
+      })
+
+      ind_1_D_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_D_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_1_D_recordsDestination.splice(0,1)
+        }
+        ind_1_D_recordsDestination.push(recordEmpty)
+      })
+    },
+
+    prefillTab2(data, form) {
+      const section = form.tabs.tab_2.form_fields
+      const ind_2_A_1_recordsData = this.sanitizeSection(data, 'ind_2_A_1_records')
+      const ind_2_A_1_recordsDestination = section.ind_2_A_1_records.fields
+
+      const ind_2_A_2_recordsData = this.sanitizeSection(data, 'ind_2_A_2_records')
+      const ind_2_A_2_recordsDestination = section.ind_2_A_2_records.fields
+
+      const ind_2_B_recordsData = this.sanitizeSection(data, 'ind_2_B_records')
+      const ind_2_B_recordsDestination = section.ind_2_B_records.fields
+
+      const ind_2_B_1_recordsData = this.sanitizeSection(data, 'ind_2_B_1_records')
+      const ind_2_B_1_recordsDestination = section.ind_2_B_1_records.fields
+
+      const ind_2_B_2_recordsData = this.sanitizeSection(data, 'ind_2_B_2_records')
+      const ind_2_B_2_recordsDestination = section.ind_2_B_2_records.fields
+
+      const ind_2_B_3_recordsData = this.sanitizeSection(data, 'ind_2_B_3_records')
+      const ind_2_B_3_recordsDestination = section.ind_2_B_3_records.fields
+
+      const ind_2_C_recordsData = this.sanitizeSection(data, 'ind_2_C_records')
+      const ind_2_C_recordsDestination = section.ind_2_C_records.fields
+
+      ind_2_A_1_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_A_1_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_A_1_recordsDestination.splice(0,1)
+        }
+        ind_2_A_1_recordsDestination.push(recordEmpty)
+      })
+
+      ind_2_A_2_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_A_2_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_A_2_recordsDestination.splice(0,1)
+        }
+        ind_2_A_2_recordsDestination.push(recordEmpty)
+      })
+
+      ind_2_B_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_B_recordsDestination.splice(0,1)
+        }
+        ind_2_B_recordsDestination.push(recordEmpty)
+      })
+
+      ind_2_B_1_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_1_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_B_1_recordsDestination.splice(0,1)
+        }
+        ind_2_B_1_recordsDestination.push(recordEmpty)
+      })
+
+      ind_2_B_2_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_2_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_B_2_recordsDestination.splice(0,1)
+        }
+        ind_2_B_2_recordsDestination.push(recordEmpty)
+      })
+
+      ind_2_B_3_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_3_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_B_3_recordsDestination.splice(0,1)
+        }
+        ind_2_B_3_recordsDestination.push(recordEmpty)
+      })
+
+      ind_2_C_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_C_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_2_C_recordsDestination.splice(0,1)
+        }
+        ind_2_C_recordsDestination.push(recordEmpty)
+      })
+    },
+
+    prefillTab3(data, form) {
+      const section = form.tabs.tab_1.form_fields
+      const ind_Q_A_recordsData = this.sanitizeSection(data, 'ind_Q_A_records')
+      const ind_Q_A_recordsDestination = section.ind_Q_A_records.fields
+
+      const ind_Q_B_recordsData = this.sanitizeSection(data, 'ind_Q_B_records')
+      const ind_Q_B_recordsDestination = section.ind_Q_B_records.fields
+
+      const ind_Q_C_recordsData = this.sanitizeSection(data, 'ind_Q_C_records')
+      const ind_Q_C_recordsDestination = section.ind_Q_C_records.fields
+
+      ind_Q_A_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_Q_A_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_Q_A_recordsDestination.splice(0,1)
+        }
+        ind_Q_A_recordsDestination.push(recordEmpty)
+      })
+
+      ind_Q_B_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_Q_B_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_Q_B_recordsDestination.splice(0,1)
+        }
+        ind_Q_B_recordsDestination.push(recordEmpty)
+      })
+
+      ind_Q_C_recordsData.forEach((record, index) => {
+        const recordEmpty = JSON.parse(JSON.stringify(section.ind_Q_C_records.fields[0]))
+
+        Object.keys(recordEmpty).forEach(field => {
+          if(recordEmpty.hasOwnProperty(field)) {
+            if (field.options) {
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
+            } else {
+              recordEmpty[field].selected = record[field]
+            }
+          }
+        })
+
+        if(index === 0) {
+          ind_Q_C_recordsDestination.splice(0,1)
+        }
+        ind_Q_C_recordsDestination.push(recordEmpty)
+      })
+
+    }
   },
   watch: {
     '$store.state.form': {
