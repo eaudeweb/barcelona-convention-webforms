@@ -1,5 +1,6 @@
 import reference_years from './reference_years'
 import heavy_metal from './heavy_metal_options'
+import sectors from './sector_options'
 import collection_method from './collection_method'
 
 const ind_6_2_1_records_structure = () => ({
@@ -9,7 +10,7 @@ const ind_6_2_1_records_structure = () => ({
     tooltip: 'Administrative regions located in drainage basins that outflow into the Mediterranean.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: [],
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -55,7 +56,7 @@ const ind_6_2_1_records_structure = () => ({
     tooltip: 'Sectors according to LBS Protocol 30 categories. Select an option from the list.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: sectors.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
     }
@@ -66,7 +67,7 @@ const ind_6_2_1_records_structure = () => ({
     tooltip: 'Select an option from the list.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: [],
     get validation() {
       return true
     }

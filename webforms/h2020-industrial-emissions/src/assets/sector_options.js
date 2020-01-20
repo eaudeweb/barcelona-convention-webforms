@@ -1,127 +1,127 @@
 const sectors = [
   {
-    id: 1,
-    value: 'Manufacture of cement'
+    value: 1,
+    text: 'Manufacture of cement'
   },
   {
-    id: 2,
-    value: 'Treatment of urban wastewater'
+    value: 2,
+    text: 'Treatment of urban wastewater'
   },
   {
-    id: 3,
-    value: 'Transport'
+    value: 3,
+    text: 'Transport'
   },
   {
-    id: 4,
-    value: 'Farming of animals'
+    value: 4,
+    text: 'Farming of animals'
   },
   {
-    id: 5,
-    value: 'Food packing'
+    value: 5,
+    text: 'Food packing'
   },
   {
-    id: 6,
-    value: 'Port services'
+    value: 6,
+    text: 'Port services'
   },
   {
-    id: 7,
-    value: 'Manufacture of other organic chemicals'
+    value: 7,
+    text: 'Manufacture of other organic chemicals'
   },
   {
-    id: 8,
-    value: 'Agriculture'
+    value: 8,
+    text: 'Agriculture'
   },
   {
-    id: 9,
-    value: 'Manufacture of metals'
+    value: 9,
+    text: 'Manufacture of metals'
   },
   {
-    id: 10,
-    value: 'Manufacture of refined petroleum products'
+    value: 10,
+    text: 'Manufacture of refined petroleum products'
   },
   {
-    id: 11,
-    value: 'Production of energy'
+    value: 11,
+    text: 'Production of energy'
   },
   {
-    id: 12,
-    value: 'Tanning and dressing of leather'
+    value: 12,
+    text: 'Tanning and dressing of leather'
   },
   {
-    id: 13,
-    value: 'Aquaculture'
+    value: 13,
+    text: 'Aquaculture'
   },
   {
-    id: 14,
-    value: 'Management of urban solid waste'
+    value: 14,
+    text: 'Management of urban solid waste'
   },
   {
-    id: 15,
-    value: 'Manufacture of pharmaceuticals'
+    value: 15,
+    text: 'Manufacture of pharmaceuticals'
   },
   {
-    id: 16,
-    value: 'Manufacture of paper'
+    value: 16,
+    text: 'Manufacture of paper'
   },
   {
-    id: 17,
-    value: 'Manufacture of fertilizers'
+    value: 17,
+    text: 'Manufacture of fertilizers'
   },
   {
-    id: 18,
-    value: 'Manufacture of other inorganic chemicals'
+    value: 18,
+    text: 'Manufacture of other inorganic chemicals'
   },
   {
-    id: 19,
-    value: 'Manufacture of textiles'
+    value: 19,
+    text: 'Manufacture of textiles'
   },
   {
-    id: 20,
-    value: 'Tourism'
+    value: 20,
+    text: 'Tourism'
   },
   {
-    id: 21,
-    value: 'Building and repairing of ships and boats'
+    value: 21,
+    text: 'Building and repairing of ships and boats'
   },
   {
-    id: 23,
-    value: 'Other'
+    value: 23,
+    text: 'Other'
   },
   {
-    id: 24,
-    value: 'Treatment and storage of hazardous wastes'
+    value: 24,
+    text: 'Treatment and storage of hazardous wastes'
   },
   {
-    id: 25,
-    value: 'Waste incineration and management of its residues'
+    value: 25,
+    text: 'Waste incineration and management of its residues'
   },
   {
-    id: 26,
-    value: 'Waste management activities'
+    value: 26,
+    text: 'Waste management activities'
   },
   {
-    id: 27,
-    value: 'Manufacture and formulation of biocides'
+    value: 27,
+    text: 'Manufacture and formulation of biocides'
   },
   {
-    id: 28,
-    value: 'Mining and quarrying'
+    value: 28,
+    text: 'Mining and quarrying'
   },
   {
-    id: 29,
-    value: 'Recycling activities'
+    value: 29,
+    text: 'Recycling activities'
   },
   {
-    id: 30,
-    value: 'Manufacture of electronics products'
+    value: 30,
+    text: 'Manufacture of electronics products'
   },
   {
-    id: 31,
-    value: 'Treatment of sewage sludge'
+    value: 31,
+    text: 'Treatment of sewage sludge'
   },
   {
-    id: 32,
-    value: 'Factories that cause physical changes to the environment'
+    value: 32,
+    text: 'Factories that cause physical changes to the environment'
   }
 ]
 

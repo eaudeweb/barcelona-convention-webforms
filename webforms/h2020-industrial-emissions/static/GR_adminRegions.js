@@ -1,0 +1,59 @@
+const admin_regions = [
+  {
+    "text": "Aegean Islands",
+    "value": "Aegean Islands"
+  },
+  {
+    "text": "West Macedonia",
+    "value": "West Macedonia"
+  },
+  {
+    "text": "West Continental Greece",
+    "value": "West Continental Greece"
+  },
+  {
+    "text": "West Peloponnes",
+    "value": "West Peloponnes"
+  },
+  {
+    "text": "North Peloponnes",
+    "value": "North Peloponnes"
+  },
+  {
+    "text": "Attica",
+    "value": "Attica"
+  },
+  {
+    "text": "East Peloponnes",
+    "value": "East Peloponnes"
+  },
+  {
+    "text": "Epirus",
+    "value": "Epirus"
+  },
+  {
+    "text": "Thrace",
+    "value": "Thrace"
+  },
+  {
+    "text": "East Macedonia",
+    "value": "East Macedonia"
+  },
+  {
+    "text": "East Continental Greece",
+    "value": "East Continental Greece"
+  },
+  {
+    "text": "Crete",
+    "value": "Crete"
+  },
+  {
+    "text": "Central Macedonia",
+    "value": "Central Macedonia"
+  },
+  {
+    "text": "Thessalia",
+    "value": "Thessalia"
+  }
+]
+export default admin_regions.sort((a,b) => a.text.localeCompare(b.text))

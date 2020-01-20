@@ -1,297 +1,499 @@
-1
-Growing of cereals (wheat, rice, maize, soyabeans, other)
-8
-2
-Growing of fruit and vegetables
-8
-3
-Horticultural specialities, nurseries
-8
-4
-Industrial crops (cotton, tobacco, sugar cane, sugar beet, potatoes, other)
-8
-5
-Manufacture of wines
-8
-6
-Fish breeding
-13
-7
-Fish processing
-13
-8
-Drydocks
-21
-9
-Shipyards
-21
-10
-Seawater desalination plants
-32
-11
-Farming of animals (cattle, sheep, swine, poultry) and slaughterhouses
-4
-12
-Farming of special animals (rabbits, goats, horses, asses, mules and hinnies, other)
-4
-13
-Animal feeds
-5
-14
-Animal raw materials,Vegetable raw materials
-5
-15
-Dairy industry
-5
-16
-Manufacture of beer
-5
-17
-Manufacture of non-alcoholic beverages
-5
-18
-Manufacture of olive oil
-5
-19
-Manufacture of other vegetable oils (other than olive oil)
-5
-20
-Manufacture of sugar beet
-5
-21
-Manufacture of wines and spirits
-5
-22
-Other prepared foods
-5
-23
-Preserving fruit and vegetables
-5
-24
-Waste dumps
-14
-25
-Formulation of pesticides
-27
-26
-Synthesis of phytosanitary products
-27
-27
-Manufacture of cement
-1
-28
-Manufacture of lime and plaster
-1
-29
-Manufacture of electric machines and appliances (condensers, transformers)
-30
-30
-Manufacture of integrated circuits
-30
-31
-Manufacture of radio, television and communications equipment
-30
-32
-Nitrogenous fertilizers
-17
-33
-Phosphate fertilizers and phosphoric acid
-17
-34
-Casting of grey iron
-9
-35
-Casting of other non-ferrous metals
-9
-36
-Casting of steel
-9
-37
-Electroplating
-9
-38
-First-stage aluminium smelting
-9
-39
-First-stage copper smelting
-9
-40
-Manufacture of accumulators
-9
-41
-Manufacture of basic iron and steel
-9
-42
-Manufacture of lead oxides and lead-based colouring matter
-9
-43
-Manufacture of other non-ferrous metals
-9
-44
-Manufacture of zinc or tin
-9
-45
-Second-stage aluminium smelting
-9
-46
-Second-stage copper smelting
-9
-47
-Second-stage lead smelting
-9
-48
-Industrial gases
-18
-49
-Manufacture of ceramic products
-18
-50
-Manufacture of glass and glass products
-18
-51
-Other (activated carbon, composed of Al, Ba, Ca, Ni, â€¦)
-18
-52
-Synthesis of pigments
-18
-53
-Manufacture of explosives, glues, gelatine, essential oils
-7
-54
-Other chemicals
-7
-55
-Paints and varnishes
-7
-56
-Plastics, rubber, synthetic resins
-7
-57
-Polyethylene tetraphtalate
-7
-58
-Polyvinyl chloride
-7
-59
-Synthesis of pigments
-7
-60
-Manufacture of articles of paper or paperboard
-16
-61
-Manufacture of paper and pulp
-16
-62
-Printing activities
-16
-63
-Cosmetics and perfumes
-15
-64
-Pharmaceuticals
-15
-65
-Soaps, detergents and sanitary preparations
-15
-66
-Manufacture of petrochemicals
-10
-67
-Manufacture of refined petroleum products
-10
-68
-Transport and marketing of petroleum products
-10
-69
-Manufacture and dyeing of textiles
-19
-70
-Manufacture of clothing and other finished products made of fabric
-19
-71
-Extraction of petroleum and gas
-28
-72
-Metal mining
-28
-73
-Installations for melting mineral substances
-23
-74
-Manufacture of Wood
-23
-75
-Other
-23
-76
-Gasoline Loading
-6
-77
-Port handling (cargo)
-6
-78
-Combustion of heating oil
-11
-79
-Combustion of lignite
-11
-80
-Gaz production
-11
-81
-Recycling of lubrifying oils
-29
-82
-Recycling of metal waste and scrap
-29
-83
-Recycling of non-metal waste and scrap (paper, glass)
-29
-84
-Tanning and dressing of leather
-12
-85
-Hotel, food and beverage services
-20
-86
-Recreational activities
-20
-87
-Manufacture of aircraft and spacecraft
-3
-88
-Manufacture of motor vehicles
-3
-89
-Manufacture of other transport equipment
-3
-90
-Rail transport
-3
-91
-Urban road transport (automobiles and buses)
-3
-92
-Water transport (freight, passengers)
-3
-93
-Technical centres for landfill and storage
-24
-94
-Compost production
-31
-95
-Industrial wastewater treatment plant
-2
-96
-Treatment plants
-2
-97
-Urban waste incineration plants
-25
-98
-Refuse collection, depollution and similar activities
-26
-99
-Lead Alkyl
-7
+const subsectors = [
+  {
+    value: 1,
+    sector: 8,
+    text: 'Growing of cereals (wheat, rice, maize, soyabeans, other)'
+  },
+  {
+    value: 2,
+    sector: 8,
+    text: 'Growing of fruit and vegetables'
+  },
+  {
+    value: 3,
+    sector: 8,
+    text: 'Horticultural specialities, nurseries'
+  },
+  {
+    value: 4,
+    sector: 8,
+    text: 'Industrial crops (cotton, tobacco, sugar cane, sugar beet, potatoes, other)'
+  },
+  {
+    value: 5,
+    sector: 8,
+    text: 'Manufacture of wines'
+  },
+  {
+    value: 6,
+    sector: 13,
+    text: 'Fish breeding'
+  },
+  {
+    value: 7,
+    sector: 13,
+    text: 'Fish processing'
+  },
+  {
+    value: 8,
+    sector: 21,
+    text: 'Drydocks'
+  },
+  {
+    value: 9,
+    sector: 21,
+    text: 'Shipyards'
+  },
+  {
+    value: 10,
+    sector: 32,
+    text: 'Seawater desalination plants'
+  },
+  {
+    value: 11,
+    sector: 4,
+    text: 'Farming of animals (cattle, sheep, swine, poultry) and slaughterhouses'
+  },
+  {
+    value: 12,
+    sector: 4,
+    text: 'Farming of special animals (rabbits, goats, horses, asses, mules and hinnies, other)'
+  },
+  {
+    value: 13,
+    sector: 5,
+    text: 'Animal feeds'
+  },
+  {
+    value: 14,
+    sector: 5,
+    text: 'Animal raw materials,Vegetable raw materials'
+  },
+  {
+    value: 15,
+    sector: 5,
+    text: 'Dairy industry'
+  },
+  {
+    value: 16,
+    sector: 5,
+    text: 'Manufacture of beer'
+  },
+  {
+    value: 17,
+    sector: 5,
+    text: 'Manufacture of non-alcoholic beverages'
+  },
+  {
+    value: 18,
+    sector: 5,
+    text: 'Manufacture of olive oil'
+  },
+  {
+    value: 19,
+    sector: 5,
+    text: 'Manufacture of other vegetable oils (other than olive oil)'
+  },
+  {
+    value: 20,
+    sector: 5,
+    text: 'Manufacture of sugar beet'
+  },
+  {
+    value: 21,
+    sector: 5,
+    text: 'Manufacture of wines and spirits'
+  },
+  {
+    value: 22,
+    sector: 5,
+    text: 'Other prepared foods'
+  },
+  {
+    value: 23,
+    sector: 5,
+    text: 'Preserving fruit and vegetables'
+  },
+  {
+    value: 24,
+    sector: 14,
+    text: 'Waste dumps'
+  },
+  {
+    value: 25,
+    sector: 27,
+    text: 'Formulation of pesticides'
+  },
+  {
+    value: 26,
+    sector: 27,
+    text: 'Synthesis of phytosanitary products'
+  },
+  {
+    value: 27,
+    sector: 1,
+    text: 'Manufacture of cement'
+  },
+  {
+    value: 28,
+    sector: 1,
+    text: 'Manufacture of lime and plaster'
+  },
+  {
+    value: 29,
+    sector: 30,
+    text: 'Manufacture of electric machines and appliances (condensers, transformers)'
+  },
+  {
+    value: 30,
+    sector: 30,
+    text: 'Manufacture of integrated circuits'
+  },
+  {
+    value: 31,
+    sector: 30,
+    text: 'Manufacture of radio, television and communications equipment'
+  },
+  {
+    value: 32,
+    sector: 17,
+    text: 'Nitrogenous fertilizers'
+  },
+  {
+    value: 33,
+    sector: 17,
+    text: 'Phosphate fertilizers and phosphoric acid'
+  },
+  {
+    value: 34,
+    sector: 9,
+    text: 'Casting of grey iron'
+  },
+  {
+    value: 35,
+    sector: 9,
+    text: 'Casting of other non-ferrous metals'
+  },
+  {
+    value: 36,
+    sector: 9,
+    text: 'Casting of steel'
+  },
+  {
+    value: 37,
+    sector: 9,
+    text: 'Electroplating'
+  },
+  {
+    value: 38,
+    sector: 9,
+    text: 'First-stage aluminium smelting'
+  },
+  {
+    value: 39,
+    sector: 9,
+    text: 'First-stage copper smelting'
+  },
+  {
+    value: 40,
+    sector: 9,
+    text: 'Manufacture of accumulators'
+  },
+  {
+    value: 41,
+    sector: 9,
+    text: 'Manufacture of basic iron and steel'
+  },
+  {
+    value: 42,
+    sector: 9,
+    text: 'Manufacture of lead oxides and lead-based colouring matter'
+  },
+  {
+    value: 43,
+    sector: 9,
+    text: 'Manufacture of other non-ferrous metals'
+  },
+  {
+    value: 44,
+    sector: 9,
+    text: 'Manufacture of zinc or tin'
+  },
+  {
+    value: 45,
+    sector: 9,
+    text: 'Second-stage aluminium smelting'
+  },
+  {
+    value: 46,
+    sector: 9,
+    text: 'Second-stage copper smelting'
+  },
+  {
+    value: 47,
+    sector: 9,
+    text: 'Second-stage lead smelting'
+  },
+  {
+    value: 48,
+    sector: 18,
+    text: 'Industrial gases'
+  },
+  {
+    value: 49,
+    sector: 18,
+    text: 'Manufacture of ceramic products'
+  },
+  {
+    value: 50,
+    sector: 18,
+    text: 'Manufacture of glass and glass products'
+  },
+  {
+    value: 51,
+    sector: 18,
+    text: 'Other (activated carbon, composed of Al, Ba, Ca, Ni, â€¦)'
+  },
+  {
+    value: 52,
+    sector: 18,
+    text: 'Synthesis of pigments'
+  },
+  {
+    value: 53,
+    sector: 7,
+    text: 'Manufacture of explosives, glues, gelatine, essential oils'
+  },
+  {
+    value: 54,
+    sector: 7,
+    text: 'Other chemicals'
+  },
+  {
+    value: 55,
+    sector: 7,
+    text: 'Paints and varnishes'
+  },
+  {
+    value: 56,
+    sector: 7,
+    text: 'Plastics, rubber, synthetic resins'
+  },
+  {
+    value: 57,
+    sector: 7,
+    text: 'Polyethylene tetraphtalate'
+  },
+  {
+    value: 58,
+    sector: 7,
+    text: 'Polyvinyl chloride'
+  },
+  {
+    value: 59,
+    sector: 7,
+    text: 'Synthesis of pigments'
+  },
+  {
+    value: 60,
+    sector: 16,
+    text: 'Manufacture of articles of paper or paperboard'
+  },
+  {
+    value: 61,
+    sector: 16,
+    text: 'Manufacture of paper and pulp'
+  },
+  {
+    value: 62,
+    sector: 16,
+    text: 'Printing activities'
+  },
+  {
+    value: 63,
+    sector: 15,
+    text: 'Cosmetics and perfumes'
+  },
+  {
+    value: 64,
+    sector: 15,
+    text: 'Pharmaceuticals'
+  },
+  {
+    value: 65,
+    sector: 15,
+    text: 'Soaps, detergents and sanitary preparations'
+  },
+  {
+    value: 66,
+    sector: 10,
+    text: 'Manufacture of petrochemicals'
+  },
+  {
+    value: 67,
+    sector: 10,
+    text: 'Manufacture of refined petroleum products'
+  },
+  {
+    value: 68,
+    sector: 10,
+    text: 'Transport and marketing of petroleum products'
+  },
+  {
+    value: 69,
+    sector: 19,
+    text: 'Manufacture and dyeing of textiles'
+  },
+  {
+    value: 70,
+    sector: 19,
+    text: 'Manufacture of clothing and other finished products made of fabric'
+  },
+  {
+    value: 71,
+    sector: 28,
+    text: 'Extraction of petroleum and gas'
+  },
+  {
+    value: 72,
+    sector: 28,
+    text: 'Metal mining'
+  },
+  {
+    value: 73,
+    sector: 23,
+    text: 'Installations for melting mineral substances'
+  },
+  {
+    value: 74,
+    sector: 23,
+    text: 'Manufacture of Wood'
+  },
+  {
+    value: 75,
+    sector: 23,
+    text: 'Other'
+  },
+  {
+    value: 76,
+    sector: 6,
+    text: 'Gasoline Loading'
+  },
+  {
+    value: 77,
+    sector: 6,
+    text: 'Port handling (cargo)'
+  },
+  {
+    value: 78,
+    sector: 11,
+    text: 'Combustion of heating oil'
+  },
+  {
+    value: 79,
+    sector: 11,
+    text: 'Combustion of lignite'
+  },
+  {
+    value: 80,
+    sector: 11,
+    text: 'Gaz production'
+  },
+  {
+    value: 81,
+    sector: 29,
+    text: 'Recycling of lubrifying oils'
+  },
+  {
+    value: 82,
+    sector: 29,
+    text: 'Recycling of metal waste and scrap'
+  },
+  {
+    value: 83,
+    sector: 29,
+    text: 'Recycling of non-metal waste and scrap (paper, glass)'
+  },
+  {
+    value: 84,
+    sector: 12,
+    text: 'Tanning and dressing of leather'
+  },
+  {
+    value: 85,
+    sector: 20,
+    text: 'Hotel, food and beverage services'
+  },
+  {
+    value: 86,
+    sector: 20,
+    text: 'Recreational activities'
+  },
+  {
+    value: 87,
+    sector: 3,
+    text: 'Manufacture of aircraft and spacecraft'
+  },
+  {
+    value: 88,
+    sector: 3,
+    text: 'Manufacture of motor vehicles'
+  },
+  {
+    value: 89,
+    sector: 3,
+    text: 'Manufacture of other transport equipment'
+  },
+  {
+    value: 90,
+    sector: 3,
+    text: 'Rail transport'
+  },
+  {
+    value: 91,
+    sector: 3,
+    text: 'Urban road transport (automobiles and buses)'
+  },
+  {
+    value: 92,
+    sector: 3,
+    text: 'Water transport (freight, passengers)'
+  },
+  {
+    value: 93,
+    sector: 24,
+    text: 'Technical centres for landfill and storage'
+  },
+  {
+    value: 94,
+    sector: 31,
+    text: 'Compost production'
+  },
+  {
+    value: 95,
+    sector: 2,
+    text: 'Industrial wastewater treatment plant'
+  },
+  {
+    value: 96,
+    sector: 2,
+    text: 'Treatment plants'
+  },
+  {
+    value: 97,
+    sector: 25,
+    text: 'Urban waste incineration plants'
+  },
+  {
+    value: 98,
+    sector: 26,
+    text: 'Refuse collection, depollution and similar activities'
+  },
+  {
+    value: 99,
+    sector: 7,
+    text: 'Lead Alkyl'
+  }
+]
+
+export default subsectors

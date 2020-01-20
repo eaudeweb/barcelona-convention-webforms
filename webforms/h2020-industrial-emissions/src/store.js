@@ -48,10 +48,10 @@ export default new Vuex.Store({
 
 
       const promiseList = fieldsArray.map((field, index) => {
-        const url = process.env.NODE_ENV === 'production' ? `${country}_${field}.json` : `${field}/${country}_${field}.json`
+        const url = `${country}_${field}.json`
         return getFormData(url).catch(error => {
-          if(field === 'speciesB') {
-            const new_url = process.env.NODE_ENV === 'production' ? 'speciesBall.json' : `${field}/speciesBall.json`
+          if(field === 'administrativeRegion') {
+            const new_url = 'allAdministrativeRegions.json'
             return getFormData(new_url)
           } else {
             return []

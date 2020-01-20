@@ -8,7 +8,7 @@ const ind_6_3_2_records_structure = () => ({
     tooltip: 'Administrative regions located in drainage basins that outflow into the Mediterranean.',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: [],
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
