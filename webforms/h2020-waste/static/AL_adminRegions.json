@@ -1,4 +1,4 @@
-const admin_regions = [
+[
   {
     "text": "Peqini",
     "value": "Peqini"
@@ -60,4 +60,4 @@ const admin_regions = [
     "value": "Tirana"
   }
 ]
-export default admin_regions.sort((a,b) => a.text.localeCompare(b.text))
+

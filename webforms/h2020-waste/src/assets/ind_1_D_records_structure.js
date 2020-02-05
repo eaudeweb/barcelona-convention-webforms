@@ -6,9 +6,8 @@ const ind_1_D_records_structure = () => ({
     name: 'administrativeRegionCostal',
     label: 'Administrative regions (adjacent to coastline)',
     tooltip: 'Administrative regions which are adjacent to coastline.',
-    type: 'select',
+    type: 'text',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       if (!this.selected)
         return `${this.label} is required`

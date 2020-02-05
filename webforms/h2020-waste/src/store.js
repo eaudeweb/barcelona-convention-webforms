@@ -44,13 +44,12 @@ export default new Vuex.Store({
 
     getCurrentFormData(context, {country}) {
       return new Promise((resolve, reject) => {
-        const fieldsArray = []
-
+        const fieldsArray = ['adminRegions']
 
         const promiseList = fieldsArray.map((field, index) => {
           const url = `${country}_${field}.json`
           return getFormData(url).catch(error => {
-            if (field === 'administrativeRegion') {
+            if (field === 'adminRegions') {
               const new_url = 'allAdministrativeRegions.json'
               return getFormData(new_url)
             } else {
@@ -61,6 +60,7 @@ export default new Vuex.Store({
 
         return Promise.all(promiseList).then(function (values) {
           fieldsArray.forEach((field, index) => {
+            console.log(context.state.formData)
             context.state.formData[field] = values[index].data || []
           })
           resolve(context.state.formData)

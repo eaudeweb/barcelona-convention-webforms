@@ -1,14 +1,15 @@
 import reference_years from './reference_years'
+import msw_fractions from './msw-fractions'
 import waste_collection_method from './waste-collection-method'
 
-const ind_1_A_records_structure = () => ({
+const ind_1_A_records_structure = (adminRegions) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: adminRegions || [],
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -32,7 +33,7 @@ const ind_1_A_records_structure = () => ({
     type: 'select',
     selected: null,
     tooltip: 'Select an option from the list.',
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: msw_fractions.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
     }

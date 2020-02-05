@@ -42,6 +42,11 @@
     components: {
       FieldGenerator
     },
+    computed: {
+      adminRegionsList(section) {
+        return this.$store.state.formData[section].administrativeRegion.map(p => ({text: `${p.text}`, value: p.value}))
+      }
+    },
     methods: {}
   }
 </script>

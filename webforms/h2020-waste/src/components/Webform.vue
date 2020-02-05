@@ -380,7 +380,7 @@ export default {
     },
 
     prefillTab3(data, form) {
-      const section = form.tabs.tab_1.form_fields
+      const section = form.tabs.tab_3.form_fields
       const ind_Q_A_recordsData = this.sanitizeSection(data, 'ind_Q_A_records')
       const ind_Q_A_recordsDestination = section.ind_Q_A_records.fields
 

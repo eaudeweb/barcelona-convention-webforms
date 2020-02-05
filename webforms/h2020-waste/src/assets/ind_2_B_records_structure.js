@@ -1,14 +1,14 @@
 import reference_years from './reference_years'
 import waste_collection_method from './waste-collection-method'
 
-const ind_2_B_records_structure = () => ({
+const ind_2_B_records_structure = (adminRegions) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
     selected: null,
-    options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
+    options: adminRegions || [],
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
