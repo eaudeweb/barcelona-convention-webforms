@@ -65,7 +65,260 @@
     "localForm": false,
     "remoteForm": false,
     "fileType": "FILE"
-  },    
+  },
+  {
+    "title": "AL_adminRegions.json",
+    "file":
+    {
+      "name": "AL_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "allAdministrativeRegions.json",
+    "file":
+    {
+      "name": "allAdministrativeRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "BA_adminRegions.json",
+    "file":
+    {
+      "name": "BA_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "CY_adminRegions.json",
+    "file":
+    {
+      "name": "CY_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "DZ_adminRegions.json",
+    "file":
+    {
+      "name": "DZ_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "EG_adminRegions.json",
+    "file":
+    {
+      "name": "EG_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "ES_adminRegions.json",
+    "file":
+    {
+      "name": "ES_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "FR_adminRegions.json",
+    "file":
+    {
+      "name": "FR_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "GR_adminRegions.json",
+    "file":
+    {
+      "name": "GR_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "EL_adminRegions.json",
+    "file":
+    {
+      "name": "EL_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "HR_adminRegions.json",
+    "file":
+    {
+      "name": "HR_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "IL_adminRegions.json",
+    "file":
+    {
+      "name": "IL_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "IT_adminRegions.json",
+    "file":
+    {
+      "name": "IT_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "LB_adminRegions.json",
+    "file":
+    {
+      "name": "LB_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "LY_adminRegions.json",
+    "file":
+    {
+      "name": "LY_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "MA_adminRegions.json",
+    "file":
+    {
+      "name": "MA_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "ME_adminRegions.json",
+    "file":
+    {
+      "name": "ME_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "MT_adminRegions.json",
+    "file":
+    {
+      "name": "MT_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "PS_adminRegions.json",
+    "file":
+    {
+      "name": "PS_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+    "title": "SI_adminRegions.json",
+    "file":
+    {
+      "name": "SI_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
+     "title": "SY_adminRegions.json",
+     "file":
+     {
+       "name": "SY_adminRegions.json"
+     },
+     "active": false,
+     "localForm": false,
+     "remoteForm": false,
+     "fileType": "FILE"
+  },
+  {
+     "title": "TN_adminRegions.json",
+     "file":
+     {
+       "name": "TN_adminRegions.json"
+     },
+     "active": false,
+     "localForm": false,
+     "remoteForm": false,
+     "fileType": "FILE"
+  },
+  {
+     "title": "TR_adminRegions.json",
+     "file":
+     {
+       "name": "TR_adminRegions.json"
+     },
+     "active": false,
+     "localForm": false,
+     "remoteForm": false,
+     "fileType": "FILE"
+  },
   {
     "title": "H2020 - Industrial Emission indicators",
     "file":
