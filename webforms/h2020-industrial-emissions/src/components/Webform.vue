@@ -132,7 +132,7 @@ export default {
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
             if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record.year).value : null
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
             } else {
               recordEmpty[field].selected = record[field]
             }
@@ -151,7 +151,7 @@ export default {
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
             if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record.year).value : null
+              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
             } else {
               recordEmpty[field].selected = record[field]
             }

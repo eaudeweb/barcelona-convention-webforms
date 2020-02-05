@@ -3,14 +3,14 @@ import heavy_metal from './heavy_metal_options'
 import sectors from './sector_options'
 import collection_method from './collection_method'
 
-const ind_6_2_1_records_structure = () => ({
+const ind_6_2_1_records_structure = (adminRegions) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'Administrative regions located in drainage basins that outflow into the Mediterranean.',
     type: 'select',
     selected: null,
-    options: [],
+    options: adminRegions || [],
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
