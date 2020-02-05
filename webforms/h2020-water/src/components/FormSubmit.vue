@@ -506,7 +506,7 @@
           emptyInstance.H2020_WATER.ind_5_1_2_records.Row.push(record)
         })
 
-        section.ind_5_2_records.fields.forEach((row, row_index) => {
+      section.ind_5_2_records.fields.forEach((row, row_index) => {
           const record = JSON.parse(JSON.stringify(this.structure.ind_5_2_records))
           record.reportID = reportID
           record.rowID = row_index

@@ -1,8 +1,6 @@
-const admin_regions = [
+[
   {
     "text": "All",
     "value": "All"
   }
 ]
-export default admin_regions.sort((a,b) => a.text.localeCompare(b.text))
-
