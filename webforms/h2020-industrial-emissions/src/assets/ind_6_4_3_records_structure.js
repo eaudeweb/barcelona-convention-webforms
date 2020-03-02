@@ -27,37 +27,37 @@ const ind_6_4_3_records_structure = (adminRegions) => ({
         return `${this.label} is required`
     }
   },
-  BOD: {
-    name: 'TP',
+  noEliminatedHotspots: {
+    name: 'noEliminatedHotspots',
     type: 'number',
     selected: null,
-    label: 'Quantity of released total phosphorus',
-    tooltip: 'Total phosphorus load as of the reference year (measured in metric tonnes per year)',
+    label: 'No. of eliminated hotspots',
+    tooltip: 'Number of eliminated hotspots from the list identified in the updated NAP of 2015',
     get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
+      if (this.selected && (this.selected < 0 || this.selected > 1000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 0 and 1000' : ''}`
     }
   },
-  sector_id: {
-    name: 'sector_id',
-    label: 'Industrial Sector',
-    tooltip: 'Sectors according to LBS Protocol 30 categories. Select an option from the list.',
-    type: 'select',
+  noHotspots2001: {
+    name: 'noHotspots2001',
+    type: 'number',
     selected: null,
-    options: sectors.map(p => ({text: `${p.text}`, value: p.value})),
+    label: 'Total no. of identified hotspots in 2001',
+    tooltip: 'Total number of hotspots identified in 2001',
     get validation() {
-      return true
+      if (this.selected && (this.selected < 0 || this.selected > 1000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 0 and 1000' : ''}`
     }
   },
-  subsector_id: {
-    name: 'subsector_id',
-    label: 'Subsectors Sector',
-    tooltip: 'Select an option from the list.',
-    type: 'select',
+  noHotspots2015: {
+    name: 'noHotspots2015',
+    type: 'number',
     selected: null,
-    options: [],
+    label: 'Total no. of identified hotspots in 2015',
+    tooltip: 'Total number of hotspots identified in the 2015',
     get validation() {
-      return true
+      if (this.selected && (this.selected < 0 || this.selected > 1000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 0 and 1000' : ''}`
     }
   },
   collection_method: {

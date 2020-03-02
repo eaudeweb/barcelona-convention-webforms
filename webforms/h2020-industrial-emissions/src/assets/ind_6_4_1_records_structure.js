@@ -27,15 +27,26 @@ const ind_6_4_1_records_structure = (adminRegions) => ({
         return `${this.label} is required`
     }
   },
-  BOD: {
-    name: 'TP',
+  noReportionIndustrialInstallations: {
+    name: 'noReportionIndustrialInstallations',
     type: 'number',
     selected: null,
-    label: 'Quantity of released total phosphorus',
-    tooltip: 'Total phosphorus load as of the reference year (measured in metric tonnes per year)',
+    label: 'No. of reporting industrial installations',
+    tooltip: 'Number of records of industries providing data on discharges and emissions released by their industrial processes',
     get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
+      if (this.selected && (this.selected < 1 || this.selected > 1000000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000' : ''}`
+    }
+  },
+  noTotalInstallationsRequired: {
+    name: 'noTotalInstallationsRequired',
+    type: 'number',
+    selected: null,
+    label: 'Total no. of industrial installations required to report',
+    tooltip: 'Total number of industrial installations required to provide data on discharges and emissions released by their industrial processes',
+    get validation() {
+      if (this.selected && (this.selected < 1 || this.selected > 1000000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000' : ''}`
     }
   },
   sector_id: {

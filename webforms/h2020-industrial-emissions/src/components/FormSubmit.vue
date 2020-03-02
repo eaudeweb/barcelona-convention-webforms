@@ -405,10 +405,12 @@
         // const ind_6_1_2_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_2_records))
         // const ind_6_1_3_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_3_records))
         const section = data.tabs.tab_3.form_fields
+
         //
         // Object.keys(section).forEach(field => {
         //   if (ind_6_1_1_records.hasOwnProperty(field)) ind_6_1_1_records[field] = section[field].selected
         // })
+
         section.ind_6_3_1_records.fields.forEach((row, row_index) => {
           const record = JSON.parse(JSON.stringify(this.structure.ind_6_3_1_records))
           record.reportID = reportID
@@ -435,8 +437,6 @@
           record.stokpiledHW = row.stokpiledHW.selected
           record.dipositedHW = row.dipositedHW.selected
           record.dispVsGenHW = row.dispVsGenHW.selected
-          record.sector_id = row.sector_id.selected
-          record.subsector_id = row.subsector_id.selected
           record.collection_method = row.collection_method.selected
           record.remarks = row.remarks.selected
           emptyInstance.H2020_IND_EMISSIONS.ind_6_3_2_records.Row.push(record)

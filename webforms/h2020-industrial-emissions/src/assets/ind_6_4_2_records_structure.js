@@ -27,15 +27,26 @@ const ind_6_4_2_records_structure = (adminRegions) => ({
         return `${this.label} is required`
     }
   },
-  BOD: {
-    name: 'TP',
+  noInspectionsBreach: {
+    name: 'noInspectionsBreach',
     type: 'number',
     selected: null,
-    label: 'Quantity of released total phosphorus',
-    tooltip: 'Total phosphorus load as of the reference year (measured in metric tonnes per year)',
+    label: 'No. of environmental inspections in breach of laws and regulations',
+    tooltip: 'Number of records of environmental inspections carried out by enforcement authorities in which industrial installations were found to be in breach of laws and regulations in a single year',
     get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
+      if (this.selected && (this.selected < 1 || this.selected > 1000000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000' : ''}`
+    }
+  },
+  noTotalInspections: {
+    name: 'noTotalInspections',
+    type: 'number',
+    selected: null,
+    label: 'Total no. of environmental inspections',
+    tooltip: 'Total number of executed inspections carried out by enforcement authorities in a single year',
+    get validation() {
+      if (this.selected && (this.selected < 1 || this.selected > 1000000))
+        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000' : ''}`
     }
   },
   sector_id: {
