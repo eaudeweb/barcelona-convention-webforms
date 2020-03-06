@@ -1,5 +1,4 @@
 import reference_years from './reference_years'
-import sectors from './sector_options'
 import collection_method from './collection_method'
 
 const ind_6_4_3_records_structure = (adminRegions) => ({

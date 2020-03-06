@@ -18,7 +18,7 @@
             <tbody>
             <tr v-for="(row, row_index) in field.fields" :key="row_index">
               <td style="max-width: 250px; min-width: 40%;" v-for="(cell, cell_index) in row" :key="`${row_index}_${cell_index}`">
-                <FieldGenerator :field="cell"></FieldGenerator>
+                <FieldGenerator :parent_obj="row" :field="cell"></FieldGenerator>
               </td>
               <td style="width: 50px"><b-btn  v-if="field.fields.length > 1"  variant="danger" @click="$store.commit('remove_'+field_index+'_DataRow', {row_index})">X</b-btn></td>
             </tr>

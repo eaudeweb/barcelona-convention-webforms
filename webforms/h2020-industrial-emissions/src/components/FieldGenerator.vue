@@ -24,7 +24,7 @@
     <b-form-radio-group :id="field.name" v-else-if="field.type === 'radio'" v-model="field.selected" :options="field.options"></b-form-radio-group>
     <b-form-checkbox v-else-if="field.type === 'checkbox'" :disabled="field.disabled" v-model="field.selected"></b-form-checkbox>
     <div v-else-if="['select', 'multiselect'].includes(field.type)">
-      <multiselect
+      <multiselect v-if="!field.datasource_for && parent_obj"
           :multiple="field.type === 'select' ? false : true"
           label="text"
           trackBy="value"
@@ -33,6 +33,16 @@
           :title="doSelectTitle(field)"
           v-model="field.selected"
           :options="field.options" />
+      <multiselect v-else
+                   :multiple="field.type === 'select' ? false : true"
+                   label="text"
+                   trackBy="value"
+                   v-b-tooltip
+                   :disabled="field.disabled"
+                   :title="doSelectTitle(field)"
+                   v-model="field.selected"
+                   @input="updateLinkedField"
+                   :options="field.options" />
     </div>
     <div v-else-if="field.type === 'textarea'">
       <div class="custom-form-label">{{field.label}}</div>
@@ -59,7 +69,8 @@
     },
 
     props: {
-      field: null
+      field: null,
+      parent_obj: null,
     },
 
     methods: {
@@ -75,6 +86,9 @@
 			triggerSave() {
 				document.getElementById('save_button').click()
 			},
+      updateLinkedField(data) {
+        this.parent_obj[this.field.datasource_for].filter_by = data
+      },
       handleFileUpload(e) {
         const fileNameArr = e.target.files[0].name.split('.')
         const extension = '.' + fileNameArr[fileNameArr.length - 1]

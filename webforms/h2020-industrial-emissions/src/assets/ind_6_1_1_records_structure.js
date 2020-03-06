@@ -1,8 +1,11 @@
 import reference_years from './reference_years'
 import collection_method from './collection_method'
 import sectors from './sector_options'
+import subsectors from './subsector_options'
 
-const ind_6_1_1_records_structure = (adminRegions) => ({
+const ind_6_1_1_records_structure = (adminRegions) => {
+  let sector = null
+  return {
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
@@ -44,8 +47,10 @@ const ind_6_1_1_records_structure = (adminRegions) => ({
     tooltip: 'Sectors according to LBS Protocol 30 categories. Select an option from the list.',
     type: 'select',
     selected: null,
+    datasource_for: 'subsector_id',
     options: sectors.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
+      sector = this.selected
       return true
     }
   },
@@ -55,8 +60,14 @@ const ind_6_1_1_records_structure = (adminRegions) => ({
     tooltip: 'Select an option from the list.',
     type: 'select',
     selected: null,
-    // options: subsectors.filter(p => p.sector === sector_id.id).map(p => ({id: `${p.id}`, value: p.value})),
-    options: [],
+    filter_by: null,
+    get options() {
+      if(this.filter_by) {
+        return subsectors.filter(p => p.sector === this.filter_by).map(p => ({text: `${p.text}`, value: p.value}))
+      } else {
+        return []
+      }
+    },
     get validation() {
       return true
     }
@@ -82,6 +93,6 @@ const ind_6_1_1_records_structure = (adminRegions) => ({
       return true
     }
   }
-})
+}}
 
 export default ind_6_1_1_records_structure
