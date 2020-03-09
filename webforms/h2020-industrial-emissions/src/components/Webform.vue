@@ -42,6 +42,18 @@ import Tab1 from './Tab1.vue'
 import Tab2 from './Tab2.vue'
 import Tab3 from './Tab3.vue'
 import Tab4 from './Tab4.vue'
+import ind_6_1_1_records_structure from '@/assets/ind_6_1_1_records_structure'
+import ind_6_1_2_records_structure from '@/assets/ind_6_1_2_records_structure'
+import ind_6_1_3_records_structure from '@/assets/ind_6_1_3_records_structure'
+import ind_6_2_1_records_structure from '@/assets/ind_6_2_1_records_structure'
+import ind_6_2_2_records_structure from '@/assets/ind_6_2_2_records_structure'
+import ind_6_2_3_records_structure from '@/assets/ind_6_2_3_records_structure'
+import ind_6_2_4_records_structure from '@/assets/ind_6_2_4_records_structure'
+import ind_6_3_1_records_structure from '@/assets/ind_6_3_1_records_structure'
+import ind_6_3_2_records_structure from '@/assets/ind_6_3_2_records_structure'
+import ind_6_4_1_records_structure from '@/assets/ind_6_4_1_records_structure'
+import ind_6_4_2_records_structure from '@/assets/ind_6_4_2_records_structure'
+import ind_6_4_3_records_structure from '@/assets/ind_6_4_3_records_structure'
 
 import FormSubmit from './FormSubmit.vue'
 import {getInstance, getCountry} from '../api.js';
@@ -117,6 +129,7 @@ export default {
 
     prefillTab1(data, form) {
       const section = form.tabs.tab_1.form_fields
+
       const ind_6_1_1_recordsData = this.sanitizeSection(data, 'ind_6_1_1_records')
       const ind_6_1_1_recordsDestination = section.ind_6_1_1_records.fields
 
@@ -127,17 +140,7 @@ export default {
       const ind_6_1_3_recordsDestination = section.ind_6_1_3_records.fields
 
       ind_6_1_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_1_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_1_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_1_1_recordsDestination.splice(0,1)
@@ -146,17 +149,7 @@ export default {
       })
 
       ind_6_1_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_1_2_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_1_2_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_1_2_recordsDestination.splice(0,1)
@@ -165,17 +158,7 @@ export default {
       })
 
       ind_6_1_3_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_1_3_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_1_3_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_1_3_recordsDestination.splice(0,1)
@@ -199,17 +182,7 @@ export default {
       const ind_6_2_4_recordsDestination = section.ind_6_2_4_records.fields
 
       ind_6_2_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_2_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_2_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_2_1_recordsDestination.splice(0,1)
@@ -218,17 +191,7 @@ export default {
       })
 
       ind_6_2_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_2_2_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_2_2_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_2_2_recordsDestination.splice(0,1)
@@ -237,17 +200,7 @@ export default {
       })
 
       ind_6_2_3_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_2_3_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_2_3_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_2_3_recordsDestination.splice(0,1)
@@ -256,17 +209,7 @@ export default {
       })
 
       ind_6_2_4_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_2_4_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_2_4_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_2_4_recordsDestination.splice(0,1)
@@ -284,17 +227,7 @@ export default {
       const ind_6_3_2_recordsDestination = section.ind_6_3_2_records.fields
 
       ind_6_3_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_3_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_3_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_3_1_recordsDestination.splice(0,1)
@@ -303,17 +236,7 @@ export default {
       })
 
       ind_6_3_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_3_2_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_3_2_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_3_2_recordsDestination.splice(0,1)
@@ -334,17 +257,7 @@ export default {
       const ind_6_4_3_recordsDestination = section.ind_6_4_3_records.fields
 
       ind_6_4_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_4_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_4_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_4_1_recordsDestination.splice(0,1)
@@ -353,17 +266,7 @@ export default {
       })
 
       ind_6_4_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_4_2_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_4_2_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_4_2_recordsDestination.splice(0,1)
@@ -372,17 +275,7 @@ export default {
       })
 
       ind_6_4_3_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_6_4_3_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_6_4_3_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_6_4_3_recordsDestination.splice(0,1)
