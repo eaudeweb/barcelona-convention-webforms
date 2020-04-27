@@ -15,6 +15,9 @@
           </p>
         </small>
       </div>
+      <div style="margin-top: 20px;">
+        <b-alert show variant="info">Additional excel files required for this reporting must be uploaded directly in the envelope. Save the filled data and press 'Back to envelope' button. In the right side you can find 'Add supporting file' button to upload your additional files.</b-alert>
+      </div>
       <div class="answer">
         <div class="table-head">
 
