@@ -36,9 +36,6 @@
                 <div v-if="table.name ==='partyname'">
                   <b-input :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
                 </div>
-                <div v-else-if="table.name === 'rep_period_from' || table.name === 'rep_period_to'">
-                  <b-input lazy-formatter :formatter="validate" :id="table.name" :type="table.type" v-model="table.selected"></b-input>
-                </div>
                 <div v-else>
                   <b-input :id="table.name" :type="table.type" v-model="table.selected"></b-input>
                 </div>
