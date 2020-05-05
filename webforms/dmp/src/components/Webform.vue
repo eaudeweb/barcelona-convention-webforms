@@ -44,7 +44,6 @@ import {getInstance, getCountry} from '../api.js';
 
 import Countrytab from './Country.vue'
 import LRMeasures from './LRMeasures.vue'
-import Dummy from './Dummy.vue'
 import DumpingAtSea from './DumpingAtSea.vue'
 import QuantitiesOfWaste from './QuantitiesOfWaste.vue'
 import Monitoring from './Monitoring.vue'
@@ -60,8 +59,6 @@ export default {
   components: {
     countrytab: Countrytab,
     lrmeasures: LRMeasures,
-    dummy: Dummy,
-    monitoring: Monitoring,
   	formsubmit: FormSubmit,
     dumpingatsea: DumpingAtSea,
     wastequantity: QuantitiesOfWaste,
