@@ -601,7 +601,7 @@ var form = {
         table_label: 'Table 2a . Biennial Summary of Dumping at Sea Permits and Quantities',
         collection_id: 204,
         parent_collection_id: 203,
-        table_note: 'Tables 2 to 5 have been harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5).<br>We would like to invite you to fill out tables 2 to 5 using the pre-filled online webforms, hovewer the <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">attached spreadsheet</a> is also an option that you may wish to consider.<br>If you fill out <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">the attached excel spreadsheet</a> please submit it by clicking on "add supporting file" button form the envelope.',
+        table_note: 'Tables 2 to 5 have been harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5).<br>We would like to invite you to fill out tables 2 to 5 using the pre-filled online webforms, hovewer the <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">attached spreadsheet</a> is also an option that you may wish to consider.<br>If you fill out <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">the attached excel spreadsheet</a> please submit it by clicking on "add supporting file" button from the envelope.',
         table_article_label: '2.1 1976 Protocol Article or 1995 Protocol Article',
         table_aritcle_description: 'Reference to Articles pertaining to permits',
         articles: [{
@@ -1413,7 +1413,7 @@ var form = {
     data: {
       table_1: {
       table_label: 'Table 3.  Biennial Summary of Quantities of Wastes or Other Matter at Sea for Each Dump Site',
-        table_note: 'Tables 2 to 5 have been harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5).<br>We would like to invite you to fill out tables 2 to 5 using the pre-filled online webforms, hovewer the <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">attached spreadsheet</a> is also an option that you may wish to consider.<br>If you fill out <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">the attached excel spreadsheet</a> please submit it by clicking on "add supporting file" button form the envelope.',
+        table_note: 'Tables 2 to 5 have been harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5).<br>We would like to invite you to fill out tables 2 to 5 using the pre-filled online webforms, hovewer the <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">attached spreadsheet</a> is also an option that you may wish to consider.<br>If you fill out <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">the attached excel spreadsheet</a> please submit it by clicking on "add supporting file" button from the envelope.',
         collection_id: 207,
         parent_collection_id: 206,
         articles: []
@@ -1432,7 +1432,7 @@ var form = {
     parent_collection_id: 2,
     data: {
       table_label: 'Table 5: Monitoring',
-      table_note: 'Tables 2 to 5 have been harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5).<br>We would like to invite you to fill out tables 2 to 5 using the pre-filled online webforms, hovewer the <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">attached spreadsheet</a> is also an option that you may wish to consider.<br>If you fill out <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">the attached excel spreadsheet</a> please submit it by clicking on "add supporting file" button form the envelope.',
+      table_note: 'Tables 2 to 5 have been harmonized to follow the Revised Electronic Reporting Format of the London Convention and its Protocol on Dumping (LC 33/15 Annex 5).<br>We would like to invite you to fill out tables 2 to 5 using the pre-filled online webforms, hovewer the <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">attached spreadsheet</a> is also an option that you may wish to consider.<br>If you fill out <a target="_blank" href="https://idc.info-rac.org/bcrs/supporting_files/Dumping_Protocol_Tabular_Reporting_Template.xls">the attached excel spreadsheet</a> please submit it by clicking on "add supporting file" button from the envelope.',
       collection_id: 210,
       parent_collection_id: 209,
       articles: []
