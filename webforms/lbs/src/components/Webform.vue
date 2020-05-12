@@ -137,6 +137,28 @@ export default {
       this.prefillInventory = data.BC_LBS.lbsinventorydata.Row
       let inv_reported = data.BC_LBS.lbsinventorydata.Row[0].reportednbb
       this.form.tab_2.data.question.selected = inv_reported
+
+      let eprtr_question = null;
+      let eprtr_envelope_link = null;
+      let nbb_envelope_link = null;
+
+      if (data.BC_LBS.lbsinventorydata.Row[0].eprtr_question) {
+        eprtr_question = data.BC_LBS.lbsinventorydata.Row[0].eprtr_question
+      }
+
+      this.form.tab_2.data.eprtr_question.selected = eprtr_question;
+
+      if (data.BC_LBS.lbsinventorydata.Row[0].eprtr_envelope_link) {
+        eprtr_envelope_link = data.BC_LBS.lbsinventorydata.Row[0].eprtr_envelope_link;
+      }
+      this.form.tab_2.data.eprtr_envelope_link.value = eprtr_envelope_link;
+
+      if (data.BC_LBS.lbsinventorydata.Row[0].nbb_envelope_link) {
+        nbb_envelope_link = data.BC_LBS.lbsinventorydata.Row[0].nbb_envelope_link;
+      }
+
+      this.form.tab_2.data.nbb_envelope_link.value = nbb_envelope_link;
+
         for(let invdata of data.BC_LBS.lbsinventorydata.Row) {
             let description = invdata.description
              for (let tab in this.form){

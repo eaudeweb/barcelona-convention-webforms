@@ -432,12 +432,29 @@ export default {
           let collection_id = tab_2.collection_id;
           let parent_collection_id = tab_2.parent_collection_id
           let check_value = tab_2.question.selected;
+          let check_eprtr = null;
+          let eprtr_envelope_link = null;
+          let nbb_envelope_link = null;
+          if (tab_2.eprtr_question) {
+            check_eprtr = tab_2.eprtr_question.selected;
+          }
+          if (tab_2.eprtr_envelope_link) {
+            eprtr_envelope_link = tab_2.eprtr_envelope_link.value;
+          }
+
+          if (tab_2.nbb_envelope_link) {
+            nbb_envelope_link = tab_2.nbb_envelope_link.value;
+          }
+
         for (let article_item of article.article_items){
           let row =  {
                       "parent_collection_id": parent_collection_id,
                       "collection_id": collection_id,
                       "pollutantgroup": null,
                       "reportednbb": check_value,
+                      "eprtr_question": check_eprtr,
+                      "eprtr_envelope_link": eprtr_envelope_link,
+                      "nbb_envelope_link": nbb_envelope_link,
                       "description": article_item.description,
                       "activitysector":null,
                       "activitysubsector": null,

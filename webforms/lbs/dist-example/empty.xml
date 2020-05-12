@@ -63,6 +63,9 @@
             <activitysector/>
             <activitysubsector/>
             <reportednbb/>
+            <eprtr_question/>
+            <eprtr_envelope_link/>
+            <nbb_envelope_link/>
             <reportedinfotypeair/>
             <airquantity/>
             <reportedinfotypewater/>

@@ -15,9 +15,29 @@
           </p>
         </small>
       </div>
-      <div style="margin-top: 20px;">
-        <b-alert show variant="info">Additional excel files required for this reporting must be uploaded directly in the envelope. Save the filled data and press 'Back to envelope' button. In the right side you can find 'Add supporting file' button to upload your additional files.</b-alert>
+      <hr/>
+      <div class="question">
+        <div class="mt-2">{{info.data.eprtr_question.label}} <small class="muted">({{info.data.eprtr_question.info}})</small></div>
+        <b-form-group>
+          <b-form-radio-group stacked id="radio_EPRTR_option" v-model="info.data.eprtr_question.selected" :options="info.data.eprtr_question.options" name="radio_EPRTR_option">
+          </b-form-radio-group>
+        </b-form-group>
+        <small style="font-style:italic; font-size: .6rem">
+          <p class="mb-0" v-for="option of info.data.eprtr_question.options_description">
+            {{option}}
+          </p>
+        </small>
+        <hr/>
+        <div v-show="info.data.eprtr_question.selected == true">
+          <div class="mt-2">{{info.data.eprtr_envelope_link.label}} <small class="muted">({{info.data.eprtr_envelope_link.info}})</small></div>
+          <b-form-input required :id="`${info.data.eprtr_envelope_link.name}`" :type="`${info.data.eprtr_envelope_link.type}`" :name="`${info.data.eprtr_envelope_link.name}`" v-model="info.data.eprtr_envelope_link.value"></b-form-input>
+        </div>
+        <div v-show="info.data.eprtr_question.selected == false || info.data.question.selected == false">
+          <div class="mt-2">{{info.data.nbb_envelope_link.label}} <small class="muted">({{info.data.nbb_envelope_link.info}})</small></div>
+          <b-form-input required :id="`${info.data.nbb_envelope_link.name}`" :type="`${info.data.nbb_envelope_link.type}`" :name="`${info.data.nbb_envelope_link.name}`" v-model="info.data.nbb_envelope_link.value"></b-form-input>
+        </div>
       </div>
+      <br>
       <div class="answer">
         <div class="table-head">
 
