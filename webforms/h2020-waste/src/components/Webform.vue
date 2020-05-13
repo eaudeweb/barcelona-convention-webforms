@@ -39,8 +39,25 @@ import Tab1 from './Tab1.vue'
 import Tab2 from './Tab2.vue'
 import Tab3 from './Tab3.vue'
 
+import ind_1_1_records_structure from '@/assets/ind_1_1_records_structure'
+import ind_1_A_records_structure from '@/assets/ind_1_A_records_structure'
+import ind_1_B_records_structure from '@/assets/ind_1_B_records_structure'
+import ind_1_C_records_structure from '@/assets/ind_1_C_records_structure'
+import ind_1_D_records_structure from '@/assets/ind_1_D_records_structure'
+import ind_2_A_1_records_structure from '@/assets/ind_2_A_1_records_structure'
+import ind_2_A_2_records_structure from '@/assets/ind_2_A_2_records_structure'
+import ind_2_B_records_structure from '@/assets/ind_2_B_records_structure'
+import ind_2_B_1_records_structure from '@/assets/ind_2_B_1_records_structure'
+import ind_2_B_2_records_structure from '@/assets/ind_2_B_2_records_structure'
+import ind_2_B_3_records_structure from '@/assets/ind_2_B_3_records_structure'
+import ind_2_C_records_structure from '@/assets/ind_2_C_records_structure'
+import ind_Q_A_records_structure from '@/assets/ind_Q_A_records_structure'
+import ind_Q_B_records_structure from '@/assets/ind_Q_B_records_structure'
+import ind_Q_C_records_structure from '@/assets/ind_Q_C_records_structure'
+
 import FormSubmit from './FormSubmit.vue'
 import {getInstance, getCountry} from '../api.js';
+
 
 export default {
   components: {
@@ -111,6 +128,7 @@ export default {
 
     prefillTab1(data, form) {
       const section = form.tabs.tab_1.form_fields
+
       const ind_1_1_recordsData = this.sanitizeSection(data, 'ind_1_1_records')
       const ind_1_1_recordsDestination = section.ind_1_1_records.fields
 
@@ -127,17 +145,7 @@ export default {
       const ind_1_D_recordsDestination = section.ind_1_D_records.fields
 
       ind_1_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_1_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_1_1_recordsDestination.splice(0,1)
@@ -146,17 +154,7 @@ export default {
       })
 
       ind_1_A_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_A_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_1_A_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_1_A_recordsDestination.splice(0,1)
@@ -165,17 +163,7 @@ export default {
       })
 
       ind_1_B_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_B_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_1_B_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_1_B_recordsDestination.splice(0,1)
@@ -184,17 +172,7 @@ export default {
       })
 
       ind_1_C_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_C_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_1_C_records_structure(record)
 
         if(index === 0) {
           ind_1_C_recordsDestination.splice(0,1)
@@ -203,17 +181,7 @@ export default {
       })
 
       ind_1_D_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_1_D_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_1_D_records_structure(record)
 
         if(index === 0) {
           ind_1_D_recordsDestination.splice(0,1)
@@ -224,6 +192,7 @@ export default {
 
     prefillTab2(data, form) {
       const section = form.tabs.tab_2.form_fields
+
       const ind_2_A_1_recordsData = this.sanitizeSection(data, 'ind_2_A_1_records')
       const ind_2_A_1_recordsDestination = section.ind_2_A_1_records.fields
 
@@ -246,17 +215,7 @@ export default {
       const ind_2_C_recordsDestination = section.ind_2_C_records.fields
 
       ind_2_A_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_A_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_A_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_A_1_recordsDestination.splice(0,1)
@@ -265,17 +224,7 @@ export default {
       })
 
       ind_2_A_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_A_2_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_A_2_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_A_2_recordsDestination.splice(0,1)
@@ -284,17 +233,7 @@ export default {
       })
 
       ind_2_B_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_B_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_B_recordsDestination.splice(0,1)
@@ -303,17 +242,7 @@ export default {
       })
 
       ind_2_B_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_1_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_B_1_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_B_1_recordsDestination.splice(0,1)
@@ -322,17 +251,7 @@ export default {
       })
 
       ind_2_B_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_2_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_B_2_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_B_2_recordsDestination.splice(0,1)
@@ -341,17 +260,7 @@ export default {
       })
 
       ind_2_B_3_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_B_3_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_B_3_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_B_3_recordsDestination.splice(0,1)
@@ -360,17 +269,7 @@ export default {
       })
 
       ind_2_C_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_2_C_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_2_C_records_structure(this.$store.state.formData.adminRegions, record)
 
         if(index === 0) {
           ind_2_C_recordsDestination.splice(0,1)
@@ -381,6 +280,7 @@ export default {
 
     prefillTab3(data, form) {
       const section = form.tabs.tab_3.form_fields
+
       const ind_Q_A_recordsData = this.sanitizeSection(data, 'ind_Q_A_records')
       const ind_Q_A_recordsDestination = section.ind_Q_A_records.fields
 
@@ -391,17 +291,7 @@ export default {
       const ind_Q_C_recordsDestination = section.ind_Q_C_records.fields
 
       ind_Q_A_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_Q_A_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_Q_A_records_structure(record)
 
         if(index === 0) {
           ind_Q_A_recordsDestination.splice(0,1)
@@ -410,17 +300,7 @@ export default {
       })
 
       ind_Q_B_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_Q_B_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_Q_B_records_structure(record)
 
         if(index === 0) {
           ind_Q_B_recordsDestination.splice(0,1)
@@ -429,17 +309,7 @@ export default {
       })
 
       ind_Q_C_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_Q_C_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field.options) {
-              recordEmpty[field].selected = record[field] ? recordEmpty[field].options.find(p => p.value == record[field]).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+        const recordEmpty = ind_Q_C_records_structure(record)
 
         if(index === 0) {
           ind_Q_C_recordsDestination.splice(0,1)

@@ -1,12 +1,12 @@
 import reference_years from './reference_years'
 
-const ind_2_B_3_records_structure = (adminRegions) => ({
+const ind_2_B_3_records_structure = (adminRegions, data) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
-    selected: null,
+    selected: data && data.administrativeRegion || null,
     options: adminRegions || [],
     get validation() {
       if (!this.selected)
@@ -17,7 +17,7 @@ const ind_2_B_3_records_structure = (adminRegions) => ({
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Year for which data is available. Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -28,7 +28,7 @@ const ind_2_B_3_records_structure = (adminRegions) => ({
   wasteUncontrolledWdC: {
     name: 'wasteUncontrolledWdC',
     type: 'number',
-    selected: null,
+    selected: data && data.wasteUncontrolledWdC || null,
     label: 'Percentage of waste that is going to uncontrolled dumpsites in the coastal administrative region. (w/w %)',
     tooltip: 'This indicator provides the % of the waste that goes to the dumpsites located in the coastal administrative regions. (This indictor is the same indicators 2.B.1 in coastal geographical scale).',
     get validation() {
@@ -39,7 +39,7 @@ const ind_2_B_3_records_structure = (adminRegions) => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

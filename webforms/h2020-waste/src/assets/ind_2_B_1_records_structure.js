@@ -1,13 +1,13 @@
 import reference_years from './reference_years'
 import waste_collection_method from './waste-collection-method'
 
-const ind_2_B_1_records_structure = (adminRegions) => ({
+const ind_2_B_1_records_structure = (adminRegions, data) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
-    selected: null,
+    selected: data && data.administrativeRegion || null,
     options: adminRegions || [],
     get validation() {
       if (!this.selected)
@@ -18,7 +18,7 @@ const ind_2_B_1_records_structure = (adminRegions) => ({
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Year for which data is available. Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -29,7 +29,7 @@ const ind_2_B_1_records_structure = (adminRegions) => ({
   wasteUncontrolledWd: {
     name: 'wasteUncontrolledWd',
     type: 'number',
-    selected: null,
+    selected: data && data.wasteUncontrolledWd || null,
     label: 'Percentage of waste that is going to uncontrolled. (w/w % )',
     tooltip: 'This indicator provides the % of the waste that goes to the dumpsites, thus it is a measure of the pressure for leakages related to ML and water pollution. In addition, it shows the maturity of the national waste management system. (%Wd=100%-We%), where We% is Indicator 2B.',
     get validation() {
@@ -40,7 +40,7 @@ const ind_2_B_1_records_structure = (adminRegions) => ({
   wasteDumpsiteWu: {
     name: 'wasteDumpsiteWu',
     type: 'number',
-    selected: null,
+    selected: data && data.wasteDumpsiteWu || null,
     label: 'The amount of waste which is send to uncontrolled dumpsites',
     tooltip: 'Dumpsite: Dump, open dump, uncontrolled waste disposal site; A designated or undesignated site where any kinds of wastes are deposited on land, or burned, or buried, without supervision ad without precautions regarding human health or environment.',
     get validation() {
@@ -53,7 +53,7 @@ const ind_2_B_1_records_structure = (adminRegions) => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.waste_collection_method || null,
     options: waste_collection_method.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -62,7 +62,7 @@ const ind_2_B_1_records_structure = (adminRegions) => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

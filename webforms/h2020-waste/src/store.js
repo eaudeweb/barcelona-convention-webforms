@@ -87,73 +87,73 @@ export default new Vuex.Store({
       state.form.tabs.tab_1.form_fields.ind_1_1_records.fields.splice(row_index, 1)
     },
     add_ind_1_1_records_DataRow(state) {
-      state.form.tabs.tab_1.form_fields.ind_1_1_records.fields.push(ind_1_1_records_structure())
+      state.form.tabs.tab_1.form_fields.ind_1_1_records.fields.push(ind_1_1_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_1_A_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_1.form_fields.ind_1_A_records.fields.splice(row_index, 1)
     },
     add_ind_1_A_records_DataRow(state) {
-      state.form.tabs.tab_1.form_fields.ind_1_A_records.fields.push(ind_1_A_records_structure())
+      state.form.tabs.tab_1.form_fields.ind_1_A_records.fields.push(ind_1_A_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_1_B_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_1.form_fields.ind_1_B_records.fields.splice(row_index, 1)
     },
     add_ind_1_B_records_DataRow(state) {
-      state.form.tabs.tab_1.form_fields.ind_1_B_records.fields.push(ind_1_B_records_structure())
+      state.form.tabs.tab_1.form_fields.ind_1_B_records.fields.push(ind_1_B_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_1_C_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_1.form_fields.ind_1_C_records.fields.splice(row_index, 1)
     },
     add_ind_1_C_records_DataRow(state) {
-      state.form.tabs.tab_1.form_fields.ind_1_C_records.fields.push(ind_1_C_records_structure())
+      state.form.tabs.tab_1.form_fields.ind_1_C_records.fields.push(ind_1_C_records_structure(state.formData))
     },
     remove_ind_1_D_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_1.form_fields.ind_1_D_records.fields.splice(row_index, 1)
     },
     add_ind_1_D_records_DataRow(state) {
-      state.form.tabs.tab_1.form_fields.ind_1_D_records.fields.push(ind_1_D_records_structure())
+      state.form.tabs.tab_1.form_fields.ind_1_D_records.fields.push(ind_1_D_records_structure(state.formData))
     },
     remove_ind_2_A_1_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_A_1_records.fields.splice(row_index, 1)
     },
     add_ind_2_A_1_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_A_1_records.fields.push(ind_2_A_1_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_A_1_records.fields.push(ind_2_A_1_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_2_A_2_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_A_2_records.fields.splice(row_index, 1)
     },
     add_ind_2_A_2_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_A_2_records.fields.push(ind_2_A_2_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_A_2_records.fields.push(ind_2_A_2_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_2_B_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_B_records.fields.splice(row_index, 1)
     },
     add_ind_2_B_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_B_records.fields.push(ind_2_B_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_B_records.fields.push(ind_2_B_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_2_B_1_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_B_1_records.fields.splice(row_index, 1)
     },
     add_ind_2_B_1_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_B_1_records.fields.push(ind_2_B_1_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_B_1_records.fields.push(ind_2_B_1_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_2_B_2_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_B_2_records.fields.splice(row_index, 1)
     },
     add_ind_2_B_2_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_B_2_records.fields.push(ind_2_B_2_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_B_2_records.fields.push(ind_2_B_2_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_2_B_3_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_B_3_records.fields.splice(row_index, 1)
     },
     add_ind_2_B_3_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_B_3_records.fields.push(ind_2_B_3_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_B_3_records.fields.push(ind_2_B_3_records_structure(state.formData.adminRegions, state.formData))
     },
     remove_ind_2_C_records_DataRow(state, {row_index}) {
       state.form.tabs.tab_2.form_fields.ind_2_C_records.fields.splice(row_index, 1)
     },
     add_ind_2_C_records_DataRow(state) {
-      state.form.tabs.tab_2.form_fields.ind_2_C_records.fields.push(ind_2_C_records_structure())
+      state.form.tabs.tab_2.form_fields.ind_2_C_records.fields.push(ind_2_C_records_structure(state.formData.adminRegions, state.formData))
     },
 
     setDataLoadingValue(state, {value}) {

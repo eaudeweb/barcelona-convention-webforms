@@ -1,13 +1,13 @@
 import reference_years from './reference_years'
 import waste_collection_method from './waste-collection-method'
 
-const ind_2_C_records_structure = (adminRegions) => ({
+const ind_2_C_records_structure = (adminRegions, data) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
-    selected: null,
+    selected: data && data.administrativeRegion || null,
     options: adminRegions || [],
     get validation() {
       if (!this.selected)
@@ -18,7 +18,7 @@ const ind_2_C_records_structure = (adminRegions) => ({
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Year for which data is available. Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -29,7 +29,7 @@ const ind_2_C_records_structure = (adminRegions) => ({
   resourceRecoveryRR: {
     name: 'resourceRecoveryRR',
     type: 'number',
-    selected: null,
+    selected: data && data.resourceRecoveryRR || null,
     label: 'Percentage of the total waste recycled and reused',
     tooltip: 'Percentage of the waste that is recycled or reused out of the waste generated.',
     get validation() {
@@ -40,7 +40,7 @@ const ind_2_C_records_structure = (adminRegions) => ({
   amountRecycledPlastics: {
     name: 'amountRecycledPlastics',
     type: 'number',
-    selected: null,
+    selected: data && data.amountRecycledPlastics || null,
     label: 'The amount of plastics which is recycled, reused (kg/year)',
     tooltip: 'The quantity of waste which is recycled and reused (compost)(if any) (measured in kg per year)',
     get validation() {
@@ -51,7 +51,7 @@ const ind_2_C_records_structure = (adminRegions) => ({
   percentageRecycledPlastics: {
     name: 'percentageRecycledPlastics',
     type: 'number',
-    selected: null,
+    selected: data && data.percentageRecycledPlastics || null,
     label: 'Percentage of total plastic municipal solid waste generated that is recycled (tonnes/year)',
     tooltip: 'The indicator shows the percentage of total plastic municipal solid waste generated that is recycled. It includes materials recycling only. The amount of recycled plastic divided by total plastic waste generated. Which is calculated in percentage (metric tonnes per year)',
     get validation() {
@@ -64,7 +64,7 @@ const ind_2_C_records_structure = (adminRegions) => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.waste_collection_method || null,
     options: waste_collection_method.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -73,7 +73,7 @@ const ind_2_C_records_structure = (adminRegions) => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

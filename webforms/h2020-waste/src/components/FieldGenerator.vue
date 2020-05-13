@@ -65,7 +65,7 @@
     methods: {
       doSelectTitle(field) {
         if(field.type === 'select') {
-          const option = field.options.find(o => o.value === field.selected) 
+          const option = field.options.find(o => o.value === field.selected)
           if(!field.options || !option) return ''
           if(option.text) return option.text
         } else {

@@ -1,13 +1,13 @@
 import reference_years from './reference_years'
 import waste_collection_method from './waste-collection-method'
 
-const ind_1_B_records_structure = (adminRegions) => ({
+const ind_1_B_records_structure = (adminRegions, data) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
-    selected: null,
+    selected: data && data.administrativeRegion || null,
     options: adminRegions || [],
     get validation() {
       if (!this.selected)
@@ -18,7 +18,7 @@ const ind_1_B_records_structure = (adminRegions) => ({
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -29,7 +29,7 @@ const ind_1_B_records_structure = (adminRegions) => ({
   frcPlasticMSW: {
     name: 'frcPlasticMSW',
     type: 'number',
-    selected: null,
+    selected: data && data.frcPlasticMSW || null,
     label: 'Plastic fraction generated per capita',
     tooltip: '(percentage of ratio metric tonnes per year)',
     get validation() {
@@ -42,7 +42,7 @@ const ind_1_B_records_structure = (adminRegions) => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.waste_collection_method || null,
     options: waste_collection_method.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -51,7 +51,7 @@ const ind_1_B_records_structure = (adminRegions) => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

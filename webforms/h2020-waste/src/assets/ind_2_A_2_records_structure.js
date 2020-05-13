@@ -1,13 +1,13 @@
 import reference_years from './reference_years'
 import waste_collection_method from './waste-collection-method'
 
-const ind_2_A_2_records_structure = (adminRegions) => ({
+const ind_2_A_2_records_structure = (adminRegions, data) => ({
   administrativeRegion: {
     name: 'administrativeRegion',
     label: 'Administrative regions',
     tooltip: 'The indicator will be reported at national level (optionally all administrative regions).',
     type: 'select',
-    selected: null,
+    selected: data && data.administrativeRegion || null,
     options: adminRegions || [],
     get validation() {
       if (!this.selected)
@@ -18,7 +18,7 @@ const ind_2_A_2_records_structure = (adminRegions) => ({
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Year for which data is available. Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -29,7 +29,7 @@ const ind_2_A_2_records_structure = (adminRegions) => ({
   wasteCapturedWs: {
     name: 'wasteCapturedWs',
     type: 'number',
-    selected: null,
+    selected: data && data.wasteCapturedWs || null,
     label: 'The percentage of waste captured by formal system, including landfills, recycling and compost (w/w % on total waste generated)',
     tooltip: 'Formal Waste Sector: Solid waste system, solid waste authorities, government, materials recovery facility; Solid waste management activities planned, sponsored, financed, carried out or, regulated and/or recognized by the formal local authorities or their agents, usually through contracts, licenses or concessions.',
     get validation() {
@@ -40,7 +40,7 @@ const ind_2_A_2_records_structure = (adminRegions) => ({
   wasteCapturedWf: {
     name: 'wasteCapturedWf',
     type: 'number',
-    selected: null,
+    selected: data && data.wasteCapturedWf || null,
     label: 'The amount of waste captured by formal system per reference year (tonnes/year)',
     tooltip: 'Formal Waste Sector: Solid waste system, solid waste authorities, government, materials recovery facility; Solid waste management activities planned, sponsored, financed, carried out or, regulated and/or recognized by the formal local authorities or their agents, usually through contracts, licenses or concessions.',
     get validation() {
@@ -53,7 +53,7 @@ const ind_2_A_2_records_structure = (adminRegions) => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.waste_collection_method || null,
     options: waste_collection_method.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -62,7 +62,7 @@ const ind_2_A_2_records_structure = (adminRegions) => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

@@ -457,14 +457,8 @@
       },
 
       storeTab3(data, emptyInstance, reportID) {
-        // const ind_6_1_1_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_1_records))
-        // const ind_6_1_2_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_2_records))
-        // const ind_6_1_3_records = JSON.parse(JSON.stringify(this.structure.ind_6_1_3_records))
         const section = data.tabs.tab_3.form_fields
-        //
-        // Object.keys(section).forEach(field => {
-        //   if (ind_6_1_1_records.hasOwnProperty(field)) ind_6_1_1_records[field] = section[field].selected
-        // })
+
         section.ind_Q_A_records.fields.forEach((row, row_index) => {
           const record = JSON.parse(JSON.stringify(this.structure.ind_Q_A_records))
           record.reportID = reportID
