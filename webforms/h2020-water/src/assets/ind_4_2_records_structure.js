@@ -2,12 +2,12 @@ import reference_years from './reference_years'
 import activities from './activities'
 import water_collection_method_i from './water-collection-method-i'
 
-const ind_4_2_records_structure = () => ({
+const ind_4_2_records_structure = (data) => ({
   year: {
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -18,7 +18,7 @@ const ind_4_2_records_structure = () => ({
   Total_Volume_Direct_Reuse: {
     name: 'Total_Volume_Direct_Reuse',
     type: 'number',
-    selected: null,
+    selected: data && data.Total_Volume_Direct_Reuse || null,
     label: 'Total volume of direct reuse of municipal wastewater',
     tooltip: 'Real measurement of treated wastewater intended to be reused',
     get validation() {
@@ -29,7 +29,7 @@ const ind_4_2_records_structure = () => ({
   Fraction_Primary_Treatment_Reuse: {
     name: 'Fraction_Primary_Treatment_Reuse',
     type: 'number',
-    selected: null,
+    selected: data && data.Fraction_Primary_Treatment_Reuse || null,
     label: 'Fraction of used municipal wastewater subject to primary treatment per year',
     tooltip: 'Fraction of used municipal wastewater after primary treatment expressed as a fraction of volume [%] of treated municipal wastewater per year',
     get validation() {
@@ -40,7 +40,7 @@ const ind_4_2_records_structure = () => ({
   Fraction_Secondary_Treatment_Reuse: {
     name: 'Fraction_Secondary_Treatment_Reuse',
     type: 'number',
-    selected: null,
+    selected: data && data.Fraction_Secondary_Treatment_Reuse || null,
     label: 'Fraction of used municipal wastewater subject to secondary treatment per year',
     tooltip: 'Fraction of used municipal wastewater after secondary treatment expressed as a fraction of volume [%] of treated municipal wastewater per year',
     get validation() {
@@ -51,7 +51,7 @@ const ind_4_2_records_structure = () => ({
   Fraction_Tertiary_Treatment_Reuse: {
     name: 'Fraction_Tertiary_Treatment_Reuse',
     type: 'number',
-    selected: null,
+    selected: data && data.Fraction_Tertiary_Treatment_Reuse || null,
     label: 'Fraction of used municipal wastewater subject to tertiary treatment per year',
     tooltip: 'Fraction of used  municipal wastewater after tertiary treatment expressed as a fraction of volume [%] of treated municipal wastewater per year',
     get validation() {
@@ -64,7 +64,7 @@ const ind_4_2_records_structure = () => ({
     label: 'Name of activity/sector for which municipal wastewater is used',
     tooltip: 'Select value from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.activityName || null,
     options: activities.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -73,7 +73,7 @@ const ind_4_2_records_structure = () => ({
   Total_Volume_Direct_Reuse_Activity: {
     name: 'Total_Volume_Direct_Reuse_Activity',
     type: 'number',
-    selected: null,
+    selected: data && data.Total_Volume_Direct_Reuse_Activity || null,
     label: 'Volume of direct reuse of municipal wastewater per type of activity',
     tooltip: 'Volume of direct reuse of municipal wastewater per type of activity',
     get validation() {
@@ -86,7 +86,7 @@ const ind_4_2_records_structure = () => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.water_collection_method || null,
     options: water_collection_method_i.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -95,7 +95,7 @@ const ind_4_2_records_structure = () => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

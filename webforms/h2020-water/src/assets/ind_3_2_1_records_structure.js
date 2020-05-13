@@ -1,12 +1,12 @@
 import reference_years from './reference_years'
 import water_collection_method_i from './water-collection-method-i'
 
-const ind_3_2_1_records_structure = () => ({
+const ind_3_2_1_records_structure = (data) => ({
   year: {
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -17,7 +17,7 @@ const ind_3_2_1_records_structure = () => ({
   totalPopulation: {
     name: 'totalPopulation',
     type: 'number',
-    selected: null,
+    selected: data && data.totalPopulation || null,
     label: 'Total population',
     tooltip: 'The population as of the reference year',
     get validation() {
@@ -28,7 +28,7 @@ const ind_3_2_1_records_structure = () => ({
   urbanPopulation: {
     name: 'urbanPopulation',
     type: 'number',
-    selected: null,
+    selected: data && data.urbanPopulation || null,
     label: 'Urban population',
     tooltip: 'The population as of the reference year',
     get validation() {
@@ -39,7 +39,7 @@ const ind_3_2_1_records_structure = () => ({
   ruralPopulation: {
     name: 'ruralPopulation',
     type: 'number',
-    selected: null,
+    selected: data && data.ruralPopulation || null,
     label: 'Rural population',
     tooltip: 'The population as of the reference year',
     get validation() {
@@ -50,7 +50,7 @@ const ind_3_2_1_records_structure = () => ({
   Total_Population_SMSS: {
     name: 'Total_Population_SMSS',
     type: 'number',
-    selected: null,
+    selected: data && data.Total_Population_SMSS || null,
     label: 'Total national population with access to Safely Managed Sanitation Systems (SMSS)',
     tooltip: '"Safely managed sanitation services" is defined as an improved sanitation facility considering:  \n' +
       'a) that is not shared with other households,\n' +
@@ -63,7 +63,7 @@ const ind_3_2_1_records_structure = () => ({
   Urban_Population_SMSS: {
     name: 'Urban_Population_SMSS',
     type: 'number',
-    selected: null,
+    selected: data && data.Urban_Population_SMSS || null,
     label: 'National population living in urban areas with access to Safely Managed Sanitation Systems (SMSS)',
     tooltip: '"Safely managed sanitation services" is defined as an improved sanitation facility considering:  \n' +
       'a) that is not shared with other households,\n' +
@@ -76,7 +76,7 @@ const ind_3_2_1_records_structure = () => ({
   Rural_Population_SMSS: {
     name: 'Rural_Population_SMSS',
     type: 'number',
-    selected: null,
+    selected: data && data.Rural_Population_SMSS || null,
     label: 'National population living in rural areas with access to  safely managed sanitation systems (SMSS)',
     tooltip: '"Safely managed sanitation services" is defined as an improved sanitation facility considering:  \n' +
       'a) that is not shared with other households,\n' +
@@ -91,7 +91,7 @@ const ind_3_2_1_records_structure = () => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.water_collection_method || null,
     options: water_collection_method_i.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -100,7 +100,7 @@ const ind_3_2_1_records_structure = () => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

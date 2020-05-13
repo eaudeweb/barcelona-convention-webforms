@@ -1,14 +1,14 @@
 import reference_years from './reference_years'
 import water_collection_method_i from './water-collection-method-i'
 
-const ind_3_1_2_records_structure = () => ({
+const ind_3_1_2_records_structure = (data) => ({
   hydrologicalBasin: {
     name: 'hydrologicalBasin',
     label: 'Name of catchment/ hydrological basin at the coastal area',
     //tooltip: 'Name of catchment/ hydrological basin at the coastal area according to codelist',
     // type: 'select',
     type: 'text',
-    selected: null,
+    selected: data && data.hydrologicalBasin || null,
     // options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       if (!this.selected)
@@ -19,7 +19,7 @@ const ind_3_1_2_records_structure = () => ({
     name: 'year',
     label: 'Reference year',
     type: 'select',
-    selected: null,
+    selected: data && data.year || null,
     tooltip: 'Select an option from the list.',
     options: reference_years.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
@@ -30,7 +30,7 @@ const ind_3_1_2_records_structure = () => ({
   Total_Pop_Coast_Hydro_Basin: {
     name: 'Total_Pop_Coast_Hydro_Basin',
     type: 'number',
-    selected: null,
+    selected: data && data.Total_Pop_Coast_Hydro_Basin || null,
     label: 'Total population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
     tooltip: 'The population as of the reference year',
     get validation() {
@@ -41,7 +41,7 @@ const ind_3_1_2_records_structure = () => ({
   Urban_Pop_Coast_Hydro_Basin: {
     name: 'Urban_Pop_Coast_Hydro_Basin',
     type: 'number',
-    selected: null,
+    selected: data && data.Urban_Pop_Coast_Hydro_Basin || null,
     label: 'Urban population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
     tooltip: 'The population as of the reference year',
     get validation() {
@@ -52,7 +52,7 @@ const ind_3_1_2_records_structure = () => ({
   Rural_Pop_Coast_Hydro_Basin: {
     name: 'Rural_Pop_Coast_Hydro_Basin',
     type: 'number',
-    selected: null,
+    selected: data && data.Rural_Pop_Coast_Hydro_Basin || null,
     label: 'Rural population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
     tooltip: 'The population as of the reference year',
     get validation() {
@@ -63,7 +63,7 @@ const ind_3_1_2_records_structure = () => ({
   Total_Pop_Coast_ISS: {
     name: 'Total_Pop_Coast_ISS',
     type: 'number',
-    selected: null,
+    selected: data && data.Total_Pop_Coast_ISS || null,
     label: 'Population in coastal areas and catchment/ hydrological basin at the coastal area with access to Improved Sanitation Systems (ISS)',
     tooltip: 'Total population with access to improved sanitation system refers to the population with access to facilities which hygienically separate human excreta from human, animal and insect contact.',
     get validation() {
@@ -74,7 +74,7 @@ const ind_3_1_2_records_structure = () => ({
   Urban_Pop_Coast_ISS: {
     name: 'Urban_Pop_Coast_ISS',
     type: 'number',
-    selected: null,
+    selected: data && data.Urban_Pop_Coast_ISS || null,
     label: 'Population living in urban coastal areas and hydrological basin at coastal areas with access to Improved Sanitation Systems (ISS)',
     tooltip: 'Urban population with access to improved sanitation system refers to the population with access to facilities which hygienically separate human excreta from human, animal and insect contact.',
     get validation() {
@@ -85,7 +85,7 @@ const ind_3_1_2_records_structure = () => ({
   Rural_Pop_Coast_ISS: {
     name: 'Rural_Pop_Coast_ISS',
     type: 'number',
-    selected: null,
+    selected: data && data.Rural_Pop_Coast_ISS || null,
     label: 'Population living in rural coastal areas and hydrological basin at coastal areas with access to Improved Sanitation Systems (ISS)',
     tooltip: 'Rural population with access to improved sanitation system refers to the population with access to facilities which hygienically separate human excreta from human, animal and insect contact.',
     get validation() {
@@ -98,7 +98,7 @@ const ind_3_1_2_records_structure = () => ({
     label: 'Method of data collection',
     tooltip: 'Select a method of data collection from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.water_collection_method || null,
     options: water_collection_method_i.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -107,7 +107,7 @@ const ind_3_1_2_records_structure = () => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

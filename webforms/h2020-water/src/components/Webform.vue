@@ -39,6 +39,18 @@ import Tab1 from './Tab1.vue'
 import Tab2 from './Tab2.vue'
 import Tab3 from './Tab3.vue'
 
+import ind_3_1_1_records_structure from '@/assets/ind_3_1_1_records_structure'
+import ind_3_1_2_records_structure from '@/assets/ind_3_1_2_records_structure'
+import ind_3_2_1_records_structure from '@/assets/ind_3_2_1_records_structure'
+import ind_3_2_2_records_structure from '@/assets/ind_3_2_2_records_structure'
+import ind_4_1_1_records_structure from '@/assets/ind_4_1_1_records_structure'
+import ind_4_1_2_records_structure from '@/assets/ind_4_1_2_records_structure'
+import ind_4_2_records_structure from '@/assets/ind_4_2_records_structure'
+import ind_4_3_records_structure from '@/assets/ind_4_3_records_structure'
+import ind_5_1_1_records_structure from '@/assets/ind_5_1_1_records_structure'
+import ind_5_1_2_records_structure from '@/assets/ind_5_1_2_records_structure'
+import ind_5_2_records_structure from '@/assets/ind_5_2_records_structure'
+
 import FormSubmit from './FormSubmit.vue'
 import {getInstance, getCountry} from '../api.js';
 
@@ -111,6 +123,7 @@ export default {
 
     prefillTab1(data, form) {
       const section = form.tabs.tab_1.form_fields
+
       const ind_3_1_1_recordsData = this.sanitizeSection(data, 'ind_3_1_1_records')
       const ind_3_1_1_recordsDestination = section.ind_3_1_1_records.fields
 
@@ -124,7 +137,7 @@ export default {
       const ind_3_2_2_recordsDestination = section.ind_3_2_2_records.fields
 
       ind_3_1_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_3_1_1_records.fields[0]))
+        const recordEmpty = ind_3_1_1_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -143,7 +156,7 @@ export default {
       })
 
       ind_3_1_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_3_1_2_records.fields[0]))
+        const recordEmpty = ind_3_1_2_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -162,7 +175,7 @@ export default {
       })
 
       ind_3_2_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_3_2_1_records.fields[0]))
+        const recordEmpty = ind_3_2_1_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -181,7 +194,7 @@ export default {
       })
 
       ind_3_2_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_3_2_2_records.fields[0]))
+        const recordEmpty = ind_3_2_2_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -202,6 +215,7 @@ export default {
 
     prefillTab2(data, form) {
       const section = form.tabs.tab_2.form_fields
+
       const ind_4_1_1_recordsData = this.sanitizeSection(data, 'ind_4_1_1_records')
       const ind_4_1_1_recordsDestination = section.ind_4_1_1_records.fields
 
@@ -215,7 +229,7 @@ export default {
       const ind_4_3_recordsDestination = section.ind_4_3_records.fields
 
       ind_4_1_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_4_1_1_records.fields[0]))
+        const recordEmpty = ind_4_1_1_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -234,7 +248,7 @@ export default {
       })
 
       ind_4_1_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_4_1_2_records.fields[0]))
+        const recordEmpty = ind_4_1_2_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -253,7 +267,7 @@ export default {
       })
 
       ind_4_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_4_2_records.fields[0]))
+        const recordEmpty = ind_4_2_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -272,7 +286,7 @@ export default {
       })
 
       ind_4_3_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_4_3_records.fields[0]))
+        const recordEmpty = ind_4_3_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -293,6 +307,7 @@ export default {
 
     prefillTab3(data, form) {
       const section = form.tabs.tab_3.form_fields
+
       const ind_5_1_1_recordsData = this.sanitizeSection(data, 'ind_5_1_1_records')
       const ind_5_1_1_recordsDestination = section.ind_5_1_1_records.fields
 
@@ -303,7 +318,7 @@ export default {
       const ind_5_2_recordsDestination = section.ind_5_2_records.fields
 
       ind_5_1_1_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_5_1_1_records.fields[0]))
+        const recordEmpty = ind_5_1_1_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -322,7 +337,7 @@ export default {
       })
 
       ind_5_1_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_5_1_2_records.fields[0]))
+        const recordEmpty = ind_5_1_2_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {
@@ -341,7 +356,7 @@ export default {
       })
 
       ind_5_2_recordsData.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.ind_5_2_records.fields[0]))
+        const recordEmpty = ind_5_2_records_structure(record)
 
         Object.keys(recordEmpty).forEach(field => {
           if(recordEmpty.hasOwnProperty(field)) {

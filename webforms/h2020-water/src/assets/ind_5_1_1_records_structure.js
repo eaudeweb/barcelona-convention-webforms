@@ -1,13 +1,13 @@
 import mixing from './mixing'
 import area_type from './area-type'
 
-const ind_5_1_1_records_structure = () => ({
+const ind_5_1_1_records_structure = (data) => ({
   nationalStationID: {
     name: 'nationalStationID',
     label: 'Station code',
     tooltip: 'Use the former sampling guidelines provided by UNEP-MAP',
     type: 'text',
-    selected: null,
+    selected: data && data.nationalStationID || null,
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -18,7 +18,7 @@ const ind_5_1_1_records_structure = () => ({
     label: 'Name of the station',
     tooltip: 'Use the former sampling guidelines provided by UNEP-MAP',
     type: 'text',
-    selected: null,
+    selected: data && data.nationalStationName || null,
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -27,7 +27,7 @@ const ind_5_1_1_records_structure = () => ({
   longitude: {
     name: 'longitude',
     type: 'number',
-    selected: null,
+    selected: data && data.longitude || null,
     label: 'Longitude in the reference system WGS84 decimal degrees',
     tooltip: 'This is a required, not null field. Use the common geodetic datum WGS84. The bathing water must be located within country border.',
     get validation() {
@@ -40,7 +40,7 @@ const ind_5_1_1_records_structure = () => ({
   latitude: {
     name: 'latitude',
     type: 'number',
-    selected: null,
+    selected: data && data.latitude || null,
     label: 'Latitude in the reference system WGS84 decimal degrees',
     tooltip: 'This is a required, not null field. Use the common geodetic datum WGS84. The bathing water must be located within country border.',
     get validation() {
@@ -53,7 +53,7 @@ const ind_5_1_1_records_structure = () => ({
   closestCoast: {
     name: 'closestCoast',
     type: 'number',
-    selected: null,
+    selected: data && data.closestCoast || null,
     label: 'Distance from the station to the Coast (km)',
     tooltip: 'Measured distance between the station point and closest coast',
     get validation() {
@@ -64,7 +64,7 @@ const ind_5_1_1_records_structure = () => ({
   seaDepth: {
     name: 'seaDepth',
     type: 'number',
-    selected: null,
+    selected: data && data.seaDepth || null,
     label: 'Depth of the Sea bed (m)',
     tooltip: 'Measured distance between the Sea depth and the station point location',
     get validation() {
@@ -77,7 +77,7 @@ const ind_5_1_1_records_structure = () => ({
     label: 'Mixing characteristics of the water column in the station point',
     tooltip: 'Select a value from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.mixing || null,
     options: mixing.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -88,7 +88,7 @@ const ind_5_1_1_records_structure = () => ({
     label: 'Type of monitored area',
     tooltip: 'Select a value from the list.',
     type: 'select',
-    selected: null,
+    selected: data && data.areaType || null,
     options: area_type.map(p => ({text: `${p.text}`, value: p.value})),
     get validation() {
       return true
@@ -97,7 +97,7 @@ const ind_5_1_1_records_structure = () => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {

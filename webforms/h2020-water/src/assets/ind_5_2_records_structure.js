@@ -1,10 +1,10 @@
-const ind_5_2_records_structure = () => ({
+const ind_5_2_records_structure = (data) => ({
   bathingWaterName: {
     name: 'bathingWaterName',
     label: 'Name of bathing water',
     tooltip: 'Use the former sampling guidelines provided by UNEP-MAP',
     type: 'text',
-    selected: null,
+    selected: data && data.bathingWaterName || null,
     get validation() {
       if (this.selected && (this.selected.length < 1 || this.selected.length  > 100))
         return `${this.label} ${this.type === 'text' ? 'the length must be between 1 and 100' : ''}`
@@ -16,7 +16,7 @@ const ind_5_2_records_structure = () => ({
     tooltip: 'Must be ≤ 20 characters.\n' +
       'If Bathing Water Name ≤ 20 characters it can be used for ShortBathingWaterName as well.',
     type: 'text',
-    selected: null,
+    selected: data && data.shortBathingWaterName || null,
     get validation() {
       if (this.selected && (this.selected.length < 1 || this.selected.length  > 20))
         return `${this.label} ${this.type === 'text' ? 'the length must be between 1 and 20' : ''}`
@@ -27,7 +27,7 @@ const ind_5_2_records_structure = () => ({
     label: 'Unique identification code of bathing water',
     tooltip: 'This is a required, not null field. Must be unique according to each country guidance',
     type: 'text',
-    selected: null,
+    selected: data && data.bathingWaterID || null,
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -36,7 +36,7 @@ const ind_5_2_records_structure = () => ({
   Longitude_BW: {
     name: 'Longitude_BW',
     type: 'number',
-    selected: null,
+    selected: data && data.Longitude_BW || null,
     label: 'Longitude in the reference system WGS84 decimal degrees',
     tooltip: 'This is a required, not null field. Use the common geodetic datum WGS84. The bathing water must be located within country border.',
     get validation() {
@@ -49,7 +49,7 @@ const ind_5_2_records_structure = () => ({
   Latitude_BW: {
     name: 'Latitude_BW',
     type: 'number',
-    selected: null,
+    selected: data && data.Latitude_BW || null,
     label: 'Latitude in the reference system WGS84 decimal degrees',
     tooltip: 'This is a required, not null field. Use the common geodetic datum WGS84. The bathing water must be located within country border.',
     get validation() {
@@ -67,7 +67,7 @@ const ind_5_2_records_structure = () => ({
       'YYYY must be the same as attribute of Bathing_Sampling_Year  (YYYY)\n' +
       'Must be < End_Date',
     type: 'text',
-    selected: null,
+    selected: data && data.startDate || null,
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -81,7 +81,7 @@ const ind_5_2_records_structure = () => ({
       'YYYY must be the same as attribute of Bathing_Sampling_Year  (YYYY)\n' +
       'Must be > Start_Date',
     type: 'text',
-    selected: null,
+    selected: data && data.endDate || null,
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -93,7 +93,7 @@ const ind_5_2_records_structure = () => ({
     tooltip: 'his is a required, not null field.\n' +
       'Format: YYYY-MM-DD (year-month -day).',
     type: 'text',
-    selected: null,
+    selected: data && data.bathingSamplingTime || null,
     get validation() {
       if (!this.selected)
         return `${this.label} is required`
@@ -107,7 +107,7 @@ const ind_5_2_records_structure = () => ({
       '185 CFU: Sufficient\n' +
       '> 185: Poor',
     type: 'text',
-    selected: null,
+    selected: data && data.bathingClassificationUNEPMAPCriteria || null,
     get validation() {
       if (this.selected && (this.selected.length < 4 || this.selected.length  > 100))
         return `${this.label} ${this.type === 'text' ? 'the length must be between 4 and 100' : ''}`
@@ -118,7 +118,7 @@ const ind_5_2_records_structure = () => ({
     label: 'Classification of the bathing site when it differs from UNEP-MAP classification',
     tooltip: 'Provide the used Criteria and Standards (please provide the reference document)',
     type: 'text',
-    selected: null,
+    selected: data && data.otherBathingClassificationUsed || null,
     get validation() {
       if (this.selected && (this.selected.length < 4 || this.selected.length  > 100))
         return `${this.label} ${this.type === 'text' ? 'the length must be between 4 and 100' : ''}`
@@ -127,7 +127,7 @@ const ind_5_2_records_structure = () => ({
   concentrationIE: {
     name: 'concentrationIE',
     type: 'number',
-    selected: null,
+    selected: data && data.concentrationIE || null,
     label: 'Measured concentration of intestinal enterococci per sample in "colony forming unit" per 100 ml (cfu/100ml)',
     tooltip: 'This is a required, not null field.\n' +
       'Minimum value is minimal detection limit. Zero value is replaced by minimal detection limit. Upper detection limit: 35000 with 2 dilutions for all methods.',
@@ -141,7 +141,7 @@ const ind_5_2_records_structure = () => ({
   concentrationEC: {
     name: 'concentrationEC',
     type: 'number',
-    selected: null,
+    selected: data && data.concentrationEC || null,
     label: 'Measured concentration of Escherichia coli per sample in "colony forming unit" per 100 ml (cfu/100ml)',
     tooltip: 'This is a required, not null field.\n' +
       'Minimum value is minimal detection limit. Zero value is replaced by minimal detection limit. Upper detection limit: 35.000 with 2 dilutions for all methods.',
@@ -155,7 +155,7 @@ const ind_5_2_records_structure = () => ({
   remarks: {
     name: 'remarks',
     type: 'textarea',
-    selected: null,
+    selected: data && data.remarks || null,
     label: 'Remarks',
     tooltip: 'Remarks, comments or explanatory notes (free text)',
     get validation() {
