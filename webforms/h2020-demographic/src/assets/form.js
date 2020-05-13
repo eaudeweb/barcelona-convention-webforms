@@ -25,7 +25,7 @@ const form = (country, formData) => ({
       description: 'Demographic dataset',
       form_fields: {
         demographicdataset_records: {
-          fields: [dem_entry()]
+          fields: [dem_entry(formData)]
         }
       }
     }

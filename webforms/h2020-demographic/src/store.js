@@ -76,7 +76,7 @@ export default new Vuex.Store({
       state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.splice(row_index, 1)
     },
     addDemographicDataRow(state) {
-      state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.push(demographicData())
+      state.form.tabs.tab_1.form_fields.demographicdataset_records.fields.push(demographicData(state.formData))
     },
 
     setDataLoadingValue(state, {value}) {

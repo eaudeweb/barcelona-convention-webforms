@@ -30,6 +30,7 @@
 
 import Countrytab from './Country.vue'
 import Tab1 from './Tab1.vue'
+import demographicDataStructure from '@/assets/demographicData'
 
 import FormSubmit from './FormSubmit.vue'
 import {getInstance, getCountry} from '../api.js';
@@ -99,32 +100,12 @@ export default {
 
     prefillTab1(data, form) {
       const section = form.tabs.tab_1.form_fields
+
       const demographicData = this.sanitizeSection(data, 'demographicdataset_records')
       const demographicDestination = section.demographicdataset_records.fields
 
-      const mergedRecords = []
-
-      demographicData.forEach(record => {
-        const existing = mergedRecords.find(mergedRecords => mergedRecords.row_id === record.row_id && mergedRecords.year === record.year)
-        if(existing) {
-          existing.year = [...(Array.isArray(existing.year) ? existing.year: [existing.year]), record.year]
-        } else {
-          mergedRecords.push(record)
-        }
-      })
-
-      mergedRecords.forEach((record, index) => {
-        const recordEmpty = JSON.parse(JSON.stringify(section.demographicdataset_records.fields[0]))
-
-        Object.keys(recordEmpty).forEach(field => {
-          if(recordEmpty.hasOwnProperty(field)) {
-            if (field == 'year') {
-              recordEmpty.year.selected = record.year ? recordEmpty.year.options.find(p => p.value == record.year).value : null
-            } else {
-              recordEmpty[field].selected = record[field]
-            }
-          }
-        })
+      demographicData.forEach((record, index) => {
+        const recordEmpty = demographicDataStructure(record)
 
         if(index === 0) {
           demographicDestination.splice(0,1)

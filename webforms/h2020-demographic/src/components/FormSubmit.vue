@@ -112,13 +112,7 @@ export default {
     },
 
     storeTab1(data, emptyInstance, reportID) {
-      const structure = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))
       const section = data.tabs.tab_1.form_fields
-      structure.reportID = reportID
-
-      Object.keys(section).forEach(field => {
-        if (structure.hasOwnProperty(field)) structure[field] = section[field].selected
-      })
 
       section.demographicdataset_records.fields.forEach((row, row_index) => {
         const record = JSON.parse(JSON.stringify(this.structure.demographicdataset_records))

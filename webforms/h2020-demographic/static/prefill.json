@@ -1,5 +1,1 @@
-{
-  "H2020_DEM" : {
-    "noPrefillData": true
-  }
-}
+{"H2020_DEM":{"@xmlns":"https://dd.info-rac.org/namespaces/23","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","@xsi:schemaLocation":"https://dd.info-rac.org/namespaces/23  https://dd.info-rac.org/v2/dataset/25/schema-dst-25.xsd","demographicdataset":{"@xmlns":"https://dd.info-rac.org/namespaces/24","Row":{"reportID":"IT-2020","countryCode":"IT","reportingYear":2020}},"demographicdataset_records":{"@xmlns":"https://dd.info-rac.org/namespaces/25","Row":[{"reportID":"IT-2020","rowID":0,"year":2008,"totalPopulation":4,"urbanPopulation":4,"ruralPopulation":5,"Total_Pop_Coast_Hydro_Basin":6,"Urban_Pop_Coast_Hydro_Basin":78,"Rural_Pop_Coast_Hydro_Basin":8,"Total_Pop_more_2000_Inhabitants_Hydro_Coast":9,"Total_Pop_more_2000_Inhabitants_Coast":2,"Total_Pop_Coast":1},{"reportID":"IT-2020","rowID":1,"year":2006,"totalPopulation":1,"urbanPopulation":3,"ruralPopulation":45,"Total_Pop_Coast_Hydro_Basin":5,"Urban_Pop_Coast_Hydro_Basin":7,"Rural_Pop_Coast_Hydro_Basin":8,"Total_Pop_more_2000_Inhabitants_Hydro_Coast":9,"Total_Pop_more_2000_Inhabitants_Coast":2,"Total_Pop_Coast":3}]}}}
