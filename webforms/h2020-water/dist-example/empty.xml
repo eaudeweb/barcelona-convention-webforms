@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<H2020_WATER xmlns="https://dd.info-rac.org/namespaces/29" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="https://dd.info-rac.org/namespaces/29  https://dd.info-rac.org/v2/dataset/29/schema-dst-29.xsd">
+<H2020_WATER xmlns="https://dd.info-rac.org/namespaces/29" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://dd.info-rac.org/namespaces/29  https://dd.info-rac.org/v2/dataset/29/schema-dst-29.xsd">
   <waterindicators xmlns="https://dd.info-rac.org/namespaces/31">
     <Row>
       <reportID/>
@@ -13,9 +12,6 @@
       <reportID/>
       <rowID/>
       <year/>
-      <totalPopulation/>
-      <urbanPopulation/>
-      <ruralPopulation/>
       <Total_Population_ISS/>
       <Urban_Population_ISS/>
       <Rural_Population_ISS/>
@@ -29,9 +25,6 @@
       <rowID/>
       <hydrologicalBasin/>
       <year/>
-      <Total_Pop_Coast_Hydro_Basin/>
-      <Urban_Pop_Coast_Hydro_Basin/>
-      <Rural_Pop_Coast_Hydro_Basin/>
       <Total_Pop_Coast_ISS/>
       <Urban_Pop_Coast_ISS/>
       <Rural_Pop_Coast_ISS/>
@@ -44,9 +37,6 @@
       <reportID/>
       <rowID/>
       <year/>
-      <totalPopulation/>
-      <urbanPopulation/>
-      <ruralPopulation/>
       <Total_Population_SMSS/>
       <Urban_Population_SMSS/>
       <Rural_Population_SMSS/>
@@ -60,9 +50,6 @@
       <rowID/>
       <hydrologicalBasin/>
       <year/>
-      <Total_Pop_Coast_Hydro_Basin/>
-      <Urban_Pop_Coast_Hydro_Basin/>
-      <Rural_Pop_Coast_Hydro_Basin/>
       <Total_Pop_Coast_SMSS/>
       <Urban_Pop_Coast_SMSS/>
       <Rural_Pop_Coast_SMSS/>
@@ -130,9 +117,6 @@
       <hydrologicalBasin/>
       <coastalAgglomeration/>
       <year/>
-      <Total_Pop_Coast_Hydro_Basin/>
-      <Total_Pop_more_2000_Inhabitants_Hydro_Coast/>
-      <Total_Pop_more_2000_Inhabitants_Coast/>
       <Total_UWW_Generated_Hydro_Coast/>
       <Total_UWW_Generated_Coast/>
       <Total_Volume_Discharged_MWWTP_Hydro_Coast/>

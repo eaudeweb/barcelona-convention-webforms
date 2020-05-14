@@ -14,39 +14,6 @@ const ind_3_2_1_records_structure = (data) => ({
         return `${this.label} is required`
     }
   },
-  totalPopulation: {
-    name: 'totalPopulation',
-    type: 'number',
-    selected: data && data.totalPopulation || null,
-    label: 'Total population',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
-  urbanPopulation: {
-    name: 'urbanPopulation',
-    type: 'number',
-    selected: data && data.urbanPopulation || null,
-    label: 'Urban population',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
-  ruralPopulation: {
-    name: 'ruralPopulation',
-    type: 'number',
-    selected: data && data.ruralPopulation || null,
-    label: 'Rural population',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
   Total_Population_SMSS: {
     name: 'Total_Population_SMSS',
     type: 'number',

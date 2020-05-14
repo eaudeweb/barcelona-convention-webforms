@@ -38,9 +38,6 @@
             reportID: null,
             rowID: null,
             year: null,
-            totalPopulation: null,
-            urbanPopulation: null,
-            ruralPopulation: null,
             Total_Population_ISS: null,
             Urban_Population_ISS: null,
             Rural_Population_ISS: null,
@@ -52,9 +49,6 @@
             rowID: null,
             hydrologicalBasin: null,
             year: null,
-            Total_Pop_Coast_Hydro_Basin: null,
-            Urban_Pop_Coast_Hydro_Basin: null,
-            Rural_Pop_Coast_Hydro_Basin: null,
             Total_Pop_Coast_ISS: null,
             Urban_Pop_Coast_ISS: null,
             Rural_Pop_Coast_ISS: null,
@@ -65,9 +59,6 @@
             reportID: null,
             rowID: null,
             year: null,
-            totalPopulation: null,
-            urbanPopulation: null,
-            ruralPopulation: null,
             Urban_Population_SMSS: null,
             Rural_Population_SMSS: null,
             water_collection_method: null,
@@ -78,9 +69,6 @@
             rowID: null,
             hydrologicalBasin: null,
             year: null,
-            Total_Pop_Coast_Hydro_Basin: null,
-            Urban_Pop_Coast_Hydro_Basin: null,
-            Rural_Pop_Coast_Hydro_Basin: null,
             Total_Pop_Coast_SMSS: null,
             Urban_Pop_Coast_SMSS: null,
             Rural_Pop_Coast_SMSS: null,
@@ -140,9 +128,6 @@
             hydrologicalBasin: null,
             coastalAgglomeration: null,
             year: null,
-            Total_Pop_Coast_Hydro_Basin: null,
-            Total_Pop_more_2000_Inhabitants_Hydro_Coast: null,
-            Total_Pop_more_2000_Inhabitants_Coast: null,
             Total_UWW_Generated_Hydro_Coast: null,
             Total_UWW_Generated_Coast: null,
             Total_Volume_Discharged_MWWTP_Hydro_Coast: null,
@@ -318,9 +303,6 @@
           record.reportID = reportID
           record.rowID = row_index
           record.year = row.year.selected
-          record.totalPopulation = row.totalPopulation.selected
-          record.urbanPopulation = row.urbanPopulation.selected
-          record.ruralPopulation = row.ruralPopulation.selected
           record.Total_Population_ISS = row.Total_Population_ISS.selected
           record.Urban_Population_ISS = row.Urban_Population_ISS.selected
           record.Rural_Population_ISS = row.Rural_Population_ISS.selected
@@ -335,9 +317,6 @@
           record.rowID = row_index
           record.hydrologicalBasin = row.hydrologicalBasin.selected
           record.year = row.year.selected
-          record.Total_Pop_Coast_Hydro_Basin = row.Total_Pop_Coast_Hydro_Basin.selected
-          record.Urban_Pop_Coast_Hydro_Basin = row.Urban_Pop_Coast_Hydro_Basin.selected
-          record.Rural_Pop_Coast_Hydro_Basin = row.Rural_Pop_Coast_Hydro_Basin.selected
           record.Total_Pop_Coast_ISS = row.Total_Pop_Coast_ISS.selected
           record.Urban_Pop_Coast_ISS = row.Urban_Pop_Coast_ISS.selected
           record.Rural_Pop_Coast_ISS = row.Rural_Pop_Coast_ISS.selected
@@ -351,9 +330,6 @@
           record.reportID = reportID
           record.rowID = row_index
           record.year = row.year.selected
-          record.totalPopulation = row.totalPopulation.selected
-          record.urbanPopulation = row.urbanPopulation.selected
-          record.ruralPopulation = row.ruralPopulation.selected
           record.Total_Population_SMSS = row.Total_Population_SMSS.selected
           record.Urban_Population_SMSS = row.Urban_Population_SMSS.selected
           record.Rural_Population_SMSS = row.Rural_Population_SMSS.selected
@@ -368,9 +344,6 @@
           record.rowID = row_index
           record.hydrologicalBasin = row.hydrologicalBasin.selected
           record.year = row.year.selected
-          record.Total_Pop_Coast_Hydro_Basin = row.Total_Pop_Coast_Hydro_Basin.selected
-          record.Urban_Pop_Coast_Hydro_Basin = row.Urban_Pop_Coast_Hydro_Basin.selected
-          record.Rural_Pop_Coast_Hydro_Basin = row.Rural_Pop_Coast_Hydro_Basin.selected
           record.Total_Pop_Coast_SMSS = row.Total_Pop_Coast_SMSS.selected
           record.Urban_Pop_Coast_SMSS = row.Urban_Pop_Coast_SMSS.selected
           record.Rural_Pop_Coast_SMSS = row.Rural_Pop_Coast_SMSS.selected
@@ -446,9 +419,6 @@
           record.hydrologicalBasin = row.hydrologicalBasin.selected
           record.coastalAgglomeration = row.coastalAgglomeration.selected
           record.year = row.year.selected
-          record.Total_Pop_Coast_Hydro_Basin = row.Total_Pop_Coast_Hydro_Basin.selected
-          record.Total_Pop_more_2000_Inhabitants_Hydro_Coast = row.Total_Pop_more_2000_Inhabitants_Hydro_Coast.selected
-          record.Total_Pop_more_2000_Inhabitants_Coast = row.Total_Pop_more_2000_Inhabitants_Coast.selected
           record.Total_UWW_Generated_Hydro_Coast = row.Total_UWW_Generated_Hydro_Coast.selected
           record.Total_UWW_Generated_Coast = row.Total_UWW_Generated_Coast.selected
           record.Total_Volume_Discharged_MWWTP_Hydro_Coast = row.Total_Volume_Discharged_MWWTP_Hydro_Coast.selected

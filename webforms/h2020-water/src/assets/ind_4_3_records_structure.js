@@ -41,39 +41,6 @@ const ind_4_3_records_structure = (data) => ({
         return `${this.label} is required`
     }
   },
-  Total_Pop_Coast_Hydro_Basin: {
-    name: 'Total_Pop_Coast_Hydro_Basin',
-    type: 'number',
-    selected: data && data.Total_Pop_Coast_Hydro_Basin || null,
-    label: 'Total population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
-  Total_Pop_more_2000_Inhabitants_Hydro_Coast: {
-    name: 'Total_Pop_more_2000_Inhabitants_Hydro_Coast',
-    type: 'number',
-    selected: data && data.Total_Pop_more_2000_Inhabitants_Hydro_Coast || null,
-    label: 'Total population in agglomerations ≥ 2000 inhabitants located within the hydrological basin of coastal areas and within coastal areas that discharge directly in the Mediterranean (in case total population in coastal areas and coastal hydrological basins is not available)',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
-  Total_Pop_more_2000_Inhabitants_Coast: {
-    name: 'Total_Pop_more_2000_Inhabitants_Coast',
-    type: 'number',
-    selected: data && data.Total_Pop_more_2000_Inhabitants_Coast || null,
-    label: 'Total population living in coastal agglomerations ≥ 2000 inhabitants',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
   Total_UWW_Generated_Hydro_Coast: {
     name: 'Total_UWW_Generated_Hydro_Coast',
     type: 'number',

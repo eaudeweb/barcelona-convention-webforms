@@ -27,39 +27,6 @@ const ind_3_1_2_records_structure = (data) => ({
         return `${this.label} is required`
     }
   },
-  Total_Pop_Coast_Hydro_Basin: {
-    name: 'Total_Pop_Coast_Hydro_Basin',
-    type: 'number',
-    selected: data && data.Total_Pop_Coast_Hydro_Basin || null,
-    label: 'Total population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
-  Urban_Pop_Coast_Hydro_Basin: {
-    name: 'Urban_Pop_Coast_Hydro_Basin',
-    type: 'number',
-    selected: data && data.Urban_Pop_Coast_Hydro_Basin || null,
-    label: 'Urban population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
-  Rural_Pop_Coast_Hydro_Basin: {
-    name: 'Rural_Pop_Coast_Hydro_Basin',
-    type: 'number',
-    selected: data && data.Rural_Pop_Coast_Hydro_Basin || null,
-    label: 'Rural population living in the coastal area and in the hydrological basins (catchment) of coastal areas',
-    tooltip: 'The population as of the reference year',
-    get validation() {
-      if (this.selected && (this.selected < 1 || this.selected > 1000000000))
-        return `${this.label} ${this.type === 'number' ? 'can only contain numeric characters and must be between 1 and 1000000000' : ''}`
-    }
-  },
   Total_Pop_Coast_ISS: {
     name: 'Total_Pop_Coast_ISS',
     type: 'number',
