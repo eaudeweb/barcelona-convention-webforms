@@ -29,7 +29,7 @@ const ind_1_D_records_structure = (data) => ({
     name: 'touristStaysOvernight',
     type: 'number',
     selected: data && data.touristStaysOvernight || null,
-    label: 'No. of time of  tourist stays overnight in Costal area',
+    label: 'Number of tourist overnight stays the administrative regions per referenced year',
     tooltip: 'Number of tourist overnight stays the administrative regions per referenced year.',
     get validation() {
       if (this.selected && (this.selected < 1 || this.selected > 1000000000))

@@ -30,7 +30,7 @@ const ind_2_B_records_structure = (adminRegions, data) => ({
     name: 'noDumpsitesCoastalAdminRegions',
     type: 'number',
     selected: data && data.noDumpsitesCoastalAdminRegions || null,
-    label: 'Administrative regions located in coastal administrative regions',
+    label: 'Number of Dumpsites in coastal administrative regions',
     tooltip: 'Number of dumpsites which are Administrative regions within 100 km zone of the coast.',
     get validation() {
       if (this.selected && (this.selected < 1 || this.selected > 100))
