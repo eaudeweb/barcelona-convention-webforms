@@ -199,6 +199,17 @@
     "fileType": "FILE"
   },
   {
+    "title": "JO_adminRegions.json",
+    "file":
+    {
+     "name": "JO_adminRegions.json"
+    },
+    "active": false,
+    "localForm": false,
+    "remoteForm": false,
+    "fileType": "FILE"
+  },
+  {
     "title": "IT_adminRegions.json",
     "file":
     {
