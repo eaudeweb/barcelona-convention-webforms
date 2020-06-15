@@ -1,63 +1,50 @@
 [
   {
-    "text": "Peqini",
-    "value": "Peqini"
+    "text": "Berat",
+    "value": "Berat"
   },
   {
-    "text": "Vlora",
-    "value": "Vlora"
+    "text": "Dibër",
+    "value": "Dibër"
   },
   {
-    "text": "Saranda",
-    "value": "Saranda"
-  },
-  {
-    "text": "Delvina",
-    "value": "Delvina"
-  },
-  {
-    "text": "Kavaja",
-    "value": "Kavaja"
-  },
-  {
-    "text": "Fieri",
-    "value": "Fieri"
-  },
-  {
-    "text": "Kruja",
-    "value": "Kruja"
-  },
-  {
-    "text": "Durres",
-    "value": "Durres"
-  },
-  {
-    "text": "Kurbini",
-    "value": "Kurbini"
-  },
-  {
-    "text": "Lushnja",
-    "value": "Lushnja"
-  },
-  {
-    "text": "Mallakastra",
-    "value": "Mallakastra"
+    "text": "Durrës",
+    "value": "Durrës"
   },
   {
     "text": "Elbasan",
     "value": "Elbasan"
   },
   {
-    "text": "Shkodra",
-    "value": "Shkodra"
+    "text": "Fier",
+    "value": "Fier"
   },
   {
-    "text": "Lezha",
-    "value": "Lezha"
+    "text": "Gjirokastër",
+    "value": "Gjirokastër"
   },
   {
-    "text": "Tirana",
-    "value": "Tirana"
+    "text": "Korçë",
+    "value": "Korçë"
+  },
+  {
+    "text": "Kukës",
+    "value": "Kukës"
+  },
+  {
+    "text": "Lezhë",
+    "value": "Lezhë"
+  },
+  {
+    "text": "Shkodër",
+    "value": "Shkodër"
+  },
+  {
+    "text": "Tiranë",
+    "value": "Tiranë"
+  },
+  {
+    "text": "Vlorë",
+    "value": "Vlorë"
   }
 ]
-

@@ -1,15 +1,51 @@
 [
   {
-    "text": "Nador",
-    "value": "Nador"
+    "text": "Béni Mellal-Khénifra",
+    "value": "Béni Mellal-Khénifra"
   },
   {
-    "text": "Tanger",
-    "value": "Tanger"
+    "text": "Casablanca-Settat",
+    "value": "Casablanca-Settat"
   },
   {
-    "text": "Tetouan",
-    "value": "Tetouan"
+    "text": "Drâa-Tafilalet",
+    "value": "Drâa-Tafilalet"
+  },
+  {
+    "text": "Dakhla-Oued Ed Dahab",
+    "value": "Dakhla-Oued Ed Dahab"
+  },
+  {
+    "text": "Fès-Meknès",
+    "value": "Fès-Meknès"
+  },
+  {
+    "text": "Guelmim-Oued Noun",
+    "value": "Guelmim-Oued Noun"
+  },
+  {
+    "text": "Laâyoune-Sakia El Hamra",
+    "value": "Laâyoune-Sakia El Hamra"
+  },
+  {
+    "text": "Marrakech-Safi",
+    "value": "Marrakech-Safi"
+  },
+  {
+    "text": "l'Oriental",
+    "value": "l'Oriental"
+  },
+  {
+    "text": "Rabat-Salé-Kénitra",
+    "value": "Rabat-Salé-Kénitra"
+  },
+  {
+    "text": "Souss-Massa",
+    "value": "Souss-Massa"
+  },
+  {
+    "text": "Tanger-Tétouan-Al Hoceïma",
+    "value": "Tanger-Tétouan-Al Hoceïma"
   }
 ]
 

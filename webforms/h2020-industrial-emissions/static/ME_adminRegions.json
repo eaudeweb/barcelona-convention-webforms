@@ -1,27 +1,87 @@
 [
   {
+    "text": "Andrijevica",
+    "value": "Andrijevica"
+  },
+  {
+    "text": "Bar",
+    "value": "Bar"
+  },
+  {
+    "text": "Berane",
+    "value": "Berane"
+  },
+  {
+    "text": "Bijelo Polje",
+    "value": "Bijelo Polje"
+  },
+  {
     "text": "Budva",
     "value": "Budva"
   },
   {
-    "text": "Ulcinj",
-    "value": "Ulcinj"
+    "text": "Cetinje",
+    "value": "Cetinje"
   },
   {
-    "text": "Tivat",
-    "value": "Tivat"
-  },
-  {
-    "text": "Kotor",
-    "value": "Kotor"
+    "text": "Danilovgrad",
+    "value": "Danilovgrad"
   },
   {
     "text": "Herceg Novi",
     "value": "Herceg Novi"
   },
   {
-    "text": "Bar",
-    "value": "Bar"
+    "text": "Kolašin",
+    "value": "Kolašin"
+  },
+  {
+    "text": "Kotor",
+    "value": "Kotor"
+  },
+  {
+    "text": "Mojkovac",
+    "value": "Mojkovac"
+  },
+  {
+    "text": "Nikšic",
+    "value": "Nikšic"
+  },
+  {
+    "text": "Plav",
+    "value": "Plav"
+  },
+  {
+    "text": "Pljevlja",
+    "value": "Pljevlja"
+  },
+  {
+    "text": "Plužine",
+    "value": "Plužine"
+  },
+  {
+    "text": "Podgorica",
+    "value": "Podgorica"
+  },
+  {
+    "text": "Rožaje",
+    "value": "Rožaje"
+  },
+  {
+    "text": "Šavnik",
+    "value": "Šavnik"
+  },
+  {
+    "text": "Tivat",
+    "value": "Tivat"
+  },
+  {
+    "text": "Ulcinj",
+    "value": "Ulcinj"
+  },
+  {
+    "text": "Žabljak",
+    "value": "Žabljak"
   }
 ]
 

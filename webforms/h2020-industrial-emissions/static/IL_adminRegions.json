@@ -1,6 +1,30 @@
 [
   {
-    "text": "Israel",
-    "value": "Israel"
+    "text": "Golan",
+    "value": "Golan"
+  },
+  {
+    "text": "HaDarom",
+    "value": "HaDarom"
+  },
+  {
+    "text": "Haifa",
+    "value": "Haifa"
+  },
+  {
+    "text": "HaMerkaz",
+    "value": "HaMerkaz"
+  },
+  {
+    "text": "HaZafon",
+    "value": "HaZafon"
+  },
+  {
+    "text": "Jerusalem",
+    "value": "Jerusalem"
+  },
+  {
+    "text": "Tel Aviv",
+    "value": "Tel Aviv"
   }
 ]

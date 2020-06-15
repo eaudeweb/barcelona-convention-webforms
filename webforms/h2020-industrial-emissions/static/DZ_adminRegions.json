@@ -1,58 +1,194 @@
 [
   {
-    "text": "El Tarf",
-    "value": "El Tarf"
+    "text": "Adrar",
+    "value": "Adrar"
   },
   {
-    "text": "Tlemcen",
-    "value": "Tlemcen"
+    "text": "Aïn Defla",
+    "value": "Aïn Defla"
   },
   {
-    "text": "Ain Temouchent",
-    "value": "Ain Temouchent"
-  },
-  {
-    "text": "Oran",
-    "value": "Oran"
-  },
-  {
-    "text": "Mostaganem",
-    "value": "Mostaganem"
-  },
-  {
-    "text": "Chlef",
-    "value": "Chlef"
-  },
-  {
-    "text": "Tipaza",
-    "value": "Tipaza"
+    "text": "Aïn Témouchent",
+    "value": "Aïn Témouchent"
   },
   {
     "text": "Alger",
     "value": "Alger"
   },
   {
-    "text": "Boumerdes",
-    "value": "Boumerdes"
+    "text": "Annaba",
+    "value": "Annaba"
   },
   {
-    "text": "Tizi Ouzou",
-    "value": "Tizi Ouzou"
+    "text": "Batna",
+    "value": "Batna"
   },
   {
-    "text": "Bejaia",
-    "value": "Bejaia"
+    "text": "Béchar",
+    "value": "Béchar"
+  },
+  {
+    "text": "Béjaïa",
+    "value": "Béjaïa"
+  },
+  {
+    "text": "Biskra",
+    "value": "Biskra"
+  },
+  {
+    "text": "Blida",
+    "value": "Blida"
+  },
+  {
+    "text": "Bordj Bou Arréridj",
+    "value": "Bordj Bou Arréridj"
+  },
+  {
+    "text": "Bouira",
+    "value": "Bouira"
+  },
+  {
+    "text": "Boumerdès",
+    "value": "Boumerdès"
+  },
+  {
+    "text": "Chlef",
+    "value": "Chlef"
+  },
+  {
+    "text": "Constantine",
+    "value": "Constantine"
+  },
+  {
+    "text": "Djelfa",
+    "value": "Djelfa"
+  },
+  {
+    "text": "El Bayadh",
+    "value": "El Bayadh"
+  },
+  {
+    "text": "El Oued",
+    "value": "El Oued"
+  },
+  {
+    "text": "El Tarf",
+    "value": "El Tarf"
+  },
+  {
+    "text": "Ghardaïa",
+    "value": "Ghardaïa"
+  },
+  {
+    "text": "Guelma",
+    "value": "Guelma"
+  },
+  {
+    "text": "Illizi",
+    "value": "Illizi"
   },
   {
     "text": "Jijel",
     "value": "Jijel"
   },
   {
+    "text": "Khenchela",
+    "value": "Khenchela"
+  },
+  {
+    "text": "Laghouat",
+    "value": "Laghouat"
+  },
+  {
+    "text": "Mascara",
+    "value": "Mascara"
+  },
+  {
+    "text": "Médéa",
+    "value": "Médéa"
+  },
+  {
+    "text": "Mila",
+    "value": "Mila"
+  },
+  {
+    "text": "Mostaganem",
+    "value": "Mostaganem"
+  },
+  {
+    "text": "M'Sila",
+    "value": "M'Sila"
+  },
+  {
+    "text": "Naâma",
+    "value": "Naâma"
+  },
+  {
+    "text": "Oran",
+    "value": "Oran"
+  },
+  {
+    "text": "Ouargla",
+    "value": "Ouargla"
+  },
+  {
+    "text": "Oum el Bouaghi",
+    "value": "Oum el Bouaghi"
+  },
+  {
+    "text": "Relizane",
+    "value": "Relizane"
+  },
+  {
+    "text": "Saïda",
+    "value": "Saïda"
+  },
+  {
+    "text": "Sétif",
+    "value": "Sétif"
+  },
+  {
+    "text": "Sidi Bel Abbès",
+    "value": "Sidi Bel Abbès"
+  },
+  {
     "text": "Skikda",
     "value": "Skikda"
   },
   {
-    "text": "Annaba",
-    "value": "Annaba"
+    "text": "Souk Ahras",
+    "value": "Souk Ahras"
+  },
+  {
+    "text": "Tamanghasset",
+    "value": "Tamanghasset"
+  },
+  {
+    "text": "Tébessa",
+    "value": "Tébessa"
+  },
+  {
+    "text": "Tiaret",
+    "value": "Tiaret"
+  },
+  {
+    "text": "Tindouf",
+    "value": "Tindouf"
+  },
+  {
+    "text": "Tipaza",
+    "value": "Tipaza"
+  },
+  {
+    "text": "Tissemsilt",
+    "value": "Tissemsilt"
+  },
+  {
+    "text": "Tizi Ouzou",
+    "value": "Tizi Ouzou"
+  },
+  {
+    "text": "Tlemcen",
+    "value": "Tlemcen"
   }
 ]

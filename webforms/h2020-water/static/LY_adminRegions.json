@@ -1,40 +1,91 @@
 [
   {
-    "text": "Alnigat Alkhams",
-    "value": "Alnigat Alkhams"
-  },{
-    "text": "Sirt",
-    "value": "Sirt"
-  },{
-    "text": "Ajdabiya",
-    "value": "Ajdabiya"
-  },{
-    "text": "Tripoli",
-    "value": "Tripoli"
-  },{
-    "text": "Dernah",
-    "value": "Dernah"
-  },{
-    "text": "Azzawiya",
-    "value": "Azzawiya"
-  },{
-    "text": "Al jifarah",
-    "value": "Al jifarah"
-  },{
-    "text": "Al batnan",
-    "value": "Al batnan"
-  },{
-    "text": "Misratah",
-    "value": "Misratah"
-  },{
-    "text": "Al Khums",
-    "value": "Al Khums"
-  },{
+    "text": "Al Butnan",
+    "value": "Al Butnan"
+  },
+  {
+    "text": "Al Jabal al Akhdar",
+    "value": "Al Jabal al Akhdar"
+  },
+  {
+    "text": "Al Jabal al Gharbi",
+    "value": "Al Jabal al Gharbi"
+  },
+  {
+    "text": "Al Jifarah",
+    "value": "Al Jifarah"
+  },
+  {
+    "text": "Al Jufrah",
+    "value": "Al Jufrah"
+  },
+  {
+    "text": "Al Kufrah",
+    "value": "Al Kufrah"
+  },
+  {
+    "text": "Al Marj",
+    "value": "Al Marj"
+  },
+  {
+    "text": "Al Marqab",
+    "value": "Al Marqab"
+  },
+  {
+    "text": "Al Wahat",
+    "value": "Al Wahat"
+  },
+  {
+    "text": "An Nuqat al Khams",
+    "value": "An Nuqat al Khams"
+  },
+  {
+    "text": "Az Zawiyah",
+    "value": "Az Zawiyah"
+  },
+  {
     "text": "Benghazi",
     "value": "Benghazi"
-  },{
-    "text": "Alnigat ilkamse",
-    "value": "Alnigat ilkamse"
+  },
+  {
+    "text": "Darnah",
+    "value": "Darnah"
+  },
+  {
+    "text": "Ghat",
+    "value": "Ghat"
+  },
+  {
+    "text": "Misratah",
+    "value": "Misratah"
+  },
+  {
+    "text": "Murzuq",
+    "value": "Murzuq"
+  },
+  {
+    "text": "Nalut",
+    "value": "Nalut"
+  },
+  {
+    "text": "Sabha",
+    "value": "Sabha"
+  },
+  {
+    "text": "Surt",
+    "value": "Surt"
+  },
+  {
+    "text": "Tripoli",
+    "value": "Tripoli"
+  },
+  {
+    "text": "Wadi al Hayat",
+    "value": "Wadi al Hayat"
+  },
+  {
+    "text": "Wadi ash Shati'",
+    "value": "Wadi ash Shati'"
   }
 ]
 

@@ -1,7 +1,11 @@
 [
   {
-    "text": "Wadi Gaza",
-    "value": "Wadi Gaza"
+    "text": "Gaza",
+    "value": "Gaza"
+  },
+  {
+    "text": "West Bank",
+    "value": "West Bank"
   }
 ]
 

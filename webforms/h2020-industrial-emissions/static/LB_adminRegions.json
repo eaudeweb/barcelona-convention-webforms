@@ -1,6 +1,34 @@
 [
   {
-    "text": "Lebanon",
-    "value": "Lebanon"
+    "text": "Akkar",
+    "value": "Akkar"
+  },
+  {
+    "text": "Baalbak - Hermel",
+    "value": "Baalbak - Hermel"
+  },
+  {
+    "text": "Beirut",
+    "value": "Beirut"
+  },
+  {
+    "text": "Bekaa",
+    "value": "Bekaa"
+  },
+  {
+    "text": "Mount Lebanon",
+    "value": "Mount Lebanon"
+  },
+  {
+    "text": "Nabatiyeh",
+    "value": "Nabatiyeh"
+  },
+  {
+    "text": "North",
+    "value": "North"
+  },
+  {
+    "text": "South",
+    "value": "South"
   }
 ]

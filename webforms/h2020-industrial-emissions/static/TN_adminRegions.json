@@ -1,47 +1,99 @@
 [
   {
-    "text": "Gabes",
-    "value": "Gabes"
+    "text": "Ariana",
+    "value": "Ariana"
   },
   {
-    "text": "Sfax",
-    "value": "Sfax"
+    "text": "Béja",
+    "value": "Béja"
+  },
+  {
+    "text": "Ben Arous (Tunis Sud)",
+    "value": "Ben Arous (Tunis Sud)"
   },
   {
     "text": "Bizerte",
     "value": "Bizerte"
   },
   {
+    "text": "Gabès",
+    "value": "Gabès"
+  },
+  {
+    "text": "Gafsa",
+    "value": "Gafsa"
+  },
+  {
+    "text": "Jendouba",
+    "value": "Jendouba"
+  },
+  {
+    "text": "Kairouan",
+    "value": "Kairouan"
+  },
+  {
+    "text": "Kassérine",
+    "value": "Kassérine"
+  },
+  {
+    "text": "Kebili",
+    "value": "Kebili"
+  },
+  {
+    "text": "Le Kef",
+    "value": "Le Kef"
+  },
+  {
     "text": "Mahdia",
     "value": "Mahdia"
   },
   {
-    "text": "Sousse",
-    "value": "Sousse"
+    "text": "Manubah",
+    "value": "Manubah"
   },
   {
-    "text": "Ariana-M",
-    "value": "Ariana-M"
-  },
-  {
-    "text": "Nabeul",
-    "value": "Nabeul"
-  },
-  {
-    "text": "Ben Arous",
-    "value": "Ben Arous"
+    "text": "Médenine",
+    "value": "Médenine"
   },
   {
     "text": "Monastir",
     "value": "Monastir"
   },
   {
-    "text": "Medenine",
-    "value": "Medenine"
+    "text": "Nabeul",
+    "value": "Nabeul"
+  },
+  {
+    "text": "Sfax",
+    "value": "Sfax"
+  },
+  {
+    "text": "Sidi Bou Zid",
+    "value": "Sidi Bou Zid"
+  },
+  {
+    "text": "Siliana",
+    "value": "Siliana"
+  },
+  {
+    "text": "Sousse",
+    "value": "Sousse"
+  },
+  {
+    "text": "Tataouine",
+    "value": "Tataouine"
+  },
+  {
+    "text": "Tozeur",
+    "value": "Tozeur"
   },
   {
     "text": "Tunis",
     "value": "Tunis"
+  },
+  {
+    "text": "Zaghouan",
+    "value": "Zaghouan"
   }
 ]
 
