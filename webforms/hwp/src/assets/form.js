@@ -989,6 +989,16 @@ var form = {
               type: 'text',
               name: '2017',
               selected: '',
+            }, {
+              label: '2018',
+              type: 'text',
+              name: '2018',
+              selected: '',
+            }, {
+              label: '2019',
+              type: 'text',
+              name: '2019',
+              selected: '',
             }]
           },
           {
@@ -1015,6 +1025,16 @@ var form = {
               type: 'text',
               name: '2017',
               selected: '',
+            }, {
+              label: '2018',
+              type: 'text',
+              name: '2018',
+              selected: '',
+            }, {
+              label: '2019',
+              type: 'text',
+              name: '2019',
+              selected: '',
             }]
           },
           {
@@ -1040,6 +1060,16 @@ var form = {
               label: '2017',
               type: 'text',
               name: '2017',
+              selected: '',
+            }, {
+              label: '2018',
+              type: 'text',
+              name: '2018',
+              selected: '',
+            }, {
+              label: '2019',
+              type: 'text',
+              name: '2019',
               selected: '',
             }]
           }
@@ -1081,6 +1111,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7022,
@@ -1112,6 +1152,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1145,6 +1195,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7024,
@@ -1176,6 +1236,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1209,6 +1279,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7026,
@@ -1240,6 +1320,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1273,6 +1363,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7028,
@@ -1304,6 +1404,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1337,6 +1447,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7030,
@@ -1368,6 +1488,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1401,6 +1531,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7032,
@@ -1432,6 +1572,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1465,6 +1615,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7034,
@@ -1496,6 +1656,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1529,6 +1699,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7036,
@@ -1560,6 +1740,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1593,6 +1783,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7038,
@@ -1624,6 +1824,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1657,6 +1867,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7040,
@@ -1688,6 +1908,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1721,6 +1951,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7042,
@@ -1752,6 +1992,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1785,6 +2035,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7044,
@@ -1816,6 +2076,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1849,6 +2119,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7046,
@@ -1880,6 +2160,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1913,6 +2203,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7048,
@@ -1944,6 +2244,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -1977,6 +2287,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7050,
@@ -2008,6 +2328,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2041,6 +2371,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7052,
@@ -2072,6 +2412,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2105,6 +2455,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7054,
@@ -2136,6 +2496,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2169,6 +2539,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7056,
@@ -2200,6 +2580,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2233,6 +2623,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7058,
@@ -2264,6 +2664,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2297,6 +2707,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7060,
@@ -2328,6 +2748,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2361,6 +2791,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7062,
@@ -2392,6 +2832,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2425,6 +2875,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7064,
@@ -2456,6 +2916,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, {
@@ -2489,6 +2959,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7066,
@@ -2521,6 +3001,16 @@ var form = {
             type: 'text',
             name: '2017',
             selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
+            selected: '',
           }]
         }, {
           collection_id: 7067,
@@ -2552,6 +3042,16 @@ var form = {
             label: '2017',
             type: 'text',
             name: '2017',
+            selected: '',
+          }, {
+            label: '2018',
+            type: 'text',
+            name: '2018',
+            selected: '',
+          }, {
+            label: '2019',
+            type: 'text',
+            name: '2019',
             selected: '',
           }]
         }, ]
