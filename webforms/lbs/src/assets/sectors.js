@@ -33,4 +33,4 @@ var sectors = [
   { text: "Factories that cause physical changes to the environment", value: 32 }
 ]
 
-export default sectors
+export default sectors.sort((a,b) => a.text.localeCompare(b.text))

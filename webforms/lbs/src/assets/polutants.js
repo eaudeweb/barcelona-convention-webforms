@@ -448,4 +448,4 @@ var polutants = [{
   }
 ]
 
-export default polutants
+export default polutants.sort((a,b) => a.text.localeCompare(b.text))
