@@ -278,7 +278,7 @@ export default {
               {
                 "type": "radio",
                 "label": "Management plan",
-                "name": "management_plan",
+                "name": "management",
                 "selected": null,
                 "options": [{
                     "text": "Yes",

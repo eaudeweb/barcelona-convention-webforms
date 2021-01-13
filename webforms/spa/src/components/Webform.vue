@@ -431,6 +431,7 @@ export default {
           article.selected = inventory[article.name]
         }
         this.form.tab_2.data.table_2.articles.push(inventoryobj)
+
       }
     }
   }
@@ -618,7 +619,6 @@ export default {
           // TODO: change this to colleciton collection id
           let collection_id = perm.collection_id
           for (let article of this.form.tab_6.data.articles) {
-            console.log(article)
             if (article.collection_id === collection_id) {
               for (let article_items of article.article_items) {
                   article_items.selected = perm[article_items.name]
@@ -684,7 +684,7 @@ export default {
               {
                 "type": "radio",
                 "label": "Management plan",
-                "name": "management_plan",
+                "name": "management",
                 "selected": null,
                 "options": [{
                     "text": "Yes",

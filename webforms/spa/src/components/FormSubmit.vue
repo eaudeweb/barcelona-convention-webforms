@@ -2,7 +2,7 @@
   <div>
     <b-btn variant="success" style="position: absolute;
     top: -45px;
-    right: 5px;" @click="doStuff">Save</b-btn>
+    right: 5px;" @click="saveReport">Save</b-btn>
     <b-btn variant="danger" style="position: absolute;
     top: -45px;
     right: 85px;" @click="exitForm">Back to envelope</b-btn>
@@ -100,7 +100,7 @@ export default {
     },
 
 
-    doStuff(){
+    saveReport(){
 
         this.jsonemptyinstance = {
           "BC_SPA": {
@@ -345,7 +345,7 @@ export default {
                       "surface": null,
                       "coordinates": null,
                       "jurisdiction":null,
-                      "management_plan": null,
+                      "management": null,
                       "date_of_adoption": null,
                       "delimitation_change": null,
                       "legal_status_change": null,
@@ -491,9 +491,6 @@ export default {
         }
       }
 
-
-
-
       let tab_2_2 = this.dataset.tab_2.data.table_2;
       for (let article of tab_2_2.articles) {
         let collection_id = article.collection_id || null;
@@ -501,23 +498,21 @@ export default {
         let description = article.description || null
         let spa_name = article.article_title.selected || null
         let row = {
-          collection_id : collection_id,
-          parent_collection_id: parent_collection_id,
-          description: description,
-          spa_name: spa_name,
-          date: null,
-          category: null,
-          jurisdiction: null,
-          coordinates: null,
-          surface: null,
-          ecosystems: null,
-          management: null,
-          dateofadoption: null
+          "collection_id" : collection_id,
+          "parent_collection_id": parent_collection_id,
+          "description": description,
+          "spa_name": spa_name,
+          "date": null,
+          "category": null,
+          "jurisdiction": null,
+          "coordinates": null,
+          "surface": null,
+          "ecosystems": null,
+          "management": null,
+          "dateofadoption": null
         }
         for (let article_item of article.article_items){
-          // let row = {};
-          // console.log(article_item)
-          row[article_item.name] = article_item.selected
+          row[article_item.name] = article_item.selected;
 
         }
 
