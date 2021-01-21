@@ -601,6 +601,7 @@ export default {
           description: description,
           inspections: null,
           non_compliance: null,
+          total_fines: null,
           total_amount: null,
           remarks: null,
 

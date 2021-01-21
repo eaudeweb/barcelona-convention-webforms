@@ -10416,7 +10416,12 @@ var form = {
             name: 'non_compliance',
             selected: '',
           }, {
-            label: 'Number of fines issued and total amount',
+            label: 'Number of fines issued',
+            type: 'number',
+            name: 'total_fines',
+            selected: '',
+          }, {
+            label: 'Total amount of issued fines',
             type: 'number',
             name: 'total_amount',
             selected: '',
@@ -10446,7 +10451,12 @@ var form = {
             name: 'non_compliance',
             selected: '',
           }, {
-            label: 'Number of fines issued and total amount',
+            label: 'Number of fines issued',
+            type: 'number',
+            name: 'total_fines',
+            selected: '',
+          }, {
+            label: 'Total amount of issued fines',
             type: 'number',
             name: 'total_amount',
             selected: '',
@@ -10477,7 +10487,12 @@ var form = {
             name: 'non_compliance',
             selected: '',
           }, {
-            label: 'Number of fines issued and total amount',
+            label: 'Number of fines issued',
+            type: 'number',
+            name: 'total_fines',
+            selected: '',
+          }, {
+            label: 'Total amount of issued fines',
             type: 'number',
             name: 'total_amount',
             selected: '',
@@ -10508,7 +10523,12 @@ var form = {
             name: 'non_compliance',
             selected: '',
           }, {
-            label: 'Number of fines issued and total amount',
+            label: 'Number of fines issued',
+            type: 'number',
+            name: 'total_fines',
+            selected: '',
+          }, {
+            label: 'Total amount of issued fines',
             type: 'number',
             name: 'total_amount',
             selected: '',
