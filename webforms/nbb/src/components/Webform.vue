@@ -93,7 +93,7 @@ export default {
             }
       }
 
-      if(data.NBB_Report.basins.length) {
+      if(data.NBB_Report.basins != undefined && data.NBB_Report.basins.length) {
         for(let entry of data.NBB_Report.basins) {
           const basin = {
               name: 'hydrological_basin',
@@ -107,7 +107,7 @@ export default {
         }
 
       } else {
-        if(data.NBB_Report.basins.basin) {
+        if(data.NBB_Report.basins != undefined && data.NBB_Report.basins.basin) {
           const basin = {
               name: 'hydrological_basin',
               type: 'textarea',
@@ -249,7 +249,7 @@ export default {
             }
           }
           this.form.content.data.table.pollutants.push(pollutant)
-        } 
+        }
       } else {
 
 
