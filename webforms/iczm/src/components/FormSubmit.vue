@@ -43,10 +43,10 @@ export default {
       dataset: null,
       validation: [],
       jsonemptyinstance: {
-          "BC_HWP": {
-              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+          "BC_ICZM": {
+              "@xmlns": "https://dd.info-rac.org/namespaces/21",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/21 https://dd.info-rac.org/v2/dataset/23/schema-dst-23.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -71,9 +71,8 @@ export default {
                 "org_tel":null,
                 "org_fax":null,
                 "org_email":null,
-
               },
-              "enf_measures": {Row:[]},
+              "data": {Row:{}},
           }
       },
       dismissSecs: 2,
@@ -102,9 +101,9 @@ export default {
 
         this.jsonemptyinstance = {
           "BC_ICZM": {
-              "@xmlns": "https://dd.info-rac.org/namespaces/4",
+              "@xmlns": "https://dd.info-rac.org/namespaces/21",
               "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/4 https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
+              "@xsi:schemaLocation": "https://dd.info-rac.org/namespaces/21 https://dd.info-rac.org/v2/dataset/23/schema-dst-23.xsd",
               "country": null,
               "contacting_party":{
                 "partyname":null,
@@ -129,7 +128,6 @@ export default {
                 "org_tel":null,
                 "org_fax":null,
                 "org_email":null,
-
               },
               "data": {Row:{}},
           }
@@ -157,13 +155,11 @@ export default {
         }
       }
 
-
-
-      this.jsonemptyinstance.BC_ICZM.country = this.country
+      this.jsonemptyinstance.BC_ICZM.country = this.country;
       
-      console.log(this.jsonemptyinstance)
-      this.showAlert();
+      console.log(this.jsonemptyinstance);
       saveInstance(this.jsonemptyinstance);
+      this.showAlert();
     },
 
     validate() {

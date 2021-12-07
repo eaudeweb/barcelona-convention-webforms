@@ -67,14 +67,14 @@
     "fileType": "FILE"
   },    
   {
-    "title": "Hazardous Wastes Protocol",
+    "title": "ICZM Protocol",
     "file":
     {
       "name": "index.html"
     },
-    "newXmlFileName": "hwp.xml",
-    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/hwp/file/empty.xml",
-    "xmlSchema": "https://dd.info-rac.org/v2/dataset/19/schema-dst-19.xsd",
+    "newXmlFileName": "iczm.xml",
+    "emptyInstanceUrl": "https://webforms.info-rac.org/download/project/iczm/file/empty.xml",
+    "xmlSchema": "https://dd.info-rac.org/v2/dataset/23/schema-dst-23.xsd",
     "active": true,
     "localForm": true,
     "remoteForm": true,

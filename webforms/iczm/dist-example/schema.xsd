@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:datasets="https://dd.info-rac.org/namespaces/1" xmlns:dd21="https://dd.info-rac.org/namespaces/21" xmlns:dd22="https://dd.info-rac.org/namespaces/22" xmlns:ddattrs="https://dd.info-rac.org/namespaces/3" xmlns:isoattrs="https://dd.info-rac.org/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://dd.info-rac.org/namespaces/21" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:import namespace="https://dd.info-rac.org/namespaces/22" schemaLocation="https://dd.info-rac.org/v2/dataset/23/schema-tbl-45.xsd"/>
+    <xs:element name="BC_ICZM">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:EEAissue>Coastal Zone Management</ddattrs:EEAissue>
+                <ddattrs:ShortDescription>Integrated Coastal Zone Management in the Mediterranean</ddattrs:ShortDescription>
+                <isoattrs:Name>ICZM Protocol</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd22:contacting_party"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

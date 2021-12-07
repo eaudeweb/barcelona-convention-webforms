@@ -301,7 +301,7 @@ var form = {
           },{
             label: 'How (article 7-1-c)?',
             type: 'textarea',
-            name: 'how_details',
+            name: 'coordination_how_details',
             selected: '',
           }]
         },{
@@ -575,7 +575,7 @@ var form = {
           },{
             label: '2. Have up-to-date assessments of the use and management of coastal zones been carried out and updated?',
             type: 'textarea',
-            name: 'assessments',
+            name: 'assessments_art27',
             selected: '',
           },{
             label: '3. Have activities of common interest, such as demonstration projects of integrated zone management been carried out?',
@@ -585,7 +585,7 @@ var form = {
           },{
             label: '4. Have Centres of specific ICZM scientific capacity been established in your country?',
             type: 'textarea',
-            name: 'scientific capacity',
+            name: 'scientific_capacity',
             selected: '',
           }]
         },{
