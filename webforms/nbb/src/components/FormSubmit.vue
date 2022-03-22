@@ -30,6 +30,8 @@ export default {
     info: null,
     country: null,
     region: null,
+    reported_prtr: null,
+    complementary_prtr: null
   },
 
   updated() {
@@ -53,6 +55,8 @@ export default {
                 "partyname":null,
                 "rep_period_from":null,
                 "rep_period_to":null,
+                "reported_prtr":null,
+                "complementary_prtr":null,
               },
               "region": [
                 {
@@ -64,7 +68,6 @@ export default {
                     "subsector_id": null,
                     "process_id": null,
                     "facility": null,
-                    "from_prtr": null,
                     "estimated_on_id": null,
                     "emission_factor_value": null,
                     "emission_factor_unit_id": null,
@@ -89,7 +92,7 @@ export default {
     },
 
       showAlert () {
-      console.log('showingalert')
+      // console.log('showingalert')
       this.dismissCountDown = this.dismissSecs
       },
 
@@ -109,6 +112,8 @@ export default {
                 "partyname":null,
                 "rep_period_from":null,
                 "rep_period_to":null,
+                "reported_prtr":null,
+                "complementary_prtr":null,
               },
               "region": [],
               "basins": []
@@ -118,12 +123,19 @@ export default {
       let country_tab = this.dataset.country.tables
 
         for(let value of country_tab) {
-              this.jsonemptyinstance.NBB_Report.contacting_party[value.name] = value.selected
+          if (value.name === 'reported_prtr') {
+            this.jsonemptyinstance.NBB_Report.contacting_party[value.name] = reported_prtr.value;
+            value.selected = reported_prtr.value;
+          } else if (value.name === 'complementary_prtr') {
+            this.jsonemptyinstance.NBB_Report.contacting_party[value.name] = complementary_prtr.value;
+            value.selected = complementary_prtr.value;
+          } else {
+            this.jsonemptyinstance.NBB_Report.contacting_party[value.name] = value.selected;
+          }
         }
 
 
         for(let pollutants of this.dataset.content.data.table.pollutants) {
-          console.log(pollutants)
           let pollutantSubmitItem = {
                   "region_id": pollutants.region,
                   "record": {
@@ -133,7 +145,6 @@ export default {
                     "subsector_id": null,
                     "process_id": null,
                     "facility": null,
-                    "from_prtr": null,
                     "estimated_on_id": null,
                     "emission_factor_value": null,
                     "emission_factor_unit_id": null,
@@ -186,9 +197,6 @@ export default {
           case 'facility':
             return 'facility'
             break;
-          case 'from_prtr':
-            return 'from_prtr'
-            break;
           case 'estimated':
             return 'estimated_on_id'
             break;
@@ -221,6 +229,20 @@ export default {
     country: {
       handler: function(old_val,new_val) {
         this.jsonemptyinstance.NBB_Report.contacting_party.partyname = new_val
+      },
+      deep: true,
+      immediate: true,
+    },
+    reported_prtr: {
+      handler: function(old_val,new_val) {
+        this.jsonemptyinstance.NBB_Report.contacting_party.reported_prtr = new_val
+      },
+      deep: true,
+      immediate: true,
+    },
+    complementary_prtr: {
+      handler: function(old_val,new_val) {
+        this.jsonemptyinstance.NBB_Report.contacting_party.complementary_prtr = new_val
       },
       deep: true,
       immediate: true,

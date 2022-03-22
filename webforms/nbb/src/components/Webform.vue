@@ -6,27 +6,47 @@
         <b-form validated novalidate @submit="onSubmit">
           <b-card header="Report details">
             <b-col v-for="table in form.country.tables" lg="6">
-                <label>{{table.label}}</label>
-              <div v-if="table.name ==='partyname'">
-                <b-input required :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
-              </div>
-              <div v-else-if="table.name === 'region'">
-                <b-form-select v-model="selectedRegion" @change="getSelectedRegionName($event)" :options="regionOptions">
-                  <template slot="first">
-                    <option :value="null" disabled>-- Please select a region --</option>
-                  </template>
-                </b-form-select>
+              <div v-if="table.name ==='partyname' || table.name === 'reported_prtr' || table.name === 'complementary_prtr' || table.name === 'region'">
+                <div v-if="table.name ==='partyname'">
+                  <label>{{table.label}}</label>
+                  <b-input required :id="table.name" :type="table.type" disabled v-model="table.selected"></b-input>
+                </div>
+                <div v-else-if="table.name === 'reported_prtr'">
+                  <label>{{table.label}}</label>
+                  <b-form-select :id="table.name" :name="table.name" v-model="reported_prtr" :options="table.options">
+                    <template slot="first">
+                      <option :value="null" disabled>-- Please select option --</option>
+                    </template>
+                  </b-form-select>
+                </div>
+                <div v-else-if="table.name === 'complementary_prtr' && reported_prtr === 'yes'">
+                  <label>{{table.label}}</label>
+                  <b-form-select :id="table.name" :name="table.name" v-model="complementary_prtr" :options="table.options">
+                    <template slot="first">
+                      <option :value="null" disabled>-- Please select option --</option>
+                    </template>
+                  </b-form-select>
+                </div>
+                <div v-else-if="table.name === 'region' && ((reported_prtr === 'no') || (reported_prtr === 'yes' && complementary_prtr === 'yes'))">
+                  <label>{{table.label}}</label>
+                  <b-form-select v-model="selectedRegion" @change="getSelectedRegionName($event)" :options="regionOptions">
+                    <template slot="first">
+                      <option :value="null" disabled>-- Please select a region --</option>
+                    </template>
+                  </b-form-select>
+                </div>
               </div>
               <div v-else>
-                <b-input required :id="table.name" :type="table.type" v-model="table.selected"></b-input>
+                <label>{{table.label}}</label>
+                <b-input required :id="table.name" :type="table.type" :name="table.name" v-model="table.selected"></b-input>
               </div>
             </b-col>
             <b-col>
-              <baselines v-if="selectedRegion" :regionName="selectedRegionName" :region="selectedRegion" :country="country" :info.sync="form.content"></baselines>
+              <baselines v-if="selectedRegion" :regionName="selectedRegionName" :region="selectedRegion" :country="country" :reported_prtr="reported_prtr" :complementary_prtr="complementary_prtr" :info.sync="form.content"></baselines>
             </b-col>
           </b-card>
         </b-form>
-   			<formsubmit :region="selectedRegion" :country.sync="country" :info.sync="form"></formsubmit>
+   			<formsubmit :reported_prtr="reported_prtr" :complementary_prtr="complementary_prtr" :region="selectedRegion" :country.sync="country" :info.sync="form"></formsubmit>
 
       </b-card>
       <div v-if="!prefilled" class="spinner">
@@ -62,6 +82,8 @@ export default {
       button_text: 'Hide list',
       country: '',
       countryData: null,
+      reported_prtr: null,
+      complementary_prtr: null,
       regionOptions: [],
       selectedRegion: null,
       selectedRegionName: null,
@@ -75,7 +97,9 @@ export default {
     getInstance().then((response) => {
       let instance_data = response.data
       getCountry().then((response) => {
-          this.country = response.data
+          this.country = response.data;
+          this.reported_prtr = instance_data.NBB_Report.contacting_party['reported_prtr'] || null;
+          this.complementary_prtr = instance_data.NBB_Report.contacting_party['complementary_prtr'] || null;
           this.prefill(instance_data)
           this.getRegionOptions(countries, response.data);
         })
@@ -86,6 +110,7 @@ export default {
 
 
     prefill(data){
+
       for(let value of this.form.country.tables) {
             value.selected = data.NBB_Report.contacting_party[value.name]
             if(value.name === 'partyname') {
@@ -170,12 +195,6 @@ export default {
                 name: 'facility',
                 selected: '',
                 options: [],
-              }, {
-                label: 'From PRTR',
-                type: 'checkbox',
-                name: 'from_prtr',
-                selected: false,
-                options: [{ value: false, text: '' }, { value: true, text: '' }]
               },
               {
                 label: 'Estimated based on',
@@ -300,12 +319,6 @@ export default {
                 name: 'facility',
                 selected: '',
                 options: [],
-              }, {
-                label: 'From PRTR',
-                type: 'checkbox',
-                name: 'from_prtr',
-                selected: false,
-                options: [{ value: false, text: '' }, { value: true, text: '' }]
               },
               {
                 label: 'Estimated based on',
@@ -382,9 +395,6 @@ export default {
 
       }
 
-
-
-
       this.prefilled = true;
 
 
@@ -408,9 +418,6 @@ export default {
             break;
           case 'facility':
             return 'facility'
-            break;
-          case 'from_prtr':
-            return 'from_prtr'
             break;
           case 'estimated_on_id':
             return 'estimated'

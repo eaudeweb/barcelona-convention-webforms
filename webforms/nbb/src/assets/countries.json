@@ -355,83 +355,15 @@
     "regions" : [
       {
         "region_id":71,
-        "region_name":"Abruzzo"
+        "region_name":"Adriatic Sea - MADIT"
       },
       {
         "region_id":72,
-        "region_name":"Basilicata"
+        "region_name":"Ionian Sea and the Central Mediterranean Sea - MICIT"
       },
       {
         "region_id":73,
-        "region_name":"Calabria"
-      },
-      {
-        "region_id":74,
-        "region_name":"Campania"
-      },
-      {
-        "region_id":75,
-        "region_name":"Emilia Romagna"
-      },
-      {
-        "region_id":76,
-        "region_name":"Friuli"
-      },
-      {
-        "region_id":77,
-        "region_name":"Lazio"
-      },
-      {
-        "region_id":78,
-        "region_name":"Liguria"
-      },
-      {
-        "region_id":79,
-        "region_name":"Lombardia"
-      },
-      {
-        "region_id":80,
-        "region_name":"Marche"
-      },
-      {
-        "region_id":81,
-        "region_name":"Molise"
-      },
-      {
-        "region_id":82,
-        "region_name":"Piemonte"
-      },
-      {
-        "region_id":83,
-        "region_name":"Puglia"
-      },
-      {
-        "region_id":84,
-        "region_name":"Sardegna"
-      },
-      {
-        "region_id":85,
-        "region_name":"Sicilia"
-      },
-      {
-        "region_id":86,
-        "region_name":"Toscana"
-      },
-      {
-        "region_id":87,
-        "region_name":"Trentino"
-      },
-      {
-        "region_id":88,
-        "region_name":"Umbria"
-      },
-      {
-        "region_id":89,
-        "region_name":"Valle d Aosta"
-      },
-      {
-        "region_id":90,
-        "region_name":"Veneto"
+        "region_name":"Western Mediterranean Sea - MWEIT"
       }
     ]
   },

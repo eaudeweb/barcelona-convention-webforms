@@ -1,5 +1,5 @@
 <template>
-  <div v-if="info && country && region && regionName && region">
+  <div v-if="info && country && ((reported_prtr === 'no') || (reported_prtr === 'yes' && complementary_prtr === 'yes')) && region && regionName && region">
 
   <div class="question-wrapper">
         <h3>{{info.label}} {{regionName}} </h3>
@@ -115,7 +115,9 @@ export default {
     tabId:null,
     country: null,
     region: null,
-    regionName: null
+    regionName: null,
+    reported_prtr: null,
+    complementary_prtr: null
   },
 
   components: {
@@ -352,12 +354,6 @@ export default {
               name: 'facility',
               selected: '',
               options: [],
-            }, {
-              label: 'From PRTR',
-              type: 'checkbox',
-              name: 'from_prtr',
-              selected: false,
-              options: [{ value: false, text: '' }, { value: true, text: '' }]
             },
             {
               label: 'Estimated based on',
