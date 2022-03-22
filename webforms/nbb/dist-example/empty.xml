@@ -5,6 +5,8 @@
     <partyname></partyname>
     <rep_period_from></rep_period_from>
     <rep_period_to></rep_period_to>
+    <reported_prtr></reported_prtr>
+    <complementary_prtr></complementary_prtr>
   </contacting_party>
   <region>
     <region_id></region_id>
@@ -15,7 +17,6 @@
       <subsector_id></subsector_id>
       <process_id></process_id>
       <facility></facility>
-      <from_prtr></from_prtr>
       <estimated_on_id></estimated_on_id>
       <emission_factor_value></emission_factor_value>
       <emission_factor_unit_id></emission_factor_unit_id>

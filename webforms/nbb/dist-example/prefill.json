@@ -9,7 +9,9 @@
     {
       "partyname": "AL",
       "rep_period_from": "2018-01-01",
-      "rep_period_to": "2019-05-05"
+      "rep_period_to": "2019-05-05",
+      "reported_prtr": null,
+      "complementary_prtr": null
     },
     "region": [
     {
@@ -22,7 +24,6 @@
         "subsector_id": null,
         "process_id": null,
         "facility": null,
-        "from_prtr": null,
         "estimated_on_id": null,
         "emission_factor_value": null,
         "emission_factor_unit_id": null,
@@ -42,7 +43,6 @@
         "subsector_id": 51,
         "process_id": null,
         "facility": null,
-        "from_prtr": true,
         "estimated_on_id": 3,
         "emission_factor_value": 252,
         "emission_factor_unit_id": 2,
@@ -62,7 +62,6 @@
         "subsector_id": 27,
         "process_id": 82,
         "facility": null,
-        "from_prtr": true,
         "estimated_on_id": 2,
         "emission_factor_value": 4324,
         "emission_factor_unit_id": 1,
@@ -82,7 +81,6 @@
         "subsector_id": 49,
         "process_id": 84,
         "facility": null,
-        "from_prtr": true,
         "estimated_on_id": 3,
         "emission_factor_value": 4124,
         "emission_factor_unit_id": 2,

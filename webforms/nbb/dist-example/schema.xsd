@@ -10,6 +10,8 @@
               <xs:element type="xs:string" name="partyname"/>
               <xs:element type="xs:string" name="rep_period_from"/>
               <xs:element type="xs:string" name="rep_period_to"/>
+              <xs:element type="xs:string" name="reported_prtr"/>
+              <xs:element type="xs:string" name="complementary_prtr"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -26,7 +28,6 @@
                     <xs:element type="xs:integer" name="subsector_id"/>
                     <xs:element type="xs:integer" name="process_id"/>
                     <xs:element type="xs:integer" name="facility"/>
-                    <xs:element type="xs:boolean" name="from_prtr"/>
                     <xs:element type="xs:integer" name="estimated_on_id"/>
                     <xs:element type="xs:double" name="emission_factor_value"/>
                     <xs:element type="xs:integer" name="emission_factor_unit_id"/>
