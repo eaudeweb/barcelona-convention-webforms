@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels xmlns="https://dd.info-rac.org/namespaces/4">
+    <contacting_party>
+        <partyname>Contracting Party</partyname>
+        <rep_period_from>Reporting period from D/M/Y</rep_period_from>
+        <rep_period_to>Reporting period to D/M/Y</rep_period_to>
+        <reported_prtr>Monitoring data on pollutants release has already been reported in PRTR system?</reported_prtr>
+        <complementary_prtr>Is there any other data complementary to the PRTR that you can upload to NBB?</complementary_prtr>
+    </contacting_party>
+    <record>
+        <pollutant_id>Pollutant</pollutant_id>
+        <budget_year>Year</budget_year>
+        <sector_id>Sector</sector_id>
+        <subsector_id>Subsector</subsector_id>
+        <process_id>Process</process_id>
+        <facility>Facility</facility>
+        <estimated_on_id>Estimated based on</estimated_on_id>
+        <emission_factor_value>Emission factor</emission_factor_value>
+        <emission_factor_unit_id>Emission factor unit</emission_factor_unit_id>
+        <production_value>Production</production_value>
+        <production_unit_id>Production unit</production_unit_id>
+        <total_release_value>Total releases</total_release_value>
+        <total_release_unit_id>Total releases unit</total_release_unit_id>
+    </record>
+
+    <production_unit_id>
+        <element>
+            <value>0</value>
+            <name>mg/y</name>
+        </element>
+        <element>
+            <value>1</value>
+            <name>kg/y</name>
+        </element>
+        <element>
+            <value>2</value>
+            <name>Tons/y</name>
+        </element>
+        <element>
+            <value>3</value>
+            <name>1000L/y</name>
+        </element>
+        <element>
+            <value>4</value>
+            <name>1000m²/y</name>
+        </element>
+    </production_unit_id>
+
+    <total_release_unit_id>
+        <element>
+            <value>0</value>
+            <name>mg/y</name>
+        </element>
+        <element>
+            <value>1</value>
+            <name>kg/y</name>
+        </element>
+        <element>
+            <value>2</value>
+            <name>Tons/y</name>
+        </element>
+        <element>
+            <value>3</value>
+            <name>1000L/y</name>
+        </element>
+        <element>
+            <value>4</value>
+            <name>1000m²/y</name>
+        </element>
+    </total_release_unit_id>
+
+    <pollutant_id>
+        <element>
+            <value>129</value>
+            <name>Aldrine [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ALDRIN</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>1</value>
+            <name>Aldrine [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ALDRIN</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>2</value>
+            <name>Aluminium [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>3</value>
+            <name>Aluminium [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>4</value>
+            <name>Anthracene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ANTHRACENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>5</value>
+            <name>Anthracene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ANTHRACENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>6</value>
+            <name>AOX [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>130</value>
+            <name>Asbestos [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ASBESTOS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>131</value>
+            <name>Asbestos [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ASBESTOS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>7</value>
+            <name>As [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>AS AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>8</value>
+            <name>As [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>AS AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>9</value>
+            <name>Atrazine [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ATRAZINE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>10</value>
+            <name>Benzene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>BENZENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>11</value>
+            <name>Benzene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>BENZENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>12</value>
+            <name>Benzo(a)anthracene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>13</value>
+            <name>Benzo(a)pyrene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>14</value>
+            <name>Benzo(a)pyrene [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>144</value>
+            <name>Benzo(b)fluoranthene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>145</value>
+            <name>Benzo(b,j,k)fluoranthene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>15</value>
+            <name>Benzo(b,k)fluoranthene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>16</value>
+            <name>Benzo(b,k)fluoranthene [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>17</value>
+            <name>Benzo(g,h,i)perylene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>BENZO(G,H,I)PERYLENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>18</value>
+            <name>Benzo(g,h,i)perylene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>BENZO(G,H,I)PERYLENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>19</value>
+            <name>Biphenyls [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>20</value>
+            <name>BOD5 [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>21</value>
+            <name>Boron [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>22</value>
+            <name>BTEX [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>23</value>
+            <name>Butylin compounds [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>24</value>
+            <name>Carbon dioxide [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CO2</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>25</value>
+            <name>Carbon monoxide [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CO</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>146</value>
+            <name>Carbon tetrachloride [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>26</value>
+            <name>Carbon tetrachloride [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>27</value>
+            <name>Cd [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CD AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>28</value>
+            <name>Cd [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>CD AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>29</value>
+            <name>Chlorinated Compound [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>30</value>
+            <name>Chlorinated Compound [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>31</value>
+            <name>Chlorobenzene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>147</value>
+            <name>Chloroform [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>32</value>
+            <name>Chloroform [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>33</value>
+            <name>Cobalt [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>34</value>
+            <name>Cobalt [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>35</value>
+            <name>COD [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>149</value>
+            <name>Cr2O3 [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>36</value>
+            <name>Cr [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CR AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>37</value>
+            <name>Cr [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>CR AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>148</value>
+            <name>Cr (VI) [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>38</value>
+            <name>Cu [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CU AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>39</value>
+            <name>Cu [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>CU AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>40</value>
+            <name>Cyanide [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CYANIDES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>41</value>
+            <name>Cyanide [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>CYANIDES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>42</value>
+            <name>DDT [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>DDT</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>43</value>
+            <name>DEHP [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>DEHP</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>44</value>
+            <name>DEHP [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>DEHP</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>45</value>
+            <name>Dichloroethane-1,2 [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>DICHLOROETHANE-1,2 (DCE)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>46</value>
+            <name>Dichloroethane-1,2 [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>DICHLOROETHANE-1,2 (DCE)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>47</value>
+            <name>Dichloromethane [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>DICHLOROMETHANE (DCM)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>48</value>
+            <name>Dichloromethane [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>DICHLOROMETHANE (DCM)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>49</value>
+            <name>Dieldrine [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>DIELDRIN</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>50</value>
+            <name>Diuron [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>DIURON</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>51</value>
+            <name>Endosulphan [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ENDOSULPHAN</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>52</value>
+            <name>Endrine [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>53</value>
+            <name>Ethylbenzene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ETHYLBENZENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>132</value>
+            <name>Ethylene oxide [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ETHYLENE OXIDE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>133</value>
+            <name>Ethylene oxide [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ETHYLENE OXIDE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>54</value>
+            <name>Fe [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>55</value>
+            <name>Fe [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>56</value>
+            <name>Fluoranthene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>FLUORANTHENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>57</value>
+            <name>Fluoranthene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>FLUORANTHENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>58</value>
+            <name>Fluoride [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>FLUORIDES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>59</value>
+            <name>Fluoride [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>FLUORIDES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>150</value>
+            <name>Formaldehyde [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>151</value>
+            <name>Freons [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>152</value>
+            <name>H2S [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>153</value>
+            <name>Hcl (esp) [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>154</value>
+            <name>Hcl (ff) [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>60</value>
+            <name>Heptachlor [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>HEPTACHLOR</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>134</value>
+            <name>Hexabromobiphenyl [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>HEXABROMOBIPHENYL</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>135</value>
+            <name>Hexabromobiphenyl [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>HEXABROMOBIPHENYL</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>61</value>
+            <name>Hexachlorobenzene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>HEXACHLOROBENZENE (HCB)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>62</value>
+            <name>Hexachlorobenzene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>HEXACHLOROBENZENE (HCB)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>63</value>
+            <name>Hexachlorobutadiene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>HEXACHLOROBUTADIENE (HCBD)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>64</value>
+            <name>Hexachlorocyclohexane [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>HEXACHLOROCYCLOHEXANE(HCH)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>65</value>
+            <name>Hexachlorocyclohexane [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>HEXACHLOROCYCLOHEXANE(HCH)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>66</value>
+            <name>Hg [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>HG AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>67</value>
+            <name>Hg [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>HG AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>68</value>
+            <name>Hydrocarbons (minerals) [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>69</value>
+            <name>Hydrofluorocarbons [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>HFCS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>70</value>
+            <name>Indeno(1,2,3-CD)pyrene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>71</value>
+            <name>Indeno(1,2,3-CD)pyrene [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>136</value>
+            <name>Isoproturon [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ISOPROTURON</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>137</value>
+            <name>Isoproturon [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ISOPROTURON</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>72</value>
+            <name>Methane [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>CH4</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>73</value>
+            <name>Mn [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>74</value>
+            <name>Mn [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>75</value>
+            <name>Naphtalene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>NAPHTHALENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>76</value>
+            <name>Naphtalene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>NAPHTHALENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>77</value>
+            <name>NH3 [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>NH3</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>78</value>
+            <name>NH3 [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>NH3</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>79</value>
+            <name>Ni [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>NI AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>80</value>
+            <name>Ni [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>NI AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>81</value>
+            <name>Nitrogen oxide [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>NOX</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>82</value>
+            <name>Nonylphenols [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>NP/NPES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>83</value>
+            <name>Octylphenols [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>OCTYLPHENOLS AND OCTYLPHENOL ETHOXYLATES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>155</value>
+            <name>Oil [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>84</value>
+            <name>Oils and greases (organic) [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>138</value>
+            <name>Organotin compounds [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ORGANOTIN - COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>139</value>
+            <name>Organotin compounds [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ORGANOTIN - COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>85</value>
+            <name>Other Chlorinated Pesticides [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>86</value>
+            <name>Other Chlorinated Pesticides [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>156</value>
+            <name>PAH (15 PAHs) [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>87</value>
+            <name>PAH [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>88</value>
+            <name>PAH [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>157</value>
+            <name>Particulate fluoride [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>91</value>
+            <name>PBDE [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>BROMINATED DIPHENYLETHER</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>89</value>
+            <name>Pb [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>PB AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>90</value>
+            <name>Pb [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>PB AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>92</value>
+            <name>PCB / PCT [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>93</value>
+            <name>PCB / PCT [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>94</value>
+            <name>PCDD / PCDF [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>PCDD+PCDF (DIOXINS+FURANS)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>95</value>
+            <name>PCDD / PCDF [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>PCDD+PCDF (DIOXINS+FURANS)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>158</value>
+            <name>PCDD / PDCDF [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>96</value>
+            <name>Pentachlorophenol [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>PENTACHLOROPHENOL (PCP)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>97</value>
+            <name>Perchloroethylene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>98</value>
+            <name>Perchloroethylene [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>99</value>
+            <name>Petroleum Hydrocarbons [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>100</value>
+            <name>Phenanthrene [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>159</value>
+            <name>Phenols [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>PHENOLS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>101</value>
+            <name>Phenols [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>PHENOLS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>102</value>
+            <name>Phosphates [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>103</value>
+            <name>PM10 [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>PM10</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>104</value>
+            <name>Selenium [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>105</value>
+            <name>Sulfur oxide [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>SOX</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>140</value>
+            <name>Sulphur hexafluoride (SF6) [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>SF6</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>141</value>
+            <name>Sulphur hexafluoride (SF6) [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>SF6</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>106</value>
+            <name>Tin [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>107</value>
+            <name>TOC [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TOTAL ORGANIC CARBON (TOC)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>108</value>
+            <name>TOC [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>TOTAL ORGANIC CARBON (TOC)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>160</value>
+            <name>Toluene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TOLUENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>109</value>
+            <name>Toluene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>TOLUENE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>110</value>
+            <name>Total N [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>161</value>
+            <name>Total organic compounds [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>111</value>
+            <name>Total Organic Matter [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>162</value>
+            <name>Total PCDD (ff) [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>163</value>
+            <name>Total PCDF (ff) [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>112</value>
+            <name>Total P [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>113</value>
+            <name>Total Suspended Particulates [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>114</value>
+            <name>Trichlorobenzenes (TCB) [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROBENZENES (TCB)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>115</value>
+            <name>Trichlorobenzenes (TCB) [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROBENZENES (TCB)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>116</value>
+            <name>Trichloroethane-1,1,1 [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROETHANE-1,1,1 (TCE)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>164</value>
+            <name>Trichloroethane [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>117</value>
+            <name>Trichloroethylene [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROETHYLENE (TRI)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>118</value>
+            <name>Trichloroethylene [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROETHYLENE (TRI)</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>119</value>
+            <name>Trichloromethane [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROMETHANE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>120</value>
+            <name>Trichloromethane [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>TRICHLOROMETHANE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>142</value>
+            <name>Trifluralin [air]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>TRIFLURALIN</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>143</value>
+            <name>Trifluralin [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>TRIFLURALIN</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>165</value>
+            <name>Trimethylamine [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>121</value>
+            <name>TSS [liq]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>122</value>
+            <name>Vinyl chloride [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>VINYL CHLORIDE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>123</value>
+            <name>Vinyl chloride [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>VINYL CHLORIDE</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>124</value>
+            <name>VOC [gas]</name>
+            <prtr_medium_code null="true" />
+            <prtr_pollutant_code null="true" />
+        </element>
+        <element>
+            <value>125</value>
+            <name>Xylenes [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>XYLENES</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>126</value>
+            <name>Zn [gas]</name>
+            <prtr_medium_code>AIR</prtr_medium_code>
+            <prtr_pollutant_code>ZN AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+        <element>
+            <value>127</value>
+            <name>Zn [liq]</name>
+            <prtr_medium_code>LIQ</prtr_medium_code>
+            <prtr_pollutant_code>ZN AND COMPOUNDS</prtr_pollutant_code>
+        </element>
+    </pollutant_id>
+
+    <estimated_on_id>
+        <element>
+            <code>M</code>
+            <value>1</value>
+            <name>monitoring data measurements</name>
+        </element>
+        <element>
+            <code>C</code>
+            <value>2</value>
+            <name>mass balance calculations</name>
+        </element>
+        <element>
+            <code>E</code>
+            <value>3</value>
+            <name>published emission factors</name>
+        </element>
+        <element>
+            <code>O</code>
+            <value>4</value>
+            <name>other approaches</name>
+        </element>
+    </estimated_on_id>
+
+    <emission_factor_unit_id>
+        <element>
+            <value>1</value>
+            <name>Kg/Tons</name>
+        </element>
+        <element>
+            <value>2</value>
+            <name>Kg/1000L</name>
+        </element>
+        <element>
+            <value>3</value>
+            <name>Kg/1000m²</name>
+        </element>
+    </emission_factor_unit_id>
+
+    <countries>
+        <element>
+            <country_code>ALB</country_code>
+            <country_code_iso2>AL</country_code_iso2>
+            <country_id>1</country_id>
+            <country_name>Albania</country_name>
+            <regions>
+                <element>
+                    <region_id>1</region_id>
+                    <region_name>Delvina</region_name>
+                </element>
+                <element>
+                    <region_id>2</region_id>
+                    <region_name>Durres</region_name>
+                </element>
+                <element>
+                    <region_id>3</region_id>
+                    <region_name>Elbasan</region_name>
+                </element>
+                <element>
+                    <region_id>4</region_id>
+                    <region_name>Fieri</region_name>
+                </element>
+                <element>
+                    <region_id>5</region_id>
+                    <region_name>Kavaja</region_name>
+                </element>
+                <element>
+                    <region_id>6</region_id>
+                    <region_name>Kruja</region_name>
+                </element>
+                <element>
+                    <region_id>7</region_id>
+                    <region_name>Kurbini</region_name>
+                </element>
+                <element>
+                    <region_id>8</region_id>
+                    <region_name>Lezha</region_name>
+                </element>
+                <element>
+                    <region_id>9</region_id>
+                    <region_name>Lushnja</region_name>
+                </element>
+                <element>
+                    <region_id>10</region_id>
+                    <region_name>Mallakastra</region_name>
+                </element>
+                <element>
+                    <region_id>11</region_id>
+                    <region_name>Peqini</region_name>
+                </element>
+                <element>
+                    <region_id>12</region_id>
+                    <region_name>Saranda</region_name>
+                </element>
+                <element>
+                    <region_id>13</region_id>
+                    <region_name>Shkodra</region_name>
+                </element>
+                <element>
+                    <region_id>14</region_id>
+                    <region_name>Tirana</region_name>
+                </element>
+                <element>
+                    <region_id>15</region_id>
+                    <region_name>Vlora</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>ALG</country_code>
+            <country_code_iso2>DZ</country_code_iso2>
+            <country_id>2</country_id>
+            <country_name>Algeria</country_name>
+            <regions>
+                <element>
+                    <region_id>16</region_id>
+                    <region_name>Ain Temouchent</region_name>
+                </element>
+                <element>
+                    <region_id>17</region_id>
+                    <region_name>Alger</region_name>
+                </element>
+                <element>
+                    <region_id>18</region_id>
+                    <region_name>Annaba</region_name>
+                </element>
+                <element>
+                    <region_id>19</region_id>
+                    <region_name>Bejaia</region_name>
+                </element>
+                <element>
+                    <region_id>20</region_id>
+                    <region_name>Boumerdes</region_name>
+                </element>
+                <element>
+                    <region_id>21</region_id>
+                    <region_name>Chlef</region_name>
+                </element>
+                <element>
+                    <region_id>22</region_id>
+                    <region_name>El Tarf</region_name>
+                </element>
+                <element>
+                    <region_id>23</region_id>
+                    <region_name>Jijel</region_name>
+                </element>
+                <element>
+                    <region_id>24</region_id>
+                    <region_name>Mostaganem</region_name>
+                </element>
+                <element>
+                    <region_id>25</region_id>
+                    <region_name>Oran</region_name>
+                </element>
+                <element>
+                    <region_id>26</region_id>
+                    <region_name>Skikda</region_name>
+                </element>
+                <element>
+                    <region_id>27</region_id>
+                    <region_name>Tipaza</region_name>
+                </element>
+                <element>
+                    <region_id>28</region_id>
+                    <region_name>Tizi Ouzou</region_name>
+                </element>
+                <element>
+                    <region_id>29</region_id>
+                    <region_name>Tlemcen</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>BOS</country_code>
+            <country_code_iso2>BA</country_code_iso2>
+            <country_id>3</country_id>
+            <country_name>Bosnia Herzegovina</country_name>
+            <regions>
+                <element>
+                    <region_id>30</region_id>
+                    <region_name>Cetina</region_name>
+                </element>
+                <element>
+                    <region_id>31</region_id>
+                    <region_name>Costal Area - Neum</region_name>
+                </element>
+                <element>
+                    <region_id>32</region_id>
+                    <region_name>Neretva</region_name>
+                </element>
+                <element>
+                    <region_id>33</region_id>
+                    <region_name>Trebisnjica</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>CRO</country_code>
+            <country_code_iso2>HR</country_code_iso2>
+            <country_id>4</country_id>
+            <country_name>Croatia</country_name>
+            <regions>
+                <element>
+                    <region_id>34</region_id>
+                    <region_name>Dubrovacko-Neretvanska</region_name>
+                </element>
+                <element>
+                    <region_id>35</region_id>
+                    <region_name>Istarska</region_name>
+                </element>
+                <element>
+                    <region_id>36</region_id>
+                    <region_name>Licko-Senjska</region_name>
+                </element>
+                <element>
+                    <region_id>37</region_id>
+                    <region_name>Primorsko-Goranska</region_name>
+                </element>
+                <element>
+                    <region_id>38</region_id>
+                    <region_name>Sibensko-Kninska</region_name>
+                </element>
+                <element>
+                    <region_id>39</region_id>
+                    <region_name>Splitsko-Dalmatinska</region_name>
+                </element>
+                <element>
+                    <region_id>40</region_id>
+                    <region_name>Zadarska</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>CYP</country_code>
+            <country_code_iso2>CY</country_code_iso2>
+            <country_id>5</country_id>
+            <country_name>Cyprus</country_name>
+            <regions>
+                <element>
+                    <region_id>41</region_id>
+                    <region_name>Cyprus</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>EGY</country_code>
+            <country_code_iso2>EG</country_code_iso2>
+            <country_id>6</country_id>
+            <country_name>Egypt</country_name>
+            <regions>
+                <element>
+                    <region_id>42</region_id>
+                    <region_name>Alexandria</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>FRA</country_code>
+            <country_code_iso2>FR</country_code_iso2>
+            <country_id>7</country_id>
+            <country_name>France</country_name>
+            <regions>
+                <element>
+                    <region_id>43</region_id>
+                    <region_name>Alpes maritimes</region_name>
+                </element>
+                <element>
+                    <region_id>44</region_id>
+                    <region_name>Aude</region_name>
+                </element>
+                <element>
+                    <region_id>46</region_id>
+                    <region_name>Bouches du Rhone</region_name>
+                </element>
+                <element>
+                    <region_id>45</region_id>
+                    <region_name>Bourgogne</region_name>
+                </element>
+                <element>
+                    <region_id>47</region_id>
+                    <region_name>Champagne-Ardenne</region_name>
+                </element>
+                <element>
+                    <region_id>49</region_id>
+                    <region_name>Corse</region_name>
+                </element>
+                <element>
+                    <region_id>50</region_id>
+                    <region_name>Franche-Comte</region_name>
+                </element>
+                <element>
+                    <region_id>51</region_id>
+                    <region_name>Gard</region_name>
+                </element>
+                <element>
+                    <region_id>52</region_id>
+                    <region_name>Herault</region_name>
+                </element>
+                <element>
+                    <region_id>53</region_id>
+                    <region_name>Provence-Alpes-Cote d'Azur</region_name>
+                </element>
+                <element>
+                    <region_id>54</region_id>
+                    <region_name>Pyrenees orientales</region_name>
+                </element>
+                <element>
+                    <region_id>55</region_id>
+                    <region_name>Rhone-Alpes</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>GRE</country_code>
+            <country_code_iso2>GR</country_code_iso2>
+            <country_id>8</country_id>
+            <country_name>Greece</country_name>
+            <regions>
+                <element>
+                    <region_id>56</region_id>
+                    <region_name>Aegean Islands</region_name>
+                </element>
+                <element>
+                    <region_id>57</region_id>
+                    <region_name>Attica</region_name>
+                </element>
+                <element>
+                    <region_id>58</region_id>
+                    <region_name>Central Macedonia</region_name>
+                </element>
+                <element>
+                    <region_id>59</region_id>
+                    <region_name>Crete</region_name>
+                </element>
+                <element>
+                    <region_id>60</region_id>
+                    <region_name>East Continental Greece</region_name>
+                </element>
+                <element>
+                    <region_id>61</region_id>
+                    <region_name>East Macedonia</region_name>
+                </element>
+                <element>
+                    <region_id>62</region_id>
+                    <region_name>East Peloponnes</region_name>
+                </element>
+                <element>
+                    <region_id>63</region_id>
+                    <region_name>Epirus</region_name>
+                </element>
+                <element>
+                    <region_id>64</region_id>
+                    <region_name>North Peloponnes</region_name>
+                </element>
+                <element>
+                    <region_id>65</region_id>
+                    <region_name>Thessalia</region_name>
+                </element>
+                <element>
+                    <region_id>66</region_id>
+                    <region_name>Thrace</region_name>
+                </element>
+                <element>
+                    <region_id>67</region_id>
+                    <region_name>West Continental Greece</region_name>
+                </element>
+                <element>
+                    <region_id>68</region_id>
+                    <region_name>West Macedonia</region_name>
+                </element>
+                <element>
+                    <region_id>69</region_id>
+                    <region_name>West Peloponnes</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>ISR</country_code>
+            <country_code_iso2>IL</country_code_iso2>
+            <country_id>9</country_id>
+            <country_name>Israel</country_name>
+            <regions>
+                <element>
+                    <region_id>70</region_id>
+                    <region_name>Israel</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>ITA</country_code>
+            <country_code_iso2>IT</country_code_iso2>
+            <country_id>10</country_id>
+            <country_name>Italy</country_name>
+            <regions>
+                <element>
+                    <region_id>71</region_id>
+                    <region_name>Adriatic Sea - MADIT</region_name>
+                </element>
+                <element>
+                    <region_id>72</region_id>
+                    <region_name>Ionian Sea and the Central Mediterranean Sea - MICIT</region_name>
+                </element>
+                <element>
+                    <region_id>73</region_id>
+                    <region_name>Western Mediterranean Sea - MWEIT</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>SPA</country_code>
+            <country_code_iso2>ES</country_code_iso2>
+            <country_id>11</country_id>
+            <country_name>Spain</country_name>
+            <regions>
+                <element>
+                    <region_id>116</region_id>
+                    <region_name>Alava</region_name>
+                </element>
+                <element>
+                    <region_id>117</region_id>
+                    <region_name>Albacete</region_name>
+                </element>
+                <element>
+                    <region_id>118</region_id>
+                    <region_name>Alicante</region_name>
+                </element>
+                <element>
+                    <region_id>119</region_id>
+                    <region_name>Almeria</region_name>
+                </element>
+                <element>
+                    <region_id>120</region_id>
+                    <region_name>Baleares</region_name>
+                </element>
+                <element>
+                    <region_id>121</region_id>
+                    <region_name>Barcelona</region_name>
+                </element>
+                <element>
+                    <region_id>122</region_id>
+                    <region_name>Burgos</region_name>
+                </element>
+                <element>
+                    <region_id>123</region_id>
+                    <region_name>Cadiz</region_name>
+                </element>
+                <element>
+                    <region_id>124</region_id>
+                    <region_name>Cantabria</region_name>
+                </element>
+                <element>
+                    <region_id>125</region_id>
+                    <region_name>Castellon</region_name>
+                </element>
+                <element>
+                    <region_id>126</region_id>
+                    <region_name>Cuenca</region_name>
+                </element>
+                <element>
+                    <region_id>127</region_id>
+                    <region_name>Girona</region_name>
+                </element>
+                <element>
+                    <region_id>128</region_id>
+                    <region_name>Granada</region_name>
+                </element>
+                <element>
+                    <region_id>129</region_id>
+                    <region_name>Huesca</region_name>
+                </element>
+                <element>
+                    <region_id>130</region_id>
+                    <region_name>Lleida</region_name>
+                </element>
+                <element>
+                    <region_id>131</region_id>
+                    <region_name>Malaga</region_name>
+                </element>
+                <element>
+                    <region_id>132</region_id>
+                    <region_name>Melilla</region_name>
+                </element>
+                <element>
+                    <region_id>133</region_id>
+                    <region_name>Murcia</region_name>
+                </element>
+                <element>
+                    <region_id>134</region_id>
+                    <region_name>Navarra</region_name>
+                </element>
+                <element>
+                    <region_id>135</region_id>
+                    <region_name>Rioja</region_name>
+                </element>
+                <element>
+                    <region_id>136</region_id>
+                    <region_name>Soria</region_name>
+                </element>
+                <element>
+                    <region_id>137</region_id>
+                    <region_name>Tarragona</region_name>
+                </element>
+                <element>
+                    <region_id>138</region_id>
+                    <region_name>Teruel</region_name>
+                </element>
+                <element>
+                    <region_id>139</region_id>
+                    <region_name>Toledo</region_name>
+                </element>
+                <element>
+                    <region_id>140</region_id>
+                    <region_name>Valencia</region_name>
+                </element>
+                <element>
+                    <region_id>141</region_id>
+                    <region_name>Zaragoza</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>LBY</country_code>
+            <country_code_iso2>LY</country_code_iso2>
+            <country_id>12</country_id>
+            <country_name>Libya</country_name>
+            <regions>
+                <element>
+                    <region_id>92</region_id>
+                    <region_name>Ajdabiya</region_name>
+                </element>
+                <element>
+                    <region_id>94</region_id>
+                    <region_name>Al batnan</region_name>
+                </element>
+                <element>
+                    <region_id>95</region_id>
+                    <region_name>Al jifarah</region_name>
+                </element>
+                <element>
+                    <region_id>93</region_id>
+                    <region_name>Al Khums</region_name>
+                </element>
+                <element>
+                    <region_id>96</region_id>
+                    <region_name>Alnigat Alkhams</region_name>
+                </element>
+                <element>
+                    <region_id>97</region_id>
+                    <region_name>Alnigat ilkamse</region_name>
+                </element>
+                <element>
+                    <region_id>98</region_id>
+                    <region_name>Azzawiya</region_name>
+                </element>
+                <element>
+                    <region_id>99</region_id>
+                    <region_name>Benghazi</region_name>
+                </element>
+                <element>
+                    <region_id>100</region_id>
+                    <region_name>Dernah</region_name>
+                </element>
+                <element>
+                    <region_id>101</region_id>
+                    <region_name>Misratah</region_name>
+                </element>
+                <element>
+                    <region_id>102</region_id>
+                    <region_name>Sirt</region_name>
+                </element>
+                <element>
+                    <region_id>103</region_id>
+                    <region_name>Tripoli</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>SYR</country_code>
+            <country_code_iso2>SY</country_code_iso2>
+            <country_id>13</country_id>
+            <country_name>Syria</country_name>
+            <regions>
+                <element>
+                    <region_id>142</region_id>
+                    <region_name>Lattakia</region_name>
+                </element>
+                <element>
+                    <region_id>143</region_id>
+                    <region_name>Tartous</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>TUN</country_code>
+            <country_code_iso2>TN</country_code_iso2>
+            <country_id>14</country_id>
+            <country_name>Tunisia</country_name>
+            <regions>
+                <element>
+                    <region_id>144</region_id>
+                    <region_name>Ariana-M</region_name>
+                </element>
+                <element>
+                    <region_id>145</region_id>
+                    <region_name>Ben Arous</region_name>
+                </element>
+                <element>
+                    <region_id>146</region_id>
+                    <region_name>Bizerte</region_name>
+                </element>
+                <element>
+                    <region_id>147</region_id>
+                    <region_name>Gabes</region_name>
+                </element>
+                <element>
+                    <region_id>148</region_id>
+                    <region_name>Mahdia</region_name>
+                </element>
+                <element>
+                    <region_id>149</region_id>
+                    <region_name>Medenine</region_name>
+                </element>
+                <element>
+                    <region_id>150</region_id>
+                    <region_name>Monastir</region_name>
+                </element>
+                <element>
+                    <region_id>151</region_id>
+                    <region_name>Nabeul</region_name>
+                </element>
+                <element>
+                    <region_id>152</region_id>
+                    <region_name>Sfax</region_name>
+                </element>
+                <element>
+                    <region_id>153</region_id>
+                    <region_name>Sousse</region_name>
+                </element>
+                <element>
+                    <region_id>154</region_id>
+                    <region_name>Tunis</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>TUR</country_code>
+            <country_code_iso2>TR</country_code_iso2>
+            <country_id>15</country_id>
+            <country_name>Turkey</country_name>
+            <regions>
+                <element>
+                    <region_id>155</region_id>
+                    <region_name>Adana</region_name>
+                </element>
+                <element>
+                    <region_id>156</region_id>
+                    <region_name>Afyon</region_name>
+                </element>
+                <element>
+                    <region_id>157</region_id>
+                    <region_name>Antalya</region_name>
+                </element>
+                <element>
+                    <region_id>158</region_id>
+                    <region_name>Aydin</region_name>
+                </element>
+                <element>
+                    <region_id>159</region_id>
+                    <region_name>Balikesir</region_name>
+                </element>
+                <element>
+                    <region_id>160</region_id>
+                    <region_name>Canakkale</region_name>
+                </element>
+                <element>
+                    <region_id>161</region_id>
+                    <region_name>Denizli</region_name>
+                </element>
+                <element>
+                    <region_id>162</region_id>
+                    <region_name>Hatay</region_name>
+                </element>
+                <element>
+                    <region_id>163</region_id>
+                    <region_name>Icel</region_name>
+                </element>
+                <element>
+                    <region_id>164</region_id>
+                    <region_name>Isparta</region_name>
+                </element>
+                <element>
+                    <region_id>165</region_id>
+                    <region_name>Izmir</region_name>
+                </element>
+                <element>
+                    <region_id>166</region_id>
+                    <region_name>Kahramanma</region_name>
+                </element>
+                <element>
+                    <region_id>167</region_id>
+                    <region_name>Kutahya</region_name>
+                </element>
+                <element>
+                    <region_id>168</region_id>
+                    <region_name>Manisa</region_name>
+                </element>
+                <element>
+                    <region_id>169</region_id>
+                    <region_name>Mugla</region_name>
+                </element>
+                <element>
+                    <region_id>170</region_id>
+                    <region_name>Osmaniye</region_name>
+                </element>
+                <element>
+                    <region_id>171</region_id>
+                    <region_name>Usak</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>MAT</country_code>
+            <country_code_iso2>MT</country_code_iso2>
+            <country_id>16</country_id>
+            <country_name>Malta</country_name>
+            <regions>
+                <element>
+                    <region_id>104</region_id>
+                    <region_name>Malta</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>MNE</country_code>
+            <country_code_iso2>ME</country_code_iso2>
+            <country_id>17</country_id>
+            <country_name>Montenegro</country_name>
+            <regions>
+                <element>
+                    <region_id>105</region_id>
+                    <region_name>Bar</region_name>
+                </element>
+                <element>
+                    <region_id>106</region_id>
+                    <region_name>Budva</region_name>
+                </element>
+                <element>
+                    <region_id>107</region_id>
+                    <region_name>Herceg Novi</region_name>
+                </element>
+                <element>
+                    <region_id>108</region_id>
+                    <region_name>Kotor</region_name>
+                </element>
+                <element>
+                    <region_id>109</region_id>
+                    <region_name>Tivat</region_name>
+                </element>
+                <element>
+                    <region_id>110</region_id>
+                    <region_name>Ulcinj</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>SLO</country_code>
+            <country_code_iso2>SI</country_code_iso2>
+            <country_id>18</country_id>
+            <country_name>Slovenia</country_name>
+            <regions>
+                <element>
+                    <region_id>115</region_id>
+                    <region_name>Slovenia</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>LEB</country_code>
+            <country_code_iso2>LB</country_code_iso2>
+            <country_id>19</country_id>
+            <country_name>Lebanon</country_name>
+            <regions>
+                <element>
+                    <region_id>91</region_id>
+                    <region_name>Lebanon</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>MOR</country_code>
+            <country_code_iso2>MA</country_code_iso2>
+            <country_id>20</country_id>
+            <country_name>Morocco</country_name>
+            <regions>
+                <element>
+                    <region_id>111</region_id>
+                    <region_name>Nador</region_name>
+                </element>
+                <element>
+                    <region_id>112</region_id>
+                    <region_name>Tanger</region_name>
+                </element>
+                <element>
+                    <region_id>113</region_id>
+                    <region_name>Tetouan</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>PSE</country_code>
+            <country_code_iso2>PS</country_code_iso2>
+            <country_id>21</country_id>
+            <country_name>Palestine</country_name>
+            <regions>
+                <element>
+                    <region_id>114</region_id>
+                    <region_name>Wadi Gaza</region_name>
+                </element>
+            </regions>
+        </element>
+        <element>
+            <country_code>MCO</country_code>
+            <country_code_iso2>MC</country_code_iso2>
+            <country_id>9999</country_id>
+            <country_name>Monaco</country_name>
+            <regions>
+                <element>
+                    <region_id>9998</region_id>
+                    <region_name>Monaco</region_name>
+                </element>
+            </regions>
+        </element>
+    </countries>
+
+</labels>
