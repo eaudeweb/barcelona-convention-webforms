@@ -999,6 +999,16 @@ var form = {
               type: 'text',
               name: '2019',
               selected: '',
+            },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
             }]
           },
           {
@@ -1035,6 +1045,16 @@ var form = {
               type: 'text',
               name: '2019',
               selected: '',
+            },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
             }]
           },
           {
@@ -1070,6 +1090,16 @@ var form = {
               label: '2019',
               type: 'text',
               name: '2019',
+              selected: '',
+            },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
               selected: '',
             }]
           }
@@ -1121,7 +1151,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7022,
           parent_collection_id: 706,
@@ -1163,7 +1203,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7023,
           parent_collection_id: 706,
@@ -1205,7 +1255,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7024,
           parent_collection_id: 706,
@@ -1247,7 +1307,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7025,
           parent_collection_id: 706,
@@ -1289,7 +1359,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7026,
           parent_collection_id: 706,
@@ -1331,7 +1411,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7027,
           parent_collection_id: 706,
@@ -1373,7 +1463,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7028,
           parent_collection_id: 706,
@@ -1415,7 +1515,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7029,
           parent_collection_id: 706,
@@ -1457,7 +1567,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7030,
           parent_collection_id: 706,
@@ -1499,7 +1619,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7031,
           parent_collection_id: 706,
@@ -1541,7 +1671,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7032,
           parent_collection_id: 706,
@@ -1583,7 +1723,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7033,
           parent_collection_id: 706,
@@ -1625,7 +1775,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7034,
           parent_collection_id: 706,
@@ -1667,7 +1827,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7035,
           parent_collection_id: 706,
@@ -1709,7 +1879,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7036,
           parent_collection_id: 706,
@@ -1751,7 +1931,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7037,
           parent_collection_id: 706,
@@ -1793,7 +1983,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7038,
           parent_collection_id: 706,
@@ -1835,7 +2035,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7039,
           parent_collection_id: 706,
@@ -1877,7 +2087,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7040,
           parent_collection_id: 706,
@@ -1919,7 +2139,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7041,
           parent_collection_id: 706,
@@ -1961,7 +2191,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7042,
           parent_collection_id: 706,
@@ -2003,7 +2243,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7043,
           parent_collection_id: 706,
@@ -2045,7 +2295,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7044,
           parent_collection_id: 706,
@@ -2087,7 +2347,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7045,
           parent_collection_id: 706,
@@ -2129,7 +2399,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7046,
           parent_collection_id: 706,
@@ -2171,7 +2451,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7047,
           parent_collection_id: 706,
@@ -2213,7 +2503,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7048,
           parent_collection_id: 706,
@@ -2255,7 +2555,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7049,
           parent_collection_id: 706,
@@ -2297,7 +2607,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7050,
           parent_collection_id: 706,
@@ -2339,7 +2659,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7051,
           parent_collection_id: 706,
@@ -2381,7 +2711,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7052,
           parent_collection_id: 706,
@@ -2423,7 +2763,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7053,
           parent_collection_id: 706,
@@ -2465,7 +2815,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7054,
           parent_collection_id: 706,
@@ -2507,7 +2867,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7055,
           parent_collection_id: 706,
@@ -2549,7 +2919,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7056,
           parent_collection_id: 706,
@@ -2591,7 +2971,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7057,
           parent_collection_id: 706,
@@ -2633,7 +3023,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7058,
           parent_collection_id: 706,
@@ -2675,7 +3075,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7059,
           parent_collection_id: 706,
@@ -2717,7 +3127,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7060,
           parent_collection_id: 706,
@@ -2759,7 +3179,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7061,
           parent_collection_id: 706,
@@ -2801,7 +3231,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7062,
           parent_collection_id: 706,
@@ -2843,7 +3283,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7063,
           parent_collection_id: 706,
@@ -2885,7 +3335,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7064,
           parent_collection_id: 706,
@@ -2927,7 +3387,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7065,
           parent_collection_id: 706,
@@ -2969,7 +3439,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7066,
           parent_collection_id: 706,
@@ -3011,7 +3491,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, {
           collection_id: 7067,
           parent_collection_id: 706,
@@ -3053,7 +3543,17 @@ var form = {
             type: 'text',
             name: '2019',
             selected: '',
-          }]
+          },{
+              label: '2020',
+              type: 'text',
+              name: '2020',
+              selected: '',
+            }, {
+              label: '2021',
+              type: 'text',
+              name: '2021',
+              selected: '',
+            }]
         }, ]
       },
 
