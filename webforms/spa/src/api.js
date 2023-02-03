@@ -95,28 +95,99 @@ let testCompanyId = getParameterByName('testCompanyId');
 
 
 
-    export function uploadFile(file) {
-      var uploadUri;
-      var domain = getDomain(window.location.href);
-      var webqUri = getWebQUrl('/restProxyFileUpload');
-      uploadUri = domain + webqUri + "&uri=" + envelope + "/manage_addDocument";
+    // export function uploadFile(file) {
+    //   var uploadUri;
+    //   var domain = getDomain(window.location.href);
+    //   var webqUri = getWebQUrl('/restProxyFileUpload');
+    //   uploadUri = domain + webqUri + "&uri=" + envelope + "/manage_addDocument";
 
-      return axios({
-        method: 'post',
-        withCredentials: true,
-        async: false,
-        cache: false,
-        contentType: false,
-        processData: false,
-        url: uploadUri,
-        data: file
-      })
+    //   return axios({
+    //     method: 'post',
+    //     withCredentials: true,
+    //     async: false,
+    //     cache: false,
+    //     contentType: false,
+    //     processData: false,
+    //     url: uploadUri,
+    //     data: file
+    //   })
+
+    // };
+
+
+    // export function getSupportingFiles() {
+    //   const url = envelope + '/get_envelope_supporting_files?buster=' + new Date().getTime();
+    //   return axios({
+    //     method: "get",
+    //     withCredentials: true,
+    //     cache: false,
+    //     url: url
+    //   })
+    // }
+    export function deleteFile(fileName) {
+      if(isTestSession) {
+        return axios({
+          method: "get",
+          withCredentials: true,
+          cache: false,
+          url: "http://localhost:8080/static/files.json"
+        })
+      } else {
+   
+        var deleteData = encodeURIComponent(`ids:list=${fileName}&manage_delObjects:method=Delete`)
+
+         return axios({
+          method: 'post',
+          withCredentials: true,
+          cache: false,
+          headers: {'content-type': 'application/x-www-form-urlencoded'},
+          // contentType: "multipart/form-data",
+          url: envelope,
+          data: deleteData
+        })
+      }
+
+    }
+
+
+    export function uploadFile(file) {
+
+      if(isTestSession){
+        return axios({
+          method: "get",
+          withCredentials: true,
+          cache: false,
+          url: "http://localhost:8080/static/files.json"
+        })
+      } else {
+        var uploadUri;
+        var domain = getDomain(window.location.href);
+        var webqUri = getWebQUrl('/restProxyFileUpload');
+        uploadUri = domain + webqUri + "&uri=" + envelope + "/manage_addDocument";
+
+        return axios({
+          method: 'post',
+          withCredentials: true,
+          async: false,
+          cache: false,
+          contentType: false,
+          processData: false,
+          url: uploadUri,
+          data: file
+        })
+      }
 
     };
 
 
     export function getSupportingFiles() {
-      const url = envelope + '/get_envelope_supporting_files?buster=' + new Date().getTime();
+      let url = null;
+      if(isTestSession){
+       url = "http://localhost:8080/static/files.json"
+      }
+      else {
+        url = envelope + '/get_envelope_supporting_files?buster=' + new Date().getTime();
+      }
       return axios({
         method: "get",
         withCredentials: true,

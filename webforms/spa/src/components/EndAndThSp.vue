@@ -38,8 +38,6 @@
                   </div>
                 </div>
 
-
-
                 <b-row>
                  <b-col lg="12" v-if="item.type === 'status' || item.type === 'difficulties'">
                    <textarea
@@ -48,8 +46,6 @@
                       placeholder="additional comments"></textarea>
                   </b-col>
                 </b-row>
-
-
 
                 <small style="font-style:italic; font-size: .6rem">
                   <p class="mb-0" v-for="option of item.options_description">
@@ -134,79 +130,79 @@ export default {
     titleSlugify(text) {
       return slugify(text)
     },
-    addSpa(){
-      let spa = {
-              article_title: {
-                label: "Name of the SPA",
-                value: 'please specify a name',
-                name: 'name',
-                type: 'text'
-              },
-              article_items: [{
-                label: 'Date of establishment',
-                type: 'date',
-                name: 'date',
-                value: '',
-              }, {
-                label: 'Category',
-                type: 'text',
-                name: 'category',
-                value: '',
-              }, {
-                label: 'Jurisdiction',
-                type: 'text',
-                name: 'jurisdiction',
-                value: '',
-              }, {
-                label: 'Coordinates',
-                type: 'text',
-                name: 'coordinates',
-                value: '',
-              }, {
-                label: 'Surface (marine, terrestrial, wetland)',
-                type: 'text',
-                name: 'surface',
-                value: '',
-              }, {
-                label: 'Main ecosystems, species and their habits',
-                type: 'text',
-                name: 'ecosystems',
-                value: '',
-              },
-              {
-                label: 'Management plan',
-                type: 'multiple',
-                name: 'management',
-                value: [
-                {
-                    label: "Date of adoption",
-                    value: '',
-                    name: 'date',
-                    type: 'date'
-                },
-                {
-                  label: "No",
-                  value: '',
-                  type: 'number',
-                  name: 'number'
-                },
-                {
-                  label: "Under development",
-                  value: '',
-                  type: 'text',
-                  name: 'under_dev'
-                }]
-              }]
-            }
+    // addSpa(){
+    //   let spa = {
+    //           article_title: {
+    //             label: "Name of the SPA",
+    //             value: 'please specify a name',
+    //             name: 'name',
+    //             type: 'text'
+    //           },
+    //           article_items: [{
+    //             label: 'Date of establishment',
+    //             type: 'date',
+    //             name: 'date',
+    //             value: '',
+    //           }, {
+    //             label: 'Category',
+    //             type: 'text',
+    //             name: 'category',
+    //             value: '',
+    //           }, {
+    //             label: 'Jurisdiction',
+    //             type: 'text',
+    //             name: 'jurisdiction',
+    //             value: '',
+    //           }, {
+    //             label: 'Coordinates',
+    //             type: 'text',
+    //             name: 'coordinates',
+    //             value: '',
+    //           }, {
+    //             label: 'Surface (marine, terrestrial, wetland)',
+    //             type: 'text',
+    //             name: 'surface',
+    //             value: '',
+    //           }, {
+    //             label: 'Main ecosystems, species and their habits',
+    //             type: 'text',
+    //             name: 'ecosystems',
+    //             value: '',
+    //           },
+    //           {
+    //             label: 'Management plan',
+    //             type: 'multiple',
+    //             name: 'management',
+    //             value: [
+    //             {
+    //                 label: "Date of adoption",
+    //                 value: '',
+    //                 name: 'date',
+    //                 type: 'date'
+    //             },
+    //             {
+    //               label: "No",
+    //               value: '',
+    //               type: 'number',
+    //               name: 'number'
+    //             },
+    //             {
+    //               label: "Under development",
+    //               value: '',
+    //               type: 'text',
+    //               name: 'under_dev'
+    //             }]
+    //           }]
+    //         }
 
-      this.info.data.table_2.articles.push(spa)
-    },
+    //   this.info.data.table_2.articles.push(spa)
+    // },
 
-    removeSpa(index) {
-      // console.log(this.info.data.table_2.articles[index])
-      console.log(index)
-      this.info.data.table_2.articles.splice(index, 1)
-    },
+    // removeSpa(index) {
+    //   // console.log(this.info.data.table_2.articles[index])
+    //   console.log(index)
+    //   this.info.data.table_2.articles.splice(index, 1)
+    // },
   },
 }
 </script>

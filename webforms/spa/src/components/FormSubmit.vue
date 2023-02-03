@@ -506,10 +506,22 @@ export default {
           "category": null,
           "jurisdiction": null,
           "coordinates": null,
+          "WMSlink": null,
+          "marineSurface": null,
+          "terrestrialSurface": null,
+          "wetlandSurface": null,
           "surface": null,
+          "species": null,
           "ecosystems": null,
           "management": null,
-          "dateofadoption": null
+          "dateofadoption": null,
+          "dateofadoption_link": null,
+          "protectionObjectives": null,
+          "protectionMeasures": null,
+          "otherMeasures": null,
+          "measuresLegallyBinding": null,
+          "relevantRegulation": null,
+          "totalExtent": null
         }
         for (let article_item of article.article_items){
           row[article_item.name] = article_item.selected;

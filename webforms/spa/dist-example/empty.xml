@@ -76,10 +76,21 @@
             <category/>
             <jurisdiction/>
             <coordinates/>
+            <WMSlink/>
+            <marineSurface/>
+            <terrestrialSurface/>
+            <wetlandSurface/>
             <surface/>
+            <species/>
             <ecosystems/>
             <management/>
             <dateofadoption/>
+            <protectionObjectives/>
+            <protectionMeasures/>
+            <otherMeasures/>
+            <measuresLegallyBinding/>
+            <relevantRegulation/>
+            <totalExtent/>
         </Row>
     </spa>
     <measures_to_protect_species>
