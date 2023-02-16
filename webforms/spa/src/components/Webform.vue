@@ -325,9 +325,13 @@ export default {
                 { text: 'Adiacent', value: 2 },
                 { text: 'High seas', value: 3 }
               ]
-            },
-            {
-              label: 'Coordinates (If shapefile or geojson resources are available, please upload them directly in the envelope using "Add supporting file" button.)',
+            }, {
+              label: 'Coordinates (Please upload the polygon(s) in shapefile, using the World Geodetic System 1984 (WGS 84) coordinate system)',
+              type: 'file',
+              name: 'coordinates_file',
+              selected: '',
+            }, {
+              label: 'Coordinates (comments)',
               type: 'text',
               name: 'coordinates',
               selected: '',
@@ -438,9 +442,9 @@ export default {
               name: 'dateofadoption',
               selected: '',
             }, {
-              label: 'Link to document (Date of adoption)',
-              type: 'text',
-              name: 'dateofadoption_link',
+              label: 'Upload proof document (Date of adoption)',
+              type: 'file',
+              name: 'dateofadoption_doc',
               selected: '',
             }, {
               type: 'checkbox',
@@ -547,9 +551,13 @@ export default {
                 { text: 'Adiacent', value: 2 },
                 { text: 'High seas', value: 3 }
               ]
-            },
-            {
-              label: 'Coordinates (If shapefile or geojson resources are available, please upload them directly in the envelope using "Add supporting file" button.)',
+            }, {
+              label: 'Coordinates (Please upload the polygon(s) in shapefile, using the World Geodetic System 1984 (WGS 84) coordinate system)',
+              type: 'file',
+              name: 'coordinates_file',
+              selected: '',
+            }, {
+              label: 'Coordinates (comments)',
               type: 'text',
               name: 'coordinates',
               selected: '',
@@ -660,9 +668,9 @@ export default {
               name: 'dateofadoption',
               selected: '',
             }, {
-              label: 'Link to document (Date of adoption)',
-              type: 'text',
-              name: 'dateofadoption_link',
+              label: 'Upload proof document (Date of adoption)',
+              type: 'file',
+              name: 'dateofadoption_doc',
               selected: '',
             },{
               type: 'checkbox',

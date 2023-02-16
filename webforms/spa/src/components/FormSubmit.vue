@@ -498,6 +498,7 @@ export default {
         let description = article.description || null
         let spa_name = article.article_title.selected || null
         let row = {
+          "id": null,
           "collection_id" : collection_id,
           "parent_collection_id": parent_collection_id,
           "description": description,
@@ -516,7 +517,6 @@ export default {
           "ecosystems": null,
           "management": null,
           "dateofadoption": null,
-          "dateofadoption_link": null,
           "protectionObjectives": null,
           "protectionMeasures": null,
           "otherMeasures": null,
@@ -524,20 +524,16 @@ export default {
           "measuresLegallyBinding": null,
           "totalExtent": null
         }
+        let idx = 1;
+        
         for (let article_item of article.article_items){
+          row["id"] = this.country + idx;
           row[article_item.name] = article_item.selected;
-
+          idx = idx + 1;
         }
 
         this.jsonemptyinstance.BC_SPA.spa.Row.push(row);
-
       }
-      
-
-
-
-
-
 
       let tab_3_3 = this.dataset.tab_3.data.table_3;
       for (let article of tab_3_3.articles) {

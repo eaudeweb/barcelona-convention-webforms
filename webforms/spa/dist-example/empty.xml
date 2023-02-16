@@ -68,6 +68,7 @@
     </enf_measures>
     <spa>
         <Row>
+            <id/>
             <collection_id/>
             <parent_collection_id/>
             <description/>

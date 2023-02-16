@@ -40,8 +40,6 @@ let testCompanyId = getParameterByName('testCompanyId');
       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
     };
 
-
-
     function getWebQUrl(path) {
       let url = baseUri + path;
       url += "?fileId=" + fileId;
@@ -52,8 +50,6 @@ let testCompanyId = getParameterByName('testCompanyId');
     }
 
     // helper function for getting query string parameter values. AngularJS solution $location.search() doesn't work in IE8.
-
-
 
     function getDomain(url) {
       return url.split("/").slice(0, 3).join("/");
@@ -93,37 +89,6 @@ let testCompanyId = getParameterByName('testCompanyId');
         return fetch(envelope + '/get_fgas_deliveries')
     }
 
-
-
-    // export function uploadFile(file) {
-    //   var uploadUri;
-    //   var domain = getDomain(window.location.href);
-    //   var webqUri = getWebQUrl('/restProxyFileUpload');
-    //   uploadUri = domain + webqUri + "&uri=" + envelope + "/manage_addDocument";
-
-    //   return axios({
-    //     method: 'post',
-    //     withCredentials: true,
-    //     async: false,
-    //     cache: false,
-    //     contentType: false,
-    //     processData: false,
-    //     url: uploadUri,
-    //     data: file
-    //   })
-
-    // };
-
-
-    // export function getSupportingFiles() {
-    //   const url = envelope + '/get_envelope_supporting_files?buster=' + new Date().getTime();
-    //   return axios({
-    //     method: "get",
-    //     withCredentials: true,
-    //     cache: false,
-    //     url: url
-    //   })
-    // }
     export function deleteFile(fileName) {
       if(isTestSession) {
         return axios({
@@ -148,7 +113,6 @@ let testCompanyId = getParameterByName('testCompanyId');
       }
 
     }
-
 
     export function uploadFile(file) {
 
@@ -178,7 +142,6 @@ let testCompanyId = getParameterByName('testCompanyId');
       }
 
     };
-
 
     export function getSupportingFiles() {
       let url = null;
