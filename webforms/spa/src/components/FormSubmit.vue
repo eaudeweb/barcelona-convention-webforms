@@ -492,11 +492,15 @@ export default {
       }
 
       let tab_2_2 = this.dataset.tab_2.data.table_2;
+      let idx = 0;
+
       for (let article of tab_2_2.articles) {
         let collection_id = article.collection_id || null;
         let parent_collection_id = article.parent_collection_id || null
         let description = article.description || null
         let spa_name = article.article_title.selected || null
+        idx = idx + 1;
+
         let row = {
           "id": null,
           "collection_id" : collection_id,
@@ -523,17 +527,18 @@ export default {
           "relevantRegulation": null,
           "measuresLegallyBinding": null,
           "totalExtent": null
-        }
-        let idx = 1;
+        };
+
+        row["id"] = this.country + idx;
         
         for (let article_item of article.article_items){
-          row["id"] = this.country + idx;
           row[article_item.name] = article_item.selected;
-          idx = idx + 1;
         }
 
         this.jsonemptyinstance.BC_SPA.spa.Row.push(row);
       }
+
+      idx = 0;
 
       let tab_3_3 = this.dataset.tab_3.data.table_3;
       for (let article of tab_3_3.articles) {
