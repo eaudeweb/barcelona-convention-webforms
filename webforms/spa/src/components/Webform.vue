@@ -443,26 +443,24 @@ export default {
               name: 'dateofadoption_link',
               selected: '',
             }, {
-              // type: 'checkbox',
-              type: 'select',
+              type: 'checkbox',
               label: 'Protection objectives',
+              info: 'Please tick all that apply',
               name: 'protectionObjectives',
-              selected: null,
+              selected: [],
               options: [
-                { text: 'Please select one item', value: null },
                 { text: '(a) representative types of coastal and marine ecosystems of adequate size to ensure their long-term viability and to maintain their biological diversity', value: 1 },
                 { text: '(b) habitats which are in danger of disappearing in their natural area of distribution in the Mediterranean or which have a reduced natural area of distribution as a consequence of their regression or on account of their intrinsically restricted area', value: 2 },
                 { text: '(c) habitats critical to the survival, reproduction and recovery of endangered, threatened or endemic species of flora or fauna', value: 3 },
                 { text: '(d) sites of particular importance because of their scientific, aesthetic, cultural or educational interest', value: 4 }
               ]
             }, {
-              // type: 'checkbox',
-              type: 'select',
+              type: 'checkbox',
               label: 'Protection measures',
+              info: 'Please tick all that apply',
               name: 'protectionMeasures',
-              selected: null,
+              selected: [],
               options: [
-                { text: 'Please select one item', value: null },
                 { text: '(a) the strengthening of the application of the other Protocols to the Convention and of other relevant treaties to which they are Parties', value: 1 },
                 { text: '(b) the prohibition of the dumping or discharge of wastes and other substances likely directly or indirectly to impair the integrity of the specially protected area', value: 2 },
                 { text: '(c) the regulation of the passage of ships and any stopping or anchoring', value: 3 },
@@ -667,13 +665,12 @@ export default {
               name: 'dateofadoption_link',
               selected: '',
             },{
-              // type: 'checkbox',
-              type: 'select',
+              type: 'checkbox',
               label: 'Protection objectives',
+              info: 'Please tick all that apply',
               name: 'protectionObjectives',
-              selected: null,
+              selected: [],
               options: [
-                { text: 'Please select one item', value: null },
                 { text: '(a) representative types of coastal and marine ecosystems of adequate size to ensure their long-term viability and to maintain their biological diversity', value: 1 },
                 { text: '(b) habitats which are in danger of disappearing in their natural area of distribution in the Mediterranean or which have a reduced natural area of distribution as a consequence of their regression or on account of their intrinsically restricted area', value: 2 },
                 { text: '(c) habitats critical to the survival, reproduction and recovery of endangered, threatened or endemic species of flora or fauna', value: 3 },
@@ -681,13 +678,12 @@ export default {
               ]
             },
             {
-              // type: 'checkbox',
-              type: 'select',
+              type: 'checkbox',
               label: 'Protection measures',
+              info: 'Please tick all that apply',
               name: 'protectionMeasures',
-              selected: null,
+              selected: [],
               options: [
-                { text: 'Please select one item', value: null },
                 { text: '(a) the strengthening of the application of the other Protocols to the Convention and of other relevant treaties to which they are Parties', value: 1 },
                 { text: '(b) the prohibition of the dumping or discharge of wastes and other substances likely directly or indirectly to impair the integrity of the specially protected area', value: 2 },
                 { text: '(c) the regulation of the passage of ships and any stopping or anchoring', value: 3 },
