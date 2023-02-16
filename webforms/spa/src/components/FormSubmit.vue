@@ -503,6 +503,7 @@ export default {
           "description": description,
           "spa_name": spa_name,
           "date": null,
+          "legalEnactmentText": null,
           "category": null,
           "jurisdiction": null,
           "coordinates": null,
@@ -519,8 +520,8 @@ export default {
           "protectionObjectives": null,
           "protectionMeasures": null,
           "otherMeasures": null,
-          "measuresLegallyBinding": null,
           "relevantRegulation": null,
+          "measuresLegallyBinding": null,
           "totalExtent": null
         }
         for (let article_item of article.article_items){

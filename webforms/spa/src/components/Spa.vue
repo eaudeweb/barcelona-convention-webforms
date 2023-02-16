@@ -290,6 +290,11 @@ export default {
               name: 'date',
               selected: '',
             }, {
+              label: 'Legal enactment',
+              type: 'text',
+              name: 'legalEnactmentText',
+              selected: ''
+            }, {
               label: 'Legal enactment (copy of the text should be attached)',
               type: 'file',
               name: 'legalEnactment',
@@ -323,24 +328,30 @@ export default {
               name: 'WMSlink',
               selected: '',
             }, {
-              label: 'Marine surface',
+              label: 'Total surface (in km²)',
+              type: 'text',
+              name: 'surface',
+              selected: '',
+              options_description: ['Please provide the total surface, then distinguish it into marine, terrestrial and wetland surfaces as relevant.'],
+            }, {
+              label: 'Marine surface (in km²)',
               type: 'text',
               name: 'marineSurface',
               selected: '',
             }, {
-              label: 'Terrestrial surface',
+              label: 'Terrestrial surface (in km²)',
               type: 'text',
               name: 'terrestrialSurface',
               selected: '',
             }, {
-              label: 'Wetland surface',
+              label: 'Wetland surface (in km²)',
               type: 'text',
               name: 'wetlandSurface',
               selected: '',
             }, {
-              label: 'Total surface (marine, terrestrial, wetland)',
+              label: 'Main ecosystems and species habits',
               type: 'text',
-              name: 'surface',
+              name: 'ecosystems',
               selected: '',
             }, {
               label: 'Main Species',
@@ -403,11 +414,6 @@ export default {
                 {text: '[Echinodermata] Ophidiaster ophidianus (Lamarck, 1816)', value: 52}
               ]
             }, {
-              label: 'Main ecosystems and species habits',
-              type: 'text',
-              name: 'ecosystems',
-              selected: '',
-            }, {
               type: 'radio',
               label: 'Management plan',
               name: 'management',
@@ -431,6 +437,7 @@ export default {
               selected: '',
             },
             {
+              // type: 'checkbox',
               type: 'select',
               label: 'Protection objectives',
               name: 'protectionObjectives',
@@ -444,6 +451,7 @@ export default {
               ]
             },
             {
+              // type: 'checkbox',
               type: 'select',
               label: 'Protection measures',
               name: 'protectionMeasures',
@@ -460,30 +468,28 @@ export default {
                 { text: '(h) the regulation and if necessary the prohibition of any other activity or act likely to harm or disturb the species or that might endanger the state of conservation of the ecosystems or species or might impair the natural or cultural characteristics of the specially protected area', value: 8 },
                 { text: '(i) any other measure aimed at safeguarding ecological and biological processes and the landscape', value: 9 }
               ],
-            },
-            {
+            }, {
               type: 'textarea',
-              label: 'Other measures',
+              label: 'In case other protection measures are applicable, please specify',
               name: 'otherMeasures',
               selected: '',
-            },
-            {
+            }, {
+              label: 'If yes, provide reference to relevant regulation',
+              type: 'textarea',
+              name: 'relevantRegulation',
+              selected: '',
+             }, {
               type: 'radio',
-              label: 'Are the measures legally binding (e.g. included in an applicable regulation)?',
+              label: 'Existence of a No-Take Zone',
               name: 'measuresLegallyBinding',
               selected: null,
               options: [
                 { text: 'Yes', value: 1 },
                 { text: 'No', value: 2 },
               ],
-              options_description: ['If yes, provide reference to relevant regulation Existence of NoTake Zone37 and the total extent of the NoTakeZone as officially declared (in km²).']
+              options_description: ['No-Take Zones are geographically defined zones within marine protected areas that do not allow any fishing, mining, drilling, or other extractive activities.'],
             }, {
-              label: 'Provide reference to relevant regulation Existence of NoTake Zone37',
-              type: 'text',
-              name: 'relevantRegulation',
-              selected: '',
-            }, {
-              label: 'Provide total extent of the NoTakeZone as officially declared (in km²)',
+              label: 'If yes, provide the total extent of the No-Take Zone as officially declared (in km²)',
               type: 'text',
               name: 'totalExtent',
               selected: '',

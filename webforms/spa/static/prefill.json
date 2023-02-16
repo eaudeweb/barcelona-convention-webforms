@@ -1411,6 +1411,7 @@
         "description": null,
         "spa_name": "asgasgsa",
         "date": "12512-12-05",
+        "legalEnactmentText": "ana are mere",
         "category": "sagasgag",
         "jurisdiction": 1,
         "coordinates": "gasgas",
@@ -1427,7 +1428,7 @@
         "protectionMeasures": 1,
         "otherMeasures": "Ana are mere",
         "measuresLegallyBinding": 2,
-        "relevantRegulation": "11",
+        "relevantRegulation": "relevant regulation test",
         "totalExtent": 12
       }
     },
