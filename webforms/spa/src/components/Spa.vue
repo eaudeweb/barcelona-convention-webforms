@@ -130,7 +130,7 @@
                       </div>
                     </div>
                     <div v-else-if="item.type === 'checkbox'">
-                      <div class="mt-2">{{item.label}}</div>
+                      <div class="mt-2">{{item.label}} <small class="muted">({{item.info}})</small></div>
                       <div class="form-fields">
                         <b-form-checkbox-group stacked :id="`checkbox_table_spa_${tabId}_${index}_${item_index}_${item.name}`" :name="`checkbox_table_spa_${tabId}_${index}_${item_index}_${item.name}`" :options="item.options" v-model="item.selected"></b-form-checkbox-group>
                       </div>
@@ -449,7 +449,7 @@ export default {
             {
               type: 'checkbox',
               label: 'Protection objectives',
-              info: 'Please tick all that apply',
+              info: 'Please select among the objectives set out in Article 4.',
               name: 'protectionObjectives',
               selected: [],
               options: [
@@ -457,12 +457,12 @@ export default {
                 { text: '(b) habitats which are in danger of disappearing in their natural area of distribution in the Mediterranean or which have a reduced natural area of distribution as a consequence of their regression or on account of their intrinsically restricted area', value: 2 },
                 { text: '(c) habitats critical to the survival, reproduction and recovery of endangered, threatened or endemic species of flora or fauna', value: 3 },
                 { text: '(d) sites of particular importance because of their scientific, aesthetic, cultural or educational interest', value: 4 }
-              ]
+              ],
             },
             {
               type: 'checkbox',
               label: 'Protection measures',
-              info: 'Please tick all that apply',
+              info: 'Please select among the protection measures set out in Article 6.',
               name: 'protectionMeasures',
               selected: [],
               options: [

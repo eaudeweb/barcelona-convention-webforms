@@ -449,7 +449,7 @@ export default {
             }, {
               type: 'checkbox',
               label: 'Protection objectives',
-              info: 'Please tick all that apply',
+              info: 'Please select among the objectives set out in Article 4.',
               name: 'protectionObjectives',
               selected: [],
               options: [
@@ -457,11 +457,11 @@ export default {
                 { text: '(b) habitats which are in danger of disappearing in their natural area of distribution in the Mediterranean or which have a reduced natural area of distribution as a consequence of their regression or on account of their intrinsically restricted area', value: 2 },
                 { text: '(c) habitats critical to the survival, reproduction and recovery of endangered, threatened or endemic species of flora or fauna', value: 3 },
                 { text: '(d) sites of particular importance because of their scientific, aesthetic, cultural or educational interest', value: 4 }
-              ]
+              ],
             }, {
               type: 'checkbox',
               label: 'Protection measures',
-              info: 'Please tick all that apply',
+              info: 'Please select among the protection measures set out in Article 6.',
               name: 'protectionMeasures',
               selected: [],
               options: [
@@ -573,7 +573,7 @@ export default {
               selected: '',
               options_description: ['Please provide the total surface, then distinguish it into marine, terrestrial and wetland surfaces as relevant.']
             }, {
-              label: 'Marine surface',
+              label: 'Marine surface (in km²)',
               type: 'text',
               name: 'marineSurface',
               selected: '',
@@ -675,7 +675,7 @@ export default {
             },{
               type: 'checkbox',
               label: 'Protection objectives',
-              info: 'Please tick all that apply',
+              info: 'Please select among the objectives set out in Article 4.',
               name: 'protectionObjectives',
               selected: [],
               options: [
@@ -683,12 +683,12 @@ export default {
                 { text: '(b) habitats which are in danger of disappearing in their natural area of distribution in the Mediterranean or which have a reduced natural area of distribution as a consequence of their regression or on account of their intrinsically restricted area', value: 2 },
                 { text: '(c) habitats critical to the survival, reproduction and recovery of endangered, threatened or endemic species of flora or fauna', value: 3 },
                 { text: '(d) sites of particular importance because of their scientific, aesthetic, cultural or educational interest', value: 4 }
-              ]
+              ],
             },
             {
               type: 'checkbox',
               label: 'Protection measures',
-              info: 'Please tick all that apply',
+              info: 'Please select among the protection measures set out in Article 6.',
               name: 'protectionMeasures',
               selected: [],
               options: [
