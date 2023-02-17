@@ -524,8 +524,9 @@ export default {
           "protectionObjectives": null,
           "protectionMeasures": null,
           "otherMeasures": null,
-          "relevantRegulation": null,
           "measuresLegallyBinding": null,
+          "relevantRegulation": null,
+          "noTakeZones": null,
           "totalExtent": null
         };
 

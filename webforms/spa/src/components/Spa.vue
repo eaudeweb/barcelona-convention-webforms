@@ -482,6 +482,16 @@ export default {
               name: 'otherMeasures',
               selected: '',
             }, {
+              type: 'radio',
+              label: 'Are the measures legally binding (e.g. included in an applicable regulation)?',
+              name: 'measuresLegallyBinding',
+              selected: null,
+              options: [
+                { text: 'Yes', value: 1 },
+                { text: 'No', value: 2 },
+              ],
+              options_description: ['If yes, provide reference to relevant regulation Existence of NoTake Zone37 and the total extent of the NoTakeZone as officially declared (in km²).'],
+            }, {
               label: 'If yes, provide reference to relevant regulation',
               type: 'textarea',
               name: 'relevantRegulation',
@@ -489,7 +499,7 @@ export default {
              }, {
               type: 'radio',
               label: 'Existence of a No-Take Zone',
-              name: 'measuresLegallyBinding',
+              name: 'noTakeZones',
               selected: null,
               options: [
                 { text: 'Yes', value: 1 },
