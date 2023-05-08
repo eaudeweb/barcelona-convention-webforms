@@ -296,7 +296,8 @@ export default {
         startYear = startYear;
 
         while ( startYear <= currentYear ) {
-                years.push({text:startYear++ , value: startYear++});
+          years.push({text:startYear , value: startYear});
+          startYear++;
         }
 
         return years;
